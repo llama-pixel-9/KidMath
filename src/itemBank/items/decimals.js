@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "storyDimes_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"A dime is one tenth of a dollar. Mina carries 1 dimes and nothing else. Type Mina's money as a decimal part of a dollar."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"A dime is one tenth of a dollar. Mina carries 1 dime and nothing else. What decimal part of a dollar does Mina have?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-app-b0821-0002",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "storyDimes_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"A dime is one tenth of a dollar. Zoe carries 1 dimes and nothing else. Type Zoe's money as a decimal part of a dollar."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"A dime is one tenth of a dollar. Zoe carries 1 dime and nothing else. What decimal part of a dollar does Zoe have?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-app-b0821-0029",
@@ -522,7 +522,7 @@ export const ITEMS = [
     structureType: "storyDimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"Omar empties a piggy bank and finds exactly 1 dimes. Each dime is a tenth of a dollar. Type the total as a decimal part of a dollar."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"Omar empties a piggy bank and finds just 1 dime. Each dime is a tenth of a dollar. What decimal part of a dollar did Omar find?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-app-b0821-0053",
@@ -792,7 +792,7 @@ export const ITEMS = [
     structureType: "storyDimes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"Priya empties a piggy bank and finds exactly 1 dimes. Each dime is a tenth of a dollar. Type the total as a decimal part of a dollar."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"Priya empties a piggy bank and finds just 1 dime. Each dime is a tenth of a dollar. What decimal part of a dollar did Priya find?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-app-b0821-0080",
@@ -1032,7 +1032,7 @@ export const ITEMS = [
     structureType: "storyDimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"Finn's coin pouch holds 1 dimes and no other coins; a dime is a tenth of a dollar. Type the amount as a decimal part of a dollar."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"Finn's coin pouch holds 1 dime and no other coins. A dime is a tenth of a dollar. What decimal part of a dollar is in the pouch?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-app-b0821-0104",
@@ -1302,7 +1302,7 @@ export const ITEMS = [
     structureType: "storyDimes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"Nia's coin pouch holds 1 dimes and no other coins; a dime is a tenth of a dollar. Type the amount as a decimal part of a dollar."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"Nia's coin pouch holds 1 dime and no other coins. A dime is a tenth of a dollar. What decimal part of a dollar is in Nia's pouch?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-app-b0821-0131",
@@ -5842,7 +5842,7 @@ export const ITEMS = [
     structureType: "storyPour_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":8.9,"display":{"dec":{"a":8.89,"b":0.01,"kind":"addDec"},"promptText":"Theo tops up a 8.89-liter watering can with one hundredth of a liter. Type the new volume as a decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":8.9,"display":{"dec":{"a":8.89,"b":0.01,"kind":"addDec"},"promptText":"Theo's watering can has 8.89 liters of water in it. Theo pours in one hundredth of a liter more. How many liters of water are in the can now?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-app-b0821-0585",
@@ -6112,7 +6112,7 @@ export const ITEMS = [
     structureType: "storyPour_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":8.9,"display":{"dec":{"a":8.89,"b":0.01,"kind":"addDec"},"promptText":"Rosa tops up a 8.89-liter watering can with one hundredth of a liter. Type the new volume as a decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":8.9,"display":{"dec":{"a":8.89,"b":0.01,"kind":"addDec"},"promptText":"Rosa's watering can has 8.89 liters of water in it. Rosa pours in one hundredth of a liter more. How many liters of water are in the can now?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-app-b0821-0612",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Omar turns one tenth into the decimal 0.01. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Omar says one tenth is written as 0.01. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0020",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing two tenths, Ben puts the 2 in the hundredths place: 0.02. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"To write two tenths, Ben writes 0.02. Is Ben right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0021",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn turns three tenths into the decimal 0.03. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn says three tenths is written as 0.03. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0022",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing four tenths, Priya puts the 4 in the hundredths place: 0.04. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"To write four tenths, Priya writes 0.04. Is Priya right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0023",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Sam turns five tenths into the decimal 0.05. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Sam writes five tenths as 0.05. Is Sam right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0024",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing six tenths, Nia puts the 6 in the hundredths place: 0.06. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"To write six tenths, Nia writes 0.06. Is Nia right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0025",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai turns seven tenths into the decimal 0.07. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai writes seven tenths as 0.07. Is Kai right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0026",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing eight tenths, June puts the 8 in the hundredths place: 0.08. Is June right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"To write eight tenths, June writes 0.08. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0027",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily turns nine tenths into the decimal 0.09. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily writes nine tenths as 0.09. Is Lily right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0028",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing one tenth, Amara puts the 1 in the hundredths place: 0.01. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"To write one tenth, Amara writes 0.01. Is Amara right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0029",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Leo turns two tenths into the decimal 0.02. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Leo says two tenths is written as 0.02. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0030",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing three tenths, Mina puts the 3 in the hundredths place: 0.03. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Mina wants to write three tenths and writes 0.03. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0031",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Theo turns four tenths into the decimal 0.04. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Theo says four tenths is written as 0.04. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0032",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing five tenths, Ida puts the 5 in the hundredths place: 0.05. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Ida wants to write five tenths and writes 0.05. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0033",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Zoe turns six tenths into the decimal 0.06. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Zoe writes six tenths as 0.06. Is Zoe right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0034",
@@ -6462,7 +6462,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing seven tenths, Rosa puts the 7 in the hundredths place: 0.07. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Rosa wants to write seven tenths and writes 0.07. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0035",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Diego turns eight tenths into the decimal 0.08. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Diego writes eight tenths as 0.08. Is Diego right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0036",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "placeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Writing nine tenths, Nora puts the 9 in the hundredths place: 0.09. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Nora wants to write nine tenths and writes 0.09. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0037",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Priya's worksheet, two tenths is written 0.02. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Priya's worksheet, two tenths is written as 0.02. Is Priya's work right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0039",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Nia's worksheet, four tenths is written 0.04. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Nia's worksheet, four tenths is written as 0.04. Is Nia's work right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0041",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On June's worksheet, six tenths is written 0.06. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On June's worksheet, six tenths is written as 0.06. Is June's work right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0043",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Amara's worksheet, eight tenths is written 0.08. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Amara's worksheet, eight tenths is written as 0.08. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0045",
@@ -6582,7 +6582,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Mina's worksheet, one tenth is written 0.01. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Mina's worksheet, one tenth is written as 0.01. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0047",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Ida's worksheet, three tenths is written 0.03. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Ida's worksheet, three tenths is written as 0.03. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0049",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Rosa's worksheet, five tenths is written 0.05. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Rosa's worksheet, five tenths is written as 0.05. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0051",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Nora's worksheet, seven tenths is written 0.07. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Nora's worksheet, seven tenths is written as 0.07. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0053",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "placeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Ava's worksheet, nine tenths is written 0.09. Clean work?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"On Ava's worksheet, nine tenths is written as 0.09. Is Ava's work right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0055",
@@ -6672,7 +6672,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Luca says 0.10 names the same amount as 0.1. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Luca says 0.10 is the same amount as 0.1. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0056",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"0.2 and 0.20 are the same amount, claims Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ava says 0.2 and 0.20 are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0057",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Omar says 0.10 names the same amount as 0.1. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Omar says 0.10 is the same amount as 0.01. Is Omar right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0058",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"0.2 and 0.20 are the same amount, claims Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ben says 0.2 and 0.02 are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0059",
@@ -6712,7 +6712,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Finn says 0.10 names the same amount as 0.1. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Finn says 0.10 is the same amount as 0.1. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0060",
@@ -6722,7 +6722,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"0.2 and 0.20 are the same amount, claims Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Priya says 0.2 and 0.20 are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0061",
@@ -6732,7 +6732,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Sam says 0.10 names the same amount as 0.1. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Sam says 0.10 is the same amount as 0.01. Is Sam right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0062",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"0.2 and 0.20 are the same amount, claims Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nia says 0.2 and 0.02 are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0063",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Kai says 0.10 names the same amount as 0.1. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Kai says 0.10 is the same amount as 0.1. Is Kai right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0064",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"0.2 and 0.20 are the same amount, claims June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"June says 0.2 and 0.20 are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0065",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Lily says 0.10 names the same amount as 0.1. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Lily says 0.10 is the same amount as 0.01. Is Lily right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0066",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"0.2 and 0.20 are the same amount, claims Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Amara says 0.2 and 0.02 are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0067",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Leo says 0.10 names the same amount as 0.1. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Leo says 0.10 is the same amount as 0.1. Is Leo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0068",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"0.2 and 0.20 are the same amount, claims Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Mina says 0.2 and 0.20 are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0069",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Theo says 0.10 names the same amount as 0.1. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Theo says 0.10 is the same amount as 0.01. Is Theo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0070",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "trailingZero_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"0.2 and 0.20 are the same amount, claims Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ida says 0.2 and 0.20 are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0071",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"June marks 0.10 and 0.1 at the same point on a number line. Should they share the point?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"June marks 0.10 and 0.1 at the same point on a number line. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0072",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"According to Lily, adding a zero at the end turns 0.2 into a different number: 0.20. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Lily says adding a zero to the end of 0.2 makes a different number, 0.20. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0073",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Amara marks 0.30 and 0.3 at the same point on a number line. Should they share the point?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Amara says adding a zero to the end of 0.3 gives the same number, 0.30. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0074",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"According to Leo, adding a zero at the end turns 0.4 into a different number: 0.40. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Leo marks 0.4 and 0.40 at two different points on a number line. Is Leo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0075",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Mina marks 0.50 and 0.5 at the same point on a number line. Should they share the point?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Mina marks 0.50 and 0.5 at the same point on a number line. Is Mina right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0076",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"According to Theo, adding a zero at the end turns 0.6 into a different number: 0.60. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Theo says adding a zero to the end of 0.6 makes a different number, 0.60. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0077",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ida marks 0.70 and 0.7 at the same point on a number line. Should they share the point?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ida says adding a zero to the end of 0.7 gives the same number, 0.70. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0078",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"According to Zoe, adding a zero at the end turns 0.8 into a different number: 0.80. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Zoe marks 0.8 and 0.80 at two different points on a number line. Is Zoe right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0079",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Rosa marks 0.90 and 0.9 at the same point on a number line. Should they share the point?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Rosa marks 0.90 and 0.9 at the same point on a number line. Is Rosa right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0080",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"According to Diego, adding a zero at the end turns 0.1 into a different number: 0.10. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Diego says adding a zero to the end of 0.1 makes a different number, 0.10. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0081",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Nora marks 0.30 and 0.3 at the same point on a number line. Should they share the point?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Nora says adding a zero to the end of 0.3 gives the same number, 0.30. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0082",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"According to Luca, adding a zero at the end turns 0.5 into a different number: 0.50. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Luca marks 0.5 and 0.50 at two different points on a number line. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0083",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ava marks 0.70 and 0.7 at the same point on a number line. Should they share the point?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ava marks 0.70 and 0.7 at the same point on a number line. Is Ava right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0084",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"According to Omar, adding a zero at the end turns 0.9 into a different number: 0.90. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Omar says adding a zero to the end of 0.9 makes a different number, 0.90. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0085",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ben marks 0.20 and 0.2 at the same point on a number line. Should they share the point?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ben says adding a zero to the end of 0.2 gives the same number, 0.20. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0086",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "trailingZero_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"According to Finn, adding a zero at the end turns 0.4 into a different number: 0.40. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Finn marks 0.4 and 0.40 at two different points on a number line. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0087",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Amara certifies that 0.10 = 0.1 exactly. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Amara says 0.10 = 0.1. Is Amara right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0088",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Leo argues 0.20 must beat 0.2 because it has more digits. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Leo says 0.20 is bigger than 0.2 because it has more digits. Is Leo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0089",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Mina certifies that 0.30 = 0.3 exactly. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Mina says 0.30 and 0.3 are equal. Is Mina right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0090",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Theo argues 0.40 must beat 0.4 because it has more digits. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Theo says 0.40 is bigger than 0.4 because it has more digits. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0091",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ida certifies that 0.50 = 0.5 exactly. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ida writes 0.50 = 0.5. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0092",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Zoe argues 0.60 must beat 0.6 because it has more digits. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Zoe thinks 0.60 is greater than 0.6 because it has more digits. Is Zoe right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0093",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Rosa certifies that 0.70 = 0.7 exactly. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Rosa says 0.70 and 0.7 are equal. Is Rosa right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0094",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Diego argues 0.80 must beat 0.8 because it has more digits. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Diego thinks 0.80 is greater than 0.8 because it has more digits. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0095",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Nora certifies that 0.90 = 0.9 exactly. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Nora writes 0.90 = 0.9. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0096",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Luca argues 0.10 must beat 0.1 because it has more digits. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Luca says 0.10 is bigger than 0.1 because it has more digits. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0097",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ava certifies that 0.30 = 0.3 exactly. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ava says 0.30 and 0.3 are equal. Is Ava right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0098",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Omar argues 0.50 must beat 0.5 because it has more digits. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Omar says 0.50 is bigger than 0.5 because it has more digits. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0099",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ben certifies that 0.70 = 0.7 exactly. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Ben writes 0.70 = 0.7. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0100",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Finn argues 0.90 must beat 0.9 because it has more digits. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Finn thinks 0.90 is greater than 0.9 because it has more digits. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0101",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Priya certifies that 0.20 = 0.2 exactly. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Priya writes 0.20 = 0.2. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0102",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "trailingZero_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Sam argues 0.40 must beat 0.4 because it has more digits. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Sam thinks 0.40 is greater than 0.4 because it has more digits. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0103",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":2,"den":10,"kind":"shadeSaid","said":"0.02"},"truth":false,"promptText":"For 2 colored parts out of 10, Lily records 0.02. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":2,"den":10,"kind":"shadeSaid","said":"0.02"},"truth":false,"promptText":"A strip of 10 equal parts has 2 colored. Lily writes the decimal 0.02. Is Lily right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0107",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":9,"den":10,"kind":"shadeSaid","said":"0.9"},"truth":true,"promptText":"A strip of 10 equal parts has 9 colored. Amara writes the decimal 0.9. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":9,"den":10,"kind":"shadeSaid","said":"0.9"},"truth":true,"promptText":"For 9 colored parts out of 10, Amara records 0.9. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0108",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":8,"den":10,"kind":"shadeSaid","said":"0.08"},"truth":false,"promptText":"For 8 colored parts out of 10, Theo records 0.08. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":8,"den":10,"kind":"shadeSaid","said":"0.08"},"truth":false,"promptText":"A strip of 10 equal parts has 8 colored. Theo writes the decimal 0.08. Is Theo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0111",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":6,"den":10,"kind":"shadeSaid","said":"0.6"},"truth":true,"promptText":"A strip of 10 equal parts has 6 colored. Ida writes the decimal 0.6. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":6,"den":10,"kind":"shadeSaid","said":"0.6"},"truth":true,"promptText":"For 6 colored parts out of 10, Ida records 0.6. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0112",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":4,"den":10,"kind":"shadeSaid","said":"0.4"},"truth":true,"promptText":"A strip of 10 equal parts has 4 colored. Nora writes the decimal 0.4. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":4,"den":10,"kind":"shadeSaid","said":"0.4"},"truth":true,"promptText":"For 4 colored parts out of 10, Nora records 0.4. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0116",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":1,"den":10,"kind":"shadeSaid","said":"0.01"},"truth":false,"promptText":"For 1 colored parts out of 10, Omar records 0.01. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":1,"den":10,"kind":"shadeSaid","said":"0.01"},"truth":false,"promptText":"For 1 colored part out of 10, Omar records 0.01. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0119",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":6,"den":10,"kind":"shadeSaid","said":"0.06"},"truth":false,"promptText":"For 6 colored parts out of 10, Finn records 0.06. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":6,"den":10,"kind":"shadeSaid","said":"0.06"},"truth":false,"promptText":"A strip of 10 equal parts has 6 colored. Finn writes the decimal 0.06. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0121",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":7,"den":100,"kind":"shadeSaid","said":"0.7"},"truth":false,"promptText":"Rosa labels 7-of-100 colored squares as 0.7. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":7,"den":100,"kind":"shadeSaid","said":"0.7"},"truth":false,"promptText":"A 100-square grid shows 7 squares colored, and Rosa writes 0.7. Does the decimal match?"}},
   },
   {
     itemId: "decimals-conc-b0821-0123",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":40,"den":100,"kind":"shadeSaid","said":"0.40"},"truth":true,"promptText":"A 100-square grid shows 40 squares colored, and Diego writes 0.40. Does the decimal match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":40,"den":100,"kind":"shadeSaid","said":"0.40"},"truth":true,"promptText":"On a 100-square grid, 40 squares are colored. Diego says that is 0.40. Is Diego right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0124",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":63,"den":100,"kind":"shadeSaid","said":"0.36"},"truth":false,"promptText":"Nora labels 63-of-100 colored squares as 0.36. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":63,"den":100,"kind":"shadeSaid","said":"0.36"},"truth":false,"promptText":"On a 100-square grid, 63 squares are colored. Nora says that is 0.36. Is Nora right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0125",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":50,"den":100,"kind":"shadeSaid","said":"0.5"},"truth":true,"promptText":"Ava labels 50-of-100 colored squares as 0.5. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":50,"den":100,"kind":"shadeSaid","said":"0.5"},"truth":true,"promptText":"On a 100-square grid, 50 squares are colored. Ava says that is 0.5. Is Ava right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0127",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":17,"den":100,"kind":"shadeSaid","said":"0.17"},"truth":true,"promptText":"A 100-square grid shows 17 squares colored, and Omar writes 0.17. Does the decimal match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":17,"den":100,"kind":"shadeSaid","said":"0.17"},"truth":true,"promptText":"On a 100-square grid, 17 squares are colored. Omar says that is 0.17. Is Omar right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0128",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":90,"den":100,"kind":"shadeSaid","said":"0.09"},"truth":false,"promptText":"Ben labels 90-of-100 colored squares as 0.09. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":90,"den":100,"kind":"shadeSaid","said":"0.09"},"truth":false,"promptText":"A 100-square grid shows 90 squares colored, and Ben writes 0.09. Does the decimal match?"}},
   },
   {
     itemId: "decimals-conc-b0821-0129",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":4,"den":100,"kind":"shadeSaid","said":"0.4"},"truth":false,"promptText":"Priya labels 4-of-100 colored squares as 0.4. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":4,"den":100,"kind":"shadeSaid","said":"0.4"},"truth":false,"promptText":"On a 100-square grid, 4 squares are colored. Priya says that is 0.4. Is Priya right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0131",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":75,"den":100,"kind":"shadeSaid","said":"0.75"},"truth":true,"promptText":"A 100-square grid shows 75 squares colored, and Sam writes 0.75. Does the decimal match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":75,"den":100,"kind":"shadeSaid","said":"0.75"},"truth":true,"promptText":"On a 100-square grid, 75 squares are colored. Sam says that is 0.75. Is Sam right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0132",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":12,"den":100,"kind":"shadeSaid","said":"0.21"},"truth":false,"promptText":"Nia labels 12-of-100 colored squares as 0.21. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":12,"den":100,"kind":"shadeSaid","said":"0.21"},"truth":false,"promptText":"A 100-square grid shows 12 squares colored, and Nia writes 0.21. Does the decimal match?"}},
   },
   {
     itemId: "decimals-conc-b0821-0133",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":30,"den":100,"kind":"shadeSaid","said":"0.03"},"truth":false,"promptText":"June labels 30-of-100 colored squares as 0.03. Is June right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":30,"den":100,"kind":"shadeSaid","said":"0.03"},"truth":false,"promptText":"On a 100-square grid, 30 squares are colored. June says that is 0.03. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0135",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":55,"den":100,"kind":"shadeSaid","said":"0.55"},"truth":true,"promptText":"A 100-square grid shows 55 squares colored, and Lily writes 0.55. Does the decimal match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":55,"den":100,"kind":"shadeSaid","said":"0.55"},"truth":true,"promptText":"On a 100-square grid, 55 squares are colored. Lily says that is 0.55. Is Lily right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0136",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":9,"den":100,"kind":"shadeSaid","said":"0.9"},"truth":false,"promptText":"Amara labels 9-of-100 colored squares as 0.9. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":9,"den":100,"kind":"shadeSaid","said":"0.9"},"truth":false,"promptText":"A 100-square grid shows 9 squares colored, and Amara writes 0.9. Does the decimal match?"}},
   },
   {
     itemId: "decimals-conc-b0821-0137",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":20,"den":100,"kind":"shadeSaid","said":"0.02"},"truth":false,"promptText":"Mina labels 20-of-100 colored squares as 0.02. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":20,"den":100,"kind":"shadeSaid","said":"0.02"},"truth":false,"promptText":"On a 100-square grid, 20 squares are colored. Mina says that is 0.02. Is Mina right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0139",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":45,"den":100,"kind":"shadeSaid","said":"0.45"},"truth":true,"promptText":"Diego records 0.45 for 45 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":45,"den":100,"kind":"shadeSaid","said":"0.45"},"truth":true,"promptText":"On a hundred grid, Diego fills 45 squares and writes 0.45. Is Diego right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0140",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":6,"den":100,"kind":"shadeSaid","said":"0.6"},"truth":false,"promptText":"Auditing Nora's chart: 6 of 100 filled, decimal written 0.6. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":6,"den":100,"kind":"shadeSaid","said":"0.6"},"truth":false,"promptText":"Nora fills 6 of 100 squares on a chart and writes 0.6. Is that the right decimal?"}},
   },
   {
     itemId: "decimals-conc-b0821-0141",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":70,"den":100,"kind":"shadeSaid","said":"0.70"},"truth":true,"promptText":"Luca records 0.70 for 70 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":70,"den":100,"kind":"shadeSaid","said":"0.70"},"truth":true,"promptText":"On a hundred grid, Luca fills 70 squares and writes 0.70. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0142",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":28,"den":100,"kind":"shadeSaid","said":"0.82"},"truth":false,"promptText":"Auditing Ava's chart: 28 of 100 filled, decimal written 0.82. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":28,"den":100,"kind":"shadeSaid","said":"0.82"},"truth":false,"promptText":"On a hundred grid, Ava fills 28 squares and writes 0.82. Is Ava right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0143",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":3,"den":100,"kind":"shadeSaid","said":"0.03"},"truth":true,"promptText":"Omar records 0.03 for 3 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":3,"den":100,"kind":"shadeSaid","said":"0.03"},"truth":true,"promptText":"On a hundred grid, Omar fills 3 squares and writes 0.03. Is Omar right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0144",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":60,"den":100,"kind":"shadeSaid","said":"0.6"},"truth":true,"promptText":"Auditing Ben's chart: 60 of 100 filled, decimal written 0.6. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":60,"den":100,"kind":"shadeSaid","said":"0.6"},"truth":true,"promptText":"Ben fills 60 of 100 squares on a chart and writes 0.6. Is that the right decimal?"}},
   },
   {
     itemId: "decimals-conc-b0821-0145",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":37,"den":100,"kind":"shadeSaid","said":"0.37"},"truth":true,"promptText":"Finn records 0.37 for 37 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":37,"den":100,"kind":"shadeSaid","said":"0.37"},"truth":true,"promptText":"Finn's chart has 37 of 100 squares filled. Finn writes 0.37 for the filled part. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0146",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":80,"den":100,"kind":"shadeSaid","said":"0.08"},"truth":false,"promptText":"Auditing Priya's chart: 80 of 100 filled, decimal written 0.08. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":80,"den":100,"kind":"shadeSaid","said":"0.08"},"truth":false,"promptText":"Priya fills 80 of 100 squares on a chart and writes 0.08. Is that the right decimal?"}},
   },
   {
     itemId: "decimals-conc-b0821-0147",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":52,"den":100,"kind":"shadeSaid","said":"0.52"},"truth":true,"promptText":"Sam records 0.52 for 52 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":52,"den":100,"kind":"shadeSaid","said":"0.52"},"truth":true,"promptText":"Sam's chart has 52 of 100 squares filled. Sam writes 0.52 for the filled part. Is Sam right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0148",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":5,"den":100,"kind":"shadeSaid","said":"0.5"},"truth":false,"promptText":"Auditing Nia's chart: 5 of 100 filled, decimal written 0.5. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":5,"den":100,"kind":"shadeSaid","said":"0.5"},"truth":false,"promptText":"5 of 100 squares on Nia's chart are filled, and Nia writes 0.5. Is Nia right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0149",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":94,"den":100,"kind":"shadeSaid","said":"0.94"},"truth":true,"promptText":"Kai records 0.94 for 94 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":94,"den":100,"kind":"shadeSaid","said":"0.94"},"truth":true,"promptText":"94 of 100 squares on Kai's chart are filled, and Kai writes 0.94. Is Kai right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0150",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":16,"den":100,"kind":"shadeSaid","said":"0.61"},"truth":false,"promptText":"Auditing June's chart: 16 of 100 filled, decimal written 0.61. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":16,"den":100,"kind":"shadeSaid","said":"0.61"},"truth":false,"promptText":"On a hundred grid, June fills 16 squares and writes 0.61. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0151",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":77,"den":100,"kind":"shadeSaid","said":"0.77"},"truth":true,"promptText":"Lily records 0.77 for 77 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":77,"den":100,"kind":"shadeSaid","said":"0.77"},"truth":true,"promptText":"Lily fills 77 of 100 squares on a chart and writes 0.77. Is that the right decimal?"}},
   },
   {
     itemId: "decimals-conc-b0821-0152",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":40,"den":100,"kind":"shadeSaid","said":"0.04"},"truth":false,"promptText":"Auditing Amara's chart: 40 of 100 filled, decimal written 0.04. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":40,"den":100,"kind":"shadeSaid","said":"0.04"},"truth":false,"promptText":"Amara's chart has 40 of 100 squares filled. Amara writes 0.04 for the filled part. Is Amara right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0153",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":68,"den":100,"kind":"shadeSaid","said":"0.68"},"truth":true,"promptText":"Leo records 0.68 for 68 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":68,"den":100,"kind":"shadeSaid","said":"0.68"},"truth":true,"promptText":"Leo fills 68 of 100 squares on a chart and writes 0.68. Is that the right decimal?"}},
   },
   {
     itemId: "decimals-conc-b0821-0154",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":2,"den":100,"kind":"shadeSaid","said":"0.2"},"truth":false,"promptText":"Auditing Mina's chart: 2 of 100 filled, decimal written 0.2. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":2,"den":100,"kind":"shadeSaid","said":"0.2"},"truth":false,"promptText":"Mina fills 2 of 100 squares on a chart and writes 0.2. Is that the right decimal?"}},
   },
   {
     itemId: "decimals-conc-b0821-0155",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":83,"den":100,"kind":"shadeSaid","said":"0.83"},"truth":true,"promptText":"Theo records 0.83 for 83 filled squares on a hundred-grid. Is the record right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"n":83,"den":100,"kind":"shadeSaid","said":"0.83"},"truth":true,"promptText":"Theo fills 83 of 100 squares on a chart and writes 0.83. Is Theo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0156",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "shadeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":10,"den":100,"kind":"shadeSaid","said":"0.01"},"truth":false,"promptText":"Auditing Ida's chart: 10 of 100 filled, decimal written 0.01. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"n":10,"den":100,"kind":"shadeSaid","said":"0.01"},"truth":false,"promptText":"Ida's chart has 10 of 100 squares filled. Ida writes 0.01 for the filled part. Is Ida right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0157",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":25,"kind":"fracSaid","said":"0.25"},"truth":true,"promptText":"Omar converts 25/100 and gets 0.25. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":25,"kind":"fracSaid","said":"0.25"},"truth":true,"promptText":"Omar writes 25/100 as 0.25. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0176",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":50,"kind":"fracSaid","said":"0.50"},"truth":true,"promptText":"Finn converts 50/100 and gets 0.50. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":50,"kind":"fracSaid","said":"0.50"},"truth":true,"promptText":"Finn says 50/100 is the same as 0.50. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0178",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":75,"kind":"fracSaid","said":"0.75"},"truth":true,"promptText":"Sam converts 75/100 and gets 0.75. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":75,"kind":"fracSaid","said":"0.75"},"truth":true,"promptText":"Sam writes 75/100 as the decimal 0.75. Is Sam right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0180",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":40,"kind":"fracSaid","said":"0.40"},"truth":true,"promptText":"Kai converts 40/100 and gets 0.40. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":40,"kind":"fracSaid","said":"0.40"},"truth":true,"promptText":"Kai writes 40/100 as 0.40. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0182",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":88,"kind":"fracSaid","said":"0.88"},"truth":true,"promptText":"On June's card, 88/100 is matched with 0.88. Is the match right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":88,"kind":"fracSaid","said":"0.88"},"truth":true,"promptText":"June writes 88/100 as the decimal 0.88. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0183",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":62,"kind":"fracSaid","said":"0.26"},"truth":false,"promptText":"Lily converts 62/100 and gets 0.26. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":62,"kind":"fracSaid","said":"0.26"},"truth":false,"promptText":"Lily says 62/100 is the same as 0.26. Is Lily right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0184",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":16,"kind":"fracSaid","said":"0.61"},"truth":false,"promptText":"Leo converts 16/100 and gets 0.61. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":16,"kind":"fracSaid","said":"0.61"},"truth":false,"promptText":"Leo writes 16/100 as the decimal 0.61. Is Leo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0186",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":99,"kind":"fracSaid","said":"0.99"},"truth":true,"promptText":"On Mina's card, 99/100 is matched with 0.99. Is the match right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":100,"n":99,"kind":"fracSaid","said":"0.99"},"truth":true,"promptText":"Mina says 99/100 is the same as 0.99. Is Mina right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0187",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":9,"kind":"fracSaid","said":"0.9"},"truth":false,"promptText":"Theo converts 9/100 and gets 0.9. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":9,"kind":"fracSaid","said":"0.9"},"truth":false,"promptText":"Theo says 9/100 is the same as 0.9. Is Theo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0188",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":20,"kind":"fracSaid","said":"0.02"},"truth":false,"promptText":"Zoe converts 20/100 and gets 0.02. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":20,"kind":"fracSaid","said":"0.02"},"truth":false,"promptText":"Zoe writes 20/100 as 0.02. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0190",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":3,"kind":"fracSaid","said":"0.3"},"truth":false,"promptText":"Diego converts 3/100 and gets 0.3. Does the conversion hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":100,"n":3,"kind":"fracSaid","said":"0.3"},"truth":false,"promptText":"Diego writes 3/100 as the decimal 0.3. Is Diego right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0192",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":2,"n":1,"kind":"fracSaid","said":"0.5"},"truth":true,"promptText":"Finn certifies 1/2 = 0.5. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":2,"n":1,"kind":"fracSaid","said":"0.5"},"truth":true,"promptText":"Finn writes 1/2 = 0.5. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0194",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":4,"n":1,"kind":"fracSaid","said":"0.4"},"truth":false,"promptText":"Cross-checking Priya's claim that 1/4 equals 0.4 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":4,"n":1,"kind":"fracSaid","said":"0.4"},"truth":false,"promptText":"Priya says 1/4 is the same as 0.4. Is Priya right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0195",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":4,"n":3,"kind":"fracSaid","said":"0.75"},"truth":true,"promptText":"Sam certifies 3/4 = 0.75. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":4,"n":3,"kind":"fracSaid","said":"0.75"},"truth":true,"promptText":"Sam writes 3/4 = 0.75. Is Sam right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0196",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":5,"n":1,"kind":"fracSaid","said":"0.15"},"truth":false,"promptText":"Cross-checking Nia's claim that 1/5 equals 0.15 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":5,"n":1,"kind":"fracSaid","said":"0.15"},"truth":false,"promptText":"Nia says 1/5 is the same as 0.15. Is Nia right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0197",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":5,"n":2,"kind":"fracSaid","said":"0.4"},"truth":true,"promptText":"Kai certifies 2/5 = 0.4. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":5,"n":2,"kind":"fracSaid","said":"0.4"},"truth":true,"promptText":"Kai says 2/5 is the same as 0.4. Is Kai right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0198",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":5,"n":3,"kind":"fracSaid","said":"0.35"},"truth":false,"promptText":"Cross-checking June's claim that 3/5 equals 0.35 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":5,"n":3,"kind":"fracSaid","said":"0.35"},"truth":false,"promptText":"June says 3/5 is the same as 0.35. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0199",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":5,"n":4,"kind":"fracSaid","said":"0.8"},"truth":true,"promptText":"Lily certifies 4/5 = 0.8. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":5,"n":4,"kind":"fracSaid","said":"0.8"},"truth":true,"promptText":"Is Lily right that 4/5 = 0.8?"}},
   },
   {
     itemId: "decimals-conc-b0821-0200",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":20,"n":1,"kind":"fracSaid","said":"0.05"},"truth":true,"promptText":"Cross-checking Amara's claim that 1/20 equals 0.05 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":20,"n":1,"kind":"fracSaid","said":"0.05"},"truth":true,"promptText":"Is Amara right that 1/20 equals 0.05?"}},
   },
   {
     itemId: "decimals-conc-b0821-0201",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":20,"n":3,"kind":"fracSaid","said":"0.3"},"truth":false,"promptText":"Leo certifies 3/20 = 0.3. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":20,"n":3,"kind":"fracSaid","said":"0.3"},"truth":false,"promptText":"Is Leo right that 3/20 = 0.3?"}},
   },
   {
     itemId: "decimals-conc-b0821-0202",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":20,"n":7,"kind":"fracSaid","said":"0.35"},"truth":true,"promptText":"Cross-checking Mina's claim that 7/20 equals 0.35 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":20,"n":7,"kind":"fracSaid","said":"0.35"},"truth":true,"promptText":"Is Mina right that 7/20 equals 0.35?"}},
   },
   {
     itemId: "decimals-conc-b0821-0203",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":25,"n":1,"kind":"fracSaid","said":"0.4"},"truth":false,"promptText":"Theo certifies 1/25 = 0.4. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":25,"n":1,"kind":"fracSaid","said":"0.4"},"truth":false,"promptText":"Theo writes 1/25 = 0.4. Is Theo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0204",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":25,"n":12,"kind":"fracSaid","said":"0.48"},"truth":true,"promptText":"Cross-checking Ida's claim that 12/25 equals 0.48 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":25,"n":12,"kind":"fracSaid","said":"0.48"},"truth":true,"promptText":"Is Ida right that 12/25 equals 0.48?"}},
   },
   {
     itemId: "decimals-conc-b0821-0205",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":4,"n":1,"kind":"fracSaid","said":"0.25"},"truth":true,"promptText":"Zoe certifies 1/4 = 0.25. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":4,"n":1,"kind":"fracSaid","said":"0.25"},"truth":true,"promptText":"Is Zoe right that 1/4 = 0.25?"}},
   },
   {
     itemId: "decimals-conc-b0821-0206",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":2,"n":1,"kind":"fracSaid","said":"0.2"},"truth":false,"promptText":"Cross-checking Rosa's claim that 1/2 equals 0.2 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":2,"n":1,"kind":"fracSaid","said":"0.2"},"truth":false,"promptText":"Is Rosa right that 1/2 equals 0.2?"}},
   },
   {
     itemId: "decimals-conc-b0821-0207",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":4,"n":3,"kind":"fracSaid","said":"0.34"},"truth":false,"promptText":"Diego certifies 3/4 = 0.34. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":4,"n":3,"kind":"fracSaid","said":"0.34"},"truth":false,"promptText":"Is Diego right that 3/4 = 0.34?"}},
   },
   {
     itemId: "decimals-conc-b0821-0208",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":5,"n":2,"kind":"fracSaid","said":"0.25"},"truth":false,"promptText":"Cross-checking Nora's claim that 2/5 equals 0.25 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":5,"n":2,"kind":"fracSaid","said":"0.25"},"truth":false,"promptText":"Is Nora right that 2/5 equals 0.25?"}},
   },
   {
     itemId: "decimals-conc-b0821-0209",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":5,"n":4,"kind":"fracSaid","said":"0.45"},"truth":false,"promptText":"Luca certifies 4/5 = 0.45. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"d":5,"n":4,"kind":"fracSaid","said":"0.45"},"truth":false,"promptText":"Luca writes 4/5 = 0.45. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0210",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "fracDecJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":5,"n":1,"kind":"fracSaid","said":"0.2"},"truth":true,"promptText":"Cross-checking Ava's claim that 1/5 equals 0.2 — does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"d":5,"n":1,"kind":"fracSaid","said":"0.2"},"truth":true,"promptText":"Ava says 1/5 is the same as 0.2. Is Ava right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0211",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Luca claims the decimal 0.5 is exactly one half. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Luca says 0.5 is exactly one half. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0212",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.2,"kind":"halfSaid"},"truth":false,"promptText":"0.2 equals a half, says Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.2,"kind":"halfSaid"},"truth":false,"promptText":"Ava says 0.2 is exactly one half. Is Ava right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0213",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Omar claims the decimal 0.5 is exactly one half. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Omar says 0.5 and one half are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0214",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.7,"kind":"halfSaid"},"truth":false,"promptText":"0.7 equals a half, says Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.7,"kind":"halfSaid"},"truth":false,"promptText":"Ben says 0.7 and one half are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0215",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Finn claims the decimal 0.5 is exactly one half. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Finn says 0.5 is exactly one half. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0216",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.1,"kind":"halfSaid"},"truth":false,"promptText":"0.1 equals a half, says Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.1,"kind":"halfSaid"},"truth":false,"promptText":"Priya says 0.1 is exactly one half. Is Priya right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0217",
@@ -8292,7 +8292,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Sam claims the decimal 0.5 is exactly one half. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Sam says 0.5 and one half are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0218",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.9,"kind":"halfSaid"},"truth":false,"promptText":"0.9 equals a half, says Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.9,"kind":"halfSaid"},"truth":false,"promptText":"Nia says 0.9 and one half are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0219",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Kai claims the decimal 0.5 is exactly one half. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Kai says 0.5 is exactly one half. Is Kai right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0220",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.4,"kind":"halfSaid"},"truth":false,"promptText":"0.4 equals a half, says June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.4,"kind":"halfSaid"},"truth":false,"promptText":"June says 0.4 is exactly one half. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0221",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Lily claims the decimal 0.5 is exactly one half. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Lily says 0.5 and one half are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0222",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.6,"kind":"halfSaid"},"truth":false,"promptText":"0.6 equals a half, says Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.6,"kind":"halfSaid"},"truth":false,"promptText":"Amara says 0.6 and one half are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0223",
@@ -8352,7 +8352,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Leo claims the decimal 0.5 is exactly one half. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Leo says 0.5 is exactly one half. Is Leo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0224",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.3,"kind":"halfSaid"},"truth":false,"promptText":"0.3 equals a half, says Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.3,"kind":"halfSaid"},"truth":false,"promptText":"Mina says 0.3 is exactly one half. Is Mina right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0225",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Theo claims the decimal 0.5 is exactly one half. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Theo says 0.5 and one half are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0226",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "halfJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.8,"kind":"halfSaid"},"truth":false,"promptText":"0.8 equals a half, says Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.8,"kind":"halfSaid"},"truth":false,"promptText":"Ida says 0.8 and one half are the same amount. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0227",
@@ -8392,7 +8392,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"June marks 0.50 at the halfway point between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"June marks 0.50 at the halfway point between 0 and 1. Does 0.50 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0228",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"halfSaid"},"truth":false,"promptText":"According to Lily, 0.05 and 1/2 are the same number. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"halfSaid"},"truth":false,"promptText":"Lily says 0.05 and 1/2 are the same number. Is Lily right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0229",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Amara marks 0.5 at the halfway point between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Amara says 0.5 and 1/2 are the same number. Is Amara right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0230",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.25,"kind":"halfSaid"},"truth":false,"promptText":"According to Leo, 0.25 and 1/2 are the same number. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.25,"kind":"halfSaid"},"truth":false,"promptText":"Leo marks 0.25 at the halfway point between 0 and 1. Does 0.25 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0231",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Mina marks 0.50 at the halfway point between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Mina marks 0.50 at the halfway point between 0 and 1. Does 0.50 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0232",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.15,"kind":"halfSaid"},"truth":false,"promptText":"According to Theo, 0.15 and 1/2 are the same number. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.15,"kind":"halfSaid"},"truth":false,"promptText":"Theo says 0.15 and 1/2 are the same number. Is Theo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0233",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ida marks 0.5 at the halfway point between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ida says 0.5 and 1/2 are the same number. Is Ida right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0234",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.55,"kind":"halfSaid"},"truth":false,"promptText":"According to Zoe, 0.55 and 1/2 are the same number. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.55,"kind":"halfSaid"},"truth":false,"promptText":"Zoe marks 0.55 at the halfway point between 0 and 1. Does 0.55 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0235",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Rosa marks 0.50 at the halfway point between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Rosa marks 0.50 at the halfway point between 0 and 1. Does 0.50 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0236",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.45,"kind":"halfSaid"},"truth":false,"promptText":"According to Diego, 0.45 and 1/2 are the same number. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.45,"kind":"halfSaid"},"truth":false,"promptText":"Diego says 0.45 and 1/2 are the same number. Is Diego right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0237",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Nora marks 0.5 at the halfway point between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Nora says 0.5 and 1/2 are the same number. Is Nora right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0238",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.75,"kind":"halfSaid"},"truth":false,"promptText":"According to Luca, 0.75 and 1/2 are the same number. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.75,"kind":"halfSaid"},"truth":false,"promptText":"Luca marks 0.75 at the halfway point between 0 and 1. Does 0.75 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0239",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ava marks 0.50 at the halfway point between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ava marks 0.50 at the halfway point between 0 and 1. Does 0.50 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0240",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.35,"kind":"halfSaid"},"truth":false,"promptText":"According to Omar, 0.35 and 1/2 are the same number. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.35,"kind":"halfSaid"},"truth":false,"promptText":"Omar says 0.35 and 1/2 are the same number. Is Omar right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0241",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ben marks 0.5 at the halfway point between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ben says 0.5 and 1/2 are the same number. Is Ben right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0242",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "halfJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.65,"kind":"halfSaid"},"truth":false,"promptText":"According to Finn, 0.65 and 1/2 are the same number. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.65,"kind":"halfSaid"},"truth":false,"promptText":"Finn marks 0.65 at the halfway point between 0 and 1. Does 0.65 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0243",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Amara equates 0.50 with 1/2 exactly. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Is Amara right that 0.50 is equal to 1/2?"}},
   },
   {
     itemId: "decimals-conc-b0821-0244",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"halfSaid"},"truth":false,"promptText":"On Leo's number line, 0.05 sits exactly at 1/2. Should it?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"halfSaid"},"truth":false,"promptText":"On Leo's number line, 0.05 sits exactly at 1/2. Does 0.05 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0245",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Mina equates 0.5 with 1/2 exactly. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Mina says 0.5 and 1/2 are equal. Is Mina right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0246",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.52,"kind":"halfSaid"},"truth":false,"promptText":"On Theo's number line, 0.52 sits exactly at 1/2. Should it?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.52,"kind":"halfSaid"},"truth":false,"promptText":"Theo says 0.52 and 1/2 are equal. Is Theo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0247",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ida equates 0.50 with 1/2 exactly. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"On Ida's number line, 0.50 sits exactly at 1/2. Does 0.50 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0248",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.48,"kind":"halfSaid"},"truth":false,"promptText":"On Zoe's number line, 0.48 sits exactly at 1/2. Should it?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.48,"kind":"halfSaid"},"truth":false,"promptText":"Is Zoe right that 0.48 is equal to 1/2?"}},
   },
   {
     itemId: "decimals-conc-b0821-0249",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Rosa equates 0.5 with 1/2 exactly. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Rosa says 0.5 and 1/2 are equal. Is Rosa right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0250",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.55,"kind":"halfSaid"},"truth":false,"promptText":"On Diego's number line, 0.55 sits exactly at 1/2. Should it?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.55,"kind":"halfSaid"},"truth":false,"promptText":"On Diego's number line, 0.55 sits exactly at 1/2. Does 0.55 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0251",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Nora equates 0.50 with 1/2 exactly. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Nora says 0.50 is the same as 1/2. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0252",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"halfSaid"},"truth":false,"promptText":"On Luca's number line, 0.05 sits exactly at 1/2. Should it?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"halfSaid"},"truth":false,"promptText":"Luca says 0.05 and 1/2 are equal. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0253",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ava equates 0.5 with 1/2 exactly. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ava says 0.5 is the same as 1/2. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0254",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.51,"kind":"halfSaid"},"truth":false,"promptText":"On Omar's number line, 0.51 sits exactly at 1/2. Should it?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.51,"kind":"halfSaid"},"truth":false,"promptText":"Omar says 0.51 is the same as 1/2. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0255",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Ben equates 0.50 with 1/2 exactly. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"On Ben's number line, 0.50 sits exactly at 1/2. Does 0.50 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0256",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.49,"kind":"halfSaid"},"truth":false,"promptText":"On Finn's number line, 0.49 sits exactly at 1/2. Should it?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.49,"kind":"halfSaid"},"truth":false,"promptText":"Is Finn right that 0.49 is equal to 1/2?"}},
   },
   {
     itemId: "decimals-conc-b0821-0257",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Priya equates 0.5 with 1/2 exactly. Is the equation sound?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"halfSaid"},"truth":true,"promptText":"Is Priya right that 0.5 is equal to 1/2?"}},
   },
   {
     itemId: "decimals-conc-b0821-0258",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "halfJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.15,"kind":"halfSaid"},"truth":false,"promptText":"On Sam's number line, 0.15 sits exactly at 1/2. Should it?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.15,"kind":"halfSaid"},"truth":false,"promptText":"Sam says 0.15 is the same as 1/2. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0259",
@@ -8892,7 +8892,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Zoe pairs 1/10 with 10/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Zoe says 1/10 and 10/100 are equal amounts. Is Zoe right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0278",
@@ -8902,7 +8902,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Rosa says 2/10 is MORE than 20/100 because hundredths are smaller. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Rosa says 2/10 is more than 20/100 because hundredths are smaller. Is Rosa right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0279",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Diego pairs 3/10 with 30/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Diego says 3/10 is the same amount as 30/100. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0280",
@@ -8922,7 +8922,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nora says 4/10 is MORE than 40/100 because hundredths are smaller. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nora says 4/10 is more than 40/100. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0281",
@@ -8932,7 +8932,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Luca pairs 5/10 with 50/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Luca writes 5/10 = 50/100. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0282",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ava says 6/10 is MORE than 60/100 because hundredths are smaller. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ava writes 6/10 > 60/100. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0283",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Omar pairs 7/10 with 70/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Omar says 7/10 and 70/100 are equal amounts. Is Omar right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0284",
@@ -8962,7 +8962,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ben says 8/10 is MORE than 80/100 because hundredths are smaller. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ben says 8/10 is more than 80/100 because hundredths are smaller. Is Ben right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0285",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Finn pairs 9/10 with 90/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Finn says 9/10 is the same amount as 90/100. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0286",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Priya says 1/10 is MORE than 10/100 because hundredths are smaller. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Priya says 1/10 is more than 10/100. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0287",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Sam pairs 2/10 with 20/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Sam writes 2/10 = 20/100. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0288",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nia says 3/10 is MORE than 30/100 because hundredths are smaller. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nia writes 3/10 > 30/100. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0289",
@@ -9012,7 +9012,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Kai pairs 4/10 with 40/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Kai says 4/10 and 40/100 are equal amounts. Is Kai right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0290",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"June says 5/10 is MORE than 50/100 because hundredths are smaller. Is June right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"June says 5/10 is more than 50/100 because hundredths are smaller. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0291",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Lily pairs 6/10 with 60/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Lily says 6/10 is the same amount as 60/100. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0292",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Amara says 7/10 is MORE than 70/100 because hundredths are smaller. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Amara says 7/10 is more than 70/100. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0293",
@@ -9052,7 +9052,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Leo pairs 8/10 with 80/100 as equal amounts. Do they match?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Leo writes 8/10 = 80/100. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0294",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Mina says 9/10 is MORE than 90/100 because hundredths are smaller. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Mina writes 9/10 > 90/100. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0295",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Diego certifies 1/10 = 10/100 = 0.10. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Diego says 1/10 = 10/100 = 0.10. Is Diego right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0296",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nora insists 20/100 must beat 2/10 since 20 > 2. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nora says 20/100 is bigger than 2/10 because 20 > 2. Is Nora right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0297",
@@ -9092,7 +9092,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Luca certifies 3/10 = 30/100 = 0.30. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Luca writes 3/10 = 30/100 = 0.30. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0298",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ava insists 40/100 must beat 4/10 since 40 > 4. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ava says 40/100 is bigger than 4/10 because 40 > 4. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0299",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Omar certifies 5/10 = 50/100 = 0.50. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Omar says 5/10 = 50/100 = 0.50. Is Omar right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0300",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ben insists 60/100 must beat 6/10 since 60 > 6. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ben thinks 60/100 is more than 6/10 because 60 > 6. Is Ben right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0301",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Finn certifies 7/10 = 70/100 = 0.70. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Finn says 7/10, 70/100, and 0.70 are all equal. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0302",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Priya insists 80/100 must beat 8/10 since 80 > 8. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Priya thinks 80/100 is more than 8/10 because 80 > 8. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0303",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Sam certifies 9/10 = 90/100 = 0.90. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Sam says 9/10, 90/100, and 0.90 are all equal. Is Sam right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0304",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nia insists 10/100 must beat 1/10 since 10 > 1. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Nia says 10/100 is bigger than 1/10 because 10 > 1. Is Nia right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0305",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Kai certifies 2/10 = 20/100 = 0.20. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Kai writes 2/10 = 20/100 = 0.20. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0306",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"June insists 30/100 must beat 3/10 since 30 > 3. Is June right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"June says 30/100 is bigger than 3/10 because 30 > 3. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0307",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Lily certifies 4/10 = 40/100 = 0.40. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Lily says 4/10, 40/100, and 0.40 are all equal. Is Lily right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0308",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Amara insists 50/100 must beat 5/10 since 50 > 5. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Amara thinks 50/100 is more than 5/10 because 50 > 5. Is Amara right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0309",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Leo certifies 6/10 = 60/100 = 0.60. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Leo says 6/10 = 60/100 = 0.60. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0310",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Mina insists 70/100 must beat 7/10 since 70 > 7. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Mina thinks 70/100 is more than 7/10 because 70 > 7. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0311",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Theo certifies 8/10 = 80/100 = 0.80. Is the chain valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":true,"promptText":"Theo writes 8/10 = 80/100 = 0.80. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0312",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "tenHundredJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ida insists 90/100 must beat 9/10 since 90 > 9. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"authored"},"truth":false,"promptText":"Ida says 90/100 is bigger than 9/10 because 90 > 9. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0313",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Mina says 0.15 must beat 0.7 because 15 is more than 7. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Mina says 0.15 must beat 0.7 because 15 is more than 7. Is 0.7 greater than 0.15?"}},
   },
   {
     itemId: "decimals-conc-b0821-0314",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Theo ranks 0.12 above 0.4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Theo says 0.12 is bigger than 0.4. Is 0.4 less than 0.12?"}},
   },
   {
     itemId: "decimals-conc-b0821-0315",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Ida says 0.15 must beat 0.7 because 15 is more than 7. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Ida says 0.15 must beat 0.7 because 15 is more than 7. Is 0.15 less than 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0316",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Zoe ranks 0.12 above 0.4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Because 12 is more than 4, Zoe says 0.12 is bigger than 0.4. Is 0.4 bigger than 0.12?"}},
   },
   {
     itemId: "decimals-conc-b0821-0317",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 0.15 must beat 0.7 because 15 is more than 7. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 0.15 must beat 0.7 because 15 is more than 7. Is 0.15 bigger than 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0318",
@@ -9302,7 +9302,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Diego ranks 0.12 above 0.4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Because 12 is more than 4, Diego says 0.12 is bigger than 0.4. Is 0.12 less than 0.4?"}},
   },
   {
     itemId: "decimals-conc-b0821-0319",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Nora says 0.15 must beat 0.7 because 15 is more than 7. Is Nora right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Nora says 0.15 is greater than 0.7 because 15 is more than 7. Compare the tenths digits first. Is 0.15 greater than 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0320",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Luca ranks 0.12 above 0.4. Is that right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Because 12 is more than 4, Luca says 0.12 is bigger than 0.4. Compare the tenths digits first. Is 0.4 bigger than 0.12?"}},
   },
   {
     itemId: "decimals-conc-b0821-0321",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Ava says 0.15 must beat 0.7 because 15 is more than 7. Is Ava right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Ava says 0.15 must beat 0.7 because 15 is more than 7. Compare the tenths digits first. Is 0.7 less than 0.15?"}},
   },
   {
     itemId: "decimals-conc-b0821-0322",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Omar ranks 0.12 above 0.4. Is that right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Omar thinks 0.12 > 0.4 because 12 > 4. Compare the tenths digits first. Is 0.4 greater than 0.12?"}},
   },
   {
     itemId: "decimals-conc-b0821-0323",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Ben says 0.15 must beat 0.7 because 15 is more than 7. Is Ben right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Ben says 0.15 is greater than 0.7 because 15 is more than 7. Compare the tenths digits first. Is 0.7 greater than 0.15?"}},
   },
   {
     itemId: "decimals-conc-b0821-0324",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Finn ranks 0.12 above 0.4. Is that right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Finn says 0.12 is bigger than 0.4. Compare the tenths digits first. Is 0.12 bigger than 0.4?"}},
   },
   {
     itemId: "decimals-conc-b0821-0325",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Priya says 0.15 must beat 0.7 because 15 is more than 7. Is Priya right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Priya says 0.15 must beat 0.7 because 15 is more than 7. Is Priya right that 0.15 > 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0326",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Sam ranks 0.12 above 0.4. Is that right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Sam thinks 0.12 > 0.4 because 12 > 4. Is 0.12 less than 0.4?"}},
   },
   {
     itemId: "decimals-conc-b0821-0327",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Nia says 0.15 must beat 0.7 because 15 is more than 7. Is Nia right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Nia says 0.15 is greater than 0.7 because 15 is more than 7. Is 0.15 greater than 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0328",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Kai ranks 0.12 above 0.4. Is that right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Kai says 0.12 is bigger than 0.4. Is 0.4 less than 0.12?"}},
   },
   {
     itemId: "decimals-conc-b0821-0329",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"June says 0.15 must beat 0.7 because 15 is more than 7. Is June right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"June says 0.15 must beat 0.7 because 15 is more than 7. Is 0.7 greater than 0.15?"}},
   },
   {
     itemId: "decimals-conc-b0821-0330",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "longerTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Because 12 is more than 4, Lily ranks 0.12 above 0.4. Is that right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily thinks 0.12 > 0.4 because 12 > 4. Is 0.12 greater than 0.4?"}},
   },
   {
     itemId: "decimals-conc-b0821-0331",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Omar claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Omar says 0.18 > 0.6 since 18 is more than 6. Is 0.6 greater than 0.18?"}},
   },
   {
     itemId: "decimals-conc-b0821-0332",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues Ben, so 0.18 > 0.6. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Ben says more digits means a bigger number, so 0.18 > 0.6. Is 0.6 less than 0.18?"}},
   },
   {
     itemId: "decimals-conc-b0821-0333",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Finn right that 0.18 is greater than 0.6 because 18 is more than 6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0334",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues Priya, so 0.18 > 0.6. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Priya says more digits means a bigger number, so 0.18 > 0.6. Is 0.18 less than 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0335",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Sam claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Sam says 0.18 is greater than 0.6 because 18 beats 6. Is 0.18 greater than 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0336",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues Nia, so 0.18 > 0.6. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Nia says more digits means a bigger number, so 0.18 > 0.6. Is 0.6 greater than 0.18?"}},
   },
   {
     itemId: "decimals-conc-b0821-0337",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Kai says 0.18 > 0.6 since 18 is more than 6. Compare the tenths digits first. Is 0.6 greater than 0.18?"}},
   },
   {
     itemId: "decimals-conc-b0821-0338",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues June, so 0.18 > 0.6. Is June right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"June says more digits means a bigger number, so 0.18 > 0.6. Compare the tenths digits first. Is 0.18 greater than 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0339",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily says 0.18 is greater than 0.6 because 18 is more than 6. Compare the tenths digits first. Is Lily right that 0.18 > 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0340",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues Amara, so 0.18 > 0.6. Is Amara right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Amara says more digits means a bigger number, so 0.18 > 0.6. Compare the tenths digits first. Is 0.18 less than 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0341",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Leo claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Leo says 0.18 is greater than 0.6 because 18 beats 6. Compare the tenths digits first. Is 0.6 greater than 0.18?"}},
   },
   {
     itemId: "decimals-conc-b0821-0342",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues Mina, so 0.18 > 0.6. Is Mina right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Mina says more digits means a bigger number, so 0.18 > 0.6. Compare the tenths digits first. Is 0.18 greater than 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0343",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Theo claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Theo says 0.18 > 0.6 since 18 is more than 6. Is 0.18 less than 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0344",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues Ida, so 0.18 > 0.6. Is Ida right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Ida says more digits means a bigger number, so 0.18 > 0.6. Is 0.6 less than 0.18?"}},
   },
   {
     itemId: "decimals-conc-b0821-0345",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Zoe claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Zoe right that 0.18 is greater than 0.6 because 18 is more than 6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0346",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues Rosa, so 0.18 > 0.6. Is Rosa right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Rosa says more digits means a bigger number, so 0.18 > 0.6. Is 0.6 greater than 0.18?"}},
   },
   {
     itemId: "decimals-conc-b0821-0347",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Diego claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Diego says 0.18 is greater than 0.6 because 18 beats 6. Is 0.6 less than 0.18?"}},
   },
   {
     itemId: "decimals-conc-b0821-0348",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "longerTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"More digits means a bigger number, argues Nora, so 0.18 > 0.6. Is Nora right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Nora says more digits means a bigger number, so 0.18 > 0.6. Is 0.18 less than 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0349",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn's rule says a longer decimal is bigger, so 0.125 > 0.9. Is 0.125 greater than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0350",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, Priya places 0.125 over 0.9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Priya says 0.125 is greater than 0.9 because 0.125 has more digits. Is 0.9 greater than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0351",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Sam's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Sam thinks a longer decimal is always bigger, so 0.125 > 0.9. Is 0.125 less than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0352",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, Nia places 0.125 over 0.9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Nia counts the digits and says 0.125 > 0.9. Is 0.9 less than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0353",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai says 0.125 > 0.9 because 0.125 is a longer decimal. Is 0.9 less than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0354",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, June places 0.125 over 0.9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"0.125 has more digits than 0.9, so June says 0.125 is bigger. Is 0.9 bigger than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0355",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily's rule says a longer decimal is bigger, so 0.125 > 0.9. Compare the tenths digits first. Is 0.9 less than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0356",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, Amara places 0.125 over 0.9. Is that right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Amara says 0.125 is greater than 0.9 because 0.125 has more digits. Compare the tenths digits first. Is 0.9 greater than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0357",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Leo's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Leo thinks a longer decimal is always bigger, so 0.125 > 0.9. Compare the tenths digits first. Is 0.125 greater than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0358",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, Mina places 0.125 over 0.9. Is that right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Mina counts the digits and says 0.125 > 0.9. Compare the tenths digits first. Is 0.125 less than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0359",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Theo's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Theo says 0.125 > 0.9 because 0.125 is a longer decimal. Is 0.125 bigger than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0360",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, Ida places 0.125 over 0.9. Is that right? Check the tenths place first."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"0.125 has more digits than 0.9, so Ida says 0.125 is bigger. Compare the tenths digits first. Is 0.125 bigger than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0361",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Zoe's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Zoe's rule says a longer decimal is bigger, so 0.125 > 0.9. Is 0.125 bigger than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0362",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, Rosa places 0.125 over 0.9. Is that right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says 0.125 is greater than 0.9 because 0.125 has more digits. Is 0.125 greater than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0363",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Diego's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Diego thinks a longer decimal is always bigger, so 0.125 > 0.9. Is 0.9 greater than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0364",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, Nora places 0.125 over 0.9. Is that right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Nora counts the digits and says 0.125 > 0.9. Is 0.125 less than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0365",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Luca's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"Luca says 0.125 > 0.9 because 0.125 is a longer decimal. Is 0.9 bigger than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0366",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "longerTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Applying digit-count logic, Ava places 0.125 over 0.9. Is that right? Think about place value."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"kind":"trapYes"},"truth":true,"promptText":"0.125 has more digits than 0.9, so Ava says 0.125 is bigger. Is 0.9 bigger than 0.125?"}},
   },
   {
     itemId: "decimals-conc-b0821-0367",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.8,"b":0.4,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"On Ava's card, the statement reads 0.8 < 0.4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.8,"b":0.4,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Ava writes 0.8 < 0.4. Is Ava right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0369",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.5,"b":0.5,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Omar writes 0.5 = 0.5. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.5,"b":0.5,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Omar's card says 0.5 = 0.5. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0370",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.2,"b":0.6,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"On Ben's card, the statement reads 0.2 > 0.6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.2,"b":0.6,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Ben's card says 0.2 > 0.6. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0371",
@@ -9842,7 +9842,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.4,"b":0.7,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"On Priya's card, the statement reads 0.4 = 0.7. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.4,"b":0.7,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"Priya says 0.4 is equal to 0.7. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0373",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.1,"b":0.8,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Sam writes 0.1 < 0.8. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.1,"b":0.8,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Sam's card says 0.1 < 0.8. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0374",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.6,"b":0.9,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"On Nia's card, the statement reads 0.6 > 0.9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.6,"b":0.9,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Nia says 0.6 is greater than 0.9. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0375",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.7,"b":0.2,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Kai writes 0.7 > 0.2. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.7,"b":0.2,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Kai says 0.7 is greater than 0.2. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0376",
@@ -9882,7 +9882,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.3,"b":0.5,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"On June's card, the statement reads 0.3 = 0.5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.3,"b":0.5,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"June writes 0.3 = 0.5. Is June right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0377",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.9,"b":0.5,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"On Amara's card, the statement reads 0.9 < 0.5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.9,"b":0.5,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Amara's card says 0.9 > 0.5. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0379",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.6,"b":0.6,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Leo writes 0.6 = 0.6. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.6,"b":0.6,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Leo says 0.6 is equal to 0.6. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0380",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.8,"b":0.3,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"On Mina's card, the statement reads 0.8 < 0.3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.8,"b":0.3,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Mina's card says 0.8 < 0.3. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0381",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.4,"b":0.9,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Theo writes 0.4 < 0.9. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.4,"b":0.9,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Theo's card says 0.4 < 0.9. Is that right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0382",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.7,"b":0.1,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"On Ida's card, the statement reads 0.7 = 0.1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.7,"b":0.1,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"Ida says 0.7 is equal to 0.1. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0383",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.1,"b":0.6,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"On Rosa's card, the statement reads 0.1 > 0.6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.1,"b":0.6,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Rosa says 0.1 is less than 0.6. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0385",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.45,"b":0.5,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"June records the comparison 0.45 < 0.5. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.45,"b":0.5,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"June writes 0.45 < 0.5. Compare the tenths digits first. Is 0.45 less than 0.5?"}},
   },
   {
     itemId: "decimals-conc-b0821-0386",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.8,"b":0.08,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Lily's claim: 0.8 < 0.08. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.8,"b":0.08,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Lily writes 0.8 > 0.08. Is Lily right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0387",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.3,"b":0.3,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Amara records the comparison 0.30 = 0.3. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.3,"b":0.3,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Amara compares 0.30 and 0.3 and writes 0.30 = 0.3. Is 0.30 equal to 0.3?"}},
   },
   {
     itemId: "decimals-conc-b0821-0388",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.09,"b":0.1,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Leo's claim: 0.09 > 0.1. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.09,"b":0.1,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Leo writes 0.09 > 0.1. Compare the tenths digits first. Is 0.09 greater than 0.1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0389",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.52,"b":0.25,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Mina records the comparison 0.52 > 0.25. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.52,"b":0.25,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Mina says 0.52 is greater than 0.25 because 52 is more than 25. Is 0.52 greater than 0.25?"}},
   },
   {
     itemId: "decimals-conc-b0821-0390",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.6,"b":0.06,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Theo's claim: 0.6 = 0.06. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.6,"b":0.06,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"Theo compares 0.6 and 0.06 and writes 0.6 = 0.06. Is 0.6 equal to 0.06?"}},
   },
   {
     itemId: "decimals-conc-b0821-0391",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.65,"b":0.7,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Ida records the comparison 0.65 < 0.7. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.65,"b":0.7,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Ida writes 0.65 < 0.7. Compare the tenths digits first. Is 0.65 less than 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0392",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.3,"b":0.33,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Zoe's claim: 0.3 > 0.33. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.3,"b":0.33,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Zoe writes 0.3 > 0.33. Is Zoe right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0393",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.75,"b":0.57,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Rosa records the comparison 0.75 > 0.57. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.75,"b":0.57,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Rosa says 0.75 > 0.57 because 75 is more than 57. Is Rosa right that 0.75 > 0.57?"}},
   },
   {
     itemId: "decimals-conc-b0821-0394",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.4,"b":0.4,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Diego's claim: 0.40 < 0.4. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.4,"b":0.4,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Diego writes 0.40 < 0.4. Is Diego right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0395",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.1,"b":0.09,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Nora records the comparison 0.1 > 0.09. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.1,"b":0.09,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Nora says 0.1 > 0.09. Compare the tenths digits first. Is Nora right that 0.1 > 0.09?"}},
   },
   {
     itemId: "decimals-conc-b0821-0396",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.5,"b":0.45,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Luca's claim: 0.5 < 0.45. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.5,"b":0.45,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Luca writes 0.5 > 0.45. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0397",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.9,"b":0.9,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Ava records the comparison 0.90 = 0.9. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.9,"b":0.9,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Is 0.90 equal to 0.9, as Ava writes?"}},
   },
   {
     itemId: "decimals-conc-b0821-0398",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.06,"b":0.6,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Omar's claim: 0.06 > 0.6. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.06,"b":0.6,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Omar says 0.06 > 0.6. Is Omar right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0399",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.33,"b":0.3,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Ben records the comparison 0.33 > 0.3. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.33,"b":0.3,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Ben compares 0.33 and 0.3 and writes 0.33 > 0.3. Is 0.33 greater than 0.3?"}},
   },
   {
     itemId: "decimals-conc-b0821-0400",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.25,"b":0.52,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Finn's claim: 0.25 > 0.52. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.25,"b":0.52,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Finn writes 0.25 > 0.52. Compare the tenths digits first. Is 0.25 greater than 0.52?"}},
   },
   {
     itemId: "decimals-conc-b0821-0401",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.57,"b":0.75,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Priya records the comparison 0.57 < 0.75. Does it hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":0.57,"b":0.75,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Priya says 0.57 is less than 0.75 because 57 is less than 75. Compare the tenths digits first. Is 0.75 greater than 0.57?"}},
   },
   {
     itemId: "decimals-conc-b0821-0402",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.7,"b":0.65,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Check Sam's claim: 0.7 < 0.65. Right or not?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":0.7,"b":0.65,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Sam writes 0.7 < 0.65. Compare the tenths digits first. Is 0.7 less than 0.65?"}},
   },
   {
     itemId: "decimals-conc-b0821-0403",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":3.45,"b":3.5,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Amara certifies 3.45 < 3.5. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":3.45,"b":3.5,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Is Amara right that 3.45 < 3.5?"}},
   },
   {
     itemId: "decimals-conc-b0821-0404",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":1.8,"b":1.08,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 1.8 < 1.08 from Leo. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":1.8,"b":1.08,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Leo writes 1.8 > 1.08. Is 1.8 greater than 1.08?"}},
   },
   {
     itemId: "decimals-conc-b0821-0405",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":2.7,"b":2.7,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Mina certifies 2.70 = 2.7. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":2.7,"b":2.7,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Mina writes 2.70 = 2.7. Is 2.70 equal to 2.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0406",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":7.07,"b":7.7,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 7.07 > 7.7 from Theo. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":7.07,"b":7.7,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Theo writes 7.07 > 7.7. Is 7.07 greater than 7.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0407",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":6.9,"b":6.19,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Ida certifies 6.9 > 6.19. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":6.9,"b":6.19,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Is 6.9 greater than 6.19, as Ida says?"}},
   },
   {
     itemId: "decimals-conc-b0821-0408",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":4.2,"b":4.02,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 4.2 = 4.02 from Zoe. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":4.2,"b":4.02,"rel":"=","kind":"cmpSaidDec"},"truth":false,"promptText":"Is Zoe right that 4.2 = 4.02?"}},
   },
   {
     itemId: "decimals-conc-b0821-0409",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":5.5,"b":5.55,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Rosa certifies 5.5 < 5.55. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":5.5,"b":5.55,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Is Rosa right that 5.5 < 5.55?"}},
   },
   {
     itemId: "decimals-conc-b0821-0410",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":9.1,"b":9.01,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 9.1 < 9.01 from Diego. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":9.1,"b":9.01,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Diego writes 9.1 < 9.01. Is 9.1 less than 9.01?"}},
   },
   {
     itemId: "decimals-conc-b0821-0411",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":2.43,"b":2.34,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Nora certifies 2.43 > 2.34. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":2.43,"b":2.34,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Nora writes 2.43 > 2.34. Is 2.43 greater than 2.34?"}},
   },
   {
     itemId: "decimals-conc-b0821-0412",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":8.8,"b":8.8,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 8.80 < 8.8 from Luca. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":8.8,"b":8.8,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Luca writes 8.80 < 8.8. Is 8.80 less than 8.8?"}},
   },
   {
     itemId: "decimals-conc-b0821-0413",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":9.01,"b":9.1,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Ava certifies 9.01 < 9.1. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":9.01,"b":9.1,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Is 9.01 less than 9.1, as Ava says?"}},
   },
   {
     itemId: "decimals-conc-b0821-0414",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":3.5,"b":3.45,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 3.5 < 3.45 from Omar. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":3.5,"b":3.45,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Is Omar right that 3.5 < 3.45?"}},
   },
   {
     itemId: "decimals-conc-b0821-0415",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":4.2,"b":4.2,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Ben certifies 4.20 = 4.2. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":4.2,"b":4.2,"rel":"=","kind":"cmpSaidDec"},"truth":true,"promptText":"Is Ben right that 4.20 = 4.2?"}},
   },
   {
     itemId: "decimals-conc-b0821-0416",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":7.7,"b":7.07,"rel":"<","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 7.7 < 7.07 from Finn. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":7.7,"b":7.07,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Finn writes 7.7 > 7.07. Is 7.7 greater than 7.07?"}},
   },
   {
     itemId: "decimals-conc-b0821-0417",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":1.08,"b":1.8,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Priya certifies 1.08 < 1.8. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":1.08,"b":1.8,"rel":"<","kind":"cmpSaidDec"},"truth":true,"promptText":"Priya writes 1.08 < 1.8. Is 1.08 less than 1.8?"}},
   },
   {
     itemId: "decimals-conc-b0821-0418",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":6.19,"b":6.9,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 6.19 > 6.9 from Sam. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":6.19,"b":6.9,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Sam writes 6.19 > 6.9. Is 6.19 greater than 6.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0419",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":5.55,"b":5.5,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Nia certifies 5.55 > 5.5. Is the certification valid?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"a":5.55,"b":5.5,"rel":">","kind":"cmpSaidDec"},"truth":true,"promptText":"Is 5.55 greater than 5.5, as Nia says?"}},
   },
   {
     itemId: "decimals-conc-b0821-0420",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":2.34,"b":2.43,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Audit the statement 2.34 > 2.43 from Kai. Clean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"a":2.34,"b":2.43,"rel":">","kind":"cmpSaidDec"},"truth":false,"promptText":"Is Kai right that 2.34 > 2.43?"}},
   },
   {
     itemId: "decimals-conc-b0821-0421",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "padTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Zoe ranks 0.10 above 0.1 for having an extra digit. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Zoe says 0.10 is bigger than 0.1 because 0.10 has an extra digit. Is 0.10 bigger than 0.1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0438",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "padTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Diego ranks 0.30 above 0.3 for having an extra digit. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Diego right that 0.30 > 0.3 because 0.30 has an extra digit?"}},
   },
   {
     itemId: "decimals-conc-b0821-0440",
@@ -10532,7 +10532,7 @@ export const ITEMS = [
     structureType: "padTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Luca ranks 0.50 above 0.5 for having an extra digit. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Luca says 0.50 is bigger than 0.5 because 0.50 has an extra digit. Is 0.50 bigger than 0.5?"}},
   },
   {
     itemId: "decimals-conc-b0821-0442",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "padTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Omar ranks 0.70 above 0.7 for having an extra digit. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Omar right that 0.70 > 0.7 because 0.70 has an extra digit?"}},
   },
   {
     itemId: "decimals-conc-b0821-0444",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "padTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn ranks 0.90 above 0.9 for having an extra digit. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn says 0.90 is bigger than 0.9 because 0.90 has an extra digit. Is 0.90 bigger than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0446",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "padTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Sam ranks 0.30 above 0.3 for having an extra digit. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Sam right that 0.30 > 0.3 because 0.30 has an extra digit?"}},
   },
   {
     itemId: "decimals-conc-b0821-0448",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "padTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai ranks 0.70 above 0.7 for having an extra digit. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai says 0.70 is bigger than 0.7 because 0.70 has an extra digit. Is 0.70 bigger than 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0450",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "padTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily ranks 0.20 above 0.2 for having an extra digit. Does the ranking hold?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Lily right that 0.20 > 0.2 because 0.20 has an extra digit?"}},
   },
   {
     itemId: "decimals-conc-b0821-0452",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Diego insists 0.10 outranks 0.1 on digit count alone. Is the insistence right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Diego says 0.10 is bigger than 0.1 because 0.10 has more digits. Is 0.10 bigger than 0.1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0454",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Digit-count logic tells Nora that 0.20 exceeds 0.2. Sound logic?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Nora counts the digits and says 0.20 is greater than 0.2. Is 0.20 greater than 0.2?"}},
   },
   {
     itemId: "decimals-conc-b0821-0455",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Luca insists 0.30 outranks 0.3 on digit count alone. Is the insistence right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Luca right that 0.30 > 0.3 because 0.30 has more digits?"}},
   },
   {
     itemId: "decimals-conc-b0821-0456",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Digit-count logic tells Ava that 0.40 exceeds 0.4. Sound logic?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Ava thinks 0.40 > 0.4 because 0.40 has more digits. Is Ava right that 0.40 > 0.4?"}},
   },
   {
     itemId: "decimals-conc-b0821-0457",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Omar insists 0.50 outranks 0.5 on digit count alone. Is the insistence right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Omar is sure 0.50 beats 0.5 because 0.50 has more digits. Is 0.50 greater than 0.5?"}},
   },
   {
     itemId: "decimals-conc-b0821-0458",
@@ -10702,7 +10702,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Digit-count logic tells Ben that 0.60 exceeds 0.6. Sound logic?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"0.60 has more digits than 0.6, so Ben says 0.60 is greater. Is 0.60 greater than 0.6?"}},
   },
   {
     itemId: "decimals-conc-b0821-0459",
@@ -10712,7 +10712,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn insists 0.70 outranks 0.7 on digit count alone. Is the insistence right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Finn says 0.70 is bigger than 0.7 because 0.70 has more digits. Is 0.70 bigger than 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0460",
@@ -10722,7 +10722,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Digit-count logic tells Priya that 0.80 exceeds 0.8. Sound logic?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Priya counts the digits and says 0.80 is greater than 0.8. Is 0.80 greater than 0.8?"}},
   },
   {
     itemId: "decimals-conc-b0821-0461",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Sam insists 0.90 outranks 0.9 on digit count alone. Is the insistence right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Sam right that 0.90 > 0.9 because 0.90 has more digits?"}},
   },
   {
     itemId: "decimals-conc-b0821-0462",
@@ -10742,7 +10742,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Digit-count logic tells Nia that 0.10 exceeds 0.1. Sound logic?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Nia thinks 0.10 > 0.1 because 0.10 has more digits. Is Nia right that 0.10 > 0.1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0463",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai insists 0.30 outranks 0.3 on digit count alone. Is the insistence right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Kai is sure 0.30 beats 0.3 because 0.30 has more digits. Is 0.30 greater than 0.3?"}},
   },
   {
     itemId: "decimals-conc-b0821-0464",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Digit-count logic tells June that 0.50 exceeds 0.5. Sound logic?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"0.50 has more digits than 0.5, so June says 0.50 is greater. Is 0.50 greater than 0.5?"}},
   },
   {
     itemId: "decimals-conc-b0821-0465",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily insists 0.70 outranks 0.7 on digit count alone. Is the insistence right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Lily says 0.70 is bigger than 0.7 because 0.70 has more digits. Is 0.70 bigger than 0.7?"}},
   },
   {
     itemId: "decimals-conc-b0821-0466",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Digit-count logic tells Amara that 0.90 exceeds 0.9. Sound logic?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Amara counts the digits and says 0.90 is greater than 0.9. Is 0.90 greater than 0.9?"}},
   },
   {
     itemId: "decimals-conc-b0821-0467",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Leo insists 0.20 outranks 0.2 on digit count alone. Is the insistence right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Is Leo right that 0.20 > 0.2 because 0.20 has more digits?"}},
   },
   {
     itemId: "decimals-conc-b0821-0468",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "padTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Digit-count logic tells Mina that 0.40 exceeds 0.4. Sound logic?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"kind":"trapNo"},"truth":false,"promptText":"Mina thinks 0.40 > 0.4 because 0.40 has more digits. Is Mina right that 0.40 > 0.4?"}},
   },
   {
     itemId: "decimals-conc-b0821-0469",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.1,"kind":"closerDec"},"promptText":"Is the decimal 0.1 closer to 0 or to 1? Mina pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.1,"kind":"closerDec"},"promptText":"Mina pictures a number line from 0 to 1. Is 0.1 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0470",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.2,"kind":"closerDec"},"promptText":"Is the decimal 0.2 closer to 0 or to 1? Ida pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.2,"kind":"closerDec"},"promptText":"Is 0.2 closer to 0 or to 1 on Ida's number line?"}},
   },
   {
     itemId: "decimals-conc-b0821-0472",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.3,"kind":"closerDec"},"promptText":"Is the decimal 0.3 closer to 0 or to 1? Rosa pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.3,"kind":"closerDec"},"promptText":"Rosa thinks about 0.3 on a number line. Is 0.3 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0474",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.4,"kind":"closerDec"},"promptText":"Is the decimal 0.4 closer to 0 or to 1? Nora pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.4,"kind":"closerDec"},"promptText":"Nora pictures a number line from 0 to 1. Is 0.4 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0476",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.1,"kind":"closerDec"},"promptText":"Is the decimal 0.1 closer to 0 or to 1? Ava pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.1,"kind":"closerDec"},"promptText":"Is 0.1 closer to 0 or to 1 on Ava's number line?"}},
   },
   {
     itemId: "decimals-conc-b0821-0478",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.2,"kind":"closerDec"},"promptText":"Is the decimal 0.2 closer to 0 or to 1? Ben pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.2,"kind":"closerDec"},"promptText":"Ben thinks about 0.2 on a number line. Is 0.2 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0480",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.3,"kind":"closerDec"},"promptText":"Is the decimal 0.3 closer to 0 or to 1? Priya pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.3,"kind":"closerDec"},"promptText":"Priya pictures a number line from 0 to 1. Is 0.3 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0482",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.4,"kind":"closerDec"},"promptText":"Is the decimal 0.4 closer to 0 or to 1? Nia pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.4,"kind":"closerDec"},"promptText":"Is 0.4 closer to 0 or to 1 on Nia's number line?"}},
   },
   {
     itemId: "decimals-conc-b0821-0484",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "closerEnd_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.1,"kind":"closerDec"},"promptText":"Is the decimal 0.1 closer to 0 or to 1? June pictures the line."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.1,"kind":"closerDec"},"promptText":"June thinks about 0.1 on a number line. Is 0.1 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0486",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.15,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.15 sit nearer 0 or nearer 1? Omar decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.15,"kind":"closerDec"},"promptText":"Omar looks at 0.15 on a number line from 0 to 1. Is 0.15 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0488",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.85,"kind":"closerDec"},"promptText":"Ben slides a marker to 0.85. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.85,"kind":"closerDec"},"promptText":"Ben slides a marker to 0.85 on a number line from 0 to 1. Is the marker closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0489",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.08,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.08 sit nearer 0 or nearer 1? Finn decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.08,"kind":"closerDec"},"promptText":"Help Finn place 0.08 between 0 and 1. Is 0.08 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0490",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.92,"kind":"closerDec"},"promptText":"Priya slides a marker to 0.92. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.92,"kind":"closerDec"},"promptText":"Priya marks 0.92 on a number line from 0 to 1. Is 0.92 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0491",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.31,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.31 sit nearer 0 or nearer 1? Sam decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.31,"kind":"closerDec"},"promptText":"On Sam's number line from 0 to 1, does 0.31 sit nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0492",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.69,"kind":"closerDec"},"promptText":"Nia slides a marker to 0.69. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.69,"kind":"closerDec"},"promptText":"Nia moves a marker to 0.69 on a 0 to 1 number line. Which end is the marker nearer, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0493",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.24,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.24 sit nearer 0 or nearer 1? Kai decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.24,"kind":"closerDec"},"promptText":"Kai looks at 0.24 on a number line from 0 to 1. Is 0.24 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0494",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.76,"kind":"closerDec"},"promptText":"June slides a marker to 0.76. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.76,"kind":"closerDec"},"promptText":"June slides a marker to 0.76 on a number line from 0 to 1. Is the marker closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0495",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.4,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.4 sit nearer 0 or nearer 1? Lily decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.4,"kind":"closerDec"},"promptText":"Help Lily place 0.4 between 0 and 1. Is 0.4 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0496",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.6,"kind":"closerDec"},"promptText":"Amara slides a marker to 0.6. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.6,"kind":"closerDec"},"promptText":"Amara moves a marker to 0.6 on a 0 to 1 number line. Which end is the marker nearer, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0497",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.15,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.15 sit nearer 0 or nearer 1? Leo decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.15,"kind":"closerDec"},"promptText":"On Leo's number line from 0 to 1, does 0.15 sit nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0498",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.85,"kind":"closerDec"},"promptText":"Mina slides a marker to 0.85. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.85,"kind":"closerDec"},"promptText":"Mina slides a marker to 0.85 on a number line from 0 to 1. Is the marker closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0499",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.08,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.08 sit nearer 0 or nearer 1? Theo decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.08,"kind":"closerDec"},"promptText":"Theo looks at 0.08 on a number line from 0 to 1. Is 0.08 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0500",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.92,"kind":"closerDec"},"promptText":"Ida slides a marker to 0.92. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.92,"kind":"closerDec"},"promptText":"Ida moves a marker to 0.92 on a 0 to 1 number line. Which end is the marker nearer, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0501",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.31,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.31 sit nearer 0 or nearer 1? Zoe decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.31,"kind":"closerDec"},"promptText":"Help Zoe place 0.31 between 0 and 1. Is 0.31 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0502",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.69,"kind":"closerDec"},"promptText":"Rosa slides a marker to 0.69. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.69,"kind":"closerDec"},"promptText":"Rosa puts a dot at 0.69 on a number line from 0 to 1. Is the dot closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0503",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.24,"kind":"closerDec"},"promptText":"Between 0 and 1, does 0.24 sit nearer 0 or nearer 1? Diego decides."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.24,"kind":"closerDec"},"promptText":"On Diego's number line from 0 to 1, does 0.24 sit nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0504",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "closerEnd_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.76,"kind":"closerDec"},"promptText":"Nora slides a marker to 0.76. Toward which end does it lean?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.76,"kind":"closerDec"},"promptText":"Nora slides a marker to 0.76 on a number line from 0 to 1. Is the marker closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0505",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.05,"kind":"closerDec"},"promptText":"Locate 0.05 precisely: is it nearer 0 or nearer 1? Finn reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.05,"kind":"closerDec"},"promptText":"Finn finds 0.05 on a number line from 0 to 1. Is 0.05 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0506",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.95,"kind":"closerDec"},"promptText":"Priya audits the position of 0.95. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.95,"kind":"closerDec"},"promptText":"Priya finds 0.95 on a number line from 0 to 1. Is 0.95 nearer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0507",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.12,"kind":"closerDec"},"promptText":"Locate 0.12 precisely: is it nearer 0 or nearer 1? Sam reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.12,"kind":"closerDec"},"promptText":"Sam plots 0.12 on a number line from 0 to 1. Which end is 0.12 nearer to, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0508",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.88,"kind":"closerDec"},"promptText":"Nia audits the position of 0.88. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.88,"kind":"closerDec"},"promptText":"Nia checks where 0.88 goes on a number line from 0 to 1. Which end is 0.88 closer to, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0509",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.29,"kind":"closerDec"},"promptText":"Locate 0.29 precisely: is it nearer 0 or nearer 1? Kai reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.29,"kind":"closerDec"},"promptText":"Kai finds 0.29 on a number line from 0 to 1. Is 0.29 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0510",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.71,"kind":"closerDec"},"promptText":"June audits the position of 0.71. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.71,"kind":"closerDec"},"promptText":"June marks 0.71 on a number line from 0 to 1. Is 0.71 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0511",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.33,"kind":"closerDec"},"promptText":"Locate 0.33 precisely: is it nearer 0 or nearer 1? Lily reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.33,"kind":"closerDec"},"promptText":"Lily plots 0.33 on a number line from 0 to 1. Which end is 0.33 nearer to, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0512",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.67,"kind":"closerDec"},"promptText":"Amara audits the position of 0.67. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.67,"kind":"closerDec"},"promptText":"Amara checks where 0.67 goes on a number line from 0 to 1. Which end is 0.67 closer to, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0513",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.41,"kind":"closerDec"},"promptText":"Locate 0.41 precisely: is it nearer 0 or nearer 1? Leo reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.41,"kind":"closerDec"},"promptText":"Leo finds 0.41 on a number line from 0 to 1. Is 0.41 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0514",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.59,"kind":"closerDec"},"promptText":"Mina audits the position of 0.59. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["1","0"],"display":{"dec":{"v":0.59,"kind":"closerDec"},"promptText":"Mina marks 0.59 on a number line from 0 to 1. Is 0.59 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0515",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.05,"kind":"closerDec"},"promptText":"Locate 0.05 precisely: is it nearer 0 or nearer 1? Theo reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["0","1"],"display":{"dec":{"v":0.05,"kind":"closerDec"},"promptText":"Theo plots 0.05 on a number line from 0 to 1. Which end is 0.05 nearer to, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0516",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.95,"kind":"closerDec"},"promptText":"Ida audits the position of 0.95. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.95,"kind":"closerDec"},"promptText":"Ida checks where 0.95 goes on a number line from 0 to 1. Which end is 0.95 closer to, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0517",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.12,"kind":"closerDec"},"promptText":"Locate 0.12 precisely: is it nearer 0 or nearer 1? Zoe reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.12,"kind":"closerDec"},"promptText":"Zoe finds 0.12 on a number line from 0 to 1. Is 0.12 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0518",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.88,"kind":"closerDec"},"promptText":"Rosa audits the position of 0.88. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.88,"kind":"closerDec"},"promptText":"On Rosa's number line from 0 to 1, is 0.88 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0519",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.29,"kind":"closerDec"},"promptText":"Locate 0.29 precisely: is it nearer 0 or nearer 1? Diego reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.29,"kind":"closerDec"},"promptText":"Diego plots 0.29 on a number line from 0 to 1. Which end is 0.29 nearer to, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0520",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.71,"kind":"closerDec"},"promptText":"Nora audits the position of 0.71. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.71,"kind":"closerDec"},"promptText":"Nora marks 0.71 on a number line from 0 to 1. Is 0.71 closer to 0 or to 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0521",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.33,"kind":"closerDec"},"promptText":"Locate 0.33 precisely: is it nearer 0 or nearer 1? Luca reasons it out."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0","choices":["1","0"],"display":{"dec":{"v":0.33,"kind":"closerDec"},"promptText":"Luca finds 0.33 on a number line from 0 to 1. Is 0.33 nearer 0 or nearer 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0522",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "closerEnd_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.67,"kind":"closerDec"},"promptText":"Ava audits the position of 0.67. Which endpoint is closer?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1","choices":["0","1"],"display":{"dec":{"v":0.67,"kind":"closerDec"},"promptText":"Ava checks where 0.67 goes on a number line from 0 to 1. Which end is 0.67 closer to, 0 or 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0523",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.4,"kind":"betweenSaid"},"truth":true,"promptText":"Luca says the decimal 0.4 sits between 0 and 1 on the number line. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.4,"kind":"betweenSaid"},"truth":true,"promptText":"Luca says 0.4 is between 0 and 1 on the number line. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0524",
@@ -11362,7 +11362,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.2,"kind":"betweenSaid"},"truth":false,"promptText":"1.2 lives between 0 and 1, claims Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.2,"kind":"betweenSaid"},"truth":false,"promptText":"Ava says 1.2 is between 0 and 1 on the number line. Is Ava right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0525",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.7,"kind":"betweenSaid"},"truth":true,"promptText":"Omar says the decimal 0.7 sits between 0 and 1 on the number line. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.7,"kind":"betweenSaid"},"truth":true,"promptText":"Omar marks 0.7 between 0 and 1 on a number line. Does 0.7 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0526",
@@ -11382,7 +11382,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.5,"kind":"betweenSaid"},"truth":false,"promptText":"1.5 lives between 0 and 1, claims Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.5,"kind":"betweenSaid"},"truth":false,"promptText":"Ben marks 1.5 between 0 and 1 on a number line. Does 1.5 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0527",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.1,"kind":"betweenSaid"},"truth":true,"promptText":"Finn says the decimal 0.1 sits between 0 and 1 on the number line. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.1,"kind":"betweenSaid"},"truth":true,"promptText":"Finn says the decimal 0.1 sits between 0 and 1. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0528",
@@ -11402,7 +11402,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.8,"kind":"betweenSaid"},"truth":false,"promptText":"1.8 lives between 0 and 1, claims Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.8,"kind":"betweenSaid"},"truth":false,"promptText":"Priya says the decimal 1.8 sits between 0 and 1. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0529",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.9,"kind":"betweenSaid"},"truth":true,"promptText":"Sam says the decimal 0.9 sits between 0 and 1 on the number line. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.9,"kind":"betweenSaid"},"truth":true,"promptText":"Sam says 0.9 is between 0 and 1 on the number line. Is Sam right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0530",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.1,"kind":"betweenSaid"},"truth":false,"promptText":"1.1 lives between 0 and 1, claims Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.1,"kind":"betweenSaid"},"truth":false,"promptText":"Nia says 1.1 is between 0 and 1 on the number line. Is Nia right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0531",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"betweenSaid"},"truth":true,"promptText":"Kai says the decimal 0.5 sits between 0 and 1 on the number line. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.5,"kind":"betweenSaid"},"truth":true,"promptText":"Kai marks 0.5 between 0 and 1 on a number line. Does 0.5 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0532",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.4,"kind":"betweenSaid"},"truth":false,"promptText":"1.4 lives between 0 and 1, claims June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.4,"kind":"betweenSaid"},"truth":false,"promptText":"June marks 1.4 between 0 and 1 on a number line. Does 1.4 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0533",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.2,"kind":"betweenSaid"},"truth":true,"promptText":"Lily says the decimal 0.2 sits between 0 and 1 on the number line. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.2,"kind":"betweenSaid"},"truth":true,"promptText":"Lily says the decimal 0.2 sits between 0 and 1. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0534",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.7,"kind":"betweenSaid"},"truth":false,"promptText":"1.7 lives between 0 and 1, claims Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.7,"kind":"betweenSaid"},"truth":false,"promptText":"Amara says the decimal 1.7 sits between 0 and 1. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0535",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.8,"kind":"betweenSaid"},"truth":true,"promptText":"Leo says the decimal 0.8 sits between 0 and 1 on the number line. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.8,"kind":"betweenSaid"},"truth":true,"promptText":"Leo says 0.8 is between 0 and 1 on the number line. Is Leo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0536",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.3,"kind":"betweenSaid"},"truth":false,"promptText":"1.3 lives between 0 and 1, claims Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.3,"kind":"betweenSaid"},"truth":false,"promptText":"Mina says 1.3 is between 0 and 1 on the number line. Is Mina right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0537",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.6,"kind":"betweenSaid"},"truth":true,"promptText":"Theo says the decimal 0.6 sits between 0 and 1 on the number line. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.6,"kind":"betweenSaid"},"truth":true,"promptText":"Theo marks 0.6 between 0 and 1 on a number line. Does 0.6 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0538",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.9,"kind":"betweenSaid"},"truth":false,"promptText":"1.9 lives between 0 and 1, claims Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.9,"kind":"betweenSaid"},"truth":false,"promptText":"Ida marks 1.9 between 0 and 1 on a number line. Does 1.9 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0539",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.3,"kind":"betweenSaid"},"truth":true,"promptText":"Zoe says the decimal 0.3 sits between 0 and 1 on the number line. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.3,"kind":"betweenSaid"},"truth":true,"promptText":"Zoe says the decimal 0.3 sits between 0 and 1. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0540",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.6,"kind":"betweenSaid"},"truth":false,"promptText":"1.6 lives between 0 and 1, claims Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.6,"kind":"betweenSaid"},"truth":false,"promptText":"Rosa says the decimal 1.6 sits between 0 and 1. Do you agree?"}},
   },
   {
     itemId: "decimals-conc-b0821-0541",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.45,"kind":"betweenSaid"},"truth":true,"promptText":"June plots 0.45 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.45,"kind":"betweenSaid"},"truth":true,"promptText":"June marks 0.45 between 0 and 1 on a number line. Does 0.45 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0542",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.45,"kind":"betweenSaid"},"truth":false,"promptText":"According to Lily, 1.45 falls inside the 0-to-1 stretch. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.45,"kind":"betweenSaid"},"truth":false,"promptText":"Lily says 1.45 is between 0 and 1 on the number line. Is 1.45 between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0543",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.08,"kind":"betweenSaid"},"truth":true,"promptText":"Amara plots 0.08 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.08,"kind":"betweenSaid"},"truth":true,"promptText":"Amara says 0.08 is between 0 and 1 on the number line. Is 0.08 between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0544",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.08,"kind":"betweenSaid"},"truth":false,"promptText":"According to Leo, 1.08 falls inside the 0-to-1 stretch. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.08,"kind":"betweenSaid"},"truth":false,"promptText":"Is Leo right that 1.08 sits between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0545",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.92,"kind":"betweenSaid"},"truth":true,"promptText":"Mina plots 0.92 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.92,"kind":"betweenSaid"},"truth":true,"promptText":"Mina marks 0.92 between 0 and 1 on a number line. Does 0.92 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0546",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.92,"kind":"betweenSaid"},"truth":false,"promptText":"According to Theo, 1.92 falls inside the 0-to-1 stretch. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.92,"kind":"betweenSaid"},"truth":false,"promptText":"Theo marks 1.92 between 0 and 1 on a number line. Does 1.92 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0547",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.67,"kind":"betweenSaid"},"truth":true,"promptText":"Ida plots 0.67 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.67,"kind":"betweenSaid"},"truth":true,"promptText":"Is Ida right that 0.67 sits between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0548",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.67,"kind":"betweenSaid"},"truth":false,"promptText":"According to Zoe, 1.67 falls inside the 0-to-1 stretch. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.67,"kind":"betweenSaid"},"truth":false,"promptText":"Zoe says 1.67 is between 0 and 1 on the number line. Is 1.67 between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0549",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.25,"kind":"betweenSaid"},"truth":true,"promptText":"Rosa plots 0.25 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.25,"kind":"betweenSaid"},"truth":true,"promptText":"Rosa says 0.25 is between 0 and 1 on the number line. Is 0.25 between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0550",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.25,"kind":"betweenSaid"},"truth":false,"promptText":"According to Diego, 1.25 falls inside the 0-to-1 stretch. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.25,"kind":"betweenSaid"},"truth":false,"promptText":"Is Diego right that 1.25 sits between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0551",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.81,"kind":"betweenSaid"},"truth":true,"promptText":"Nora plots 0.81 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.81,"kind":"betweenSaid"},"truth":true,"promptText":"Nora marks 0.81 between 0 and 1 on a number line. Does 0.81 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0552",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.81,"kind":"betweenSaid"},"truth":false,"promptText":"According to Luca, 1.81 falls inside the 0-to-1 stretch. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.81,"kind":"betweenSaid"},"truth":false,"promptText":"Luca marks 1.81 between 0 and 1 on a number line. Does 1.81 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0553",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.33,"kind":"betweenSaid"},"truth":true,"promptText":"Ava plots 0.33 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.33,"kind":"betweenSaid"},"truth":true,"promptText":"Is Ava right that 0.33 sits between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0554",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.33,"kind":"betweenSaid"},"truth":false,"promptText":"According to Omar, 1.33 falls inside the 0-to-1 stretch. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.33,"kind":"betweenSaid"},"truth":false,"promptText":"Omar says 1.33 is between 0 and 1 on the number line. Is 1.33 between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0555",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.59,"kind":"betweenSaid"},"truth":true,"promptText":"Ben plots 0.59 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.59,"kind":"betweenSaid"},"truth":true,"promptText":"Ben says 0.59 is between 0 and 1 on the number line. Is 0.59 between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0556",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.59,"kind":"betweenSaid"},"truth":false,"promptText":"According to Finn, 1.59 falls inside the 0-to-1 stretch. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.59,"kind":"betweenSaid"},"truth":false,"promptText":"Finn says 1.59 is more than 0 but less than 1. Is Finn right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0557",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.74,"kind":"betweenSaid"},"truth":true,"promptText":"Priya plots 0.74 strictly between 0 and 1. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.74,"kind":"betweenSaid"},"truth":true,"promptText":"Priya says 0.74 is more than 0 but less than 1. Is Priya right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0558",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.74,"kind":"betweenSaid"},"truth":false,"promptText":"According to Sam, 1.74 falls inside the 0-to-1 stretch. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.74,"kind":"betweenSaid"},"truth":false,"promptText":"Sam marks 1.74 between 0 and 1 on a number line. Does 1.74 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0559",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"betweenSaid"},"truth":true,"promptText":"Amara classifies 0.05 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"betweenSaid"},"truth":true,"promptText":"Is Amara right that 0.05 is between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0560",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":2.05,"kind":"betweenSaid"},"truth":false,"promptText":"On Leo's line, 2.05 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":2.05,"kind":"betweenSaid"},"truth":false,"promptText":"On Leo's number line, 2.05 is marked between 0 and 1. Does 2.05 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0561",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.95,"kind":"betweenSaid"},"truth":true,"promptText":"Mina classifies 0.95 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.95,"kind":"betweenSaid"},"truth":true,"promptText":"Mina sorts 0.95 into the group of numbers between 0 and 1. Does 0.95 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0562",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.95,"kind":"betweenSaid"},"truth":false,"promptText":"On Theo's line, 1.95 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.95,"kind":"betweenSaid"},"truth":false,"promptText":"Theo sorts 1.95 into the group of numbers between 0 and 1. Does 1.95 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0563",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.52,"kind":"betweenSaid"},"truth":true,"promptText":"Ida classifies 0.52 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.52,"kind":"betweenSaid"},"truth":true,"promptText":"Ida says 0.52 is greater than 0 but less than 1. Is Ida right about 0.52?"}},
   },
   {
     itemId: "decimals-conc-b0821-0564",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":3.52,"kind":"betweenSaid"},"truth":false,"promptText":"On Zoe's line, 3.52 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":3.52,"kind":"betweenSaid"},"truth":false,"promptText":"Zoe says 3.52 is greater than 0 but less than 1. Is Zoe right about 3.52?"}},
   },
   {
     itemId: "decimals-conc-b0821-0565",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.88,"kind":"betweenSaid"},"truth":true,"promptText":"Rosa classifies 0.88 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.88,"kind":"betweenSaid"},"truth":true,"promptText":"On Rosa's number line, 0.88 is marked between 0 and 1. Does 0.88 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0566",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":2.88,"kind":"betweenSaid"},"truth":false,"promptText":"On Diego's line, 2.88 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":2.88,"kind":"betweenSaid"},"truth":false,"promptText":"Diego marks 2.88 between 0 and 1 on a number line. Is that the right spot for 2.88?"}},
   },
   {
     itemId: "decimals-conc-b0821-0567",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.17,"kind":"betweenSaid"},"truth":true,"promptText":"Nora classifies 0.17 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.17,"kind":"betweenSaid"},"truth":true,"promptText":"Is Nora right that 0.17 is between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0568",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":4.17,"kind":"betweenSaid"},"truth":false,"promptText":"On Luca's line, 4.17 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":4.17,"kind":"betweenSaid"},"truth":false,"promptText":"Is Luca right that 4.17 is between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0569",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.63,"kind":"betweenSaid"},"truth":true,"promptText":"Ava classifies 0.63 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.63,"kind":"betweenSaid"},"truth":true,"promptText":"Ava sorts 0.63 into the group of numbers between 0 and 1. Does 0.63 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0570",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.63,"kind":"betweenSaid"},"truth":false,"promptText":"On Omar's line, 1.63 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":1.63,"kind":"betweenSaid"},"truth":false,"promptText":"On Omar's number line, 1.63 is marked between 0 and 1. Does 1.63 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0571",
@@ -11832,7 +11832,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.29,"kind":"betweenSaid"},"truth":true,"promptText":"Ben classifies 0.29 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.29,"kind":"betweenSaid"},"truth":true,"promptText":"Ben says 0.29 is greater than 0 but less than 1. Is Ben right about 0.29?"}},
   },
   {
     itemId: "decimals-conc-b0821-0572",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":5.29,"kind":"betweenSaid"},"truth":false,"promptText":"On Finn's line, 5.29 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":5.29,"kind":"betweenSaid"},"truth":false,"promptText":"Finn says 5.29 is greater than 0 but less than 1. Is Finn right about 5.29?"}},
   },
   {
     itemId: "decimals-conc-b0821-0573",
@@ -11852,7 +11852,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.76,"kind":"betweenSaid"},"truth":true,"promptText":"Priya classifies 0.76 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.76,"kind":"betweenSaid"},"truth":true,"promptText":"Priya marks 0.76 between 0 and 1 on a number line. Is that the right spot for 0.76?"}},
   },
   {
     itemId: "decimals-conc-b0821-0574",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":2.76,"kind":"betweenSaid"},"truth":false,"promptText":"On Sam's line, 2.76 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":2.76,"kind":"betweenSaid"},"truth":false,"promptText":"Sam sorts 2.76 into the group of numbers between 0 and 1. Does 2.76 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0575",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.41,"kind":"betweenSaid"},"truth":true,"promptText":"Nia classifies 0.41 as lying between 0 and 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":0.41,"kind":"betweenSaid"},"truth":true,"promptText":"On Nia's number line, 0.41 is marked between 0 and 1. Does 0.41 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0576",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "betweenJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":3.41,"kind":"betweenSaid"},"truth":false,"promptText":"On Kai's line, 3.41 is placed inside the unit interval. Should it be?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":3.41,"kind":"betweenSaid"},"truth":false,"promptText":"Is Kai right that 3.41 is between 0 and 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0577",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.2,"kind":"beyondSaidDec"},"truth":true,"promptText":"Nia claims the decimal 1.2 is MORE than one whole. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.2,"kind":"beyondSaidDec"},"truth":true,"promptText":"Nia says 1.2 is more than one whole. Is Nia right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0578",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.9,"kind":"beyondSaidDec"},"truth":false,"promptText":"Is 0.9 bigger than 1, as Kai says?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.9,"kind":"beyondSaidDec"},"truth":false,"promptText":"Kai says 0.9 is more than one whole. Is Kai right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0579",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.5,"kind":"beyondSaidDec"},"truth":true,"promptText":"June claims the decimal 1.5 is MORE than one whole. Is June right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.5,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is 1.5 bigger than 1, as June says?"}},
   },
   {
     itemId: "decimals-conc-b0821-0580",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.8,"kind":"beyondSaidDec"},"truth":true,"promptText":"Amara claims the decimal 1.8 is MORE than one whole. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.8,"kind":"beyondSaidDec"},"truth":true,"promptText":"Amara says 1.8 is more than one whole. Is Amara right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0582",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.2,"kind":"beyondSaidDec"},"truth":false,"promptText":"Is 0.2 bigger than 1, as Leo says?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.2,"kind":"beyondSaidDec"},"truth":false,"promptText":"Leo says 0.2 is more than one whole. Is Leo right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0583",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.1,"kind":"beyondSaidDec"},"truth":true,"promptText":"Mina claims the decimal 1.1 is MORE than one whole. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.1,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is 1.1 bigger than 1, as Mina says?"}},
   },
   {
     itemId: "decimals-conc-b0821-0584",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.4,"kind":"beyondSaidDec"},"truth":true,"promptText":"Ida claims the decimal 1.4 is MORE than one whole. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.4,"kind":"beyondSaidDec"},"truth":true,"promptText":"Ida says 1.4 is more than one whole. Is Ida right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0586",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.4,"kind":"beyondSaidDec"},"truth":false,"promptText":"Is 0.4 bigger than 1, as Zoe says?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.4,"kind":"beyondSaidDec"},"truth":false,"promptText":"Zoe says 0.4 is more than one whole. Is Zoe right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0587",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.7,"kind":"beyondSaidDec"},"truth":true,"promptText":"Rosa claims the decimal 1.7 is MORE than one whole. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.7,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is 1.7 bigger than 1, as Rosa says?"}},
   },
   {
     itemId: "decimals-conc-b0821-0588",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.3,"kind":"beyondSaidDec"},"truth":true,"promptText":"Nora claims the decimal 1.3 is MORE than one whole. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.3,"kind":"beyondSaidDec"},"truth":true,"promptText":"Nora says 1.3 is more than one whole. Is Nora right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0590",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.8,"kind":"beyondSaidDec"},"truth":false,"promptText":"Is 0.8 bigger than 1, as Luca says?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.8,"kind":"beyondSaidDec"},"truth":false,"promptText":"Luca says 0.8 is more than one whole. Is Luca right?"}},
   },
   {
     itemId: "decimals-conc-b0821-0591",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "beyondOne_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.6,"kind":"beyondSaidDec"},"truth":true,"promptText":"Ava claims the decimal 1.6 is MORE than one whole. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.6,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is 1.6 bigger than 1, as Ava says?"}},
   },
   {
     itemId: "decimals-conc-b0821-0592",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.45,"kind":"beyondSaidDec"},"truth":true,"promptText":"Zoe plots 1.45 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.45,"kind":"beyondSaidDec"},"truth":true,"promptText":"Zoe marks 1.45 to the right of 1 on a number line. Does 1.45 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0594",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.45,"kind":"beyondSaidDec"},"truth":false,"promptText":"0.45 outruns one whole, according to Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.45,"kind":"beyondSaidDec"},"truth":false,"promptText":"Rosa says 0.45 is more than one whole. Is 0.45 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0595",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.08,"kind":"beyondSaidDec"},"truth":true,"promptText":"Diego plots 1.08 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.08,"kind":"beyondSaidDec"},"truth":true,"promptText":"Diego says 1.08 is more than one whole. Is 1.08 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0596",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.08,"kind":"beyondSaidDec"},"truth":false,"promptText":"0.08 outruns one whole, according to Nora. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.08,"kind":"beyondSaidDec"},"truth":false,"promptText":"Nora marks 0.08 to the right of 1 on a number line. Does 0.08 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0597",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.92,"kind":"beyondSaidDec"},"truth":true,"promptText":"Luca plots 1.92 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.92,"kind":"beyondSaidDec"},"truth":true,"promptText":"Luca marks 1.92 to the right of 1 on a number line. Does 1.92 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0598",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.92,"kind":"beyondSaidDec"},"truth":false,"promptText":"0.92 outruns one whole, according to Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.92,"kind":"beyondSaidDec"},"truth":false,"promptText":"Is Ava right that 0.92 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0599",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.67,"kind":"beyondSaidDec"},"truth":true,"promptText":"Omar plots 1.67 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.67,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is Omar right that 1.67 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0600",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.67,"kind":"beyondSaidDec"},"truth":false,"promptText":"0.67 outruns one whole, according to Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.67,"kind":"beyondSaidDec"},"truth":false,"promptText":"Ben says 0.67 is more than one whole. Is 0.67 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0601",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.25,"kind":"beyondSaidDec"},"truth":true,"promptText":"Finn plots 1.25 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.25,"kind":"beyondSaidDec"},"truth":true,"promptText":"Finn marks 1.25 to the right of 1 on a number line. Does 1.25 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0602",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.25,"kind":"beyondSaidDec"},"truth":false,"promptText":"0.25 outruns one whole, according to Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.25,"kind":"beyondSaidDec"},"truth":false,"promptText":"Priya marks 0.25 to the right of 1 on a number line. Does 0.25 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0603",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.81,"kind":"beyondSaidDec"},"truth":true,"promptText":"Sam plots 1.81 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.81,"kind":"beyondSaidDec"},"truth":true,"promptText":"Sam says 1.81 is more than one whole. Is 1.81 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0604",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.81,"kind":"beyondSaidDec"},"truth":false,"promptText":"0.81 outruns one whole, according to Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.81,"kind":"beyondSaidDec"},"truth":false,"promptText":"Is Nia right that 0.81 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0605",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.33,"kind":"beyondSaidDec"},"truth":true,"promptText":"Kai plots 1.33 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.33,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is Kai right that 1.33 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0606",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.33,"kind":"beyondSaidDec"},"truth":false,"promptText":"0.33 outruns one whole, according to June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.33,"kind":"beyondSaidDec"},"truth":false,"promptText":"June says 0.33 is more than one whole. Is 0.33 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0607",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.59,"kind":"beyondSaidDec"},"truth":true,"promptText":"Lily plots 1.59 beyond the 1 mark. Does it belong there?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.59,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is Lily right that 1.59 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0608",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "beyondOne_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.59,"kind":"beyondSaidDec"},"truth":false,"promptText":"0.59 outruns one whole, according to Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.59,"kind":"beyondSaidDec"},"truth":false,"promptText":"Amara marks 0.59 to the right of 1 on a number line. Does 0.59 belong there?"}},
   },
   {
     itemId: "decimals-conc-b0821-0609",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":2.05,"kind":"beyondSaidDec"},"truth":true,"promptText":"Diego classifies 2.05 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":2.05,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is Diego right that 2.05 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0610",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"beyondSaidDec"},"truth":false,"promptText":"Beyond 1 or not: Nora votes that 0.05 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.05,"kind":"beyondSaidDec"},"truth":false,"promptText":"Nora thinks 0.05 is bigger than one whole. Is 0.05 more than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0611",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.95,"kind":"beyondSaidDec"},"truth":true,"promptText":"Luca classifies 1.95 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.95,"kind":"beyondSaidDec"},"truth":true,"promptText":"Luca puts 1.95 in the group of numbers greater than 1. Does 1.95 belong in that group?"}},
   },
   {
     itemId: "decimals-conc-b0821-0612",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.95,"kind":"beyondSaidDec"},"truth":false,"promptText":"Beyond 1 or not: Ava votes that 0.95 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.95,"kind":"beyondSaidDec"},"truth":false,"promptText":"Ava says 0.95 is past 1 on a number line. Is 0.95 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0613",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":3.52,"kind":"beyondSaidDec"},"truth":true,"promptText":"Omar classifies 3.52 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":3.52,"kind":"beyondSaidDec"},"truth":true,"promptText":"Omar thinks 3.52 is bigger than one whole. Is 3.52 more than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0614",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.52,"kind":"beyondSaidDec"},"truth":false,"promptText":"Beyond 1 or not: Ben votes that 0.52 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.52,"kind":"beyondSaidDec"},"truth":false,"promptText":"Is Ben right that 0.52 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0615",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":2.88,"kind":"beyondSaidDec"},"truth":true,"promptText":"Finn classifies 2.88 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":2.88,"kind":"beyondSaidDec"},"truth":true,"promptText":"Is Finn right that 2.88 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0616",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.88,"kind":"beyondSaidDec"},"truth":false,"promptText":"Beyond 1 or not: Priya votes that 0.88 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.88,"kind":"beyondSaidDec"},"truth":false,"promptText":"Priya puts 0.88 in the group of numbers greater than 1. Does 0.88 belong in that group?"}},
   },
   {
     itemId: "decimals-conc-b0821-0617",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":4.17,"kind":"beyondSaidDec"},"truth":true,"promptText":"Sam classifies 4.17 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":4.17,"kind":"beyondSaidDec"},"truth":true,"promptText":"Sam says 4.17 is past 1 on a number line. Is 4.17 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0618",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.17,"kind":"beyondSaidDec"},"truth":false,"promptText":"Beyond 1 or not: Nia votes that 0.17 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.17,"kind":"beyondSaidDec"},"truth":false,"promptText":"Nia says 0.17 is past 1 on a number line. Is 0.17 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0619",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.63,"kind":"beyondSaidDec"},"truth":true,"promptText":"Kai classifies 1.63 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":1.63,"kind":"beyondSaidDec"},"truth":true,"promptText":"Kai puts 1.63 in the group of numbers greater than 1. Does 1.63 belong in that group?"}},
   },
   {
     itemId: "decimals-conc-b0821-0620",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.63,"kind":"beyondSaidDec"},"truth":false,"promptText":"Beyond 1 or not: June votes that 0.63 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.63,"kind":"beyondSaidDec"},"truth":false,"promptText":"Is June right that 0.63 is greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0621",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":5.29,"kind":"beyondSaidDec"},"truth":true,"promptText":"Lily classifies 5.29 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":5.29,"kind":"beyondSaidDec"},"truth":true,"promptText":"Lily thinks 5.29 is bigger than one whole. Is 5.29 more than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0622",
@@ -12342,7 +12342,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.29,"kind":"beyondSaidDec"},"truth":false,"promptText":"Beyond 1 or not: Amara votes that 0.29 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.29,"kind":"beyondSaidDec"},"truth":false,"promptText":"Amara puts 0.29 in the group of numbers greater than 1. Does 0.29 belong in that group?"}},
   },
   {
     itemId: "decimals-conc-b0821-0623",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":2.76,"kind":"beyondSaidDec"},"truth":true,"promptText":"Leo classifies 2.76 as greater than 1. Is the classification right?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"Yes","choices":["Yes","No"],"display":{"dec":{"v":2.76,"kind":"beyondSaidDec"},"truth":true,"promptText":"Leo says 2.76 is past 1 on a number line. Is 2.76 greater than 1?"}},
   },
   {
     itemId: "decimals-conc-b0821-0624",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "beyondOne_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.76,"kind":"beyondSaidDec"},"truth":false,"promptText":"Beyond 1 or not: Mina votes that 0.76 exceeds a whole. Correct?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"No","choices":["Yes","No"],"display":{"dec":{"v":0.76,"kind":"beyondSaidDec"},"truth":false,"promptText":"Mina thinks 0.76 is bigger than one whole. Is 0.76 more than 1?"}},
   },
   {
     itemId: "decimals-proc-b0821-0001",
@@ -12382,7 +12382,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"n":2,"kind":"tenths"},"promptText":"two tenths, written as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"n":2,"kind":"tenths"},"promptText":"What decimal is the same as two tenths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0003",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"n":4,"kind":"tenths"},"promptText":"four tenths, written as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"n":4,"kind":"tenths"},"promptText":"What decimal is the same as four tenths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0005",
@@ -12422,7 +12422,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"n":6,"kind":"tenths"},"promptText":"six tenths, written as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"n":6,"kind":"tenths"},"promptText":"What is six tenths written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0007",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"n":8,"kind":"tenths"},"promptText":"eight tenths, written as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"n":8,"kind":"tenths"},"promptText":"What is eight tenths written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0009",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"n":2,"kind":"tenths"},"promptText":"The number two tenths looks like which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"n":2,"kind":"tenths"},"promptText":"What decimal names two tenths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0012",
@@ -12492,7 +12492,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"n":4,"kind":"tenths"},"promptText":"The number four tenths looks like which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"n":4,"kind":"tenths"},"promptText":"What decimal means four tenths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0014",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"h":5,"t":1,"kind":"hundredths"},"promptText":"Write 1 tenths and 5 hundredths as one decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"h":5,"t":1,"kind":"hundredths"},"promptText":"Write 1 tenth and 5 hundredths as one decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0015",
@@ -12512,7 +12512,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.23,"display":{"dec":{"h":3,"t":2,"kind":"hundredths"},"promptText":"2 tenths plus 3 hundredths, as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.23,"display":{"dec":{"h":3,"t":2,"kind":"hundredths"},"promptText":"What decimal is 2 tenths and 3 hundredths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0016",
@@ -12532,7 +12532,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.41,"display":{"dec":{"h":1,"t":4,"kind":"hundredths"},"promptText":"4 tenths plus 1 hundredths, as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.41,"display":{"dec":{"h":1,"t":4,"kind":"hundredths"},"promptText":"What decimal do 4 tenths and 1 hundredth make?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0018",
@@ -12552,7 +12552,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.62,"display":{"dec":{"h":2,"t":6,"kind":"hundredths"},"promptText":"6 tenths plus 2 hundredths, as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.62,"display":{"dec":{"h":2,"t":6,"kind":"hundredths"},"promptText":"What decimal is 6 tenths and 2 hundredths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0020",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.86,"display":{"dec":{"h":6,"t":8,"kind":"hundredths"},"promptText":"8 tenths plus 6 hundredths, as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.86,"display":{"dec":{"h":6,"t":8,"kind":"hundredths"},"promptText":"What decimal is 8 tenths and 6 hundredths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0022",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.25,"display":{"dec":{"h":5,"t":2,"kind":"hundredths"},"promptText":"2 tenths plus 5 hundredths, as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.25,"display":{"dec":{"h":5,"t":2,"kind":"hundredths"},"promptText":"What decimal is 2 tenths and 5 hundredths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0024",
@@ -12612,7 +12612,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.63,"display":{"dec":{"h":3,"t":6,"kind":"hundredths"},"promptText":"6 tenths plus 3 hundredths, as a decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.63,"display":{"dec":{"h":3,"t":6,"kind":"hundredths"},"promptText":"What decimal do 6 tenths and 3 hundredths make?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0026",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.81,"display":{"dec":{"h":1,"t":8,"kind":"hundredths"},"promptText":"Combine 8 tenths with 1 hundredths. Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.81,"display":{"dec":{"h":1,"t":8,"kind":"hundredths"},"promptText":"What decimal is 8 tenths and 1 hundredth?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0027",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":2.43,"display":{"dec":{"h":3,"t":4,"w":2,"kind":"compose"},"promptText":"2 ones + 4 tenths + 3 hundredths = ? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":2.43,"display":{"dec":{"h":3,"t":4,"w":2,"kind":"compose"},"promptText":"What decimal do 2 ones, 4 tenths, and 3 hundredths make?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0029",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":4.81,"display":{"dec":{"h":1,"t":8,"w":4,"kind":"compose"},"promptText":"4 ones + 8 tenths + 1 hundredths = ? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":4.81,"display":{"dec":{"h":1,"t":8,"w":4,"kind":"compose"},"promptText":"What decimal is 4 ones, 8 tenths, and 1 hundredth?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0031",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5.19,"display":{"dec":{"h":9,"t":1,"w":5,"kind":"compose"},"promptText":"Write 5 ones, 1 tenths, and 9 hundredths as a decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":5.19,"display":{"dec":{"h":9,"t":1,"w":5,"kind":"compose"},"promptText":"Write 5 ones, 1 tenth, and 9 hundredths as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0032",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":6.32,"display":{"dec":{"h":2,"t":3,"w":6,"kind":"compose"},"promptText":"6 ones + 3 tenths + 2 hundredths = ? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":6.32,"display":{"dec":{"h":2,"t":3,"w":6,"kind":"compose"},"promptText":"What decimal is 6 ones, 3 tenths, and 2 hundredths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0033",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":8.76,"display":{"dec":{"h":6,"t":7,"w":8,"kind":"compose"},"promptText":"8 ones + 7 tenths + 6 hundredths = ? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":8.76,"display":{"dec":{"h":6,"t":7,"w":8,"kind":"compose"},"promptText":"What decimal is 8 ones, 7 tenths, and 6 hundredths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0035",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":2.65,"display":{"dec":{"h":5,"t":6,"w":2,"kind":"compose"},"promptText":"2 ones + 6 tenths + 5 hundredths = ? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":2.65,"display":{"dec":{"h":5,"t":6,"w":2,"kind":"compose"},"promptText":"What decimal do 2 ones, 6 tenths, and 5 hundredths make?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0037",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5.23,"display":{"dec":{"h":3,"t":2,"w":5,"kind":"compose"},"promptText":"5 ones + 2 tenths + 3 hundredths = ? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":5.23,"display":{"dec":{"h":3,"t":2,"w":5,"kind":"compose"},"promptText":"What decimal is 5 ones, 2 tenths, and 3 hundredths?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0039",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "writeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7.49,"display":{"dec":{"h":9,"t":4,"w":7,"kind":"compose"},"promptText":"Compose the decimal with 7 in the ones place, 4 in the tenths, 9 in the hundredths."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":7.49,"display":{"dec":{"h":9,"t":4,"w":7,"kind":"compose"},"promptText":"What decimal has 7 in the ones place, 4 in the tenths place, and 9 in the hundredths place?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0040",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"A strip has 10 equal parts. Exactly 1 part is colored. The decimal for the colored amount = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"n":1,"kind":"tenths"},"promptText":"A strip has 10 equal parts, and 1 part is colored. What decimal shows the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0041",
@@ -12782,7 +12782,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"n":3,"kind":"tenths"},"promptText":"A strip has 10 equal parts. Exactly 3 parts are colored. The decimal for the colored amount = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"n":3,"kind":"tenths"},"promptText":"A strip is cut into 10 equal parts, and 3 parts are colored. What decimal names the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0043",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"n":5,"kind":"tenths"},"promptText":"A strip has 10 equal parts. Exactly 5 parts are colored. The decimal for the colored amount = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"n":5,"kind":"tenths"},"promptText":"A strip has 10 equal parts, and 5 parts are colored. What decimal shows the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0045",
@@ -12822,7 +12822,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"n":7,"kind":"tenths"},"promptText":"A strip has 10 equal parts. Exactly 7 parts are colored. The decimal for the colored amount = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"n":7,"kind":"tenths"},"promptText":"A strip is cut into 10 equal parts, and 7 parts are colored. What decimal names the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0047",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"n":9,"kind":"tenths"},"promptText":"A strip has 10 equal parts. Exactly 9 parts are colored. The decimal for the colored amount = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"n":9,"kind":"tenths"},"promptText":"A strip has 10 equal parts, and 9 parts are colored. What decimal shows the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0049",
@@ -12852,7 +12852,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"n":4,"kind":"tenths"},"promptText":"Color 4 of 10 equal boxes. Type the decimal the coloring shows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"n":4,"kind":"tenths"},"promptText":"4 of 10 equal boxes are colored in. What decimal tells how much is colored?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0050",
@@ -12862,7 +12862,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"n":5,"kind":"tenths"},"promptText":"5 of 10 equal sections are colored. Which decimal is that? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"n":5,"kind":"tenths"},"promptText":"5 of 10 equal sections are colored. What decimal names the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0051",
@@ -12872,7 +12872,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"n":6,"kind":"tenths"},"promptText":"Color 6 of 10 equal boxes. Type the decimal the coloring shows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"n":6,"kind":"tenths"},"promptText":"6 of 10 equal boxes are colored in. What decimal tells how much is colored?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0052",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"n":7,"kind":"tenths"},"promptText":"7 of 10 equal sections are colored. Which decimal is that? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"n":7,"kind":"tenths"},"promptText":"7 of 10 equal sections are colored. What decimal names the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0053",
@@ -12892,7 +12892,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.05,"display":{"dec":{"h":5,"kind":"gridShade"},"promptText":"A 10-by-10 grid has exactly 5 of its 100 small squares colored. The decimal for the colored part = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.05,"display":{"dec":{"h":5,"kind":"gridShade"},"promptText":"A 10-by-10 grid has 5 of its 100 small squares colored. What decimal shows the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0054",
@@ -12912,7 +12912,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.25,"display":{"dec":{"h":25,"kind":"gridShade"},"promptText":"A 10-by-10 grid has exactly 25 of its 100 small squares colored. The decimal for the colored part = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.25,"display":{"dec":{"h":25,"kind":"gridShade"},"promptText":"In a 10-by-10 grid, 25 of the 100 small squares are colored. What decimal names the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0056",
@@ -12932,7 +12932,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.41,"display":{"dec":{"h":41,"kind":"gridShade"},"promptText":"A 10-by-10 grid has exactly 41 of its 100 small squares colored. The decimal for the colored part = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.41,"display":{"dec":{"h":41,"kind":"gridShade"},"promptText":"A 10-by-10 grid has 41 of its 100 small squares colored. What decimal shows the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0058",
@@ -12952,7 +12952,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.66,"display":{"dec":{"h":66,"kind":"gridShade"},"promptText":"A 10-by-10 grid has exactly 66 of its 100 small squares colored. The decimal for the colored part = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.66,"display":{"dec":{"h":66,"kind":"gridShade"},"promptText":"In a 10-by-10 grid, 66 of the 100 small squares are colored. What decimal names the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0060",
@@ -12972,7 +12972,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.87,"display":{"dec":{"h":87,"kind":"gridShade"},"promptText":"A 10-by-10 grid has exactly 87 of its 100 small squares colored. The decimal for the colored part = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.87,"display":{"dec":{"h":87,"kind":"gridShade"},"promptText":"A 10-by-10 grid has 87 of its 100 small squares colored. What decimal shows the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0062",
@@ -12992,7 +12992,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.19,"display":{"dec":{"h":19,"kind":"gridShade"},"promptText":"19 of the 100 squares in a grid are colored. Which decimal is that? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.19,"display":{"dec":{"h":19,"kind":"gridShade"},"promptText":"19 of the 100 squares in a grid are colored. What decimal names the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0064",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.48,"display":{"dec":{"h":48,"kind":"gridShade"},"promptText":"Color 48 squares on a 100-square grid. Type the decimal the coloring shows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.48,"display":{"dec":{"h":48,"kind":"gridShade"},"promptText":"48 of 100 equal squares are shaded. What decimal names the shaded part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0065",
@@ -13012,7 +13012,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.77,"display":{"dec":{"h":77,"kind":"gridShade"},"promptText":"77 of the 100 squares in a grid are colored. Which decimal is that? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.77,"display":{"dec":{"h":77,"kind":"gridShade"},"promptText":"77 of the 100 squares in a grid are colored. What decimal names the colored part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0066",
@@ -13032,7 +13032,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"h":15,"kind":"gridShade"},"promptText":"Exactly 15 of a chart's 100 equal squares are filled. The decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"h":15,"kind":"gridShade"},"promptText":"15 of a chart's 100 equal squares are filled. What decimal shows the filled part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0068",
@@ -13052,7 +13052,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.36,"display":{"dec":{"h":36,"kind":"gridShade"},"promptText":"Exactly 36 of a chart's 100 equal squares are filled. The decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.36,"display":{"dec":{"h":36,"kind":"gridShade"},"promptText":"A chart has 100 equal squares, and 36 are filled. What decimal names the filled part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0070",
@@ -13072,7 +13072,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.52,"display":{"dec":{"h":52,"kind":"gridShade"},"promptText":"Exactly 52 of a chart's 100 equal squares are filled. The decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.52,"display":{"dec":{"h":52,"kind":"gridShade"},"promptText":"52 of a chart's 100 equal squares are filled. What decimal shows the filled part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0072",
@@ -13092,7 +13092,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.78,"display":{"dec":{"h":78,"kind":"gridShade"},"promptText":"Exactly 78 of a chart's 100 equal squares are filled. The decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.78,"display":{"dec":{"h":78,"kind":"gridShade"},"promptText":"A chart has 100 equal squares, and 78 are filled. What decimal names the filled part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0074",
@@ -13112,7 +13112,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.99,"display":{"dec":{"h":99,"kind":"gridShade"},"promptText":"Exactly 99 of a chart's 100 equal squares are filled. The decimal = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.99,"display":{"dec":{"h":99,"kind":"gridShade"},"promptText":"99 of a chart's 100 equal squares are filled. What decimal shows the filled part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0076",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.31,"display":{"dec":{"h":31,"kind":"gridShade"},"promptText":"Filling 31 squares out of 100 represents which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.31,"display":{"dec":{"h":31,"kind":"gridShade"},"promptText":"31 out of 100 squares are filled. What decimal names the filled part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0077",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "shadeDecimal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.57,"display":{"dec":{"h":57,"kind":"gridShade"},"promptText":"Filling 57 squares out of 100 represents which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.57,"display":{"dec":{"h":57,"kind":"gridShade"},"promptText":"57 out of 100 squares are filled. What decimal names the filled part?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0079",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,1]},"promptText":"In the decimal 0.1, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,1]},"promptText":"What digit is in the tenths place of 0.1?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0080",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":2,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,2]},"promptText":"Look at 0.2. Which digit sits in the tenths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":2,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,2]},"promptText":"Which digit is in the tenths place in 0.2?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0081",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,3]},"promptText":"In the decimal 0.3, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,3]},"promptText":"In 0.3, what digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0082",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":4,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,4]},"promptText":"Look at 0.4. Which digit sits in the tenths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":4,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,4]},"promptText":"Which digit is in the tenths place in 0.4?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0083",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,5]},"promptText":"In the decimal 0.5, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,5]},"promptText":"What digit is in the tenths place of 0.5?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0084",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":6,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,6]},"promptText":"Look at 0.6. Which digit sits in the tenths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":6,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,6]},"promptText":"Which digit is in the tenths place in 0.6?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0085",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,7]},"promptText":"In the decimal 0.7, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,7]},"promptText":"In 0.7, what digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0086",
@@ -13222,7 +13222,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":8,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,8]},"promptText":"Look at 0.8. Which digit sits in the tenths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":8,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,8]},"promptText":"Which digit is in the tenths place in 0.8?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0087",
@@ -13232,7 +13232,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":9,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,9]},"promptText":"In the decimal 0.9, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":9,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,9]},"promptText":"What digit is in the tenths place of 0.9?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0088",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,7]},"promptText":"Read 0.7: the digit right after the decimal point = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,7]},"promptText":"What digit comes right after the decimal point in 0.7?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0089",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "readDigit_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":9,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,9]},"promptText":"Read 0.9: the digit right after the decimal point = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":9,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[0,9]},"promptText":"What digit comes right after the decimal point in 0.9?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0091",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[1,5]},"promptText":"In the decimal 0.15, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[1,5]},"promptText":"What digit is in the tenths place of 0.15?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0093",
@@ -13292,7 +13292,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[2,3]},"promptText":"Look at 0.23. Which digit is in the hundredths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[2,3]},"promptText":"Which digit is in the hundredths place of 0.23?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0094",
@@ -13302,7 +13302,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[3,7]},"promptText":"In the decimal 0.37, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[3,7]},"promptText":"In 0.37, what digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0095",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[4,1]},"promptText":"Look at 0.41. Which digit is in the hundredths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[4,1]},"promptText":"Which digit is in the hundredths place of 0.41?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0096",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[5,9]},"promptText":"In the decimal 0.59, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[5,9]},"promptText":"What digit is in the tenths place of 0.59?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0097",
@@ -13332,7 +13332,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":2,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[6,2]},"promptText":"Look at 0.62. Which digit is in the hundredths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":2,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[6,2]},"promptText":"Which digit is in the hundredths place of 0.62?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0098",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[7,4]},"promptText":"In the decimal 0.74, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[7,4]},"promptText":"In 0.74, what digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0099",
@@ -13352,7 +13352,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":6,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[8,6]},"promptText":"Look at 0.86. Which digit is in the hundredths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":6,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[8,6]},"promptText":"Which digit is in the hundredths place of 0.86?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0100",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":9,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[9,8]},"promptText":"In the decimal 0.98, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":9,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[9,8]},"promptText":"What digit is in the tenths place of 0.98?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0101",
@@ -13372,7 +13372,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[2,5]},"promptText":"Look at 0.25. Which digit is in the hundredths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[2,5]},"promptText":"Which digit is in the hundredths place of 0.25?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0102",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":4,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[4,7]},"promptText":"In the decimal 0.47, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":4,"display":{"dec":{"kind":"digitOf","place":"tenths","digits":[4,7]},"promptText":"In 0.47, what digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0103",
@@ -13392,7 +13392,7 @@ export const ITEMS = [
     structureType: "readDigit_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[6,3]},"promptText":"Look at 0.63. Which digit is in the hundredths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf","place":"hundredths","digits":[6,3]},"promptText":"Which digit is in the hundredths place of 0.63?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0104",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf3","place":"ones","digits":[1,2,5]},"promptText":"In the decimal 1.25, the ones digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf3","place":"ones","digits":[1,2,5]},"promptText":"What digit is in the ones place of 1.25?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0106",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":4,"display":{"dec":{"kind":"digitOf3","place":"tenths","digits":[2,4,3]},"promptText":"Look at 2.43. Which digit fills the tenths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":4,"display":{"dec":{"kind":"digitOf3","place":"tenths","digits":[2,4,3]},"promptText":"In 2.43, which digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0107",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf3","place":"hundredths","digits":[3,6,7]},"promptText":"In the decimal 3.67, the hundredths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf3","place":"hundredths","digits":[3,6,7]},"promptText":"What digit is in the hundredths place of 3.67?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0108",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":4,"display":{"dec":{"kind":"digitOf3","place":"ones","digits":[4,8,1]},"promptText":"Look at 4.81. Which digit fills the ones place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":4,"display":{"dec":{"kind":"digitOf3","place":"ones","digits":[4,8,1]},"promptText":"In 4.81, which digit is in the ones place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0109",
@@ -13452,7 +13452,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf3","place":"tenths","digits":[5,1,9]},"promptText":"In the decimal 5.19, the tenths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"kind":"digitOf3","place":"tenths","digits":[5,1,9]},"promptText":"In 5.19, what digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0110",
@@ -13462,7 +13462,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":2,"display":{"dec":{"kind":"digitOf3","place":"hundredths","digits":[6,3,2]},"promptText":"Look at 6.32. Which digit fills the hundredths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":2,"display":{"dec":{"kind":"digitOf3","place":"hundredths","digits":[6,3,2]},"promptText":"In 6.32, which digit is in the hundredths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0111",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf3","place":"ones","digits":[7,5,4]},"promptText":"In the decimal 7.54, the ones digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf3","place":"ones","digits":[7,5,4]},"promptText":"In 7.54, what digit is in the ones place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0112",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf3","place":"tenths","digits":[8,7,6]},"promptText":"Look at 8.76. Which digit fills the tenths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"kind":"digitOf3","place":"tenths","digits":[8,7,6]},"promptText":"In 8.76, which digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0113",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":8,"display":{"dec":{"kind":"digitOf3","place":"hundredths","digits":[9,9,8]},"promptText":"In the decimal 9.98, the hundredths digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":8,"display":{"dec":{"kind":"digitOf3","place":"hundredths","digits":[9,9,8]},"promptText":"In 9.98, what digit is in the hundredths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0114",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":6,"display":{"dec":{"kind":"digitOf3","place":"tenths","digits":[2,6,5]},"promptText":"Look at 2.65. Which digit fills the tenths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":6,"display":{"dec":{"kind":"digitOf3","place":"tenths","digits":[2,6,5]},"promptText":"In 2.65, which digit is in the tenths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0115",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf3","place":"ones","digits":[3,8,7]},"promptText":"In the decimal 3.87, the ones digit = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf3","place":"ones","digits":[3,8,7]},"promptText":"What digit is in the ones place of 3.87?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0116",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "readDigit_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf3","place":"hundredths","digits":[5,2,3]},"promptText":"Look at 5.23. Which digit fills the hundredths place? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"kind":"digitOf3","place":"hundredths","digits":[5,2,3]},"promptText":"In 5.23, which digit is in the hundredths place?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0117",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "countUnits_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"n":1,"kind":"jumpsDec"},"promptText":"How many tenths are in the decimal 0.1? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"n":1,"kind":"jumpsDec"},"promptText":"How many tenths are in the decimal 0.1?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0119",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "countUnits_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"n":3,"kind":"jumpsDec"},"promptText":"How many tenths are in the decimal 0.3? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"n":3,"kind":"jumpsDec"},"promptText":"How many tenths make 0.3?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0121",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "countUnits_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"n":5,"kind":"jumpsDec"},"promptText":"How many tenths are in the decimal 0.5? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"n":5,"kind":"jumpsDec"},"promptText":"How many tenths are in the decimal 0.5?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0123",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "countUnits_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"n":7,"kind":"jumpsDec"},"promptText":"How many tenths are in the decimal 0.7? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":7,"display":{"dec":{"n":7,"kind":"jumpsDec"},"promptText":"How many tenths make 0.7?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0125",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "countUnits_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":9,"display":{"dec":{"n":9,"kind":"jumpsDec"},"promptText":"How many tenths are in the decimal 0.9? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":9,"display":{"dec":{"n":9,"kind":"jumpsDec"},"promptText":"How many tenths are in the decimal 0.9?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0127",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":82,"display":{"dec":{"h":2,"t":8,"kind":"asHundredths"},"promptText":"How many hundredths make 0.82? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":82,"display":{"dec":{"h":2,"t":8,"kind":"asHundredths"},"promptText":"How many hundredths make 0.82 in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0157",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"d":10,"n":2,"kind":"fromFraction"},"promptText":"2/10 as a decimal = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"d":10,"n":2,"kind":"fromFraction"},"promptText":"Write 2/10 as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0198",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"d":10,"n":4,"kind":"fromFraction"},"promptText":"4/10 as a decimal = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"d":10,"n":4,"kind":"fromFraction"},"promptText":"What is 4/10 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0200",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"d":10,"n":6,"kind":"fromFraction"},"promptText":"6/10 as a decimal = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"d":10,"n":6,"kind":"fromFraction"},"promptText":"Write 6/10 as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0202",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"d":10,"n":8,"kind":"fromFraction"},"promptText":"8/10 as a decimal = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"d":10,"n":8,"kind":"fromFraction"},"promptText":"What is 8/10 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0204",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"d":10,"n":2,"kind":"fromFraction"},"promptText":"The fraction 2/10 names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"d":10,"n":2,"kind":"fromFraction"},"promptText":"What decimal is the same as the fraction 2/10?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0206",
@@ -14422,7 +14422,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"d":10,"n":5,"kind":"fromFraction"},"promptText":"Turn 5/10 into decimal form. What do you type?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"d":10,"n":5,"kind":"fromFraction"},"promptText":"What is 5/10 written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0207",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"d":10,"n":8,"kind":"fromFraction"},"promptText":"The fraction 8/10 names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"d":10,"n":8,"kind":"fromFraction"},"promptText":"The fraction 8/10 is the same as what decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0208",
@@ -14442,7 +14442,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"d":10,"n":3,"kind":"fromFraction"},"promptText":"Turn 3/10 into decimal form. What do you type?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"d":10,"n":3,"kind":"fromFraction"},"promptText":"How do you write 3/10 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0209",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"d":10,"n":6,"kind":"fromFraction"},"promptText":"The fraction 6/10 names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"d":10,"n":6,"kind":"fromFraction"},"promptText":"What decimal is the same as the fraction 6/10?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0210",
@@ -14462,7 +14462,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"d":10,"n":9,"kind":"fromFraction"},"promptText":"Turn 9/10 into decimal form. What do you type?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"d":10,"n":9,"kind":"fromFraction"},"promptText":"What is 9/10 written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0211",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"d":10,"n":1,"kind":"fromFraction"},"promptText":"The fraction 1/10 names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"d":10,"n":1,"kind":"fromFraction"},"promptText":"The fraction 1/10 is the same as what decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0212",
@@ -14482,7 +14482,7 @@ export const ITEMS = [
     structureType: "fracToDec_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"d":10,"n":4,"kind":"fromFraction"},"promptText":"Turn 4/10 into decimal form. What do you type?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"d":10,"n":4,"kind":"fromFraction"},"promptText":"How do you write 4/10 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0213",
@@ -14502,7 +14502,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"d":100,"n":50,"kind":"fromFraction"},"promptText":"As a decimal, 50/100 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"d":100,"n":50,"kind":"fromFraction"},"promptText":"Write 50/100 as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0215",
@@ -14522,7 +14522,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.07,"display":{"dec":{"d":100,"n":7,"kind":"fromFraction"},"promptText":"As a decimal, 7/100 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.07,"display":{"dec":{"d":100,"n":7,"kind":"fromFraction"},"promptText":"What is 7/100 written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0217",
@@ -14542,7 +14542,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"d":100,"n":40,"kind":"fromFraction"},"promptText":"As a decimal, 40/100 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"d":100,"n":40,"kind":"fromFraction"},"promptText":"Write 40/100 as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0219",
@@ -14562,7 +14562,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.88,"display":{"dec":{"d":100,"n":88,"kind":"fromFraction"},"promptText":"As a decimal, 88/100 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.88,"display":{"dec":{"d":100,"n":88,"kind":"fromFraction"},"promptText":"What is 88/100 written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0221",
@@ -14582,7 +14582,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.31,"display":{"dec":{"d":100,"n":31,"kind":"fromFraction"},"promptText":"As a decimal, 31/100 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.31,"display":{"dec":{"d":100,"n":31,"kind":"fromFraction"},"promptText":"Write 31/100 as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0223",
@@ -14602,7 +14602,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.16,"display":{"dec":{"d":100,"n":16,"kind":"fromFraction"},"promptText":"As a decimal, 16/100 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.16,"display":{"dec":{"d":100,"n":16,"kind":"fromFraction"},"promptText":"What is 16/100 written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0225",
@@ -14612,7 +14612,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.25,"display":{"dec":{"d":100,"n":25,"kind":"fromFraction"},"promptText":"Rewrite the fraction 25/100 in decimal notation."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.25,"display":{"dec":{"d":100,"n":25,"kind":"fromFraction"},"promptText":"What decimal is equal to 25/100?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0226",
@@ -14622,7 +14622,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"d":100,"n":50,"kind":"fromFraction"},"promptText":"Which decimal equals 50/100? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"d":100,"n":50,"kind":"fromFraction"},"promptText":"What is 50/100 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0227",
@@ -14632,7 +14632,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.75,"display":{"dec":{"d":100,"n":75,"kind":"fromFraction"},"promptText":"Rewrite the fraction 75/100 in decimal notation."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.75,"display":{"dec":{"d":100,"n":75,"kind":"fromFraction"},"promptText":"What decimal is equal to 75/100?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0228",
@@ -14642,7 +14642,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.07,"display":{"dec":{"d":100,"n":7,"kind":"fromFraction"},"promptText":"Which decimal equals 7/100? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.07,"display":{"dec":{"d":100,"n":7,"kind":"fromFraction"},"promptText":"What is 7/100 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0229",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "fracToDec_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.13,"display":{"dec":{"d":100,"n":13,"kind":"fromFraction"},"promptText":"Rewrite the fraction 13/100 in decimal notation."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.13,"display":{"dec":{"d":100,"n":13,"kind":"fromFraction"},"promptText":"What decimal is equal to 13/100?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0230",
@@ -14672,7 +14672,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"d":100,"n":70,"kind":"fromFraction"},"promptText":"Express 70/100 in decimal form. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"d":100,"n":70,"kind":"fromFraction"},"promptText":"Write 70/100 as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0232",
@@ -14692,7 +14692,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.58,"display":{"dec":{"d":100,"n":58,"kind":"fromFraction"},"promptText":"Express 58/100 in decimal form. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.58,"display":{"dec":{"d":100,"n":58,"kind":"fromFraction"},"promptText":"How do you write 58/100 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0234",
@@ -14712,7 +14712,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.27,"display":{"dec":{"d":100,"n":27,"kind":"fromFraction"},"promptText":"Express 27/100 in decimal form. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.27,"display":{"dec":{"d":100,"n":27,"kind":"fromFraction"},"promptText":"Write 27/100 as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0236",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.81,"display":{"dec":{"d":100,"n":81,"kind":"fromFraction"},"promptText":"Express 81/100 in decimal form. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.81,"display":{"dec":{"d":100,"n":81,"kind":"fromFraction"},"promptText":"How do you write 81/100 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0238",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.19,"display":{"dec":{"d":100,"n":19,"kind":"fromFraction"},"promptText":"Express 19/100 in decimal form. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.19,"display":{"dec":{"d":100,"n":19,"kind":"fromFraction"},"promptText":"Write 19/100 as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0240",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.55,"display":{"dec":{"d":100,"n":55,"kind":"fromFraction"},"promptText":"Express 55/100 in decimal form. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.55,"display":{"dec":{"d":100,"n":55,"kind":"fromFraction"},"promptText":"How do you write 55/100 as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0242",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.45,"display":{"dec":{"d":100,"n":45,"kind":"fromFraction"},"promptText":"The precise decimal for 45/100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.45,"display":{"dec":{"d":100,"n":45,"kind":"fromFraction"},"promptText":"What decimal is equal to 45/100?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0243",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"d":100,"n":70,"kind":"fromFraction"},"promptText":"Translate 70/100 into its decimal. What is it?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"d":100,"n":70,"kind":"fromFraction"},"promptText":"What is 70/100 written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0244",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.03,"display":{"dec":{"d":100,"n":3,"kind":"fromFraction"},"promptText":"The precise decimal for 3/100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.03,"display":{"dec":{"d":100,"n":3,"kind":"fromFraction"},"promptText":"What decimal is equal to 3/100?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0245",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.58,"display":{"dec":{"d":100,"n":58,"kind":"fromFraction"},"promptText":"Translate 58/100 into its decimal. What is it?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.58,"display":{"dec":{"d":100,"n":58,"kind":"fromFraction"},"promptText":"What is 58/100 written as a decimal?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0246",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "fracToDec_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.92,"display":{"dec":{"d":100,"n":92,"kind":"fromFraction"},"promptText":"The precise decimal for 92/100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.92,"display":{"dec":{"d":100,"n":92,"kind":"fromFraction"},"promptText":"What decimal is equal to 92/100?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0247",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "decToFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1/10","choices":["10/1","1/10","1/100","1/2"],"display":{"dec":{"d":10,"n":1,"kind":"toFraction"},"promptText":"The decimal 0.1 equals which fraction? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1/10","choices":["10/1","1/10","1/100","1/2"],"display":{"dec":{"d":10,"n":1,"kind":"toFraction"},"promptText":"Which fraction is equal to the decimal 0.1?"}},
   },
   {
     itemId: "decimals-proc-b0821-0248",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "decToFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"3/10","choices":["3/100","3/10","3/1","10/3"],"display":{"dec":{"d":10,"n":3,"kind":"toFraction"},"promptText":"The decimal 0.3 equals which fraction? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"3/10","choices":["3/100","3/10","3/1","10/3"],"display":{"dec":{"d":10,"n":3,"kind":"toFraction"},"promptText":"Which fraction names the same amount as 0.3?"}},
   },
   {
     itemId: "decimals-proc-b0821-0250",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "decToFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"5/10","choices":["5/100","5/1","5/10","10/5"],"display":{"dec":{"d":10,"n":5,"kind":"toFraction"},"promptText":"The decimal 0.5 equals which fraction? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"5/10","choices":["5/100","5/1","5/10","10/5"],"display":{"dec":{"d":10,"n":5,"kind":"toFraction"},"promptText":"Which fraction is equal to the decimal 0.5?"}},
   },
   {
     itemId: "decimals-proc-b0821-0252",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "decToFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"7/10","choices":["10/7","7/1","7/100","7/10"],"display":{"dec":{"d":10,"n":7,"kind":"toFraction"},"promptText":"The decimal 0.7 equals which fraction? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"7/10","choices":["10/7","7/1","7/100","7/10"],"display":{"dec":{"d":10,"n":7,"kind":"toFraction"},"promptText":"Which fraction names the same amount as 0.7?"}},
   },
   {
     itemId: "decimals-proc-b0821-0254",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "decToFrac_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"9/10","choices":["9/10","10/9","9/100","9/1"],"display":{"dec":{"d":10,"n":9,"kind":"toFraction"},"promptText":"The decimal 0.9 equals which fraction? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"9/10","choices":["9/10","10/9","9/100","9/1"],"display":{"dec":{"d":10,"n":9,"kind":"toFraction"},"promptText":"Which fraction is equal to the decimal 0.9?"}},
   },
   {
     itemId: "decimals-proc-b0821-0256",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"70/100","choices":["100/70","70/100","71/100","70/10"],"display":{"dec":{"d":100,"n":70,"kind":"toFraction"},"promptText":"0.7 corresponds to which fraction below?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"70/100","choices":["100/70","70/100","71/100","70/10"],"display":{"dec":{"d":100,"n":70,"kind":"toFraction"},"promptText":"Which fraction is the same as 0.7?"}},
   },
   {
     itemId: "decimals-proc-b0821-0283",
@@ -15202,7 +15202,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"58/100","choices":["100/58","58/100","59/100","58/10"],"display":{"dec":{"d":100,"n":58,"kind":"toFraction"},"promptText":"0.58 corresponds to which fraction below?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"58/100","choices":["100/58","58/100","59/100","58/10"],"display":{"dec":{"d":100,"n":58,"kind":"toFraction"},"promptText":"Which fraction is equal to 0.58?"}},
   },
   {
     itemId: "decimals-proc-b0821-0285",
@@ -15222,7 +15222,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"27/100","choices":["28/100","27/100","27/10","100/27"],"display":{"dec":{"d":100,"n":27,"kind":"toFraction"},"promptText":"0.27 corresponds to which fraction below?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"27/100","choices":["28/100","27/100","27/10","100/27"],"display":{"dec":{"d":100,"n":27,"kind":"toFraction"},"promptText":"Which fraction is the same as 0.27?"}},
   },
   {
     itemId: "decimals-proc-b0821-0287",
@@ -15242,7 +15242,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"81/100","choices":["81/10","82/100","100/81","81/100"],"display":{"dec":{"d":100,"n":81,"kind":"toFraction"},"promptText":"0.81 corresponds to which fraction below?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"81/100","choices":["81/10","82/100","100/81","81/100"],"display":{"dec":{"d":100,"n":81,"kind":"toFraction"},"promptText":"Which fraction is equal to 0.81?"}},
   },
   {
     itemId: "decimals-proc-b0821-0289",
@@ -15262,7 +15262,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"19/100","choices":["20/100","100/19","19/100","19/10"],"display":{"dec":{"d":100,"n":19,"kind":"toFraction"},"promptText":"0.19 corresponds to which fraction below?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"19/100","choices":["20/100","100/19","19/100","19/10"],"display":{"dec":{"d":100,"n":19,"kind":"toFraction"},"promptText":"Which fraction is the same as 0.19?"}},
   },
   {
     itemId: "decimals-proc-b0821-0291",
@@ -15282,7 +15282,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"55/100","choices":["55/10","100/55","56/100","55/100"],"display":{"dec":{"d":100,"n":55,"kind":"toFraction"},"promptText":"0.55 corresponds to which fraction below?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"55/100","choices":["55/10","100/55","56/100","55/100"],"display":{"dec":{"d":100,"n":55,"kind":"toFraction"},"promptText":"Which fraction is equal to 0.55?"}},
   },
   {
     itemId: "decimals-proc-b0821-0293",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"45/100","choices":["45/100","46/100","100/45","45/10"],"display":{"dec":{"d":100,"n":45,"kind":"toFraction"},"promptText":"Precisely which fraction equals 0.45?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"45/100","choices":["45/100","46/100","100/45","45/10"],"display":{"dec":{"d":100,"n":45,"kind":"toFraction"},"promptText":"Which fraction equals 0.45?"}},
   },
   {
     itemId: "decimals-proc-b0821-0294",
@@ -15312,7 +15312,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"3/100","choices":["100/3","3/100","4/100","3/10"],"display":{"dec":{"d":100,"n":3,"kind":"toFraction"},"promptText":"Precisely which fraction equals 0.03?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"3/100","choices":["100/3","3/100","4/100","3/10"],"display":{"dec":{"d":100,"n":3,"kind":"toFraction"},"promptText":"Which fraction equals 0.03?"}},
   },
   {
     itemId: "decimals-proc-b0821-0296",
@@ -15332,7 +15332,7 @@ export const ITEMS = [
     structureType: "decToFrac_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"92/100","choices":["100/92","93/100","92/10","92/100"],"display":{"dec":{"d":100,"n":92,"kind":"toFraction"},"promptText":"Precisely which fraction equals 0.92?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"92/100","choices":["100/92","93/100","92/10","92/100"],"display":{"dec":{"d":100,"n":92,"kind":"toFraction"},"promptText":"Which fraction equals 0.92?"}},
   },
   {
     itemId: "decimals-proc-b0821-0298",
@@ -15342,7 +15342,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"choices":[0.01,0.1,0.2],"display":{"dec":{"d":10,"n":1,"kind":"fromFraction"},"promptText":"Which decimal equals 1/10? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"choices":[0.01,0.1,0.2],"display":{"dec":{"d":10,"n":1,"kind":"fromFraction"},"promptText":"Which decimal equals 1/10?"}},
   },
   {
     itemId: "decimals-proc-b0821-0299",
@@ -15362,7 +15362,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"choices":[0.05,0.6,0.5,0.4],"display":{"dec":{"d":10,"n":5,"kind":"fromFraction"},"promptText":"Which decimal equals 5/10? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"choices":[0.05,0.6,0.5,0.4],"display":{"dec":{"d":10,"n":5,"kind":"fromFraction"},"promptText":"Which decimal is the same as 5/10?"}},
   },
   {
     itemId: "decimals-proc-b0821-0301",
@@ -15382,7 +15382,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.9,"choices":[0.8,0.9,0.09,1],"display":{"dec":{"d":10,"n":9,"kind":"fromFraction"},"promptText":"Which decimal equals 9/10? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.9,"choices":[0.8,0.9,0.09,1],"display":{"dec":{"d":10,"n":9,"kind":"fromFraction"},"promptText":"Which decimal equals 9/10?"}},
   },
   {
     itemId: "decimals-proc-b0821-0303",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"choices":[0.3,0.04,0.4,0.5],"display":{"dec":{"d":10,"n":4,"kind":"fromFraction"},"promptText":"Which decimal equals 4/10? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"choices":[0.3,0.04,0.4,0.5],"display":{"dec":{"d":10,"n":4,"kind":"fromFraction"},"promptText":"Which decimal is the same as 4/10?"}},
   },
   {
     itemId: "decimals-proc-b0821-0305",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"choices":[0.8,0.7,0.9,0.08],"display":{"dec":{"d":10,"n":8,"kind":"fromFraction"},"promptText":"Which decimal equals 8/10? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"choices":[0.8,0.7,0.9,0.08],"display":{"dec":{"d":10,"n":8,"kind":"fromFraction"},"promptText":"Which decimal equals 8/10?"}},
   },
   {
     itemId: "decimals-proc-b0821-0307",
@@ -15522,7 +15522,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.25,"choices":[0.25,0.35,0.15,0.03],"display":{"dec":{"d":4,"n":1,"kind":"fromFraction"},"promptText":"1/4 is which decimal? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.25,"choices":[0.25,0.35,0.15,0.03],"display":{"dec":{"d":4,"n":1,"kind":"fromFraction"},"promptText":"Which decimal is equal to 1/4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0317",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"choices":[0.02,0.1,0.2,0.3],"display":{"dec":{"d":5,"n":1,"kind":"fromFraction"},"promptText":"1/5 is which decimal? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"choices":[0.02,0.1,0.2,0.3],"display":{"dec":{"d":5,"n":1,"kind":"fromFraction"},"promptText":"Which decimal names 1/5?"}},
   },
   {
     itemId: "decimals-proc-b0821-0319",
@@ -15562,7 +15562,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"choices":[0.06,0.7,0.5,0.6],"display":{"dec":{"d":5,"n":3,"kind":"fromFraction"},"promptText":"3/5 is which decimal? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"choices":[0.06,0.7,0.5,0.6],"display":{"dec":{"d":5,"n":3,"kind":"fromFraction"},"promptText":"Which decimal is equal to 3/5?"}},
   },
   {
     itemId: "decimals-proc-b0821-0321",
@@ -15582,7 +15582,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"choices":[0.01,0.2,0.1],"display":{"dec":{"d":10,"n":1,"kind":"fromFraction"},"promptText":"1/10 is which decimal? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"choices":[0.01,0.2,0.1],"display":{"dec":{"d":10,"n":1,"kind":"fromFraction"},"promptText":"Which decimal names 1/10?"}},
   },
   {
     itemId: "decimals-proc-b0821-0323",
@@ -15602,7 +15602,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.25,"choices":[0.15,0.03,0.25,0.35],"display":{"dec":{"d":100,"n":25,"kind":"fromFraction"},"promptText":"25/100 is which decimal? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.25,"choices":[0.15,0.03,0.25,0.35],"display":{"dec":{"d":100,"n":25,"kind":"fromFraction"},"promptText":"Which decimal is equal to 25/100?"}},
   },
   {
     itemId: "decimals-proc-b0821-0325",
@@ -15622,7 +15622,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"choices":[0.5,0.4,0.05,0.6],"display":{"dec":{"d":100,"n":50,"kind":"fromFraction"},"promptText":"50/100 is which decimal? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"choices":[0.5,0.4,0.05,0.6],"display":{"dec":{"d":100,"n":50,"kind":"fromFraction"},"promptText":"Which decimal names 50/100?"}},
   },
   {
     itemId: "decimals-proc-b0821-0327",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.25,"choices":[0.35,0.15,0.25,0.03],"display":{"dec":{"d":4,"n":1,"kind":"fromFraction"},"promptText":"Exactly which decimal represents 1/4?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.25,"choices":[0.35,0.15,0.25,0.03],"display":{"dec":{"d":4,"n":1,"kind":"fromFraction"},"promptText":"Which decimal names the same amount as 1/4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0334",
@@ -15712,7 +15712,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"choices":[0.3,0.1,0.02,0.2],"display":{"dec":{"d":5,"n":1,"kind":"fromFraction"},"promptText":"Exactly which decimal represents 1/5?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"choices":[0.3,0.1,0.02,0.2],"display":{"dec":{"d":5,"n":1,"kind":"fromFraction"},"promptText":"Which decimal names the same amount as 1/5?"}},
   },
   {
     itemId: "decimals-proc-b0821-0336",
@@ -15732,7 +15732,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"choices":[0.06,0.5,0.7,0.6],"display":{"dec":{"d":5,"n":3,"kind":"fromFraction"},"promptText":"Exactly which decimal represents 3/5?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"choices":[0.06,0.5,0.7,0.6],"display":{"dec":{"d":5,"n":3,"kind":"fromFraction"},"promptText":"Which decimal names the same amount as 3/5?"}},
   },
   {
     itemId: "decimals-proc-b0821-0338",
@@ -15752,7 +15752,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.05,"choices":[0.01,0.15,0.05],"display":{"dec":{"d":20,"n":1,"kind":"fromFraction"},"promptText":"Exactly which decimal represents 1/20?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.05,"choices":[0.01,0.15,0.05],"display":{"dec":{"d":20,"n":1,"kind":"fromFraction"},"promptText":"Which decimal names the same amount as 1/20?"}},
   },
   {
     itemId: "decimals-proc-b0821-0340",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.35,"choices":[0.35,0.45,0.03,0.25],"display":{"dec":{"d":20,"n":7,"kind":"fromFraction"},"promptText":"Exactly which decimal represents 7/20?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.35,"choices":[0.35,0.45,0.03,0.25],"display":{"dec":{"d":20,"n":7,"kind":"fromFraction"},"promptText":"Which decimal names the same amount as 7/20?"}},
   },
   {
     itemId: "decimals-proc-b0821-0342",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.48,"choices":[0.58,0.05,0.48,0.38],"display":{"dec":{"d":25,"n":12,"kind":"fromFraction"},"promptText":"Exactly which decimal represents 12/25?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.48,"choices":[0.58,0.05,0.48,0.38],"display":{"dec":{"d":25,"n":12,"kind":"fromFraction"},"promptText":"Which decimal names the same amount as 12/25?"}},
   },
   {
     itemId: "decimals-proc-b0821-0344",
@@ -15802,7 +15802,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"choices":[0.6,0.05,0.4,0.5],"display":{"dec":{"d":2,"n":1,"kind":"fromFraction"},"promptText":"1/2 corresponds to which decimal choice?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"choices":[0.6,0.05,0.4,0.5],"display":{"dec":{"d":2,"n":1,"kind":"fromFraction"},"promptText":"Which decimal is the same as 1/2?"}},
   },
   {
     itemId: "decimals-proc-b0821-0345",
@@ -15812,7 +15812,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.25,"choices":[0.15,0.35,0.25,0.03],"display":{"dec":{"d":4,"n":1,"kind":"fromFraction"},"promptText":"Pick the precise decimal for 1/4."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.25,"choices":[0.15,0.35,0.25,0.03],"display":{"dec":{"d":4,"n":1,"kind":"fromFraction"},"promptText":"What decimal is the same as 1/4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0346",
@@ -15822,7 +15822,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.75,"choices":[0.65,0.75,0.85,0.07],"display":{"dec":{"d":4,"n":3,"kind":"fromFraction"},"promptText":"3/4 corresponds to which decimal choice?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.75,"choices":[0.65,0.75,0.85,0.07],"display":{"dec":{"d":4,"n":3,"kind":"fromFraction"},"promptText":"Which decimal is the same as 3/4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0347",
@@ -15832,7 +15832,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.05,"choices":[0.15,0.01,0.05],"display":{"dec":{"d":20,"n":1,"kind":"fromFraction"},"promptText":"Pick the precise decimal for 1/20."}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.05,"choices":[0.15,0.01,0.05],"display":{"dec":{"d":20,"n":1,"kind":"fromFraction"},"promptText":"What decimal is the same as 1/20?"}},
   },
   {
     itemId: "decimals-proc-b0821-0348",
@@ -15842,7 +15842,7 @@ export const ITEMS = [
     structureType: "fracDecPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.15,"choices":[0.25,0.05,0.01,0.15],"display":{"dec":{"d":20,"n":3,"kind":"fromFraction"},"promptText":"3/20 corresponds to which decimal choice?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":0.15,"choices":[0.25,0.05,0.01,0.15],"display":{"dec":{"d":20,"n":3,"kind":"fromFraction"},"promptText":"Which decimal is the same as 3/20?"}},
   },
   {
     itemId: "decimals-proc-b0821-0349",
@@ -16042,7 +16042,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":[">","<","="],"display":{"dec":{"a":0.45,"b":0.5,"kind":"cmpDec"},"promptText":"Between 0.45 and 0.5, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":[">","<","="],"display":{"dec":{"a":0.45,"b":0.5,"kind":"cmpDec"},"promptText":"Which symbol makes 0.45 __ 0.5 true?"}},
   },
   {
     itemId: "decimals-proc-b0821-0369",
@@ -16062,7 +16062,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":["=",">","<"],"display":{"dec":{"a":0.7,"b":0.65,"kind":"cmpDec"},"promptText":"Between 0.7 and 0.65, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":["=",">","<"],"display":{"dec":{"a":0.7,"b":0.65,"kind":"cmpDec"},"promptText":"Which sign goes in the blank in 0.7 __ 0.65?"}},
   },
   {
     itemId: "decimals-proc-b0821-0371",
@@ -16082,7 +16082,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":["=","<",">"],"display":{"dec":{"a":0.8,"b":0.08,"kind":"cmpDec"},"promptText":"Between 0.8 and 0.08, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":["=","<",">"],"display":{"dec":{"a":0.8,"b":0.08,"kind":"cmpDec"},"promptText":"Which symbol makes 0.8 __ 0.08 true?"}},
   },
   {
     itemId: "decimals-proc-b0821-0373",
@@ -16102,7 +16102,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","=","<"],"display":{"dec":{"a":0.52,"b":0.25,"kind":"cmpDec"},"promptText":"Between 0.52 and 0.25, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","=","<"],"display":{"dec":{"a":0.52,"b":0.25,"kind":"cmpDec"},"promptText":"Which sign goes in the blank in 0.52 __ 0.25?"}},
   },
   {
     itemId: "decimals-proc-b0821-0375",
@@ -16122,7 +16122,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":[">","<","="],"display":{"dec":{"a":0.09,"b":0.1,"kind":"cmpDec"},"promptText":"Between 0.09 and 0.1, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":[">","<","="],"display":{"dec":{"a":0.09,"b":0.1,"kind":"cmpDec"},"promptText":"Which symbol makes 0.09 __ 0.1 true?"}},
   },
   {
     itemId: "decimals-proc-b0821-0377",
@@ -16142,7 +16142,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","<","="],"display":{"dec":{"a":0.33,"b":0.3,"kind":"cmpDec"},"promptText":"Between 0.33 and 0.3, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","<","="],"display":{"dec":{"a":0.33,"b":0.3,"kind":"cmpDec"},"promptText":"Which sign goes in the blank in 0.33 __ 0.3?"}},
   },
   {
     itemId: "decimals-proc-b0821-0379",
@@ -16162,7 +16162,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","<","="],"display":{"dec":{"a":0.75,"b":0.57,"kind":"cmpDec"},"promptText":"Between 0.75 and 0.57, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","<","="],"display":{"dec":{"a":0.75,"b":0.57,"kind":"cmpDec"},"promptText":"Which symbol makes 0.75 __ 0.57 true?"}},
   },
   {
     itemId: "decimals-proc-b0821-0381",
@@ -16182,7 +16182,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"=","choices":[">","<","="],"display":{"dec":{"a":0.4,"b":0.4,"kind":"cmpDec"},"promptText":"Between 0.40 and 0.4, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"=","choices":[">","<","="],"display":{"dec":{"a":0.4,"b":0.4,"kind":"cmpDec"},"promptText":"Which sign goes in the blank in 0.40 __ 0.4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0383",
@@ -16202,7 +16202,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"=","choices":["<","=",">"],"display":{"dec":{"a":0.9,"b":0.9,"kind":"cmpDec"},"promptText":"Between 0.9 and 0.90, which of <, >, = holds?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"=","choices":["<","=",">"],"display":{"dec":{"a":0.9,"b":0.9,"kind":"cmpDec"},"promptText":"Which symbol makes 0.9 __ 0.90 true?"}},
   },
   {
     itemId: "decimals-proc-b0821-0385",
@@ -16222,7 +16222,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":["=","<",">"],"display":{"dec":{"a":3.5,"b":3.45,"kind":"cmpDec"},"promptText":"Exactly one symbol links 3.5 and 3.45. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":["=","<",">"],"display":{"dec":{"a":3.5,"b":3.45,"kind":"cmpDec"},"promptText":"Which symbol makes 3.5 __ 3.45 true: <, >, or =?"}},
   },
   {
     itemId: "decimals-proc-b0821-0387",
@@ -16242,7 +16242,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":["=",">","<"],"display":{"dec":{"a":1.08,"b":1.8,"kind":"cmpDec"},"promptText":"Exactly one symbol links 1.08 and 1.8. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":["=",">","<"],"display":{"dec":{"a":1.08,"b":1.8,"kind":"cmpDec"},"promptText":"Which symbol goes in the blank: 1.08 __ 1.8?"}},
   },
   {
     itemId: "decimals-proc-b0821-0389",
@@ -16262,7 +16262,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","=","<"],"display":{"dec":{"a":5.55,"b":5.5,"kind":"cmpDec"},"promptText":"Exactly one symbol links 5.55 and 5.5. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","=","<"],"display":{"dec":{"a":5.55,"b":5.5,"kind":"cmpDec"},"promptText":"Which symbol makes 5.55 __ 5.5 true: <, >, or =?"}},
   },
   {
     itemId: "decimals-proc-b0821-0391",
@@ -16282,7 +16282,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"=","choices":[">","=","<"],"display":{"dec":{"a":4.2,"b":4.2,"kind":"cmpDec"},"promptText":"Exactly one symbol links 4.20 and 4.2. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"=","choices":[">","=","<"],"display":{"dec":{"a":4.2,"b":4.2,"kind":"cmpDec"},"promptText":"Which symbol goes in the blank: 4.20 __ 4.2?"}},
   },
   {
     itemId: "decimals-proc-b0821-0393",
@@ -16302,7 +16302,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":["<",">","="],"display":{"dec":{"a":6.9,"b":6.19,"kind":"cmpDec"},"promptText":"Exactly one symbol links 6.9 and 6.19. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":["<",">","="],"display":{"dec":{"a":6.9,"b":6.19,"kind":"cmpDec"},"promptText":"Which symbol makes 6.9 __ 6.19 true: <, >, or =?"}},
   },
   {
     itemId: "decimals-proc-b0821-0395",
@@ -16322,7 +16322,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","=","<"],"display":{"dec":{"a":7.7,"b":7.07,"kind":"cmpDec"},"promptText":"Exactly one symbol links 7.7 and 7.07. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":">","choices":[">","=","<"],"display":{"dec":{"a":7.7,"b":7.07,"kind":"cmpDec"},"promptText":"Which symbol goes in the blank: 7.7 __ 7.07?"}},
   },
   {
     itemId: "decimals-proc-b0821-0397",
@@ -16342,7 +16342,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":["=",">","<"],"display":{"dec":{"a":2.34,"b":2.43,"kind":"cmpDec"},"promptText":"Exactly one symbol links 2.34 and 2.43. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":["=",">","<"],"display":{"dec":{"a":2.34,"b":2.43,"kind":"cmpDec"},"promptText":"Which symbol makes 2.34 __ 2.43 true: <, >, or =?"}},
   },
   {
     itemId: "decimals-proc-b0821-0399",
@@ -16362,7 +16362,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":[">","<","="],"display":{"dec":{"a":9.01,"b":9.1,"kind":"cmpDec"},"promptText":"Exactly one symbol links 9.01 and 9.1. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"<","choices":[">","<","="],"display":{"dec":{"a":9.01,"b":9.1,"kind":"cmpDec"},"promptText":"Which symbol goes in the blank: 9.01 __ 9.1?"}},
   },
   {
     itemId: "decimals-proc-b0821-0401",
@@ -16382,7 +16382,7 @@ export const ITEMS = [
     structureType: "cmpSymbol_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"=","choices":[">","=","<"],"display":{"dec":{"a":3.6,"b":3.6,"kind":"cmpDec"},"promptText":"Exactly one symbol links 3.60 and 3.6. Which one?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"=","choices":[">","=","<"],"display":{"dec":{"a":3.6,"b":3.6,"kind":"cmpDec"},"promptText":"Which symbol makes 3.60 __ 3.6 true: <, >, or =?"}},
   },
   {
     itemId: "decimals-proc-b0821-0403",
@@ -16392,7 +16392,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.7","choices":["0.3","0.7"],"display":{"dec":{"a":0.7,"b":0.3,"kind":"cmpPickDec","labels":["0.7","0.3"]},"promptText":"Which decimal is larger: 0.7 or 0.3? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.7","choices":["0.3","0.7"],"display":{"dec":{"a":0.7,"b":0.3,"kind":"cmpPickDec","labels":["0.7","0.3"]},"promptText":"Which decimal is larger, 0.7 or 0.3?"}},
   },
   {
     itemId: "decimals-proc-b0821-0404",
@@ -16412,7 +16412,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.9","choices":["0.9","0.4"],"display":{"dec":{"a":0.9,"b":0.4,"kind":"cmpPickDec","labels":["0.9","0.4"]},"promptText":"Which decimal is larger: 0.9 or 0.4? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.9","choices":["0.9","0.4"],"display":{"dec":{"a":0.9,"b":0.4,"kind":"cmpPickDec","labels":["0.9","0.4"]},"promptText":"Which is larger: 0.9 or 0.4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0406",
@@ -16432,7 +16432,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.6","choices":["0.2","0.6"],"display":{"dec":{"a":0.6,"b":0.2,"kind":"cmpPickDec","labels":["0.6","0.2"]},"promptText":"Which decimal is larger: 0.6 or 0.2? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.6","choices":["0.2","0.6"],"display":{"dec":{"a":0.6,"b":0.2,"kind":"cmpPickDec","labels":["0.6","0.2"]},"promptText":"Which decimal is larger, 0.6 or 0.2?"}},
   },
   {
     itemId: "decimals-proc-b0821-0408",
@@ -16452,7 +16452,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.8","choices":["0.6","0.8"],"display":{"dec":{"a":0.8,"b":0.6,"kind":"cmpPickDec","labels":["0.8","0.6"]},"promptText":"Which decimal is larger: 0.8 or 0.6? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.8","choices":["0.6","0.8"],"display":{"dec":{"a":0.8,"b":0.6,"kind":"cmpPickDec","labels":["0.8","0.6"]},"promptText":"Which is larger: 0.8 or 0.6?"}},
   },
   {
     itemId: "decimals-proc-b0821-0410",
@@ -16472,7 +16472,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.7","choices":["0.7","0.5"],"display":{"dec":{"a":0.5,"b":0.7,"kind":"cmpPickDec","labels":["0.5","0.7"]},"promptText":"Which decimal is larger: 0.5 or 0.7? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.7","choices":["0.7","0.5"],"display":{"dec":{"a":0.5,"b":0.7,"kind":"cmpPickDec","labels":["0.5","0.7"]},"promptText":"Which decimal is larger, 0.5 or 0.7?"}},
   },
   {
     itemId: "decimals-proc-b0821-0412",
@@ -16482,7 +16482,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.7","choices":["0.7","0.3"],"display":{"dec":{"a":0.7,"b":0.3,"kind":"cmpPickDec","labels":["0.7","0.3"]},"promptText":"Between 0.7 and 0.3, which is more? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.7","choices":["0.7","0.3"],"display":{"dec":{"a":0.7,"b":0.3,"kind":"cmpPickDec","labels":["0.7","0.3"]},"promptText":"Which is more, 0.7 or 0.3?"}},
   },
   {
     itemId: "decimals-proc-b0821-0413",
@@ -16502,7 +16502,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.9","choices":["0.4","0.9"],"display":{"dec":{"a":0.9,"b":0.4,"kind":"cmpPickDec","labels":["0.9","0.4"]},"promptText":"Between 0.9 and 0.4, which is more? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.9","choices":["0.4","0.9"],"display":{"dec":{"a":0.9,"b":0.4,"kind":"cmpPickDec","labels":["0.9","0.4"]},"promptText":"Which number is more, 0.9 or 0.4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0415",
@@ -16522,7 +16522,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.6","choices":["0.2","0.6"],"display":{"dec":{"a":0.6,"b":0.2,"kind":"cmpPickDec","labels":["0.6","0.2"]},"promptText":"Between 0.6 and 0.2, which is more? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.6","choices":["0.2","0.6"],"display":{"dec":{"a":0.6,"b":0.2,"kind":"cmpPickDec","labels":["0.6","0.2"]},"promptText":"Which is more, 0.6 or 0.2?"}},
   },
   {
     itemId: "decimals-proc-b0821-0417",
@@ -16542,7 +16542,7 @@ export const ITEMS = [
     structureType: "biggerPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.8","choices":["0.8","0.6"],"display":{"dec":{"a":0.8,"b":0.6,"kind":"cmpPickDec","labels":["0.8","0.6"]},"promptText":"Between 0.8 and 0.6, which is more? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.8","choices":["0.8","0.6"],"display":{"dec":{"a":0.8,"b":0.6,"kind":"cmpPickDec","labels":["0.8","0.6"]},"promptText":"Which number is more, 0.8 or 0.6?"}},
   },
   {
     itemId: "decimals-proc-b0821-0419",
@@ -16572,7 +16572,7 @@ export const ITEMS = [
     structureType: "biggerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.8","choices":["0.8","0.08"],"display":{"dec":{"a":0.08,"b":0.8,"kind":"cmpPickDec","labels":["0.08","0.8"]},"promptText":"Which is greater, 0.08 or 0.8? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.8","choices":["0.8","0.08"],"display":{"dec":{"a":0.08,"b":0.8,"kind":"cmpPickDec","labels":["0.08","0.8"]},"promptText":"Which is greater, 0.08 or 0.8?"}},
   },
   {
     itemId: "decimals-proc-b0821-0422",
@@ -16592,7 +16592,7 @@ export const ITEMS = [
     structureType: "biggerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.7","choices":["0.7","0.65"],"display":{"dec":{"a":0.7,"b":0.65,"kind":"cmpPickDec","labels":["0.7","0.65"]},"promptText":"Which is greater, 0.7 or 0.65? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.7","choices":["0.7","0.65"],"display":{"dec":{"a":0.7,"b":0.65,"kind":"cmpPickDec","labels":["0.7","0.65"]},"promptText":"Which number is greater, 0.7 or 0.65?"}},
   },
   {
     itemId: "decimals-proc-b0821-0424",
@@ -16612,7 +16612,7 @@ export const ITEMS = [
     structureType: "biggerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.33","choices":["0.33","0.3"],"display":{"dec":{"a":0.33,"b":0.3,"kind":"cmpPickDec","labels":["0.33","0.3"]},"promptText":"Which is greater, 0.33 or 0.3? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.33","choices":["0.33","0.3"],"display":{"dec":{"a":0.33,"b":0.3,"kind":"cmpPickDec","labels":["0.33","0.3"]},"promptText":"Which is greater, 0.33 or 0.3?"}},
   },
   {
     itemId: "decimals-proc-b0821-0426",
@@ -16632,7 +16632,7 @@ export const ITEMS = [
     structureType: "biggerPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.6","choices":["0.6","0.06"],"display":{"dec":{"a":0.06,"b":0.6,"kind":"cmpPickDec","labels":["0.06","0.6"]},"promptText":"Which is greater, 0.06 or 0.6? Choose it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.6","choices":["0.6","0.06"],"display":{"dec":{"a":0.06,"b":0.6,"kind":"cmpPickDec","labels":["0.06","0.6"]},"promptText":"Which number is greater, 0.06 or 0.6?"}},
   },
   {
     itemId: "decimals-proc-b0821-0428",
@@ -16742,7 +16742,7 @@ export const ITEMS = [
     structureType: "biggerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1.8","choices":["1.08","1.8"],"display":{"dec":{"a":1.08,"b":1.8,"kind":"cmpPickDec","labels":["1.08","1.8"]},"promptText":"Exactly which is greater — 1.08 or 1.8?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1.8","choices":["1.08","1.8"],"display":{"dec":{"a":1.08,"b":1.8,"kind":"cmpPickDec","labels":["1.08","1.8"]},"promptText":"Which decimal is greater, 1.08 or 1.8?"}},
   },
   {
     itemId: "decimals-proc-b0821-0439",
@@ -16762,7 +16762,7 @@ export const ITEMS = [
     structureType: "biggerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"6.9","choices":["6.9","6.19"],"display":{"dec":{"a":6.19,"b":6.9,"kind":"cmpPickDec","labels":["6.19","6.9"]},"promptText":"Exactly which is greater — 6.19 or 6.9?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"6.9","choices":["6.9","6.19"],"display":{"dec":{"a":6.19,"b":6.9,"kind":"cmpPickDec","labels":["6.19","6.9"]},"promptText":"Which is greater: 6.19 or 6.9?"}},
   },
   {
     itemId: "decimals-proc-b0821-0441",
@@ -16782,7 +16782,7 @@ export const ITEMS = [
     structureType: "biggerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"2.43","choices":["2.43","2.34"],"display":{"dec":{"a":2.34,"b":2.43,"kind":"cmpPickDec","labels":["2.34","2.43"]},"promptText":"Exactly which is greater — 2.34 or 2.43?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"2.43","choices":["2.43","2.34"],"display":{"dec":{"a":2.34,"b":2.43,"kind":"cmpPickDec","labels":["2.34","2.43"]},"promptText":"Which decimal is greater, 2.34 or 2.43?"}},
   },
   {
     itemId: "decimals-proc-b0821-0443",
@@ -16802,7 +16802,7 @@ export const ITEMS = [
     structureType: "biggerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"4.44","choices":["4.4","4.44"],"display":{"dec":{"a":4.44,"b":4.4,"kind":"cmpPickDec","labels":["4.44","4.4"]},"promptText":"Exactly which is greater — 4.44 or 4.4?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"4.44","choices":["4.4","4.44"],"display":{"dec":{"a":4.44,"b":4.4,"kind":"cmpPickDec","labels":["4.44","4.4"]},"promptText":"Which is greater: 4.44 or 4.4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0445",
@@ -16832,7 +16832,7 @@ export const ITEMS = [
     structureType: "biggerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"1.8","choices":["1.8","1.08"],"display":{"dec":{"a":1.08,"b":1.8,"kind":"cmpPickDec","labels":["1.08","1.8"]},"promptText":"Determine the bigger of 1.08 and 1.8."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"1.8","choices":["1.8","1.08"],"display":{"dec":{"a":1.08,"b":1.8,"kind":"cmpPickDec","labels":["1.08","1.8"]},"promptText":"Which is bigger, 1.08 or 1.8?"}},
   },
   {
     itemId: "decimals-proc-b0821-0448",
@@ -16852,7 +16852,7 @@ export const ITEMS = [
     structureType: "biggerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"6.9","choices":["6.9","6.19"],"display":{"dec":{"a":6.19,"b":6.9,"kind":"cmpPickDec","labels":["6.19","6.9"]},"promptText":"Determine the bigger of 6.19 and 6.9."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"6.9","choices":["6.9","6.19"],"display":{"dec":{"a":6.19,"b":6.9,"kind":"cmpPickDec","labels":["6.19","6.9"]},"promptText":"Which number is bigger: 6.19 or 6.9?"}},
   },
   {
     itemId: "decimals-proc-b0821-0450",
@@ -16872,7 +16872,7 @@ export const ITEMS = [
     structureType: "biggerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"2.43","choices":["2.34","2.43"],"display":{"dec":{"a":2.34,"b":2.43,"kind":"cmpPickDec","labels":["2.34","2.43"]},"promptText":"Determine the bigger of 2.34 and 2.43."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"2.43","choices":["2.34","2.43"],"display":{"dec":{"a":2.34,"b":2.43,"kind":"cmpPickDec","labels":["2.34","2.43"]},"promptText":"Which is bigger, 2.34 or 2.43?"}},
   },
   {
     itemId: "decimals-proc-b0821-0452",
@@ -16892,7 +16892,7 @@ export const ITEMS = [
     structureType: "biggerPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"4.44","choices":["4.44","4.4"],"display":{"dec":{"a":4.44,"b":4.4,"kind":"cmpPickDec","labels":["4.44","4.4"]},"promptText":"Determine the bigger of 4.44 and 4.4."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"4.44","choices":["4.44","4.4"],"display":{"dec":{"a":4.44,"b":4.4,"kind":"cmpPickDec","labels":["4.44","4.4"]},"promptText":"Which number is bigger: 4.44 or 4.4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0454",
@@ -16902,7 +16902,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.2","choices":["0.2","0.5","0.8"],"display":{"dec":{"kind":"minPickDec","labels":["0.2","0.5","0.8"]},"promptText":"Which is smallest: 0.2, 0.5, or 0.8? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.2","choices":["0.2","0.5","0.8"],"display":{"dec":{"kind":"minPickDec","labels":["0.2","0.5","0.8"]},"promptText":"Which is the smallest: 0.2, 0.5, or 0.8?"}},
   },
   {
     itemId: "decimals-proc-b0821-0455",
@@ -16922,7 +16922,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.2","choices":["0.5","0.2","0.8"],"display":{"dec":{"kind":"minPickDec","labels":["0.5","0.2","0.8"]},"promptText":"Which is smallest: 0.5, 0.2, or 0.8? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.2","choices":["0.5","0.2","0.8"],"display":{"dec":{"kind":"minPickDec","labels":["0.5","0.2","0.8"]},"promptText":"Which decimal is the smallest: 0.5, 0.2, or 0.8?"}},
   },
   {
     itemId: "decimals-proc-b0821-0457",
@@ -16942,7 +16942,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.1","choices":["0.9","0.1","0.4"],"display":{"dec":{"kind":"minPickDec","labels":["0.9","0.1","0.4"]},"promptText":"Which is smallest: 0.9, 0.1, or 0.4? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.1","choices":["0.9","0.1","0.4"],"display":{"dec":{"kind":"minPickDec","labels":["0.9","0.1","0.4"]},"promptText":"Which is the smallest: 0.9, 0.1, or 0.4?"}},
   },
   {
     itemId: "decimals-proc-b0821-0459",
@@ -16962,7 +16962,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.3","choices":["0.3","0.6","0.7"],"display":{"dec":{"kind":"minPickDec","labels":["0.3","0.6","0.7"]},"promptText":"Which is smallest: 0.3, 0.6, or 0.7? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.3","choices":["0.3","0.6","0.7"],"display":{"dec":{"kind":"minPickDec","labels":["0.3","0.6","0.7"]},"promptText":"Which decimal is the smallest: 0.3, 0.6, or 0.7?"}},
   },
   {
     itemId: "decimals-proc-b0821-0461",
@@ -16982,7 +16982,7 @@ export const ITEMS = [
     structureType: "smallestPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"0.3","choices":["0.6","0.7","0.3"],"display":{"dec":{"kind":"minPickDec","labels":["0.6","0.7","0.3"]},"promptText":"Which is smallest: 0.6, 0.7, or 0.3? Pick it."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"0.3","choices":["0.6","0.7","0.3"],"display":{"dec":{"kind":"minPickDec","labels":["0.6","0.7","0.3"]},"promptText":"Which is the smallest: 0.6, 0.7, or 0.3?"}},
   },
   {
     itemId: "decimals-proc-b0821-0463",
@@ -17242,7 +17242,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"3.05","choices":["3.45","3.5","3.05"],"display":{"dec":{"kind":"minPickDec","labels":["3.45","3.5","3.05"]},"promptText":"Exactly which of 3.45, 3.5, 3.05 is least?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"3.05","choices":["3.45","3.5","3.05"],"display":{"dec":{"kind":"minPickDec","labels":["3.45","3.5","3.05"]},"promptText":"Which of 3.45, 3.5, and 3.05 is the least?"}},
   },
   {
     itemId: "decimals-proc-b0821-0489",
@@ -17252,7 +17252,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"3.05","choices":["3.5","3.05","3.45"],"display":{"dec":{"kind":"minPickDec","labels":["3.5","3.05","3.45"]},"promptText":"Rank 3.5, 3.05, 3.45: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"3.05","choices":["3.5","3.05","3.45"],"display":{"dec":{"kind":"minPickDec","labels":["3.5","3.05","3.45"]},"promptText":"Which number is the least: 3.5, 3.05, or 3.45?"}},
   },
   {
     itemId: "decimals-proc-b0821-0490",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"3.05","choices":["3.05","3.45","3.5"],"display":{"dec":{"kind":"minPickDec","labels":["3.05","3.45","3.5"]},"promptText":"Exactly which of 3.05, 3.45, 3.5 is least?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"3.05","choices":["3.05","3.45","3.5"],"display":{"dec":{"kind":"minPickDec","labels":["3.05","3.45","3.5"]},"promptText":"Which of 3.05, 3.45, and 3.5 is the least?"}},
   },
   {
     itemId: "decimals-proc-b0821-0491",
@@ -17272,7 +17272,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.7","7.07","7.77"],"display":{"dec":{"kind":"minPickDec","labels":["7.7","7.07","7.77"]},"promptText":"Rank 7.7, 7.07, 7.77: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.7","7.07","7.77"],"display":{"dec":{"kind":"minPickDec","labels":["7.7","7.07","7.77"]},"promptText":"Which number is the least: 7.7, 7.07, or 7.77?"}},
   },
   {
     itemId: "decimals-proc-b0821-0492",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.07","7.77","7.7"],"display":{"dec":{"kind":"minPickDec","labels":["7.07","7.77","7.7"]},"promptText":"Exactly which of 7.07, 7.77, 7.7 is least?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.07","7.77","7.7"],"display":{"dec":{"kind":"minPickDec","labels":["7.07","7.77","7.7"]},"promptText":"Which of 7.07, 7.77, and 7.7 is the least?"}},
   },
   {
     itemId: "decimals-proc-b0821-0493",
@@ -17292,7 +17292,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.77","7.7","7.07"],"display":{"dec":{"kind":"minPickDec","labels":["7.77","7.7","7.07"]},"promptText":"Rank 7.77, 7.7, 7.07: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.77","7.7","7.07"],"display":{"dec":{"kind":"minPickDec","labels":["7.77","7.7","7.07"]},"promptText":"Which number is the least: 7.77, 7.7, or 7.07?"}},
   },
   {
     itemId: "decimals-proc-b0821-0494",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"2.3","choices":["2.34","2.43","2.3"],"display":{"dec":{"kind":"minPickDec","labels":["2.34","2.43","2.3"]},"promptText":"Exactly which of 2.34, 2.43, 2.3 is least?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"2.3","choices":["2.34","2.43","2.3"],"display":{"dec":{"kind":"minPickDec","labels":["2.34","2.43","2.3"]},"promptText":"Which of 2.34, 2.43, and 2.3 is the least?"}},
   },
   {
     itemId: "decimals-proc-b0821-0495",
@@ -17312,7 +17312,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"2.3","choices":["2.43","2.3","2.34"],"display":{"dec":{"kind":"minPickDec","labels":["2.43","2.3","2.34"]},"promptText":"Rank 2.43, 2.3, 2.34: which one is the minimum?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"2.3","choices":["2.43","2.3","2.34"],"display":{"dec":{"kind":"minPickDec","labels":["2.43","2.3","2.34"]},"promptText":"Which number is the least: 2.43, 2.3, or 2.34?"}},
   },
   {
     itemId: "decimals-proc-b0821-0496",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"2.3","choices":["2.3","2.34","2.43"],"display":{"dec":{"kind":"minPickDec","labels":["2.3","2.34","2.43"]},"promptText":"Exactly which of 2.3, 2.34, 2.43 is least?"}},
+    question: {"a":null,"b":null,"op":"dec","answer":"2.3","choices":["2.3","2.34","2.43"],"display":{"dec":{"kind":"minPickDec","labels":["2.3","2.34","2.43"]},"promptText":"Which of 2.3, 2.34, and 2.43 is the least?"}},
   },
   {
     itemId: "decimals-proc-b0821-0497",
@@ -17342,7 +17342,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"3.05","choices":["3.5","3.05","3.45"],"display":{"dec":{"kind":"minPickDec","labels":["3.5","3.05","3.45"]},"promptText":"Determine the smallest among 3.5, 3.05, and 3.45."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"3.05","choices":["3.5","3.05","3.45"],"display":{"dec":{"kind":"minPickDec","labels":["3.5","3.05","3.45"]},"promptText":"Which is the smallest: 3.5, 3.05, or 3.45?"}},
   },
   {
     itemId: "decimals-proc-b0821-0499",
@@ -17362,7 +17362,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.7","7.07","7.77"],"display":{"dec":{"kind":"minPickDec","labels":["7.7","7.07","7.77"]},"promptText":"Determine the smallest among 7.7, 7.07, and 7.77."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.7","7.07","7.77"],"display":{"dec":{"kind":"minPickDec","labels":["7.7","7.07","7.77"]},"promptText":"Which is the smallest: 7.7, 7.07, or 7.77?"}},
   },
   {
     itemId: "decimals-proc-b0821-0501",
@@ -17382,7 +17382,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.77","7.7","7.07"],"display":{"dec":{"kind":"minPickDec","labels":["7.77","7.7","7.07"]},"promptText":"Determine the smallest among 7.77, 7.7, and 7.07."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"7.07","choices":["7.77","7.7","7.07"],"display":{"dec":{"kind":"minPickDec","labels":["7.77","7.7","7.07"]},"promptText":"Which is the smallest: 7.77, 7.7, or 7.07?"}},
   },
   {
     itemId: "decimals-proc-b0821-0503",
@@ -17402,7 +17402,7 @@ export const ITEMS = [
     structureType: "smallestPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":"2.3","choices":["2.43","2.3","2.34"],"display":{"dec":{"kind":"minPickDec","labels":["2.43","2.3","2.34"]},"promptText":"Determine the smallest among 2.43, 2.3, and 2.34."}},
+    question: {"a":null,"b":null,"op":"dec","answer":"2.3","choices":["2.43","2.3","2.34"],"display":{"dec":{"kind":"minPickDec","labels":["2.43","2.3","2.34"]},"promptText":"Which is the smallest: 2.43, 2.3, or 2.34?"}},
   },
   {
     itemId: "decimals-proc-b0821-0505",
@@ -17422,7 +17422,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.1},"promptText":"The pattern 0.1, 0.2, 0.3 climbs by one tenth. Type the next decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.1},"promptText":"Each number is one tenth more than the one before. What comes next in 0.1, 0.2, 0.3?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0507",
@@ -17442,7 +17442,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.3},"promptText":"The pattern 0.3, 0.4, 0.5 climbs by one tenth. Type the next decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.3},"promptText":"The numbers go up by one tenth each time. What is the next number after 0.3, 0.4, 0.5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0509",
@@ -17462,7 +17462,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.5},"promptText":"The pattern 0.5, 0.6, 0.7 climbs by one tenth. Type the next decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.5},"promptText":"Each number is one tenth more than the one before. What comes next in 0.5, 0.6, 0.7?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0511",
@@ -17482,7 +17482,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.7},"promptText":"The pattern 0.7, 0.8, 0.9 climbs by one tenth. Type the next decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.7},"promptText":"The numbers go up by one tenth each time. What is the next number after 0.7, 0.8, 0.9?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0513",
@@ -17502,7 +17502,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0},"promptText":"After 0, 0.1, 0.2, which decimal comes next? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0},"promptText":"After 0, 0.1, 0.2, which decimal comes next?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0515",
@@ -17512,7 +17512,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.1},"promptText":"Continue counting: 0.1, 0.2, 0.3, ? Type the next number."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.1},"promptText":"Keep counting by tenths. What comes after 0.1, 0.2, 0.3?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0516",
@@ -17522,7 +17522,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.2},"promptText":"After 0.2, 0.3, 0.4, which decimal comes next? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.2},"promptText":"Which decimal comes next after 0.2, 0.3, 0.4?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0517",
@@ -17532,7 +17532,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.3},"promptText":"Continue counting: 0.3, 0.4, 0.5, ? Type the next number."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.3},"promptText":"Count on by tenths. What number comes after 0.3, 0.4, 0.5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0518",
@@ -17542,7 +17542,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.4},"promptText":"After 0.4, 0.5, 0.6, which decimal comes next? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.4},"promptText":"After 0.4, 0.5, 0.6, which decimal comes next?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0519",
@@ -17552,7 +17552,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.5},"promptText":"Continue counting: 0.5, 0.6, 0.7, ? Type the next number."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.5},"promptText":"Keep counting by tenths. What comes after 0.5, 0.6, 0.7?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0520",
@@ -17562,7 +17562,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.6},"promptText":"After 0.6, 0.7, 0.8, which decimal comes next? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.6},"promptText":"Which decimal comes next after 0.6, 0.7, 0.8?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0521",
@@ -17572,7 +17572,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.7},"promptText":"Continue counting: 0.7, 0.8, 0.9, ? Type the next number."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":1,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.7},"promptText":"Count on by tenths. What number comes after 0.7, 0.8, 0.9?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0522",
@@ -17582,7 +17582,7 @@ export const ITEMS = [
     structureType: "countOn_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1.1,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.8},"promptText":"After 0.8, 0.9, 1, which decimal comes next? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":1.1,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":0.8},"promptText":"After 0.8, 0.9, 1, which decimal comes next?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0523",
@@ -17602,7 +17602,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1.3,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":1},"promptText":"Extend the tenths count 1, 1.1, 1.2. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":1.3,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":1},"promptText":"Count by tenths. What comes after 1, 1.1, 1.2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0525",
@@ -17622,7 +17622,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1.7,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":1.4},"promptText":"Extend the tenths count 1.4, 1.5, 1.6. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":1.7,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":1.4},"promptText":"What is the next number when you count by tenths: 1.4, 1.5, 1.6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0527",
@@ -17642,7 +17642,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":2.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":2.1},"promptText":"Extend the tenths count 2.1, 2.2, 2.3. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":2.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":2.1},"promptText":"Count by tenths. What comes after 2.1, 2.2, 2.3?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0529",
@@ -17662,7 +17662,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":2.7},"promptText":"Extend the tenths count 2.7, 2.8, 2.9. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":3,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":2.7},"promptText":"What is the next number when you count by tenths: 2.7, 2.8, 2.9?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0531",
@@ -17682,7 +17682,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3.7,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":3.4},"promptText":"Extend the tenths count 3.4, 3.5, 3.6. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":3.7,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":3.4},"promptText":"Count by tenths. What comes after 3.4, 3.5, 3.6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0533",
@@ -17702,7 +17702,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":4.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":4.1},"promptText":"Extend the tenths count 4.1, 4.2, 4.3. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":4.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":4.1},"promptText":"What is the next number when you count by tenths: 4.1, 4.2, 4.3?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0535",
@@ -17722,7 +17722,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":4.7},"promptText":"Extend the tenths count 4.7, 4.8, 4.9. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":5,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":4.7},"promptText":"Count by tenths. What comes after 4.7, 4.8, 4.9?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0537",
@@ -17742,7 +17742,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5.7,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":5.4},"promptText":"Extend the tenths count 5.4, 5.5, 5.6. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":5.7,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":5.4},"promptText":"What is the next number when you count by tenths: 5.4, 5.5, 5.6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0539",
@@ -17762,7 +17762,7 @@ export const ITEMS = [
     structureType: "countOn_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":6.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":6.1},"promptText":"Extend the tenths count 6.1, 6.2, 6.3. Type what follows."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":6.4,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.1,"start":6.1},"promptText":"Count by tenths. What comes after 6.1, 6.2, 6.3?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0541",
@@ -17782,7 +17782,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.27,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.24},"promptText":"The sequence 0.24, 0.25, 0.26 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.27,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.24},"promptText":"Count by hundredths. What comes after 0.24, 0.25, 0.26?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0543",
@@ -17802,7 +17802,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.44,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.41},"promptText":"The sequence 0.41, 0.42, 0.43 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.44,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.41},"promptText":"Each number is one hundredth more than the one before. What comes next in 0.41, 0.42, 0.43?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0545",
@@ -17822,7 +17822,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.71,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.68},"promptText":"The sequence 0.68, 0.69, 0.7 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.71,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.68},"promptText":"Count by hundredths. What comes after 0.68, 0.69, 0.7?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0547",
@@ -17842,7 +17842,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.89,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.86},"promptText":"The sequence 0.86, 0.87, 0.88 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.89,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.86},"promptText":"Each number is one hundredth more than the one before. What comes next in 0.86, 0.87, 0.88?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0549",
@@ -17862,7 +17862,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.12},"promptText":"The sequence 0.12, 0.13, 0.14 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.12},"promptText":"Count by hundredths. What comes after 0.12, 0.13, 0.14?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0551",
@@ -17882,7 +17882,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.41,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.38},"promptText":"The sequence 0.38, 0.39, 0.4 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.41,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.38},"promptText":"Each number is one hundredth more than the one before. What comes next in 0.38, 0.39, 0.4?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0553",
@@ -17902,7 +17902,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.59,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.56},"promptText":"The sequence 0.56, 0.57, 0.58 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.59,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.56},"promptText":"Count by hundredths. What comes after 0.56, 0.57, 0.58?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0555",
@@ -17922,7 +17922,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.76,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.73},"promptText":"The sequence 0.73, 0.74, 0.75 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.76,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.73},"promptText":"Each number is one hundredth more than the one before. What comes next in 0.73, 0.74, 0.75?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0557",
@@ -17942,7 +17942,7 @@ export const ITEMS = [
     structureType: "countOn_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.97,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.94},"promptText":"The sequence 0.94, 0.95, 0.96 steps by one hundredth. Type the next term."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.97,"display":{"dec":{"k":3,"kind":"countOnDec","step":0.01,"start":0.94},"promptText":"Count by hundredths. What comes after 0.94, 0.95, 0.96?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0559",
@@ -17952,7 +17952,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"k":1,"den":10,"kind":"tickDec"},"promptText":"A number line runs 0 to 1 in 10 equal steps. Mark 1 shows which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"k":1,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 has 10 equal steps. What decimal is 1 step from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0560",
@@ -17962,7 +17962,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"k":2,"den":10,"kind":"tickDec"},"promptText":"Step 2 of 10 along a 0-1 line lands on which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"k":2,"den":10,"kind":"tickDec"},"promptText":"On a number line, 0 to 1 is split into 10 equal steps. What decimal do you land on after 2 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0561",
@@ -17972,7 +17972,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"k":3,"den":10,"kind":"tickDec"},"promptText":"A number line runs 0 to 1 in 10 equal steps. Mark 3 shows which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"k":3,"den":10,"kind":"tickDec"},"promptText":"There are 10 equal steps from 0 to 1 on a number line. What decimal is 3 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0562",
@@ -17982,7 +17982,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":4,"den":10,"kind":"tickDec"},"promptText":"Step 4 of 10 along a 0-1 line lands on which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":4,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is split into 10 equal steps. Which decimal do you reach after 4 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0563",
@@ -17992,7 +17992,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"k":5,"den":10,"kind":"tickDec"},"promptText":"A number line runs 0 to 1 in 10 equal steps. Mark 5 shows which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"k":5,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 has 10 equal steps. What decimal is 5 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0564",
@@ -18002,7 +18002,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":6,"den":10,"kind":"tickDec"},"promptText":"Step 6 of 10 along a 0-1 line lands on which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":6,"den":10,"kind":"tickDec"},"promptText":"On a number line, 0 to 1 is split into 10 equal steps. What decimal do you land on after 6 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0565",
@@ -18012,7 +18012,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"k":7,"den":10,"kind":"tickDec"},"promptText":"A number line runs 0 to 1 in 10 equal steps. Mark 7 shows which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"k":7,"den":10,"kind":"tickDec"},"promptText":"There are 10 equal steps from 0 to 1 on a number line. What decimal is 7 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0566",
@@ -18022,7 +18022,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":8,"den":10,"kind":"tickDec"},"promptText":"Step 8 of 10 along a 0-1 line lands on which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":8,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is split into 10 equal steps. Which decimal do you reach after 8 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0567",
@@ -18032,7 +18032,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"k":9,"den":10,"kind":"tickDec"},"promptText":"A number line runs 0 to 1 in 10 equal steps. Mark 9 shows which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"k":9,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 has 10 equal steps. What decimal is 9 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0568",
@@ -18042,7 +18042,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"k":2,"den":10,"kind":"tickDec"},"promptText":"The mark after step 2 on a 10-step 0-1 line names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"k":2,"den":10,"kind":"tickDec"},"promptText":"Ten equal steps go from 0 to 1 on a number line. What decimal is at the end of step 2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0569",
@@ -18062,7 +18062,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":6,"den":10,"kind":"tickDec"},"promptText":"The mark after step 6 on a 10-step 0-1 line names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":6,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is made of ten equal steps. What decimal is at the end of step 6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0571",
@@ -18082,7 +18082,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"k":1,"den":10,"kind":"tickDec"},"promptText":"The mark after step 1 on a 10-step 0-1 line names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"k":1,"den":10,"kind":"tickDec"},"promptText":"Ten equal steps go from 0 to 1 on a number line. What decimal is at the end of step 1?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0573",
@@ -18102,7 +18102,7 @@ export const ITEMS = [
     structureType: "tickRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"k":5,"den":10,"kind":"tickDec"},"promptText":"The mark after step 5 on a 10-step 0-1 line names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"k":5,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is made of ten equal steps. What decimal is at the end of step 5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0575",
@@ -18132,7 +18132,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"k":2,"den":10,"kind":"tickDec"},"promptText":"Between 0 and 1, mark 2 of 10 sits at which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"k":2,"den":10,"kind":"tickDec"},"promptText":"Jump from 0 to 1 in 10 equal jumps on a number line. What decimal do you land on after 2 jumps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0578",
@@ -18152,7 +18152,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":4,"den":10,"kind":"tickDec"},"promptText":"Between 0 and 1, mark 4 of 10 sits at which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":4,"den":10,"kind":"tickDec"},"promptText":"It takes 10 equal jumps to get from 0 to 1 on a number line. What decimal are you on after 4 jumps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0580",
@@ -18172,7 +18172,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":6,"den":10,"kind":"tickDec"},"promptText":"Between 0 and 1, mark 6 of 10 sits at which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":6,"den":10,"kind":"tickDec"},"promptText":"Jump from 0 to 1 in 10 equal jumps on a number line. What decimal do you land on after 6 jumps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0582",
@@ -18192,7 +18192,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":8,"den":10,"kind":"tickDec"},"promptText":"Between 0 and 1, mark 8 of 10 sits at which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":8,"den":10,"kind":"tickDec"},"promptText":"It takes 10 equal jumps to get from 0 to 1 on a number line. What decimal are you on after 8 jumps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0584",
@@ -18212,7 +18212,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"k":2,"den":10,"kind":"tickDec"},"promptText":"Which decimal labels step 2 on a ten-step 0-1 line? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.2,"display":{"dec":{"k":2,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is cut into 10 equal parts. What decimal is at the end of part 2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0586",
@@ -18222,7 +18222,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":4,"den":10,"kind":"tickDec"},"promptText":"Walking 0 to 1 in 10 steps, where are you after step 4? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.4,"display":{"dec":{"k":4,"den":10,"kind":"tickDec"},"promptText":"You walk from 0 to 1 in 10 equal steps. What decimal are you at after 4 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0587",
@@ -18232,7 +18232,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":6,"den":10,"kind":"tickDec"},"promptText":"Which decimal labels step 6 on a ten-step 0-1 line? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.6,"display":{"dec":{"k":6,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is cut into 10 equal parts. What decimal is at the end of part 6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0588",
@@ -18242,7 +18242,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":8,"den":10,"kind":"tickDec"},"promptText":"Walking 0 to 1 in 10 steps, where are you after step 8? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.8,"display":{"dec":{"k":8,"den":10,"kind":"tickDec"},"promptText":"You take 10 equal steps to walk from 0 to 1. What decimal are you at after 8 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0589",
@@ -18252,7 +18252,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"k":1,"den":10,"kind":"tickDec"},"promptText":"Which decimal labels step 1 on a ten-step 0-1 line? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.1,"display":{"dec":{"k":1,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is cut into 10 equal parts. What decimal is at the end of part 1?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0590",
@@ -18262,7 +18262,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"k":3,"den":10,"kind":"tickDec"},"promptText":"Walking 0 to 1 in 10 steps, where are you after step 3? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"k":3,"den":10,"kind":"tickDec"},"promptText":"You walk from 0 to 1 in 10 equal steps. What decimal are you at after 3 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0591",
@@ -18272,7 +18272,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"k":5,"den":10,"kind":"tickDec"},"promptText":"Which decimal labels step 5 on a ten-step 0-1 line? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"k":5,"den":10,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is cut into 10 equal parts. What decimal is at the end of part 5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0592",
@@ -18282,7 +18282,7 @@ export const ITEMS = [
     structureType: "tickRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"k":7,"den":10,"kind":"tickDec"},"promptText":"Walking 0 to 1 in 10 steps, where are you after step 7? Type the decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"k":7,"den":10,"kind":"tickDec"},"promptText":"You take 10 equal steps to walk from 0 to 1. What decimal are you at after 7 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0593",
@@ -18292,7 +18292,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.05,"display":{"dec":{"k":5,"den":100,"kind":"tickDec"},"promptText":"A unit line is split into 100 equal steps. Type the decimal at mark 5."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.05,"display":{"dec":{"k":5,"den":100,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is split into 100 equal steps. What decimal is 5 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0594",
@@ -18302,7 +18302,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"k":15,"den":100,"kind":"tickDec"},"promptText":"Between 0 and 1, mark 15 of 100 corresponds to which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"k":15,"den":100,"kind":"tickDec"},"promptText":"On a number line, 0 to 1 is split into 100 equal steps. What decimal do you land on after 15 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0595",
@@ -18312,7 +18312,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.25,"display":{"dec":{"k":25,"den":100,"kind":"tickDec"},"promptText":"A unit line is split into 100 equal steps. Type the decimal at mark 25."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.25,"display":{"dec":{"k":25,"den":100,"kind":"tickDec"},"promptText":"There are 100 equal steps from 0 to 1 on a number line. What decimal is 25 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0596",
@@ -18322,7 +18322,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.35,"display":{"dec":{"k":35,"den":100,"kind":"tickDec"},"promptText":"Between 0 and 1, mark 35 of 100 corresponds to which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.35,"display":{"dec":{"k":35,"den":100,"kind":"tickDec"},"promptText":"A number line from 0 to 1 has 100 equal steps. Which decimal do you reach after 35 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0597",
@@ -18332,7 +18332,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.45,"display":{"dec":{"k":45,"den":100,"kind":"tickDec"},"promptText":"A unit line is split into 100 equal steps. Type the decimal at mark 45."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.45,"display":{"dec":{"k":45,"den":100,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is split into 100 equal steps. What decimal is 45 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0598",
@@ -18342,7 +18342,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.55,"display":{"dec":{"k":55,"den":100,"kind":"tickDec"},"promptText":"Between 0 and 1, mark 55 of 100 corresponds to which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.55,"display":{"dec":{"k":55,"den":100,"kind":"tickDec"},"promptText":"On a number line, 0 to 1 is split into 100 equal steps. What decimal do you land on after 55 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0599",
@@ -18352,7 +18352,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.65,"display":{"dec":{"k":65,"den":100,"kind":"tickDec"},"promptText":"A unit line is split into 100 equal steps. Type the decimal at mark 65."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.65,"display":{"dec":{"k":65,"den":100,"kind":"tickDec"},"promptText":"There are 100 equal steps from 0 to 1 on a number line. What decimal is 65 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0600",
@@ -18362,7 +18362,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.75,"display":{"dec":{"k":75,"den":100,"kind":"tickDec"},"promptText":"Between 0 and 1, mark 75 of 100 corresponds to which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.75,"display":{"dec":{"k":75,"den":100,"kind":"tickDec"},"promptText":"A number line from 0 to 1 has 100 equal steps. Which decimal do you reach after 75 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0601",
@@ -18372,7 +18372,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.85,"display":{"dec":{"k":85,"den":100,"kind":"tickDec"},"promptText":"A unit line is split into 100 equal steps. Type the decimal at mark 85."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.85,"display":{"dec":{"k":85,"den":100,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is split into 100 equal steps. What decimal is 85 steps from 0?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0602",
@@ -18382,7 +18382,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.95,"display":{"dec":{"k":95,"den":100,"kind":"tickDec"},"promptText":"On a hundred-step unit line, step 95 names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.95,"display":{"dec":{"k":95,"den":100,"kind":"tickDec"},"promptText":"One hundred equal steps go from 0 to 1 on a number line. What decimal is at the end of step 95?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0603",
@@ -18392,7 +18392,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.12,"display":{"dec":{"k":12,"den":100,"kind":"tickDec"},"promptText":"Precisely which decimal sits at step 12 of 100 on a 0-1 line? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.12,"display":{"dec":{"k":12,"den":100,"kind":"tickDec"},"promptText":"You walk from 0 to 1 in 100 equal steps. What decimal are you at after 12 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0604",
@@ -18402,7 +18402,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.28,"display":{"dec":{"k":28,"den":100,"kind":"tickDec"},"promptText":"On a hundred-step unit line, step 28 names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.28,"display":{"dec":{"k":28,"den":100,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is made of 100 equal steps. What decimal is at the end of step 28?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0605",
@@ -18412,7 +18412,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.36,"display":{"dec":{"k":36,"den":100,"kind":"tickDec"},"promptText":"Precisely which decimal sits at step 36 of 100 on a 0-1 line? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.36,"display":{"dec":{"k":36,"den":100,"kind":"tickDec"},"promptText":"You take 100 equal steps to walk from 0 to 1. What decimal are you at after 36 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0606",
@@ -18422,7 +18422,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.52,"display":{"dec":{"k":52,"den":100,"kind":"tickDec"},"promptText":"On a hundred-step unit line, step 52 names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.52,"display":{"dec":{"k":52,"den":100,"kind":"tickDec"},"promptText":"One hundred equal steps go from 0 to 1 on a number line. What decimal is at the end of step 52?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0607",
@@ -18432,7 +18432,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.64,"display":{"dec":{"k":64,"den":100,"kind":"tickDec"},"promptText":"Precisely which decimal sits at step 64 of 100 on a 0-1 line? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.64,"display":{"dec":{"k":64,"den":100,"kind":"tickDec"},"promptText":"You walk from 0 to 1 in 100 equal steps. What decimal are you at after 64 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0608",
@@ -18442,7 +18442,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.78,"display":{"dec":{"k":78,"den":100,"kind":"tickDec"},"promptText":"On a hundred-step unit line, step 78 names which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.78,"display":{"dec":{"k":78,"den":100,"kind":"tickDec"},"promptText":"A number line from 0 to 1 is made of 100 equal steps. What decimal is at the end of step 78?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0609",
@@ -18452,7 +18452,7 @@ export const ITEMS = [
     structureType: "tickRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.92,"display":{"dec":{"k":92,"den":100,"kind":"tickDec"},"promptText":"Precisely which decimal sits at step 92 of 100 on a 0-1 line? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.92,"display":{"dec":{"k":92,"den":100,"kind":"tickDec"},"promptText":"You take 100 equal steps to walk from 0 to 1. What decimal are you at after 92 steps?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0610",
@@ -18472,7 +18472,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"a":0.4,"b":0.1,"kind":"addDec"},"promptText":"Add 0.1 to 0.4. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"a":0.4,"b":0.1,"kind":"addDec"},"promptText":"What is 0.4 + 0.1?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0612",
@@ -18492,7 +18492,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"a":0.1,"b":0.2,"kind":"addDec"},"promptText":"Add 0.2 to 0.1. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"a":0.1,"b":0.2,"kind":"addDec"},"promptText":"What do you get when you add 0.2 to 0.1?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0614",
@@ -18512,7 +18512,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.5,"b":0.2,"kind":"addDec"},"promptText":"Add 0.2 to 0.5. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.5,"b":0.2,"kind":"addDec"},"promptText":"What is 0.5 + 0.2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0616",
@@ -18532,7 +18532,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.4,"b":0.3,"kind":"addDec"},"promptText":"Add 0.3 to 0.4. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.4,"b":0.3,"kind":"addDec"},"promptText":"What do you get when you add 0.3 to 0.4?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0618",
@@ -18552,7 +18552,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"a":0.2,"b":0.1,"kind":"addDec"},"promptText":"The sum 0.2 + 0.1 equals which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"a":0.2,"b":0.1,"kind":"addDec"},"promptText":"What is the sum of 0.2 and 0.1?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0620",
@@ -18562,7 +18562,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"a":0.4,"b":0.1,"kind":"addDec"},"promptText":"Start at 0.4 and go up by 0.1. Where do you land? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"a":0.4,"b":0.1,"kind":"addDec"},"promptText":"What number is 0.1 more than 0.4?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0621",
@@ -18572,7 +18572,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.6,"b":0.1,"kind":"addDec"},"promptText":"The sum 0.6 + 0.1 equals which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.6,"b":0.1,"kind":"addDec"},"promptText":"What do 0.6 and 0.1 add up to?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0622",
@@ -18582,7 +18582,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"a":0.1,"b":0.2,"kind":"addDec"},"promptText":"Start at 0.1 and go up by 0.2. Where do you land? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.3,"display":{"dec":{"a":0.1,"b":0.2,"kind":"addDec"},"promptText":"If you start at 0.1 and go up 0.2, what number do you land on?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0623",
@@ -18592,7 +18592,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"a":0.3,"b":0.2,"kind":"addDec"},"promptText":"The sum 0.3 + 0.2 equals which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"a":0.3,"b":0.2,"kind":"addDec"},"promptText":"What is the sum of 0.3 and 0.2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0624",
@@ -18602,7 +18602,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.5,"b":0.2,"kind":"addDec"},"promptText":"Start at 0.5 and go up by 0.2. Where do you land? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.5,"b":0.2,"kind":"addDec"},"promptText":"What number is 0.2 more than 0.5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0625",
@@ -18612,7 +18612,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"a":0.2,"b":0.3,"kind":"addDec"},"promptText":"The sum 0.2 + 0.3 equals which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.5,"display":{"dec":{"a":0.2,"b":0.3,"kind":"addDec"},"promptText":"What do 0.2 and 0.3 add up to?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0626",
@@ -18622,7 +18622,7 @@ export const ITEMS = [
     structureType: "addSmall_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.4,"b":0.3,"kind":"addDec"},"promptText":"Start at 0.4 and go up by 0.3. Where do you land? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.7,"display":{"dec":{"a":0.4,"b":0.3,"kind":"addDec"},"promptText":"If you start at 0.4 and go up 0.3, what number do you land on?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0627",
@@ -18642,7 +18642,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.33,"display":{"dec":{"a":0.32,"b":0.01,"kind":"addDec"},"promptText":"Increase 0.32 by 0.01. Type the new decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.33,"display":{"dec":{"a":0.32,"b":0.01,"kind":"addDec"},"promptText":"What is 0.01 more than 0.32?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0629",
@@ -18662,7 +18662,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.29,"display":{"dec":{"a":0.28,"b":0.01,"kind":"addDec"},"promptText":"Increase 0.28 by 0.01. Type the new decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.29,"display":{"dec":{"a":0.28,"b":0.01,"kind":"addDec"},"promptText":"What number do you get when you add 0.01 to 0.28?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0631",
@@ -18682,7 +18682,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.77,"display":{"dec":{"a":0.76,"b":0.01,"kind":"addDec"},"promptText":"Increase 0.76 by 0.01. Type the new decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.77,"display":{"dec":{"a":0.76,"b":0.01,"kind":"addDec"},"promptText":"What is 0.01 more than 0.76?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0633",
@@ -18702,7 +18702,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"a":0.89,"b":0.01,"kind":"addDec"},"promptText":"Increase 0.89 by 0.01. Type the new decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.9,"display":{"dec":{"a":0.89,"b":0.01,"kind":"addDec"},"promptText":"What number do you get when you add 0.01 to 0.89?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0635",
@@ -18722,7 +18722,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.46,"display":{"dec":{"a":0.45,"b":0.01,"kind":"addDec"},"promptText":"Compute 0.45 + 0.01 and type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.46,"display":{"dec":{"a":0.45,"b":0.01,"kind":"addDec"},"promptText":"What is 0.45 + 0.01?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0637",
@@ -18732,7 +18732,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.42,"display":{"dec":{"a":0.32,"b":0.1,"kind":"addDec"},"promptText":"0.32 moved up by 0.1 lands on which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.42,"display":{"dec":{"a":0.32,"b":0.1,"kind":"addDec"},"promptText":"What number is 0.1 more than 0.32?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0638",
@@ -18742,7 +18742,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.68,"display":{"dec":{"a":0.67,"b":0.01,"kind":"addDec"},"promptText":"Compute 0.67 + 0.01 and type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.68,"display":{"dec":{"a":0.67,"b":0.01,"kind":"addDec"},"promptText":"What is the sum of 0.67 and 0.01?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0639",
@@ -18752,7 +18752,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.38,"display":{"dec":{"a":0.28,"b":0.1,"kind":"addDec"},"promptText":"0.28 moved up by 0.1 lands on which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.38,"display":{"dec":{"a":0.28,"b":0.1,"kind":"addDec"},"promptText":"What do you get when 0.28 goes up by 0.1?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0640",
@@ -18762,7 +18762,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.54,"display":{"dec":{"a":0.53,"b":0.01,"kind":"addDec"},"promptText":"Compute 0.53 + 0.01 and type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.54,"display":{"dec":{"a":0.53,"b":0.01,"kind":"addDec"},"promptText":"What is 0.53 + 0.01?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0641",
@@ -18772,7 +18772,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.86,"display":{"dec":{"a":0.76,"b":0.1,"kind":"addDec"},"promptText":"0.76 moved up by 0.1 lands on which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.86,"display":{"dec":{"a":0.76,"b":0.1,"kind":"addDec"},"promptText":"What number is 0.1 more than 0.76?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0642",
@@ -18782,7 +18782,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"a":0.14,"b":0.01,"kind":"addDec"},"promptText":"Compute 0.14 + 0.01 and type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.15,"display":{"dec":{"a":0.14,"b":0.01,"kind":"addDec"},"promptText":"What is the sum of 0.14 and 0.01?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0643",
@@ -18792,7 +18792,7 @@ export const ITEMS = [
     structureType: "addSmall_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":0.99,"display":{"dec":{"a":0.89,"b":0.1,"kind":"addDec"},"promptText":"0.89 moved up by 0.1 lands on which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":0.99,"display":{"dec":{"a":0.89,"b":0.1,"kind":"addDec"},"promptText":"What do you get when 0.89 goes up by 0.1?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0644",
@@ -18812,7 +18812,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":2.39,"display":{"dec":{"a":2.38,"b":0.01,"kind":"addDec"},"promptText":"The precise sum 2.38 + 0.01 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":2.39,"display":{"dec":{"a":2.38,"b":0.01,"kind":"addDec"},"promptText":"What is the sum of 2.38 and 0.01?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0646",
@@ -18832,7 +18832,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1.3,"display":{"dec":{"a":1.29,"b":0.01,"kind":"addDec"},"promptText":"The precise sum 1.29 + 0.01 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":1.3,"display":{"dec":{"a":1.29,"b":0.01,"kind":"addDec"},"promptText":"What do 1.29 and 0.01 add up to?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0648",
@@ -18852,7 +18852,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":6.77,"display":{"dec":{"a":6.76,"b":0.01,"kind":"addDec"},"promptText":"The precise sum 6.76 + 0.01 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":6.77,"display":{"dec":{"a":6.76,"b":0.01,"kind":"addDec"},"promptText":"What is the sum of 6.76 and 0.01?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0650",
@@ -18872,7 +18872,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":8.9,"display":{"dec":{"a":8.89,"b":0.01,"kind":"addDec"},"promptText":"The precise sum 8.89 + 0.01 = ? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":8.9,"display":{"dec":{"a":8.89,"b":0.01,"kind":"addDec"},"promptText":"What do 8.89 and 0.01 add up to?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0652",
@@ -18892,7 +18892,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":3.46,"display":{"dec":{"a":3.45,"b":0.01,"kind":"addDec"},"promptText":"Adding 0.01 to 3.45 yields which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":3.46,"display":{"dec":{"a":3.45,"b":0.01,"kind":"addDec"},"promptText":"What is 3.45 + 0.01?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0654",
@@ -18902,7 +18902,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":2.48,"display":{"dec":{"a":2.38,"b":0.1,"kind":"addDec"},"promptText":"Evaluate 2.38 + 0.1 in one step. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":2.48,"display":{"dec":{"a":2.38,"b":0.1,"kind":"addDec"},"promptText":"What number is 0.1 more than 2.38?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0655",
@@ -18912,7 +18912,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":5.68,"display":{"dec":{"a":5.67,"b":0.01,"kind":"addDec"},"promptText":"Adding 0.01 to 5.67 yields which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":5.68,"display":{"dec":{"a":5.67,"b":0.01,"kind":"addDec"},"promptText":"What do you get when you add 0.01 to 5.67?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0656",
@@ -18922,7 +18922,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":1.39,"display":{"dec":{"a":1.29,"b":0.1,"kind":"addDec"},"promptText":"Evaluate 1.29 + 0.1 in one step. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":1.39,"display":{"dec":{"a":1.29,"b":0.1,"kind":"addDec"},"promptText":"What is 1.29 + 0.1?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0657",
@@ -18932,7 +18932,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":4.54,"display":{"dec":{"a":4.53,"b":0.01,"kind":"addDec"},"promptText":"Adding 0.01 to 4.53 yields which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":4.54,"display":{"dec":{"a":4.53,"b":0.01,"kind":"addDec"},"promptText":"What is 4.53 + 0.01?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0658",
@@ -18942,7 +18942,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":6.86,"display":{"dec":{"a":6.76,"b":0.1,"kind":"addDec"},"promptText":"Evaluate 6.76 + 0.1 in one step. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":6.86,"display":{"dec":{"a":6.76,"b":0.1,"kind":"addDec"},"promptText":"What number is 0.1 more than 6.76?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0659",
@@ -18952,7 +18952,7 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":7.15,"display":{"dec":{"a":7.14,"b":0.01,"kind":"addDec"},"promptText":"Adding 0.01 to 7.14 yields which decimal? Type it."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":7.15,"display":{"dec":{"a":7.14,"b":0.01,"kind":"addDec"},"promptText":"What do you get when you add 0.01 to 7.14?"},"answerType":"decimal"},
   },
   {
     itemId: "decimals-proc-b0821-0660",
@@ -18962,6 +18962,6 @@ export const ITEMS = [
     structureType: "addSmall_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":8.99,"display":{"dec":{"a":8.89,"b":0.1,"kind":"addDec"},"promptText":"Evaluate 8.89 + 0.1 in one step. Type the result."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"dec","answer":8.99,"display":{"dec":{"a":8.89,"b":0.1,"kind":"addDec"},"promptText":"What is 8.89 + 0.1?"},"answerType":"decimal"},
   },
 ];

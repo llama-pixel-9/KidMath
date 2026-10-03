@@ -532,7 +532,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Finn measures 3 and 9 tenths kilometers and writes down 3.9. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ben measures 3 and 9 tenths kilometers and writes down 3.9. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0054",
@@ -582,7 +582,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Maya measures 7 and 8 tenths kilometers and writes down 8.7. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn measures 7 and 8 tenths kilometers and writes down 8.7. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0059",
@@ -612,7 +612,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo's hike measures 4 and 8 tenths kilometers. Leo writes it as 8.4. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Diego's hike measures 4 and 8 tenths kilometers. Diego writes it as 8.4. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0062",
@@ -632,7 +632,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Omar measures 5 and 3 tenths kilometers and writes down 3.5. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Priya measures 5 and 3 tenths kilometers and writes down 3.5. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0064",
@@ -732,7 +732,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora measures 1 and 5 tenths liters and writes down 5.1. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai measures 1 and 5 tenths liters and writes down 5.1. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0074",
@@ -752,7 +752,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo measures 7 and 5 tenths liters and writes down 5.7. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca measures 7 and 5 tenths liters and writes down 5.7. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0076",
@@ -772,7 +772,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida measures 7 and 6 tenths meters and writes down 6.7. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca measures 7 and 6 tenths meters and writes down 6.7. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0078",
@@ -782,7 +782,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida measures 4 and 1 tenths meters and writes down 1.4. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida measures 4 and 1 tenth meters and writes down 1.4. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0079",
@@ -822,7 +822,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Luca measures 5 and 4 tenths liters and writes down 5.4. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Leo measures 5 and 4 tenths liters and writes down 5.4. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0083",
@@ -842,7 +842,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Amara's ribbon measures 4 and 3 tenths meters. Amara writes it as 4.3. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo's ribbon measures 4 and 3 tenths meters. Theo writes it as 4.3. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0085",
@@ -862,7 +862,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"The ribbon is 6 meters plus 2 tenths more. Omar records 6.2. Is Omar right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"The ribbon is 6 meters plus 2 tenths more. Ben records 6.2. Is Ben right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0087",
@@ -892,7 +892,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida measures 4 and 1 tenths meters and writes down 4.1. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida measures 4 and 1 tenth meters and writes down 4.1. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0090",
@@ -972,7 +972,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nia measures 4 and 3 tenths meters and writes down 4.3. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava measures 4 and 3 tenths meters and writes down 4.3. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0098",
@@ -2112,7 +2112,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Kai's hike measures 6 and 9 tenths kilometers. Kai writes it as 6.9. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nora's hike measures 6 and 9 tenths kilometers. Nora writes it as 6.9. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0212",
@@ -2172,7 +2172,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora's bottle measures 6 and 1 tenths liters. Nora writes it as 1.6. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora's bottle measures 6 and 1 tenth liters. Nora writes it as 1.6. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0218",
@@ -2212,7 +2212,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"The ribbon is 4 meters plus 6 tenths more. Diego records 4.6. Is Diego right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"The ribbon is 4 meters plus 6 tenths more. Leo records 4.6. Is Leo right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0222",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo's hike measures 2 and 1 tenths kilometers. Theo writes it as 2.1. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo's hike measures 2 and 1 tenth kilometers. Theo writes it as 2.1. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0226",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"The jump is 1 meters plus 7 tenths more. Maya records 7.1. Is Maya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"The jump is 1 meter plus 7 tenths more. Maya records 7.1. Is Maya right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0227",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"The jump is 9 meters plus 1 tenths more. Ida records 9.1. Is Ida right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"The jump is 9 meters plus 1 tenth more. Ida records 9.1. Is Ida right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0228",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"The jump is 7 meters plus 6 tenths more. Theo records 6.7. Is Theo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"The jump is 7 meters plus 6 tenths more. Amara records 6.7. Is Amara right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0230",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nia's jump measures 8 and 1 tenths meters. Nia writes it as 8.1. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nia's jump measures 8 and 1 tenth meters. Nia writes it as 8.1. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0233",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"The bottle is 4 liters plus 1 tenths more. Omar records 1.4. Is Omar right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"The bottle is 4 liters plus 1 tenth more. Omar records 1.4. Is Omar right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0239",
@@ -2392,7 +2392,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Diego's jump measures 6 and 1 tenths meters. Diego writes it as 1.6. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Diego's jump measures 6 and 1 tenth meters. Diego writes it as 1.6. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0240",
@@ -2402,7 +2402,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ben's hike measures 8 and 7 tenths kilometers. Ben writes it as 8.7. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Finn's hike measures 8 and 7 tenths kilometers. Finn writes it as 8.7. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0241",
@@ -2452,7 +2452,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"The ribbon is 1 meters plus 8 tenths more. Maya records 8.1. Is Maya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"The ribbon is 1 meter plus 8 tenths more. Maya records 8.1. Is Maya right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0246",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn's ribbon measures 8 and 1 tenths meters. Finn writes it as 1.8. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Maya's ribbon measures 8 and 1 tenth meters. Maya writes it as 1.8. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0251",
@@ -2542,7 +2542,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo's bottle measures 2 and 1 tenths liters. Leo writes it as 1.2. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo's bottle measures 2 and 1 tenth liters. Leo writes it as 1.2. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0255",
@@ -2602,7 +2602,7 @@ export const ITEMS = [
     structureType: "decimalLabelJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe's bottle measures 3 and 1 tenths liters. Zoe writes it as 3.1. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe's bottle measures 3 and 1 tenth liters. Zoe writes it as 3.1. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-app-b0824-0261",
@@ -4192,7 +4192,7 @@ export const ITEMS = [
     structureType: "wholePlusTenthsPick",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"4.5","choices":["5.4","4.55","4.5","9"],"display":{"promptText":"Build the number from 4 wholes plus 5 tenths. Which is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"4.5","choices":["5.4","4.55","4.5","9"],"display":{"promptText":"Which number is 4 wholes and 5 tenths?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0004",
@@ -4222,7 +4222,7 @@ export const ITEMS = [
     structureType: "tenthsJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Kai says 0.3 + 0.6 = 0.9. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Finn says 0.3 + 0.6 = 0.9. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0007",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "wholePlusTenthsPick",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"3.8","choices":["8.3","3.88","11","3.8"],"display":{"promptText":"Build the number from 3 wholes plus 8 tenths. Which is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"3.8","choices":["8.3","3.88","11","3.8"],"display":{"promptText":"Which number do 3 ones and 8 tenths make?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0009",
@@ -4392,7 +4392,7 @@ export const ITEMS = [
     structureType: "wholePlusTenthsPick",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"3.6","choices":["3.6","3.66","6.3","9"],"display":{"promptText":"Build the number from 3 wholes plus 6 tenths. Which is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"3.6","choices":["3.6","3.66","6.3","9"],"display":{"promptText":"Which number do 3 wholes and 6 tenths make?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0024",
@@ -4452,7 +4452,7 @@ export const ITEMS = [
     structureType: "wholePlusTenthsPick",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.6","choices":["1.6","7","1.66","6.1"],"display":{"promptText":"Build the number from 1 wholes plus 6 tenths. Which is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.6","choices":["1.6","7","1.66","6.1"],"display":{"promptText":"Which number is 1 whole and 6 tenths?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0030",
@@ -4462,7 +4462,7 @@ export const ITEMS = [
     structureType: "wholePlusTenthsPick",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.2","choices":["1.22","1.2","2.1","3"],"display":{"promptText":"1 wholes and 2 tenths make which number?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.2","choices":["1.22","1.2","2.1","3"],"display":{"promptText":"1 whole and 2 tenths make which number?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0031",
@@ -4572,7 +4572,7 @@ export const ITEMS = [
     structureType: "tenthsJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ben says 0.9 + 0.3 = 1.2. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ben works out 0.9 + 0.3 = 1.2. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0042",
@@ -4592,7 +4592,7 @@ export const ITEMS = [
     structureType: "tenthsJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Omar works out 0.4 + 0.7 = 1.2. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Omar adds 0.4 and 0.7 and writes 1.2. Is Omar right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0044",
@@ -4832,7 +4832,7 @@ export const ITEMS = [
     structureType: "tenthsMeaningPick",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"tenths","choices":["hundredths","tenths","ones"],"display":{"promptText":"0.1 means 1 pieces of which size?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"tenths","choices":["hundredths","tenths","ones"],"display":{"promptText":"0.1 means 1 piece of which size?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0068",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "alignPlacesPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.95","choices":["4.10","0.05","0.95","9.50"],"display":{"promptText":"One of these is the true sum of 0.60 and 0.35. Which one?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.95","choices":["4.10","0.05","0.95","9.50"],"display":{"promptText":"Which is the sum of 0.60 and 0.35?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0111",
@@ -5562,7 +5562,7 @@ export const ITEMS = [
     structureType: "alignPlacesPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.85","choices":["0.01","0.85","7.24","8.50"],"display":{"promptText":"One of these is the true sum of 0.14 and 0.71. Which one?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.85","choices":["0.01","0.85","7.24","8.50"],"display":{"promptText":"What is the sum of 0.14 and 0.71?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0141",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "alignPlacesPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.08","choices":["1.08","5.94","10.80","0.18"],"display":{"promptText":"One of these is the true sum of 0.54 and 0.54. Which one?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.08","choices":["1.08","5.94","10.80","0.18"],"display":{"promptText":"Which number is the sum of 0.54 and 0.54?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0151",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "alignPlacesPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.14","choices":["11.40","1.14","0.24","5.64"],"display":{"promptText":"One of these is the true sum of 0.64 and 0.50. Which one?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.14","choices":["11.40","1.14","0.24","5.64"],"display":{"promptText":"Which is the sum of 0.64 and 0.50?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0155",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "alignPlacesPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.72","choices":["0.72","3.33","0.01","7.20"],"display":{"promptText":"One of these is the true sum of 0.43 and 0.29. Which one?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.72","choices":["0.72","3.33","0.01","7.20"],"display":{"promptText":"What is the sum of 0.43 and 0.29?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0156",
@@ -5802,7 +5802,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya says 7.2 ÷ 10 gives a smaller number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Luca says 7.2 ÷ 10 gives a smaller number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0165",
@@ -5822,7 +5822,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"June says 5.8 × 10 gives a smaller number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai says 5.8 × 10 gives a smaller number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0167",
@@ -5842,7 +5842,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe says 7.2 × 10 gives a bigger number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Omar says 7.2 × 10 gives a bigger number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0169",
@@ -5902,7 +5902,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Maya says 2.7 ÷ 10 gives a smaller number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida says 2.7 ÷ 10 gives a smaller number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0175",
@@ -5972,7 +5972,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida says 4.2 ÷ 10 gives a bigger number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara says 4.2 ÷ 10 gives a bigger number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0182",
@@ -5992,7 +5992,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Amara says 6 × 10 gives a bigger number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida says 6 × 10 gives a bigger number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0184",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Kai says 8 × 10 gives a bigger number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June says 8 × 10 gives a bigger number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0204",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "placeWorthJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June says the 3 in 0.32 is worth more than the other digit. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa says the 3 in 0.32 is worth more than the other digit. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0216",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "placeWorthJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Rosa says the 6 in 0.56 is worth more than the other digit. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"June says the 6 in 0.56 is worth more than the other digit. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0218",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "placeWorthJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida says the 5 in 0.56 is worth more than the other digit. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nora says the 5 in 0.56 is worth more than the other digit. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0222",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "placeWorthJudged",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"In 0.71, Zoe claims the digit 1 carries the bigger value. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"In 0.71, Ida claims the digit 1 carries the bigger value. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0224",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Omar claims 1.14 + 2.93 stays under 4. Is Omar right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Omar thinks 1.14 + 2.93 stays under 4. Is Omar right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0265",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora estimates that 1.46 plus 1.84 is under 3. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Theo says 1.46 + 1.84 is less than 3. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0266",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Leo claims 1.09 + 2.53 stays under 4. Is Leo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Leo thinks 1.09 + 2.53 stays under 4. Is Leo right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0267",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Theo claims 2.25 + 3.11 passes 5. Is Theo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo estimates that 2.25 plus 3.11 is over 5. Do you agree?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0268",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Theo claims 1.75 + 4.68 stays under 7. Is Theo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Theo thinks 1.75 + 4.68 stays under 7. Is Theo right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0270",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Maya claims 1.54 + 1.28 stays under 3. Is Maya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Maya thinks 1.54 + 1.28 stays under 3. Is Maya right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0277",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Theo claims 3.36 + 3.83 stays under 8. Is Theo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Theo thinks 3.36 + 3.83 stays under 8. Is Theo right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0279",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Priya claims 3.06 + 3.02 passes 7. Is Priya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Priya thinks 3.06 + 3.02 passes 7. Is Priya right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0283",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Nora claims 1.62 + 2.14 stays under 4. Is Nora right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Nora thinks 1.62 + 2.14 stays under 4. Is Nora right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0284",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Ida claims 2.35 + 2.61 stays under 4. Is Ida right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Ida thinks 2.35 + 2.61 stays under 4. Is Ida right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0285",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Rosa claims 4.09 + 1.14 passes 6. Is Rosa right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Rosa thinks 4.09 + 1.14 passes 6. Is Rosa right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0287",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Diego claims 3.57 + 4.58 passes 9. Is Diego right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Diego thinks 3.57 + 4.58 passes 9. Is Diego right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0293",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn estimates that 1.88 plus 3.05 is under 4. Do you agree?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn says 1.88 + 3.05 is less than 4. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0294",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Zoe claims 2.94 + 3.06 stays under 6. Is Zoe right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe says 2.94 + 3.06 is less than 6. Is Zoe right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0296",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Omar claims 3.59 + 3.02 passes 7. Is Omar right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Omar thinks 3.59 + 3.02 passes 7. Is Omar right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0301",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Finn claims 3.10 + 3.30 passes 6. Is Finn right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Finn thinks 3.10 + 3.30 passes 6. Is Finn right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0303",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "sumSizeJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without working it out fully, Priya claims 2.13 + 2.08 passes 4. Is Priya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Without adding it all up, Priya thinks 2.13 + 2.08 passes 4. Is Priya right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0313",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida says 2.9 ÷ 10 gives a bigger number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Maya says 2.9 ÷ 10 gives a bigger number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0315",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "shiftDirectionJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego says 1.2 ÷ 10 gives a smaller number. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"decops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Finn says 1.2 ÷ 10 gives a smaller number. Is that right?"},"answerType":"choice"},
   },
   {
     itemId: "decimalOps-conc-b0824-0363",
@@ -8392,7 +8392,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.2","display":{"promptText":"Fill the blank: 0.2 + ? = 1.4."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.2","display":{"promptText":"What number makes 0.2 + __ = 1.4 true?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0008",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.5","display":{"promptText":"Fill the blank: 0.3 + ? = 0.8."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.5","display":{"promptText":"What is the missing number in 0.3 + __ = 0.8?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0010",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.9","display":{"promptText":"Fill the blank: 0.7 + ? = 1.6."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.9","display":{"promptText":"What number makes 0.7 + __ = 1.6 true?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0013",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.4","display":{"promptText":"Fill the blank: 0.1 + ? = 0.5."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.4","display":{"promptText":"What is the missing number in 0.1 + __ = 0.5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0019",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.5","display":{"promptText":"Fill the blank: 0.8 + ? = 1.3."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.5","display":{"promptText":"What number makes 0.8 + __ = 1.3 true?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0020",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.4","display":{"promptText":"Fill the blank: 0.3 + ? = 0.7."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.4","display":{"promptText":"What is the missing number in 0.3 + __ = 0.7?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0022",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.2","display":{"promptText":"Fill the blank: 0.5 + ? = 0.7."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.2","display":{"promptText":"What number makes 0.5 + __ = 0.7 true?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0025",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.6","display":{"promptText":"Fill the blank: 1.0 + ? = 1.6."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.6","display":{"promptText":"What is the missing number in 1.0 + __ = 1.6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0040",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.2","display":{"promptText":"Fill the blank: 1.1 + ? = 1.3."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.2","display":{"promptText":"What number makes 1.1 + __ = 1.3 true?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0043",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.1","display":{"promptText":"Fill the blank: 0.7 + ? = 1.8."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.1","display":{"promptText":"What is the missing number in 0.7 + __ = 1.8?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0044",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.1","display":{"promptText":"Fill the blank: 0.4 + ? = 1.5."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.1","display":{"promptText":"What number makes 0.4 + __ = 1.5 true?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0047",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.6","display":{"promptText":"Fill the blank: 0.7 + ? = 1.3."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.6","display":{"promptText":"What is the missing number in 0.7 + __ = 1.3?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0049",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.4","display":{"promptText":"Fill the blank: 0.4 + ? = 0.8."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.4","display":{"promptText":"What number makes 0.4 + __ = 0.8 true?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0051",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "tenthsMissingAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.2","display":{"promptText":"Fill the blank: 0.4 + ? = 0.6."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.2","display":{"promptText":"What is the missing number in 0.4 + __ = 0.6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0052",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "tenthsAsDecimal",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.1","display":{"promptText":"Type 1 tenths as a decimal number."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.1","display":{"promptText":"Type 1 tenth as a decimal number."},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0057",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "tenthsAsDecimal",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.1","display":{"promptText":"Write 1 tenths as a decimal."},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.1","display":{"promptText":"Write 1 tenth as a decimal."},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0086",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "tenthsAsDecimal",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.1","display":{"promptText":"1 tenths = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.1","display":{"promptText":"1 tenth = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0103",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.36","display":{"promptText":"Multiply 0.34 by 4. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.36","display":{"promptText":"What is 0.34 × 4?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0366",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"2.52","display":{"promptText":"Multiply 0.42 by 6. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"2.52","display":{"promptText":"What is the product of 0.42 and 6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0371",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.26","display":{"promptText":"Multiply 0.13 by 2. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.26","display":{"promptText":"What is 0.13 × 2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0382",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.56","display":{"promptText":"Multiply 0.28 by 2. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.56","display":{"promptText":"What is the product of 0.28 and 2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0384",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.08","display":{"promptText":"Multiply 0.18 by 6. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.08","display":{"promptText":"What is 0.18 × 6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0387",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.99","display":{"promptText":"Multiply 0.33 by 3. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.99","display":{"promptText":"What is the product of 0.33 and 3?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0390",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.76","display":{"promptText":"Multiply 0.19 by 4. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.76","display":{"promptText":"What is 0.19 × 4?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0391",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"1.50","display":{"promptText":"Multiply 0.30 by 5. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"1.50","display":{"promptText":"What is the product of 0.30 and 5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0394",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.94","display":{"promptText":"Multiply 0.47 by 2. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.94","display":{"promptText":"What is 0.47 × 2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0397",
@@ -12342,7 +12342,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.55","display":{"promptText":"Multiply 0.11 by 5. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.55","display":{"promptText":"What is the product of 0.11 and 5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0403",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.66","display":{"promptText":"Multiply 0.11 by 6. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.66","display":{"promptText":"What is 0.11 × 6?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0405",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.78","display":{"promptText":"Multiply 0.39 by 2. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.78","display":{"promptText":"What is the product of 0.39 and 2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0406",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.84","display":{"promptText":"Multiply 0.21 by 4. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.84","display":{"promptText":"What is 0.21 × 4?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0409",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"2.40","display":{"promptText":"Multiply 0.48 by 5. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"2.40","display":{"promptText":"What is the product of 0.48 and 5?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0415",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "decimalTimesWhole",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.30","display":{"promptText":"Multiply 0.15 by 2. What do you get?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.30","display":{"promptText":"What is 0.15 × 2?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0416",

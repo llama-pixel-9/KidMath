@@ -522,7 +522,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":2,"kind":"gap","target":5},"promptText":"swim practice starts at two o'clock and ends at five o'clock. Sam wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":2,"kind":"gap","target":5},"promptText":"Soccer camp starts at two o'clock and ends at five o'clock. How many hours long is soccer camp?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0053",
@@ -542,7 +542,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":3,"kind":"gap","target":7},"promptText":"the puppet show starts at three o'clock and ends at seven o'clock. Luca wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":3,"kind":"gap","target":7},"promptText":"The school fair starts at three o'clock and ends at seven o'clock. How many hours long is the school fair?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0055",
@@ -562,7 +562,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":2,"kind":"gap","target":8},"promptText":"swim practice starts at two o'clock and ends at eight o'clock. Theo wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":2,"kind":"gap","target":8},"promptText":"The town fair starts at two o'clock and ends at eight o'clock. How many hours long is the town fair?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0057",
@@ -582,7 +582,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":1,"kind":"gap","target":3},"promptText":"the puppet show starts at one o'clock and ends at three o'clock. Kai wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":1,"kind":"gap","target":3},"promptText":"The puppet show starts at one o'clock and ends at three o'clock. How many hours long is the puppet show?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0059",
@@ -602,7 +602,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":7,"kind":"gap","target":10},"promptText":"swim practice starts at seven o'clock and ends at ten o'clock. Omar wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":7,"kind":"gap","target":10},"promptText":"Art camp starts at seven o'clock and ends at ten o'clock. How many hours long is art camp?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0061",
@@ -622,7 +622,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":8,"kind":"gap","target":12},"promptText":"the puppet show starts at eight o'clock and ends at twelve o'clock. Zoe wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":8,"kind":"gap","target":12},"promptText":"The bake sale starts at eight o'clock and ends at twelve o'clock. How many hours long is the bake sale?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0063",
@@ -642,7 +642,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":1,"kind":"gap","target":7},"promptText":"swim practice starts at one o'clock and ends at seven o'clock. Lily wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":1,"kind":"gap","target":7},"promptText":"The family beach day starts at one o'clock and ends at seven o'clock. How many hours long is the beach day?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0065",
@@ -662,7 +662,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"promptText":"the puppet show starts at six o'clock and ends at ten o'clock. Finn wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":6,"kind":"gap","target":10},"promptText":"The block party starts at six o'clock and ends at ten o'clock. How many hours long is the block party?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0067",
@@ -682,7 +682,7 @@ export const ITEMS = [
     structureType: "storyWholeHours",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":5,"kind":"gap","target":7},"promptText":"swim practice starts at five o'clock and ends at seven o'clock. Diego wants to know: how many hours is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":5,"kind":"gap","target":7},"promptText":"Swim practice starts at five o'clock and ends at seven o'clock. How many hours long is swim practice?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0069",
@@ -1032,7 +1032,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3:15","choices":["3:20","3:10","4:15","3:15"],"display":{"time":{"dur":35,"kind":"endTime","startH":2,"startM":40},"promptText":"The trip to the museum starts at 2:40 and lasts 35 minutes. When does Mina arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3:15","choices":["3:20","3:10","4:15","3:15"],"display":{"time":{"dur":35,"kind":"endTime","startH":2,"startM":40},"promptText":"Mina's class leaves for the museum at 2:40. The bus ride takes 35 minutes. What time does Mina's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0104",
@@ -1052,7 +1052,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9:20","choices":["9:20","9:15","9:25","10:20"],"display":{"time":{"dur":45,"kind":"endTime","startH":8,"startM":35},"promptText":"The trip to the museum starts at 8:35 and lasts 45 minutes. When does Nia arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"9:20","choices":["9:20","9:15","9:25","10:20"],"display":{"time":{"dur":45,"kind":"endTime","startH":8,"startM":35},"promptText":"Nia's class leaves for the museum at 8:35. The bus ride takes 45 minutes. What time does Nia's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0106",
@@ -1072,7 +1072,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4:15","choices":["4:10","4:15","4:20","5:15"],"display":{"time":{"dur":20,"kind":"endTime","startH":3,"startM":55},"promptText":"The trip to the museum starts at 3:55 and lasts 20 minutes. When does Ava arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4:15","choices":["4:10","4:15","4:20","5:15"],"display":{"time":{"dur":20,"kind":"endTime","startH":3,"startM":55},"promptText":"Ava's class leaves for the museum at 3:55. The bus ride takes 20 minutes. What time does Ava's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0108",
@@ -1092,7 +1092,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10:20","choices":["11:20","10:15","10:25","10:20"],"display":{"time":{"dur":50,"kind":"endTime","startH":9,"startM":30},"promptText":"The trip to the museum starts at 9:30 and lasts 50 minutes. When does Ida arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10:20","choices":["11:20","10:15","10:25","10:20"],"display":{"time":{"dur":50,"kind":"endTime","startH":9,"startM":30},"promptText":"Ida's class leaves for the museum at 9:30. The bus ride takes 50 minutes. What time does Ida's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0110",
@@ -1112,7 +1112,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5:10","choices":["5:05","5:15","5:10","6:10"],"display":{"time":{"dur":25,"kind":"endTime","startH":4,"startM":45},"promptText":"The trip to the museum starts at 4:45 and lasts 25 minutes. When does June arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5:10","choices":["5:05","5:15","5:10","6:10"],"display":{"time":{"dur":25,"kind":"endTime","startH":4,"startM":45},"promptText":"June's class leaves for the museum at 4:45. The bus ride takes 25 minutes. What time does June's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0112",
@@ -1132,7 +1132,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11:15","choices":["11:20","12:15","11:10","11:15"],"display":{"time":{"dur":35,"kind":"endTime","startH":10,"startM":40},"promptText":"The trip to the museum starts at 10:40 and lasts 35 minutes. When does Ben arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"11:15","choices":["11:20","12:15","11:10","11:15"],"display":{"time":{"dur":35,"kind":"endTime","startH":10,"startM":40},"promptText":"Ben's class leaves for the museum at 10:40. The bus ride takes 35 minutes. What time does Ben's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0114",
@@ -1152,7 +1152,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6:15","choices":["7:15","6:15","6:10","6:20"],"display":{"time":{"dur":30,"kind":"endTime","startH":5,"startM":45},"promptText":"The trip to the museum starts at 5:45 and lasts 30 minutes. When does Rosa arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6:15","choices":["7:15","6:15","6:10","6:20"],"display":{"time":{"dur":30,"kind":"endTime","startH":5,"startM":45},"promptText":"Rosa's class leaves for the museum at 5:45. The bus ride takes 30 minutes. What time does Rosa's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0116",
@@ -1172,7 +1172,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"12:15","choices":["1:15","12:20","12:10","12:15"],"display":{"time":{"dur":40,"kind":"endTime","startH":11,"startM":35},"promptText":"The trip to the museum starts at 11:35 and lasts 40 minutes. When does Amara arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"12:15","choices":["1:15","12:20","12:10","12:15"],"display":{"time":{"dur":40,"kind":"endTime","startH":11,"startM":35},"promptText":"Amara's class leaves for the museum at 11:35. The bus ride takes 40 minutes. What time does Amara's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0118",
@@ -1192,7 +1192,7 @@ export const ITEMS = [
     structureType: "storyBusArrive",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7:10","choices":["7:10","7:15","7:05","8:10"],"display":{"time":{"dur":15,"kind":"endTime","startH":6,"startM":55},"promptText":"The trip to the museum starts at 6:55 and lasts 15 minutes. When does Priya arrive? Pick the time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"7:10","choices":["7:10","7:15","7:05","8:10"],"display":{"time":{"dur":15,"kind":"endTime","startH":6,"startM":55},"promptText":"Priya's class leaves for the museum at 6:55. The bus ride takes 15 minutes. What time does Priya's class get to the museum?"}},
   },
   {
     itemId: "time-app-b0821-0120",
@@ -1202,7 +1202,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"hour":3,"kind":"hourLater","delta":-1},"promptText":"swim practice starts at three o'clock. Sam must leave home one hour earlier. What hour does Sam leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"hour":3,"kind":"hourLater","delta":-1},"promptText":"Swim practice starts at three o'clock. Sam must leave home one hour earlier. What hour does Sam leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0121",
@@ -1212,7 +1212,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"time":{"hour":7,"kind":"hourLater","delta":-2},"promptText":"art club starts at seven o'clock. Mina must leave home two hours earlier. What hour does Mina leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"time":{"hour":7,"kind":"hourLater","delta":-2},"promptText":"Art club starts at seven o'clock. Mina must leave home two hours earlier. What hour does Mina leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0122",
@@ -1222,7 +1222,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"hour":5,"kind":"hourLater","delta":-1},"promptText":"the puppet show starts at five o'clock. Luca must leave home one hour earlier. What hour does Luca leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"hour":5,"kind":"hourLater","delta":-1},"promptText":"The puppet show starts at five o'clock. Luca must leave home one hour earlier. What hour does Luca leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0123",
@@ -1232,7 +1232,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":9,"kind":"hourLater","delta":-2},"promptText":"garden club starts at nine o'clock. Nia must leave home two hours earlier. What hour does Nia leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":9,"kind":"hourLater","delta":-2},"promptText":"Garden club starts at nine o'clock. Nia must leave home two hours earlier. What hour does Nia leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0124",
@@ -1242,7 +1242,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":2,"kind":"hourLater","delta":-1},"promptText":"swim practice starts at two o'clock. Theo must leave home one hour earlier. What hour does Theo leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":2,"kind":"hourLater","delta":-1},"promptText":"Swim practice starts at two o'clock. Theo must leave home one hour earlier. What hour does Theo leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0125",
@@ -1252,7 +1252,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"time":{"hour":11,"kind":"hourLater","delta":-1},"promptText":"art club starts at eleven o'clock. Ava must leave home one hour earlier. What hour does Ava leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"time":{"hour":11,"kind":"hourLater","delta":-1},"promptText":"Art club starts at eleven o'clock. Ava must leave home one hour earlier. What hour does Ava leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0126",
@@ -1262,7 +1262,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"hour":4,"kind":"hourLater","delta":-2},"promptText":"the puppet show starts at four o'clock. Kai must leave home two hours earlier. What hour does Kai leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"hour":4,"kind":"hourLater","delta":-2},"promptText":"The puppet show starts at four o'clock. Kai must leave home two hours earlier. What hour does Kai leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0127",
@@ -1272,7 +1272,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":8,"kind":"hourLater","delta":-1},"promptText":"garden club starts at eight o'clock. Ida must leave home one hour earlier. What hour does Ida leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":8,"kind":"hourLater","delta":-1},"promptText":"Garden club starts at eight o'clock. Ida must leave home one hour earlier. What hour does Ida leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0128",
@@ -1282,7 +1282,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"hour":6,"kind":"hourLater","delta":-2},"promptText":"swim practice starts at six o'clock. Omar must leave home two hours earlier. What hour does Omar leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"hour":6,"kind":"hourLater","delta":-2},"promptText":"Swim practice starts at six o'clock. Omar must leave home two hours earlier. What hour does Omar leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0129",
@@ -1292,7 +1292,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"time":{"hour":10,"kind":"hourLater","delta":1},"promptText":"June finishes the puppet show one hour after it starts at ten o'clock. What hour does it finish? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"time":{"hour":10,"kind":"hourLater","delta":1},"promptText":"June finishes the puppet show one hour after it starts at ten o'clock. What hour does it finish?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0130",
@@ -1302,7 +1302,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":12,"kind":"hourLater","delta":1},"promptText":"Zoe finishes garden club one hour after it starts at twelve o'clock. What hour does it finish? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":12,"kind":"hourLater","delta":1},"promptText":"Zoe finishes garden club one hour after it starts at twelve o'clock. What hour does it finish?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0131",
@@ -1312,7 +1312,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":3,"kind":"hourLater","delta":-2},"promptText":"art club starts at three o'clock. Ben must leave home two hours earlier. What hour does Ben leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":3,"kind":"hourLater","delta":-2},"promptText":"Art club starts at three o'clock. Ben must leave home two hours earlier. What hour does Ben leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0132",
@@ -1322,7 +1322,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"time":{"hour":7,"kind":"hourLater","delta":-1},"promptText":"swim practice starts at seven o'clock. Lily must leave home one hour earlier. What hour does Lily leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"time":{"hour":7,"kind":"hourLater","delta":-1},"promptText":"Swim practice starts at seven o'clock. Lily must leave home one hour earlier. What hour does Lily leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0133",
@@ -1332,7 +1332,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"hour":5,"kind":"hourLater","delta":-2},"promptText":"garden club starts at five o'clock. Rosa must leave home two hours earlier. What hour does Rosa leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"hour":5,"kind":"hourLater","delta":-2},"promptText":"Garden club starts at five o'clock. Rosa must leave home two hours earlier. What hour does Rosa leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0134",
@@ -1342,7 +1342,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"time":{"hour":9,"kind":"hourLater","delta":-1},"promptText":"the puppet show starts at nine o'clock. Finn must leave home one hour earlier. What hour does Finn leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"time":{"hour":9,"kind":"hourLater","delta":-1},"promptText":"The puppet show starts at nine o'clock. Finn must leave home one hour earlier. What hour does Finn leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0135",
@@ -1352,7 +1352,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"time":{"hour":2,"kind":"hourLater","delta":-2},"promptText":"art club starts at two o'clock. Amara must leave home two hours earlier. What hour does Amara leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"time":{"hour":2,"kind":"hourLater","delta":-2},"promptText":"Art club starts at two o'clock. Amara must leave home two hours earlier. What hour does Amara leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0136",
@@ -1362,7 +1362,7 @@ export const ITEMS = [
     structureType: "storyHourPlan",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"hour":4,"kind":"hourLater","delta":-1},"promptText":"swim practice starts at four o'clock. Diego must leave home one hour earlier. What hour does Diego leave? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"hour":4,"kind":"hourLater","delta":-1},"promptText":"Swim practice starts at four o'clock. Diego must leave home one hour earlier. What hour does Diego leave?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0137",
@@ -1882,7 +1882,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 seconds","choices":["10 minutes","10 hours","10 seconds","10 days"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Mina to pour a glass of milk? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 seconds","choices":["10 minutes","10 hours","10 seconds","10 days"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Mina to pour a glass of milk?"}},
   },
   {
     itemId: "time-app-b0821-0189",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 second","choices":["1 hour","1 day","1 minute","1 second"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Nia to hop once? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 second","choices":["1 hour","1 day","1 minute","1 second"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Nia to hop once?"}},
   },
   {
     itemId: "time-app-b0821-0191",
@@ -1922,7 +1922,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"20 minutes","choices":["20 minutes","20 seconds","20 days","20 hours"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Ava to do a puzzle? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"20 minutes","choices":["20 minutes","20 seconds","20 days","20 hours"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Ava to do a small jigsaw puzzle?"}},
   },
   {
     itemId: "time-app-b0821-0193",
@@ -1942,7 +1942,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 minutes","choices":["5 hours","5 days","5 minutes","5 seconds"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Ida to a car wash? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 minutes","choices":["5 hours","5 days","5 minutes","5 seconds"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Ida to ride through a car wash in the family car?"}},
   },
   {
     itemId: "time-app-b0821-0195",
@@ -1962,7 +1962,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 seconds","choices":["5 seconds","5 hours","5 days","5 minutes"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take June to zip a jacket? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 seconds","choices":["5 seconds","5 hours","5 days","5 minutes"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take June to zip a jacket?"}},
   },
   {
     itemId: "time-app-b0821-0197",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8 seconds","choices":["8 days","8 minutes","8 seconds","8 hours"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Ben to drink a cup of water? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"8 seconds","choices":["8 days","8 minutes","8 seconds","8 hours"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Ben to count out loud from 1 to 10?"}},
   },
   {
     itemId: "time-app-b0821-0199",
@@ -2002,7 +2002,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11 minutes","choices":["11 minutes","11 hours","11 days","11 seconds"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Rosa to a cartoon episode? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"11 minutes","choices":["11 minutes","11 hours","11 days","11 seconds"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Rosa to watch one cartoon episode?"}},
   },
   {
     itemId: "time-app-b0821-0201",
@@ -2022,7 +2022,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"16 minutes","choices":["16 minutes","16 hours","16 seconds","16 days"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Amara to a piano lesson? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"16 minutes","choices":["16 minutes","16 hours","16 seconds","16 days"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does Amara's piano lesson last?"}},
   },
   {
     itemId: "time-app-b0821-0203",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "storyBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"18 minutes","choices":["18 seconds","18 days","18 minutes","18 hours"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Priya to paint a small picture? Pick the sensible time."}},
+    question: {"a":null,"b":null,"op":"count","answer":"18 minutes","choices":["18 seconds","18 days","18 minutes","18 hours"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Priya to paint a small picture?"}},
   },
   {
     itemId: "time-app-b0821-0205",
@@ -2402,7 +2402,7 @@ export const ITEMS = [
     structureType: "storyDueDay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Thursday","choices":["Wednesday","Sunday","Thursday","Friday"],"display":{"time":{"k":2,"from":"Tuesday","kind":"weekdayHop"},"promptText":"A book checked out on Tuesday must come back after 2 days. Which weekday is that? Mina checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Thursday","choices":["Wednesday","Sunday","Thursday","Friday"],"display":{"time":{"k":2,"from":"Tuesday","kind":"weekdayHop"},"promptText":"A library book is checked out on Tuesday. It is due back 2 days later. What day of the week is it due?"}},
   },
   {
     itemId: "time-app-b0821-0241",
@@ -2422,7 +2422,7 @@ export const ITEMS = [
     structureType: "storyDueDay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Sunday","choices":["Saturday","Sunday","Monday"],"display":{"time":{"k":3,"from":"Thursday","kind":"weekdayHop"},"promptText":"A book checked out on Thursday must come back after 3 days. Which weekday is that? Nia checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Sunday","choices":["Saturday","Sunday","Monday"],"display":{"time":{"k":3,"from":"Thursday","kind":"weekdayHop"},"promptText":"Library books checked out on Thursday are due back 3 days later. On what day of the week are they due?"}},
   },
   {
     itemId: "time-app-b0821-0243",
@@ -2442,7 +2442,7 @@ export const ITEMS = [
     structureType: "storyDueDay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Wednesday","choices":["Tuesday","Wednesday","Thursday"],"display":{"time":{"k":4,"from":"Saturday","kind":"weekdayHop"},"promptText":"A book checked out on Saturday must come back after 4 days. Which weekday is that? Ava checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Wednesday","choices":["Tuesday","Wednesday","Thursday"],"display":{"time":{"k":4,"from":"Saturday","kind":"weekdayHop"},"promptText":"A library book is checked out on Saturday. It is due back 4 days later. What day of the week is it due?"}},
   },
   {
     itemId: "time-app-b0821-0245",
@@ -2462,7 +2462,7 @@ export const ITEMS = [
     structureType: "storyDueDay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Saturday","choices":["Saturday","Friday","Wednesday","Sunday"],"display":{"time":{"k":5,"from":"Monday","kind":"weekdayHop"},"promptText":"A book checked out on Monday must come back after 5 days. Which weekday is that? Ida checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Saturday","choices":["Saturday","Friday","Wednesday","Sunday"],"display":{"time":{"k":5,"from":"Monday","kind":"weekdayHop"},"promptText":"Library books checked out on Monday are due back 5 days later. On what day of the week are they due?"}},
   },
   {
     itemId: "time-app-b0821-0247",
@@ -2482,7 +2482,7 @@ export const ITEMS = [
     structureType: "storyDueDay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Friday","choices":["Friday","Thursday","Saturday","Monday"],"display":{"time":{"k":2,"from":"Wednesday","kind":"weekdayHop"},"promptText":"A book checked out on Wednesday must come back after 2 days. Which weekday is that? June checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Friday","choices":["Friday","Thursday","Saturday","Monday"],"display":{"time":{"k":2,"from":"Wednesday","kind":"weekdayHop"},"promptText":"A library book is checked out on Wednesday. It is due back 2 days later. What day of the week is it due?"}},
   },
   {
     itemId: "time-app-b0821-0249",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "storyDueDay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Thursday","choices":["Friday","Saturday","Thursday","Wednesday"],"display":{"time":{"k":6,"from":"Friday","kind":"weekdayHop"},"promptText":"A book checked out on Friday must come back after 6 days. Which weekday is that? Ben checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Thursday","choices":["Friday","Saturday","Thursday","Wednesday"],"display":{"time":{"k":6,"from":"Friday","kind":"weekdayHop"},"promptText":"Library books checked out on Friday are due back 6 days later. On what day of the week are they due?"}},
   },
   {
     itemId: "time-app-b0821-0251",
@@ -2522,7 +2522,7 @@ export const ITEMS = [
     structureType: "storyDueDay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Friday","choices":["Tuesday","Friday","Thursday","Saturday"],"display":{"time":{"k":5,"from":"Sunday","kind":"weekdayHop"},"promptText":"A book checked out on Sunday must come back after 5 days. Which weekday is that? Rosa checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Friday","choices":["Tuesday","Friday","Thursday","Saturday"],"display":{"time":{"k":5,"from":"Sunday","kind":"weekdayHop"},"promptText":"A library book is checked out on Sunday. It is due back 5 days later. What day of the week is it due?"}},
   },
   {
     itemId: "time-app-b0821-0253",
@@ -2542,7 +2542,7 @@ export const ITEMS = [
     structureType: "storyDueDay_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Saturday","choices":["Saturday","Friday","Sunday"],"display":{"time":{"k":4,"from":"Tuesday","kind":"weekdayHop"},"promptText":"A book checked out on Tuesday must come back after 4 days. Which weekday is that? Amara checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Saturday","choices":["Saturday","Friday","Sunday"],"display":{"time":{"k":4,"from":"Tuesday","kind":"weekdayHop"},"promptText":"Library books checked out on Tuesday are due back 4 days later. On what day of the week are they due?"}},
   },
   {
     itemId: "time-app-b0821-0255",
@@ -2922,7 +2922,7 @@ export const ITEMS = [
     structureType: "storyWeeksDays_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"kind":"sum","parts":[35,1]},"promptText":"Nia's reading challenge runs 5 weeks plus 1 days. What is the total number of days?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"kind":"sum","parts":[35,1]},"promptText":"Nia's reading challenge runs 5 weeks plus 1 day. What is the total number of days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0293",
@@ -3002,7 +3002,7 @@ export const ITEMS = [
     structureType: "storyWeeksDays_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"kind":"sum","parts":[28,1]},"promptText":"Ben's reading challenge runs 4 weeks plus 1 days. What is the total number of days?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"counting":{"kind":"sum","parts":[28,1]},"promptText":"Ben's reading challenge runs 4 weeks plus 1 day. What is the total number of days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0301",
@@ -4952,7 +4952,7 @@ export const ITEMS = [
     structureType: "storyStartBack",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5:45","choices":["5:35","5:50","5:45","6:45"],"display":{"time":{"dur":35,"endH":6,"endM":20,"kind":"startTime"},"promptText":"The movie ends at 6:20 after running 35 minutes. Which time did it start? Luca works backward."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5:45","choices":["5:35","5:50","5:45","6:45"],"display":{"time":{"dur":35,"endH":6,"endM":20,"kind":"startTime"},"promptText":"The movie ends at 6:20. It runs for 35 minutes. What time did it start?"}},
   },
   {
     itemId: "time-app-b0821-0496",
@@ -4972,7 +4972,7 @@ export const ITEMS = [
     structureType: "storyStartBack",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11:35","choices":["11:35","12:35","11:25","11:40"],"display":{"time":{"dur":55,"endH":12,"endM":30,"kind":"startTime"},"promptText":"The movie ends at 12:30 after running 55 minutes. Which time did it start? Theo works backward."}},
+    question: {"a":null,"b":null,"op":"count","answer":"11:35","choices":["11:35","12:35","11:25","11:40"],"display":{"time":{"dur":55,"endH":12,"endM":30,"kind":"startTime"},"promptText":"A movie that runs 55 minutes ends at 12:30. What time did the movie start?"}},
   },
   {
     itemId: "time-app-b0821-0498",
@@ -4992,7 +4992,7 @@ export const ITEMS = [
     structureType: "storyStartBack",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6:25","choices":["6:25","7:25","6:30","6:15"],"display":{"time":{"dur":40,"endH":7,"endM":5,"kind":"startTime"},"promptText":"The movie ends at 7:05 after running 40 minutes. Which time did it start? Kai works backward."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6:25","choices":["6:25","7:25","6:30","6:15"],"display":{"time":{"dur":40,"endH":7,"endM":5,"kind":"startTime"},"promptText":"Kai's movie lasted 40 minutes and ended at 7:05. At what time did the movie start?"}},
   },
   {
     itemId: "time-app-b0821-0500",
@@ -5012,7 +5012,7 @@ export const ITEMS = [
     structureType: "storyStartBack",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1:45","choices":["1:50","1:35","1:45","2:45"],"display":{"time":{"dur":55,"endH":2,"endM":40,"kind":"startTime"},"promptText":"The movie ends at 2:40 after running 55 minutes. Which time did it start? Omar works backward."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1:45","choices":["1:50","1:35","1:45","2:45"],"display":{"time":{"dur":55,"endH":2,"endM":40,"kind":"startTime"},"promptText":"The movie ends at 2:40. It runs for 55 minutes. What time did it start?"}},
   },
   {
     itemId: "time-app-b0821-0502",
@@ -5032,7 +5032,7 @@ export const ITEMS = [
     structureType: "storyStartBack",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8:05","choices":["8:55","8:05","9:05","8:10"],"display":{"time":{"dur":25,"endH":8,"endM":30,"kind":"startTime"},"promptText":"The movie ends at 8:30 after running 25 minutes. Which time did it start? Zoe works backward."}},
+    question: {"a":null,"b":null,"op":"count","answer":"8:05","choices":["8:55","8:05","9:05","8:10"],"display":{"time":{"dur":25,"endH":8,"endM":30,"kind":"startTime"},"promptText":"A movie that runs 25 minutes ends at 8:30. What time did the movie start?"}},
   },
   {
     itemId: "time-app-b0821-0504",
@@ -5052,7 +5052,7 @@ export const ITEMS = [
     structureType: "storyStartBack",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2:20","choices":["2:20","2:25","2:10","3:20"],"display":{"time":{"dur":55,"endH":3,"endM":15,"kind":"startTime"},"promptText":"The movie ends at 3:15 after running 55 minutes. Which time did it start? Lily works backward."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2:20","choices":["2:20","2:25","2:10","3:20"],"display":{"time":{"dur":55,"endH":3,"endM":15,"kind":"startTime"},"promptText":"Lily's movie lasted 55 minutes and ended at 3:15. At what time did the movie start?"}},
   },
   {
     itemId: "time-app-b0821-0506",
@@ -5072,7 +5072,7 @@ export const ITEMS = [
     structureType: "storyStartBack",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9:15","choices":["9:15","9:05","10:15","9:20"],"display":{"time":{"dur":30,"endH":9,"endM":45,"kind":"startTime"},"promptText":"The movie ends at 9:45 after running 30 minutes. Which time did it start? Finn works backward."}},
+    question: {"a":null,"b":null,"op":"count","answer":"9:15","choices":["9:15","9:05","10:15","9:20"],"display":{"time":{"dur":30,"endH":9,"endM":45,"kind":"startTime"},"promptText":"The movie ends at 9:45. It runs for 30 minutes. What time did it start?"}},
   },
   {
     itemId: "time-app-b0821-0508",
@@ -5092,7 +5092,7 @@ export const ITEMS = [
     structureType: "storyStartBack",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3:50","choices":["3:55","3:50","4:50","3:40"],"display":{"time":{"dur":40,"endH":4,"endM":30,"kind":"startTime"},"promptText":"The movie ends at 4:30 after running 40 minutes. Which time did it start? Diego works backward."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3:50","choices":["3:55","3:50","4:50","3:40"],"display":{"time":{"dur":40,"endH":4,"endM":30,"kind":"startTime"},"promptText":"A movie that runs 40 minutes ends at 4:30. What time did the movie start?"}},
   },
   {
     itemId: "time-app-b0821-0510",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "storyDaysHours",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"sum","parts":[24,18]},"promptText":"Camp lasts 1 days and 18 extra hours for the sleepover. How many hours is that in all for Luca?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"sum","parts":[24,18]},"promptText":"Luca's camp lasts 1 day, plus 18 extra hours for the sleepover. How many hours is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0548",
@@ -5512,7 +5512,7 @@ export const ITEMS = [
     structureType: "storyDaysHours",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"counting":{"kind":"sum","parts":[24,7]},"promptText":"Camp lasts 1 days and 7 extra hours for the sleepover. How many hours is that in all for Kai?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"counting":{"kind":"sum","parts":[24,7]},"promptText":"Kai's camp lasts 1 day, plus 7 extra hours for the sleepover. How many hours is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0552",
@@ -5552,7 +5552,7 @@ export const ITEMS = [
     structureType: "storyDaysHours",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"kind":"sum","parts":[24,11]},"promptText":"Camp lasts 1 days and 11 extra hours for the sleepover. How many hours is that in all for Zoe?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"kind":"sum","parts":[24,11]},"promptText":"Zoe's camp lasts 1 day, plus 11 extra hours for the sleepover. How many hours is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0556",
@@ -5622,7 +5622,7 @@ export const ITEMS = [
     structureType: "storyWeeksFeed",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[7]},"promptText":"For 1 weeks Sam feeds the class fish every single day. How many days of feeding is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[7]},"promptText":"For 1 week, Sam feeds the class fish every single day. How many days of feeding is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-app-b0821-0563",
@@ -6132,7 +6132,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":1,"minute":0},"truth":true,"figure":"clockFace","promptText":"Luca calls the time on this clock one o'clock. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":1,"minute":0},"truth":true,"figure":"clockFace","promptText":"Luca says the time on this clock is one o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0002",
@@ -6142,7 +6142,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ava reads this clock as three o'clock. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Luca reads this clock as three o'clock. Is Luca right?"}},
   },
   {
     itemId: "time-conc-b0821-0003",
@@ -6152,7 +6152,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":3,"minute":0},"truth":true,"figure":"clockFace","promptText":"Sam looks at this clock and says it is three o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":3,"minute":0},"truth":true,"figure":"clockFace","promptText":"Luca looks at this clock and says it is three o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0004",
@@ -6162,7 +6162,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ava calls the time on this clock five o'clock. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ava says the time on this clock is five o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0005",
@@ -6172,7 +6172,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":5,"minute":0},"truth":true,"figure":"clockFace","promptText":"Theo reads this clock as five o'clock. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":5,"minute":0},"truth":true,"figure":"clockFace","promptText":"Ava reads this clock as five o'clock. Is Ava right?"}},
   },
   {
     itemId: "time-conc-b0821-0006",
@@ -6182,7 +6182,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Nia looks at this clock and says it is seven o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ava looks at this clock and says it is seven o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0007",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":7,"minute":0},"truth":true,"figure":"clockFace","promptText":"Sam calls the time on this clock seven o'clock. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":7,"minute":0},"truth":true,"figure":"clockFace","promptText":"Sam says the time on this clock is seven o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0008",
@@ -6202,7 +6202,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":0,"saidHour":9,"saidMinute":0},"clock":{"hour":8,"minute":0},"truth":false,"figure":"clockFace","promptText":"Nia reads this clock as nine o'clock. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":0,"saidHour":9,"saidMinute":0},"clock":{"hour":8,"minute":0},"truth":false,"figure":"clockFace","promptText":"Sam reads this clock as nine o'clock. Is Sam right?"}},
   },
   {
     itemId: "time-conc-b0821-0009",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":10,"kind":"judgeRead","minute":0,"saidHour":11,"saidMinute":0},"clock":{"hour":10,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ava calls the time on this clock eleven o'clock. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":10,"kind":"judgeRead","minute":0,"saidHour":11,"saidMinute":0},"clock":{"hour":10,"minute":0},"truth":false,"figure":"clockFace","promptText":"Theo says the time on this clock is eleven o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0011",
@@ -6242,7 +6242,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":12,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":12,"minute":0},"truth":false,"figure":"clockFace","promptText":"Nia looks at this clock and says it is one o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":12,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":12,"minute":0},"truth":false,"figure":"clockFace","promptText":"Theo looks at this clock and says it is one o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0013",
@@ -6252,7 +6252,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":1,"minute":0},"truth":true,"figure":"clockFace","promptText":"Mina reads this clock as one o'clock. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":1,"minute":0},"truth":true,"figure":"clockFace","promptText":"Nia reads this clock as one o'clock. Is Nia right?"}},
   },
   {
     itemId: "time-conc-b0821-0014",
@@ -6272,7 +6272,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":3,"minute":0},"truth":true,"figure":"clockFace","promptText":"Theo looks at this clock and says it is three o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":3,"minute":0},"truth":true,"figure":"clockFace","promptText":"Mina looks at this clock and says it is three o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0016",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":5,"minute":0},"truth":true,"figure":"clockFace","promptText":"Luca calls the time on this clock five o'clock. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":5,"minute":0},"truth":true,"figure":"clockFace","promptText":"Nia says the time on this clock is five o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0018",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Luca calls the time on this clock seven o'clock. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Mina says the time on this clock is seven o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0019",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "whichHandHour",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Ava wants the hand that tells the HOUR. Which hand is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Ava wants the hand that tells the hour. Which hand is it?"}},
   },
   {
     itemId: "time-conc-b0821-0020",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "whichHandHour",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Ben wants the hand that tells the HOUR. Which hand is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Ben wants the hand that tells the hour. Which hand is it?"}},
   },
   {
     itemId: "time-conc-b0821-0022",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "whichHandHour",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Priya wants the hand that tells the HOUR. Which hand is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Priya wants the hand that tells the hour. Which hand is it?"}},
   },
   {
     itemId: "time-conc-b0821-0024",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "whichHandHour",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the long hand","the short hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Nia wants the hand that tells the HOUR. Which hand is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the long hand","the short hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Nia wants the hand that tells the hour. Which hand is it?"}},
   },
   {
     itemId: "time-conc-b0821-0026",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "whichHandHour",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the long hand","the short hand"],"display":{"time":{"kind":"hourHand"},"promptText":"June wants the hand that tells the HOUR. Which hand is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the long hand","the short hand"],"display":{"time":{"kind":"hourHand"},"promptText":"June wants the hand that tells the hour. Which hand is it?"}},
   },
   {
     itemId: "time-conc-b0821-0028",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "whichHandHour",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Amara wants the hand that tells the HOUR. Which hand is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Amara wants the hand that tells the hour. Which hand is it?"}},
   },
   {
     itemId: "time-conc-b0821-0030",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "whichHandHour",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Mina wants the hand that tells the HOUR. Which hand is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the short hand","the long hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Mina wants the hand that tells the hour. Which hand is it?"}},
   },
   {
     itemId: "time-conc-b0821-0032",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "whichHandHour",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the long hand","the short hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Ida wants the hand that tells the HOUR. Which hand is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the short hand","choices":["the long hand","the short hand"],"display":{"time":{"kind":"hourHand"},"promptText":"Ida wants the hand that tells the hour. Which hand is it?"}},
   },
   {
     itemId: "time-conc-b0821-0034",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"handSwap"},"clock":{"hour":1,"minute":0},"truth":false,"figure":"clockFace","promptText":"Omar reads the LONG hand of this clock as the hour and announces six o'clock. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"handSwap"},"clock":{"hour":1,"minute":0},"truth":false,"figure":"clockFace","promptText":"Omar reads the long hand of this clock as the hour and says it is twelve o'clock. Is it twelve o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0036",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"handSwap"},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ben mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"handSwap"},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ben looks at the long hand on this clock and says it is twelve o'clock. Is Ben right?"}},
   },
   {
     itemId: "time-conc-b0821-0037",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"handSwap"},"clock":{"hour":3,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Finn treats the long hand as the hour hand and says six o'clock. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"handSwap"},"clock":{"hour":3,"minute":0},"truth":false,"figure":"clockFace","promptText":"Finn thinks the long hand on this clock is the hour hand, so Finn says twelve o'clock. Is it twelve o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0038",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"handSwap"},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Priya reads the LONG hand of this clock as the hour and announces six o'clock. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"handSwap"},"clock":{"hour":4,"minute":0},"truth":true,"figure":"clockFace","promptText":"Priya reads the short hand of this clock as the hour and says it is four o'clock. Is Priya right?"}},
   },
   {
     itemId: "time-conc-b0821-0039",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"handSwap"},"clock":{"hour":5,"minute":0},"truth":false,"figure":"clockFace","promptText":"Sam mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"handSwap"},"clock":{"hour":5,"minute":0},"truth":true,"figure":"clockFace","promptText":"Sam looks at the short hand on this clock and says it is five o'clock. Is it five o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0040",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"handSwap"},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Nia treats the long hand as the hour hand and says six o'clock. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"handSwap"},"clock":{"hour":6,"minute":0},"truth":true,"figure":"clockFace","promptText":"Nia thinks the short hand on this clock is the hour hand, so Nia says six o'clock. Is Nia right?"}},
   },
   {
     itemId: "time-conc-b0821-0041",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"handSwap"},"clock":{"hour":7,"minute":0},"truth":false,"figure":"clockFace","promptText":"Kai reads the LONG hand of this clock as the hour and announces six o'clock. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"handSwap"},"clock":{"hour":7,"minute":0},"truth":false,"figure":"clockFace","promptText":"Kai reads the long hand of this clock as the hour and says it is twelve o'clock. Is Kai right?"}},
   },
   {
     itemId: "time-conc-b0821-0042",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"handSwap"},"clock":{"hour":8,"minute":0},"truth":false,"figure":"clockFace","promptText":"June mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"handSwap"},"clock":{"hour":8,"minute":0},"truth":false,"figure":"clockFace","promptText":"June looks at the long hand on this clock and says it is twelve o'clock. Is it twelve o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0043",
@@ -6552,7 +6552,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"handSwap"},"clock":{"hour":9,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Lily treats the long hand as the hour hand and says six o'clock. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"handSwap"},"clock":{"hour":9,"minute":0},"truth":false,"figure":"clockFace","promptText":"Lily thinks the long hand on this clock is the hour hand, so Lily says twelve o'clock. Is Lily right?"}},
   },
   {
     itemId: "time-conc-b0821-0044",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"handSwap"},"clock":{"hour":1,"minute":0},"truth":false,"figure":"clockFace","promptText":"Amara reads the LONG hand of this clock as the hour and announces six o'clock. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"handSwap"},"clock":{"hour":1,"minute":0},"truth":true,"figure":"clockFace","promptText":"Amara reads the short hand of this clock as the hour and says it is one o'clock. Is it one o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0045",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"handSwap"},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Leo mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"handSwap"},"clock":{"hour":2,"minute":0},"truth":true,"figure":"clockFace","promptText":"Leo looks at the short hand on this clock and says it is two o'clock. Is Leo right?"}},
   },
   {
     itemId: "time-conc-b0821-0046",
@@ -6582,7 +6582,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"handSwap"},"clock":{"hour":3,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Mina treats the long hand as the hour hand and says six o'clock. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"handSwap"},"clock":{"hour":3,"minute":0},"truth":true,"figure":"clockFace","promptText":"Mina thinks the short hand on this clock is the hour hand, so Mina says three o'clock. Is it three o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0047",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"handSwap"},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Theo reads the LONG hand of this clock as the hour and announces six o'clock. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"handSwap"},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Theo reads the long hand of this clock as the hour and says it is twelve o'clock. Is it twelve o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0048",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"handSwap"},"clock":{"hour":5,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ida mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"handSwap"},"clock":{"hour":5,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ida looks at the long hand on this clock and says it is twelve o'clock. Is Ida right?"}},
   },
   {
     itemId: "time-conc-b0821-0049",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"handSwap"},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Zoe treats the long hand as the hour hand and says six o'clock. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"handSwap"},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Zoe thinks the long hand on this clock is the hour hand, so Zoe says twelve o'clock. Is it twelve o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0050",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"handSwap"},"clock":{"hour":7,"minute":0},"truth":false,"figure":"clockFace","promptText":"Rosa reads the LONG hand of this clock as the hour and announces six o'clock. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"handSwap"},"clock":{"hour":7,"minute":0},"truth":true,"figure":"clockFace","promptText":"Rosa reads the short hand of this clock as the hour and says it is seven o'clock. Is Rosa right?"}},
   },
   {
     itemId: "time-conc-b0821-0051",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"handSwap"},"clock":{"hour":8,"minute":0},"truth":false,"figure":"clockFace","promptText":"Diego mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"handSwap"},"clock":{"hour":8,"minute":0},"truth":true,"figure":"clockFace","promptText":"Diego looks at the short hand on this clock and says it is eight o'clock. Is it eight o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0052",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"handSwap"},"clock":{"hour":9,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Nora treats the long hand as the hour hand and says six o'clock. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"handSwap"},"clock":{"hour":9,"minute":0},"truth":true,"figure":"clockFace","promptText":"Nora thinks the short hand on this clock is the hour hand, so Nora says nine o'clock. Is Nora right?"}},
   },
   {
     itemId: "time-conc-b0821-0053",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":50},"truth":true,"promptText":"At 3:50, is the time closer to the hour just passed or the hour coming next? Theo says the hour coming next. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":50},"truth":true,"promptText":"Theo says 3:50 is closer to 4 o'clock than to 3 o'clock. Is Theo right?"}},
   },
   {
     itemId: "time-conc-b0821-0072",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":10},"truth":false,"promptText":"Ida claims 8:10 is nearer the NEXT hour than the last one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":10},"truth":false,"promptText":"It is 8:10. Ida thinks the time is nearer to 9 o'clock than to 8 o'clock. Is Ida right?"}},
   },
   {
     itemId: "time-conc-b0821-0073",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":45},"truth":true,"promptText":"At 2:45, is the time closer to the hour just passed or the hour coming next? Zoe says the hour coming next. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":45},"truth":true,"promptText":"Zoe says 2:45 is closer to 3 o'clock than to 2 o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0074",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":20},"truth":false,"promptText":"Rosa claims 6:20 is nearer the NEXT hour than the last one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":20},"truth":false,"promptText":"It is 6:20. Rosa thinks the time is nearer to 7 o'clock than to 6 o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0075",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":55},"truth":true,"promptText":"At 11:55, is the time closer to the hour just passed or the hour coming next? Diego says the hour coming next. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":55},"truth":true,"promptText":"It is 11:55. Diego thinks the time is nearer to 12 o'clock than to 11 o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0076",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":5},"truth":false,"promptText":"Nora claims 5:05 is nearer the NEXT hour than the last one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":5},"truth":false,"promptText":"Nora says 5:05 is closer to 6 o'clock than to 5 o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0077",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":40},"truth":true,"promptText":"At 9:40, is the time closer to the hour just passed or the hour coming next? Luca says the hour coming next. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":40},"truth":true,"promptText":"It is 9:40. Luca thinks the time is nearer to 10 o'clock than to 9 o'clock. Is Luca right?"}},
   },
   {
     itemId: "time-conc-b0821-0078",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":25},"truth":false,"promptText":"Ava claims 1:25 is nearer the NEXT hour than the last one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":25},"truth":false,"promptText":"Ava says 1:25 is closer to 2 o'clock than to 1 o'clock. Is Ava right?"}},
   },
   {
     itemId: "time-conc-b0821-0079",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":35},"truth":true,"promptText":"At 7:35, is the time closer to the hour just passed or the hour coming next? Omar says the hour coming next. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":35},"truth":true,"promptText":"Omar says 7:35 is closer to 8 o'clock than to 7 o'clock. Is Omar right?"}},
   },
   {
     itemId: "time-conc-b0821-0080",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":15},"truth":false,"promptText":"Ben claims 4:15 is nearer the NEXT hour than the last one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":15},"truth":false,"promptText":"It is 4:15. Ben thinks the time is nearer to 5 o'clock than to 4 o'clock. Is Ben right?"}},
   },
   {
     itemId: "time-conc-b0821-0081",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":50},"truth":true,"promptText":"At 10:50, is the time closer to the hour just passed or the hour coming next? Finn says the hour coming next. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":50},"truth":true,"promptText":"Finn says 10:50 is closer to 11 o'clock than to 10 o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0082",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":10},"truth":false,"promptText":"Priya claims 12:10 is nearer the NEXT hour than the last one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":10},"truth":false,"promptText":"It is 12:10. Priya thinks the time is nearer to 1 o'clock than to 12 o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0083",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":55},"truth":true,"promptText":"At 3:55, is the time closer to the hour just passed or the hour coming next? Sam says the hour coming next. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":55},"truth":true,"promptText":"It is 3:55. Sam thinks the time is nearer to 4 o'clock than to 3 o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0084",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":20},"truth":false,"promptText":"Nia claims 8:20 is nearer the NEXT hour than the last one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":20},"truth":false,"promptText":"Nia says 8:20 is closer to 9 o'clock than to 8 o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0085",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":40},"truth":true,"promptText":"At 2:40, is the time closer to the hour just passed or the hour coming next? Kai says the hour coming next. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":40},"truth":true,"promptText":"It is 2:40. Kai thinks the time is nearer to 3 o'clock than to 2 o'clock. Is Kai right?"}},
   },
   {
     itemId: "time-conc-b0821-0086",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "closerHourJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":5},"truth":false,"promptText":"June claims 6:05 is nearer the NEXT hour than the last one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"closerNext","minute":5},"truth":false,"promptText":"June says 6:05 is closer to 7 o'clock than to 6 o'clock. Is June right?"}},
   },
   {
     itemId: "time-conc-b0821-0087",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 and 4","choices":["4 and 5","3 and 4","2 and 3"],"display":{"time":{"hour":3,"kind":"betweenHours","minute":20},"promptText":"Ida looks at a clock showing 3:20. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 and 4","choices":["4 and 5","3 and 4","2 and 3"],"display":{"time":{"hour":3,"kind":"betweenHours","minute":20},"promptText":"Which two hours is 3:20 between?"}},
   },
   {
     itemId: "time-conc-b0821-0088",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8 and 9","choices":["9 and 10","8 and 9","7 and 8"],"display":{"time":{"hour":8,"kind":"betweenHours","minute":40},"promptText":"The time is 8:40. Between which two hours does it sit? Zoe wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"8 and 9","choices":["9 and 10","8 and 9","7 and 8"],"display":{"time":{"hour":8,"kind":"betweenHours","minute":40},"promptText":"8:40 comes between which two hours?"}},
   },
   {
     itemId: "time-conc-b0821-0089",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 and 3","choices":["3 and 4","2 and 3","1 and 2"],"display":{"time":{"hour":2,"kind":"betweenHours","minute":15},"promptText":"Rosa looks at a clock showing 2:15. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 and 3","choices":["3 and 4","2 and 3","1 and 2"],"display":{"time":{"hour":2,"kind":"betweenHours","minute":15},"promptText":"Rosa sees the time 2:15. Which two hours is 2:15 between?"}},
   },
   {
     itemId: "time-conc-b0821-0090",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 and 7","choices":["6 and 7","7 and 8","5 and 6"],"display":{"time":{"hour":6,"kind":"betweenHours","minute":50},"promptText":"The time is 6:50. Between which two hours does it sit? Diego wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 and 7","choices":["6 and 7","7 and 8","5 and 6"],"display":{"time":{"hour":6,"kind":"betweenHours","minute":50},"promptText":"Diego reads 6:50 on a clock. Which two hours is 6:50 between?"}},
   },
   {
     itemId: "time-conc-b0821-0091",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11 and 12","choices":["11 and 12","10 and 11","12 and 1"],"display":{"time":{"hour":11,"kind":"betweenHours","minute":25},"promptText":"Nora looks at a clock showing 11:25. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11 and 12","choices":["11 and 12","10 and 11","12 and 1"],"display":{"time":{"hour":11,"kind":"betweenHours","minute":25},"promptText":"Which two hours is 11:25 between?"}},
   },
   {
     itemId: "time-conc-b0821-0092",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 and 6","choices":["4 and 5","6 and 7","5 and 6"],"display":{"time":{"hour":5,"kind":"betweenHours","minute":35},"promptText":"The time is 5:35. Between which two hours does it sit? Luca wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 and 6","choices":["4 and 5","6 and 7","5 and 6"],"display":{"time":{"hour":5,"kind":"betweenHours","minute":35},"promptText":"5:35 comes between which two hours?"}},
   },
   {
     itemId: "time-conc-b0821-0093",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"9 and 10","choices":["8 and 9","9 and 10","10 and 11"],"display":{"time":{"hour":9,"kind":"betweenHours","minute":10},"promptText":"Ava looks at a clock showing 9:10. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"9 and 10","choices":["8 and 9","9 and 10","10 and 11"],"display":{"time":{"hour":9,"kind":"betweenHours","minute":10},"promptText":"Ava sees the time 9:10. Which two hours is 9:10 between?"}},
   },
   {
     itemId: "time-conc-b0821-0094",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 and 2","choices":["2 and 3","12 and 1","1 and 2"],"display":{"time":{"hour":1,"kind":"betweenHours","minute":45},"promptText":"The time is 1:45. Between which two hours does it sit? Omar wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 and 2","choices":["2 and 3","12 and 1","1 and 2"],"display":{"time":{"hour":1,"kind":"betweenHours","minute":45},"promptText":"Omar reads 1:45 on a clock. Which two hours is 1:45 between?"}},
   },
   {
     itemId: "time-conc-b0821-0095",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"7 and 8","choices":["6 and 7","8 and 9","7 and 8"],"display":{"time":{"hour":7,"kind":"betweenHours","minute":55},"promptText":"Ben looks at a clock showing 7:55. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"7 and 8","choices":["6 and 7","8 and 9","7 and 8"],"display":{"time":{"hour":7,"kind":"betweenHours","minute":55},"promptText":"Which two hours is 7:55 between?"}},
   },
   {
     itemId: "time-conc-b0821-0096",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 and 5","choices":["3 and 4","5 and 6","4 and 5"],"display":{"time":{"hour":4,"kind":"betweenHours","minute":30},"promptText":"The time is 4:30. Between which two hours does it sit? Finn wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 and 5","choices":["3 and 4","5 and 6","4 and 5"],"display":{"time":{"hour":4,"kind":"betweenHours","minute":30},"promptText":"4:30 comes between which two hours?"}},
   },
   {
     itemId: "time-conc-b0821-0097",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"10 and 11","choices":["9 and 10","10 and 11","11 and 12"],"display":{"time":{"hour":10,"kind":"betweenHours","minute":5},"promptText":"Priya looks at a clock showing 10:05. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"10 and 11","choices":["9 and 10","10 and 11","11 and 12"],"display":{"time":{"hour":10,"kind":"betweenHours","minute":5},"promptText":"Priya sees the time 10:05. Which two hours is 10:05 between?"}},
   },
   {
     itemId: "time-conc-b0821-0098",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"12 and 1","choices":["12 and 1","11 and 12","1 and 2"],"display":{"time":{"hour":12,"kind":"betweenHours","minute":40},"promptText":"The time is 12:40. Between which two hours does it sit? Sam wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"12 and 1","choices":["12 and 1","11 and 12","1 and 2"],"display":{"time":{"hour":12,"kind":"betweenHours","minute":40},"promptText":"Sam reads 12:40 on a clock. Which two hours is 12:40 between?"}},
   },
   {
     itemId: "time-conc-b0821-0099",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 and 4","choices":["3 and 4","2 and 3","4 and 5"],"display":{"time":{"hour":3,"kind":"betweenHours","minute":35},"promptText":"Nia looks at a clock showing 3:35. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 and 4","choices":["3 and 4","2 and 3","4 and 5"],"display":{"time":{"hour":3,"kind":"betweenHours","minute":35},"promptText":"Which two hours is 3:35 between?"}},
   },
   {
     itemId: "time-conc-b0821-0100",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"8 and 9","choices":["7 and 8","9 and 10","8 and 9"],"display":{"time":{"hour":8,"kind":"betweenHours","minute":25},"promptText":"The time is 8:25. Between which two hours does it sit? Kai wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"8 and 9","choices":["7 and 8","9 and 10","8 and 9"],"display":{"time":{"hour":8,"kind":"betweenHours","minute":25},"promptText":"8:25 comes between which two hours?"}},
   },
   {
     itemId: "time-conc-b0821-0101",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 and 3","choices":["2 and 3","1 and 2","3 and 4"],"display":{"time":{"hour":2,"kind":"betweenHours","minute":55},"promptText":"June looks at a clock showing 2:55. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 and 3","choices":["2 and 3","1 and 2","3 and 4"],"display":{"time":{"hour":2,"kind":"betweenHours","minute":55},"promptText":"June sees the time 2:55. Which two hours is 2:55 between?"}},
   },
   {
     itemId: "time-conc-b0821-0102",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 and 7","choices":["7 and 8","6 and 7","5 and 6"],"display":{"time":{"hour":6,"kind":"betweenHours","minute":15},"promptText":"The time is 6:15. Between which two hours does it sit? Lily wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 and 7","choices":["7 and 8","6 and 7","5 and 6"],"display":{"time":{"hour":6,"kind":"betweenHours","minute":15},"promptText":"Lily reads 6:15 on a clock. Which two hours is 6:15 between?"}},
   },
   {
     itemId: "time-conc-b0821-0103",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"11 and 12","choices":["10 and 11","12 and 1","11 and 12"],"display":{"time":{"hour":11,"kind":"betweenHours","minute":45},"promptText":"Amara looks at a clock showing 11:45. Which two o'clock hours is that time between?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"11 and 12","choices":["10 and 11","12 and 1","11 and 12"],"display":{"time":{"hour":11,"kind":"betweenHours","minute":45},"promptText":"Which two hours is 11:45 between?"}},
   },
   {
     itemId: "time-conc-b0821-0104",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "betweenHours",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 and 6","choices":["4 and 5","5 and 6","6 and 7"],"display":{"time":{"hour":5,"kind":"betweenHours","minute":20},"promptText":"The time is 5:20. Between which two hours does it sit? Leo wants to know."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 and 6","choices":["4 and 5","5 and 6","6 and 7"],"display":{"time":{"hour":5,"kind":"betweenHours","minute":20},"promptText":"5:20 comes between which two hours?"}},
   },
   {
     itemId: "time-conc-b0821-0105",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "minutesToNextHour",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":23,"kind":"gap","target":60},"promptText":"At 8:23, how many minutes are left before the next full hour? June counts on."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"have":23,"kind":"gap","target":60},"promptText":"It is 8:23. How many minutes until 9:00?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0125",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "minutesToNextHour",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"have":12,"kind":"gap","target":60},"promptText":"At 6:12, how many minutes are left before the next full hour? Amara counts on."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"counting":{"have":12,"kind":"gap","target":60},"promptText":"How many minutes are left from 6:12 until 7:00?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0127",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "minutesToNextHour",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":55,"kind":"gap","target":60},"promptText":"At 5:55, how many minutes are left before the next full hour? Mina counts on."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":55,"kind":"gap","target":60},"promptText":"It is 5:55. How many minutes until 6:00?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0129",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "minutesToNextHour",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":42,"kind":"gap","target":60},"promptText":"At 1:42, how many minutes are left before the next full hour? Ida counts on."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":42,"kind":"gap","target":60},"promptText":"How many minutes are left from 1:42 until 2:00?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0131",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "minutesToNextHour",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":56,"kind":"gap","target":60},"promptText":"At 12:56, how many minutes are left before the next full hour? Rosa counts on."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":56,"kind":"gap","target":60},"promptText":"It is 12:56. How many minutes until 1:00?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0133",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "minutesToNextHour",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"have":24,"kind":"gap","target":60},"promptText":"At 10:24, how many minutes are left before the next full hour? Nora counts on."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"counting":{"have":24,"kind":"gap","target":60},"promptText":"How many minutes are left from 10:24 until 11:00?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0135",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "minutesToNextHour",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":14,"kind":"gap","target":60},"promptText":"At 8:14, how many minutes are left before the next full hour? Ava counts on."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"counting":{"have":14,"kind":"gap","target":60},"promptText":"It is 8:14. How many minutes until 9:00?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0137",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "minutesToNextHour",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":53,"kind":"gap","target":60},"promptText":"At 6:53, how many minutes are left before the next full hour? Ben counts on."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":53,"kind":"gap","target":60},"promptText":"How many minutes are left from 6:53 until 7:00?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0139",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "leadingZeroReason",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the friend","choices":["the friend","Leo"],"display":{"time":{"hour":6,"kind":"leadingZero","minute":1},"promptText":"For 1 minutes past 6, Leo writes \"6:1\" and a friend writes \"6:01\". Whose time is written correctly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the friend","choices":["the friend","Leo"],"display":{"time":{"hour":6,"kind":"leadingZero","minute":1},"promptText":"To show 1 minute past 6, Leo writes \"6:1\" and a friend writes \"6:01\". Who wrote the time correctly?"}},
   },
   {
     itemId: "time-conc-b0821-0143",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":205,"s":160,"kind":"elapsedSaid","said":85},"truth":false,"promptText":"Ben subtracts the clock numbers to say 2:40 to 3:25 took 85 minutes. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":205,"s":160,"kind":"elapsedSaid","said":85},"truth":false,"promptText":"From 2:40 to 3:25, Ben figures 85 minutes. Is Ben right?"}},
   },
   {
     itemId: "time-conc-b0821-0156",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":225,"s":190,"kind":"elapsedSaid","said":35},"truth":true,"promptText":"From 3:10 to 3:45, Finn figures 35 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":225,"s":190,"kind":"elapsedSaid","said":35},"truth":true,"promptText":"Finn says it is 35 minutes from 3:10 to 3:45. Is Finn right?"}},
   },
   {
     itemId: "time-conc-b0821-0157",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":380,"s":350,"kind":"elapsedSaid","said":70},"truth":false,"promptText":"Priya subtracts the clock numbers to say 5:50 to 6:20 took 70 minutes. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":380,"s":350,"kind":"elapsedSaid","said":70},"truth":false,"promptText":"From 5:50 to 6:20, Priya figures 70 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0158",
@@ -7702,7 +7702,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":510,"s":485,"kind":"elapsedSaid","said":25},"truth":true,"promptText":"From 8:05 to 8:30, Sam figures 25 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":510,"s":485,"kind":"elapsedSaid","said":25},"truth":true,"promptText":"Sam says it is 25 minutes from 8:05 to 8:30. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0159",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":550,"s":515,"kind":"elapsedSaid","said":75},"truth":false,"promptText":"Nia subtracts the clock numbers to say 8:35 to 9:10 took 75 minutes. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":550,"s":515,"kind":"elapsedSaid","said":75},"truth":false,"promptText":"Nia says it is 75 minutes from 8:35 to 9:10. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0160",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":170,"s":135,"kind":"elapsedSaid","said":35},"truth":true,"promptText":"From 2:15 to 2:50, Kai figures 35 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":170,"s":135,"kind":"elapsedSaid","said":35},"truth":true,"promptText":"From 2:15 to 2:50, Kai figures 35 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0161",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":750,"s":705,"kind":"elapsedSaid","said":85},"truth":false,"promptText":"June subtracts the clock numbers to say 11:45 to 12:30 took 85 minutes. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":750,"s":705,"kind":"elapsedSaid","said":85},"truth":false,"promptText":"June says it is 85 minutes from 11:45 to 12:30. Is June right?"}},
   },
   {
     itemId: "time-conc-b0821-0162",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":415,"s":380,"kind":"elapsedSaid","said":35},"truth":true,"promptText":"From 6:20 to 6:55, Lily figures 35 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":415,"s":380,"kind":"elapsedSaid","said":35},"truth":true,"promptText":"From 6:20 to 6:55, Lily figures 35 minutes. Is Lily right?"}},
   },
   {
     itemId: "time-conc-b0821-0163",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":255,"s":235,"kind":"elapsedSaid","said":60},"truth":false,"promptText":"Amara subtracts the clock numbers to say 3:55 to 4:15 took 60 minutes. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":255,"s":235,"kind":"elapsedSaid","said":60},"truth":false,"promptText":"From 3:55 to 4:15, Amara figures 60 minutes. Is Amara right?"}},
   },
   {
     itemId: "time-conc-b0821-0164",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":700,"s":670,"kind":"elapsedSaid","said":30},"truth":true,"promptText":"From 11:10 to 11:40, Leo figures 30 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":700,"s":670,"kind":"elapsedSaid","said":30},"truth":true,"promptText":"Leo says it is 30 minutes from 11:10 to 11:40. Is Leo right?"}},
   },
   {
     itemId: "time-conc-b0821-0165",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":425,"s":400,"kind":"elapsedSaid","said":65},"truth":false,"promptText":"Mina subtracts the clock numbers to say 6:40 to 7:05 took 65 minutes. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":425,"s":400,"kind":"elapsedSaid","said":65},"truth":false,"promptText":"From 6:40 to 7:05, Mina figures 65 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0166",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":345,"s":325,"kind":"elapsedSaid","said":20},"truth":true,"promptText":"From 5:25 to 5:45, Theo figures 20 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":345,"s":325,"kind":"elapsedSaid","said":20},"truth":true,"promptText":"Theo says it is 20 minutes from 5:25 to 5:45. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0167",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":625,"s":570,"kind":"elapsedSaid","said":95},"truth":false,"promptText":"Ida subtracts the clock numbers to say 9:30 to 10:25 took 95 minutes. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":625,"s":570,"kind":"elapsedSaid","said":95},"truth":false,"promptText":"Ida says it is 95 minutes from 9:30 to 10:25. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0168",
@@ -7802,7 +7802,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":575,"s":545,"kind":"elapsedSaid","said":30},"truth":true,"promptText":"From 9:05 to 9:35, Zoe figures 30 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":575,"s":545,"kind":"elapsedSaid","said":30},"truth":true,"promptText":"From 9:05 to 9:35, Zoe figures 30 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0169",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":160,"s":110,"kind":"elapsedSaid","said":90},"truth":false,"promptText":"Rosa subtracts the clock numbers to say 1:50 to 2:40 took 90 minutes. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":160,"s":110,"kind":"elapsedSaid","said":90},"truth":false,"promptText":"Rosa says it is 90 minutes from 1:50 to 2:40. Is Rosa right?"}},
   },
   {
     itemId: "time-conc-b0821-0170",
@@ -7822,7 +7822,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":100,"s":75,"kind":"elapsedSaid","said":25},"truth":true,"promptText":"From 1:15 to 1:40, Diego figures 25 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":100,"s":75,"kind":"elapsedSaid","said":25},"truth":true,"promptText":"From 1:15 to 1:40, Diego figures 25 minutes. Is Diego right?"}},
   },
   {
     itemId: "time-conc-b0821-0171",
@@ -7832,7 +7832,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":335,"s":285,"kind":"elapsedSaid","said":90},"truth":false,"promptText":"Nora subtracts the clock numbers to say 4:45 to 5:35 took 90 minutes. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":335,"s":285,"kind":"elapsedSaid","said":90},"truth":false,"promptText":"From 4:45 to 5:35, Nora figures 90 minutes. Is Nora right?"}},
   },
   {
     itemId: "time-conc-b0821-0172",
@@ -7842,7 +7842,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":445,"s":430,"kind":"elapsedSaid","said":15},"truth":true,"promptText":"From 7:10 to 7:25, Luca figures 15 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":445,"s":430,"kind":"elapsedSaid","said":15},"truth":true,"promptText":"Luca says it is 15 minutes from 7:10 to 7:25. Is Luca right?"}},
   },
   {
     itemId: "time-conc-b0821-0173",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":510,"s":475,"kind":"elapsedSaid","said":75},"truth":false,"promptText":"Ben subtracts the clock numbers to say 7:55 to 8:30 took 75 minutes. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":510,"s":475,"kind":"elapsedSaid","said":75},"truth":false,"promptText":"From 7:55 to 8:30, Ben figures 75 minutes. Is Ben right?"}},
   },
   {
     itemId: "time-conc-b0821-0174",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":195,"s":155,"kind":"elapsedSaid","said":80},"truth":false,"promptText":"From 2:35 to 3:15, Finn figures 80 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":195,"s":155,"kind":"elapsedSaid","said":80},"truth":false,"promptText":"From 2:35 to 3:15, Finn figures 80 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0175",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":680,"s":640,"kind":"elapsedSaid","said":80},"truth":false,"promptText":"Priya subtracts the clock numbers to say 10:40 to 11:20 took 80 minutes. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":680,"s":640,"kind":"elapsedSaid","said":80},"truth":false,"promptText":"Priya says it is 80 minutes from 10:40 to 11:20. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0176",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":215,"s":195,"kind":"elapsedSaid","said":20},"truth":true,"promptText":"From 3:15 to 3:35, Sam figures 20 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":215,"s":195,"kind":"elapsedSaid","said":20},"truth":true,"promptText":"Sam says it is 20 minutes from 3:15 to 3:35. Is Sam right?"}},
   },
   {
     itemId: "time-conc-b0821-0177",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":400,"s":345,"kind":"elapsedSaid","said":95},"truth":false,"promptText":"Nia subtracts the clock numbers to say 5:45 to 6:40 took 95 minutes. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":400,"s":345,"kind":"elapsedSaid","said":95},"truth":false,"promptText":"Nia says it is 95 minutes from 5:45 to 6:40. Is Nia right?"}},
   },
   {
     itemId: "time-conc-b0821-0178",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":530,"s":505,"kind":"elapsedSaid","said":25},"truth":true,"promptText":"From 8:25 to 8:50, Kai figures 25 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":530,"s":505,"kind":"elapsedSaid","said":25},"truth":true,"promptText":"Kai says it is 25 minutes from 8:25 to 8:50. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0179",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":585,"s":530,"kind":"elapsedSaid","said":95},"truth":false,"promptText":"June subtracts the clock numbers to say 8:50 to 9:45 took 95 minutes. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":585,"s":530,"kind":"elapsedSaid","said":95},"truth":false,"promptText":"From 8:50 to 9:45, June figures 95 minutes. Is June right?"}},
   },
   {
     itemId: "time-conc-b0821-0180",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":140,"s":125,"kind":"elapsedSaid","said":15},"truth":true,"promptText":"From 2:05 to 2:20, Lily figures 15 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":140,"s":125,"kind":"elapsedSaid","said":15},"truth":true,"promptText":"From 2:05 to 2:20, Lily figures 15 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0181",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":730,"s":695,"kind":"elapsedSaid","said":75},"truth":false,"promptText":"Amara subtracts the clock numbers to say 11:35 to 12:10 took 75 minutes. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":730,"s":695,"kind":"elapsedSaid","said":75},"truth":false,"promptText":"From 11:35 to 12:10, Amara figures 75 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0182",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":410,"s":370,"kind":"elapsedSaid","said":40},"truth":true,"promptText":"From 6:10 to 6:50, Leo figures 40 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":410,"s":370,"kind":"elapsedSaid","said":40},"truth":true,"promptText":"From 6:10 to 6:50, Leo figures 40 minutes. Is Leo right?"}},
   },
   {
     itemId: "time-conc-b0821-0183",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":270,"s":220,"kind":"elapsedSaid","said":90},"truth":false,"promptText":"Mina subtracts the clock numbers to say 3:40 to 4:30 took 90 minutes. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":270,"s":220,"kind":"elapsedSaid","said":90},"truth":false,"promptText":"Mina says it is 90 minutes from 3:40 to 4:30. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0184",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":705,"s":690,"kind":"elapsedSaid","said":15},"truth":true,"promptText":"From 11:30 to 11:45, Theo figures 15 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":705,"s":690,"kind":"elapsedSaid","said":15},"truth":true,"promptText":"Theo says it is 15 minutes from 11:30 to 11:45. Is Theo right?"}},
   },
   {
     itemId: "time-conc-b0821-0185",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":455,"s":415,"kind":"elapsedSaid","said":80},"truth":false,"promptText":"Ida subtracts the clock numbers to say 6:55 to 7:35 took 80 minutes. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":455,"s":415,"kind":"elapsedSaid","said":80},"truth":false,"promptText":"Ida says it is 80 minutes from 6:55 to 7:35. Is Ida right?"}},
   },
   {
     itemId: "time-conc-b0821-0186",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":355,"s":305,"kind":"elapsedSaid","said":50},"truth":true,"promptText":"From 5:05 to 5:55, Zoe figures 50 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":355,"s":305,"kind":"elapsedSaid","said":50},"truth":true,"promptText":"Zoe says it is 50 minutes from 5:05 to 5:55. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0187",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":615,"s":585,"kind":"elapsedSaid","said":70},"truth":false,"promptText":"Rosa subtracts the clock numbers to say 9:45 to 10:15 took 70 minutes. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":615,"s":585,"kind":"elapsedSaid","said":70},"truth":false,"promptText":"From 9:45 to 10:15, Rosa figures 70 minutes. Is Rosa right?"}},
   },
   {
     itemId: "time-conc-b0821-0188",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":580,"s":560,"kind":"elapsedSaid","said":20},"truth":true,"promptText":"From 9:20 to 9:40, Diego figures 20 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":580,"s":560,"kind":"elapsedSaid","said":20},"truth":true,"promptText":"From 9:20 to 9:40, Diego figures 20 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0189",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":125,"s":95,"kind":"elapsedSaid","said":70},"truth":false,"promptText":"Nora subtracts the clock numbers to say 1:35 to 2:05 took 70 minutes. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":125,"s":95,"kind":"elapsedSaid","said":70},"truth":false,"promptText":"From 1:35 to 2:05, Nora figures 70 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0190",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "elapsedJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":265,"s":245,"kind":"elapsedSaid","said":20},"truth":true,"promptText":"From 4:05 to 4:25, Luca figures 20 minutes by treating times like plain numbers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":265,"s":245,"kind":"elapsedSaid","said":20},"truth":true,"promptText":"From 4:05 to 4:25, Luca figures 20 minutes. Is Luca right?"}},
   },
   {
     itemId: "time-conc-b0821-0191",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":4,"s":1,"kind":"elapsedSaid","said":4},"truth":false,"promptText":"From one o'clock to four o'clock, Finn counts four hours. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":4,"s":1,"kind":"elapsedSaid","said":4},"truth":false,"promptText":"From one o'clock to four o'clock, Finn counts four hours. Is Finn right?"}},
   },
   {
     itemId: "time-conc-b0821-0193",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":7,"s":3,"kind":"elapsedSaid","said":4},"truth":true,"promptText":"Priya says from three o'clock to seven o'clock is four hours. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":7,"s":3,"kind":"elapsedSaid","said":4},"truth":true,"promptText":"Priya says from three o'clock to seven o'clock is four hours. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0194",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":8,"s":2,"kind":"elapsedSaid","said":6},"truth":true,"promptText":"Nia says from two o'clock to eight o'clock is six hours. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":8,"s":2,"kind":"elapsedSaid","said":6},"truth":true,"promptText":"From two o'clock to eight o'clock, Nia counts six hours. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0196",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":6,"s":4,"kind":"elapsedSaid","said":3},"truth":false,"promptText":"From four o'clock to six o'clock, Kai counts three hours. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":6,"s":4,"kind":"elapsedSaid","said":3},"truth":false,"promptText":"Kai says from four o'clock to six o'clock is three hours. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0197",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":3,"s":1,"kind":"elapsedSaid","said":2},"truth":true,"promptText":"June says from one o'clock to three o'clock is two hours. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":3,"s":1,"kind":"elapsedSaid","said":2},"truth":true,"promptText":"From one o'clock to three o'clock, June counts two hours. Is June right?"}},
   },
   {
     itemId: "time-conc-b0821-0198",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":11,"s":5,"kind":"elapsedSaid","said":5},"truth":false,"promptText":"From five o'clock to eleven o'clock, Lily counts five hours. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":11,"s":5,"kind":"elapsedSaid","said":5},"truth":false,"promptText":"Lily says from five o'clock to eleven o'clock is five hours. Is Lily right?"}},
   },
   {
     itemId: "time-conc-b0821-0199",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":12,"s":8,"kind":"elapsedSaid","said":5},"truth":false,"promptText":"From eight o'clock to twelve o'clock, Leo counts five hours. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":12,"s":8,"kind":"elapsedSaid","said":5},"truth":false,"promptText":"From eight o'clock to twelve o'clock, Leo counts five hours. Is Leo right?"}},
   },
   {
     itemId: "time-conc-b0821-0201",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":6,"s":2,"kind":"elapsedSaid","said":4},"truth":true,"promptText":"Mina says from two o'clock to six o'clock is four hours. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":6,"s":2,"kind":"elapsedSaid","said":4},"truth":true,"promptText":"Mina says from two o'clock to six o'clock is four hours. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0202",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":9,"s":4,"kind":"elapsedSaid","said":5},"truth":true,"promptText":"Ida says from four o'clock to nine o'clock is five hours. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":9,"s":4,"kind":"elapsedSaid","said":5},"truth":true,"promptText":"From four o'clock to nine o'clock, Ida counts five hours. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0204",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":10,"s":6,"kind":"elapsedSaid","said":3},"truth":false,"promptText":"From six o'clock to ten o'clock, Zoe counts three hours. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":10,"s":6,"kind":"elapsedSaid","said":3},"truth":false,"promptText":"Zoe says from six o'clock to ten o'clock is three hours. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0205",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":8,"s":3,"kind":"elapsedSaid","said":5},"truth":true,"promptText":"Rosa says from three o'clock to eight o'clock is five hours. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":8,"s":3,"kind":"elapsedSaid","said":5},"truth":true,"promptText":"From three o'clock to eight o'clock, Rosa counts five hours. Is Rosa right?"}},
   },
   {
     itemId: "time-conc-b0821-0206",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":7,"s":5,"kind":"elapsedSaid","said":3},"truth":false,"promptText":"From five o'clock to seven o'clock, Diego counts three hours. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":7,"s":5,"kind":"elapsedSaid","said":3},"truth":false,"promptText":"Diego says from five o'clock to seven o'clock is three hours. Is Diego right?"}},
   },
   {
     itemId: "time-conc-b0821-0207",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "hourCountJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":10,"s":4,"kind":"elapsedSaid","said":7},"truth":false,"promptText":"From four o'clock to ten o'clock, Luca counts seven hours. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":10,"s":4,"kind":"elapsedSaid","said":7},"truth":false,"promptText":"From four o'clock to ten o'clock, Luca counts seven hours. Is Luca right?"}},
   },
   {
     itemId: "time-conc-b0821-0209",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":3,"lb":5,"kind":"longer"},"promptText":"Event A: one o'clock to four o'clock. Event B: two o'clock to seven o'clock. Which is longer? Finn checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":3,"lb":5,"kind":"longer"},"promptText":"Event A goes from one o'clock to four o'clock. Event B goes from two o'clock to seven o'clock. Which event lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0211",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":3,"lb":5,"kind":"longer"},"promptText":"Event A: six o'clock to nine o'clock. Event B: one o'clock to six o'clock. Which is longer? Sam checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":3,"lb":5,"kind":"longer"},"promptText":"Which lasts longer: Event A, from six o'clock to nine o'clock, or Event B, from one o'clock to six o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0213",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":2,"lb":4,"kind":"longer"},"promptText":"Event A: four o'clock to six o'clock. Event B: one o'clock to five o'clock. Which is longer? Kai checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":2,"lb":4,"kind":"longer"},"promptText":"Event A goes from four o'clock to six o'clock. Event B goes from one o'clock to five o'clock. Which event lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0215",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event A","choices":["Event A","Event B"],"display":{"time":{"la":6,"lb":3,"kind":"longer"},"promptText":"Event A: five o'clock to eleven o'clock. Event B: seven o'clock to ten o'clock. Which is longer? Lily checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event A","choices":["Event A","Event B"],"display":{"time":{"la":6,"lb":3,"kind":"longer"},"promptText":"Which lasts longer: Event A, from five o'clock to eleven o'clock, or Event B, from seven o'clock to ten o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0217",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":1,"lb":4,"kind":"longer"},"promptText":"Event A: three o'clock to four o'clock. Event B: eight o'clock to twelve o'clock. Which is longer? Leo checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":1,"lb":4,"kind":"longer"},"promptText":"Event A goes from three o'clock to four o'clock. Event B goes from eight o'clock to twelve o'clock. Which event lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0219",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event A","choices":["Event A","Event B"],"display":{"time":{"la":6,"lb":4,"kind":"longer"},"promptText":"Event A: one o'clock to seven o'clock. Event B: four o'clock to eight o'clock. Which is longer? Theo checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event A","choices":["Event A","Event B"],"display":{"time":{"la":6,"lb":4,"kind":"longer"},"promptText":"Which lasts longer: Event A, from one o'clock to seven o'clock, or Event B, from four o'clock to eight o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0221",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event A","choices":["Event A","Event B"],"display":{"time":{"la":4,"lb":3,"kind":"longer"},"promptText":"Event A: six o'clock to ten o'clock. Event B: two o'clock to five o'clock. Which is longer? Zoe checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event A","choices":["Event A","Event B"],"display":{"time":{"la":4,"lb":3,"kind":"longer"},"promptText":"Event A goes from six o'clock to ten o'clock. Event B goes from two o'clock to five o'clock. Which event lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0223",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":2,"lb":5,"kind":"longer"},"promptText":"Event A: five o'clock to seven o'clock. Event B: one o'clock to six o'clock. Which is longer? Diego checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":2,"lb":5,"kind":"longer"},"promptText":"Which lasts longer: Event A, from five o'clock to seven o'clock, or Event B, from one o'clock to six o'clock?"}},
   },
   {
     itemId: "time-conc-b0821-0225",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "whichLongerTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":1,"lb":6,"kind":"longer"},"promptText":"Event A: two o'clock to three o'clock. Event B: four o'clock to ten o'clock. Which is longer? Luca checks."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Event B","choices":["Event A","Event B"],"display":{"time":{"la":1,"lb":6,"kind":"longer"},"promptText":"Event A goes from two o'clock to three o'clock. Event B goes from four o'clock to ten o'clock. Which event lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0227",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":3,"s":2,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Finn claims one hour after two o'clock comes four o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":3,"s":2,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Finn says one hour after two o'clock comes four o'clock. Is Finn right?"}},
   },
   {
     itemId: "time-conc-b0821-0229",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":4,"s":3,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"It is three o'clock. Priya says in one hour it will be four o'clock. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":4,"s":3,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"It is three o'clock. Priya says in one hour it will be four o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0230",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":5,"s":4,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Sam claims one hour after four o'clock comes six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":5,"s":4,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Sam says one hour after four o'clock comes six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0231",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":6,"s":5,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"It is five o'clock. Nia says in one hour it will be six o'clock. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":6,"s":5,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"Nia says one hour after five o'clock comes six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0232",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":7,"s":6,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Kai claims one hour after six o'clock comes eight o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":7,"s":6,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"It is six o'clock. Kai says in one hour it will be eight o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0233",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":8,"s":7,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"It is seven o'clock. June says in one hour it will be eight o'clock. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":8,"s":7,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"June says one hour after seven o'clock comes eight o'clock. Is June right?"}},
   },
   {
     itemId: "time-conc-b0821-0234",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":9,"s":8,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Lily claims one hour after eight o'clock comes ten o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":9,"s":8,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"It is eight o'clock. Lily says in one hour it will be ten o'clock. Is Lily right?"}},
   },
   {
     itemId: "time-conc-b0821-0235",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":3,"s":2,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Leo claims one hour after two o'clock comes four o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":3,"s":2,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Leo says one hour after two o'clock comes four o'clock. Is Leo right?"}},
   },
   {
     itemId: "time-conc-b0821-0237",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":4,"s":3,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"It is three o'clock. Mina says in one hour it will be four o'clock. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":4,"s":3,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"It is three o'clock. Mina says in one hour it will be four o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0238",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":5,"s":4,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Theo claims one hour after four o'clock comes six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":5,"s":4,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Theo says one hour after four o'clock comes six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0239",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":6,"s":5,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"It is five o'clock. Ida says in one hour it will be six o'clock. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":6,"s":5,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"Ida says one hour after five o'clock comes six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0240",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":7,"s":6,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Zoe claims one hour after six o'clock comes eight o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":7,"s":6,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"It is six o'clock. Zoe says in one hour it will be eight o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0241",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":8,"s":7,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"It is seven o'clock. Rosa says in one hour it will be eight o'clock. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"e":8,"s":7,"kind":"elapsedSaid","said":1},"truth":true,"promptText":"Rosa says one hour after seven o'clock comes eight o'clock. Is Rosa right?"}},
   },
   {
     itemId: "time-conc-b0821-0242",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "oneHourLaterJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":9,"s":8,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"Diego claims one hour after eight o'clock comes ten o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"e":9,"s":8,"kind":"elapsedSaid","said":2},"truth":false,"promptText":"It is eight o'clock. Diego says in one hour it will be ten o'clock. Is Diego right?"}},
   },
   {
     itemId: "time-conc-b0821-0243",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "whichLongerMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Activity B","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":35,"kind":"longer"},"promptText":"Activity A goes 8:05 to 8:30; activity B goes 9:10 to 9:45. Which lasts longer? Finn checks the clock."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Activity B","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":35,"kind":"longer"},"promptText":"Activity A goes from 8:05 to 8:30. Activity B goes from 9:10 to 9:45. Which activity lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0245",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "whichLongerMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":35,"lb":25,"kind":"longer"},"promptText":"Activity A goes 6:20 to 6:55; activity B goes 7:05 to 7:30. Which lasts longer? Sam checks the clock."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":35,"lb":25,"kind":"longer"},"promptText":"Which lasts longer: Activity A, from 6:20 to 6:55, or Activity B, from 7:05 to 7:30?"}},
   },
   {
     itemId: "time-conc-b0821-0247",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "whichLongerMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Activity B","choices":["Activity A","Activity B"],"display":{"time":{"la":20,"lb":35,"kind":"longer"},"promptText":"Activity A goes 5:25 to 5:45; activity B goes 6:05 to 6:40. Which lasts longer? Kai checks the clock."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Activity B","choices":["Activity A","Activity B"],"display":{"time":{"la":20,"lb":35,"kind":"longer"},"promptText":"Activity A goes from 5:25 to 5:45. Activity B goes from 6:05 to 6:40. Which activity lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0249",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "whichLongerMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":15,"kind":"longer"},"promptText":"Activity A goes 1:15 to 1:40; activity B goes 2:30 to 2:45. Which lasts longer? Lily checks the clock."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":15,"kind":"longer"},"promptText":"Which lasts longer: Activity A, from 1:15 to 1:40, or Activity B, from 2:30 to 2:45?"}},
   },
   {
     itemId: "time-conc-b0821-0251",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "whichLongerMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":15,"kind":"longer"},"promptText":"Activity A goes 4:30 to 4:55; activity B goes 3:05 to 3:20. Which lasts longer? Leo checks the clock."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":15,"kind":"longer"},"promptText":"Activity A goes from 4:30 to 4:55. Activity B goes from 3:05 to 3:20. Which activity lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0253",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "whichLongerMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Activity B","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":40,"kind":"longer"},"promptText":"Activity A goes 12:20 to 12:45; activity B goes 1:10 to 1:50. Which lasts longer? Theo checks the clock."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Activity B","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":40,"kind":"longer"},"promptText":"Which lasts longer: Activity A, from 12:20 to 12:45, or Activity B, from 1:10 to 1:50?"}},
   },
   {
     itemId: "time-conc-b0821-0255",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "whichLongerMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":10,"kind":"longer"},"promptText":"Activity A goes 8:25 to 8:50; activity B goes 9:30 to 9:40. Which lasts longer? Zoe checks the clock."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":25,"lb":10,"kind":"longer"},"promptText":"Activity A goes from 8:25 to 8:50. Activity B goes from 9:30 to 9:40. Which activity lasts longer?"}},
   },
   {
     itemId: "time-conc-b0821-0257",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "whichLongerMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":40,"lb":20,"kind":"longer"},"promptText":"Activity A goes 6:10 to 6:50; activity B goes 7:20 to 7:40. Which lasts longer? Diego checks the clock."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Activity A","choices":["Activity A","Activity B"],"display":{"time":{"la":40,"lb":20,"kind":"longer"},"promptText":"Which lasts longer: Activity A, from 6:10 to 6:50, or Activity B, from 7:20 to 7:40?"}},
   },
   {
     itemId: "time-conc-b0821-0259",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "pickDuration_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[25,20,30],"display":{"counting":{"have":485,"kind":"gap","target":510},"promptText":"From 8:05 to 8:30 — which number of minutes fits? Diego counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[25,20,30],"display":{"counting":{"have":485,"kind":"gap","target":510},"promptText":"Diego reads from 8:05 to 8:30. How many minutes does Diego read?"}},
   },
   {
     itemId: "time-conc-b0821-0262",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "pickDuration_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"choices":[30,40,35],"display":{"counting":{"have":380,"kind":"gap","target":415},"promptText":"From 6:20 to 6:55 — which number of minutes fits? Theo counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":35,"choices":[30,40,35],"display":{"counting":{"have":380,"kind":"gap","target":415},"promptText":"Theo works on a puzzle from 6:20 to 6:55. How many minutes does Theo spend on the puzzle?"}},
   },
   {
     itemId: "time-conc-b0821-0264",
@@ -8772,7 +8772,7 @@ export const ITEMS = [
     structureType: "pickDuration_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[25,20,15],"display":{"counting":{"have":325,"kind":"gap","target":345},"promptText":"From 5:25 to 5:45 — which number of minutes fits? Lily counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[25,20,15],"display":{"counting":{"have":325,"kind":"gap","target":345},"promptText":"Lily plays outside from 5:25 to 5:45. How many minutes does Lily play?"}},
   },
   {
     itemId: "time-conc-b0821-0266",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "pickDuration_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[20,25,30],"display":{"counting":{"have":75,"kind":"gap","target":100},"promptText":"From 1:15 to 1:40 — which number of minutes fits? Sam counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[20,25,30],"display":{"counting":{"have":75,"kind":"gap","target":100},"promptText":"Sam reads from 1:15 to 1:40. How many minutes does Sam read?"}},
   },
   {
     itemId: "time-conc-b0821-0268",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "pickDuration_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[30,25,20],"display":{"counting":{"have":270,"kind":"gap","target":295},"promptText":"From 4:30 to 4:55 — which number of minutes fits? Omar counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[30,25,20],"display":{"counting":{"have":270,"kind":"gap","target":295},"promptText":"Omar plays outside from 4:30 to 4:55. How many minutes does Omar play?"}},
   },
   {
     itemId: "time-conc-b0821-0270",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "pickDuration_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[30,25,20],"display":{"counting":{"have":740,"kind":"gap","target":765},"promptText":"From 12:20 to 12:45 — which number of minutes fits? Diego counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[30,25,20],"display":{"counting":{"have":740,"kind":"gap","target":765},"promptText":"Diego plays outside from 12:20 to 12:45. How many minutes does Diego play?"}},
   },
   {
     itemId: "time-conc-b0821-0272",
@@ -8852,7 +8852,7 @@ export const ITEMS = [
     structureType: "pickDuration_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[25,20,30],"display":{"counting":{"have":505,"kind":"gap","target":530},"promptText":"From 8:25 to 8:50 — which number of minutes fits? Theo counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[25,20,30],"display":{"counting":{"have":505,"kind":"gap","target":530},"promptText":"Theo reads from 8:25 to 8:50. How many minutes does Theo read?"}},
   },
   {
     itemId: "time-conc-b0821-0274",
@@ -8872,7 +8872,7 @@ export const ITEMS = [
     structureType: "pickDuration_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[35,40,45],"display":{"counting":{"have":370,"kind":"gap","target":410},"promptText":"From 6:10 to 6:50 — which number of minutes fits? Lily counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[35,40,45],"display":{"counting":{"have":370,"kind":"gap","target":410},"promptText":"Lily works on a puzzle from 6:10 to 6:50. How many minutes does Lily spend on the puzzle?"}},
   },
   {
     itemId: "time-conc-b0821-0276",
@@ -8892,7 +8892,7 @@ export const ITEMS = [
     structureType: "pickDuration_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[30,35,25,70],"display":{"counting":{"have":350,"kind":"gap","target":380},"promptText":"From 5:50 to 6:20 — which number of minutes fits? Lily counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[30,35,25,70],"display":{"counting":{"have":350,"kind":"gap","target":380},"promptText":"Lily works on a puzzle from 5:50 to 6:20. How many minutes does Lily spend on the puzzle?"}},
   },
   {
     itemId: "time-conc-b0821-0278",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "pickDuration_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"choices":[40,50,45,85],"display":{"counting":{"have":705,"kind":"gap","target":750},"promptText":"From 11:45 to 12:30 — which number of minutes fits? Sam counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":45,"choices":[40,50,45,85],"display":{"counting":{"have":705,"kind":"gap","target":750},"promptText":"Sam plays outside from 11:45 to 12:30. How many minutes does Sam play?"}},
   },
   {
     itemId: "time-conc-b0821-0280",
@@ -8932,7 +8932,7 @@ export const ITEMS = [
     structureType: "pickDuration_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[65,20,30,25],"display":{"counting":{"have":400,"kind":"gap","target":425},"promptText":"From 6:40 to 7:05 — which number of minutes fits? Omar counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[65,20,30,25],"display":{"counting":{"have":400,"kind":"gap","target":425},"promptText":"Omar reads from 6:40 to 7:05. How many minutes does Omar read?"}},
   },
   {
     itemId: "time-conc-b0821-0282",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "pickDuration_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[55,45,50,90],"display":{"counting":{"have":110,"kind":"gap","target":160},"promptText":"From 1:50 to 2:40 — which number of minutes fits? Diego counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[55,45,50,90],"display":{"counting":{"have":110,"kind":"gap","target":160},"promptText":"Diego reads from 1:50 to 2:40. How many minutes does Diego read?"}},
   },
   {
     itemId: "time-conc-b0821-0284",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "pickDuration_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"choices":[30,75,40,35],"display":{"counting":{"have":475,"kind":"gap","target":510},"promptText":"From 7:55 to 8:30 — which number of minutes fits? Theo counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":35,"choices":[30,75,40,35],"display":{"counting":{"have":475,"kind":"gap","target":510},"promptText":"Theo plays outside from 7:55 to 8:30. How many minutes does Theo play?"}},
   },
   {
     itemId: "time-conc-b0821-0286",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "pickDuration_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[35,45,40,80],"display":{"counting":{"have":155,"kind":"gap","target":195},"promptText":"From 2:35 to 3:15 — which number of minutes fits? Lily counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[35,45,40,80],"display":{"counting":{"have":155,"kind":"gap","target":195},"promptText":"Lily reads from 2:35 to 3:15. How many minutes does Lily read?"}},
   },
   {
     itemId: "time-conc-b0821-0288",
@@ -9012,7 +9012,7 @@ export const ITEMS = [
     structureType: "pickDuration_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[60,50,55,95],"display":{"counting":{"have":530,"kind":"gap","target":585},"promptText":"From 8:50 to 9:45 — which number of minutes fits? Sam counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[60,50,55,95],"display":{"counting":{"have":530,"kind":"gap","target":585},"promptText":"Sam works on a puzzle from 8:50 to 9:45. How many minutes does Sam spend on the puzzle?"}},
   },
   {
     itemId: "time-conc-b0821-0290",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "pickDuration_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[45,50,55,90],"display":{"counting":{"have":220,"kind":"gap","target":270},"promptText":"From 3:40 to 4:30 — which number of minutes fits? Omar counts up to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[45,50,55,90],"display":{"counting":{"have":220,"kind":"gap","target":270},"promptText":"Omar plays outside from 3:40 to 4:30. How many minutes does Omar play?"}},
   },
   {
     itemId: "time-conc-b0821-0292",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":45,"m":40,"kind":"crossHour"},"truth":true,"promptText":"Nia starts at 2:40 and works for 45 minutes. Will the clock pass the next o'clock before Nia stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":45,"m":40,"kind":"crossHour"},"truth":true,"promptText":"Nia starts reading at 2:40 and reads for 45 minutes. Is it 3:00 or later when Nia stops?"}},
   },
   {
     itemId: "time-conc-b0821-0293",
@@ -9052,7 +9052,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":20,"m":10,"kind":"crossHour"},"truth":false,"promptText":"Starting at 3:10 for 20 minutes — does the time cross into the next hour? Kai thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":20,"m":10,"kind":"crossHour"},"truth":false,"promptText":"Kai starts reading at 3:10 and reads for 20 minutes. Is it 4:00 or later when Kai stops?"}},
   },
   {
     itemId: "time-conc-b0821-0294",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":30,"m":50,"kind":"crossHour"},"truth":true,"promptText":"June starts at 5:50 and works for 30 minutes. Will the clock pass the next o'clock before June stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":30,"m":50,"kind":"crossHour"},"truth":true,"promptText":"June starts a puzzle at 5:50 and works on it for 30 minutes. Is it 6:00 or later when June finishes?"}},
   },
   {
     itemId: "time-conc-b0821-0295",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":40,"m":5,"kind":"crossHour"},"truth":false,"promptText":"Starting at 8:05 for 40 minutes — does the time cross into the next hour? Lily thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":40,"m":5,"kind":"crossHour"},"truth":false,"promptText":"Lily starts a puzzle at 8:05 and works on it for 40 minutes. Is it 9:00 or later when Lily finishes?"}},
   },
   {
     itemId: "time-conc-b0821-0296",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":40,"m":35,"kind":"crossHour"},"truth":true,"promptText":"Amara starts at 8:35 and works for 40 minutes. Will the clock pass the next o'clock before Amara stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":40,"m":35,"kind":"crossHour"},"truth":true,"promptText":"Amara starts reading at 8:35 and reads for 40 minutes. Is it 9:00 or later when Amara stops?"}},
   },
   {
     itemId: "time-conc-b0821-0297",
@@ -9092,7 +9092,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":30,"m":15,"kind":"crossHour"},"truth":false,"promptText":"Starting at 2:15 for 30 minutes — does the time cross into the next hour? Leo thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":30,"m":15,"kind":"crossHour"},"truth":false,"promptText":"Leo starts reading at 2:15 and reads for 30 minutes. Is it 3:00 or later when Leo stops?"}},
   },
   {
     itemId: "time-conc-b0821-0298",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":50,"m":45,"kind":"crossHour"},"truth":true,"promptText":"Mina starts at 11:45 and works for 50 minutes. Will the clock pass the next o'clock before Mina stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":50,"m":45,"kind":"crossHour"},"truth":true,"promptText":"Mina starts a puzzle at 11:45 and works on it for 50 minutes. Is it 12:00 or later when Mina finishes?"}},
   },
   {
     itemId: "time-conc-b0821-0299",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":25,"m":20,"kind":"crossHour"},"truth":false,"promptText":"Starting at 6:20 for 25 minutes — does the time cross into the next hour? Theo thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":25,"m":20,"kind":"crossHour"},"truth":false,"promptText":"Theo starts a puzzle at 6:20 and works on it for 25 minutes. Is it 7:00 or later when Theo finishes?"}},
   },
   {
     itemId: "time-conc-b0821-0300",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":25,"m":55,"kind":"crossHour"},"truth":true,"promptText":"Ida starts at 3:55 and works for 25 minutes. Will the clock pass the next o'clock before Ida stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":25,"m":55,"kind":"crossHour"},"truth":true,"promptText":"Ida starts reading at 3:55 and reads for 25 minutes. Is it 4:00 or later when Ida stops?"}},
   },
   {
     itemId: "time-conc-b0821-0301",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":35,"m":10,"kind":"crossHour"},"truth":false,"promptText":"Starting at 11:10 for 35 minutes — does the time cross into the next hour? Zoe thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":35,"m":10,"kind":"crossHour"},"truth":false,"promptText":"Zoe starts reading at 11:10 and reads for 35 minutes. Is it 12:00 or later when Zoe stops?"}},
   },
   {
     itemId: "time-conc-b0821-0302",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":35,"m":40,"kind":"crossHour"},"truth":true,"promptText":"Rosa starts at 6:40 and works for 35 minutes. Will the clock pass the next o'clock before Rosa stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":35,"m":40,"kind":"crossHour"},"truth":true,"promptText":"Rosa starts a puzzle at 6:40 and works on it for 35 minutes. Is it 7:00 or later when Rosa finishes?"}},
   },
   {
     itemId: "time-conc-b0821-0303",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":20,"m":25,"kind":"crossHour"},"truth":false,"promptText":"Starting at 5:25 for 20 minutes — does the time cross into the next hour? Diego thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":20,"m":25,"kind":"crossHour"},"truth":false,"promptText":"Diego starts a puzzle at 5:25 and works on it for 20 minutes. Is it 6:00 or later when Diego finishes?"}},
   },
   {
     itemId: "time-conc-b0821-0304",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":55,"m":30,"kind":"crossHour"},"truth":true,"promptText":"Nora starts at 9:30 and works for 55 minutes. Will the clock pass the next o'clock before Nora stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":55,"m":30,"kind":"crossHour"},"truth":true,"promptText":"Nora starts reading at 9:30 and reads for 55 minutes. Is it 10:00 or later when Nora stops?"}},
   },
   {
     itemId: "time-conc-b0821-0305",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":40,"m":5,"kind":"crossHour"},"truth":false,"promptText":"Starting at 9:05 for 40 minutes — does the time cross into the next hour? Luca thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":40,"m":5,"kind":"crossHour"},"truth":false,"promptText":"Luca starts reading at 9:05 and reads for 40 minutes. Is it 10:00 or later when Luca stops?"}},
   },
   {
     itemId: "time-conc-b0821-0306",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":45,"m":50,"kind":"crossHour"},"truth":true,"promptText":"Ava starts at 1:50 and works for 45 minutes. Will the clock pass the next o'clock before Ava stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":45,"m":50,"kind":"crossHour"},"truth":true,"promptText":"Ava starts a puzzle at 1:50 and works on it for 45 minutes. Is it 2:00 or later when Ava finishes?"}},
   },
   {
     itemId: "time-conc-b0821-0307",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":30,"m":15,"kind":"crossHour"},"truth":false,"promptText":"Starting at 1:15 for 30 minutes — does the time cross into the next hour? Omar thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":30,"m":15,"kind":"crossHour"},"truth":false,"promptText":"Omar starts a puzzle at 1:15 and works on it for 30 minutes. Is it 2:00 or later when Omar finishes?"}},
   },
   {
     itemId: "time-conc-b0821-0308",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":40,"m":45,"kind":"crossHour"},"truth":true,"promptText":"Ben starts at 4:45 and works for 40 minutes. Will the clock pass the next o'clock before Ben stops?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"d":40,"m":45,"kind":"crossHour"},"truth":true,"promptText":"Ben starts reading at 4:45 and reads for 40 minutes. Is it 5:00 or later when Ben stops?"}},
   },
   {
     itemId: "time-conc-b0821-0309",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "crossesHourJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":35,"m":10,"kind":"crossHour"},"truth":false,"promptText":"Starting at 7:10 for 35 minutes — does the time cross into the next hour? Finn thinks it over."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"d":35,"m":10,"kind":"crossHour"},"truth":false,"promptText":"Finn starts reading at 7:10 and reads for 35 minutes. Is it 8:00 or later when Finn stops?"}},
   },
   {
     itemId: "time-conc-b0821-0310",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "durationBenchmark",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 minutes","choices":["2 days","2 minutes","2 seconds","2 hours"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take Mina to brush your teeth?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 minutes","choices":["2 days","2 minutes","2 seconds","2 hours"],"display":{"time":{"kind":"benchmark"},"promptText":"About how long does it take to brush your teeth?"}},
   },
   {
     itemId: "time-conc-b0821-0311",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Nia eats breakfast at 7:30. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Nia eats breakfast at 7:30. Which label goes with 7:30?"}},
   },
   {
     itemId: "time-conc-b0821-0347",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"At 7:30, Lily eats breakfast. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Lily eats breakfast at 7:30. Which label fits 7:30?"}},
   },
   {
     itemId: "time-conc-b0821-0348",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Kai goes to bed at 8:15. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Kai goes to bed at 8:15. Which label goes with 8:15?"}},
   },
   {
     itemId: "time-conc-b0821-0349",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"At 8:15, Amara goes to bed. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Amara goes to bed at 8:15. Which label fits 8:15?"}},
   },
   {
     itemId: "time-conc-b0821-0350",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"June starts school at 8:45. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"June starts school at 8:45. Which label goes with 8:45?"}},
   },
   {
     itemId: "time-conc-b0821-0351",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"At 8:45, Leo starts school. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Leo starts school at 8:45. Which label fits 8:45?"}},
   },
   {
     itemId: "time-conc-b0821-0352",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Lily eats dinner at 6:30. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Lily eats dinner at 6:30. Which label goes with 6:30?"}},
   },
   {
     itemId: "time-conc-b0821-0353",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"At 6:30, Mina eats dinner. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Mina eats dinner at 6:30. Which label fits 6:30?"}},
   },
   {
     itemId: "time-conc-b0821-0354",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Amara wakes up at 6:50. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Amara wakes up at 6:50. Which label goes with 6:50?"}},
   },
   {
     itemId: "time-conc-b0821-0355",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"At 6:50, Theo wakes up. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Theo wakes up at 6:50. Which label fits 6:50?"}},
   },
   {
     itemId: "time-conc-b0821-0356",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Leo watches the sunset at 7:40. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Leo watches the sunset at 7:40. Which label goes with 7:40?"}},
   },
   {
     itemId: "time-conc-b0821-0357",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"At 7:40, Ida watches the sunset. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Ida watches the sunset at 7:40. Which label fits 7:40?"}},
   },
   {
     itemId: "time-conc-b0821-0358",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Mina catches the morning bus at 7:55. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Mina catches the morning bus at 7:55. Which label goes with 7:55?"}},
   },
   {
     itemId: "time-conc-b0821-0359",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"At 7:55, Zoe catches the morning bus. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"a.m."},"promptText":"Zoe catches the morning bus at 7:55. Which label fits 7:55?"}},
   },
   {
     itemId: "time-conc-b0821-0360",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Theo brushes teeth before bed at 8:40. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["p.m.","a.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Theo brushes teeth before bed at 8:40. Which label goes with 8:40?"}},
   },
   {
     itemId: "time-conc-b0821-0361",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"At 8:40, Rosa brushes teeth before bed. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Rosa brushes teeth before bed at 8:40. Which label fits 8:40?"}},
   },
   {
     itemId: "time-conc-b0821-0362",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Ida eats a midnight-snack apple at noon recess at 12:05. Is that a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Ida eats lunch at 12:05. Which label goes with 12:05?"}},
   },
   {
     itemId: "time-conc-b0821-0363",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "amPmPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"At 12:05, Diego eats a midnight-snack apple at noon recess. Which label fits, a.m. or p.m.?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"p.m.","choices":["a.m.","p.m."],"display":{"time":{"kind":"amPm","label":"p.m."},"promptText":"Diego eats lunch at 12:05. Which label fits 12:05?"}},
   },
   {
     itemId: "time-conc-b0821-0364",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"90 minutes","choices":["1 hour","90 minutes"],"display":{"time":{"la":90,"lb":60,"kind":"longer"},"promptText":"Which lasts longer, 90 minutes or 1 hour? Amara thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"90 minutes","choices":["1 hour","90 minutes"],"display":{"time":{"la":90,"lb":60,"kind":"longer"},"promptText":"Which lasts longer, 90 minutes or 1 hour?"}},
   },
   {
     itemId: "time-conc-b0821-0366",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"70 minutes","choices":["1 hour","70 minutes"],"display":{"time":{"la":60,"lb":70,"kind":"longer"},"promptText":"Which lasts longer, 1 hour or 70 minutes? Leo thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"70 minutes","choices":["1 hour","70 minutes"],"display":{"time":{"la":60,"lb":70,"kind":"longer"},"promptText":"Which is more time, 1 hour or 70 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0368",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 hours","choices":["100 minutes","2 hours"],"display":{"time":{"la":120,"lb":100,"kind":"longer"},"promptText":"Which lasts longer, 2 hours or 100 minutes? Mina thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 hours","choices":["100 minutes","2 hours"],"display":{"time":{"la":120,"lb":100,"kind":"longer"},"promptText":"Which lasts longer, 2 hours or 100 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0370",
@@ -9832,7 +9832,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"150 minutes","choices":["150 minutes","2 hours"],"display":{"time":{"la":150,"lb":120,"kind":"longer"},"promptText":"Which lasts longer, 150 minutes or 2 hours? Theo thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"150 minutes","choices":["150 minutes","2 hours"],"display":{"time":{"la":150,"lb":120,"kind":"longer"},"promptText":"Which is more time, 150 minutes or 2 hours?"}},
   },
   {
     itemId: "time-conc-b0821-0372",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"200 minutes","choices":["200 minutes","3 hours"],"display":{"time":{"la":180,"lb":200,"kind":"longer"},"promptText":"Which lasts longer, 3 hours or 200 minutes? Ida thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"200 minutes","choices":["200 minutes","3 hours"],"display":{"time":{"la":180,"lb":200,"kind":"longer"},"promptText":"Which lasts longer, 3 hours or 200 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0374",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 hour","choices":["59 minutes","1 hour"],"display":{"time":{"la":60,"lb":59,"kind":"longer"},"promptText":"Which lasts longer, 1 hour or 59 minutes? Zoe thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 hour","choices":["59 minutes","1 hour"],"display":{"time":{"la":60,"lb":59,"kind":"longer"},"promptText":"Which is more time, 1 hour or 59 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0376",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"130 minutes","choices":["130 minutes","2 hours"],"display":{"time":{"la":120,"lb":130,"kind":"longer"},"promptText":"Which lasts longer, 2 hours or 130 minutes? Rosa thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"130 minutes","choices":["130 minutes","2 hours"],"display":{"time":{"la":120,"lb":130,"kind":"longer"},"promptText":"Which lasts longer, 2 hours or 130 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0378",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"95 minutes","choices":["1 hour","95 minutes"],"display":{"time":{"la":95,"lb":60,"kind":"longer"},"promptText":"Which lasts longer, 95 minutes or 1 hour? Diego thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"95 minutes","choices":["1 hour","95 minutes"],"display":{"time":{"la":95,"lb":60,"kind":"longer"},"promptText":"Which is more time, 95 minutes or 1 hour?"}},
   },
   {
     itemId: "time-conc-b0821-0380",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "unitCompare",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 hours","choices":["230 minutes","4 hours"],"display":{"time":{"la":240,"lb":230,"kind":"longer"},"promptText":"Which lasts longer, 4 hours or 230 minutes? Nora thinks it through."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 hours","choices":["230 minutes","4 hours"],"display":{"time":{"la":240,"lb":230,"kind":"longer"},"promptText":"Which lasts longer, 4 hours or 230 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0382",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"second","b":"minute","kind":"unitOrder","rankA":1,"rankB":2},"truth":false,"promptText":"Zoe claims a whole second lasts longer than a whole minute. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"second","b":"minute","kind":"unitOrder","rankA":1,"rankB":2},"truth":false,"promptText":"Zoe thinks a second lasts longer than a minute. Is Zoe right?"}},
   },
   {
     itemId: "time-conc-b0821-0384",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"hour","b":"minute","kind":"unitOrder","rankA":3,"rankB":2},"truth":true,"promptText":"Rosa says one hour is longer than one minute. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"hour","b":"minute","kind":"unitOrder","rankA":3,"rankB":2},"truth":true,"promptText":"Rosa says one hour is longer than one minute. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0385",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"minute","b":"hour","kind":"unitOrder","rankA":2,"rankB":3},"truth":false,"promptText":"Diego claims a whole minute lasts longer than a whole hour. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"minute","b":"hour","kind":"unitOrder","rankA":2,"rankB":3},"truth":false,"promptText":"Diego thinks a minute lasts longer than an hour. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0386",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"day","b":"hour","kind":"unitOrder","rankA":4,"rankB":3},"truth":true,"promptText":"Nora says one day is longer than one hour. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"day","b":"hour","kind":"unitOrder","rankA":4,"rankB":3},"truth":true,"promptText":"Nora thinks a day lasts longer than an hour. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0387",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"hour","b":"day","kind":"unitOrder","rankA":3,"rankB":4},"truth":false,"promptText":"Luca claims a whole hour lasts longer than a whole day. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"hour","b":"day","kind":"unitOrder","rankA":3,"rankB":4},"truth":false,"promptText":"Luca says one hour is longer than one day. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0388",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"week","b":"day","kind":"unitOrder","rankA":5,"rankB":4},"truth":true,"promptText":"Ava says one week is longer than one day. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"week","b":"day","kind":"unitOrder","rankA":5,"rankB":4},"truth":true,"promptText":"Ava thinks a week lasts longer than a day. Is Ava right?"}},
   },
   {
     itemId: "time-conc-b0821-0389",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"day","b":"week","kind":"unitOrder","rankA":4,"rankB":5},"truth":false,"promptText":"Omar claims a whole day lasts longer than a whole week. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"day","b":"week","kind":"unitOrder","rankA":4,"rankB":5},"truth":false,"promptText":"Omar says one day is longer than one week. Is Omar right?"}},
   },
   {
     itemId: "time-conc-b0821-0390",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"second","b":"hour","kind":"unitOrder","rankA":1,"rankB":3},"truth":false,"promptText":"Finn claims a whole second lasts longer than a whole hour. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"second","b":"hour","kind":"unitOrder","rankA":1,"rankB":3},"truth":false,"promptText":"Finn thinks a second lasts longer than an hour. Is Finn right?"}},
   },
   {
     itemId: "time-conc-b0821-0392",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"day","b":"minute","kind":"unitOrder","rankA":4,"rankB":2},"truth":true,"promptText":"Priya says one day is longer than one minute. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"day","b":"minute","kind":"unitOrder","rankA":4,"rankB":2},"truth":true,"promptText":"Priya says one day is longer than one minute. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0393",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"minute","b":"day","kind":"unitOrder","rankA":2,"rankB":4},"truth":false,"promptText":"Sam claims a whole minute lasts longer than a whole day. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"minute","b":"day","kind":"unitOrder","rankA":2,"rankB":4},"truth":false,"promptText":"Sam thinks a minute lasts longer than a day. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0394",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"week","b":"hour","kind":"unitOrder","rankA":5,"rankB":3},"truth":true,"promptText":"Nia says one week is longer than one hour. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"week","b":"hour","kind":"unitOrder","rankA":5,"rankB":3},"truth":true,"promptText":"Nia thinks a week lasts longer than an hour. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0395",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"second","b":"day","kind":"unitOrder","rankA":1,"rankB":4},"truth":false,"promptText":"Kai claims a whole second lasts longer than a whole day. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"second","b":"day","kind":"unitOrder","rankA":1,"rankB":4},"truth":false,"promptText":"Kai says one second is longer than one day. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0396",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"day","b":"second","kind":"unitOrder","rankA":4,"rankB":1},"truth":true,"promptText":"June says one day is longer than one second. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":"day","b":"second","kind":"unitOrder","rankA":4,"rankB":1},"truth":true,"promptText":"June thinks a day lasts longer than a second. Is June right?"}},
   },
   {
     itemId: "time-conc-b0821-0397",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "unitOrderJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"minute","b":"week","kind":"unitOrder","rankA":2,"rankB":5},"truth":false,"promptText":"Lily claims a whole minute lasts longer than a whole week. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":"minute","b":"week","kind":"unitOrder","rankA":2,"rankB":5},"truth":false,"promptText":"Lily says one minute is longer than one week. Is Lily right?"}},
   },
   {
     itemId: "time-conc-b0821-0398",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard Ben writes: 1 hour is 100 minutes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard, Ben writes: 1 hour is 100 minutes. Is Ben right?"}},
   },
   {
     itemId: "time-conc-b0821-0400",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Finn tells a friend: half an hour is 30 minutes. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Finn tells a friend: half an hour is 30 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0401",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard Priya writes: half an hour is 50 minutes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard, Priya writes: half an hour is 50 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0402",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Sam tells a friend: 1 minute is 60 seconds. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"On the whiteboard, Sam writes: 1 minute is 60 seconds. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0403",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard Nia writes: 1 minute is 100 seconds. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"Nia tells a friend: 1 minute is 100 seconds. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0404",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Kai tells a friend: a quarter of an hour is 15 minutes. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"On the whiteboard, Kai writes: a quarter of an hour is 15 minutes. Is Kai right?"}},
   },
   {
     itemId: "time-conc-b0821-0405",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard June writes: a quarter of an hour is 25 minutes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"June tells a friend: a quarter of an hour is 25 minutes. Is June right?"}},
   },
   {
     itemId: "time-conc-b0821-0406",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard Amara writes: 1 day is 12 hours. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard, Amara writes: 1 day is 12 hours. Is Amara right?"}},
   },
   {
     itemId: "time-conc-b0821-0408",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Leo tells a friend: 2 hours is 120 minutes. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Leo tells a friend: 2 hours is 120 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0409",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard Mina writes: 2 hours is 200 minutes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard, Mina writes: 2 hours is 200 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0410",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Theo tells a friend: 90 minutes is 1 hour 30 minutes. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"On the whiteboard, Theo writes: 90 minutes is 1 hour 30 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0411",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard Ida writes: 90 minutes is 1 hour 90 minutes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"Ida tells a friend: 90 minutes is 1 hour 90 minutes. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0412",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Zoe tells a friend: 45 minutes is three quarters of an hour. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"On the whiteboard, Zoe writes: 45 minutes is three quarters of an hour. Is Zoe right?"}},
   },
   {
     itemId: "time-conc-b0821-0413",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "smallConvJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"On the whiteboard Rosa writes: 45 minutes is half an hour. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"Rosa tells a friend: 45 minutes is half an hour. Is Rosa right?"}},
   },
   {
     itemId: "time-conc-b0821-0414",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "longestDuration",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1 day","choices":["1000 minutes","20 hours","1 day"],"display":{"time":{"kind":"longest","values":[1440,1200,1000]},"promptText":"Of 1 day, 20 hours, and 1000 minutes, which lasts the longest? Lily converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1 day","choices":["1000 minutes","20 hours","1 day"],"display":{"time":{"kind":"longest","values":[1440,1200,1000]},"promptText":"Which lasts the longest: 1 day, 20 hours, or 1000 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0416",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "longestDuration",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"150 minutes","choices":["2 hours","2 hours 20 minutes","150 minutes"],"display":{"time":{"kind":"longest","values":[150,120,140]},"promptText":"Of 150 minutes, 2 hours, and 2 hours 20 minutes, which lasts the longest? Leo converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"150 minutes","choices":["2 hours","2 hours 20 minutes","150 minutes"],"display":{"time":{"kind":"longest","values":[150,120,140]},"promptText":"Which is the most time: 150 minutes, 2 hours, or 2 hours 20 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0418",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "longestDuration",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"1500 minutes","choices":["1500 minutes","1 day","23 hours"],"display":{"time":{"kind":"longest","values":[1440,1380,1500]},"promptText":"Of 1 day, 23 hours, and 1500 minutes, which lasts the longest? Theo converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"1500 minutes","choices":["1500 minutes","1 day","23 hours"],"display":{"time":{"kind":"longest","values":[1440,1380,1500]},"promptText":"Which lasts the longest: 1 day, 23 hours, or 1500 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0420",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "longestDuration",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"5 hours","choices":["4 hours 55 minutes","5 hours","290 minutes"],"display":{"time":{"kind":"longest","values":[300,290,295]},"promptText":"Of 5 hours, 290 minutes, and 4 hours 55 minutes, which lasts the longest? Zoe converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"5 hours","choices":["4 hours 55 minutes","5 hours","290 minutes"],"display":{"time":{"kind":"longest","values":[300,290,295]},"promptText":"Which is the most time: 5 hours, 290 minutes, or 4 hours 55 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0422",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "longestDuration",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"6 hours","choices":["6 hours","5 hours 45 minutes","350 minutes"],"display":{"time":{"kind":"longest","values":[360,350,345]},"promptText":"Of 6 hours, 350 minutes, and 5 hours 45 minutes, which lasts the longest? Diego converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"6 hours","choices":["6 hours","5 hours 45 minutes","350 minutes"],"display":{"time":{"kind":"longest","values":[360,350,345]},"promptText":"Which lasts the longest: 6 hours, 350 minutes, or 5 hours 45 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0424",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "longestDuration",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"2 hours","choices":["110 minutes","2 hours","1 hour 55 minutes"],"display":{"time":{"kind":"longest","values":[115,110,120]},"promptText":"Of 1 hour 55 minutes, 110 minutes, and 2 hours, which lasts the longest? Luca converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"2 hours","choices":["110 minutes","2 hours","1 hour 55 minutes"],"display":{"time":{"kind":"longest","values":[115,110,120]},"promptText":"Which is the most time: 1 hour 55 minutes, 110 minutes, or 2 hours?"}},
   },
   {
     itemId: "time-conc-b0821-0426",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "longestDuration",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"4 hours 5 minutes","choices":["240 minutes","3 hours 58 minutes","4 hours 5 minutes"],"display":{"time":{"kind":"longest","values":[240,245,238]},"promptText":"Of 240 minutes, 4 hours 5 minutes, and 3 hours 58 minutes, which lasts the longest? Omar converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"4 hours 5 minutes","choices":["240 minutes","3 hours 58 minutes","4 hours 5 minutes"],"display":{"time":{"kind":"longest","values":[240,245,238]},"promptText":"Which lasts the longest: 240 minutes, 4 hours 5 minutes, or 3 hours 58 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0428",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "longestDuration",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"3 days","choices":["3 days","4300 minutes","70 hours"],"display":{"time":{"kind":"longest","values":[4320,4200,4300]},"promptText":"Of 3 days, 70 hours, and 4300 minutes, which lasts the longest? Finn converts to check."}},
+    question: {"a":null,"b":null,"op":"count","answer":"3 days","choices":["3 days","4300 minutes","70 hours"],"display":{"time":{"kind":"longest","values":[4320,4200,4300]},"promptText":"Which is the most time: 3 days, 70 hours, or 4300 minutes?"}},
   },
   {
     itemId: "time-conc-b0821-0430",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "daysInWeek",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[5,7,6,10],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days are in a week? Ida checks the calendar row."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[5,7,6,10],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days are in one week?"}},
   },
   {
     itemId: "time-conc-b0821-0497",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "daysInWeek",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,10,7,5],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days are in a week? Rosa checks the calendar row."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[6,10,7,5],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days make up one week?"}},
   },
   {
     itemId: "time-conc-b0821-0499",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "daysInWeek",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[10,7,5,6],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days are in a week? Nora checks the calendar row."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[10,7,5,6],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"One week has how many days?"}},
   },
   {
     itemId: "time-conc-b0821-0501",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "daysInWeek",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[5,10,6,7],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days are in a week? Ava checks the calendar row."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[5,10,6,7],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"Count the days from Sunday to Saturday. How many days are in a week?"}},
   },
   {
     itemId: "time-conc-b0821-0503",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "daysInWeek",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[5,7,10,6],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days are in a week? Ben checks the calendar row."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[5,7,10,6],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days are there in one week?"}},
   },
   {
     itemId: "time-conc-b0821-0505",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "daysInWeek",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[10,5,7,6],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"How many days are in a week? Priya checks the calendar row."}},
+    question: {"a":null,"b":null,"op":"count","answer":7,"choices":[10,5,7,6],"display":{"time":{"n":1,"kind":"unit","unit":"week"},"promptText":"A week starts on Sunday and ends on Saturday. How many days long is one week?"}},
   },
   {
     itemId: "time-conc-b0821-0507",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "nextMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"March","choices":["March","August","January","April"],"display":{"time":{"k":1,"from":"February","kind":"monthHop"},"promptText":"After February ends, which month begins? Omar turns the page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"March","choices":["March","August","January","April"],"display":{"time":{"k":1,"from":"February","kind":"monthHop"},"promptText":"After February ends, which month begins?"}},
   },
   {
     itemId: "time-conc-b0821-0518",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "nextMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"May","choices":["May","October","March","June"],"display":{"time":{"k":1,"from":"April","kind":"monthHop"},"promptText":"After April ends, which month begins? Finn turns the page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"May","choices":["May","October","March","June"],"display":{"time":{"k":1,"from":"April","kind":"monthHop"},"promptText":"Which month comes right after April?"}},
   },
   {
     itemId: "time-conc-b0821-0520",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "nextMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"July","choices":["December","August","May","July"],"display":{"time":{"k":1,"from":"June","kind":"monthHop"},"promptText":"After June ends, which month begins? Sam turns the page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"July","choices":["December","August","May","July"],"display":{"time":{"k":1,"from":"June","kind":"monthHop"},"promptText":"After June ends, which month begins?"}},
   },
   {
     itemId: "time-conc-b0821-0522",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "nextMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"September","choices":["September","October","July","February"],"display":{"time":{"k":1,"from":"August","kind":"monthHop"},"promptText":"After August ends, which month begins? Kai turns the page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"September","choices":["September","October","July","February"],"display":{"time":{"k":1,"from":"August","kind":"monthHop"},"promptText":"Which month comes right after August?"}},
   },
   {
     itemId: "time-conc-b0821-0524",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "nextMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"November","choices":["November","April","September","December"],"display":{"time":{"k":1,"from":"October","kind":"monthHop"},"promptText":"After October ends, which month begins? Lily turns the page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"November","choices":["November","April","September","December"],"display":{"time":{"k":1,"from":"October","kind":"monthHop"},"promptText":"After October ends, which month begins?"}},
   },
   {
     itemId: "time-conc-b0821-0526",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "nextMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"January","choices":["February","January","November","June"],"display":{"time":{"k":1,"from":"December","kind":"monthHop"},"promptText":"After December ends, which month begins? Leo turns the page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"January","choices":["February","January","November","June"],"display":{"time":{"k":1,"from":"December","kind":"monthHop"},"promptText":"Which month comes right after December?"}},
   },
   {
     itemId: "time-conc-b0821-0528",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "monthFactJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"Zoe says April has 31 days. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":false,"promptText":"Zoe writes: April has 31 days. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0537",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "monthFactJudge",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Ava writes: May has 31 days. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"kind":"claim"},"truth":true,"promptText":"Ava says May has 31 days. Is Ava right?"}},
   },
   {
     itemId: "time-conc-b0821-0542",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "sevenDayCycle",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Monday","choices":["Monday","Sunday","Tuesday","Thursday"],"display":{"time":{"k":7,"from":"Monday","kind":"weekdayHop"},"promptText":"Ida's club meets every 7 days, starting on a Monday. On which day is the NEXT meeting?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Monday","choices":["Monday","Sunday","Tuesday","Thursday"],"display":{"time":{"k":7,"from":"Monday","kind":"weekdayHop"},"promptText":"Ida's club meets every 7 days, starting on a Monday. On which day is the next meeting?"}},
   },
   {
     itemId: "time-conc-b0821-0547",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "sevenDayCycle",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Wednesday","choices":["Tuesday","Wednesday","Saturday","Thursday"],"display":{"time":{"k":7,"from":"Wednesday","kind":"weekdayHop"},"promptText":"Rosa's club meets every 7 days, starting on a Wednesday. On which day is the NEXT meeting?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Wednesday","choices":["Tuesday","Wednesday","Saturday","Thursday"],"display":{"time":{"k":7,"from":"Wednesday","kind":"weekdayHop"},"promptText":"Rosa's club meets every 7 days, starting on a Wednesday. On which day is the next meeting?"}},
   },
   {
     itemId: "time-conc-b0821-0549",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "sevenDayCycle",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Friday","choices":["Saturday","Thursday","Friday","Monday"],"display":{"time":{"k":7,"from":"Friday","kind":"weekdayHop"},"promptText":"Nora's club meets every 7 days, starting on a Friday. On which day is the NEXT meeting?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Friday","choices":["Saturday","Thursday","Friday","Monday"],"display":{"time":{"k":7,"from":"Friday","kind":"weekdayHop"},"promptText":"Nora's club meets every 7 days, starting on a Friday. On which day is the next meeting?"}},
   },
   {
     itemId: "time-conc-b0821-0551",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "sevenDayCycle",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Sunday","choices":["Sunday","Wednesday","Saturday","Monday"],"display":{"time":{"k":7,"from":"Sunday","kind":"weekdayHop"},"promptText":"Ava's club meets every 7 days, starting on a Sunday. On which day is the NEXT meeting?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Sunday","choices":["Sunday","Wednesday","Saturday","Monday"],"display":{"time":{"k":7,"from":"Sunday","kind":"weekdayHop"},"promptText":"Ava's club meets every 7 days, starting on a Sunday. On which day is the next meeting?"}},
   },
   {
     itemId: "time-conc-b0821-0553",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "prevMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"December","choices":["December","February","March","November"],"display":{"time":{"k":-1,"from":"January","kind":"monthHop"},"promptText":"Which month comes just before January? Ben flips back one page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"December","choices":["December","February","March","November"],"display":{"time":{"k":-1,"from":"January","kind":"monthHop"},"promptText":"Which month comes just before January?"}},
   },
   {
     itemId: "time-conc-b0821-0554",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "prevMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"February","choices":["February","May","January","April"],"display":{"time":{"k":-1,"from":"March","kind":"monthHop"},"promptText":"Which month comes just before March? Priya flips back one page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"February","choices":["February","May","January","April"],"display":{"time":{"k":-1,"from":"March","kind":"monthHop"},"promptText":"Which month comes right before March?"}},
   },
   {
     itemId: "time-conc-b0821-0556",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "prevMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"April","choices":["June","March","April","July"],"display":{"time":{"k":-1,"from":"May","kind":"monthHop"},"promptText":"Which month comes just before May? Nia flips back one page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"April","choices":["June","March","April","July"],"display":{"time":{"k":-1,"from":"May","kind":"monthHop"},"promptText":"Which month comes just before May?"}},
   },
   {
     itemId: "time-conc-b0821-0558",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "prevMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"June","choices":["September","June","May","August"],"display":{"time":{"k":-1,"from":"July","kind":"monthHop"},"promptText":"Which month comes just before July? June flips back one page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"June","choices":["September","June","May","August"],"display":{"time":{"k":-1,"from":"July","kind":"monthHop"},"promptText":"Which month comes right before July?"}},
   },
   {
     itemId: "time-conc-b0821-0560",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "prevMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"August","choices":["August","July","November","October"],"display":{"time":{"k":-1,"from":"September","kind":"monthHop"},"promptText":"Which month comes just before September? Amara flips back one page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"August","choices":["August","July","November","October"],"display":{"time":{"k":-1,"from":"September","kind":"monthHop"},"promptText":"Which month comes just before September?"}},
   },
   {
     itemId: "time-conc-b0821-0562",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "prevMonthPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"October","choices":["January","September","December","October"],"display":{"time":{"k":-1,"from":"November","kind":"monthHop"},"promptText":"Which month comes just before November? Mina flips back one page."}},
+    question: {"a":null,"b":null,"op":"count","answer":"October","choices":["January","September","December","October"],"display":{"time":{"k":-1,"from":"November","kind":"monthHop"},"promptText":"Which month comes right before November?"}},
   },
   {
     itemId: "time-conc-b0821-0564",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "monthsLeft",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":10,"kind":"gap","target":12},"promptText":"It is October. How many months are left after it until the year ends? Lily counts on the calendar."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":10,"kind":"gap","target":12},"promptText":"It is October. How many months are left in the year after October?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0566",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "monthsLeft",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":4,"kind":"gap","target":12},"promptText":"After April finishes, how many months of the year remain? Amara wants to know."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"have":4,"kind":"gap","target":12},"promptText":"After April ends, how many months are left in the year?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0567",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":3,"b":24,"kind":"weeksBetween"},"promptText":"Omar marks March 3 and March 24 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":3,"b":24,"kind":"weeksBetween"},"promptText":"Omar marks March 3 and March 24 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0568",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":5,"b":26,"kind":"weeksBetween"},"promptText":"From June 5 to June 26 — how many whole weeks is that? Ben counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":5,"b":26,"kind":"weeksBetween"},"promptText":"How many weeks is it from June 5 to June 26?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0569",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"a":1,"b":29,"kind":"weeksBetween"},"promptText":"Finn marks October 1 and October 29 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"a":1,"b":29,"kind":"weeksBetween"},"promptText":"Finn marks October 1 and October 29 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0570",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":2,"b":23,"kind":"weeksBetween"},"promptText":"From April 2 to April 23 — how many whole weeks is that? Priya counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":2,"b":23,"kind":"weeksBetween"},"promptText":"How many whole weeks are there from April 2 to April 23?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0571",
@@ -11832,7 +11832,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":6,"b":27,"kind":"weeksBetween"},"promptText":"Sam marks August 6 and August 27 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":6,"b":27,"kind":"weeksBetween"},"promptText":"Sam marks August 6 and August 27 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0572",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":4,"b":25,"kind":"weeksBetween"},"promptText":"From January 4 to January 25 — how many whole weeks is that? Nia counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":4,"b":25,"kind":"weeksBetween"},"promptText":"How many weeks is it from January 4 to January 25?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0573",
@@ -11852,7 +11852,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"a":2,"b":30,"kind":"weeksBetween"},"promptText":"Kai marks May 2 and May 30 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"a":2,"b":30,"kind":"weeksBetween"},"promptText":"Kai marks May 2 and May 30 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0574",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":7,"b":21,"kind":"weeksBetween"},"promptText":"From September 7 to September 21 — how many whole weeks is that? June counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":7,"b":21,"kind":"weeksBetween"},"promptText":"How many whole weeks are there from September 7 to September 21?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0575",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":5,"b":26,"kind":"weeksBetween"},"promptText":"Lily marks November 5 and November 26 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":5,"b":26,"kind":"weeksBetween"},"promptText":"Lily marks November 5 and November 26 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0576",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":1,"b":22,"kind":"weeksBetween"},"promptText":"From July 1 to July 22 — how many whole weeks is that? Amara counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":1,"b":22,"kind":"weeksBetween"},"promptText":"How many weeks is it from July 1 to July 22?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0577",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":5,"b":19,"kind":"weeksBetween"},"promptText":"Leo marks February 5 and February 19 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":5,"b":19,"kind":"weeksBetween"},"promptText":"Leo marks February 5 and February 19 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0578",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"a":3,"b":31,"kind":"weeksBetween"},"promptText":"From December 3 to December 31 — how many whole weeks is that? Mina counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"a":3,"b":31,"kind":"weeksBetween"},"promptText":"How many whole weeks are there from December 3 to December 31?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0579",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":10,"b":24,"kind":"weeksBetween"},"promptText":"Theo marks March 10 and March 24 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":10,"b":24,"kind":"weeksBetween"},"promptText":"Theo marks March 10 and March 24 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0580",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":9,"b":30,"kind":"weeksBetween"},"promptText":"From June 9 to June 30 — how many whole weeks is that? Ida counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"a":9,"b":30,"kind":"weeksBetween"},"promptText":"How many weeks is it from June 9 to June 30?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0581",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":8,"b":22,"kind":"weeksBetween"},"promptText":"Zoe marks October 8 and October 22 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":8,"b":22,"kind":"weeksBetween"},"promptText":"Zoe marks October 8 and October 22 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0582",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":6,"b":20,"kind":"weeksBetween"},"promptText":"From April 6 to April 20 — how many whole weeks is that? Rosa counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":6,"b":20,"kind":"weeksBetween"},"promptText":"How many whole weeks are there from April 6 to April 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0583",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"a":3,"b":31,"kind":"weeksBetween"},"promptText":"Diego marks August 3 and August 31 on the calendar. Exactly how many WEEKS apart are they?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"a":3,"b":31,"kind":"weeksBetween"},"promptText":"Diego marks August 3 and August 31 on the calendar. How many weeks apart are the two dates?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0584",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "weeksBetween",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":13,"b":27,"kind":"weeksBetween"},"promptText":"From January 13 to January 27 — how many whole weeks is that? Nora counts by sevens."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"a":13,"b":27,"kind":"weeksBetween"},"promptText":"How many weeks is it from January 13 to January 27?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-conc-b0821-0585",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":3,"b":17,"kind":"spanSaid","said":14},"truth":true,"promptText":"June counts from March 3 to March 17 and gets 14 days. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":3,"b":17,"kind":"spanSaid","said":14},"truth":true,"promptText":"June says it is 14 days from March 3 to March 17. Is June right?"}},
   },
   {
     itemId: "time-conc-b0821-0586",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":5,"b":26,"kind":"spanSaid","said":22},"truth":false,"promptText":"From June 5 to June 26, Lily figures 22 days. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":5,"b":26,"kind":"spanSaid","said":22},"truth":false,"promptText":"From June 5 to June 26, Lily figures 22 days. Is Lily right?"}},
   },
   {
     itemId: "time-conc-b0821-0587",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":8,"b":29,"kind":"spanSaid","said":21},"truth":true,"promptText":"Amara counts from October 8 to October 29 and gets 21 days. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":8,"b":29,"kind":"spanSaid","said":21},"truth":true,"promptText":"Amara says it is 21 days from October 8 to October 29. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0588",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":6,"b":27,"kind":"spanSaid","said":21},"truth":true,"promptText":"Mina counts from August 6 to August 27 and gets 21 days. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":6,"b":27,"kind":"spanSaid","said":21},"truth":true,"promptText":"From August 6 to August 27, Mina figures 21 days. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0590",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":4,"b":25,"kind":"spanSaid","said":22},"truth":false,"promptText":"From January 4 to January 25, Theo figures 22 days. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":4,"b":25,"kind":"spanSaid","said":22},"truth":false,"promptText":"Theo says it is 22 days from January 4 to January 25. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0591",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":9,"b":30,"kind":"spanSaid","said":21},"truth":true,"promptText":"Ida counts from May 9 to May 30 and gets 21 days. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":9,"b":30,"kind":"spanSaid","said":21},"truth":true,"promptText":"From May 9 to May 30, Ida figures 21 days. Is Ida right?"}},
   },
   {
     itemId: "time-conc-b0821-0592",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":3,"b":21,"kind":"spanSaid","said":19},"truth":false,"promptText":"From September 3 to September 21, Zoe figures 19 days. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":3,"b":21,"kind":"spanSaid","said":19},"truth":false,"promptText":"Zoe says it is 19 days from September 3 to September 21. Is Zoe right?"}},
   },
   {
     itemId: "time-conc-b0821-0593",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":7,"b":28,"kind":"spanSaid","said":21},"truth":true,"promptText":"Rosa counts from November 7 to November 28 and gets 21 days. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":7,"b":28,"kind":"spanSaid","said":21},"truth":true,"promptText":"Rosa says it is 21 days from November 7 to November 28. Is Rosa right?"}},
   },
   {
     itemId: "time-conc-b0821-0594",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":1,"b":22,"kind":"spanSaid","said":22},"truth":false,"promptText":"From July 1 to July 22, Diego figures 22 days. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":1,"b":22,"kind":"spanSaid","said":22},"truth":false,"promptText":"From July 1 to July 22, Diego figures 22 days. Is Diego right?"}},
   },
   {
     itemId: "time-conc-b0821-0595",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":5,"b":24,"kind":"spanSaid","said":19},"truth":true,"promptText":"Nora counts from February 5 to February 24 and gets 19 days. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":5,"b":24,"kind":"spanSaid","said":19},"truth":true,"promptText":"Nora says it is 19 days from February 5 to February 24. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0596",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":12,"b":28,"kind":"spanSaid","said":16},"truth":true,"promptText":"Ava counts from March 12 to March 28 and gets 16 days. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":12,"b":28,"kind":"spanSaid","said":16},"truth":true,"promptText":"From March 12 to March 28, Ava figures 16 days. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0598",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":11,"b":30,"kind":"spanSaid","said":20},"truth":false,"promptText":"From June 11 to June 30, Omar figures 20 days. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":11,"b":30,"kind":"spanSaid","said":20},"truth":false,"promptText":"Omar says it is 20 days from June 11 to June 30. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0599",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":2,"b":19,"kind":"spanSaid","said":17},"truth":true,"promptText":"Ben counts from October 2 to October 19 and gets 17 days. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":2,"b":19,"kind":"spanSaid","said":17},"truth":true,"promptText":"From October 2 to October 19, Ben figures 17 days. Is Ben right?"}},
   },
   {
     itemId: "time-conc-b0821-0600",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":9,"b":27,"kind":"spanSaid","said":19},"truth":false,"promptText":"From April 9 to April 27, Finn figures 19 days. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":9,"b":27,"kind":"spanSaid","said":19},"truth":false,"promptText":"Finn says it is 19 days from April 9 to April 27. Is Finn right?"}},
   },
   {
     itemId: "time-conc-b0821-0601",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":13,"b":31,"kind":"spanSaid","said":18},"truth":true,"promptText":"Priya counts from August 13 to August 31 and gets 18 days. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"a":13,"b":31,"kind":"spanSaid","said":18},"truth":true,"promptText":"Priya says it is 18 days from August 13 to August 31. Is Priya right?"}},
   },
   {
     itemId: "time-conc-b0821-0602",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "spanJudgeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":6,"b":20,"kind":"spanSaid","said":15},"truth":false,"promptText":"From January 6 to January 20, Sam figures 15 days. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"a":6,"b":20,"kind":"spanSaid","said":15},"truth":false,"promptText":"From January 6 to January 20, Sam figures 15 days. Is Sam right?"}},
   },
   {
     itemId: "time-conc-b0821-0603",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"March 17","choices":["June 9","March 17"],"display":{"time":{"a":17,"b":9,"kind":"compare"},"promptText":"Which is farther away from the 1st of its month: March 17 or June 9? Ben compares."}},
+    question: {"a":null,"b":null,"op":"count","answer":"March 17","choices":["June 9","March 17"],"display":{"time":{"a":17,"b":9,"kind":"compare"},"promptText":"Which date is farther from the 1st of its month: March 17 or June 9?"}},
   },
   {
     itemId: "time-conc-b0821-0604",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"October 21","choices":["October 21","April 6"],"display":{"time":{"a":6,"b":21,"kind":"compare"},"promptText":"Finn compares two dates: April 6 and October 21. Which sits deeper into its month?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"October 21","choices":["October 21","April 6"],"display":{"time":{"a":6,"b":21,"kind":"compare"},"promptText":"Which date has more days of its month already gone by: April 6 or October 21?"}},
   },
   {
     itemId: "time-conc-b0821-0605",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"August 27","choices":["January 14","August 27"],"display":{"time":{"a":27,"b":14,"kind":"compare"},"promptText":"Which is farther away from the 1st of its month: August 27 or January 14? Priya compares."}},
+    question: {"a":null,"b":null,"op":"count","answer":"August 27","choices":["January 14","August 27"],"display":{"time":{"a":27,"b":14,"kind":"compare"},"promptText":"Which date is farther from the 1st of its month: August 27 or January 14?"}},
   },
   {
     itemId: "time-conc-b0821-0606",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"September 23","choices":["May 8","September 23"],"display":{"time":{"a":8,"b":23,"kind":"compare"},"promptText":"Sam compares two dates: May 8 and September 23. Which sits deeper into its month?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"September 23","choices":["May 8","September 23"],"display":{"time":{"a":8,"b":23,"kind":"compare"},"promptText":"Which date is closer to the end of its month: May 8 or September 23?"}},
   },
   {
     itemId: "time-conc-b0821-0607",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"November 19","choices":["July 4","November 19"],"display":{"time":{"a":19,"b":4,"kind":"compare"},"promptText":"Which is farther away from the 1st of its month: November 19 or July 4? Nia compares."}},
+    question: {"a":null,"b":null,"op":"count","answer":"November 19","choices":["July 4","November 19"],"display":{"time":{"a":19,"b":4,"kind":"compare"},"promptText":"Which date is farther from the 1st of its month: November 19 or July 4?"}},
   },
   {
     itemId: "time-conc-b0821-0608",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"February 24","choices":["February 24","December 11"],"display":{"time":{"a":24,"b":11,"kind":"compare"},"promptText":"Kai compares two dates: February 24 and December 11. Which sits deeper into its month?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"February 24","choices":["February 24","December 11"],"display":{"time":{"a":24,"b":11,"kind":"compare"},"promptText":"Which date has more days of its month already gone by: February 24 or December 11?"}},
   },
   {
     itemId: "time-conc-b0821-0609",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"June 28","choices":["June 28","March 5"],"display":{"time":{"a":5,"b":28,"kind":"compare"},"promptText":"Which is farther away from the 1st of its month: March 5 or June 28? June compares."}},
+    question: {"a":null,"b":null,"op":"count","answer":"June 28","choices":["June 28","March 5"],"display":{"time":{"a":5,"b":28,"kind":"compare"},"promptText":"Which date is farther from the 1st of its month: March 5 or June 28?"}},
   },
   {
     itemId: "time-conc-b0821-0610",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"April 22","choices":["October 7","April 22"],"display":{"time":{"a":22,"b":7,"kind":"compare"},"promptText":"Lily compares two dates: April 22 and October 7. Which sits deeper into its month?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"April 22","choices":["October 7","April 22"],"display":{"time":{"a":22,"b":7,"kind":"compare"},"promptText":"Which date is closer to the end of its month: April 22 or October 7?"}},
   },
   {
     itemId: "time-conc-b0821-0611",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"January 30","choices":["August 3","January 30"],"display":{"time":{"a":3,"b":30,"kind":"compare"},"promptText":"Which is farther away from the 1st of its month: August 3 or January 30? Amara compares."}},
+    question: {"a":null,"b":null,"op":"count","answer":"January 30","choices":["August 3","January 30"],"display":{"time":{"a":3,"b":30,"kind":"compare"},"promptText":"Which date is farther from the 1st of its month: August 3 or January 30?"}},
   },
   {
     itemId: "time-conc-b0821-0612",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"May 26","choices":["May 26","September 12"],"display":{"time":{"a":26,"b":12,"kind":"compare"},"promptText":"Leo compares two dates: May 26 and September 12. Which sits deeper into its month?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"May 26","choices":["May 26","September 12"],"display":{"time":{"a":26,"b":12,"kind":"compare"},"promptText":"Which date has more days of its month already gone by: May 26 or September 12?"}},
   },
   {
     itemId: "time-conc-b0821-0613",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"July 18","choices":["November 2","July 18"],"display":{"time":{"a":2,"b":18,"kind":"compare"},"promptText":"Which is farther away from the 1st of its month: November 2 or July 18? Mina compares."}},
+    question: {"a":null,"b":null,"op":"count","answer":"July 18","choices":["November 2","July 18"],"display":{"time":{"a":2,"b":18,"kind":"compare"},"promptText":"Which date is farther from the 1st of its month: November 2 or July 18?"}},
   },
   {
     itemId: "time-conc-b0821-0614",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"December 29","choices":["February 15","December 29"],"display":{"time":{"a":15,"b":29,"kind":"compare"},"promptText":"Theo compares two dates: February 15 and December 29. Which sits deeper into its month?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"December 29","choices":["February 15","December 29"],"display":{"time":{"a":15,"b":29,"kind":"compare"},"promptText":"Which date is closer to the end of its month: February 15 or December 29?"}},
   },
   {
     itemId: "time-conc-b0821-0615",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"March 20","choices":["June 6","March 20"],"display":{"time":{"a":20,"b":6,"kind":"compare"},"promptText":"Which is farther away from the 1st of its month: March 20 or June 6? Ida compares."}},
+    question: {"a":null,"b":null,"op":"count","answer":"March 20","choices":["June 6","March 20"],"display":{"time":{"a":20,"b":6,"kind":"compare"},"promptText":"Which date is farther from the 1st of its month: March 20 or June 6?"}},
   },
   {
     itemId: "time-conc-b0821-0616",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"October 25","choices":["April 11","October 25"],"display":{"time":{"a":11,"b":25,"kind":"compare"},"promptText":"Zoe compares two dates: April 11 and October 25. Which sits deeper into its month?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"October 25","choices":["April 11","October 25"],"display":{"time":{"a":11,"b":25,"kind":"compare"},"promptText":"Which date has more days of its month already gone by: April 11 or October 25?"}},
   },
   {
     itemId: "time-conc-b0821-0617",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "deeperDate",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"August 16","choices":["August 16","January 8"],"display":{"time":{"a":16,"b":8,"kind":"compare"},"promptText":"Which is farther away from the 1st of its month: August 16 or January 8? Rosa compares."}},
+    question: {"a":null,"b":null,"op":"count","answer":"August 16","choices":["August 16","January 8"],"display":{"time":{"a":16,"b":8,"kind":"compare"},"promptText":"Which date is farther from the 1st of its month: August 16 or January 8?"}},
   },
   {
     itemId: "time-proc-b0821-0001",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":1,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"This clock shows one o'clock or half past one. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":1,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"How many minutes past one o'clock does this clock show?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0003",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":2,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"This clock shows two o'clock or half past two. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":2,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"How many minutes past two o'clock does this clock show?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0005",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":3,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"This clock shows three o'clock or half past three. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":3,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"Read this clock. How many minutes after three o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0007",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":4,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"This clock shows four o'clock or half past four. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":4,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"How many minutes past four o'clock does this clock show?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0009",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":5,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"This clock shows five o'clock or half past five. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":5,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"Read this clock. How many minutes after five o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0011",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":6,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"This clock shows six o'clock or half past six. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":6,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"How many minutes past six o'clock does this clock show?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0013",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":7,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"This clock shows seven o'clock or half past seven. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":7,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"Read this clock. How many minutes after seven o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0015",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":8,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"This clock shows eight o'clock or half past eight. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":8,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"How many minutes past eight o'clock does this clock show?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0017",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":9,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"This clock shows nine o'clock or half past nine. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":9,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"Read this clock. How many minutes after nine o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0019",
@@ -12492,7 +12492,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":10,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"This clock shows ten o'clock or half past ten. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":10,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"How many minutes past ten o'clock does this clock show?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0021",
@@ -12512,7 +12512,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":11,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"This clock shows eleven o'clock or half past eleven. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":11,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"Read this clock. How many minutes after eleven o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0023",
@@ -12532,7 +12532,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":12,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"This clock shows twelve o'clock or half past twelve. Type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":12,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"How many minutes past twelve o'clock does this clock show?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0025",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":1,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"A clock that reads one o'clock or half past — type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":1,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"Read this clock. How many minutes after one o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0026",
@@ -12552,7 +12552,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":2,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"A clock that reads two o'clock or half past — type the minutes past the hour."},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":2,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"Read this clock. How many minutes after two o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0027",
@@ -12562,7 +12562,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":1,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"Look at the clock near one. How many minutes past the hour is it?"},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"hour":1,"time":{"kind":"faceRead","minute":30},"type":"clock","minute":30,"promptText":"Look at the clock face. How many minutes past one o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0028",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "faceReadTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":2,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"Look at the clock near two. How many minutes past the hour is it?"},"answerType":"clock"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"hour":2,"time":{"kind":"faceRead","minute":0},"type":"clock","minute":0,"promptText":"Look at the clock face. How many minutes past two o'clock is it?"},"answerType":"clock"},
   },
   {
     itemId: "time-proc-b0821-0029",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":1,"kind":"gap","target":4},"promptText":"From one o'clock to four o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":1,"kind":"gap","target":4},"promptText":"How many hours is it from one o'clock to four o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0159",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":6,"kind":"gap","target":9},"promptText":"From six o'clock to nine o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":6,"kind":"gap","target":9},"promptText":"How many hours pass from six o'clock to nine o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0161",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":4,"kind":"gap","target":6},"promptText":"From four o'clock to six o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":4,"kind":"gap","target":6},"promptText":"How many hours is it from four o'clock to six o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0163",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":5,"kind":"gap","target":11},"promptText":"From five o'clock to eleven o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":5,"kind":"gap","target":11},"promptText":"How many hours pass from five o'clock to eleven o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0165",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":3,"kind":"gap","target":4},"promptText":"From three o'clock to four o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":3,"kind":"gap","target":4},"promptText":"How many hours is it from three o'clock to four o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0167",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":2,"kind":"gap","target":6},"promptText":"From two o'clock to six o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":2,"kind":"gap","target":6},"promptText":"How many hours pass from two o'clock to six o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0169",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"promptText":"From four o'clock to nine o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":4,"kind":"gap","target":9},"promptText":"How many hours is it from four o'clock to nine o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0171",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"promptText":"From three o'clock to eight o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":3,"kind":"gap","target":8},"promptText":"How many hours pass from three o'clock to eight o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0173",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":1,"kind":"gap","target":2},"promptText":"From one o'clock to two o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":1,"kind":"gap","target":2},"promptText":"How many hours is it from one o'clock to two o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0175",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":2,"kind":"gap","target":3},"promptText":"From two o'clock to three o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"have":2,"kind":"gap","target":3},"promptText":"How many hours pass from two o'clock to three o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0177",
@@ -14072,7 +14072,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":7,"kind":"gap","target":11},"promptText":"From seven o'clock to eleven o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":7,"kind":"gap","target":11},"promptText":"How many hours is it from seven o'clock to eleven o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0179",
@@ -14092,7 +14092,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":5,"kind":"gap","target":9},"promptText":"From five o'clock to nine o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"have":5,"kind":"gap","target":9},"promptText":"How many hours pass from five o'clock to nine o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0181",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "wholeHoursTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":6,"kind":"gap","target":11},"promptText":"From six o'clock to eleven o'clock = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":6,"kind":"gap","target":11},"promptText":"How many hours is it from six o'clock to eleven o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0183",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"hour":2,"kind":"hourLater","delta":1},"promptText":"It is two o'clock. What hour will it be one hour later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"hour":2,"kind":"hourLater","delta":1},"promptText":"It is two o'clock. What hour will it be one hour later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0184",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"time":{"hour":5,"kind":"hourLater","delta":1},"promptText":"One hour after five o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"time":{"hour":5,"kind":"hourLater","delta":1},"promptText":"What hour will the clock show one hour after five o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0185",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"time":{"hour":9,"kind":"hourLater","delta":1},"promptText":"It is nine o'clock. What hour will it be one hour later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"time":{"hour":9,"kind":"hourLater","delta":1},"promptText":"It is nine o'clock. What hour will it be one hour later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0186",
@@ -14152,7 +14152,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"time":{"hour":11,"kind":"hourLater","delta":1},"promptText":"One hour after eleven o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"time":{"hour":11,"kind":"hourLater","delta":1},"promptText":"What hour will the clock show one hour after eleven o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0187",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"time":{"hour":3,"kind":"hourLater","delta":2},"promptText":"It is three o'clock. What hour will it be two hours later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"time":{"hour":3,"kind":"hourLater","delta":2},"promptText":"It is three o'clock. What hour will it be two hours later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0188",
@@ -14172,7 +14172,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"time":{"hour":7,"kind":"hourLater","delta":2},"promptText":"two hours after seven o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"time":{"hour":7,"kind":"hourLater","delta":2},"promptText":"What hour will the clock show two hours after seven o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0189",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"time":{"hour":10,"kind":"hourLater","delta":2},"promptText":"It is ten o'clock. What hour will it be two hours later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"time":{"hour":10,"kind":"hourLater","delta":2},"promptText":"It is ten o'clock. What hour will it be two hours later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0190",
@@ -14192,7 +14192,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"hour":1,"kind":"hourLater","delta":3},"promptText":"three hours after one o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"hour":1,"kind":"hourLater","delta":3},"promptText":"What hour will the clock show three hours after one o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0191",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":4,"kind":"hourLater","delta":3},"promptText":"It is four o'clock. What hour will it be three hours later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":4,"kind":"hourLater","delta":3},"promptText":"It is four o'clock. What hour will it be three hours later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0192",
@@ -14212,7 +14212,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"time":{"hour":8,"kind":"hourLater","delta":3},"promptText":"three hours after eight o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"time":{"hour":8,"kind":"hourLater","delta":3},"promptText":"What hour will the clock show three hours after eight o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0193",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":6,"kind":"hourLater","delta":1},"promptText":"It is six o'clock. What hour will it be one hour later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":6,"kind":"hourLater","delta":1},"promptText":"It is six o'clock. What hour will it be one hour later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0194",
@@ -14232,7 +14232,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"hour":12,"kind":"hourLater","delta":2},"promptText":"two hours after twelve o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"time":{"hour":12,"kind":"hourLater","delta":2},"promptText":"What hour will the clock show two hours after twelve o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0195",
@@ -14242,7 +14242,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"time":{"hour":2,"kind":"hourLater","delta":3},"promptText":"It is two o'clock. What hour will it be three hours later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"time":{"hour":2,"kind":"hourLater","delta":3},"promptText":"It is two o'clock. What hour will it be three hours later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0196",
@@ -14252,7 +14252,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":5,"kind":"hourLater","delta":2},"promptText":"two hours after five o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"time":{"hour":5,"kind":"hourLater","delta":2},"promptText":"What hour will the clock show two hours after five o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0197",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"time":{"hour":9,"kind":"hourLater","delta":3},"promptText":"It is nine o'clock. What hour will it be three hours later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"time":{"hour":9,"kind":"hourLater","delta":3},"promptText":"It is nine o'clock. What hour will it be three hours later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0198",
@@ -14272,7 +14272,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"hour":3,"kind":"hourLater","delta":1},"promptText":"One hour after three o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"time":{"hour":3,"kind":"hourLater","delta":1},"promptText":"What hour will the clock show one hour after three o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0199",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"time":{"hour":7,"kind":"hourLater","delta":1},"promptText":"It is seven o'clock. What hour will it be one hour later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"time":{"hour":7,"kind":"hourLater","delta":1},"promptText":"It is seven o'clock. What hour will it be one hour later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0200",
@@ -14292,7 +14292,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":10,"kind":"hourLater","delta":3},"promptText":"three hours after ten o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":10,"kind":"hourLater","delta":3},"promptText":"What hour will the clock show three hours after ten o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0201",
@@ -14302,7 +14302,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"hour":1,"kind":"hourLater","delta":2},"promptText":"It is one o'clock. What hour will it be two hours later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"time":{"hour":1,"kind":"hourLater","delta":2},"promptText":"It is one o'clock. What hour will it be two hours later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0202",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"time":{"hour":4,"kind":"hourLater","delta":1},"promptText":"One hour after four o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"time":{"hour":4,"kind":"hourLater","delta":1},"promptText":"What hour will the clock show one hour after four o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0203",
@@ -14322,7 +14322,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"time":{"hour":8,"kind":"hourLater","delta":2},"promptText":"It is eight o'clock. What hour will it be two hours later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"time":{"hour":8,"kind":"hourLater","delta":2},"promptText":"It is eight o'clock. What hour will it be two hours later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0204",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"time":{"hour":6,"kind":"hourLater","delta":3},"promptText":"three hours after six o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"time":{"hour":6,"kind":"hourLater","delta":3},"promptText":"What hour will the clock show three hours after six o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0205",
@@ -14342,7 +14342,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":12,"kind":"hourLater","delta":1},"promptText":"It is twelve o'clock. What hour will it be one hour later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":12,"kind":"hourLater","delta":1},"promptText":"It is twelve o'clock. What hour will it be one hour later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0206",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":11,"kind":"hourLater","delta":2},"promptText":"two hours after eleven o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"time":{"hour":11,"kind":"hourLater","delta":2},"promptText":"What hour will the clock show two hours after eleven o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0207",
@@ -14362,7 +14362,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"time":{"hour":4,"kind":"hourLater","delta":2},"promptText":"It is four o'clock. What hour will it be two hours later? Answer with the hour number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"time":{"hour":4,"kind":"hourLater","delta":2},"promptText":"It is four o'clock. What hour will it be two hours later?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0208",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "hourLaterTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"time":{"hour":6,"kind":"hourLater","delta":2},"promptText":"two hours after six o'clock, the clock shows ? o'clock"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"time":{"hour":6,"kind":"hourLater","delta":2},"promptText":"What hour will the clock show two hours after six o'clock?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0209",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":485,"kind":"gap","target":510},"promptText":"From 8:05 to 8:30 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":485,"kind":"gap","target":510},"promptText":"How many minutes is it from 8:05 to 8:30?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0211",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":380,"kind":"gap","target":415},"promptText":"From 6:20 to 6:55 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":380,"kind":"gap","target":415},"promptText":"How many minutes pass from 6:20 to 6:55?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0213",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":325,"kind":"gap","target":345},"promptText":"From 5:25 to 5:45 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":325,"kind":"gap","target":345},"promptText":"From 5:25 to 5:45 is __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0215",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":75,"kind":"gap","target":100},"promptText":"From 1:15 to 1:40 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":75,"kind":"gap","target":100},"promptText":"How many minutes is it from 1:15 to 1:40?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0217",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":270,"kind":"gap","target":295},"promptText":"From 4:30 to 4:55 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":270,"kind":"gap","target":295},"promptText":"How many minutes pass from 4:30 to 4:55?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0219",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":740,"kind":"gap","target":765},"promptText":"From 12:20 to 12:45 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":740,"kind":"gap","target":765},"promptText":"From 12:20 to 12:45 is __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0221",
@@ -14512,7 +14512,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":505,"kind":"gap","target":530},"promptText":"From 8:25 to 8:50 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":505,"kind":"gap","target":530},"promptText":"How many minutes is it from 8:25 to 8:50?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0223",
@@ -14532,7 +14532,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":370,"kind":"gap","target":410},"promptText":"From 6:10 to 6:50 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":370,"kind":"gap","target":410},"promptText":"How many minutes pass from 6:10 to 6:50?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0225",
@@ -14552,7 +14552,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":305,"kind":"gap","target":355},"promptText":"From 5:05 to 5:55 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":305,"kind":"gap","target":355},"promptText":"From 5:05 to 5:55 is __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0227",
@@ -14572,7 +14572,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":70,"kind":"gap","target":95},"promptText":"From 1:10 to 1:35 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":70,"kind":"gap","target":95},"promptText":"How many minutes is it from 1:10 to 1:35?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0229",
@@ -14592,7 +14592,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":245,"kind":"gap","target":265},"promptText":"From 4:05 to 4:25 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":245,"kind":"gap","target":265},"promptText":"How many minutes pass from 4:05 to 4:25?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0231",
@@ -14612,7 +14612,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":730,"kind":"gap","target":750},"promptText":"From 12:10 to 12:30 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":730,"kind":"gap","target":750},"promptText":"From 12:10 to 12:30 is __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0233",
@@ -14632,7 +14632,7 @@ export const ITEMS = [
     structureType: "withinHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":385,"kind":"gap","target":400},"promptText":"From 6:25 to 6:40 = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":385,"kind":"gap","target":400},"promptText":"How many minutes is it from 6:25 to 6:40?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0235",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":350,"kind":"gap","target":380},"promptText":"From 5:50 to 6:20, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":350,"kind":"gap","target":380},"promptText":"How many minutes is it from 5:50 to 6:20?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0237",
@@ -14672,7 +14672,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":705,"kind":"gap","target":750},"promptText":"From 11:45 to 12:30, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":705,"kind":"gap","target":750},"promptText":"How many minutes pass from 11:45 to 12:30?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0239",
@@ -14692,7 +14692,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":400,"kind":"gap","target":425},"promptText":"From 6:40 to 7:05, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":400,"kind":"gap","target":425},"promptText":"From 6:40 to 7:05 is __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0241",
@@ -14712,7 +14712,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":110,"kind":"gap","target":160},"promptText":"From 1:50 to 2:40, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":110,"kind":"gap","target":160},"promptText":"How many minutes is it from 1:50 to 2:40?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0243",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":475,"kind":"gap","target":510},"promptText":"From 7:55 to 8:30, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":475,"kind":"gap","target":510},"promptText":"How many minutes pass from 7:55 to 8:30?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0245",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":155,"kind":"gap","target":195},"promptText":"From 2:35 to 3:15, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":155,"kind":"gap","target":195},"promptText":"From 2:35 to 3:15 is __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0247",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":530,"kind":"gap","target":585},"promptText":"From 8:50 to 9:45, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":530,"kind":"gap","target":585},"promptText":"How many minutes is it from 8:50 to 9:45?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0249",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":220,"kind":"gap","target":270},"promptText":"From 3:40 to 4:30, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":220,"kind":"gap","target":270},"promptText":"How many minutes pass from 3:40 to 4:30?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0251",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":585,"kind":"gap","target":615},"promptText":"From 9:45 to 10:15, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":585,"kind":"gap","target":615},"promptText":"From 9:45 to 10:15 is __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0253",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":290,"kind":"gap","target":325},"promptText":"From 4:50 to 5:25, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":290,"kind":"gap","target":325},"promptText":"How many minutes is it from 4:50 to 5:25?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0255",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":655,"kind":"gap","target":710},"promptText":"From 10:55 to 11:50, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":655,"kind":"gap","target":710},"promptText":"How many minutes pass from 10:55 to 11:50?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0257",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":335,"kind":"gap","target":370},"promptText":"From 5:35 to 6:10, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":335,"kind":"gap","target":370},"promptText":"From 5:35 to 6:10 is __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0259",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "acrossHourMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":770,"kind":"gap","target":810},"promptText":"From 12:50 to 1:30, going past the o'clock = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":770,"kind":"gap","target":810},"promptText":"How many minutes is it from 12:50 to 1:30?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0261",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "unitFactTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"time":{"n":1,"kind":"unit","unit":"hour"},"promptText":"1 hour = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"time":{"n":1,"kind":"unit","unit":"hour"},"promptText":"1 hour = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0314",
@@ -15432,7 +15432,7 @@ export const ITEMS = [
     structureType: "unitFactTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"time":{"n":1,"kind":"unit","unit":"minute"},"promptText":"1 minute = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"time":{"n":1,"kind":"unit","unit":"minute"},"promptText":"How many seconds are in 1 minute?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0315",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "unitFactTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"time":{"n":1,"kind":"unit","unit":"day"},"promptText":"1 day = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"time":{"n":1,"kind":"unit","unit":"day"},"promptText":"1 day = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0316",
@@ -15450,9 +15450,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"time":{"n":2,"kind":"unit","unit":"hour"},"promptText":"2 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"time":{"n":2,"kind":"unit","unit":"hour"},"promptText":"How many minutes are in 2 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0317",
@@ -15462,7 +15462,7 @@ export const ITEMS = [
     structureType: "unitFactTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"n":1,"kind":"unit","unit":"halfHour"},"promptText":"Half an hour = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"n":1,"kind":"unit","unit":"halfHour"},"promptText":"How many minutes are in half an hour?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0318",
@@ -15470,9 +15470,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"time":{"n":2,"kind":"unit","unit":"minute"},"promptText":"2 minutes = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"time":{"n":2,"kind":"unit","unit":"minute"},"promptText":"How many seconds are in 2 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0319",
@@ -15480,9 +15480,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"time":{"n":2,"kind":"unit","unit":"day"},"promptText":"2 days = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"time":{"n":2,"kind":"unit","unit":"day"},"promptText":"2 days = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0320",
@@ -15490,9 +15490,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"time":{"n":3,"kind":"unit","unit":"hour"},"promptText":"3 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"time":{"n":3,"kind":"unit","unit":"hour"},"promptText":"3 hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0321",
@@ -15502,7 +15502,7 @@ export const ITEMS = [
     structureType: "unitFactTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"n":1,"kind":"unit","unit":"halfMinute"},"promptText":"Half a minute = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"n":1,"kind":"unit","unit":"halfMinute"},"promptText":"How many seconds are in half a minute?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0322",
@@ -15510,9 +15510,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"time":{"n":3,"kind":"unit","unit":"day"},"promptText":"3 days = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"time":{"n":3,"kind":"unit","unit":"day"},"promptText":"How many hours are in 3 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0323",
@@ -15520,9 +15520,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"time":{"n":3,"kind":"unit","unit":"minute"},"promptText":"3 minutes = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"time":{"n":3,"kind":"unit","unit":"minute"},"promptText":"3 minutes = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0324",
@@ -15530,9 +15530,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"time":{"n":4,"kind":"unit","unit":"hour"},"promptText":"4 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"time":{"n":4,"kind":"unit","unit":"hour"},"promptText":"How many minutes are in 4 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0325",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "unitFactTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"time":{"n":1,"kind":"unit","unit":"quarterHour"},"promptText":"A quarter of an hour = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"time":{"n":1,"kind":"unit","unit":"quarterHour"},"promptText":"How many minutes are in a quarter of an hour?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0326",
@@ -15550,9 +15550,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"time":{"n":5,"kind":"unit","unit":"hour"},"promptText":"5 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"time":{"n":5,"kind":"unit","unit":"hour"},"promptText":"5 hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0327",
@@ -15560,9 +15560,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"time":{"n":4,"kind":"unit","unit":"minute"},"promptText":"4 minutes = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"time":{"n":4,"kind":"unit","unit":"minute"},"promptText":"How many seconds are in 4 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0328",
@@ -15570,9 +15570,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"time":{"n":5,"kind":"unit","unit":"minute"},"promptText":"5 minutes = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"time":{"n":5,"kind":"unit","unit":"minute"},"promptText":"5 minutes = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0329",
@@ -15580,9 +15580,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"time":{"n":10,"kind":"unit","unit":"hour"},"promptText":"10 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"time":{"n":10,"kind":"unit","unit":"hour"},"promptText":"How many minutes are in 10 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0330",
@@ -15590,9 +15590,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"time":{"n":6,"kind":"unit","unit":"hour"},"promptText":"6 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"time":{"n":6,"kind":"unit","unit":"hour"},"promptText":"6 hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0331",
@@ -15600,9 +15600,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"time":{"n":4,"kind":"unit","unit":"day"},"promptText":"4 days = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"time":{"n":4,"kind":"unit","unit":"day"},"promptText":"4 days = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0332",
@@ -15610,9 +15610,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"time":{"n":10,"kind":"unit","unit":"minute"},"promptText":"10 minutes = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":600,"display":{"time":{"n":10,"kind":"unit","unit":"minute"},"promptText":"How many seconds are in 10 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0333",
@@ -15620,9 +15620,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":420,"display":{"time":{"n":7,"kind":"unit","unit":"hour"},"promptText":"7 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":420,"display":{"time":{"n":7,"kind":"unit","unit":"hour"},"promptText":"How many minutes are in 7 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0334",
@@ -15630,9 +15630,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"time":{"n":6,"kind":"unit","unit":"minute"},"promptText":"6 minutes = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"time":{"n":6,"kind":"unit","unit":"minute"},"promptText":"6 minutes = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0335",
@@ -15640,9 +15640,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":480,"display":{"time":{"n":8,"kind":"unit","unit":"hour"},"promptText":"8 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":480,"display":{"time":{"n":8,"kind":"unit","unit":"hour"},"promptText":"8 hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0336",
@@ -15650,9 +15650,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"time":{"n":5,"kind":"unit","unit":"day"},"promptText":"5 days = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"time":{"n":5,"kind":"unit","unit":"day"},"promptText":"How many hours are in 5 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0337",
@@ -15660,9 +15660,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":540,"display":{"time":{"n":9,"kind":"unit","unit":"hour"},"promptText":"9 hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":540,"display":{"time":{"n":9,"kind":"unit","unit":"hour"},"promptText":"How many minutes are in 9 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0338",
@@ -15670,9 +15670,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "unitFactTeen",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":420,"display":{"time":{"n":7,"kind":"unit","unit":"minute"},"promptText":"7 minutes = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":420,"display":{"time":{"n":7,"kind":"unit","unit":"minute"},"promptText":"How many seconds are in 7 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0339",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "halfHourLadder",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"n":1,"kind":"halfHours"},"promptText":"1 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"n":1,"kind":"halfHours"},"promptText":"1 half hour = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0349",
@@ -15782,7 +15782,7 @@ export const ITEMS = [
     structureType: "halfHourLadder",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"time":{"n":2,"kind":"halfHours"},"promptText":"2 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"time":{"n":2,"kind":"halfHours"},"promptText":"How many minutes are in 2 half hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0350",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "halfHourLadder",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"time":{"n":3,"kind":"halfHours"},"promptText":"3 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"time":{"n":3,"kind":"halfHours"},"promptText":"3 half hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0351",
@@ -15800,9 +15800,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"time":{"n":4,"kind":"halfHours"},"promptText":"4 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"time":{"n":4,"kind":"halfHours"},"promptText":"How many minutes are in 4 half hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0352",
@@ -15810,9 +15810,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"time":{"n":5,"kind":"halfHours"},"promptText":"5 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"time":{"n":5,"kind":"halfHours"},"promptText":"5 half hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0353",
@@ -15820,9 +15820,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"time":{"n":6,"kind":"halfHours"},"promptText":"6 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"time":{"n":6,"kind":"halfHours"},"promptText":"How many minutes are in 6 half hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0354",
@@ -15830,9 +15830,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"time":{"n":7,"kind":"halfHours"},"promptText":"7 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"time":{"n":7,"kind":"halfHours"},"promptText":"7 half hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0355",
@@ -15840,9 +15840,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"time":{"n":8,"kind":"halfHours"},"promptText":"8 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"time":{"n":8,"kind":"halfHours"},"promptText":"How many minutes are in 8 half hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0356",
@@ -15850,9 +15850,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"time":{"n":9,"kind":"halfHours"},"promptText":"9 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"time":{"n":9,"kind":"halfHours"},"promptText":"9 half hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0357",
@@ -15860,9 +15860,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"time":{"n":10,"kind":"halfHours"},"promptText":"10 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":300,"display":{"time":{"n":10,"kind":"halfHours"},"promptText":"How many minutes are in 10 half hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0358",
@@ -15870,9 +15870,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"time":{"n":11,"kind":"halfHours"},"promptText":"11 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"time":{"n":11,"kind":"halfHours"},"promptText":"11 half hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0359",
@@ -15880,9 +15880,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"time":{"n":12,"kind":"halfHours"},"promptText":"12 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"time":{"n":12,"kind":"halfHours"},"promptText":"How many minutes are in 12 half hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0360",
@@ -15890,9 +15890,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":390,"display":{"time":{"n":13,"kind":"halfHours"},"promptText":"13 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":390,"display":{"time":{"n":13,"kind":"halfHours"},"promptText":"13 half hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0361",
@@ -15900,9 +15900,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":420,"display":{"time":{"n":14,"kind":"halfHours"},"promptText":"14 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":420,"display":{"time":{"n":14,"kind":"halfHours"},"promptText":"How many minutes are in 14 half hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0362",
@@ -15910,9 +15910,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":450,"display":{"time":{"n":15,"kind":"halfHours"},"promptText":"15 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":450,"display":{"time":{"n":15,"kind":"halfHours"},"promptText":"15 half hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0363",
@@ -15920,9 +15920,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":480,"display":{"time":{"n":16,"kind":"halfHours"},"promptText":"16 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":480,"display":{"time":{"n":16,"kind":"halfHours"},"promptText":"How many minutes are in 16 half hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0364",
@@ -15930,9 +15930,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "timeConcepts",
     structureType: "halfHourLadder",
-    levelRange: [1,3],
+    levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":510,"display":{"time":{"n":17,"kind":"halfHours"},"promptText":"17 half hours = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":510,"display":{"time":{"n":17,"kind":"halfHours"},"promptText":"17 half hours = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0365",
@@ -15942,7 +15942,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[60,15]},"promptText":"1 hour 15 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"counting":{"kind":"sum","parts":[60,15]},"promptText":"1 hour 15 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0366",
@@ -15952,7 +15952,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"sum","parts":[60,30]},"promptText":"1 hour 30 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"counting":{"kind":"sum","parts":[60,30]},"promptText":"How many minutes are in 1 hour 30 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0367",
@@ -15962,7 +15962,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":105,"display":{"counting":{"kind":"sum","parts":[60,45]},"promptText":"1 hour 45 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":105,"display":{"counting":{"kind":"sum","parts":[60,45]},"promptText":"1 hour 45 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0368",
@@ -15972,7 +15972,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":130,"display":{"counting":{"kind":"sum","parts":[120,10]},"promptText":"2 hours 10 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":130,"display":{"counting":{"kind":"sum","parts":[120,10]},"promptText":"2 hours 10 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0369",
@@ -15982,7 +15982,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"kind":"sum","parts":[120,30]},"promptText":"2 hours 30 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"kind":"sum","parts":[120,30]},"promptText":"How many minutes are in 2 hours 30 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0370",
@@ -15992,7 +15992,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"counting":{"kind":"sum","parts":[120,45]},"promptText":"2 hours 45 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"counting":{"kind":"sum","parts":[120,45]},"promptText":"2 hours 45 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0371",
@@ -16002,7 +16002,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"sum","parts":[180,20]},"promptText":"3 hours 20 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"counting":{"kind":"sum","parts":[180,20]},"promptText":"How many minutes are in 3 hours 20 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0372",
@@ -16012,7 +16012,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"counting":{"kind":"sum","parts":[180,40]},"promptText":"3 hours 40 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":220,"display":{"counting":{"kind":"sum","parts":[180,40]},"promptText":"3 hours 40 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0373",
@@ -16022,7 +16022,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"kind":"sum","parts":[60,5]},"promptText":"1 hour 5 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"counting":{"kind":"sum","parts":[60,5]},"promptText":"How many minutes are in 1 hour 5 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0374",
@@ -16032,7 +16032,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"counting":{"kind":"sum","parts":[60,50]},"promptText":"1 hour 50 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"counting":{"kind":"sum","parts":[60,50]},"promptText":"1 hour 50 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0375",
@@ -16042,7 +16042,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"counting":{"kind":"sum","parts":[120,5]},"promptText":"2 hours 5 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"counting":{"kind":"sum","parts":[120,5]},"promptText":"How many minutes are in 2 hours 5 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0376",
@@ -16052,7 +16052,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":175,"display":{"counting":{"kind":"sum","parts":[120,55]},"promptText":"2 hours 55 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":175,"display":{"counting":{"kind":"sum","parts":[120,55]},"promptText":"2 hours 55 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0377",
@@ -16062,7 +16062,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":195,"display":{"counting":{"kind":"sum","parts":[180,15]},"promptText":"3 hours 15 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":195,"display":{"counting":{"kind":"sum","parts":[180,15]},"promptText":"How many minutes are in 3 hours 15 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0378",
@@ -16072,7 +16072,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"counting":{"kind":"sum","parts":[240,10]},"promptText":"4 hours 10 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"counting":{"kind":"sum","parts":[240,10]},"promptText":"4 hours 10 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0379",
@@ -16082,7 +16082,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"kind":"sum","parts":[60,25]},"promptText":"1 hour 25 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"counting":{"kind":"sum","parts":[60,25]},"promptText":"How many minutes are in 1 hour 25 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0380",
@@ -16092,7 +16092,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"counting":{"kind":"sum","parts":[60,40]},"promptText":"1 hour 40 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"counting":{"kind":"sum","parts":[60,40]},"promptText":"1 hour 40 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0381",
@@ -16102,7 +16102,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"counting":{"kind":"sum","parts":[120,20]},"promptText":"2 hours 20 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"counting":{"kind":"sum","parts":[120,20]},"promptText":"How many minutes are in 2 hours 20 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0382",
@@ -16112,7 +16112,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"counting":{"kind":"sum","parts":[120,35]},"promptText":"2 hours 35 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"counting":{"kind":"sum","parts":[120,35]},"promptText":"2 hours 35 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0383",
@@ -16122,7 +16122,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"counting":{"kind":"sum","parts":[180,5]},"promptText":"3 hours 5 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"counting":{"kind":"sum","parts":[180,5]},"promptText":"How many minutes are in 3 hours 5 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0384",
@@ -16132,7 +16132,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"counting":{"kind":"sum","parts":[240,30]},"promptText":"4 hours 30 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"counting":{"kind":"sum","parts":[240,30]},"promptText":"4 hours 30 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0385",
@@ -16142,7 +16142,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"counting":{"kind":"sum","parts":[60,55]},"promptText":"1 hour 55 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"counting":{"kind":"sum","parts":[60,55]},"promptText":"How many minutes are in 1 hour 55 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0386",
@@ -16152,7 +16152,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":230,"display":{"counting":{"kind":"sum","parts":[180,50]},"promptText":"3 hours 50 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":230,"display":{"counting":{"kind":"sum","parts":[180,50]},"promptText":"How many minutes are in 3 hours 50 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0387",
@@ -16162,7 +16162,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":285,"display":{"counting":{"kind":"sum","parts":[240,45]},"promptText":"4 hours 45 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":285,"display":{"counting":{"kind":"sum","parts":[240,45]},"promptText":"4 hours 45 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0388",
@@ -16172,7 +16172,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":145,"display":{"counting":{"kind":"sum","parts":[120,25]},"promptText":"2 hours 25 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":145,"display":{"counting":{"kind":"sum","parts":[120,25]},"promptText":"How many minutes are in 2 hours 25 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0389",
@@ -16182,7 +16182,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":215,"display":{"counting":{"kind":"sum","parts":[180,35]},"promptText":"3 hours 35 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":215,"display":{"counting":{"kind":"sum","parts":[180,35]},"promptText":"3 hours 35 minutes = __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0390",
@@ -16192,7 +16192,7 @@ export const ITEMS = [
     structureType: "mixedToMinutes",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":260,"display":{"counting":{"kind":"sum","parts":[240,20]},"promptText":"4 hours 20 minutes = ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":260,"display":{"counting":{"kind":"sum","parts":[240,20]},"promptText":"How many minutes are in 4 hours 20 minutes?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0391",
@@ -16202,7 +16202,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":60,"kind":"gap","target":75},"promptText":"75 minutes = 1 hour and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":60,"kind":"gap","target":75},"promptText":"75 minutes = 1 hour and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0392",
@@ -16212,7 +16212,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":60,"kind":"gap","target":90},"promptText":"90 minutes = 1 hour and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":60,"kind":"gap","target":90},"promptText":"Write 90 minutes as 1 hour and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0393",
@@ -16222,7 +16222,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":60,"kind":"gap","target":100},"promptText":"100 minutes = 1 hour and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":60,"kind":"gap","target":100},"promptText":"100 minutes = 1 hour and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0394",
@@ -16232,7 +16232,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":120,"kind":"gap","target":130},"promptText":"130 minutes = 2 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":120,"kind":"gap","target":130},"promptText":"130 minutes = 2 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0395",
@@ -16242,7 +16242,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":120,"kind":"gap","target":150},"promptText":"150 minutes = 2 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":120,"kind":"gap","target":150},"promptText":"Write 150 minutes as 2 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0396",
@@ -16252,7 +16252,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":120,"kind":"gap","target":170},"promptText":"170 minutes = 2 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":120,"kind":"gap","target":170},"promptText":"170 minutes = 2 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0397",
@@ -16262,7 +16262,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":180,"kind":"gap","target":200},"promptText":"200 minutes = 3 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":180,"kind":"gap","target":200},"promptText":"Write 200 minutes as 3 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0398",
@@ -16272,7 +16272,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":180,"kind":"gap","target":185},"promptText":"185 minutes = 3 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":180,"kind":"gap","target":185},"promptText":"185 minutes = 3 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0399",
@@ -16282,7 +16282,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":60,"kind":"gap","target":65},"promptText":"65 minutes = 1 hour and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":60,"kind":"gap","target":65},"promptText":"Write 65 minutes as 1 hour and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0400",
@@ -16292,7 +16292,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":60,"kind":"gap","target":110},"promptText":"110 minutes = 1 hour and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":60,"kind":"gap","target":110},"promptText":"110 minutes = 1 hour and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0401",
@@ -16302,7 +16302,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":120,"kind":"gap","target":125},"promptText":"125 minutes = 2 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":120,"kind":"gap","target":125},"promptText":"Write 125 minutes as 2 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0402",
@@ -16312,7 +16312,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":120,"kind":"gap","target":145},"promptText":"145 minutes = 2 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":120,"kind":"gap","target":145},"promptText":"145 minutes = 2 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0403",
@@ -16322,7 +16322,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":180,"kind":"gap","target":195},"promptText":"195 minutes = 3 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":180,"kind":"gap","target":195},"promptText":"Write 195 minutes as 3 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0404",
@@ -16332,7 +16332,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":240,"kind":"gap","target":250},"promptText":"250 minutes = 4 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":240,"kind":"gap","target":250},"promptText":"250 minutes = 4 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0405",
@@ -16342,7 +16342,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":60,"kind":"gap","target":85},"promptText":"85 minutes = 1 hour and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":60,"kind":"gap","target":85},"promptText":"Write 85 minutes as 1 hour and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0406",
@@ -16352,7 +16352,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":120,"kind":"gap","target":160},"promptText":"160 minutes = 2 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":120,"kind":"gap","target":160},"promptText":"Write 160 minutes as 2 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0407",
@@ -16362,7 +16362,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":180,"kind":"gap","target":215},"promptText":"215 minutes = 3 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":180,"kind":"gap","target":215},"promptText":"215 minutes = 3 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0408",
@@ -16372,7 +16372,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":240,"kind":"gap","target":270},"promptText":"270 minutes = 4 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":240,"kind":"gap","target":270},"promptText":"Write 270 minutes as 4 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0409",
@@ -16382,7 +16382,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":60,"kind":"gap","target":95},"promptText":"95 minutes = 1 hour and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":60,"kind":"gap","target":95},"promptText":"95 minutes = 1 hour and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0410",
@@ -16392,7 +16392,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":120,"kind":"gap","target":140},"promptText":"140 minutes = 2 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":120,"kind":"gap","target":140},"promptText":"140 minutes = 2 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0411",
@@ -16402,7 +16402,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":180,"kind":"gap","target":230},"promptText":"230 minutes = 3 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":180,"kind":"gap","target":230},"promptText":"Write 230 minutes as 3 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0412",
@@ -16412,7 +16412,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":240,"kind":"gap","target":285},"promptText":"285 minutes = 4 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":240,"kind":"gap","target":285},"promptText":"285 minutes = 4 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0413",
@@ -16422,7 +16422,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":60,"kind":"gap","target":105},"promptText":"105 minutes = 1 hour and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":60,"kind":"gap","target":105},"promptText":"Write 105 minutes as 1 hour and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0414",
@@ -16432,7 +16432,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":120,"kind":"gap","target":155},"promptText":"155 minutes = 2 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":120,"kind":"gap","target":155},"promptText":"Write 155 minutes as 2 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0415",
@@ -16442,7 +16442,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":180,"kind":"gap","target":225},"promptText":"225 minutes = 3 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":180,"kind":"gap","target":225},"promptText":"225 minutes = 3 hours and __ minutes"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0416",
@@ -16452,7 +16452,7 @@ export const ITEMS = [
     structureType: "minutesToMixed",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":240,"kind":"gap","target":260},"promptText":"260 minutes = 4 hours and ? minutes"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":240,"kind":"gap","target":260},"promptText":"Write 260 minutes as 4 hours and __ minutes."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0417",
@@ -16462,7 +16462,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"kind":"sum","parts":[120,30]},"promptText":"2 minutes 30 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"counting":{"kind":"sum","parts":[120,30]},"promptText":"2 minutes 30 seconds = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0418",
@@ -16472,7 +16472,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":195,"display":{"counting":{"kind":"sum","parts":[180,15]},"promptText":"3 minutes 15 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":195,"display":{"counting":{"kind":"sum","parts":[180,15]},"promptText":"How many seconds are in 3 minutes 15 seconds?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0419",
@@ -16482,7 +16482,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":285,"display":{"counting":{"kind":"sum","parts":[240,45]},"promptText":"4 minutes 45 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":285,"display":{"counting":{"kind":"sum","parts":[240,45]},"promptText":"4 minutes 45 seconds = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0420",
@@ -16492,7 +16492,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":320,"display":{"counting":{"kind":"sum","parts":[300,20]},"promptText":"5 minutes 20 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":320,"display":{"counting":{"kind":"sum","parts":[300,20]},"promptText":"How many seconds are in 5 minutes 20 seconds?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0421",
@@ -16502,7 +16502,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"counting":{"kind":"sum","parts":[48,6]},"promptText":"2 days 6 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":54,"display":{"counting":{"kind":"sum","parts":[48,6]},"promptText":"2 days 6 hours = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0422",
@@ -16512,7 +16512,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[72,12]},"promptText":"3 days 12 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":84,"display":{"counting":{"kind":"sum","parts":[72,12]},"promptText":"How many hours are in 3 days 12 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0423",
@@ -16522,7 +16522,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"sum","parts":[24,18]},"promptText":"1 day 18 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"sum","parts":[24,18]},"promptText":"1 day 18 hours = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0424",
@@ -16532,7 +16532,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":99,"display":{"counting":{"kind":"sum","parts":[96,3]},"promptText":"4 days 3 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":99,"display":{"counting":{"kind":"sum","parts":[96,3]},"promptText":"4 days 3 hours = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0425",
@@ -16542,7 +16542,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"sum","parts":[360,40]},"promptText":"6 minutes 40 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":400,"display":{"counting":{"kind":"sum","parts":[360,40]},"promptText":"6 minutes 40 seconds = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0426",
@@ -16552,7 +16552,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":445,"display":{"counting":{"kind":"sum","parts":[420,25]},"promptText":"7 minutes 25 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":445,"display":{"counting":{"kind":"sum","parts":[420,25]},"promptText":"How many seconds are in 7 minutes 25 seconds?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0427",
@@ -16562,7 +16562,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[48,15]},"promptText":"2 days 15 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":63,"display":{"counting":{"kind":"sum","parts":[48,15]},"promptText":"How many hours are in 2 days 15 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0428",
@@ -16572,7 +16572,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":129,"display":{"counting":{"kind":"sum","parts":[120,9]},"promptText":"5 days 9 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":129,"display":{"counting":{"kind":"sum","parts":[120,9]},"promptText":"5 days 9 hours = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0429",
@@ -16582,7 +16582,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":490,"display":{"counting":{"kind":"sum","parts":[480,10]},"promptText":"8 minutes 10 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":490,"display":{"counting":{"kind":"sum","parts":[480,10]},"promptText":"8 minutes 10 seconds = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0430",
@@ -16592,7 +16592,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":235,"display":{"counting":{"kind":"sum","parts":[180,55]},"promptText":"3 minutes 55 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":235,"display":{"counting":{"kind":"sum","parts":[180,55]},"promptText":"How many seconds are in 3 minutes 55 seconds?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0431",
@@ -16602,7 +16602,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"counting":{"kind":"sum","parts":[24,7]},"promptText":"1 day 7 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"counting":{"kind":"sum","parts":[24,7]},"promptText":"How many hours are in 1 day 7 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0432",
@@ -16612,7 +16612,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":146,"display":{"counting":{"kind":"sum","parts":[144,2]},"promptText":"6 days 2 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":146,"display":{"counting":{"kind":"sum","parts":[144,2]},"promptText":"How many hours are in 6 days 2 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0433",
@@ -16622,7 +16622,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":575,"display":{"counting":{"kind":"sum","parts":[540,35]},"promptText":"9 minutes 35 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":575,"display":{"counting":{"kind":"sum","parts":[540,35]},"promptText":"9 minutes 35 seconds = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0434",
@@ -16632,7 +16632,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"kind":"sum","parts":[240,5]},"promptText":"4 minutes 5 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":245,"display":{"counting":{"kind":"sum","parts":[240,5]},"promptText":"How many seconds are in 4 minutes 5 seconds?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0435",
@@ -16642,7 +16642,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[72,21]},"promptText":"3 days 21 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":93,"display":{"counting":{"kind":"sum","parts":[72,21]},"promptText":"3 days 21 hours = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0436",
@@ -16652,7 +16652,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":179,"display":{"counting":{"kind":"sum","parts":[168,11]},"promptText":"7 days 11 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":179,"display":{"counting":{"kind":"sum","parts":[168,11]},"promptText":"How many hours are in 7 days 11 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0437",
@@ -16662,7 +16662,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":350,"display":{"counting":{"kind":"sum","parts":[300,50]},"promptText":"5 minutes 50 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":350,"display":{"counting":{"kind":"sum","parts":[300,50]},"promptText":"5 minutes 50 seconds = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0438",
@@ -16672,7 +16672,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"counting":{"kind":"sum","parts":[120,45]},"promptText":"2 minutes 45 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"counting":{"kind":"sum","parts":[120,45]},"promptText":"How many seconds are in 2 minutes 45 seconds?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0439",
@@ -16682,7 +16682,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"kind":"sum","parts":[48,20]},"promptText":"2 days 20 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":68,"display":{"counting":{"kind":"sum","parts":[48,20]},"promptText":"2 days 20 hours = __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0440",
@@ -16692,7 +16692,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":112,"display":{"counting":{"kind":"sum","parts":[96,16]},"promptText":"4 days 16 hours = ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":112,"display":{"counting":{"kind":"sum","parts":[96,16]},"promptText":"How many hours are in 4 days 16 hours?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0441",
@@ -16702,7 +16702,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":375,"display":{"counting":{"kind":"sum","parts":[360,15]},"promptText":"6 minutes 15 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":375,"display":{"counting":{"kind":"sum","parts":[360,15]},"promptText":"6 minutes 15 seconds = __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0442",
@@ -16712,7 +16712,7 @@ export const ITEMS = [
     structureType: "bigUnitCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"kind":"sum","parts":[480,55]},"promptText":"8 minutes 55 seconds = ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":535,"display":{"counting":{"kind":"sum","parts":[480,55]},"promptText":"How many seconds are in 8 minutes 55 seconds?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0443",
@@ -16722,7 +16722,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":120,"kind":"gap","target":150},"promptText":"150 seconds = 2 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"counting":{"have":120,"kind":"gap","target":150},"promptText":"150 seconds = 2 minutes and __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0444",
@@ -16732,7 +16732,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":180,"kind":"gap","target":195},"promptText":"195 seconds = 3 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":180,"kind":"gap","target":195},"promptText":"Write 195 seconds as 3 minutes and __ seconds."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0445",
@@ -16742,7 +16742,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":240,"kind":"gap","target":285},"promptText":"285 seconds = 4 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":240,"kind":"gap","target":285},"promptText":"285 seconds = 4 minutes and __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0446",
@@ -16752,7 +16752,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":300,"kind":"gap","target":320},"promptText":"320 seconds = 5 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":300,"kind":"gap","target":320},"promptText":"Write 320 seconds as 5 minutes and __ seconds."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0447",
@@ -16762,7 +16762,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":48,"kind":"gap","target":54},"promptText":"54 hours = 2 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"have":48,"kind":"gap","target":54},"promptText":"54 hours = 2 days and __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0448",
@@ -16772,7 +16772,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":72,"kind":"gap","target":84},"promptText":"84 hours = 3 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"have":72,"kind":"gap","target":84},"promptText":"Write 84 hours as 3 days and __ hours."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0449",
@@ -16782,7 +16782,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":24,"kind":"gap","target":42},"promptText":"42 hours = 1 day and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":24,"kind":"gap","target":42},"promptText":"42 hours = 1 day and __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0450",
@@ -16792,7 +16792,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":96,"kind":"gap","target":99},"promptText":"99 hours = 4 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"have":96,"kind":"gap","target":99},"promptText":"99 hours = 4 days and __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0451",
@@ -16802,7 +16802,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":360,"kind":"gap","target":400},"promptText":"400 seconds = 6 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"counting":{"have":360,"kind":"gap","target":400},"promptText":"400 seconds = 6 minutes and __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0452",
@@ -16812,7 +16812,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":420,"kind":"gap","target":445},"promptText":"445 seconds = 7 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"counting":{"have":420,"kind":"gap","target":445},"promptText":"Write 445 seconds as 7 minutes and __ seconds."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0453",
@@ -16822,7 +16822,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":48,"kind":"gap","target":63},"promptText":"63 hours = 2 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":48,"kind":"gap","target":63},"promptText":"Write 63 hours as 2 days and __ hours."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0454",
@@ -16832,7 +16832,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":120,"kind":"gap","target":129},"promptText":"129 hours = 5 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"have":120,"kind":"gap","target":129},"promptText":"129 hours = 5 days and __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0455",
@@ -16842,7 +16842,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":480,"kind":"gap","target":490},"promptText":"490 seconds = 8 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"have":480,"kind":"gap","target":490},"promptText":"490 seconds = 8 minutes and __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0456",
@@ -16852,7 +16852,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":180,"kind":"gap","target":235},"promptText":"235 seconds = 3 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":180,"kind":"gap","target":235},"promptText":"Write 235 seconds as 3 minutes and __ seconds."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0457",
@@ -16862,7 +16862,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":24,"kind":"gap","target":31},"promptText":"31 hours = 1 day and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"have":24,"kind":"gap","target":31},"promptText":"Write 31 hours as 1 day and __ hours."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0458",
@@ -16872,7 +16872,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":144,"kind":"gap","target":146},"promptText":"146 hours = 6 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"have":144,"kind":"gap","target":146},"promptText":"Write 146 hours as 6 days and __ hours."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0459",
@@ -16882,7 +16882,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":540,"kind":"gap","target":575},"promptText":"575 seconds = 9 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"have":540,"kind":"gap","target":575},"promptText":"575 seconds = 9 minutes and __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0460",
@@ -16892,7 +16892,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":240,"kind":"gap","target":245},"promptText":"245 seconds = 4 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"have":240,"kind":"gap","target":245},"promptText":"Write 245 seconds as 4 minutes and __ seconds."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0461",
@@ -16902,7 +16902,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":72,"kind":"gap","target":93},"promptText":"93 hours = 3 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":72,"kind":"gap","target":93},"promptText":"93 hours = 3 days and __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0462",
@@ -16912,7 +16912,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":168,"kind":"gap","target":179},"promptText":"179 hours = 7 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"have":168,"kind":"gap","target":179},"promptText":"Write 179 hours as 7 days and __ hours."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0463",
@@ -16922,7 +16922,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":300,"kind":"gap","target":350},"promptText":"350 seconds = 5 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"counting":{"have":300,"kind":"gap","target":350},"promptText":"350 seconds = 5 minutes and __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0464",
@@ -16932,7 +16932,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":120,"kind":"gap","target":165},"promptText":"165 seconds = 2 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"counting":{"have":120,"kind":"gap","target":165},"promptText":"Write 165 seconds as 2 minutes and __ seconds."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0465",
@@ -16942,7 +16942,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":48,"kind":"gap","target":68},"promptText":"68 hours = 2 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"have":48,"kind":"gap","target":68},"promptText":"68 hours = 2 days and __ hours"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0466",
@@ -16952,7 +16952,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":96,"kind":"gap","target":112},"promptText":"112 hours = 4 days and ? hours"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":96,"kind":"gap","target":112},"promptText":"Write 112 hours as 4 days and __ hours."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0467",
@@ -16962,7 +16962,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":360,"kind":"gap","target":375},"promptText":"375 seconds = 6 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"have":360,"kind":"gap","target":375},"promptText":"375 seconds = 6 minutes and __ seconds"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0468",
@@ -16972,7 +16972,7 @@ export const ITEMS = [
     structureType: "bigUnitDecompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":480,"kind":"gap","target":535},"promptText":"535 seconds = 8 minutes and ? seconds"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"counting":{"have":480,"kind":"gap","target":535},"promptText":"Write 535 seconds as 8 minutes and __ seconds."},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0469",
@@ -16982,7 +16982,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[7]},"promptText":"1 week = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[7]},"promptText":"1 week = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0470",
@@ -16992,7 +16992,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[7,7]},"promptText":"2 weeks = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[7,7]},"promptText":"How many days are in 2 weeks?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0471",
@@ -17002,7 +17002,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[7,1]},"promptText":"1 week and 1 day = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[7,1]},"promptText":"1 week and 1 day = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0472",
@@ -17012,7 +17012,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[7,2]},"promptText":"1 week and 2 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[7,2]},"promptText":"How many days are in 1 week and 2 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0473",
@@ -17022,7 +17022,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[7,3]},"promptText":"1 week and 3 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[7,3]},"promptText":"1 week and 3 days = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0474",
@@ -17032,7 +17032,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[7,7,1]},"promptText":"2 weeks and 1 day = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[7,7,1]},"promptText":"2 weeks and 1 day = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0475",
@@ -17042,7 +17042,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"1 week and 4 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"How many days are in 1 week and 4 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0476",
@@ -17052,7 +17052,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,7,2]},"promptText":"2 weeks and 2 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[7,7,2]},"promptText":"How many days are in 2 weeks and 2 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0477",
@@ -17062,7 +17062,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[7,5]},"promptText":"1 week and 5 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[7,5]},"promptText":"1 week and 5 days = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0478",
@@ -17072,7 +17072,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[7,7,3]},"promptText":"2 weeks and 3 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[7,7,3]},"promptText":"2 weeks and 3 days = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0479",
@@ -17082,7 +17082,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"1 week and 6 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"How many days are in 1 week and 6 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0480",
@@ -17092,7 +17092,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[7,7,4]},"promptText":"2 weeks and 4 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[7,7,4]},"promptText":"How many days are in 2 weeks and 4 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0481",
@@ -17102,7 +17102,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[7,7,5]},"promptText":"2 weeks and 5 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[7,7,5]},"promptText":"2 weeks and 5 days = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0482",
@@ -17112,7 +17112,7 @@ export const ITEMS = [
     structureType: "weekDaysTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[7,7,6]},"promptText":"2 weeks and 6 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[7,7,6]},"promptText":"How many days are in 2 weeks and 6 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0483",
@@ -17492,7 +17492,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"kind":"sum","parts":[7,7,7]},"promptText":"3 weeks = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"kind":"sum","parts":[7,7,7]},"promptText":"3 weeks = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0521",
@@ -17502,7 +17502,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"kind":"sum","parts":[7,7,7,7]},"promptText":"4 weeks = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"counting":{"kind":"sum","parts":[7,7,7,7]},"promptText":"How many days are in 4 weeks?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0522",
@@ -17512,7 +17512,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"kind":"sum","parts":[7,7,7,7,7]},"promptText":"5 weeks = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"counting":{"kind":"sum","parts":[7,7,7,7,7]},"promptText":"5 weeks = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0523",
@@ -17522,7 +17522,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"kind":"sum","parts":[21,2]},"promptText":"3 weeks and 2 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"counting":{"kind":"sum","parts":[21,2]},"promptText":"How many days are in 3 weeks and 2 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0524",
@@ -17532,7 +17532,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"counting":{"kind":"sum","parts":[28,3]},"promptText":"4 weeks and 3 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"counting":{"kind":"sum","parts":[28,3]},"promptText":"4 weeks and 3 days = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0525",
@@ -17542,7 +17542,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"kind":"sum","parts":[21,5]},"promptText":"3 weeks and 5 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"counting":{"kind":"sum","parts":[21,5]},"promptText":"How many days are in 3 weeks and 5 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0526",
@@ -17552,7 +17552,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"sum","parts":[21,21]},"promptText":"6 weeks = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"counting":{"kind":"sum","parts":[21,21]},"promptText":"How many days are in 6 weeks?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0527",
@@ -17562,7 +17562,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"kind":"sum","parts":[35,4]},"promptText":"5 weeks and 4 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"counting":{"kind":"sum","parts":[35,4]},"promptText":"5 weeks and 4 days = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0528",
@@ -17572,7 +17572,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"kind":"sum","parts":[28,6]},"promptText":"4 weeks and 6 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"counting":{"kind":"sum","parts":[28,6]},"promptText":"How many days are in 4 weeks and 6 days?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0529",
@@ -17582,7 +17582,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"counting":{"kind":"sum","parts":[21,28]},"promptText":"7 weeks = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"counting":{"kind":"sum","parts":[21,28]},"promptText":"7 weeks = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0530",
@@ -17592,7 +17592,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"kind":"sum","parts":[42,1]},"promptText":"6 weeks and 1 day = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"counting":{"kind":"sum","parts":[42,1]},"promptText":"6 weeks and 1 day = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0531",
@@ -17602,7 +17602,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"kind":"sum","parts":[28,28]},"promptText":"8 weeks = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"counting":{"kind":"sum","parts":[28,28]},"promptText":"How many days are in 8 weeks?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0532",
@@ -17612,7 +17612,7 @@ export const ITEMS = [
     structureType: "weekDaysMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"kind":"sum","parts":[35,2]},"promptText":"5 weeks and 2 days = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"counting":{"kind":"sum","parts":[35,2]},"promptText":"5 weeks and 2 days = __ days"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0533",
@@ -17632,7 +17632,7 @@ export const ITEMS = [
     structureType: "monthLength",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"time":{"kind":"monthLen","month":"February"},"promptText":"February has ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"time":{"kind":"monthLen","month":"February"},"promptText":"In most years, how many days does February have?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0535",
@@ -17652,7 +17652,7 @@ export const ITEMS = [
     structureType: "monthLength",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"kind":"monthLen","month":"April"},"promptText":"April has ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"kind":"monthLen","month":"April"},"promptText":"How many days does April have?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0537",
@@ -17672,7 +17672,7 @@ export const ITEMS = [
     structureType: "monthLength",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"kind":"monthLen","month":"June"},"promptText":"June has ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"time":{"kind":"monthLen","month":"June"},"promptText":"How many days does June have?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0539",
@@ -17692,7 +17692,7 @@ export const ITEMS = [
     structureType: "monthLength",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"time":{"kind":"monthLen","month":"August"},"promptText":"August has ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"time":{"kind":"monthLen","month":"August"},"promptText":"How many days does August have?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0541",
@@ -17712,7 +17712,7 @@ export const ITEMS = [
     structureType: "monthLength",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"time":{"kind":"monthLen","month":"October"},"promptText":"October has ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"time":{"kind":"monthLen","month":"October"},"promptText":"How many days does October have?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0543",
@@ -17732,7 +17732,7 @@ export const ITEMS = [
     structureType: "monthLength",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"time":{"kind":"monthLen","month":"December"},"promptText":"December has ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"time":{"kind":"monthLen","month":"December"},"promptText":"How many days does December have?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0545",
@@ -18012,7 +18012,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":3,"kind":"gap","target":17},"promptText":"From March 3 to March 17 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":3,"kind":"gap","target":17},"promptText":"How many days after March 3 is March 17?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0573",
@@ -18032,7 +18032,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":8,"kind":"gap","target":29},"promptText":"From October 8 to October 29 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":8,"kind":"gap","target":29},"promptText":"How many days pass from October 8 to October 29?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0575",
@@ -18052,7 +18052,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":6,"kind":"gap","target":27},"promptText":"From August 6 to August 27 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":6,"kind":"gap","target":27},"promptText":"How many days pass from August 6 to August 27?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0577",
@@ -18072,7 +18072,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":9,"kind":"gap","target":30},"promptText":"From May 9 to May 30 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":9,"kind":"gap","target":30},"promptText":"How many days pass from May 9 to May 30?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0579",
@@ -18092,7 +18092,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":7,"kind":"gap","target":28},"promptText":"From November 7 to November 28 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"have":7,"kind":"gap","target":28},"promptText":"How many days pass from November 7 to November 28?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0581",
@@ -18112,7 +18112,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":5,"kind":"gap","target":24},"promptText":"From February 5 to February 24 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"have":5,"kind":"gap","target":24},"promptText":"How many days pass from February 5 to February 24?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0583",
@@ -18132,7 +18132,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":12,"kind":"gap","target":28},"promptText":"From March 12 to March 28 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":12,"kind":"gap","target":28},"promptText":"How many days pass from March 12 to March 28?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0585",
@@ -18152,7 +18152,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":2,"kind":"gap","target":19},"promptText":"From October 2 to October 19 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":2,"kind":"gap","target":19},"promptText":"October 19 is how many days after October 2?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0587",
@@ -18172,7 +18172,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":13,"kind":"gap","target":31},"promptText":"From August 13 to August 31 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"have":13,"kind":"gap","target":31},"promptText":"How many days after August 13 is August 31?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0589",
@@ -18192,7 +18192,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":4,"kind":"gap","target":18},"promptText":"From May 4 to May 18 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":4,"kind":"gap","target":18},"promptText":"May 18 is how many days after May 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0591",
@@ -18212,7 +18212,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":12,"kind":"gap","target":26},"promptText":"From November 12 to November 26 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"have":12,"kind":"gap","target":26},"promptText":"How many days after November 12 is November 26?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0593",
@@ -18232,7 +18232,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":3,"kind":"gap","target":19},"promptText":"From February 3 to February 19 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"have":3,"kind":"gap","target":19},"promptText":"February 19 is how many days after February 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0595",
@@ -18252,7 +18252,7 @@ export const ITEMS = [
     structureType: "dateSpanBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":7,"kind":"gap","target":24},"promptText":"From March 7 to March 24 = ? days"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"have":7,"kind":"gap","target":24},"promptText":"How many days after March 7 is March 24?"},"answerType":"numberPad"},
   },
   {
     itemId: "time-proc-b0821-0597",

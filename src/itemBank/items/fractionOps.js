@@ -1712,7 +1712,7 @@ export const ITEMS = [
     structureType: "fractionTimesWholeStory",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"display":{"promptText":"Kai reads 1/2 of a 8-page comic. How many pages does Kai read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"display":{"promptText":"Kai reads 1/2 of an 8-page comic. How many pages does Kai read?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-app-b0824-0172",
@@ -1752,7 +1752,7 @@ export const ITEMS = [
     structureType: "fractionTimesWholeStory",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"display":{"promptText":"Theo reads 3/4 of a 8-page comic. How many pages does Theo read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"display":{"promptText":"Theo reads 3/4 of an 8-page comic. How many pages does Theo read?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-app-b0824-0176",
@@ -1852,7 +1852,7 @@ export const ITEMS = [
     structureType: "fractionTimesWholeStory",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"display":{"promptText":"Ben uses 4/6 of a 18-sticker sheet. How many stickers does Ben use?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"display":{"promptText":"Ben uses 4/6 of an 18-sticker sheet. How many stickers does Ben use?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-app-b0824-0186",
@@ -1932,7 +1932,7 @@ export const ITEMS = [
     structureType: "fractionTimesWholeStory",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"display":{"promptText":"Zoe uses 3/4 of a 8-sticker sheet. How many stickers does Zoe use?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"display":{"promptText":"Zoe uses 3/4 of an 8-sticker sheet. How many stickers does Zoe use?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-app-b0824-0194",
@@ -4182,7 +4182,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Nia says 2/5 + 3/5 is less than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Is Nia right that 2/5 + 3/5 is less than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0003",
@@ -4212,7 +4212,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ida says 3/4 + 2/4 is more than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Is Ida right that 3/4 + 2/4 is more than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0006",
@@ -4292,7 +4292,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego says 1/4 + 1/4 is less than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Is Diego right that 1/4 + 1/4 is less than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0014",
@@ -4302,7 +4302,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Amara says 5/6 + 1/6 is less than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Is Amara right that 5/6 + 1/6 is less than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0015",
@@ -4322,7 +4322,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June says 2/5 + 3/5 is less than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Is June right that 2/5 + 3/5 is less than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0017",
@@ -4382,7 +4382,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo says 1/5 + 4/5 is less than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Is Theo right that 1/5 + 4/5 is less than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0023",
@@ -4422,7 +4422,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Leo says 4/5 + 1/5 is less than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Is Leo right that 4/5 + 1/5 is less than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0027",
@@ -4462,7 +4462,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Kai says 3/6 + 2/6 is less than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Is Kai right that 3/6 + 2/6 is less than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0031",
@@ -4672,7 +4672,7 @@ export const ITEMS = [
     structureType: "compareToOneJudged",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Luca says 1/4 + 2/4 is less than one whole. Is that right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Is Luca right that 1/4 + 2/4 is less than one whole?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0052",
@@ -5212,7 +5212,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,24,12],"display":{"promptText":"Before Leo can add 1/6 and 1/12, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,6,12],"display":{"promptText":"Before Leo can add 1/6 and 1/12, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0106",
@@ -5222,7 +5222,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,15,24],"display":{"promptText":"Ben rewrites 1/3 and 1/12 with a common denominator. What is that denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,15,3],"display":{"promptText":"Ben rewrites 1/3 and 1/12 with a common denominator. What is that denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0107",
@@ -5232,7 +5232,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[20,15,10],"display":{"promptText":"1/5 and 1/10 can both be written in which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[5,15,10],"display":{"promptText":"1/5 and 1/10 can both be written in which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0108",
@@ -5242,7 +5242,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,8,16],"display":{"promptText":"The smallest denominator both 1/2 and 1/8 can use is what?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,8,2],"display":{"promptText":"What is the smallest denominator that both 1/2 and 1/8 can use?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0109",
@@ -5252,7 +5252,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[9,12,6],"display":{"promptText":"Which denominator fits both 1/3 and 1/6 at once?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[9,3,6],"display":{"promptText":"Which denominator fits both 1/3 and 1/6 at once?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0110",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,12,16],"display":{"promptText":"Which denominator works for both 1/4 and 1/12?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[4,12,16],"display":{"promptText":"Which denominator works for both 1/4 and 1/12?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0111",
@@ -5272,7 +5272,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,15,12],"display":{"promptText":"Rename 1/3 and 1/12 to share which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[3,15,12],"display":{"promptText":"Which denominator can you use to rename both 1/3 and 1/12?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0112",
@@ -5282,7 +5282,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,16,24],"display":{"promptText":"Rename 1/4 and 1/12 to share which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,16,4],"display":{"promptText":"Which denominator can you use to rename both 1/4 and 1/12?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0113",
@@ -5292,7 +5292,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,8,4],"display":{"promptText":"To combine 1/2 and 1/4, June needs one shared denominator. Which number is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,2,4],"display":{"promptText":"Which shared denominator can June use to combine 1/2 and 1/4?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0114",
@@ -5302,7 +5302,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[16,24,12],"display":{"promptText":"1/4 and 1/12 can both be written in which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[16,4,12],"display":{"promptText":"1/4 and 1/12 can both be written in which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0115",
@@ -5312,7 +5312,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,10,16],"display":{"promptText":"1/2 and 1/8 can both be written in which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,10,2],"display":{"promptText":"1/2 and 1/8 can both be written in which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0116",
@@ -5322,7 +5322,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,16,12],"display":{"promptText":"Both 1/4 and 1/12 fit evenly over which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[4,16,12],"display":{"promptText":"Which denominator can both 1/4 and 1/12 be written with?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0117",
@@ -5332,7 +5332,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,9,6],"display":{"promptText":"Both 1/3 and 1/6 fit evenly over which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[3,9,6],"display":{"promptText":"Which denominator can both 1/3 and 1/6 be written with?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0118",
@@ -5342,7 +5342,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,9,12],"display":{"promptText":"The smallest denominator both 1/3 and 1/6 can use is what?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,9,3],"display":{"promptText":"What is the smallest denominator that both 1/3 and 1/6 can use?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0119",
@@ -5352,7 +5352,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,8,16],"display":{"promptText":"Which denominator works for both 1/2 and 1/8?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,8,2],"display":{"promptText":"Which denominator works for both 1/2 and 1/8?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0120",
@@ -5362,7 +5362,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[8,6,4],"display":{"promptText":"Before adding 1/2 and 1/4, rename both to which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[2,6,4],"display":{"promptText":"Before you add 1/2 and 1/4, which denominator should you rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0121",
@@ -5372,7 +5372,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[12,8,16],"display":{"promptText":"Before Leo can add 1/4 and 1/8, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[12,8,4],"display":{"promptText":"Before Leo can add 1/4 and 1/8, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0122",
@@ -5382,7 +5382,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[8,12,6],"display":{"promptText":"Which denominator fits both 1/2 and 1/6 at once?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[8,2,6],"display":{"promptText":"Which denominator fits both 1/2 and 1/6 at once?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0123",
@@ -5392,7 +5392,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,12,9],"display":{"promptText":"Which denominator works for both 1/3 and 1/6?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,3,9],"display":{"promptText":"Which denominator works for both 1/3 and 1/6?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0124",
@@ -5402,7 +5402,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[20,10,12],"display":{"promptText":"Omar is renaming 1/2 and 1/10 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[2,10,12],"display":{"promptText":"Omar is renaming 1/2 and 1/10 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0125",
@@ -5412,7 +5412,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,12,24],"display":{"promptText":"Omar is renaming 1/6 and 1/12 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,12,6],"display":{"promptText":"Omar is renaming 1/6 and 1/12 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0126",
@@ -5422,7 +5422,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[15,24,12],"display":{"promptText":"Which denominator works for both 1/3 and 1/12?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[15,3,12],"display":{"promptText":"Which denominator works for both 1/3 and 1/12?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0127",
@@ -5432,7 +5432,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[15,24,12],"display":{"promptText":"To add 1/3 and 1/12, which denominator can both be renamed to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[15,3,12],"display":{"promptText":"To add 1/3 and 1/12, which denominator can both be renamed to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0128",
@@ -5442,7 +5442,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[20,10,15],"display":{"promptText":"A common denominator for 1/5 and 1/10 is which number?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[5,10,15],"display":{"promptText":"Which number is a common denominator for 1/5 and 1/10?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0129",
@@ -5452,7 +5452,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[18,9,12],"display":{"promptText":"To combine 1/3 and 1/9, Ben needs one shared denominator. Which number is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[3,9,12],"display":{"promptText":"Which shared denominator can Ben use to combine 1/3 and 1/9?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0130",
@@ -5462,7 +5462,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[12,18,9],"display":{"promptText":"Both 1/3 and 1/9 fit evenly over which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[12,3,9],"display":{"promptText":"Which denominator can both 1/3 and 1/9 be written with?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0131",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,10,16],"display":{"promptText":"A common denominator for 1/2 and 1/8 is which number?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,10,2],"display":{"promptText":"Which number is a common denominator for 1/2 and 1/8?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0132",
@@ -5482,7 +5482,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,12,15],"display":{"promptText":"What denominator lets you add 1/3 and 1/12 directly?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[3,12,15],"display":{"promptText":"What denominator lets you add 1/3 and 1/12 directly?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0133",
@@ -5492,7 +5492,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[8,4,6],"display":{"promptText":"Both 1/2 and 1/4 fit evenly over which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[2,4,6],"display":{"promptText":"Which denominator can both 1/2 and 1/4 be written with?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0134",
@@ -5502,7 +5502,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,15,24],"display":{"promptText":"Which bottom number could 1/3 and 1/12 both switch to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,15,3],"display":{"promptText":"Which bottom number could 1/3 and 1/12 both switch to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0135",
@@ -5512,7 +5512,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[15,10,20],"display":{"promptText":"Before adding 1/5 and 1/10, rename both to which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[15,10,5],"display":{"promptText":"Before you add 1/5 and 1/10, which denominator should you rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0136",
@@ -5522,7 +5522,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[8,12,6],"display":{"promptText":"Maya rewrites 1/2 and 1/6 with a common denominator. What is that denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[8,2,6],"display":{"promptText":"Maya rewrites 1/2 and 1/6 with a common denominator. What is that denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0137",
@@ -5532,7 +5532,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[4,6,8],"display":{"promptText":"Zoe rewrites 1/2 and 1/4 with a common denominator. What is that denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[4,6,2],"display":{"promptText":"Zoe rewrites 1/2 and 1/4 with a common denominator. What is that denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0138",
@@ -5542,7 +5542,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,16,12],"display":{"promptText":"Which bottom number could 1/4 and 1/8 both switch to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,4,12],"display":{"promptText":"Which bottom number could 1/4 and 1/8 both switch to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0139",
@@ -5552,7 +5552,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[16,12,24],"display":{"promptText":"Before Diego can add 1/4 and 1/12, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[16,12,4],"display":{"promptText":"Before Diego can add 1/4 and 1/12, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0140",
@@ -5562,7 +5562,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,16,10],"display":{"promptText":"Before Luca can add 1/2 and 1/8, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,2,10],"display":{"promptText":"Before Luca can add 1/2 and 1/8, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0141",
@@ -5572,7 +5572,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,16,12],"display":{"promptText":"Both 1/4 and 1/8 fit evenly over which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,4,12],"display":{"promptText":"Which denominator can both 1/4 and 1/8 be written with?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0142",
@@ -5582,7 +5582,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,8,4],"display":{"promptText":"To add 1/2 and 1/4, which denominator can both be renamed to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,2,4],"display":{"promptText":"To add 1/2 and 1/4, which denominator can both be renamed to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0143",
@@ -5592,7 +5592,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[8,12,6],"display":{"promptText":"Before Luca can add 1/2 and 1/6, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[8,2,6],"display":{"promptText":"Before Luca can add 1/2 and 1/6, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0144",
@@ -5602,7 +5602,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,9,6],"display":{"promptText":"What denominator lets you add 1/3 and 1/6 directly?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[3,9,6],"display":{"promptText":"What denominator lets you add 1/3 and 1/6 directly?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0145",
@@ -5612,7 +5612,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[4,8,6],"display":{"promptText":"The smallest denominator both 1/2 and 1/4 can use is what?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[4,2,6],"display":{"promptText":"What is the smallest denominator that both 1/2 and 1/4 can use?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0146",
@@ -5622,7 +5622,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,8,16],"display":{"promptText":"Which denominator fits both 1/2 and 1/8 at once?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,8,2],"display":{"promptText":"Which denominator fits both 1/2 and 1/8 at once?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0147",
@@ -5632,7 +5632,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[16,10,8],"display":{"promptText":"To add 1/2 and 1/8, which denominator can both be renamed to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[2,10,8],"display":{"promptText":"To add 1/2 and 1/8, which denominator can both be renamed to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0148",
@@ -5642,7 +5642,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,9,6],"display":{"promptText":"Zoe rewrites 1/3 and 1/6 with a common denominator. What is that denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[3,9,6],"display":{"promptText":"Zoe rewrites 1/3 and 1/6 with a common denominator. What is that denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0149",
@@ -5652,7 +5652,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[15,10,20],"display":{"promptText":"Nora rewrites 1/5 and 1/10 with a common denominator. What is that denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[15,10,5],"display":{"promptText":"Nora rewrites 1/5 and 1/10 with a common denominator. What is that denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0150",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,18,12],"display":{"promptText":"Rename 1/6 and 1/12 to share which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[6,18,12],"display":{"promptText":"Which denominator can you use to rename both 1/6 and 1/12?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0151",
@@ -5672,7 +5672,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[8,6,12],"display":{"promptText":"1/2 and 1/6 can both be written in which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[8,6,2],"display":{"promptText":"1/2 and 1/6 can both be written in which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0152",
@@ -5682,7 +5682,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[18,9,12],"display":{"promptText":"To add 1/3 and 1/9, which denominator can both be renamed to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[3,9,12],"display":{"promptText":"To add 1/3 and 1/9, which denominator can both be renamed to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0153",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[4,6,8],"display":{"promptText":"A common denominator for 1/2 and 1/4 is which number?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[4,6,2],"display":{"promptText":"Which number is a common denominator for 1/2 and 1/4?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0154",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[12,18,9],"display":{"promptText":"Omar lines up 1/3 and 1/9 over the same denominator. Which denominator does Omar pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[12,3,9],"display":{"promptText":"Omar lines up 1/3 and 1/9 over the same denominator. Which denominator does Omar pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0155",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[9,18,12],"display":{"promptText":"Before adding 1/3 and 1/9, rename both to which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[9,3,12],"display":{"promptText":"Before you add 1/3 and 1/9, which denominator should you rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0156",
@@ -5722,7 +5722,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,4,8],"display":{"promptText":"June lines up 1/2 and 1/4 over the same denominator. Which denominator does June pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,4,2],"display":{"promptText":"June lines up 1/2 and 1/4 over the same denominator. Which denominator does June pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0157",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,12,15],"display":{"promptText":"Amara wants to add 1/3 and 1/12. Which denominator should Amara rename both to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[3,12,15],"display":{"promptText":"Amara wants to add 1/3 and 1/12. Which denominator should Amara rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0262",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[10,20,12],"display":{"promptText":"What denominator lets you add 1/2 and 1/10 directly?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[10,2,12],"display":{"promptText":"What denominator lets you add 1/2 and 1/10 directly?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0263",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,6,8],"display":{"promptText":"Which denominator works for both 1/2 and 1/6?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[2,6,8],"display":{"promptText":"Which denominator works for both 1/2 and 1/6?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0264",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[16,24,12],"display":{"promptText":"Before Amara can add 1/4 and 1/12, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[16,4,12],"display":{"promptText":"Before Amara can add 1/4 and 1/12, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0265",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,16,12],"display":{"promptText":"A common denominator for 1/4 and 1/8 is which number?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,4,12],"display":{"promptText":"Which number is a common denominator for 1/4 and 1/8?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0266",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,12,18],"display":{"promptText":"Maya is renaming 1/6 and 1/12 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[6,12,18],"display":{"promptText":"Maya is renaming 1/6 and 1/12 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0267",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,16,10],"display":{"promptText":"Ben is renaming 1/2 and 1/8 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,2,10],"display":{"promptText":"Ben is renaming 1/2 and 1/8 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0268",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,9,12],"display":{"promptText":"Rename 1/3 and 1/6 to share which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,9,3],"display":{"promptText":"Which denominator can you use to rename both 1/3 and 1/6?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0269",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,18,24],"display":{"promptText":"Amara rewrites 1/6 and 1/12 with a common denominator. What is that denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,18,6],"display":{"promptText":"Amara rewrites 1/6 and 1/12 with a common denominator. What is that denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0270",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,16,8],"display":{"promptText":"To combine 1/2 and 1/8, Ida needs one shared denominator. Which number is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,2,8],"display":{"promptText":"Which shared denominator can Ida use to combine 1/2 and 1/8?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0271",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[16,12,8],"display":{"promptText":"Diego lines up 1/4 and 1/8 over the same denominator. Which denominator does Diego pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[4,12,8],"display":{"promptText":"Diego lines up 1/4 and 1/8 over the same denominator. Which denominator does Diego pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0272",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,8,6],"display":{"promptText":"Before adding 1/2 and 1/6, rename both to which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[2,8,6],"display":{"promptText":"Before you add 1/2 and 1/6, which denominator should you rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0273",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,16,12],"display":{"promptText":"Rename 1/4 and 1/8 to share which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,4,12],"display":{"promptText":"Which denominator can you use to rename both 1/4 and 1/8?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0274",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,18,24],"display":{"promptText":"Rosa lines up 1/6 and 1/12 over the same denominator. Which denominator does Rosa pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,18,6],"display":{"promptText":"Rosa lines up 1/6 and 1/12 over the same denominator. Which denominator does Rosa pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0275",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,18,12],"display":{"promptText":"Before Nia can add 1/6 and 1/12, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[6,18,12],"display":{"promptText":"Before Nia can add 1/6 and 1/12, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0276",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,12,24],"display":{"promptText":"Ben lines up 1/6 and 1/12 over the same denominator. Which denominator does Ben pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,12,6],"display":{"promptText":"Ben lines up 1/6 and 1/12 over the same denominator. Which denominator does Ben pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0277",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,12,8],"display":{"promptText":"Theo is renaming 1/2 and 1/6 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,2,8],"display":{"promptText":"Theo is renaming 1/2 and 1/6 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0278",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[8,6,4],"display":{"promptText":"Nia is renaming 1/2 and 1/4 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[2,6,4],"display":{"promptText":"Nia is renaming 1/2 and 1/4 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0279",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[15,20,10],"display":{"promptText":"What denominator lets you add 1/5 and 1/10 directly?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[15,5,10],"display":{"promptText":"What denominator lets you add 1/5 and 1/10 directly?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0280",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[12,10,20],"display":{"promptText":"Ben lines up 1/2 and 1/10 over the same denominator. Which denominator does Ben pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[12,10,2],"display":{"promptText":"Ben lines up 1/2 and 1/10 over the same denominator. Which denominator does Ben pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0281",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[12,18,9],"display":{"promptText":"1/3 and 1/9 can both be written in which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[12,3,9],"display":{"promptText":"1/3 and 1/9 can both be written in which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0282",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[15,24,12],"display":{"promptText":"Before adding 1/3 and 1/12, rename both to which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[15,3,12],"display":{"promptText":"Before you add 1/3 and 1/12, which denominator should you rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0283",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[24,18,12],"display":{"promptText":"Which bottom number could 1/6 and 1/12 both switch to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[6,18,12],"display":{"promptText":"Which bottom number could 1/6 and 1/12 both switch to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0284",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,24,16],"display":{"promptText":"What denominator lets you add 1/4 and 1/12 directly?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,4,16],"display":{"promptText":"What denominator lets you add 1/4 and 1/12 directly?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0285",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[20,10,12],"display":{"promptText":"Before Amara can add 1/2 and 1/10, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[2,10,12],"display":{"promptText":"Before Amara can add 1/2 and 1/10, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0286",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,8,16],"display":{"promptText":"Zoe rewrites 1/2 and 1/8 with a common denominator. What is that denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[10,8,2],"display":{"promptText":"Zoe rewrites 1/2 and 1/8 with a common denominator. What is that denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0287",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[16,24,12],"display":{"promptText":"To add 1/4 and 1/12, which denominator can both be renamed to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[16,4,12],"display":{"promptText":"To add 1/4 and 1/12, which denominator can both be renamed to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0288",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,6,9],"display":{"promptText":"Which bottom number could 1/3 and 1/6 both switch to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[3,6,9],"display":{"promptText":"Which bottom number could 1/3 and 1/6 both switch to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0289",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,9,12],"display":{"promptText":"Omar is renaming 1/3 and 1/6 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,9,3],"display":{"promptText":"Omar is renaming 1/3 and 1/6 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0290",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[8,4,6],"display":{"promptText":"Which bottom number could 1/2 and 1/4 both switch to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[2,4,6],"display":{"promptText":"Which bottom number could 1/2 and 1/4 both switch to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0291",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,12,24],"display":{"promptText":"To combine 1/6 and 1/12, Nia needs one shared denominator. Which number is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,12,6],"display":{"promptText":"Which shared denominator can Nia use to combine 1/6 and 1/12?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0292",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,24,12],"display":{"promptText":"Kai wants to add 1/6 and 1/12. Which denominator should Kai rename both to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[18,6,12],"display":{"promptText":"Kai wants to add 1/6 and 1/12. Which denominator should Kai rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0293",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[15,10,20],"display":{"promptText":"Diego wants to add 1/5 and 1/10. Which denominator should Diego rename both to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[15,10,5],"display":{"promptText":"Diego wants to add 1/5 and 1/10. Which denominator should Diego rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0294",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[12,16,8],"display":{"promptText":"Which denominator fits both 1/4 and 1/8 at once?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[12,4,8],"display":{"promptText":"Which denominator fits both 1/4 and 1/8 at once?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0295",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,9,6],"display":{"promptText":"Kai is renaming 1/3 and 1/6 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[3,9,6],"display":{"promptText":"Kai is renaming 1/3 and 1/6 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0296",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[12,10,20],"display":{"promptText":"Zoe lines up 1/2 and 1/10 over the same denominator. Which denominator does Zoe pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[12,10,2],"display":{"promptText":"Zoe lines up 1/2 and 1/10 over the same denominator. Which denominator does Zoe pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0297",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,24,18],"display":{"promptText":"A common denominator for 1/6 and 1/12 is which number?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":12,"choices":[12,6,18],"display":{"promptText":"Which number is a common denominator for 1/6 and 1/12?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0298",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[16,8,12],"display":{"promptText":"Before Zoe can add 1/4 and 1/8, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[4,8,12],"display":{"promptText":"Before Zoe can add 1/4 and 1/8, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0299",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,12,16],"display":{"promptText":"The smallest denominator both 1/4 and 1/8 can use is what?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[8,12,4],"display":{"promptText":"What is the smallest denominator that both 1/4 and 1/8 can use?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0300",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,4,8],"display":{"promptText":"Nora wants to add 1/2 and 1/4. Which denominator should Nora rename both to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,4,2],"display":{"promptText":"Nora wants to add 1/2 and 1/4. Which denominator should Nora rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0301",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[10,20,15],"display":{"promptText":"Ida is renaming 1/5 and 1/10 to match. Which denominator works for both?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[10,5,15],"display":{"promptText":"Ida is renaming 1/5 and 1/10 to match. Which denominator works for both?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0302",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,12,8],"display":{"promptText":"Kai rewrites 1/2 and 1/6 with a common denominator. What is that denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[6,2,8],"display":{"promptText":"Kai rewrites 1/2 and 1/6 with a common denominator. What is that denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0303",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[9,12,6],"display":{"promptText":"To combine 1/3 and 1/6, Leo needs one shared denominator. Which number is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[9,3,6],"display":{"promptText":"Which shared denominator can Leo use to combine 1/3 and 1/6?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0304",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[20,12,10],"display":{"promptText":"To combine 1/2 and 1/10, Leo needs one shared denominator. Which number is it?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[2,12,10],"display":{"promptText":"Which shared denominator can Leo use to combine 1/2 and 1/10?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0305",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,8,4],"display":{"promptText":"Before Luca can add 1/2 and 1/4, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"choices":[6,2,4],"display":{"promptText":"Before Luca can add 1/2 and 1/4, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0306",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[12,10,20],"display":{"promptText":"June lines up 1/2 and 1/10 over the same denominator. Which denominator does June pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[12,10,2],"display":{"promptText":"June lines up 1/2 and 1/10 over the same denominator. Which denominator does June pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0307",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[16,10,8],"display":{"promptText":"Kai wants to add 1/2 and 1/8. Which denominator should Kai rename both to?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":8,"choices":[2,10,8],"display":{"promptText":"Kai wants to add 1/2 and 1/8. Which denominator should Kai rename both to?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0308",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,9,6],"display":{"promptText":"Zoe lines up 1/3 and 1/6 over the same denominator. Which denominator does Zoe pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[3,9,6],"display":{"promptText":"Zoe lines up 1/3 and 1/6 over the same denominator. Which denominator does Zoe pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0309",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[10,15,20],"display":{"promptText":"Before Omar can add 1/5 and 1/10, both need which denominator?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[10,15,5],"display":{"promptText":"Before Omar can add 1/5 and 1/10, both need which denominator?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0310",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[20,12,10],"display":{"promptText":"Rosa lines up 1/2 and 1/10 over the same denominator. Which denominator does Rosa pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":10,"choices":[2,12,10],"display":{"promptText":"Rosa lines up 1/2 and 1/10 over the same denominator. Which denominator does Rosa pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0311",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[12,6,9],"display":{"promptText":"Nia lines up 1/3 and 1/6 over the same denominator. Which denominator does Nia pick?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":6,"choices":[3,6,9],"display":{"promptText":"Nia lines up 1/3 and 1/6 over the same denominator. Which denominator does Nia pick?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0312",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "commonDenominatorPick",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[18,9,12],"display":{"promptText":"Which denominator fits both 1/3 and 1/9 at once?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":9,"choices":[3,9,12],"display":{"promptText":"Which denominator fits both 1/3 and 1/9 at once?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0313",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Luca says 3 ÷ 1/4 asks how many 1/4s fit in 3, so it equals 12. Is Luca right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Luca counts how many 1/4s fit in 3 and gets 12. Is Luca right that 3 ÷ 1/4 = 12?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0366",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Omar says 4 ÷ 1/2 asks how many 1/2s fit in 4, so it equals 2. Is Omar right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Omar counts how many 1/2s fit in 4 and gets 2. Is Omar right that 4 ÷ 1/2 = 2?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0370",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Amara says 2 ÷ 1/3 asks how many 1/3s fit in 2, so it equals 1. Is Amara right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"To find 2 ÷ 1/3, Amara counts how many 1/3s are in 2 and gets 1. Is 1 the right answer for 2 ÷ 1/3?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0371",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo says 5 ÷ 1/3 asks how many 1/3s fit in 5, so it equals 15. Is Theo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"To find 5 ÷ 1/3, Theo counts how many 1/3s are in 5 and gets 15. Is 15 the right answer for 5 ÷ 1/3?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0373",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida says 6 ÷ 1/4 asks how many 1/4s fit in 6, so it equals 2. Is Ida right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ida counts how many 1/4s fit in 6 and gets 2. Is Ida right that 6 ÷ 1/4 = 2?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0374",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Leo says 6 ÷ 1/3 asks how many 1/3s fit in 6, so it equals 18. Is Leo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Leo counts how many 1/3s fit in 6 and gets 18. Is Leo right that 6 ÷ 1/3 = 18?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0375",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Maya says 5 ÷ 1/5 asks how many 1/5s fit in 5, so it equals 25. Is Maya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"To find 5 ÷ 1/5, Maya counts how many 1/5s are in 5 and gets 25. Is 25 the right answer for 5 ÷ 1/5?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0378",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Maya says 4 ÷ 1/3 asks how many 1/3s fit in 4, so it equals 1. Is Maya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"To find 4 ÷ 1/3, Maya counts how many 1/3s are in 4 and gets 1. Is 1 the right answer for 4 ÷ 1/3?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0379",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo says 3 ÷ 1/3 asks how many 1/3s fit in 3, so it equals 9. Is Theo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo counts how many 1/3s fit in 3 and gets 9. Is Theo right that 3 ÷ 1/3 = 9?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0381",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe says 5 ÷ 1/3 asks how many 1/3s fit in 5, so it equals 15. Is Zoe right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe counts how many 1/3s fit in 5 and gets 15. Is Zoe right that 5 ÷ 1/3 = 15?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0388",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nia says 5 ÷ 1/3 asks how many 1/3s fit in 5, so it equals 2. Is Nia right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"To find 5 ÷ 1/3, Nia counts how many 1/3s are in 5 and gets 2. Is 2 the right answer for 5 ÷ 1/3?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0390",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Nora says 5 ÷ 1/5 asks how many 1/5s fit in 5, so it equals 1. Is Nora right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"To find 5 ÷ 1/5, Nora counts how many 1/5s are in 5 and gets 1. Is 1 the right answer for 5 ÷ 1/5?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0395",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe says 6 ÷ 1/2 asks how many 1/2s fit in 6, so it equals 3. Is Zoe right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe counts how many 1/2s fit in 6 and gets 3. Is Zoe right that 6 ÷ 1/2 = 3?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0401",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego says 4 ÷ 1/4 asks how many 1/4s fit in 4, so it equals 16. Is Diego right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego counts how many 1/4s fit in 4 and gets 16. Is Diego right that 4 ÷ 1/4 = 16?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0408",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Omar says 3 ÷ 1/2 asks how many 1/2s fit in 3, so it equals 6. Is Omar right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"To find 3 ÷ 1/2, Omar counts how many 1/2s are in 3 and gets 6. Is 6 the right answer for 3 ÷ 1/2?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0409",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Leo says 2 ÷ 1/5 asks how many 1/5s fit in 2, so it equals 10. Is Leo right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"To find 2 ÷ 1/5, Leo counts how many 1/5s are in 2 and gets 10. Is 10 the right answer for 2 ÷ 1/5?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0410",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "divideMeaningJudged",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya says 5 ÷ 1/3 asks how many 1/3s fit in 5, so it equals 15. Is Priya right?"},"answerType":"choice"},
+    question: {"a":null,"b":null,"op":"fracops","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Priya counts how many 1/3s fit in 5 and gets 15. Is Priya right that 5 ÷ 1/3 = 15?"},"answerType":"choice"},
   },
   {
     itemId: "fractionOps-conc-b0824-0415",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"1/8 + ?/8 = 3/8. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"1/8 + __/8 = 3/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0002",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill the blank: 1/8 + ?/8 = 3/8."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill in the blank: 1/8 + __/8 = 3/8."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0003",
@@ -8352,7 +8352,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":3,"display":{"promptText":"3/8 + ?/8 = 6/8. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":3,"display":{"promptText":"3/8 + __/8 = 6/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0004",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"5/8 + ?/8 = 6/8. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"5/8 + __/8 = 6/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0006",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill the blank: 3/6 + ?/6 = 4/6."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill in the blank: 3/6 + __/6 = 4/6."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0007",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"3/6 + ?/6 = 4/6. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"3/6 + __/6 = 4/6. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0011",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":3,"display":{"promptText":"Fill the blank: 8/12 + ?/12 = 11/12."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":3,"display":{"promptText":"Fill in the blank: 8/12 + __/12 = 11/12."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0012",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":7,"display":{"promptText":"1/10 + ?/10 = 8/10. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":7,"display":{"promptText":"1/10 + __/10 = 8/10. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0013",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":5,"display":{"promptText":"Fill the blank: 1/8 + ?/8 = 6/8."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":5,"display":{"promptText":"Fill in the blank: 1/8 + __/8 = 6/8."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0014",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"1/4 + ?/4 = 3/4. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"1/4 + __/4 = 3/4. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0016",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"display":{"promptText":"Fill the blank: 2/8 + ?/8 = 6/8."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"display":{"promptText":"Fill in the blank: 2/8 + __/8 = 6/8."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0017",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill the blank: 1/4 + ?/4 = 3/4."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill in the blank: 1/4 + __/4 = 3/4."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0019",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"2/5 + ?/5 = 3/5. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"2/5 + __/5 = 3/5. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0023",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill the blank: 2/6 + ?/6 = 3/6."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill in the blank: 2/6 + __/6 = 3/6."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0024",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"display":{"promptText":"3/8 + ?/8 = 7/8. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"display":{"promptText":"3/8 + __/8 = 7/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0025",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill the blank: 3/5 + ?/5 = 4/5."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill in the blank: 3/5 + __/5 = 4/5."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0027",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill the blank: 2/6 + ?/6 = 4/6."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill in the blank: 2/6 + __/6 = 4/6."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0029",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":7,"display":{"promptText":"Fill the blank: 1/10 + ?/10 = 8/10."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":7,"display":{"promptText":"Fill in the blank: 1/10 + __/10 = 8/10."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0031",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill the blank: 2/8 + ?/8 = 3/8."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill in the blank: 2/8 + __/8 = 3/8."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0034",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"4/8 + ?/8 = 6/8. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"4/8 + __/8 = 6/8. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0036",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"8/10 + ?/10 = 9/10. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"8/10 + __/10 = 9/10. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0038",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":4,"display":{"promptText":"5/12 + ?/12 = 9/12. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":4,"display":{"promptText":"5/12 + __/12 = 9/12. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0039",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill the blank: 1/5 + ?/5 = 3/5."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill in the blank: 1/5 + __/5 = 3/5."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0040",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill the blank: 1/6 + ?/6 = 3/6."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":2,"display":{"promptText":"Fill in the blank: 1/6 + __/6 = 3/6."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0042",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":5,"display":{"promptText":"Fill the blank: 1/12 + ?/12 = 6/12."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":5,"display":{"promptText":"Fill in the blank: 1/12 + __/12 = 6/12."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0044",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"3/12 + ?/12 = 4/12. What is the missing top number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"3/12 + __/12 = 4/12. What is the missing top number?"},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0048",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill the blank: 4/12 + ?/12 = 5/12."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":1,"display":{"promptText":"Fill in the blank: 4/12 + __/12 = 5/12."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0050",
@@ -8842,7 +8842,7 @@ export const ITEMS = [
     structureType: "missingLikeAddend",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"fracops","answer":5,"display":{"promptText":"Fill the blank: 5/12 + ?/12 = 10/12."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"fracops","answer":5,"display":{"promptText":"Fill in the blank: 5/12 + __/12 = 10/12."},"answerType":"numberPad"},
   },
   {
     itemId: "fractionOps-proc-b0824-0053",

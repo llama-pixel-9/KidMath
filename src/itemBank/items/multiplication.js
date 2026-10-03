@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"Tiles are arranged 4 rows by 7 columns. Total tiles?"}},
+    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"A floor has 4 rows of tiles with 7 tiles in each row. How many tiles are on the floor?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-015",
@@ -5272,7 +5272,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"Tiles are arranged 5 rows by 6 columns. Total tiles?"}},
+    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"Tiles are set in 5 rows and 6 columns. How many tiles are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-016",
@@ -5282,7 +5282,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Tiles are arranged 5 rows by 5 columns. Total tiles?"}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"A wall has 5 rows of 5 tiles. How many tiles are on the wall?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-017",
@@ -5332,7 +5332,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"A 8 by 5 array has how many squares?"}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"An 8 by 5 array has how many squares?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-022",
@@ -5342,7 +5342,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"A 8 by 6 array has how many squares?"}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"An 8 by 6 array has how many squares?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-023",
@@ -5372,7 +5372,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"Count rows of 5: 5, 10, 15, 20, 25, 30. That's 6 rows. How many dots in total?"}},
+    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"Skip count by 5s, one row at a time. There are 6 rows of 5 dots. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-026",
@@ -5382,7 +5382,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Count rows of 5: 5, 10, 15, 20, 25, 30, 35. That's 7 rows. How many dots in total?"}},
+    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"There are 7 rows of dots with 5 dots in each row. Count by 5s. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-027",
@@ -5392,7 +5392,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":6,"op":"×","answer":24,"display":{"promptText":"Count rows of 6: 6, 12, 18, 24. That's 4 rows. How many dots in total?"}},
+    question: {"a":4,"b":6,"op":"×","answer":24,"display":{"promptText":"There are 4 rows of dots with 6 dots in each row. Count by 6s. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-028",
@@ -5402,7 +5402,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"Count rows of 6: 6, 12, 18, 24, 30. That's 5 rows. How many dots in total?"}},
+    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"Each row has 6 dots, and there are 5 rows. Count by 6s. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-029",
@@ -5412,7 +5412,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"Count rows of 7: 7, 14, 21, 28. That's 4 rows. How many dots in total?"}},
+    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"Skip count by 7s, one row at a time. There are 4 rows of 7 dots. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-030",
@@ -5782,7 +5782,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":6,"op":"×","answer":84,"display":{"promptText":"Tiles are arranged 14 rows by 6 columns. Total tiles?"}},
+    question: {"a":14,"b":6,"op":"×","answer":84,"display":{"promptText":"A floor has 14 rows of tiles with 6 tiles in each row. How many tiles are on the floor?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-45-015",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":4,"op":"×","answer":72,"display":{"promptText":"Tiles are arranged 18 rows by 4 columns. Total tiles?"}},
+    question: {"a":18,"b":4,"op":"×","answer":72,"display":{"promptText":"Tiles are set in 18 rows and 4 columns. How many tiles are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-45-016",
@@ -5802,7 +5802,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":4,"op":"×","answer":100,"display":{"promptText":"Tiles are arranged 25 rows by 4 columns. Total tiles?"}},
+    question: {"a":25,"b":4,"op":"×","answer":100,"display":{"promptText":"A wall has 25 rows of 4 tiles. How many tiles are on the wall?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-45-017",
@@ -5842,7 +5842,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"A 11 by 7 array has how many squares?"}},
+    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"An 11 by 7 array has how many squares?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-45-021",
@@ -5852,7 +5852,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"A 11 by 8 array has how many squares?"}},
+    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"An 11 by 8 array has how many squares?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-45-022",
@@ -5862,7 +5862,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"A 11 by 9 array has how many squares?"}},
+    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"An 11 by 9 array has how many squares?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-45-023",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Tiles are arranged 2 rows by 3 columns. Total tiles?"}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"A floor has 2 rows of tiles with 3 tiles in each row. How many tiles are on the floor?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-014",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Tiles are arranged 3 rows by 2 columns. Total tiles?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Tiles are set in 3 rows and 2 columns. How many tiles are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-015",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Tiles are arranged 4 rows by 2 columns. Total tiles?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"A wall has 4 rows of 2 tiles. How many tiles are on the wall?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-016",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Tiles are arranged 2 rows by 2 columns. Total tiles?"}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"A floor has 2 rows of tiles with 2 tiles in each row. How many tiles are on the floor?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-017",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Count rows of 5: 5, 10. That's 2 rows. How many dots in total?"}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Each row has 5 dots, and there are 2 rows. Count by 5s. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-026",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Count rows of 5: 5, 10, 15. That's 3 rows. How many dots in total?"}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Each row has 5 dots, and there are 3 rows. Count by 5s. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-027",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Count rows of 4: 4, 8. That's 2 rows. How many dots in total?"}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"There are 2 rows of dots with 4 dots in each row. Count by 4s. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-028",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Count rows of 4: 4, 8, 12. That's 3 rows. How many dots in total?"}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"There are 3 rows of dots with 4 dots in each row. Count by 4s. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-029",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Count rows of 3: 3, 6, 9. That's 3 rows. How many dots in total?"}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Skip count by 3s, one row at a time. There are 3 rows of 3 dots. How many dots are there in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-K1-030",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":3,"op":"x","answer":36,"display":{"promptText":"12 × 3 = 12 × 1 + 12 × 2. What is 12 × 3?"},"answerType":"numberPad"},
+    question: {"a":12,"b":3,"op":"x","answer":36,"display":{"promptText":"Break apart 12 into 10 and 2. What is 12 × 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0056",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":16,"op":"x","answer":304,"display":{"promptText":"Break it apart into 19 × 10 plus 19 × 6. What is 19 × 16?"},"answerType":"numberPad"},
+    question: {"a":19,"b":16,"op":"x","answer":304,"display":{"promptText":"19 × 10 = 190. What is 19 × 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0057",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":26,"b":5,"op":"x","answer":130,"display":{"promptText":"Use 26 × 1 and 26 × 4 to work it out. What is 26 × 5?"},"answerType":"numberPad"},
+    question: {"a":26,"b":5,"op":"x","answer":130,"display":{"promptText":"Start with 20 × 5 = 100. What is 26 × 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0058",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":33,"b":12,"op":"x","answer":396,"display":{"promptText":"33 × 10 + 33 × 2 gives the same total. What is 33 × 12?"},"answerType":"numberPad"},
+    question: {"a":33,"b":12,"op":"x","answer":396,"display":{"promptText":"You know 33 × 10 = 330. What is 33 × 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0059",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":40,"b":7,"op":"x","answer":280,"display":{"promptText":"Split 7 into 1 and 6, multiply each by 40, then add. What is 40 × 7?"},"answerType":"numberPad"},
+    question: {"a":40,"b":7,"op":"x","answer":280,"display":{"promptText":"Use 4 × 7 = 28 to help. What is 40 × 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0060",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":22,"op":"x","answer":1034,"display":{"promptText":"A grid has 10 columns then 12 more, with 47 rows. What is 47 × 22?"},"answerType":"numberPad"},
+    question: {"a":47,"b":22,"op":"x","answer":1034,"display":{"promptText":"A grid has 47 rows and 22 columns. The first 20 columns have 940 squares. How many squares are in the whole grid?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0061",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":54,"b":9,"op":"x","answer":486,"display":{"promptText":"Two easy products, 54 × 1 and 54 × 8, add up to it. What is 54 × 9?"},"answerType":"numberPad"},
+    question: {"a":54,"b":9,"op":"x","answer":486,"display":{"promptText":"Hint: 50 × 9 = 450. What is 54 × 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0062",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":61,"b":18,"op":"x","answer":1098,"display":{"promptText":"First find 61 × 10, then 61 × 8, then add. What is 61 × 18?"},"answerType":"numberPad"},
+    question: {"a":61,"b":18,"op":"x","answer":1098,"display":{"promptText":"61 × 10 is 610. What is 61 × 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0063",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":68,"b":4,"op":"x","answer":272,"display":{"promptText":"4 is 1 + 3, so add the two partial products. What is 68 × 4?"},"answerType":"numberPad"},
+    question: {"a":68,"b":4,"op":"x","answer":272,"display":{"promptText":"Think of 68 as 60 + 8. What is 68 × 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0064",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":14,"op":"x","answer":1050,"display":{"promptText":"Think 75 × 10 and 75 × 4. Together, what is 75 × 14?"},"answerType":"numberPad"},
+    question: {"a":75,"b":14,"op":"x","answer":1050,"display":{"promptText":"Break 14 into tens and ones. What is 75 × 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0065",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":82,"b":6,"op":"x","answer":492,"display":{"promptText":"The two parts are 82 × 1 and 82 × 5. What is 82 × 6?"},"answerType":"numberPad"},
+    question: {"a":82,"b":6,"op":"x","answer":492,"display":{"promptText":"Use 80 × 6 = 480 to help. What is 82 × 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0066",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":24,"op":"x","answer":312,"display":{"promptText":"13 × 24 = 13 × 10 + 13 × 14. What is 13 × 24?"},"answerType":"numberPad"},
+    question: {"a":13,"b":24,"op":"x","answer":312,"display":{"promptText":"Think of 24 as 20 + 4. What is 13 × 24?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0067",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":8,"op":"x","answer":160,"display":{"promptText":"Break it apart into 20 × 1 plus 20 × 7. What is 20 × 8?"},"answerType":"numberPad"},
+    question: {"a":20,"b":8,"op":"x","answer":160,"display":{"promptText":"Think: 2 × 8 = 16. What is 20 × 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0068",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":27,"b":20,"op":"x","answer":540,"display":{"promptText":"Use 27 × 10 and 27 × 10 to work it out. What is 27 × 20?"},"answerType":"numberPad"},
+    question: {"a":27,"b":20,"op":"x","answer":540,"display":{"promptText":"27 × 2 is 54. What is 27 × 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0069",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":34,"b":3,"op":"x","answer":102,"display":{"promptText":"34 × 1 + 34 × 2 gives the same total. What is 34 × 3?"},"answerType":"numberPad"},
+    question: {"a":34,"b":3,"op":"x","answer":102,"display":{"promptText":"If you know 30 × 3 = 90, what is 34 × 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0070",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":41,"b":16,"op":"x","answer":656,"display":{"promptText":"Split 16 into 10 and 6, multiply each by 41, then add. What is 41 × 16?"},"answerType":"numberPad"},
+    question: {"a":41,"b":16,"op":"x","answer":656,"display":{"promptText":"Break apart 16 into 10 and 6. What is 41 × 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0071",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":48,"b":5,"op":"x","answer":240,"display":{"promptText":"A grid has 1 columns then 4 more, with 48 rows. What is 48 × 5?"},"answerType":"numberPad"},
+    question: {"a":48,"b":5,"op":"x","answer":240,"display":{"promptText":"A grid has 48 rows and 5 columns. The first 40 rows have 200 squares. How many squares does the grid have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0072",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":55,"b":12,"op":"x","answer":660,"display":{"promptText":"Two easy products, 55 × 10 and 55 × 2, add up to it. What is 55 × 12?"},"answerType":"numberPad"},
+    question: {"a":55,"b":12,"op":"x","answer":660,"display":{"promptText":"You know 55 × 10 = 550. What is 55 × 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0073",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":62,"b":7,"op":"x","answer":434,"display":{"promptText":"First find 62 × 1, then 62 × 6, then add. What is 62 × 7?"},"answerType":"numberPad"},
+    question: {"a":62,"b":7,"op":"x","answer":434,"display":{"promptText":"Start with 60 × 7 = 420. What is 62 × 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0074",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":69,"b":22,"op":"x","answer":1518,"display":{"promptText":"22 is 10 + 12, so add the two partial products. What is 69 × 22?"},"answerType":"numberPad"},
+    question: {"a":69,"b":22,"op":"x","answer":1518,"display":{"promptText":"Split 22 into 20 and 2. What is 69 × 22?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0075",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":76,"b":9,"op":"x","answer":684,"display":{"promptText":"Think 76 × 1 and 76 × 8. Together, what is 76 × 9?"},"answerType":"numberPad"},
+    question: {"a":76,"b":9,"op":"x","answer":684,"display":{"promptText":"Think of 76 as 70 + 6. What is 76 × 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0076",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":83,"b":18,"op":"x","answer":1494,"display":{"promptText":"The two parts are 83 × 10 and 83 × 8. What is 83 × 18?"},"answerType":"numberPad"},
+    question: {"a":83,"b":18,"op":"x","answer":1494,"display":{"promptText":"Hint: 83 × 10 = 830. What is 83 × 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0077",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":4,"op":"x","answer":56,"display":{"promptText":"14 × 4 = 14 × 1 + 14 × 3. What is 14 × 4?"},"answerType":"numberPad"},
+    question: {"a":14,"b":4,"op":"x","answer":56,"display":{"promptText":"Break apart 14 into 10 and 4. What is 14 × 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0078",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":21,"b":14,"op":"x","answer":294,"display":{"promptText":"Break it apart into 21 × 10 plus 21 × 4. What is 21 × 14?"},"answerType":"numberPad"},
+    question: {"a":21,"b":14,"op":"x","answer":294,"display":{"promptText":"21 × 10 = 210. What is 21 × 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0079",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":28,"b":6,"op":"x","answer":168,"display":{"promptText":"Use 28 × 1 and 28 × 5 to work it out. What is 28 × 6?"},"answerType":"numberPad"},
+    question: {"a":28,"b":6,"op":"x","answer":168,"display":{"promptText":"Start with 20 × 6 = 120. What is 28 × 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0080",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":24,"op":"x","answer":840,"display":{"promptText":"35 × 10 + 35 × 14 gives the same total. What is 35 × 24?"},"answerType":"numberPad"},
+    question: {"a":35,"b":24,"op":"x","answer":840,"display":{"promptText":"You know 35 × 20 = 700. What is 35 × 24?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0081",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":8,"op":"x","answer":336,"display":{"promptText":"Split 8 into 1 and 7, multiply each by 42, then add. What is 42 × 8?"},"answerType":"numberPad"},
+    question: {"a":42,"b":8,"op":"x","answer":336,"display":{"promptText":"Split 42 into 40 and 2. What is 42 × 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0082",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":49,"b":20,"op":"x","answer":980,"display":{"promptText":"A grid has 10 columns then 10 more, with 49 rows. What is 49 × 20?"},"answerType":"numberPad"},
+    question: {"a":49,"b":20,"op":"x","answer":980,"display":{"promptText":"A grid has 49 rows and 20 columns. The first 40 rows have 800 squares. How many squares are in the whole grid?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0083",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":56,"b":3,"op":"x","answer":168,"display":{"promptText":"Two easy products, 56 × 1 and 56 × 2, add up to it. What is 56 × 3?"},"answerType":"numberPad"},
+    question: {"a":56,"b":3,"op":"x","answer":168,"display":{"promptText":"Hint: 50 × 3 = 150. What is 56 × 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0084",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":63,"b":16,"op":"x","answer":1008,"display":{"promptText":"First find 63 × 10, then 63 × 6, then add. What is 63 × 16?"},"answerType":"numberPad"},
+    question: {"a":63,"b":16,"op":"x","answer":1008,"display":{"promptText":"63 × 10 is 630. What is 63 × 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0085",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":70,"b":5,"op":"x","answer":350,"display":{"promptText":"5 is 1 + 4, so add the two partial products. What is 70 × 5?"},"answerType":"numberPad"},
+    question: {"a":70,"b":5,"op":"x","answer":350,"display":{"promptText":"Think of 70 as 7 tens. What is 70 × 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0086",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":77,"b":12,"op":"x","answer":924,"display":{"promptText":"Think 77 × 10 and 77 × 2. Together, what is 77 × 12?"},"answerType":"numberPad"},
+    question: {"a":77,"b":12,"op":"x","answer":924,"display":{"promptText":"Break 12 into tens and ones. What is 77 × 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0087",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":84,"b":7,"op":"x","answer":588,"display":{"promptText":"The two parts are 84 × 1 and 84 × 6. What is 84 × 7?"},"answerType":"numberPad"},
+    question: {"a":84,"b":7,"op":"x","answer":588,"display":{"promptText":"Use 80 × 7 = 560 to help. What is 84 × 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0088",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":22,"op":"x","answer":330,"display":{"promptText":"15 × 22 = 15 × 10 + 15 × 12. What is 15 × 22?"},"answerType":"numberPad"},
+    question: {"a":15,"b":22,"op":"x","answer":330,"display":{"promptText":"Think of 22 as 20 + 2. What is 15 × 22?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0089",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":9,"op":"x","answer":198,"display":{"promptText":"Break it apart into 22 × 1 plus 22 × 8. What is 22 × 9?"},"answerType":"numberPad"},
+    question: {"a":22,"b":9,"op":"x","answer":198,"display":{"promptText":"Think: 20 × 9 = 180. What is 22 × 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0090",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":29,"b":18,"op":"x","answer":522,"display":{"promptText":"Use 29 × 10 and 29 × 8 to work it out. What is 29 × 18?"},"answerType":"numberPad"},
+    question: {"a":29,"b":18,"op":"x","answer":522,"display":{"promptText":"29 × 10 is 290. What is 29 × 18?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0091",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":4,"op":"x","answer":144,"display":{"promptText":"36 × 1 + 36 × 3 gives the same total. What is 36 × 4?"},"answerType":"numberPad"},
+    question: {"a":36,"b":4,"op":"x","answer":144,"display":{"promptText":"If you know 30 × 4 = 120, what is 36 × 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0092",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":43,"b":14,"op":"x","answer":602,"display":{"promptText":"Split 14 into 10 and 4, multiply each by 43, then add. What is 43 × 14?"},"answerType":"numberPad"},
+    question: {"a":43,"b":14,"op":"x","answer":602,"display":{"promptText":"Break apart 14 into 10 and 4. What is 43 × 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0093",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":6,"op":"x","answer":300,"display":{"promptText":"A grid has 1 columns then 5 more, with 50 rows. What is 50 × 6?"},"answerType":"numberPad"},
+    question: {"a":50,"b":6,"op":"x","answer":300,"display":{"promptText":"A grid has 50 rows and 6 columns. Every 10 rows have 60 squares. How many squares does the grid have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0094",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":57,"b":24,"op":"x","answer":1368,"display":{"promptText":"Two easy products, 57 × 10 and 57 × 14, add up to it. What is 57 × 24?"},"answerType":"numberPad"},
+    question: {"a":57,"b":24,"op":"x","answer":1368,"display":{"promptText":"You know 57 × 20 = 1140. What is 57 × 24?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0095",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":64,"b":8,"op":"x","answer":512,"display":{"promptText":"First find 64 × 1, then 64 × 7, then add. What is 64 × 8?"},"answerType":"numberPad"},
+    question: {"a":64,"b":8,"op":"x","answer":512,"display":{"promptText":"Start with 60 × 8 = 480. What is 64 × 8?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0096",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":71,"b":20,"op":"x","answer":1420,"display":{"promptText":"20 is 10 + 10, so add the two partial products. What is 71 × 20?"},"answerType":"numberPad"},
+    question: {"a":71,"b":20,"op":"x","answer":1420,"display":{"promptText":"Split 71 into 70 and 1. What is 71 × 20?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0097",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":78,"b":3,"op":"x","answer":234,"display":{"promptText":"Think 78 × 1 and 78 × 2. Together, what is 78 × 3?"},"answerType":"numberPad"},
+    question: {"a":78,"b":3,"op":"x","answer":234,"display":{"promptText":"Break 78 into tens and ones. What is 78 × 3?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0098",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":85,"b":16,"op":"x","answer":1360,"display":{"promptText":"The two parts are 85 × 10 and 85 × 6. What is 85 × 16?"},"answerType":"numberPad"},
+    question: {"a":85,"b":16,"op":"x","answer":1360,"display":{"promptText":"Hint: 85 × 10 = 850. What is 85 × 16?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0099",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":5,"op":"x","answer":80,"display":{"promptText":"16 × 5 = 16 × 1 + 16 × 4. What is 16 × 5?"},"answerType":"numberPad"},
+    question: {"a":16,"b":5,"op":"x","answer":80,"display":{"promptText":"Break apart 16 into 10 and 6. What is 16 × 5?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0100",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":12,"op":"x","answer":276,"display":{"promptText":"Break it apart into 23 × 10 plus 23 × 2. What is 23 × 12?"},"answerType":"numberPad"},
+    question: {"a":23,"b":12,"op":"x","answer":276,"display":{"promptText":"23 × 10 = 230. What is 23 × 12?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0101",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":7,"op":"x","answer":210,"display":{"promptText":"Use 30 × 1 and 30 × 6 to work it out. What is 30 × 7?"},"answerType":"numberPad"},
+    question: {"a":30,"b":7,"op":"x","answer":210,"display":{"promptText":"Start with 3 × 7 = 21. What is 30 × 7?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0102",
@@ -7702,7 +7702,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":37,"b":22,"op":"x","answer":814,"display":{"promptText":"37 × 10 + 37 × 12 gives the same total. What is 37 × 22?"},"answerType":"numberPad"},
+    question: {"a":37,"b":22,"op":"x","answer":814,"display":{"promptText":"You know 37 × 20 = 740. What is 37 × 22?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0103",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":44,"b":9,"op":"x","answer":396,"display":{"promptText":"Split 9 into 1 and 8, multiply each by 44, then add. What is 44 × 9?"},"answerType":"numberPad"},
+    question: {"a":44,"b":9,"op":"x","answer":396,"display":{"promptText":"Split 44 into 40 and 4. What is 44 × 9?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0104",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":51,"b":18,"op":"x","answer":918,"display":{"promptText":"A grid has 10 columns then 8 more, with 51 rows. What is 51 × 18?"},"answerType":"numberPad"},
+    question: {"a":51,"b":18,"op":"x","answer":918,"display":{"promptText":"A grid has 51 rows and 18 columns. The first 50 rows have 900 squares. How many squares are in the whole grid?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0105",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":58,"b":4,"op":"x","answer":232,"display":{"promptText":"Two easy products, 58 × 1 and 58 × 3, add up to it. What is 58 × 4?"},"answerType":"numberPad"},
+    question: {"a":58,"b":4,"op":"x","answer":232,"display":{"promptText":"Hint: 50 × 4 = 200. What is 58 × 4?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0106",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":14,"op":"x","answer":910,"display":{"promptText":"First find 65 × 10, then 65 × 4, then add. What is 65 × 14?"},"answerType":"numberPad"},
+    question: {"a":65,"b":14,"op":"x","answer":910,"display":{"promptText":"65 × 10 is 650. What is 65 × 14?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0107",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":72,"b":6,"op":"x","answer":432,"display":{"promptText":"6 is 1 + 5, so add the two partial products. What is 72 × 6?"},"answerType":"numberPad"},
+    question: {"a":72,"b":6,"op":"x","answer":432,"display":{"promptText":"Think of 72 as 70 + 2. What is 72 × 6?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-b0823-0108",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "multiDigitDistributive",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":79,"b":24,"op":"x","answer":1896,"display":{"promptText":"Think 79 × 10 and 79 × 14. Together, what is 79 × 24?"},"answerType":"numberPad"},
+    question: {"a":79,"b":24,"op":"x","answer":1896,"display":{"promptText":"Break 24 into tens and ones. What is 79 × 24?"},"answerType":"numberPad"},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-001",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Express 4 + 4 + 4 as a multiplication. What is the value?"}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"3 × 4 means 4 + 4 + 4. What is 3 × 4?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-003",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"If 6 × 3 = 18, what does 3 + 3 + 3 + 3 + 3 + 3 equal?"}},
+    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"Use 6 × 3 to help. What is 3 + 3 + 3 + 3 + 3 + 3?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-004",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"Repeated addition: 7 + 7 + 7 + 7 + 7 = ? Find the total."}},
+    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"What is 7 + 7 + 7 + 7 + 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-015",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":9,"op":"×","answer":27,"display":{"promptText":"Repeated addition: 9 + 9 + 9 = ? Express as multiplication."}},
+    question: {"a":3,"b":9,"op":"×","answer":27,"display":{"promptText":"9 + 9 + 9 is 3 nines. What is 3 × 9?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-016",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":8,"op":"×","answer":32,"display":{"promptText":"Repeated addition: 8 + 8 + 8 + 8 = ? Express as multiplication."}},
+    question: {"a":4,"b":8,"op":"×","answer":32,"display":{"promptText":"Add 8 four times. What is 4 × 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-017",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"6 groups, each with 3 items. Total items?"}},
+    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"There are 6 groups with 3 counters in each group. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-018",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 groups, each with 6 items. Total items?"}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 groups have 6 counters each. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-019",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"8 groups, each with 5 items. Total items?"}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"Each of 8 groups has 5 counters. How many counters are there altogether?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-020",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"9 groups, each with 5 items. Total items?"}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Put 5 counters in each of 9 groups. How many counters is that in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-021",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"6 groups, each with 7 items. Total items?"}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"How many counters are in 6 groups of 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-022",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"7 groups, each with 8 items. Total items?"}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"What is 7 groups of 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-023",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"8 groups, each with 9 items. Total items?"}},
+    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"8 groups of 9 is the same as 8 × 9. What is 8 × 9?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-024",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":7,"op":"×","answer":14,"display":{"promptText":"Skip count: 7, 14. That's 2 jumps of 7. What is 2 × 7?"}},
+    question: {"a":2,"b":7,"op":"×","answer":14,"display":{"promptText":"Skip count by 7s two times. What is 2 × 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-025",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":6,"op":"×","answer":18,"display":{"promptText":"Skip count: 6, 12, 18. That's 3 jumps of 6. What is 3 × 6?"}},
+    question: {"a":3,"b":6,"op":"×","answer":18,"display":{"promptText":"Skip count by 6s three times. What is 3 × 6?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-026",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"Skip count: 7, 14, 21, 28. That's 4 jumps of 7. What is 4 × 7?"}},
+    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"Jump by 7s four times, starting at 0. What is 4 × 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-027",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"Skip count: 8, 16, 24, 32, 40. That's 5 jumps of 8. What is 5 × 8?"}},
+    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"Skip count by 8s five times. What is 5 × 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-028",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Skip count: 9, 18, 27, 36, 45, 54. That's 6 jumps of 9. What is 6 × 9?"}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Jump by 9s six times, starting at 0. What is 6 × 9?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-029",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Skip count: 6, 12, 18, 24, 30, 36, 42, 48, 54. That's 9 jumps of 6. What is 9 × 6?"}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Count by 6s: 6, 12, 18, and so on. What is 9 × 6?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-030",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Doubling: twice as many as 18 is the same as 6 × 6. What is the product?"}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"6 × 6 is double 3 × 6. What is 6 × 6?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-031",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Six of 8 is the same as? Use multiplication."}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Make 6 groups with 8 counters in each. How many counters do you use?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-032",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Seven of 6 is the same as? Use multiplication."}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 groups of 6 is the same as 7 × 6. What is 7 × 6?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-033",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Seven of 7 is the same as? Use multiplication."}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"There are 7 groups of 7 counters. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-034",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Eight of 6 is the same as? Use multiplication."}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Each of 8 groups has 6 counters. How many counters are there altogether?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-035",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Eight of 7 is the same as? Use multiplication."}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Put 7 counters in each of 8 groups. How many counters is that in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-036",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Nine of 6 is the same as? Use multiplication."}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Put 6 counters in each of 9 groups. How many counters is that in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-037",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Nine of 7 is the same as? Use multiplication."}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"How many counters are in 9 groups of 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-038",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Nine of 8 is the same as? Use multiplication."}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"What is 9 groups of 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-039",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Six of 9 is the same as? Use multiplication."}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"6 bags each hold 9 counters. How many counters are in the bags?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-040",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"Five of 7 is the same as? Use multiplication."}},
+    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"How many counters are in 5 groups of 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-041",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"Five of 8 is the same as? Use multiplication."}},
+    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"What is 5 groups of 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-042",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":9,"op":"×","answer":45,"display":{"promptText":"Five of 9 is the same as? Use multiplication."}},
+    question: {"a":5,"b":9,"op":"×","answer":45,"display":{"promptText":"5 groups of 9 is the same as 5 × 9. What is 5 × 9?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-043",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"Jumps of 5 on a number line: after 6 jumps, you land on?"}},
+    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"Start at 0 on a number line. Where do you land after 6 jumps of 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-044",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Jumps of 5 on a number line: after 7 jumps, you land on?"}},
+    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"On a number line, where do you land after 7 jumps of 5 from 0?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-045",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"Jumps of 5 on a number line: after 8 jumps, you land on?"}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"A frog starts at 0 and jumps 5 each time. Where is the frog after 8 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-046",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Jumps of 5 on a number line: after 9 jumps, you land on?"}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Jump by 5s on a number line, starting at 0. What number are you on after 9 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-047",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Jumps of 6 on a number line: after 6 jumps, you land on?"}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Start at 0 and count by 6s on a number line. Where are you after 6 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-048",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Jumps of 6 on a number line: after 7 jumps, you land on?"}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"What number do you reach with 7 jumps of 6 from 0 on a number line?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-049",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Jumps of 7 on a number line: after 8 jumps, you land on?"}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Start at 0 on a number line. Where do you land after 8 jumps of 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-050",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Jumps of 8 on a number line: after 9 jumps, you land on?"}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"On a number line, where do you land after 9 jumps of 8 from 0?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-051",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Jumps of 9 on a number line: after 6 jumps, you land on?"}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"A frog starts at 0 and jumps 9 each time. Where is the frog after 6 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-23-052",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Jumps of 9 on a number line: after 7 jumps, you land on?"}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Jump by 9s on a number line, starting at 0. What number are you on after 7 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-001",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Use the equal-groups model: 8 × 7. What is the product?"}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"8 groups of 7 is the same as 8 × 7. What is 8 × 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-002",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":10,"op":"×","answer":60,"display":{"promptText":"Repeated addition: 10 + 10 + 10 + 10 + 10 + 10 = ? Express as multiplication."}},
+    question: {"a":6,"b":10,"op":"×","answer":60,"display":{"promptText":"Add 10 six times. What is 6 × 10?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-014",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":11,"op":"×","answer":77,"display":{"promptText":"Distributive: 7 × 11 = 7 × 10 + 7 × 1. What is the product?"}},
+    question: {"a":7,"b":11,"op":"×","answer":77,"display":{"promptText":"Start with 7 × 10 = 70. What is 7 × 11?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-015",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":12,"op":"×","answer":96,"display":{"promptText":"Distributive: 8 × 12 = 8 × 10 + 8 × 2. What is the product?"}},
+    question: {"a":8,"b":12,"op":"×","answer":96,"display":{"promptText":"Break 12 into tens and ones. What is 8 × 12?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-016",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":13,"op":"×","answer":117,"display":{"promptText":"Distributive: 9 × 13 = 9 × 10 + 9 × 3. What is the product?"}},
+    question: {"a":9,"b":13,"op":"×","answer":117,"display":{"promptText":"9 × 10 is 90. What is 9 × 13?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-017",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":8,"op":"×","answer":80,"display":{"promptText":"10 groups, each with 8 items. Total items?"}},
+    question: {"a":10,"b":8,"op":"×","answer":80,"display":{"promptText":"There are 10 groups of 8 counters. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-018",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":9,"op":"×","answer":90,"display":{"promptText":"10 groups, each with 9 items. Total items?"}},
+    question: {"a":10,"b":9,"op":"×","answer":90,"display":{"promptText":"Make 10 groups with 9 counters in each. How many counters do you use?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-019",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"11 groups, each with 7 items. Total items?"}},
+    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"11 bags each hold 7 counters. How many counters are in the bags?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-020",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"11 groups, each with 8 items. Total items?"}},
+    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"There are 11 groups with 8 counters in each group. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-021",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":6,"op":"×","answer":72,"display":{"promptText":"12 groups, each with 6 items. Total items?"}},
+    question: {"a":12,"b":6,"op":"×","answer":72,"display":{"promptText":"12 groups have 6 counters each. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-022",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":7,"op":"×","answer":84,"display":{"promptText":"12 groups, each with 7 items. Total items?"}},
+    question: {"a":12,"b":7,"op":"×","answer":84,"display":{"promptText":"Each of 12 groups has 7 counters. How many counters are there altogether?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-023",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"13 groups, each with 8 items. Total items?"}},
+    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"Put 8 counters in each of 13 groups. How many counters is that in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-024",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":5,"op":"×","answer":70,"display":{"promptText":"14 groups, each with 5 items. Total items?"}},
+    question: {"a":14,"b":5,"op":"×","answer":70,"display":{"promptText":"How many counters are in 14 groups of 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-025",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Skip count: 12, 24, 36, 48, 60, 72, 84, 96, 108, 120. 10 jumps of 12. What is 10 × 12?"}},
+    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Skip count by 12s ten times. What is 10 × 12?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-026",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":14,"op":"×","answer":112,"display":{"promptText":"Area model: a 8 by 14 rectangle has what area?"}},
+    question: {"a":8,"b":14,"op":"×","answer":112,"display":{"promptText":"Area model: an 8 by 14 rectangle has what area?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-028",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":15,"op":"×","answer":165,"display":{"promptText":"Area model: a 11 by 15 rectangle has what area?"}},
+    question: {"a":11,"b":15,"op":"×","answer":165,"display":{"promptText":"Area model: an 11 by 15 rectangle has what area?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-030",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Ten of 12 is the same as? Use multiplication."}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"There are 12 groups with 12 counters in each group. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-031",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":5,"op":"×","answer":65,"display":{"promptText":"Area model: 13 × 5 = (10 + 3) × 5. What is the product?"}},
+    question: {"a":13,"b":5,"op":"×","answer":65,"display":{"promptText":"Think of 13 as 10 + 3. What is 13 × 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-032",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":6,"op":"×","answer":84,"display":{"promptText":"Area model: 14 × 6 = (10 + 4) × 6. What is the product?"}},
+    question: {"a":14,"b":6,"op":"×","answer":84,"display":{"promptText":"10 × 6 = 60. What is 14 × 6?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-033",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":7,"op":"×","answer":105,"display":{"promptText":"Area model: 15 × 7 = (10 + 5) × 7. What is the product?"}},
+    question: {"a":15,"b":7,"op":"×","answer":105,"display":{"promptText":"Break apart 15 into 10 and 5. What is 15 × 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-034",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":8,"op":"×","answer":128,"display":{"promptText":"Area model: 16 × 8 = (10 + 6) × 8. What is the product?"}},
+    question: {"a":16,"b":8,"op":"×","answer":128,"display":{"promptText":"You know 10 × 8 = 80. What is 16 × 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-035",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":6,"op":"×","answer":108,"display":{"promptText":"Area model: 18 × 6 = (10 + 8) × 6. What is the product?"}},
+    question: {"a":18,"b":6,"op":"×","answer":108,"display":{"promptText":"Split 18 into 10 and 8. What is 18 × 6?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-036",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":8,"op":"×","answer":160,"display":{"promptText":"Place value: 20 × 8 = 2 × 10 × 8. What is the product?"}},
+    question: {"a":20,"b":8,"op":"×","answer":160,"display":{"promptText":"Hint: 2 × 8 = 16. What is 20 × 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-037",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":8,"op":"×","answer":200,"display":{"promptText":"Place value: 25 × 8 = (20 + 5) × 8. What is the product?"}},
+    question: {"a":25,"b":8,"op":"×","answer":200,"display":{"promptText":"Use 20 × 8 = 160 to help. What is 25 × 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-038",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":6,"op":"×","answer":180,"display":{"promptText":"Place value: 30 × 6 = 3 × 10 × 6. What is the product?"}},
+    question: {"a":30,"b":6,"op":"×","answer":180,"display":{"promptText":"3 × 6 is 18. What is 30 × 6?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-039",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":4,"op":"×","answer":200,"display":{"promptText":"Place value: 50 × 4 = 5 × 10 × 4. What is the product?"}},
+    question: {"a":50,"b":4,"op":"×","answer":200,"display":{"promptText":"If you know 5 × 4 = 20, what is 50 × 4?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-040",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"11 × 12 is the same as 11 × (10 + 2). What is 11 × 12?"}},
+    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"11 × 10 = 110. What is 11 × 12?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-041",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"13 × 8 is the same as 13 × (4 × 2). What is 13 × 8?"}},
+    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"You know 13 × 4 = 52. What is 13 × 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-042",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"14 × 7 is the same as 7 × (2 × 7). What is 14 × 7?"}},
+    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"Use 7 × 7 = 49 to help. What is 14 × 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-043",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":6,"op":"×","answer":60,"display":{"promptText":"Jumps of 6 on a number line: after 10 jumps, you land on?"}},
+    question: {"a":10,"b":6,"op":"×","answer":60,"display":{"promptText":"Start at 0 and count by 6s on a number line. Where are you after 10 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-044",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":7,"op":"×","answer":70,"display":{"promptText":"Jumps of 7 on a number line: after 10 jumps, you land on?"}},
+    question: {"a":10,"b":7,"op":"×","answer":70,"display":{"promptText":"What number do you reach with 10 jumps of 7 from 0 on a number line?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-045",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":5,"op":"×","answer":55,"display":{"promptText":"Jumps of 5 on a number line: after 11 jumps, you land on?"}},
+    question: {"a":11,"b":5,"op":"×","answer":55,"display":{"promptText":"Start at 0 on a number line. Where do you land after 11 jumps of 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-046",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":6,"op":"×","answer":66,"display":{"promptText":"Jumps of 6 on a number line: after 11 jumps, you land on?"}},
+    question: {"a":11,"b":6,"op":"×","answer":66,"display":{"promptText":"On a number line, where do you land after 11 jumps of 6 from 0?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-047",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":5,"op":"×","answer":60,"display":{"promptText":"Jumps of 5 on a number line: after 12 jumps, you land on?"}},
+    question: {"a":12,"b":5,"op":"×","answer":60,"display":{"promptText":"A frog starts at 0 and jumps 5 each time. Where is the frog after 12 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-048",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":5,"op":"×","answer":75,"display":{"promptText":"Jumps of 5 on a number line: after 15 jumps, you land on?"}},
+    question: {"a":15,"b":5,"op":"×","answer":75,"display":{"promptText":"Jump by 5s on a number line, starting at 0. What number are you on after 15 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-049",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":6,"op":"×","answer":72,"display":{"promptText":"Halving: 12 × 6 is half of 12 × 12. Find the product."}},
+    question: {"a":12,"b":6,"op":"×","answer":72,"display":{"promptText":"If you know 12 × 3 = 36, what is 12 × 6?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-050",
@@ -8772,7 +8772,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":5,"op":"×","answer":70,"display":{"promptText":"Halving: 14 × 5 is half of 14 × 10. Find the product."}},
+    question: {"a":14,"b":5,"op":"×","answer":70,"display":{"promptText":"Think: 14 × 10 = 140. What is 14 × 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-051",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":5,"op":"×","answer":80,"display":{"promptText":"Halving: 16 × 5 is half of 16 × 10. Find the product."}},
+    question: {"a":16,"b":5,"op":"×","answer":80,"display":{"promptText":"16 × 5 is half of 16 × 10. What is 16 × 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-052",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":5,"op":"×","answer":90,"display":{"promptText":"Halving: 18 × 5 is half of 18 × 10. Find the product."}},
+    question: {"a":18,"b":5,"op":"×","answer":90,"display":{"promptText":"18 × 10 = 180. What is 18 × 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-001",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Express 2 + 2 + 2 + 2 as a multiplication. What is 4 × 2?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 × 2 means 2 + 2 + 2 + 2. What is 4 × 2?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-004",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Repeated addition: 2 + 2 + 2 = ? Find the total."}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"What is 2 + 2 + 2?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-017",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"2 groups, each with 2 items. Total items?"}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"What is 2 groups of 2?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-018",
@@ -8962,7 +8962,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"2 groups, each with 3 items. Total items?"}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"2 groups of 3 is the same as 2 × 3. What is 2 × 3?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-019",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"2 groups, each with 4 items. Total items?"}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"There are 2 groups of 4 counters. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-020",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 groups, each with 2 items. Total items?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Make 3 groups with 2 counters in each. How many counters do you use?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-021",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 groups, each with 2 items. Total items?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 bags each hold 2 counters. How many counters are in the bags?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-022",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"5 groups, each with 4 items. Total items?"}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"There are 5 groups with 4 counters in each group. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-023",
@@ -9012,7 +9012,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 groups, each with 5 items. Total items?"}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 groups have 5 counters each. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-024",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Skip count: 3, 6. How many groups of 3? What is 2 × 3?"}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Jump by 3s two times, starting at 0. What is 2 × 3?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-025",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Skip count: 2, 4, 6. This is 3 jumps of 2. What is 3 × 2?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Jump by 2s three times, starting at 0. What is 3 × 2?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-026",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Skip count: 2, 4, 6, 8. This is 4 jumps of 2. What is 4 × 2?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Skip count by 2s four times. What is 4 × 2?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-027",
@@ -9052,7 +9052,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Skip count: 2, 4, 6, 8, 10. This is 5 jumps of 2. What is 5 × 2?"}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Count by 2s: 2, 4, 6, and so on. What is 5 × 2?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-028",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Skip count: 3, 6, 9. This is 3 jumps of 3. What is 3 × 3?"}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Skip count by 3s three times. What is 3 × 3?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-029",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Skip count: 3, 6, 9, 12. This is 4 jumps of 3. What is 4 × 3?"}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Count by 3s: 3, 6, 9, and so on. What is 4 × 3?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-030",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Doubling: twice as many as 3 is?"}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"What is double 3?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-031",
@@ -9092,7 +9092,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Doubling: twice as many as 4 is?"}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Double 4 means 2 groups of 4. What is double 4?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-032",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Doubling: twice as many as 5 is?"}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"What is double 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-033",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Tripling: 3 times as many as 3 is?"}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"3 groups have 3 counters each. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-034",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Tripling: 3 times as many as 4 is?"}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Each of 3 groups has 4 counters. How many counters are there altogether?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-035",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Tripling: 3 times as many as 5 is?"}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Put 5 counters in each of 3 groups. How many counters is that in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-036",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Four of 2 is the same as? Use multiplication."}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"There are 4 groups with 2 counters in each group. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-037",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Four of 3 is the same as? Use multiplication."}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 groups have 3 counters each. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-038",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Four of 4 is the same as? Use multiplication."}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Each of 4 groups has 4 counters. How many counters are there altogether?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-039",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Five of 3 is the same as? Use multiplication."}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"There are 5 groups of 3 counters. How many counters are there in all?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-040",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Five of 4 is the same as? Use multiplication."}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Make 5 groups with 4 counters in each. How many counters do you use?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-041",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Five of 5 is the same as? Use multiplication."}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"5 bags each hold 5 counters. How many counters are in the bags?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-042",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Doubling: twice as many as 2 is?"}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Double 2 means 2 groups of 2. What is double 2?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-043",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Jumps of 3 on a number line: after 2 jumps, you land on?"}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Start at 0 and count by 3s on a number line. Where are you after 2 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-044",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Jumps of 2 on a number line: after 3 jumps, you land on?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"What number do you reach with 3 jumps of 2 from 0 on a number line?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-045",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Jumps of 2 on a number line: after 4 jumps, you land on?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Start at 0 on a number line. Where do you land after 4 jumps of 2?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-046",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Jumps of 2 on a number line: after 5 jumps, you land on?"}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"On a number line, where do you land after 5 jumps of 2 from 0?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-047",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Jumps of 3 on a number line: after 3 jumps, you land on?"}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"A frog starts at 0 and jumps 3 each time. Where is the frog after 3 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-048",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Jumps of 3 on a number line: after 4 jumps, you land on?"}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Jump by 3s on a number line, starting at 0. What number are you on after 4 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-049",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Jumps of 4 on a number line: after 3 jumps, you land on?"}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Start at 0 and count by 4s on a number line. Where are you after 3 jumps?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-050",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Jumps of 5 on a number line: after 2 jumps, you land on?"}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"What number do you reach with 2 jumps of 5 from 0 on a number line?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-051",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Jumps of 5 on a number line: after 3 jumps, you land on?"}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Start at 0 on a number line. Where do you land after 3 jumps of 5?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-K1-052",
@@ -9302,7 +9302,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Jumps of 5 on a number line: after 4 jumps, you land on?"}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"On a number line, where do you land after 4 jumps of 5 from 0?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-001",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"If 6 × 5 = 30, what is 5 × 6?"}},
+    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"Turn 5 × 6 around to 6 × 5 if that fact is easier. What is 5 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-002",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":8,"op":"×","answer":32,"display":{"promptText":"If 8 × 4 = 32, what is 4 × 8?"}},
+    question: {"a":4,"b":8,"op":"×","answer":32,"display":{"promptText":"4 × 8 and 8 × 4 have the same answer. What is 4 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-004",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"Recall the fact: 6 × 7 equals?"}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"How much is 6 × 7?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-005",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Recall the fact: 6 × 8 equals?"}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"6 × 8 is what number?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-006",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Recall the fact: 6 × 9 equals?"}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"What number is 6 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-007",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Recall the fact: 7 × 6 equals?"}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Fill in the fact: 7 × 6 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-008",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Recall the fact: 7 × 7 equals?"}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Times fact: 7 × 7 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-009",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Recall the fact: 8 × 6 equals?"}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"What is 8 × 6 equal to?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-010",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Recall the fact: 8 × 7 equals?"}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Quick fact: 8 × 7 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-011",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Recall the fact: 8 × 8 equals?"}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"What do you get for 8 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-012",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Recall the fact: 9 × 6 equals?"}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"How much is 9 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-013",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Recall the fact: 9 × 7 equals?"}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"9 × 7 is what number?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-014",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Recall the fact: 9 × 8 equals?"}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"What number is 9 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-015",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"Recall the fact: 9 × 9 equals?"}},
+    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"Fill in the fact: 9 × 9 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-016",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Recall the fact: 7 × 8 equals?"}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Times fact: 7 × 8 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-017",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"If 6 × 7 = 42, then 7 × 6 = ?"}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 × 6 and 6 × 7 have the same answer. What is 7 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-025",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"If 7 × 8 = 56, then 8 × 7 = ?"}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"You can switch 8 × 7 to 7 × 8, and the answer stays the same. What is 8 × 7?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-026",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"If 8 × 9 = 72, then 9 × 8 = ?"}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"You can switch 9 × 8 to 8 × 9, and the answer stays the same. What is 9 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-027",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"Doubles: 9 × 4 = (9 × 2) + (9 × 2). What is the product?"}},
+    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"Start with 9 × 2 = 18. What is 9 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-028",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Doubles: 8 × 6 = (8 × 3) + (8 × 3). What is the product?"}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Hint: 8 × 3 = 24. What is 8 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-029",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Doubles: 6 × 8 = (6 × 4) + (6 × 4). What is the product?"}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"6 × 4 is 24. What is 6 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-030",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":3,"op":"×","answer":27,"display":{"promptText":"Nines trick: 9 × 3 digits sum to 9. What is the product?"}},
+    question: {"a":9,"b":3,"op":"×","answer":27,"display":{"promptText":"10 × 3 = 30. What is 9 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-031",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"Nines trick: 9 × 4 digits sum to 9. What is the product?"}},
+    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"9 × 4 is 4 less than 10 × 4. What is 9 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-032",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Nines trick: 9 × 5 digits sum to 9. What is the product?"}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"You know 10 × 5 = 50. What is 9 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-033",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Nines trick: 9 × 6 digits sum to 9. What is the product?"}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"9 × 6 is 6 less than 10 × 6. What is 9 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-034",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Nines trick: 9 × 7 digits sum to 9. What is the product?"}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Find 10 × 7 first, then take away one 7. What is 9 × 7?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-035",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Nines trick: 9 × 8 digits sum to 9. What is the product?"}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Use 10 × 8 = 80 to help. What is 9 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-036",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"Nines trick: 9 × 9 digits sum to 9. What is the product?"}},
+    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"9 × 9 is 9 less than 10 × 9. What is 9 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-037",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Squares: 6 × 6 is a perfect square. What is it?"}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"A square is made of 6 rows of 6 tiles. How many tiles are in the square?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-038",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Squares: 7 × 7 is a perfect square. What is it?"}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"A square array has 7 rows and 7 columns. How many dots are in the array?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-039",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Squares: 8 × 8 is a perfect square. What is it?"}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"A square is made of 8 rows of 8 tiles. How many tiles are in the square?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-040",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Using doubles: 6 × 8 is double of 6 × 4. What is the product?"}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"6 × 8 is double 6 × 4. What is 6 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-041",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Using doubles: 7 × 8 is double of 7 × 4. What is the product?"}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"7 × 4 is 28. What is 7 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-042",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"Using doubles: 6 × 4 is double of 6 × 2. What is the product?"}},
+    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"If you know 6 × 2 = 12, what is 6 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-043",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"Pattern: 6 × 7 is the same as counting by 7 six times. Result?"}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"6 × 7 is the same as counting by 7s six times. What is 6 × 7?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-044",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Pattern: 7 × 8 is the same as counting by 8 seven times. Result?"}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Count by 8s: 8, 16, and so on. What is 7 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-045",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"Pattern: 8 × 9 is the same as counting by 9 eight times. Result?"}},
+    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"Count by 9s eight times. What is 8 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-046",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Pattern: 7 × 9 is the same as counting by 9 seven times. Result?"}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Count by 9s seven times. What is 7 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-047",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Pattern: 6 × 8 is the same as counting by 8 six times. Result?"}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Start at 0 and count by 8s six times. What is 6 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-048",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Halving: 6 × 6 is half of 12 × 6. Find the product."}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Use 3 × 6 = 18 to help. What is 6 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-049",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Halving: 7 × 6 is half of 7 × 12. Find the product."}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Start with 7 × 3 = 21. What is 7 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-050",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Halving: 8 × 7 is half of 8 × 14. Find the product."}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Hint: 4 × 7 = 28. What is 8 × 7?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-051",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Halving: 9 × 6 is half of 9 × 12. Find the product."}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"9 × 6 is double 9 × 3. What is 9 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-052",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Halving: 9 × 8 is half of 9 × 16. Find the product."}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"9 × 4 is 36. What is 9 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-001",
@@ -9832,7 +9832,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"If 9 × 8 = 72, what is 8 × 9?"}},
+    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"8 × 9 and 9 × 8 have the same answer. What is 8 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-002",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"If 7 × 11 = 77, what is 11 × 7?"}},
+    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"You can switch 11 × 7 to 7 × 11, and the answer stays the same. What is 11 × 7?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-004",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Recall the fact: 10 × 10 equals?"}},
+    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"What is 10 × 10 equal to?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-005",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"Recall the fact: 11 × 11 equals?"}},
+    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"Quick fact: 11 × 11 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-006",
@@ -9882,7 +9882,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Recall the fact: 12 × 12 equals?"}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"What do you get for 12 × 12?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-007",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"Recall the fact: 12 × 9 equals?"}},
+    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"How much is 12 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-008",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"Recall the fact: 12 × 11 equals?"}},
+    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"12 × 11 is what number?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-009",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":6,"op":"×","answer":90,"display":{"promptText":"Use place value: 15 × 6 = (10 + 5) × 6. What is the product?"}},
+    question: {"a":15,"b":6,"op":"×","answer":90,"display":{"promptText":"Break apart 15 into 10 and 5. What is 15 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-010",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":5,"op":"×","answer":80,"display":{"promptText":"Use place value: 16 × 5 = (10 + 6) × 5. What is the product?"}},
+    question: {"a":16,"b":5,"op":"×","answer":80,"display":{"promptText":"You know 10 × 5 = 50. What is 16 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-011",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":6,"op":"×","answer":120,"display":{"promptText":"Use place value: 20 × 6 = 2 × 10 × 6. What is the product?"}},
+    question: {"a":20,"b":6,"op":"×","answer":120,"display":{"promptText":"2 × 6 is 12. What is 20 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-012",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":3,"op":"×","answer":75,"display":{"promptText":"Use place value: 25 × 3 = (20 + 5) × 3. What is the product?"}},
+    question: {"a":25,"b":3,"op":"×","answer":75,"display":{"promptText":"Split 25 into 20 and 5. What is 25 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-013",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":11,"op":"×","answer":99,"display":{"promptText":"If 11 × 9 = 99, then 9 × 11 = ?"}},
+    question: {"a":9,"b":11,"op":"×","answer":99,"display":{"promptText":"Turn 9 × 11 around to 11 × 9 if that fact is easier. What is 9 × 11?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-014",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":13,"op":"×","answer":104,"display":{"promptText":"Distributive: 8 × 13 = 8 × 10 + 8 × 3. What is the product?"}},
+    question: {"a":8,"b":13,"op":"×","answer":104,"display":{"promptText":"8 × 10 = 80. What is 8 × 13?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-015",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":14,"op":"×","answer":98,"display":{"promptText":"Distributive: 7 × 14 = 7 × 10 + 7 × 4. What is the product?"}},
+    question: {"a":7,"b":14,"op":"×","answer":98,"display":{"promptText":"Think of 14 as 10 + 4. What is 7 × 14?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-016",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":15,"op":"×","answer":90,"display":{"promptText":"Distributive: 6 × 15 = 6 × 10 + 6 × 5. What is the product?"}},
+    question: {"a":6,"b":15,"op":"×","answer":90,"display":{"promptText":"Use 6 × 10 = 60 to help. What is 6 × 15?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-017",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":3,"op":"×","answer":42,"display":{"promptText":"Place value: 14 × 3 = (10 + 4) × 3. What is the product?"}},
+    question: {"a":14,"b":3,"op":"×","answer":42,"display":{"promptText":"10 × 3 = 30. What is 14 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-023",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":4,"op":"×","answer":64,"display":{"promptText":"Place value: 16 × 4 = (10 + 6) × 4. What is the product?"}},
+    question: {"a":16,"b":4,"op":"×","answer":64,"display":{"promptText":"Break apart 16 into 10 and 6. What is 16 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-024",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":3,"op":"×","answer":54,"display":{"promptText":"Place value: 18 × 3 = (10 + 8) × 3. What is the product?"}},
+    question: {"a":18,"b":3,"op":"×","answer":54,"display":{"promptText":"You know 10 × 3 = 30. What is 18 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-025",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":3,"op":"×","answer":57,"display":{"promptText":"Place value: 19 × 3 = (10 + 9) × 3. What is the product?"}},
+    question: {"a":19,"b":3,"op":"×","answer":57,"display":{"promptText":"Split 19 into 10 and 9. What is 19 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-026",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":4,"op":"×","answer":88,"display":{"promptText":"Place value: 22 × 4 = (20 + 2) × 4. What is the product?"}},
+    question: {"a":22,"b":4,"op":"×","answer":88,"display":{"promptText":"Use 20 × 4 = 80 to help. What is 22 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-027",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":3,"op":"×","answer":72,"display":{"promptText":"Place value: 24 × 3 = (20 + 4) × 3. What is the product?"}},
+    question: {"a":24,"b":3,"op":"×","answer":72,"display":{"promptText":"Break 24 into tens and ones. What is 24 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-028",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":4,"op":"×","answer":120,"display":{"promptText":"Place value: 30 × 4 = 3 × 10 × 4. What is the product?"}},
+    question: {"a":30,"b":4,"op":"×","answer":120,"display":{"promptText":"3 × 4 = 12. What is 30 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-029",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":40,"b":5,"op":"×","answer":200,"display":{"promptText":"Place value: 40 × 5 = 4 × 10 × 5. What is the product?"}},
+    question: {"a":40,"b":5,"op":"×","answer":200,"display":{"promptText":"40 is 4 tens. What is 40 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-030",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"Squares: 11 × 11 is a perfect square. What is it?"}},
+    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"A square array has 11 rows and 11 columns. How many dots are in the array?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-031",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Squares: 12 × 12 is a perfect square. What is it?"}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"A square is made of 12 rows of 12 tiles. How many tiles are in the square?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-032",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Squares: 10 × 10 is a perfect square. What is it?"}},
+    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"A square array has 10 rows and 10 columns. How many dots are in the array?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-033",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"Nines trick: 11 × 9 is one less than 11 × 10. What is the product?"}},
+    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"Start with 11 × 10 = 110. What is 11 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-034",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"Nines trick: 12 × 9 is one less than 12 × 10. What is the product?"}},
+    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"12 × 9 is 12 less than 12 × 10. What is 12 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-035",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":9,"op":"×","answer":117,"display":{"promptText":"Nines trick: 13 × 9 is one less than 13 × 10. What is the product?"}},
+    question: {"a":13,"b":9,"op":"×","answer":117,"display":{"promptText":"Hint: 13 × 10 = 130. What is 13 × 9?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-036",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":5,"op":"×","answer":55,"display":{"promptText":"Elevens trick: 11 × 5 repeats the digit. What is the product?"}},
+    question: {"a":11,"b":5,"op":"×","answer":55,"display":{"promptText":"If you know 10 × 5 = 50, what is 11 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-037",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":6,"op":"×","answer":66,"display":{"promptText":"Elevens trick: 11 × 6 repeats the digit. What is the product?"}},
+    question: {"a":11,"b":6,"op":"×","answer":66,"display":{"promptText":"Think: 11 × 5 = 55. What is 11 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-038",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"Elevens trick: 11 × 7 repeats the digit. What is the product?"}},
+    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"10 × 7 = 70. What is 11 × 7?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-039",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"Elevens trick: 11 × 8 repeats the digit. What is the product?"}},
+    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"You know 11 × 7 = 77. What is 11 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-040",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":7,"op":"×","answer":140,"display":{"promptText":"Place value: 20 × 7 = 2 × 10 × 7. What is the product?"}},
+    question: {"a":20,"b":7,"op":"×","answer":140,"display":{"promptText":"You know 2 × 7 = 14. What is 20 × 7?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-041",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":8,"op":"×","answer":200,"display":{"promptText":"Place value: 25 × 8 = (20 + 5) × 8. Find the product."}},
+    question: {"a":25,"b":8,"op":"×","answer":200,"display":{"promptText":"Think of 25 as 20 + 5. What is 25 × 8?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-042",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":6,"op":"×","answer":300,"display":{"promptText":"Place value: 50 × 6 = 5 × 10 × 6. Find the product."}},
+    question: {"a":50,"b":6,"op":"×","answer":300,"display":{"promptText":"5 × 6 is 30. What is 50 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-043",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Pattern: 10 × 12 is the same as counting by 12 ten times. Result?"}},
+    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Count by 12s: 12, 24, and so on. What is 10 × 12?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-044",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"Pattern: 11 × 12 is the same as counting by 12 eleven times. Result?"}},
+    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"11 × 12 is the same as counting by 12s eleven times. What is 11 × 12?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-045",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Pattern: 12 × 12 is the same as counting by 12 twelve times. Result?"}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Count by 12s: 12, 24, and so on. What is 12 × 12?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-046",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":4,"op":"×","answer":60,"display":{"promptText":"Halving: 15 × 4 is half of 15 × 8. Find the product."}},
+    question: {"a":15,"b":4,"op":"×","answer":60,"display":{"promptText":"If you know 15 × 2 = 30, what is 15 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-047",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":5,"op":"×","answer":90,"display":{"promptText":"Halving: 18 × 5 is half of 18 × 10. Find this product."}},
+    question: {"a":18,"b":5,"op":"×","answer":90,"display":{"promptText":"Think: 18 × 5 is half of 18 × 10. What is 18 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-048",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":4,"op":"×","answer":80,"display":{"promptText":"Halving: 20 × 4 is half of 20 × 8. Find the product."}},
+    question: {"a":20,"b":4,"op":"×","answer":80,"display":{"promptText":"20 × 4 is double 20 × 2. What is 20 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-049",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":6,"op":"×","answer":150,"display":{"promptText":"Halving: 25 × 6 is half of 25 × 12. Find the product."}},
+    question: {"a":25,"b":6,"op":"×","answer":150,"display":{"promptText":"Think: 25 × 3 = 75. What is 25 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-050",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":5,"op":"×","answer":150,"display":{"promptText":"Place value: 30 × 5 = 3 × 10 × 5. Find this product."}},
+    question: {"a":30,"b":5,"op":"×","answer":150,"display":{"promptText":"If you know 3 × 5 = 15, what is 30 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-051",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":40,"b":6,"op":"×","answer":240,"display":{"promptText":"Place value: 40 × 6 = 4 × 10 × 6. Find this product."}},
+    question: {"a":40,"b":6,"op":"×","answer":240,"display":{"promptText":"Think: 4 × 6 = 24. What is 40 × 6?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-052",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":4,"op":"×","answer":240,"display":{"promptText":"Place value: 60 × 4 = 6 × 10 × 4. Find this product."}},
+    question: {"a":60,"b":4,"op":"×","answer":240,"display":{"promptText":"Think: 60 is 6 tens. What is 60 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-001",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"If 2 × 3 = 6, what is 3 × 2?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Turn 3 × 2 around to 2 × 3 if that fact is easier. What is 3 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-002",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":5,"op":"×","answer":5,"display":{"promptText":"If 5 × 1 = 5, what is 1 × 5?"}},
+    question: {"a":1,"b":5,"op":"×","answer":5,"display":{"promptText":"Switch the order of the numbers if that helps. What is 1 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-004",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Recall the fact: 2 × 2 equals?"}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"What number is 2 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-005",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Recall the fact: 2 × 3 equals?"}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Fill in the fact: 2 × 3 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-006",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Recall the fact: 2 × 4 equals?"}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Times fact: 2 × 4 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-007",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Recall the fact: 2 × 5 equals?"}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"What is 2 × 5 equal to?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-008",
@@ -10422,7 +10422,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Recall the fact: 3 × 2 equals?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Quick fact: 3 × 2 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-009",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Recall the fact: 3 × 3 equals?"}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"What do you get for 3 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-010",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Recall the fact: 4 × 4 equals?"}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"How much is 4 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-011",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Recall the fact: 5 × 5 equals?"}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"5 × 5 is what number?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-012",
@@ -10462,7 +10462,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":4,"op":"×","answer":4,"display":{"promptText":"Recall the fact: 1 × 4 equals?"}},
+    question: {"a":1,"b":4,"op":"×","answer":4,"display":{"promptText":"What number is 1 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-013",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":3,"op":"×","answer":3,"display":{"promptText":"Recall the fact: 1 × 3 equals?"}},
+    question: {"a":1,"b":3,"op":"×","answer":3,"display":{"promptText":"Fill in the fact: 1 × 3 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-014",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Recall the fact: 4 × 2 equals?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Times fact: 4 × 2 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-015",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Recall the fact: 3 × 4 equals?"}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"What is 3 × 4 equal to?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-016",
@@ -10502,7 +10502,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Recall the fact: 4 × 3 equals?"}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Quick fact: 4 × 3 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-017",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"If 5 × 2 = 10, then 2 × 5 = ?"}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Turn 2 × 5 around to 5 × 2 if that fact is easier. What is 2 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-025",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"If 2 × 3 = 6, then 3 × 2 = ?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 × 2 and 2 × 3 have the same answer. What is 3 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-026",
@@ -10602,7 +10602,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"If 2 × 4 = 8, then 4 × 2 = ?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 × 2 and 2 × 4 have the same answer. What is 4 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-027",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"If 3 × 5 = 15, then 5 × 3 = ?"}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"You can switch 5 × 3 to 3 × 5, and the answer stays the same. What is 5 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-028",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"If 3 × 4 = 12, then 4 × 3 = ?"}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"You can switch 4 × 3 to 3 × 4, and the answer stays the same. What is 4 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-029",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"If 4 × 5 = 20, then 5 × 4 = ?"}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Turn 5 × 4 around to 4 × 5 if that fact is easier. What is 5 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-030",
@@ -10642,7 +10642,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":1,"op":"×","answer":1,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 1?"}},
+    question: {"a":1,"b":1,"op":"×","answer":1,"display":{"promptText":"What is 1 × 1?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-031",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":2,"op":"×","answer":2,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 2?"}},
+    question: {"a":1,"b":2,"op":"×","answer":2,"display":{"promptText":"How many counters are in 1 group of 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-032",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":3,"op":"×","answer":3,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 3?"}},
+    question: {"a":1,"b":3,"op":"×","answer":3,"display":{"promptText":"1 × 3 = __"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-033",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":4,"op":"×","answer":4,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 4?"}},
+    question: {"a":1,"b":4,"op":"×","answer":4,"display":{"promptText":"What is 1 group of 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-034",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":5,"op":"×","answer":5,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 5?"}},
+    question: {"a":1,"b":5,"op":"×","answer":5,"display":{"promptText":"How many counters are in 1 group of 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-035",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Pattern: 2 × 5 is the same as counting by 5 two times. Result?"}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"2 × 5 is the same as counting by 5s two times. What is 2 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-044",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Pattern: 3 × 5 is the same as counting by 5 three times. Result?"}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Count by 5s three times. What is 3 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-045",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Pattern: 4 × 5 is the same as counting by 5 four times. Result?"}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Count by 5s four times. What is 4 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-046",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Pattern: 5 × 5 is the same as counting by 5 five times. Result?"}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Start at 0 and count by 5s five times. What is 5 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-047",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Pattern: 2 × 2 is the same as counting by 2 two times. Result?"}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Start at 0 and count by 2s two times. What is 2 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-048",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Pattern: 3 × 2 is the same as counting by 2 three times. Result?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 × 2 is the same as counting by 2s three times. What is 3 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-049",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Pattern: 4 × 2 is the same as counting by 2 four times. Result?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 × 2 is the same as counting by 2s four times. What is 4 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-050",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Pattern: 5 × 2 is the same as counting by 2 five times. Result?"}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Count by 2s: 2, 4, and so on. What is 5 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-051",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Pattern: 3 × 3 is the same as counting by 3 three times. Result?"}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Start at 0 and count by 3s three times. What is 3 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-052",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Pattern: 4 × 4 is the same as counting by 4 four times. Result?"}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Start at 0 and count by 4s four times. What is 4 × 4?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-001",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":2,"op":"×","answer":12,"display":{"promptText":"Compute 6 × 2."}},
+    question: {"a":6,"b":2,"op":"×","answer":12,"display":{"promptText":"What is 6 times 2?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-005",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"Compute 6 × 5."}},
+    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"6 × 5 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-006",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Compute 6 × 6."}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"How much is 6 times 6?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-007",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"Compute 6 × 7."}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"What is 6 times 7?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-008",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":2,"op":"×","answer":14,"display":{"promptText":"Compute 7 × 2."}},
+    question: {"a":7,"b":2,"op":"×","answer":14,"display":{"promptText":"7 × 2 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-009",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":3,"op":"×","answer":21,"display":{"promptText":"Compute 7 × 3."}},
+    question: {"a":7,"b":3,"op":"×","answer":21,"display":{"promptText":"How much is 7 times 3?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-010",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Compute 7 × 5."}},
+    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"What is 7 times 5?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-011",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Compute 7 × 6."}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 × 6 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-012",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Compute 7 × 7."}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"How much is 7 times 7?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-013",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":3,"op":"×","answer":24,"display":{"promptText":"Compute 8 × 3."}},
+    question: {"a":8,"b":3,"op":"×","answer":24,"display":{"promptText":"What is 8 times 3?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-014",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":4,"op":"×","answer":32,"display":{"promptText":"Compute 8 × 4."}},
+    question: {"a":8,"b":4,"op":"×","answer":32,"display":{"promptText":"8 × 4 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-015",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"Compute 8 × 5."}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"How much is 8 times 5?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-016",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Compute 8 × 6."}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"What is 8 times 6?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-017",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Evaluate: 6 × 8."}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"6 × 8 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-031",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Evaluate: 6 × 9."}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"What is 6 times 9?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-032",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Evaluate: 7 × 7."}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Multiply: 7 × 7 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-033",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Evaluate: 7 × 8."}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"7 × 8 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-034",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Evaluate: 7 × 9."}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"What is 7 times 9?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-035",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Evaluate: 8 × 6."}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Multiply: 8 × 6 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-036",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Evaluate: 8 × 7."}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"8 × 7 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-037",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Evaluate: 8 × 8."}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"What is 8 times 8?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-038",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"Evaluate: 8 × 9."}},
+    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"Multiply: 8 × 9 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-039",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Evaluate: 9 × 5."}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"9 × 5 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-040",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Evaluate: 9 × 6."}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"What is 9 times 6?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-041",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Evaluate: 9 × 7."}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Multiply: 9 × 7 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-042",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Evaluate: 9 × 8."}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"9 × 8 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-23-043",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":5,"op":"×","answer":65,"display":{"promptText":"Compute 13 × 5."}},
+    question: {"a":13,"b":5,"op":"×","answer":65,"display":{"promptText":"13 × 5 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-005",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Compute 8 × 8."}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"How much is 8 times 8?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-006",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"Compute 9 × 9."}},
+    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"What is 9 times 9?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-007",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Compute 10 × 10."}},
+    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"10 × 10 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-008",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"Compute 10 × 11."}},
+    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"How much is 10 times 11?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-009",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Compute 10 × 12."}},
+    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"What is 10 times 12?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-010",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"Compute 11 × 9."}},
+    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"11 × 9 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-011",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":10,"op":"×","answer":110,"display":{"promptText":"Compute 11 × 10."}},
+    question: {"a":11,"b":10,"op":"×","answer":110,"display":{"promptText":"How much is 11 times 10?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-012",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"Compute 11 × 12."}},
+    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"What is 11 times 12?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-013",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":8,"op":"×","answer":96,"display":{"promptText":"Compute 12 × 8."}},
+    question: {"a":12,"b":8,"op":"×","answer":96,"display":{"promptText":"12 × 8 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-014",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"Compute 12 × 9."}},
+    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"How much is 12 times 9?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-015",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":10,"op":"×","answer":120,"display":{"promptText":"Compute 12 × 10."}},
+    question: {"a":12,"b":10,"op":"×","answer":120,"display":{"promptText":"What is 12 times 10?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-016",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Compute 12 × 12."}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"12 × 12 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-017",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"Evaluate: 11 × 11."}},
+    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"What is 11 times 11?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-031",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"Evaluate: 11 × 12."}},
+    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"Multiply: 11 × 12 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-032",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"Evaluate: 12 × 11."}},
+    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"12 × 11 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-033",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Evaluate: 12 × 12."}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"What is 12 times 12?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-034",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Evaluate: 10 × 10."}},
+    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Multiply: 10 × 10 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-035",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"Evaluate: 10 × 11."}},
+    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"10 × 11 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-036",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Evaluate: 10 × 12."}},
+    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Multiply: 10 × 12 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-037",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":10,"op":"×","answer":130,"display":{"promptText":"Evaluate: 13 × 10."}},
+    question: {"a":13,"b":10,"op":"×","answer":130,"display":{"promptText":"Multiply: 13 × 10 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-038",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":10,"op":"×","answer":140,"display":{"promptText":"Evaluate: 14 × 10."}},
+    question: {"a":14,"b":10,"op":"×","answer":140,"display":{"promptText":"14 × 10 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-039",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":10,"op":"×","answer":150,"display":{"promptText":"Evaluate: 15 × 10."}},
+    question: {"a":15,"b":10,"op":"×","answer":150,"display":{"promptText":"What is 15 times 10?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-040",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":10,"op":"×","answer":160,"display":{"promptText":"Evaluate: 16 × 10."}},
+    question: {"a":16,"b":10,"op":"×","answer":160,"display":{"promptText":"Multiply: 16 × 10 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-041",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":8,"op":"×","answer":160,"display":{"promptText":"Evaluate: 20 × 8."}},
+    question: {"a":20,"b":8,"op":"×","answer":160,"display":{"promptText":"20 × 8 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-042",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":8,"op":"×","answer":200,"display":{"promptText":"Evaluate: 25 × 8."}},
+    question: {"a":25,"b":8,"op":"×","answer":200,"display":{"promptText":"What is 25 times 8?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-45-043",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Compute 2 × 2."}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"How much is 2 times 2?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-005",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Compute 2 × 3."}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"What is 2 times 3?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-006",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Compute 2 × 4."}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"2 × 4 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-007",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Compute 2 × 5."}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"How much is 2 times 5?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-008",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Compute 3 × 2."}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"What is 3 times 2?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-009",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Compute 3 × 3."}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"3 × 3 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-010",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Compute 4 × 2."}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"How much is 4 times 2?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-011",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Compute 5 × 2."}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"What is 5 times 2?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-012",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":2,"op":"×","answer":2,"display":{"promptText":"Compute 1 × 2."}},
+    question: {"a":1,"b":2,"op":"×","answer":2,"display":{"promptText":"1 × 2 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-013",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":3,"op":"×","answer":3,"display":{"promptText":"Compute 1 × 3."}},
+    question: {"a":1,"b":3,"op":"×","answer":3,"display":{"promptText":"How much is 1 times 3?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-014",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":1,"op":"×","answer":2,"display":{"promptText":"Compute 2 × 1."}},
+    question: {"a":2,"b":1,"op":"×","answer":2,"display":{"promptText":"What is 2 times 1?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-015",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":1,"op":"×","answer":3,"display":{"promptText":"Compute 3 × 1."}},
+    question: {"a":3,"b":1,"op":"×","answer":3,"display":{"promptText":"3 × 1 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-016",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":1,"op":"×","answer":4,"display":{"promptText":"Compute 4 × 1."}},
+    question: {"a":4,"b":1,"op":"×","answer":4,"display":{"promptText":"How much is 4 times 1?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-017",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Evaluate: 2 × 2."}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Multiply: 2 × 2 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-031",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Evaluate: 2 × 3."}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"2 × 3 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-032",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Evaluate: 2 × 4."}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"What is 2 times 4?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-033",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Evaluate: 2 × 5."}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Multiply: 2 × 5 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-034",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Evaluate: 3 × 2."}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 × 2 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-035",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Evaluate: 3 × 3."}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"What is 3 times 3?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-036",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Evaluate: 3 × 4."}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Multiply: 3 × 4 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-037",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Evaluate: 4 × 3."}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 × 3 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-038",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Evaluate: 4 × 4."}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"What is 4 times 4?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-039",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Evaluate: 4 × 5."}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Multiply: 4 × 5 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-040",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Evaluate: 5 × 2."}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"5 × 2 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-041",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Evaluate: 5 × 3."}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"What is 5 times 3?"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-042",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Evaluate: 5 × 4."}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Multiply: 5 × 4 = __"}},
   },
   {
     itemId: "multiplication-proc-arrayReasoning-K1-043",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Product of 6 and 6?"}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"What is the product of 6 and 6?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-031",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"Product of 6 and 7?"}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"The product of 6 and 7 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-032",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Product of 6 and 8?"}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"What do you get when you multiply 6 and 8?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-033",
@@ -13292,7 +13292,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Product of 6 and 9?"}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"What is the product of 6 and 9?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-034",
@@ -13302,7 +13302,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Product of 7 and 6?"}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"The product of 7 and 6 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-035",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Product of 7 and 7?"}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"What do you get when you multiply 7 and 7?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-036",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Product of 7 and 8?"}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"What is the product of 7 and 8?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-037",
@@ -13332,7 +13332,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Product of 7 and 9?"}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"The product of 7 and 9 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-038",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Product of 8 and 6?"}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"What do you get when you multiply 8 and 6?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-039",
@@ -13352,7 +13352,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Product of 8 and 7?"}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"What is the product of 8 and 7?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-040",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Product of 8 and 8?"}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"The product of 8 and 8 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-041",
@@ -13372,7 +13372,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Product of 9 and 7?"}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"What do you get when you multiply 9 and 7?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-042",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Product of 9 and 8?"}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"What is the product of 9 and 8?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-23-043",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Product of 10 and 10?"}},
+    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"The product of 10 and 10 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-031",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"Product of 10 and 11?"}},
+    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"What do you get when you multiply 10 and 11?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-032",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Product of 10 and 12?"}},
+    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"What is the product of 10 and 12?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-033",
@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"Product of 11 and 11?"}},
+    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"The product of 11 and 11 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-034",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"Product of 11 and 12?"}},
+    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"What do you get when you multiply 11 and 12?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-035",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"Product of 12 and 11?"}},
+    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"What is the product of 12 and 11?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-036",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Product of 12 and 12?"}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"The product of 12 and 12 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-037",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"Product of 13 and 8?"}},
+    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"What do you get when you multiply 13 and 8?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-038",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":9,"op":"×","answer":117,"display":{"promptText":"Product of 13 and 9?"}},
+    question: {"a":13,"b":9,"op":"×","answer":117,"display":{"promptText":"What is the product of 13 and 9?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-039",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":8,"op":"×","answer":112,"display":{"promptText":"Product of 14 and 8?"}},
+    question: {"a":14,"b":8,"op":"×","answer":112,"display":{"promptText":"The product of 14 and 8 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-040",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":8,"op":"×","answer":120,"display":{"promptText":"Product of 15 and 8?"}},
+    question: {"a":15,"b":8,"op":"×","answer":120,"display":{"promptText":"What do you get when you multiply 15 and 8?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-041",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":4,"op":"×","answer":64,"display":{"promptText":"Product of 16 and 4?"}},
+    question: {"a":16,"b":4,"op":"×","answer":64,"display":{"promptText":"What is the product of 16 and 4?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-042",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":9,"op":"×","answer":180,"display":{"promptText":"Product of 20 and 9?"}},
+    question: {"a":20,"b":9,"op":"×","answer":180,"display":{"promptText":"The product of 20 and 9 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-45-043",
@@ -14302,7 +14302,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Product of 2 and 2?"}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"What do you get when you multiply 2 and 2?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-031",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Product of 2 and 3?"}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"What is the product of 2 and 3?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-032",
@@ -14322,7 +14322,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Product of 2 and 4?"}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"The product of 2 and 4 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-033",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Product of 2 and 5?"}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"What do you get when you multiply 2 and 5?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-034",
@@ -14342,7 +14342,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Product of 3 and 2?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"What is the product of 3 and 2?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-035",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Product of 3 and 3?"}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"The product of 3 and 3 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-036",
@@ -14362,7 +14362,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Product of 3 and 4?"}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"What do you get when you multiply 3 and 4?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-037",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Product of 3 and 5?"}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"What is the product of 3 and 5?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-038",
@@ -14382,7 +14382,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Product of 4 and 2?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"The product of 4 and 2 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-039",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Product of 4 and 3?"}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"What do you get when you multiply 4 and 3?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-040",
@@ -14402,7 +14402,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Product of 4 and 4?"}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"What is the product of 4 and 4?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-041",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Product of 5 and 3?"}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"The product of 5 and 3 is what number?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-042",
@@ -14422,7 +14422,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Product of 5 and 4?"}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"What do you get when you multiply 5 and 4?"}},
   },
   {
     itemId: "multiplication-proc-equalGroups-K1-043",

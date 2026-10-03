@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"To lay a hexagon garden border with one board per side, how many boards does Mina buy? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"To lay a hexagon garden border with one board per side, how many boards does Mina buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"Luca bends wire into a trapezoid, one straight piece per side. How many pieces is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"Luca bends pipe cleaners into a trapezoid, one pipe cleaner for each side. How many pipe cleaners does Luca use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"sidesByName","name":"heptagon"},"promptText":"Nia builds a heptagon out of craft sticks, one stick per side. How many sticks does Nia need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"sidesByName","name":"heptagon"},"promptText":"Nia builds a heptagon out of craft sticks, one stick per side. How many sticks does Nia need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rhombus"},"promptText":"To lay a rhombus garden border with one board per side, how many boards does Theo buy? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rhombus"},"promptText":"To lay a rhombus garden border with one board per side, how many boards does Theo buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"parallelogram"},"promptText":"Ava bends wire into a parallelogram, one straight piece per side. How many pieces is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"parallelogram"},"promptText":"Ava bends pipe cleaners into a parallelogram, one pipe cleaner for each side. How many pipe cleaners does Ava use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"Kai builds a hexagon out of craft sticks, one stick per side. How many sticks does Kai need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"Kai builds a hexagon out of craft sticks, one stick per side. How many sticks does Kai need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"To lay a trapezoid garden border with one board per side, how many boards does Ida buy? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"To lay a trapezoid garden border with one board per side, how many boards does Ida buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"sidesByName","name":"heptagon"},"promptText":"Omar bends wire into a heptagon, one straight piece per side. How many pieces is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"sidesByName","name":"heptagon"},"promptText":"Omar bends pipe cleaners into a heptagon, one pipe cleaner for each side. How many pipe cleaners does Omar use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rhombus"},"promptText":"June builds a rhombus out of craft sticks, one stick per side. How many sticks does June need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rhombus"},"promptText":"June builds a rhombus out of craft sticks, one stick per side. How many sticks does June need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"parallelogram"},"promptText":"To lay a parallelogram garden border with one board per side, how many boards does Zoe buy? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"parallelogram"},"promptText":"To lay a parallelogram garden border with one board per side, how many boards does Zoe buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"Ben bends wire into a hexagon, one straight piece per side. How many pieces is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"Ben bends pipe cleaners into a hexagon, one pipe cleaner for each side. How many pipe cleaners does Ben use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"Lily builds a trapezoid out of craft sticks, one stick per side. How many sticks does Lily need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"Lily builds a trapezoid out of craft sticks, one stick per side. How many sticks does Lily need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"sidesByName","name":"heptagon"},"promptText":"To lay a heptagon garden border with one board per side, how many boards does Rosa buy? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"sidesByName","name":"heptagon"},"promptText":"To lay a heptagon garden border with one board per side, how many boards does Rosa buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rhombus"},"promptText":"Finn bends wire into a rhombus, one straight piece per side. How many pieces is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rhombus"},"promptText":"Finn bends pipe cleaners into a rhombus, one pipe cleaner for each side. How many pipe cleaners does Finn use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0032",
@@ -322,7 +322,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"parallelogram"},"promptText":"Amara builds a parallelogram out of craft sticks, one stick per side. How many sticks does Amara need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"parallelogram"},"promptText":"Amara builds a parallelogram out of craft sticks, one stick per side. How many sticks does Amara need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0033",
@@ -332,7 +332,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"To lay a hexagon garden border with one board per side, how many boards does Diego buy? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"To lay a hexagon garden border with one board per side, how many boards does Diego buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0034",
@@ -342,7 +342,7 @@ export const ITEMS = [
     structureType: "storySticks_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"Priya bends wire into a trapezoid, one straight piece per side. How many pieces is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"Priya bends pipe cleaners into a trapezoid, one pipe cleaner for each side. How many pipe cleaners does Priya use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0035",
@@ -352,7 +352,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"Luca bends wire into a octagon, one straight piece per side. How many pieces is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"Luca bends pipe cleaners into an octagon, one pipe cleaner for each side. How many pipe cleaners does Luca use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0036",
@@ -362,7 +362,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"Nia builds a nonagon out of craft sticks, one stick per side. How many sticks does Nia need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"Nia builds a nonagon out of craft sticks, one stick per side. How many sticks does Nia need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0037",
@@ -372,7 +372,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"To lay a decagon garden border with one board per side, how many boards does Theo buy? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"To lay a decagon garden border with one board per side, how many boards does Theo buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0038",
@@ -382,7 +382,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"Ava bends wire into a dodecagon, one straight piece per side. How many pieces is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"Ava bends pipe cleaners into a dodecagon, one pipe cleaner for each side. How many pipe cleaners does Ava use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0039",
@@ -392,7 +392,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"Kai builds a octagon out of craft sticks, one stick per side. How many sticks does Kai need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"Kai builds an octagon out of craft sticks, one stick per side. How many sticks does Kai need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0040",
@@ -402,7 +402,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"To lay a nonagon garden border with one board per side, how many boards does Ida buy? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"To lay a nonagon garden border with one board per side, how many boards does Ida buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0041",
@@ -412,7 +412,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"Omar bends wire into a decagon, one straight piece per side. How many pieces is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"Omar bends pipe cleaners into a decagon, one pipe cleaner for each side. How many pipe cleaners does Omar use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0042",
@@ -422,7 +422,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"June builds a dodecagon out of craft sticks, one stick per side. How many sticks does June need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"June builds a dodecagon out of craft sticks, one stick per side. How many sticks does June need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0043",
@@ -432,7 +432,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"To lay a octagon garden border with one board per side, how many boards does Zoe buy? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"To lay an octagon garden border with one board per side, how many boards does Zoe buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0044",
@@ -442,7 +442,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"Ben bends wire into a nonagon, one straight piece per side. How many pieces is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"Ben bends pipe cleaners into a nonagon, one pipe cleaner for each side. How many pipe cleaners does Ben use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0045",
@@ -452,7 +452,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"Lily builds a decagon out of craft sticks, one stick per side. How many sticks does Lily need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"Lily builds a decagon out of craft sticks, one stick per side. How many sticks does Lily need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0046",
@@ -462,7 +462,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"To lay a dodecagon garden border with one board per side, how many boards does Rosa buy? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"To lay a dodecagon garden border with one board per side, how many boards does Rosa buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0047",
@@ -472,7 +472,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"Finn bends wire into a octagon, one straight piece per side. How many pieces is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"Finn bends pipe cleaners into an octagon, one pipe cleaner for each side. How many pipe cleaners does Finn use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0048",
@@ -482,7 +482,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"Amara builds a nonagon out of craft sticks, one stick per side. How many sticks does Amara need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"Amara builds a nonagon out of craft sticks, one stick per side. How many sticks does Amara need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0049",
@@ -492,7 +492,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"To lay a decagon garden border with one board per side, how many boards does Diego buy? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"To lay a decagon garden border with one board per side, how many boards does Diego buy?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0050",
@@ -502,7 +502,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"Priya bends wire into a dodecagon, one straight piece per side. How many pieces is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"Priya bends pipe cleaners into a dodecagon, one pipe cleaner for each side. How many pipe cleaners does Priya use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0051",
@@ -512,7 +512,7 @@ export const ITEMS = [
     structureType: "storySticks_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"Leo builds a octagon out of craft sticks, one stick per side. How many sticks does Leo need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"Leo builds an octagon out of craft sticks, one stick per side. How many sticks does Leo need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0052",
@@ -692,7 +692,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"Luca sews a bead onto every corner of a trapezoid patch. How many beads is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"Luca sews a bead onto every corner of a trapezoid patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0070",
@@ -702,7 +702,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"Nia pins a paper rhombus to the board with one pin in every corner. How many pins does Nia use? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"Nia pins a paper rhombus to the board with one pin in every corner. How many pins does Nia use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0071",
@@ -712,7 +712,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"verticesByName","name":"hexagon"},"promptText":"A hexagon tile gets one dab of glue at each vertex. How many dabs does Theo squeeze? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"verticesByName","name":"hexagon"},"promptText":"Theo puts one dab of glue on each vertex of a hexagon tile. How many dabs of glue does Theo use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0072",
@@ -722,7 +722,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"parallelogram"},"promptText":"Ava sews a bead onto every corner of a parallelogram patch. How many beads is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"parallelogram"},"promptText":"Ava sews a bead onto every corner of a parallelogram patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0073",
@@ -732,7 +732,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"verticesByName","name":"heptagon"},"promptText":"Kai pins a paper heptagon to the board with one pin in every corner. How many pins does Kai use? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"verticesByName","name":"heptagon"},"promptText":"Kai pins a paper heptagon to the board with one pin in every corner. How many pins does Kai use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0074",
@@ -742,7 +742,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"A trapezoid tile gets one dab of glue at each vertex. How many dabs does Ida squeeze? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"Ida puts one dab of glue on each vertex of a trapezoid tile. How many dabs of glue does Ida use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0075",
@@ -752,7 +752,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"Omar sews a bead onto every corner of a rhombus patch. How many beads is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"Omar sews a bead onto every corner of a rhombus patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0076",
@@ -762,7 +762,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"verticesByName","name":"hexagon"},"promptText":"June pins a paper hexagon to the board with one pin in every corner. How many pins does June use? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"verticesByName","name":"hexagon"},"promptText":"June pins a paper hexagon to the board with one pin in every corner. How many pins does June use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0077",
@@ -772,7 +772,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"parallelogram"},"promptText":"A parallelogram tile gets one dab of glue at each vertex. How many dabs does Zoe squeeze? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"parallelogram"},"promptText":"Zoe puts one dab of glue on each vertex of a parallelogram tile. How many dabs of glue does Zoe use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0078",
@@ -782,7 +782,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"verticesByName","name":"heptagon"},"promptText":"Ben sews a bead onto every corner of a heptagon patch. How many beads is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"verticesByName","name":"heptagon"},"promptText":"Ben sews a bead onto every corner of a heptagon patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0079",
@@ -792,7 +792,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"Lily pins a paper trapezoid to the board with one pin in every corner. How many pins does Lily use? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"Lily pins a paper trapezoid to the board with one pin in every corner. How many pins does Lily use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0080",
@@ -802,7 +802,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"A rhombus tile gets one dab of glue at each vertex. How many dabs does Rosa squeeze? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"Rosa puts one dab of glue on each vertex of a rhombus tile. How many dabs of glue does Rosa use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0081",
@@ -812,7 +812,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"verticesByName","name":"hexagon"},"promptText":"Finn sews a bead onto every corner of a hexagon patch. How many beads is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"verticesByName","name":"hexagon"},"promptText":"Finn sews a bead onto every corner of a hexagon patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0082",
@@ -822,7 +822,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"parallelogram"},"promptText":"Amara pins a paper parallelogram to the board with one pin in every corner. How many pins does Amara use? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"parallelogram"},"promptText":"Amara pins a paper parallelogram to the board with one pin in every corner. How many pins does Amara use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0083",
@@ -832,7 +832,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"verticesByName","name":"heptagon"},"promptText":"A heptagon tile gets one dab of glue at each vertex. How many dabs does Diego squeeze? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"verticesByName","name":"heptagon"},"promptText":"Diego puts one dab of glue on each vertex of a heptagon tile. How many dabs of glue does Diego use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0084",
@@ -842,7 +842,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"Priya sews a bead onto every corner of a trapezoid patch. How many beads is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"Priya sews a bead onto every corner of a trapezoid patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0085",
@@ -852,7 +852,7 @@ export const ITEMS = [
     structureType: "storyCorners_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"Leo pins a paper rhombus to the board with one pin in every corner. How many pins does Leo use? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"Leo pins a paper rhombus to the board with one pin in every corner. How many pins does Leo use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0086",
@@ -862,7 +862,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"Sam pins a paper nonagon to the board with one pin in every corner. How many pins does Sam use? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"Sam pins a paper nonagon to the board with one pin in every corner. How many pins does Sam use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0087",
@@ -872,7 +872,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"A decagon tile gets one dab of glue at each vertex. How many dabs does Mina squeeze? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"Mina puts one dab of glue on each vertex of a decagon tile. How many dabs of glue does Mina use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0088",
@@ -882,7 +882,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"Luca sews a bead onto every corner of a octagon patch. How many beads is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"Luca sews a bead onto every corner of an octagon patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0089",
@@ -892,7 +892,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"Nia pins a paper dodecagon to the board with one pin in every corner. How many pins does Nia use? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"Nia pins a paper dodecagon to the board with one pin in every corner. How many pins does Nia use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0090",
@@ -902,7 +902,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"A nonagon tile gets one dab of glue at each vertex. How many dabs does Theo squeeze? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"Theo puts one dab of glue on each vertex of a nonagon tile. How many dabs of glue does Theo use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0091",
@@ -912,7 +912,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"Ava sews a bead onto every corner of a decagon patch. How many beads is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"Ava sews a bead onto every corner of a decagon patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0092",
@@ -922,7 +922,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"Kai pins a paper octagon to the board with one pin in every corner. How many pins does Kai use? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"Kai pins a paper octagon to the board with one pin in every corner. How many pins does Kai use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0093",
@@ -932,7 +932,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"A dodecagon tile gets one dab of glue at each vertex. How many dabs does Ida squeeze? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"Ida puts one dab of glue on each vertex of a dodecagon tile. How many dabs of glue does Ida use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0094",
@@ -942,7 +942,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"Omar sews a bead onto every corner of a nonagon patch. How many beads is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"Omar sews a bead onto every corner of a nonagon patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0095",
@@ -952,7 +952,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"June pins a paper decagon to the board with one pin in every corner. How many pins does June use? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"June pins a paper decagon to the board with one pin in every corner. How many pins does June use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0096",
@@ -962,7 +962,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"A octagon tile gets one dab of glue at each vertex. How many dabs does Zoe squeeze? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"Zoe puts one dab of glue on each vertex of an octagon tile. How many dabs of glue does Zoe use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0097",
@@ -972,7 +972,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"Ben sews a bead onto every corner of a dodecagon patch. How many beads is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"Ben sews a bead onto every corner of a dodecagon patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0098",
@@ -982,7 +982,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"Lily pins a paper nonagon to the board with one pin in every corner. How many pins does Lily use? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"Lily pins a paper nonagon to the board with one pin in every corner. How many pins does Lily use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0099",
@@ -992,7 +992,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"A decagon tile gets one dab of glue at each vertex. How many dabs does Rosa squeeze? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"Rosa puts one dab of glue on each vertex of a decagon tile. How many dabs of glue does Rosa use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0100",
@@ -1002,7 +1002,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"Finn sews a bead onto every corner of a octagon patch. How many beads is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"Finn sews a bead onto every corner of an octagon patch. How many beads is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0101",
@@ -1012,7 +1012,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"Amara pins a paper dodecagon to the board with one pin in every corner. How many pins does Amara use? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"Amara pins a paper dodecagon to the board with one pin in every corner. How many pins does Amara use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0102",
@@ -1022,7 +1022,7 @@ export const ITEMS = [
     structureType: "storyCorners_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"A nonagon tile gets one dab of glue at each vertex. How many dabs does Diego squeeze? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"Diego puts one dab of glue on each vertex of a nonagon tile. How many dabs of glue does Diego use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0103",
@@ -1202,7 +1202,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Sam frames a hexagon and a trapezoid with straws, one straw per side. How many straws in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Sam frames a hexagon and a trapezoid with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0121",
@@ -1212,7 +1212,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"One art project uses a heptagon and a rhombus, each side made of one pipe cleaner. How many pipe cleaners does Mina need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"For an art project, Mina makes a heptagon and a rhombus out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Mina need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0122",
@@ -1222,7 +1222,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Luca chalks a hexagon and a parallelogram on the path, stick by stick. How many sticks of chalk lines is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Luca draws a hexagon and a parallelogram on the path with chalk. How many sides does Luca draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0123",
@@ -1232,7 +1232,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"Nia frames a heptagon and a trapezoid with straws, one straw per side. How many straws in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"Nia frames a heptagon and a trapezoid with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0124",
@@ -1242,7 +1242,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[4,6]},"promptText":"One art project uses a rhombus and a hexagon, each side made of one pipe cleaner. How many pipe cleaners does Theo need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[4,6]},"promptText":"For an art project, Theo makes a rhombus and a hexagon out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Theo need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0125",
@@ -1252,7 +1252,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[4,7]},"promptText":"Ava chalks a parallelogram and a heptagon on the path, stick by stick. How many sticks of chalk lines is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[4,7]},"promptText":"Ava draws a parallelogram and a heptagon on the path with chalk. How many sides does Ava draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0126",
@@ -1262,7 +1262,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[4,6]},"promptText":"Kai frames a trapezoid and a hexagon with straws, one straw per side. How many straws in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[4,6]},"promptText":"Kai frames a trapezoid and a hexagon with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0127",
@@ -1272,7 +1272,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"One art project uses a heptagon and a hexagon, each side made of one pipe cleaner. How many pipe cleaners does Ida need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"For an art project, Ida makes a heptagon and a hexagon out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Ida need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0128",
@@ -1282,7 +1282,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"Omar chalks a rhombus and a trapezoid on the path, stick by stick. How many sticks of chalk lines is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"Omar draws a rhombus and a trapezoid on the path with chalk. How many sides does Omar draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0129",
@@ -1292,7 +1292,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[4,6]},"promptText":"June frames a parallelogram and a hexagon with straws, one straw per side. How many straws in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[4,6]},"promptText":"June frames a parallelogram and a hexagon with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0130",
@@ -1302,7 +1302,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"One art project uses a heptagon and a parallelogram, each side made of one pipe cleaner. How many pipe cleaners does Zoe need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"For an art project, Zoe makes a heptagon and a parallelogram out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Zoe need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0131",
@@ -1312,7 +1312,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[6,6]},"promptText":"Ben chalks a hexagon and a hexagon on the path, stick by stick. How many sticks of chalk lines is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[6,6]},"promptText":"Ben draws two hexagons on the path with chalk. How many sides does Ben draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0132",
@@ -1322,7 +1322,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[4,7]},"promptText":"Lily frames a trapezoid and a heptagon with straws, one straw per side. How many straws in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[4,7]},"promptText":"Lily frames a trapezoid and a heptagon with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0133",
@@ -1332,7 +1332,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"One art project uses a rhombus and a parallelogram, each side made of one pipe cleaner. How many pipe cleaners does Rosa need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"For an art project, Rosa makes a rhombus and a parallelogram out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Rosa need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0134",
@@ -1342,7 +1342,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[7,7]},"promptText":"Finn chalks a heptagon and a heptagon on the path, stick by stick. How many sticks of chalk lines is that? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[7,7]},"promptText":"Finn draws two heptagons on the path with chalk. How many sides does Finn draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0135",
@@ -1352,7 +1352,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Amara frames a hexagon and a rhombus with straws, one straw per side. How many straws in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Amara frames a hexagon and a rhombus with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0136",
@@ -1362,7 +1362,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"One art project uses a trapezoid and a parallelogram, each side made of one pipe cleaner. How many pipe cleaners does Diego need? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"For an art project, Diego makes a trapezoid and a parallelogram out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Diego need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0137",
@@ -1372,7 +1372,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"One art project uses a octagon and a hexagon, each side made of one pipe cleaner. How many pipe cleaners does Mina need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"For an art project, Mina makes an octagon and a hexagon out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Mina need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0138",
@@ -1382,7 +1382,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Luca chalks a nonagon and a square on the path, stick by stick. How many sticks of chalk lines is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Luca draws a nonagon and a square on the path with chalk. How many sides does Luca draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0139",
@@ -1392,7 +1392,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[10,3]},"promptText":"Nia frames a decagon and a triangle with straws, one straw per side. How many straws in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[10,3]},"promptText":"Nia frames a decagon and a triangle with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0140",
@@ -1402,7 +1402,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[8,8]},"promptText":"One art project uses a octagon and a octagon, each side made of one pipe cleaner. How many pipe cleaners does Theo need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[8,8]},"promptText":"For an art project, Theo makes two octagons out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Theo need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0141",
@@ -1412,7 +1412,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Ava chalks a dodecagon and a pentagon on the path, stick by stick. How many sticks of chalk lines is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Ava draws a dodecagon and a pentagon on the path with chalk. How many sides does Ava draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0142",
@@ -1422,7 +1422,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[9,6]},"promptText":"Kai frames a nonagon and a hexagon with straws, one straw per side. How many straws in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[9,6]},"promptText":"Kai frames a nonagon and a hexagon with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0143",
@@ -1432,7 +1432,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[10,8]},"promptText":"One art project uses a decagon and a octagon, each side made of one pipe cleaner. How many pipe cleaners does Ida need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[10,8]},"promptText":"For an art project, Ida makes a decagon and an octagon out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Ida need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0144",
@@ -1442,7 +1442,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[12,8]},"promptText":"Omar chalks a dodecagon and a octagon on the path, stick by stick. How many sticks of chalk lines is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[12,8]},"promptText":"Omar draws a dodecagon and an octagon on the path with chalk. How many sides does Omar draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0145",
@@ -1452,7 +1452,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[9,10]},"promptText":"June frames a nonagon and a decagon with straws, one straw per side. How many straws in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[9,10]},"promptText":"June frames a nonagon and a decagon with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0146",
@@ -1462,7 +1462,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"kind":"sum","parts":[12,12]},"promptText":"One art project uses a dodecagon and a dodecagon, each side made of one pipe cleaner. How many pipe cleaners does Zoe need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"counting":{"kind":"sum","parts":[12,12]},"promptText":"For an art project, Zoe makes two dodecagons out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Zoe need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0147",
@@ -1472,7 +1472,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Ben chalks a octagon and a nonagon on the path, stick by stick. How many sticks of chalk lines is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[8,9]},"promptText":"Ben draws an octagon and a nonagon on the path with chalk. How many sides does Ben draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0148",
@@ -1482,7 +1482,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"kind":"sum","parts":[10,12]},"promptText":"Lily frames a decagon and a dodecagon with straws, one straw per side. How many straws in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"counting":{"kind":"sum","parts":[10,12]},"promptText":"Lily frames a decagon and a dodecagon with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0149",
@@ -1492,7 +1492,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"One art project uses a nonagon and a octagon, each side made of one pipe cleaner. How many pipe cleaners does Rosa need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[9,8]},"promptText":"For an art project, Rosa makes a nonagon and an octagon out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Rosa need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0150",
@@ -1502,7 +1502,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Finn chalks a dodecagon and a hexagon on the path, stick by stick. How many sticks of chalk lines is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Finn draws a dodecagon and a hexagon on the path with chalk. How many sides does Finn draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0151",
@@ -1512,7 +1512,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[8,10]},"promptText":"Amara frames a octagon and a decagon with straws, one straw per side. How many straws in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[8,10]},"promptText":"Amara frames an octagon and a decagon with straws, one straw per side. How many straws in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0152",
@@ -1522,7 +1522,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"kind":"sum","parts":[9,12]},"promptText":"One art project uses a nonagon and a dodecagon, each side made of one pipe cleaner. How many pipe cleaners does Diego need? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"counting":{"kind":"sum","parts":[9,12]},"promptText":"For an art project, Diego makes a nonagon and a dodecagon out of pipe cleaners, one pipe cleaner for each side. How many pipe cleaners does Diego need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0153",
@@ -1532,7 +1532,7 @@ export const ITEMS = [
     structureType: "storyTwoShapes_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[10,10]},"promptText":"Priya chalks a decagon and a decagon on the path, stick by stick. How many sticks of chalk lines is that? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"counting":{"kind":"sum","parts":[10,10]},"promptText":"Priya draws two decagons on the path with chalk. How many sides does Priya draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0154",
@@ -1552,7 +1552,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"A rectangle cookie cutter gets tested for matching-half folds. How many such folds does Mina count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"kind":"symmetry","key":"rectangle"},"promptText":"This rectangle cookie cutter gets tested for matching-half folds. How many such folds does Mina count?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0156",
@@ -1562,7 +1562,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"Luca's triangle kite design must show every line of symmetry. How many lines does Luca draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"symmetry","key":"triangleEquilateral"},"promptText":"This triangle is Luca's kite design. It must show every line of symmetry. How many lines does Luca draw?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0157",
@@ -1572,7 +1572,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"Nia cuts a paper trapezoid and finds every fold that makes matching halves. How many folds does Nia find?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"kind":"symmetry","key":"trapezoid"},"promptText":"Nia cuts out this paper trapezoid and finds every fold that makes matching halves. How many folds does Nia find?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0158",
@@ -1592,7 +1592,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"Ava's rectangle kite design must show every line of symmetry. How many lines does Ava draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"kind":"symmetry","key":"rectangle"},"promptText":"This rectangle is Ava's kite design. It must show every line of symmetry. How many lines does Ava draw?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0160",
@@ -1602,7 +1602,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"Kai cuts a paper triangle and finds every fold that makes matching halves. How many folds does Kai find?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"symmetry","key":"triangleEquilateral"},"promptText":"Kai cuts out this paper triangle and finds every fold that makes matching halves. How many folds does Kai find?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0161",
@@ -1612,7 +1612,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"A trapezoid cookie cutter gets tested for matching-half folds. How many such folds does Ida count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"kind":"symmetry","key":"trapezoid"},"promptText":"This trapezoid cookie cutter gets tested for matching-half folds. How many such folds does Ida count?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0162",
@@ -1632,7 +1632,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"June cuts a paper rectangle and finds every fold that makes matching halves. How many folds does June find?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"kind":"symmetry","key":"rectangle"},"promptText":"June cuts out this paper rectangle and finds every fold that makes matching halves. How many folds does June find?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0164",
@@ -1642,7 +1642,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"A triangle cookie cutter gets tested for matching-half folds. How many such folds does Zoe count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"symmetry","key":"triangleEquilateral"},"promptText":"This triangle cookie cutter gets tested for matching-half folds. How many such folds does Zoe count?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0165",
@@ -1652,7 +1652,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"Ben's trapezoid kite design must show every line of symmetry. How many lines does Ben draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"kind":"symmetry","key":"trapezoid"},"promptText":"This trapezoid is Ben's kite design. It must show every line of symmetry. How many lines does Ben draw?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0166",
@@ -1672,7 +1672,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"A rectangle cookie cutter gets tested for matching-half folds. How many such folds does Rosa count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"kind":"symmetry","key":"rectangle"},"promptText":"This rectangle cookie cutter gets tested for matching-half folds. How many such folds does Rosa count?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0168",
@@ -1682,7 +1682,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"Finn's triangle kite design must show every line of symmetry. How many lines does Finn draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"symmetry","key":"triangleEquilateral"},"promptText":"This triangle is Finn's kite design. It must show every line of symmetry. How many lines does Finn draw?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0169",
@@ -1692,7 +1692,7 @@ export const ITEMS = [
     structureType: "storyFolds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"Amara cuts a paper trapezoid and finds every fold that makes matching halves. How many folds does Amara find?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"kind":"symmetry","key":"trapezoid"},"promptText":"Amara cuts out this paper trapezoid and finds every fold that makes matching halves. How many folds does Amara find?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0170",
@@ -1712,7 +1712,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"A pentagon cookie cutter gets tested for matching-half folds. How many such folds does Mina count? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Mina's cookie cutter is shaped like a pentagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0172",
@@ -1722,7 +1722,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Luca's hexagon kite design must show every line of symmetry. How many lines does Luca draw? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Luca's window tile is a hexagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0173",
@@ -1732,7 +1732,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"Nia cuts a paper right triangle and finds every fold that makes matching halves. How many folds does Nia find? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"Nia cuts out a paper right triangle with two equal sides. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0174",
@@ -1742,7 +1742,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"A square cookie cutter gets tested for matching-half folds. How many such folds does Theo count? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"Theo traces a square cookie cutter and cuts out the paper square. How many different ways can he fold it so the two halves match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0175",
@@ -1752,7 +1752,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"Ava's heptagon kite design must show every line of symmetry. How many lines does Ava draw? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"Ava's window tile is a heptagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0176",
@@ -1762,7 +1762,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Kai cuts a paper pentagon and finds every fold that makes matching halves. How many folds does Kai find? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Kai cuts out a paper pentagon with all sides the same length and all corners the same size. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0177",
@@ -1772,7 +1772,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"A hexagon cookie cutter gets tested for matching-half folds. How many such folds does Ida count? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Ida's cookie cutter is shaped like a hexagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0178",
@@ -1782,7 +1782,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"Omar's right triangle kite design must show every line of symmetry. How many lines does Omar draw? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"Omar's window tile is a right triangle with two equal sides. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0179",
@@ -1792,7 +1792,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"June cuts a paper square and finds every fold that makes matching halves. How many folds does June find? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"June cuts a paper square and finds every fold that makes matching halves. How many folds does June find?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0180",
@@ -1802,7 +1802,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"A heptagon cookie cutter gets tested for matching-half folds. How many such folds does Zoe count? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"Zoe's cookie cutter is shaped like a heptagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0181",
@@ -1812,7 +1812,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Ben's pentagon kite design must show every line of symmetry. How many lines does Ben draw? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Ben's window tile is a pentagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0182",
@@ -1822,7 +1822,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Lily cuts a paper hexagon and finds every fold that makes matching halves. How many folds does Lily find? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Lily cuts out a paper hexagon with all sides the same length and all corners the same size. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0183",
@@ -1832,7 +1832,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"A right triangle cookie cutter gets tested for matching-half folds. How many such folds does Rosa count? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"Rosa's cookie cutter is shaped like a right triangle with two equal sides. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0184",
@@ -1842,7 +1842,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"Finn's square kite design must show every line of symmetry. How many lines does Finn draw? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"Finn's square tile design must show every line of symmetry. How many lines does Finn draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0185",
@@ -1852,7 +1852,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"Amara cuts a paper heptagon and finds every fold that makes matching halves. How many folds does Amara find? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"Amara cuts out a paper heptagon with all sides the same length and all corners the same size. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0186",
@@ -1862,7 +1862,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"A pentagon cookie cutter gets tested for matching-half folds. How many such folds does Diego count? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Diego's cookie cutter is shaped like a pentagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0187",
@@ -1872,7 +1872,7 @@ export const ITEMS = [
     structureType: "storyFolds_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Priya's hexagon kite design must show every line of symmetry. How many lines does Priya draw? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Priya's window tile is a hexagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0188",
@@ -1882,7 +1882,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Luca's octagon kite design must show every line of symmetry. How many lines does Luca draw? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Luca's window tile is an octagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0189",
@@ -1892,7 +1892,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Nia cuts a paper nonagon and finds every fold that makes matching halves. How many folds does Nia find? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Nia cuts out a paper nonagon with all sides the same length and all corners the same size. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0190",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"A decagon cookie cutter gets tested for matching-half folds. How many such folds does Theo count? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"Theo's cookie cutter is shaped like a decagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0191",
@@ -1912,7 +1912,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Ava's dodecagon kite design must show every line of symmetry. How many lines does Ava draw? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Ava's window tile is a dodecagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0192",
@@ -1922,7 +1922,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"scalene triangle"},"promptText":"Kai cuts a paper scalene triangle and finds every fold that makes matching halves. How many folds does Kai find? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"scalene triangle"},"promptText":"Kai cuts a paper scalene triangle and finds every fold that makes matching halves. How many folds does Kai find?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0193",
@@ -1932,7 +1932,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"A octagon cookie cutter gets tested for matching-half folds. How many such folds does Ida count? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Ida's cookie cutter is shaped like an octagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0194",
@@ -1942,7 +1942,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Omar's nonagon kite design must show every line of symmetry. How many lines does Omar draw? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Omar's window tile is a nonagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0195",
@@ -1952,7 +1952,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"June cuts a paper decagon and finds every fold that makes matching halves. How many folds does June find? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"June cuts out a paper decagon with all sides the same length and all corners the same size. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0196",
@@ -1962,7 +1962,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"A dodecagon cookie cutter gets tested for matching-half folds. How many such folds does Zoe count? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Zoe's cookie cutter is shaped like a dodecagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0197",
@@ -1972,7 +1972,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"scalene triangle"},"promptText":"Ben's scalene triangle kite design must show every line of symmetry. How many lines does Ben draw? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"scalene triangle"},"promptText":"Ben's scalene triangle tile design must show every line of symmetry. How many lines does Ben draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0198",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Lily cuts a paper octagon and finds every fold that makes matching halves. How many folds does Lily find? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Lily cuts out a paper octagon with all sides the same length and all corners the same size. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0199",
@@ -1992,7 +1992,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"A nonagon cookie cutter gets tested for matching-half folds. How many such folds does Rosa count? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Rosa's cookie cutter is shaped like a nonagon with all sides the same length and all corners the same size. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0200",
@@ -2002,7 +2002,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"Finn's decagon kite design must show every line of symmetry. How many lines does Finn draw? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"Finn's window tile is a decagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0201",
@@ -2012,7 +2012,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Amara cuts a paper dodecagon and finds every fold that makes matching halves. How many folds does Amara find? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Amara cuts out a paper dodecagon with all sides the same length and all corners the same size. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0202",
@@ -2022,7 +2022,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"scalene triangle"},"promptText":"A scalene triangle cookie cutter gets tested for matching-half folds. How many such folds does Diego count? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"scalene triangle"},"promptText":"Diego's cookie cutter is shaped like a triangle with all three sides different lengths. How many lines of symmetry does that shape have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0203",
@@ -2032,7 +2032,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Priya's octagon kite design must show every line of symmetry. How many lines does Priya draw? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Priya's window tile is an octagon with all sides the same length and all corners the same size. How many lines of symmetry does the tile have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0204",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "storyFolds_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Leo cuts a paper nonagon and finds every fold that makes matching halves. How many folds does Leo find? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Leo cuts out a paper nonagon with all sides the same length and all corners the same size. How many different folds make two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0205",
@@ -2072,7 +2072,7 @@ export const ITEMS = [
     structureType: "storyMirror_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia paints a heart and folds the paper down the middle while wet. Nia expects the halves to match. Will they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia cuts out a paper heart. Can Nia fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0208",
@@ -2102,7 +2102,7 @@ export const ITEMS = [
     structureType: "storyMirror_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai paints a capital letter R and folds the paper down the middle while wet. Kai expects the halves to match. Will they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai cuts out a big paper letter R. Can Kai fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0211",
@@ -2132,7 +2132,7 @@ export const ITEMS = [
     structureType: "storyMirror_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June paints a capital letter A and folds the paper down the middle while wet. June expects the halves to match. Will they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June cuts out a big paper letter A. Can June fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0214",
@@ -2162,7 +2162,7 @@ export const ITEMS = [
     structureType: "storyMirror_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily paints a capital letter Z and folds the paper down the middle while wet. Lily expects the halves to match. Will they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily cuts out a big paper letter Z. Can Lily fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0217",
@@ -2192,7 +2192,7 @@ export const ITEMS = [
     structureType: "storyMirror_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara paints a capital letter V and folds the paper down the middle while wet. Amara expects the halves to match. Will they?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara cuts out a big paper letter V. Can Amara fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0220",
@@ -2222,7 +2222,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca checks a paper square with a small mirror on its middle line. Does the mirror image match the hidden half? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca checks a paper square with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0223",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nia paints a paper parallelogram and folds the paper down the middle while wet. Nia expects the halves to match. Will they? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nia cuts out a slanted parallelogram with two long sides and two short sides. Can Nia fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0224",
@@ -2242,7 +2242,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Theo submits a paper rectangle. Do its two halves match across the middle? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Theo submits a paper rectangle. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0225",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava checks a paper scalene triangle with a small mirror on its middle line. Does the mirror image match the hidden half? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava checks a paper scalene triangle with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0226",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai paints a paper equilateral triangle and folds the paper down the middle while wet. Kai expects the halves to match. Will they? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai cuts out a triangle with all three sides the same length. Is there a fold that makes the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0227",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Ida submits a letter N banner. Do its two halves match across the middle? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Ida submits a letter N banner. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0228",
@@ -2282,7 +2282,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar checks a paper pentagon with a small mirror on its middle line. Does the mirror image match the hidden half? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar's paper pentagon has equal sides and equal corners. Omar stands a small mirror on a line from one corner through the middle. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0229",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"June paints a letter Q flag and folds the paper down the middle while wet. June expects the halves to match. Will they? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"June cuts out a big capital letter F for a flag. Can June fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0230",
@@ -2302,7 +2302,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Zoe submits a paper hexagon. Do its two halves match across the middle? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Zoe cuts out a hexagon with all sides the same length and all corners the same size. Can Zoe fold it in half so the two halves match?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0231",
@@ -2312,7 +2312,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ben checks a letter L pennant with a small mirror on its middle line. Does the mirror image match the hidden half? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ben checks a letter L pennant with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0232",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Lily paints a paper heart and folds the paper down the middle while wet. Lily expects the halves to match. Will they? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Lily cuts out a paper heart for a card. Is there a fold that makes the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0233",
@@ -2332,7 +2332,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Rosa submits a letter Z streamer. Do its two halves match across the middle? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Rosa submits a letter Z streamer. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0234",
@@ -2342,7 +2342,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn checks a paper circle with a small mirror on its middle line. Does the mirror image match the hidden half? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn checks a paper circle with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0235",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Amara paints a letter G card and folds the paper down the middle while wet. Amara expects the halves to match. Will they? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Amara cuts out a big capital letter G for a card. Is there a fold that makes the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0236",
@@ -2362,7 +2362,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Diego submits a paper trapezoid. Do its two halves match across the middle? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Diego cuts out a trapezoid with two equal slanted sides. Can Diego fold it in half so the two halves match?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0237",
@@ -2372,7 +2372,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Priya checks a letter R poster with a small mirror on its middle line. Does the mirror image match the hidden half? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Priya checks a letter R poster with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0238",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "storyMirror_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo paints a paper star and folds the paper down the middle while wet. Leo expects the halves to match. Will they? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo cuts out a star with five equal points. Can Leo fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0239",
@@ -2392,7 +2392,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Sam paints a regular octagon banner and folds the paper down the middle while wet. Sam expects the halves to match. Will they? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Sam cuts out a regular octagon for a banner. Can Sam fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0240",
@@ -2402,7 +2402,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Mina submits a scalene triangle pennant. Do its two halves match across the middle? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Mina submits a scalene triangle pennant. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0241",
@@ -2412,7 +2412,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca checks a regular decagon medallion with a small mirror on its middle line. Does the mirror image match the hidden half? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca checks a regular decagon medallion with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0242",
@@ -2422,7 +2422,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nia paints a parallelogram sticker and folds the paper down the middle while wet. Nia expects the halves to match. Will they? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nia cuts out a sticker shaped like a slanted parallelogram with two long sides and two short sides. Can Nia fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0243",
@@ -2432,7 +2432,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Theo submits a regular nonagon badge. Do its two halves match across the middle? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Theo submits a regular nonagon badge. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0244",
@@ -2442,7 +2442,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava checks a letter P mosaic with a small mirror on its middle line. Does the mirror image match the hidden half? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava checks a letter P mosaic with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0245",
@@ -2452,7 +2452,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai paints a regular dodecagon clock face and folds the paper down the middle while wet. Kai expects the halves to match. Will they? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai cuts out a regular dodecagon for a clock face. Is there a fold that makes the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0246",
@@ -2462,7 +2462,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Ida submits a letter J mural. Do its two halves match across the middle? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Ida submits a letter J mural. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0247",
@@ -2472,7 +2472,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar checks a square quilt block with a small mirror on its middle line. Does the mirror image match the hidden half? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar checks a square quilt block with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0248",
@@ -2482,7 +2482,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"June paints a letter S weathervane and folds the paper down the middle while wet. June expects the halves to match. Will they? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"June cuts out a big capital letter S for a poster. Is there a fold that makes the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0249",
@@ -2492,7 +2492,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Zoe submits a regular hexagon tile. Do its two halves match across the middle? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Zoe submits a regular hexagon tile. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0250",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ben checks a letter K flag with a small mirror on its middle line. Does the mirror image match the hidden half? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ben stands a small mirror on a line straight down the middle of a capital letter K. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0251",
@@ -2512,7 +2512,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Lily paints an equilateral triangle sail and folds the paper down the middle while wet. Lily expects the halves to match. Will they? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Lily cuts out an equilateral triangle for a sail. Can Lily fold it so the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0252",
@@ -2522,7 +2522,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Rosa submits a letter N kite. Do its two halves match across the middle? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Rosa submits a letter N cutout. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0253",
@@ -2532,7 +2532,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn checks a rectangle door design with a small mirror on its middle line. Does the mirror image match the hidden half? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn checks a rectangle door design with a small mirror on its middle line. Does the mirror image match the hidden half?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0254",
@@ -2542,7 +2542,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Amara paints a letter G stencil and folds the paper down the middle while wet. Amara expects the halves to match. Will they? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Amara cuts out a big capital letter G for a sign. Is there a fold that makes the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0255",
@@ -2552,7 +2552,7 @@ export const ITEMS = [
     structureType: "storyMirror_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Diego submits a circle target. Do its two halves match across the middle? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"For the mirror-art wall, Diego submits a circle target. Do its two halves match across the middle?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0256",
@@ -2772,7 +2772,7 @@ export const ITEMS = [
     structureType: "storyParallel_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"Ava labels every pair of parallel sides on a hexagon banner. How many labels is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"Ava labels every pair of parallel sides on this hexagon banner. How many labels is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0278",
@@ -2832,7 +2832,7 @@ export const ITEMS = [
     structureType: "storyParallel_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"Ben labels every pair of parallel sides on a hexagon banner. How many labels is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"Ben labels every pair of parallel sides on this hexagon banner. How many labels is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0284",
@@ -2892,7 +2892,7 @@ export const ITEMS = [
     structureType: "storyParallel_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"Priya labels every pair of parallel sides on a hexagon banner. How many labels is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"Priya labels every pair of parallel sides on this hexagon banner. How many labels is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0290",
@@ -2942,7 +2942,7 @@ export const ITEMS = [
     structureType: "storyDiagonals_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"shapeC":{"n":20,"kind":"diagonals","name":"octagon"},"promptText":"Kai strings ribbon across every diagonal of a octagon display board. How many ribbons does Kai cut?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"shapeC":{"n":20,"kind":"diagonals","name":"octagon"},"promptText":"Kai strings ribbon across every diagonal of an octagon display board. How many ribbons does Kai cut?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0295",
@@ -3092,7 +3092,7 @@ export const ITEMS = [
     structureType: "storyEqualSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"Theo glues one gem on each equal side of a pentagon ornament. How many gems does Theo glue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"sides","key":"pentagon"},"promptText":"Theo glues one gem on each equal side of this pentagon ornament. How many gems does Theo glue?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0310",
@@ -3102,7 +3102,7 @@ export const ITEMS = [
     structureType: "storyEqualSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"A hexagon badge gets one stitch per equal side from Ava. How many stitches are sewn?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"sides","key":"hexagon"},"promptText":"This hexagon badge gets one stitch per equal side from Ava. How many stitches are sewn?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0311",
@@ -3122,7 +3122,7 @@ export const ITEMS = [
     structureType: "storyEqualSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"triangle"},"promptText":"Ida glues one gem on each equal side of a triangle ornament. How many gems does Ida glue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"sides","key":"triangleEquilateral"},"promptText":"Ida glues one gem on each equal side of this triangle ornament. How many gems does Ida glue?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0313",
@@ -3132,7 +3132,7 @@ export const ITEMS = [
     structureType: "storyEqualSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"A pentagon badge gets one stitch per equal side from Omar. How many stitches are sewn?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"sides","key":"pentagon"},"promptText":"This pentagon badge gets one stitch per equal side from Omar. How many stitches are sewn?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0314",
@@ -3162,7 +3162,7 @@ export const ITEMS = [
     structureType: "storyEqualSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"triangle"},"promptText":"A triangle badge gets one stitch per equal side from Ben. How many stitches are sewn?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"sides","key":"triangleEquilateral"},"promptText":"This triangle badge gets one stitch per equal side from Ben. How many stitches are sewn?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0317",
@@ -3182,7 +3182,7 @@ export const ITEMS = [
     structureType: "storyEqualSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"Rosa glues one gem on each equal side of a hexagon ornament. How many gems does Rosa glue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"sides","key":"hexagon"},"promptText":"Rosa glues one gem on each equal side of this hexagon ornament. How many gems does Rosa glue?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0319",
@@ -3212,7 +3212,7 @@ export const ITEMS = [
     structureType: "storyEqualSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"Diego glues one gem on each equal side of a pentagon ornament. How many gems does Diego glue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"sides","key":"pentagon"},"promptText":"Diego glues one gem on each equal side of this pentagon ornament. How many gems does Diego glue?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0322",
@@ -3222,7 +3222,7 @@ export const ITEMS = [
     structureType: "storyEqualSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"A hexagon badge gets one stitch per equal side from Priya. How many stitches are sewn?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"sides","key":"hexagon"},"promptText":"This hexagon badge gets one stitch per equal side from Priya. How many stitches are sewn?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0323",
@@ -3412,7 +3412,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"A square logo shows all its lines of symmetry in silver. How many silver lines does Mina draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"Mina draws every line of symmetry on a square logo in silver. How many silver lines does Mina draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0342",
@@ -3422,7 +3422,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"Luca embroiders each line of symmetry of a rectangle patch. How many embroidered lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"kind":"symmetry","key":"rectangle"},"promptText":"Luca embroiders each line of symmetry of this rectangle patch. How many embroidered lines are there?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0343",
@@ -3432,7 +3432,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"Nia paints every line of symmetry on a triangle mural stencil. How many painted lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"symmetry","key":"triangleEquilateral"},"promptText":"Nia paints every line of symmetry on this triangle mural stencil. How many painted lines is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0344",
@@ -3442,7 +3442,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"A pentagon logo shows all its lines of symmetry in silver. How many silver lines does Theo draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"symmetry","key":"pentagon"},"promptText":"Theo draws every line of symmetry on this pentagon logo in silver. How many silver lines does Theo draw?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0345",
@@ -3452,7 +3452,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Ava embroiders each line of symmetry of a hexagon patch. How many embroidered lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"symmetry","key":"hexagon"},"promptText":"Ava embroiders each line of symmetry of this hexagon patch. How many embroidered lines are there?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0346",
@@ -3462,7 +3462,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"Kai paints every line of symmetry on a trapezoid mural stencil. How many painted lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"kind":"symmetry","key":"trapezoid"},"promptText":"Kai paints every line of symmetry on this trapezoid mural stencil. How many painted lines is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0347",
@@ -3472,7 +3472,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"A square logo shows all its lines of symmetry in silver. How many silver lines does Ida draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"Ida draws every line of symmetry on a square logo in silver. How many silver lines does Ida draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0348",
@@ -3482,7 +3482,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"Omar embroiders each line of symmetry of a rectangle patch. How many embroidered lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"kind":"symmetry","key":"rectangle"},"promptText":"Omar embroiders each line of symmetry of this rectangle patch. How many embroidered lines are there?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0349",
@@ -3492,7 +3492,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"June paints every line of symmetry on a triangle mural stencil. How many painted lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"symmetry","key":"triangleEquilateral"},"promptText":"June paints every line of symmetry on this triangle mural stencil. How many painted lines is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0350",
@@ -3502,7 +3502,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"A pentagon logo shows all its lines of symmetry in silver. How many silver lines does Zoe draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"symmetry","key":"pentagon"},"promptText":"Zoe draws every line of symmetry on this pentagon logo in silver. How many silver lines does Zoe draw?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0351",
@@ -3512,7 +3512,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Ben embroiders each line of symmetry of a hexagon patch. How many embroidered lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"symmetry","key":"hexagon"},"promptText":"Ben embroiders each line of symmetry of this hexagon patch. How many embroidered lines are there?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0352",
@@ -3522,7 +3522,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"Lily paints every line of symmetry on a trapezoid mural stencil. How many painted lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"kind":"symmetry","key":"trapezoid"},"promptText":"Lily paints every line of symmetry on this trapezoid mural stencil. How many painted lines is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0353",
@@ -3532,7 +3532,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"A square logo shows all its lines of symmetry in silver. How many silver lines does Rosa draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"Rosa draws every line of symmetry on a square logo in silver. How many silver lines does Rosa draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0354",
@@ -3542,7 +3542,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"Finn embroiders each line of symmetry of a rectangle patch. How many embroidered lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"kind":"symmetry","key":"rectangle"},"promptText":"Finn embroiders each line of symmetry of this rectangle patch. How many embroidered lines are there?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0355",
@@ -3552,7 +3552,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"Amara paints every line of symmetry on a triangle mural stencil. How many painted lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"symmetry","key":"triangleEquilateral"},"promptText":"Amara paints every line of symmetry on this triangle mural stencil. How many painted lines is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0356",
@@ -3562,7 +3562,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"A pentagon logo shows all its lines of symmetry in silver. How many silver lines does Diego draw?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"symmetry","key":"pentagon"},"promptText":"Diego draws every line of symmetry on this pentagon logo in silver. How many silver lines does Diego draw?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0357",
@@ -3572,7 +3572,7 @@ export const ITEMS = [
     structureType: "storySymPaint_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Priya embroiders each line of symmetry of a hexagon patch. How many embroidered lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"symmetry","key":"hexagon"},"promptText":"Priya embroiders each line of symmetry of this hexagon patch. How many embroidered lines are there?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-app-b0821-0358",
@@ -3752,7 +3752,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Mina to keep only shapes with exactly 4 sides. Out of a rhombus, a trapezoid, and a hexagon, how many shapes are kept? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Mina to keep only shapes with exactly 4 sides. Out of a rhombus, a trapezoid, and a hexagon, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0376",
@@ -3762,7 +3762,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Luca's robot grabs every block with two pairs of parallel sides. Given a parallelogram, a square, and a pentagon, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Luca's robot grabs every block with two pairs of parallel sides. Given a parallelogram, a square, and a pentagon with equal sides and equal corners, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0377",
@@ -3772,7 +3772,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Nia sorts blocks into a bin for shapes with exactly 1 pair of parallel sides. From two trapezoids and a rhombus, how many blocks land in the bin? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Nia sorts blocks into a bin for shapes with exactly 1 pair of parallel sides. From two trapezoids and a rhombus, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0378",
@@ -3782,7 +3782,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Theo to keep only shapes with 4 right angles. Out of a square, a rectangle, and a rhombus, how many shapes are kept? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Theo to keep only shapes with 4 right angles. Out of a square, a rectangle, and a rhombus that is not a square, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0379",
@@ -3792,7 +3792,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ava's robot grabs every block with an even number of sides. Given a hexagon, a heptagon, and an octagon, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ava's robot grabs every block with an even number of sides. Given a hexagon, a heptagon, and an octagon, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0380",
@@ -3802,7 +3802,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Kai sorts blocks into a bin for shapes with all sides equal. From two rhombuses and a rectangle, how many blocks land in the bin? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Kai sorts blocks into a bin for shapes with all sides equal. From two rhombuses and a rectangle that is longer than it is wide, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0381",
@@ -3812,7 +3812,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Ida to keep only shapes with at least one right angle. Out of a right triangle, a square, and a trapezoid, how many shapes are kept? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ida keeps only shapes with at least one right angle. Out of a right triangle, a square, and a trapezoid with equal slanted sides, how many shapes does Ida keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0382",
@@ -3822,7 +3822,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Omar's robot grabs every block with 2 pairs of parallel sides. Given three parallelograms and a trapezoid, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Omar's robot grabs every block with 2 pairs of parallel sides. Given three parallelograms and a trapezoid, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0383",
@@ -3832,7 +3832,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"June sorts blocks into a bin for shapes with an odd number of sides. From a pentagon, a heptagon, and a hexagon, how many blocks land in the bin? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"June sorts blocks into a bin for shapes with an odd number of sides. From a pentagon, a heptagon, and a hexagon, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0384",
@@ -3842,7 +3842,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Zoe to keep only shapes with 4 right angles. Out of two squares and two trapezoids, how many shapes are kept? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Zoe to keep only shapes with 4 right angles. Out of two squares and two trapezoids, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0385",
@@ -3852,7 +3852,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ben's robot grabs every block with exactly 4 vertices. Given a rhombus, a parallelogram, and a right triangle, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ben's robot grabs every block with exactly 4 vertices. Given a rhombus, a parallelogram, and a right triangle, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0386",
@@ -3862,7 +3862,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Lily sorts blocks into a bin for shapes with exactly 7 sides. From a heptagon and two hexagons, how many blocks land in the bin? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Lily sorts blocks into a bin for shapes with exactly 7 sides. From a heptagon and two hexagons, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0387",
@@ -3872,7 +3872,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Rosa to keep only shapes with 4 right angles. Out of two rectangles and a rhombus, how many shapes are kept? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Rosa to keep only shapes with 4 right angles. Out of two rectangles and a rhombus that is not a square, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0388",
@@ -3882,7 +3882,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Finn's robot grabs every block with exactly one pair of parallel sides. Given a trapezoid, a square, and a hexagon, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Finn's robot grabs every block with exactly one pair of parallel sides. Given a trapezoid, a square, and a hexagon with equal sides and equal corners, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0389",
@@ -3892,7 +3892,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Amara sorts blocks into a bin for shapes with all sides equal. From three rhombuses and a square, how many blocks land in the bin? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Amara sorts blocks into a bin for shapes with all sides equal. From three rhombuses and a square, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0390",
@@ -3902,7 +3902,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Diego to keep only shapes with more than 5 sides. Out of an octagon, a hexagon, and a pentagon, how many shapes are kept? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Diego to keep only shapes with more than 5 sides. Out of an octagon, a hexagon, and a pentagon, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0391",
@@ -3912,7 +3912,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Priya's robot grabs every block with exactly 4 sides. Given two parallelograms and a pentagon, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Priya's robot grabs every block with exactly 4 sides. Given two parallelograms and a pentagon, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0392",
@@ -3922,7 +3922,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Luca's robot grabs every block with an even number of sides. Given a nonagon, a decagon, and an octagon, how many blocks does it grab? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Luca's robot grabs every block with an even number of sides. Given a nonagon, a decagon, and an octagon, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0393",
@@ -3932,7 +3932,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Nia sorts blocks into a bin for shapes with exactly 12 sides. From two dodecagons and a nonagon, how many blocks land in the bin? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Nia sorts blocks into a bin for shapes with exactly 12 sides. From two dodecagons and a nonagon, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0394",
@@ -3942,7 +3942,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Theo to keep only shapes with two pairs of parallel sides. Out of a square, a rhombus, and a trapezoid, how many shapes are kept? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Theo to keep only shapes with two pairs of parallel sides. Out of a square, a rhombus, and a trapezoid, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0395",
@@ -3952,7 +3952,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ava's robot grabs every block with exactly 8 sides. Given three octagons and a hexagon, how many blocks does it grab? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ava's robot grabs every block with exactly 8 sides. Given three octagons and a hexagon, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0396",
@@ -3962,7 +3962,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Kai sorts blocks into a bin for shapes with an odd number of sides. From a decagon, a nonagon, and a heptagon, how many blocks land in the bin? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Kai sorts blocks into a bin for shapes with an odd number of sides. From a decagon, a nonagon, and a heptagon, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0397",
@@ -3972,7 +3972,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Ida to keep only shapes with no equal sides. Out of two scalene triangles and an equilateral triangle, how many shapes are kept? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Ida to keep only shapes with no equal sides. Out of two scalene triangles and an equilateral triangle, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0398",
@@ -3982,7 +3982,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Omar's robot grabs every block with 4 right angles. Given a square, a rectangle, and a parallelogram, how many blocks does it grab? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Omar's robot grabs every block with 4 right angles. Given a square, a rectangle, and a parallelogram that is not a rectangle, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0399",
@@ -3992,7 +3992,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"June sorts blocks into a bin for shapes with at least 10 sides. From two decagons and a dodecagon, how many blocks land in the bin? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"June sorts blocks into a bin for shapes with at least 10 sides. From two decagons and a dodecagon, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0400",
@@ -4002,7 +4002,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Zoe to keep only shapes with all sides equal. Out of a rhombus, a square, and a rectangle, how many shapes are kept? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Zoe to keep only shapes with all sides equal. Out of a rhombus, a square, and a rectangle that is longer than it is wide, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0401",
@@ -4012,7 +4012,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ben's robot grabs every block with more than 8 sides. Given an octagon, a nonagon, and a decagon, how many blocks does it grab? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ben's robot grabs every block with more than 8 sides. Given an octagon, a nonagon, and a decagon, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0402",
@@ -4022,7 +4022,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Lily sorts blocks into a bin for shapes with exactly 7 sides. From two heptagons and an octagon, how many blocks land in the bin? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Lily sorts blocks into a bin for shapes with exactly 7 sides. From two heptagons and an octagon, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0403",
@@ -4032,7 +4032,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Rosa to keep only shapes with an even number of sides. Out of a dodecagon, an octagon, and a square, how many shapes are kept? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Rosa to keep only shapes with an even number of sides. Out of a dodecagon, an octagon, and a square, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0404",
@@ -4042,7 +4042,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Finn's robot grabs every block with exactly 9 sides. Given three nonagons and a decagon, how many blocks does it grab? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Finn's robot grabs every block with exactly 9 sides. Given three nonagons and a decagon, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0405",
@@ -4052,7 +4052,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Amara sorts blocks into a bin for shapes with exactly one pair of parallel sides. From a trapezoid, a parallelogram, and a rhombus, how many blocks land in the bin? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Amara sorts blocks into a bin for shapes with exactly one pair of parallel sides. From a trapezoid, a parallelogram, and a rhombus, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0406",
@@ -4062,7 +4062,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Diego to keep only shapes with at least one line of symmetry. Out of two equilateral triangles and a scalene triangle, how many shapes are kept? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Diego to keep only shapes with at least one line of symmetry. Out of two equilateral triangles and a scalene triangle, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0407",
@@ -4072,7 +4072,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Priya's robot grabs every block with more than 6 sides. Given a hexagon, an octagon, and a decagon, how many blocks does it grab? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Priya's robot grabs every block with more than 6 sides. Given a hexagon, an octagon, and a decagon, how many blocks does it grab?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0408",
@@ -4082,7 +4082,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Leo sorts blocks into a bin for shapes with 4 right angles. From two squares and two rhombuses, how many blocks land in the bin? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Leo sorts blocks into a bin for shapes with 4 right angles. From two squares and two rhombuses that are not squares, how many blocks land in the bin?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0409",
@@ -4262,7 +4262,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Luca: This square picture frame is also a rectangle. Is the card right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Luca: This square picture frame is also a rectangle. Is the card right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0427",
@@ -4272,7 +4272,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, Nia reads a label: This rectangular tabletop is also a square. Is the label right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nia's tabletop is a rectangle that is longer than it is wide. Nia says the tabletop is also a square. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0428",
@@ -4282,7 +4282,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo's puzzle book claims: This square coaster is also a rhombus. Is the book right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo's puzzle book claims: This square coaster is also a rhombus. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0429",
@@ -4292,7 +4292,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Ava: This trapezoid lampshade is also a parallelogram. Is the card right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava's lampshade is shaped like a trapezoid with only one pair of parallel sides. Ava says it is also a parallelogram. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0430",
@@ -4302,7 +4302,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Kai reads a label: This rhombus kite is also a parallelogram. Is the label right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Kai reads a label: This rhombus kite is also a parallelogram. Is the label right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0431",
@@ -4312,7 +4312,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida's puzzle book claims: This parallelogram banner is also a rectangle. Is the book right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida's banner is a parallelogram with no right angles. Ida says the banner is also a rectangle. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0432",
@@ -4322,7 +4322,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Omar: This rectangular window is also a parallelogram. Is the card right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Omar: This rectangular window is also a parallelogram. Is the card right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0433",
@@ -4332,7 +4332,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, June reads a label: This rhombus tile is also a square. Is the label right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells June: This rhombus tile with no right angles is also a square. Is the card right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0434",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe's puzzle book claims: This square garden bed is also a parallelogram. Is the book right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe's puzzle book claims: This square garden bed is also a parallelogram. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0435",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Ben: This trapezoid roof face is also a rectangle. Is the card right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ben's puzzle book claims: This trapezoid roof with only one pair of parallel sides is also a rectangle. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0436",
@@ -4362,7 +4362,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Lily reads a label: This right-triangle ramp is still a triangle. Is the label right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Lily's ramp is shaped like a right triangle. Lily says the ramp is still a triangle. Is Lily right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0437",
@@ -4372,7 +4372,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Rosa's puzzle book claims: This hexagonal gazebo floor is a quadrilateral. Is the book right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Rosa's puzzle book claims: This hexagonal gazebo floor is a quadrilateral. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0438",
@@ -4382,7 +4382,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Finn: This square chess board is a quadrilateral. Is the card right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn's chess board is a square. Finn says the chess board is also a quadrilateral. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0439",
@@ -4392,7 +4392,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, Amara reads a label: This heptagon coin is a hexagon. Is the label right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, Amara reads a label: This heptagon coin is a hexagon. Is the label right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0440",
@@ -4402,7 +4402,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego's puzzle book claims: This rectangular field is a quadrilateral. Is the book right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego's field is a rectangle. Diego says the field is also a quadrilateral. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0441",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Priya: This scalene-triangle sail is a quadrilateral. Is the card right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Priya: This scalene-triangle sail is a quadrilateral. Is the card right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0442",
@@ -4422,7 +4422,7 @@ export const ITEMS = [
     structureType: "storyRename_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Leo reads a label: This rhombus charm is a quadrilateral. Is the label right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo's charm is shaped like a rhombus. Leo says the charm is also a quadrilateral. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0443",
@@ -4432,7 +4432,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Sam reads a label: This square clock is a regular polygon. Is the label right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Sam reads a label: This square clock is a regular polygon. Is the label right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0444",
@@ -4442,7 +4442,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Mina's puzzle book claims: This rectangular whiteboard is a regular polygon. Is the book right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Mina's whiteboard is a rectangle that is longer than it is tall. Mina says the whiteboard is a regular polygon. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0445",
@@ -4452,7 +4452,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Luca: This equilateral-triangle pennant is a regular polygon. Is the card right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Luca: This equilateral-triangle pennant is a regular polygon. Is the card right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0446",
@@ -4462,7 +4462,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, Nia reads a label: This scalene-triangle bracket is a regular polygon. Is the label right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, Nia reads a label: This scalene-triangle bracket is a regular polygon. Is the label right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0447",
@@ -4472,17 +4472,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo's puzzle book claims: This rhombus with right angles is a square. Is the book right? Study it before answering."}},
-  },
-  {
-    itemId: "linesShapes-app-b0821-0448",
-    modeId: "linesShapes",
-    itemFamily: "application",
-    subskill: "shapeClassification",
-    structureType: "storyRename_band3",
-    levelRange: [7,10],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Ava: This parallelogram path stone can be called a trapezoid. Is the card right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo's puzzle book claims: This rhombus with right angles is a square. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0449",
@@ -4492,7 +4482,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Kai reads a label: This octagonal stop sign is a polygon. Is the label right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Kai reads a label: This octagonal stop sign is a polygon. Is the label right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0450",
@@ -4502,7 +4492,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida's puzzle book claims: This decagon medal has 12 sides. Is the book right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida's puzzle book claims: This decagon medal has 12 sides. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0451",
@@ -4512,7 +4502,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Omar: This dodecagon clock face has 12 sides. Is the card right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Omar: This dodecagon clock face has 12 sides. Is the card right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0452",
@@ -4522,7 +4512,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, June reads a label: This nonagon plaque is a quadrilateral. Is the label right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, June reads a label: This nonagon plaque is a quadrilateral. Is the label right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0453",
@@ -4532,7 +4522,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe's puzzle book claims: This equal-sided parallelogram pendant is a rhombus. Is the book right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe's puzzle book claims: This equal-sided parallelogram pendant is a rhombus. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0454",
@@ -4542,7 +4532,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Ben: This kite-shaped charm has parallel sides. Is the card right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ben's charm is a kite with 2 short sides and 2 long sides. A quiz card tells Ben: This charm has parallel sides. Is the card right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0455",
@@ -4552,7 +4542,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Lily reads a label: This square mosaic tile is both a rhombus and a rectangle. Is the label right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"At the museum, Lily reads a label: This square mosaic tile is both a rhombus and a rectangle. Is the label right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0456",
@@ -4562,7 +4552,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Rosa's puzzle book claims: This decagon table has fewer sides than an octagon. Is the book right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Rosa's puzzle book claims: This decagon table has fewer sides than an octagon. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0457",
@@ -4572,7 +4562,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Finn: This right-triangle set square is a polygon. Is the card right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"A quiz card tells Finn: This right-triangle set square is a polygon. Is the card right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0458",
@@ -4582,7 +4572,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, Amara reads a label: This hexagon paver has an odd number of sides. Is the label right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"At the museum, Amara reads a label: This hexagon paver has an odd number of sides. Is the label right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0459",
@@ -4592,7 +4582,7 @@ export const ITEMS = [
     structureType: "storyRename_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego's puzzle book claims: This scalene-triangle shard is still a triangle. Is the book right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego's puzzle book claims: This scalene-triangle shard is still a triangle. Is the book right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0460",
@@ -5272,7 +5262,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Mina makes a line segment and pins each endpoint. How many pins hold endpoints? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Mina makes a line segment and pins each endpoint. How many pins hold endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0529",
@@ -5282,7 +5272,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Luca draws a ray on the whiteboard and dots its endpoints. How many dots does Luca add? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Luca draws a ray on the whiteboard and marks each endpoint with a dot. How many dots does Luca draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0530",
@@ -5292,7 +5282,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Nia chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Nia draws a line on the chalkboard with an arrow at each end. How many endpoints does Nia's line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0531",
@@ -5302,7 +5292,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Theo makes a line segment and pins each endpoint. How many pins hold endpoints? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Theo makes a line segment and pins each endpoint. How many pins hold endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0532",
@@ -5312,7 +5302,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Ava draws a ray on the whiteboard and dots its endpoints. How many dots does Ava add? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Ava draws a ray on the whiteboard and puts a dot on every endpoint the ray has. How many dots does Ava draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0533",
@@ -5322,7 +5312,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Kai chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Kai draws a line on the chalkboard with an arrow at each end. How many endpoints does Kai's line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0534",
@@ -5332,7 +5322,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Ida makes a line segment and pins each endpoint. How many pins hold endpoints? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Ida makes a line segment and pins each endpoint. How many pins hold endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0535",
@@ -5342,7 +5332,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Omar draws a ray on the whiteboard and dots its endpoints. How many dots does Omar add? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Omar draws a ray on the whiteboard and marks each endpoint with a dot. How many dots does Omar draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0536",
@@ -5352,7 +5342,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"June chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"June draws a line on the chalkboard with an arrow at each end. How many endpoints does June's line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0537",
@@ -5362,7 +5352,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Zoe makes a line segment and pins each endpoint. How many pins hold endpoints? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Zoe makes a line segment and pins each endpoint. How many pins hold endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0538",
@@ -5372,7 +5362,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Ben draws a ray on the whiteboard and dots its endpoints. How many dots does Ben add? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Ben draws a ray on the whiteboard and puts a dot on every endpoint the ray has. How many dots does Ben draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0539",
@@ -5382,7 +5372,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Lily chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Lily draws a line on the chalkboard with an arrow at each end. How many endpoints does Lily's line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0540",
@@ -5392,7 +5382,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Rosa makes a line segment and pins each endpoint. How many pins hold endpoints? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Rosa makes a line segment and pins each endpoint. How many pins hold endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0541",
@@ -5402,7 +5392,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Finn draws a ray on the whiteboard and dots its endpoints. How many dots does Finn add? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Finn draws a ray on the whiteboard and marks each endpoint with a dot. How many dots does Finn draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0542",
@@ -5412,7 +5402,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Amara chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Amara draws a line on the chalkboard with an arrow at each end. How many endpoints does Amara's line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0543",
@@ -5422,7 +5412,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Diego makes a line segment and pins each endpoint. How many pins hold endpoints? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Diego makes a line segment and pins each endpoint. How many pins hold endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0544",
@@ -5432,7 +5422,7 @@ export const ITEMS = [
     structureType: "storyChalk_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Priya draws a ray on the whiteboard and dots its endpoints. How many dots does Priya add? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Priya draws a ray on the whiteboard and puts a dot on every endpoint the ray has. How many dots does Priya draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0545",
@@ -5442,7 +5432,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Mina makes a line segment and pins each endpoint. How many pins hold endpoints? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"Mina makes a line segment out of string and puts a pin at each endpoint. How many pins does Mina use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0546",
@@ -5452,7 +5442,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Luca draws a ray on the whiteboard and dots its endpoints. How many dots does Luca add? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Luca draws a ray and puts a sticker on each endpoint. How many stickers does Luca need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0547",
@@ -5462,7 +5452,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Nia chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"In math class, Nia draws a line with arrows at both ends. How many endpoints does the line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0548",
@@ -5472,7 +5462,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Theo makes a line segment and pins each endpoint. How many pins hold endpoints? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"Theo makes a line segment out of string and puts a pin at each endpoint. How many pins does Theo use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0549",
@@ -5482,7 +5472,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Ava draws a ray on the whiteboard and dots its endpoints. How many dots does Ava add? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Ava draws a ray and puts a sticker on each endpoint. How many stickers does Ava need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0550",
@@ -5492,7 +5482,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Kai chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"In math class, Kai draws a line with arrows at both ends. How many endpoints does the line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0551",
@@ -5502,7 +5492,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Ida makes a line segment and pins each endpoint. How many pins hold endpoints? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"Ida makes a line segment out of string and puts a pin at each endpoint. How many pins does Ida use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0552",
@@ -5512,7 +5502,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Omar draws a ray on the whiteboard and dots its endpoints. How many dots does Omar add? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Omar draws a ray and puts a sticker on each endpoint. How many stickers does Omar need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0553",
@@ -5522,7 +5512,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"June chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"In math class, June draws a line with arrows at both ends. How many endpoints does the line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0554",
@@ -5532,7 +5522,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Zoe makes a line segment and pins each endpoint. How many pins hold endpoints? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"Zoe makes a line segment out of string and puts a pin at each endpoint. How many pins does Zoe use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0555",
@@ -5542,7 +5532,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Ben draws a ray on the whiteboard and dots its endpoints. How many dots does Ben add? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Ben draws a ray and puts a sticker on each endpoint. How many stickers does Ben need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0556",
@@ -5552,7 +5542,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Lily chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"In math class, Lily draws a line with arrows at both ends. How many endpoints does the line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0557",
@@ -5562,7 +5552,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Rosa makes a line segment and pins each endpoint. How many pins hold endpoints? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"Rosa makes a line segment out of string and puts a pin at each endpoint. How many pins does Rosa use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0558",
@@ -5572,7 +5562,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Finn draws a ray on the whiteboard and dots its endpoints. How many dots does Finn add? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Finn draws a ray and puts a sticker on each endpoint. How many stickers does Finn need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0559",
@@ -5582,7 +5572,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Amara chalks a giant line on the playground and circles every endpoint. How many endpoints get circled? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"In math class, Amara draws a line with arrows at both ends. How many endpoints does the line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0560",
@@ -5592,7 +5582,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"In string art, Diego makes a line segment and pins each endpoint. How many pins hold endpoints? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"Diego makes a line segment out of string and puts a pin at each endpoint. How many pins does Diego use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0561",
@@ -5602,7 +5592,7 @@ export const ITEMS = [
     structureType: "storyChalk_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Priya draws a ray on the whiteboard and dots its endpoints. How many dots does Priya add? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Priya draws a ray and puts a sticker on each endpoint. How many stickers does Priya need?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0562",
@@ -6122,7 +6112,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows a square, a rectangle, and an equilateral triangle. Luca labels each regular polygon. How many labels does Luca write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows a square, a rectangle that is not a square, and an equilateral triangle. Luca labels each regular polygon. How many labels does Luca write?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0614",
@@ -6132,7 +6122,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Nia's badge kit holds two squares and a scalene triangle. How many badges are REGULAR polygons (all sides and angles equal)?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Nia's badge kit holds two squares and a scalene triangle. How many badges are regular polygons (all sides and angles equal)?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0615",
@@ -6142,7 +6132,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Out of an equilateral triangle, a rhombus, and a square, Theo keeps only the regular polygons. How many shapes does Theo keep?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Out of an equilateral triangle, a rhombus that is not a square, and a square, Theo keeps only the regular polygons. How many shapes does Theo keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0616",
@@ -6152,7 +6142,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows a rectangle, a parallelogram, and a square. Ava labels each regular polygon. How many labels does Ava write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows a rectangle that is not a square, a slanted parallelogram, and a square. Ava labels each regular polygon. How many labels does Ava write?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0617",
@@ -6162,7 +6152,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Kai's badge kit holds two equilateral triangles and a right triangle. How many badges are REGULAR polygons (all sides and angles equal)?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Kai's badge kit holds two equilateral triangles and a right triangle. How many badges are regular polygons (all sides and angles equal)?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0618",
@@ -6172,7 +6162,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Out of a square, a scalene triangle, and a rectangle, Ida keeps only the regular polygons. How many shapes does Ida keep?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Out of a square, a scalene triangle, and a rectangle that is not a square, Ida keeps only the regular polygons. How many shapes does Ida keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0619",
@@ -6182,7 +6172,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows three squares and a parallelogram. Omar labels each regular polygon. How many labels does Omar write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows three squares and a slanted parallelogram. Omar labels each regular polygon. How many labels does Omar write?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0620",
@@ -6192,7 +6182,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"June's badge kit holds an equilateral triangle and two rectangles. How many badges are REGULAR polygons (all sides and angles equal)?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"June's badge kit holds an equilateral triangle and two rectangles that are not squares. How many badges are regular polygons (all sides and angles equal)?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0621",
@@ -6202,7 +6192,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Out of two squares and two rhombuses, Zoe keeps only the regular polygons. How many shapes does Zoe keep?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Out of two squares and two rhombuses that are not squares, Zoe keeps only the regular polygons. How many shapes does Zoe keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0622",
@@ -6222,7 +6212,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Lily's badge kit holds a parallelogram, a rhombus, and a square. How many badges are REGULAR polygons (all sides and angles equal)?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Lily's badge kit holds a slanted parallelogram, a rhombus that is not a square, and a square. How many badges are regular polygons (all sides and angles equal)?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0624",
@@ -6242,7 +6232,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows a rectangle, a square, and a right triangle. Finn labels each regular polygon. How many labels does Finn write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows a rectangle that is not a square, a square, and a right triangle. Finn labels each regular polygon. How many labels does Finn write?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0626",
@@ -6252,7 +6242,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Amara's badge kit holds three equilateral triangles and a trapezoid. How many badges are REGULAR polygons (all sides and angles equal)?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Amara's badge kit holds three equilateral triangles and a trapezoid. How many badges are regular polygons (all sides and angles equal)?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0627",
@@ -6262,7 +6252,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Out of a square and two parallelograms, Diego keeps only the regular polygons. How many shapes does Diego keep?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Out of a square and two slanted parallelograms, Diego keeps only the regular polygons. How many shapes does Diego keep?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0628",
@@ -6272,7 +6262,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows two rectangles and two squares. Priya labels each regular polygon. How many labels does Priya write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A display case shows two rectangles that are not squares and two squares. Priya labels each regular polygon. How many labels does Priya write?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0629",
@@ -6282,7 +6272,7 @@ export const ITEMS = [
     structureType: "storyRegular_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Leo's badge kit holds an equilateral triangle, a square, and a parallelogram. How many badges are REGULAR polygons (all sides and angles equal)?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Leo's badge kit holds an equilateral triangle, a square, and a slanted parallelogram. How many badges are regular polygons (all sides and angles equal)?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0630",
@@ -6292,7 +6282,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[4,2]},"promptText":"Sam traces every line of symmetry on a square stencil and a rectangle stencil. How many lines does Sam trace in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[4,2]},"promptText":"Sam traces every line of symmetry on a square stencil and a rectangle stencil that is not a square. How many lines does Sam trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0631",
@@ -6302,7 +6292,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[3,4]},"promptText":"Two window clings — a triangle and a square — get all their symmetry lines drawn by Mina. How many lines in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[3,4]},"promptText":"Mina draws all the symmetry lines on two window clings: a triangle with all sides the same length and a square. How many lines in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0632",
@@ -6312,7 +6302,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[2,3]},"promptText":"Luca scores fold lines into a rectangle card and a triangle card, one per line of symmetry. How many fold lines altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[2,3]},"promptText":"Luca folds two cards along every line of symmetry: a rectangle that is not a square, and a triangle with all sides equal. How many fold lines does Luca make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0633",
@@ -6322,7 +6312,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[4,1]},"promptText":"Nia traces every line of symmetry on a square stencil and a trapezoid stencil. How many lines does Nia trace in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[4,1]},"promptText":"Nia traces every line of symmetry on a square stencil and a trapezoid stencil whose slanted sides are the same length. How many lines does Nia trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0634",
@@ -6332,7 +6322,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[3,1]},"promptText":"Two window clings — a triangle and a trapezoid — get all their symmetry lines drawn by Theo. How many lines in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[3,1]},"promptText":"Theo draws all the symmetry lines on two window clings: a triangle with 3 equal sides and a trapezoid with slanted sides of the same length. How many lines in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0635",
@@ -6342,7 +6332,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[2,1]},"promptText":"Ava scores fold lines into a rectangle card and a trapezoid card, one per line of symmetry. How many fold lines altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[2,1]},"promptText":"Ava folds two cards along every line of symmetry: a rectangle that is not a square, and a trapezoid with equal slanted sides. How many fold lines does Ava make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0636",
@@ -6352,7 +6342,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[4,3]},"promptText":"Kai traces every line of symmetry on a square stencil and a triangle stencil. How many lines does Kai trace in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[4,3]},"promptText":"Kai traces every line of symmetry on a square stencil and a triangle stencil with 3 equal sides. How many lines does Kai trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0637",
@@ -6372,7 +6362,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[2,2]},"promptText":"Omar scores fold lines into a rectangle card and a rectangle card, one per line of symmetry. How many fold lines altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[2,2]},"promptText":"Omar folds two rectangle cards along every line of symmetry. Neither card is a square. How many fold lines does Omar make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0639",
@@ -6382,7 +6372,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[3,3]},"promptText":"June traces every line of symmetry on a triangle stencil and a triangle stencil. How many lines does June trace in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[3,3]},"promptText":"June traces every line of symmetry on two triangle stencils, each with all sides the same length. How many lines does June trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0640",
@@ -6392,7 +6382,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"kind":"sum","parts":[1,1]},"promptText":"Two window clings — a trapezoid and a trapezoid — get all their symmetry lines drawn by Zoe. How many lines in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"counting":{"kind":"sum","parts":[1,1]},"promptText":"Zoe draws all the symmetry lines on two trapezoid window clings, each with slanted sides of the same length. How many lines in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0641",
@@ -6402,7 +6392,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[4,2]},"promptText":"Ben scores fold lines into a square card and a rectangle card, one per line of symmetry. How many fold lines altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[4,2]},"promptText":"Ben folds two cards along every line of symmetry: a square, and a rectangle that is not a square. How many fold lines does Ben make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0642",
@@ -6412,7 +6402,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[3,4]},"promptText":"Lily traces every line of symmetry on a triangle stencil and a square stencil. How many lines does Lily trace in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[3,4]},"promptText":"Lily traces every line of symmetry on a triangle stencil with all sides the same length and a square stencil. How many lines does Lily trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0643",
@@ -6422,7 +6412,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[2,3]},"promptText":"Two window clings — a rectangle and a triangle — get all their symmetry lines drawn by Rosa. How many lines in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[2,3]},"promptText":"Rosa draws all the symmetry lines on two window clings: a rectangle that is longer than it is wide and a triangle with 3 equal sides. How many lines in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0644",
@@ -6432,7 +6422,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[4,1]},"promptText":"Finn scores fold lines into a square card and a trapezoid card, one per line of symmetry. How many fold lines altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[4,1]},"promptText":"Finn folds two cards along every line of symmetry: a square, and a trapezoid whose slanted sides are the same length. How many fold lines does Finn make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0645",
@@ -6442,7 +6432,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[3,1]},"promptText":"Amara traces every line of symmetry on a triangle stencil and a trapezoid stencil. How many lines does Amara trace in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[3,1]},"promptText":"Amara traces every line of symmetry on two stencils: a triangle with all sides equal and a trapezoid with equal slanted sides. How many lines does Amara trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0646",
@@ -6452,7 +6442,7 @@ export const ITEMS = [
     structureType: "storyStencil_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[2,1]},"promptText":"Two window clings — a rectangle and a trapezoid — get all their symmetry lines drawn by Diego. How many lines in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[2,1]},"promptText":"Diego draws all the symmetry lines on two window clings: a rectangle that is not a square and a trapezoid with equal slanted sides. How many lines in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0647",
@@ -6462,7 +6452,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[5,4]},"promptText":"Two window clings — a pentagon and a square — get all their symmetry lines drawn by Mina. How many lines in total? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[5,4]},"promptText":"Mina draws every line of symmetry on two window clings: a pentagon with equal sides and equal corners, and a square. How many lines does Mina draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0648",
@@ -6472,7 +6462,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[6,2]},"promptText":"Luca scores fold lines into a hexagon card and a rectangle card, one per line of symmetry. How many fold lines altogether? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[6,2]},"promptText":"Luca folds two cards along every line of symmetry: a hexagon with equal sides and equal corners, and a rectangle that is not a square. How many fold lines does Luca make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0649",
@@ -6482,7 +6472,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[5,3]},"promptText":"Nia traces every line of symmetry on a pentagon stencil and a triangle stencil. How many lines does Nia trace in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[5,3]},"promptText":"Nia traces every line of symmetry on two stencils: a pentagon and a triangle, each with equal sides and equal corners. How many lines does Nia trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0650",
@@ -6492,7 +6482,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Two window clings — a hexagon and a square — get all their symmetry lines drawn by Theo. How many lines in total? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Theo draws every line of symmetry on two window clings: a hexagon with equal sides and equal corners, and a square. How many lines does Theo draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0651",
@@ -6502,7 +6492,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[5,2]},"promptText":"Ava scores fold lines into a pentagon card and a rectangle card, one per line of symmetry. How many fold lines altogether? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[5,2]},"promptText":"Ava folds two cards along every line of symmetry: a pentagon with equal sides and equal corners, and a rectangle that is not a square. How many fold lines does Ava make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0652",
@@ -6512,7 +6502,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[6,3]},"promptText":"Kai traces every line of symmetry on a hexagon stencil and a triangle stencil. How many lines does Kai trace in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[6,3]},"promptText":"Kai traces every line of symmetry on two stencils: a hexagon and a triangle, each with equal sides and equal corners. How many lines does Kai trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0653",
@@ -6522,7 +6512,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,4]},"promptText":"Two window clings — a right triangle and a square — get all their symmetry lines drawn by Ida. How many lines in total? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,4]},"promptText":"Ida draws every line of symmetry on two window clings: a right triangle with two equal sides, and a square. How many lines does Ida draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0654",
@@ -6532,7 +6522,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[7,2]},"promptText":"Omar scores fold lines into a heptagon card and a rectangle card, one per line of symmetry. How many fold lines altogether? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[7,2]},"promptText":"Omar folds two cards along every line of symmetry: a heptagon with equal sides and equal corners, and a rectangle that is not a square. How many fold lines does Omar make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0655",
@@ -6542,7 +6532,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[1,5]},"promptText":"June traces every line of symmetry on a right triangle stencil and a pentagon stencil. How many lines does June trace in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[1,5]},"promptText":"June traces every line of symmetry on two stencils: a right triangle with two equal sides, and a pentagon with equal sides and equal corners. How many lines does June trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0656",
@@ -6552,7 +6542,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[7,3]},"promptText":"Two window clings — a heptagon and a triangle — get all their symmetry lines drawn by Zoe. How many lines in total? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[7,3]},"promptText":"Zoe draws every line of symmetry on two window clings: a heptagon and a triangle, each with equal sides and equal corners. How many lines does Zoe draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0657",
@@ -6562,7 +6552,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[5,6]},"promptText":"Ben scores fold lines into a pentagon card and a hexagon card, one per line of symmetry. How many fold lines altogether? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[5,6]},"promptText":"Ben folds two cards along every line of symmetry: a pentagon and a hexagon, each with equal sides and equal corners. How many fold lines does Ben make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0658",
@@ -6572,7 +6562,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[6,1]},"promptText":"Lily traces every line of symmetry on a hexagon stencil and a trapezoid stencil. How many lines does Lily trace in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[6,1]},"promptText":"Lily traces every line of symmetry on two stencils: a hexagon with equal sides and equal corners, and a trapezoid with two equal slanted sides. How many lines does Lily trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0659",
@@ -6582,7 +6572,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[1,6]},"promptText":"Two window clings — a right triangle and a hexagon — get all their symmetry lines drawn by Rosa. How many lines in total? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[1,6]},"promptText":"Rosa draws every line of symmetry on two window clings: a right triangle with two equal sides, and a hexagon with equal sides and equal corners. How many lines does Rosa draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0660",
@@ -6592,7 +6582,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"Finn scores fold lines into a heptagon card and a square card, one per line of symmetry. How many fold lines altogether? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"Finn folds two cards along every line of symmetry: a heptagon with equal sides and equal corners, and a square. How many fold lines does Finn make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0661",
@@ -6602,7 +6592,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[5,1]},"promptText":"Amara traces every line of symmetry on a pentagon stencil and a trapezoid stencil. How many lines does Amara trace in all? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[5,1]},"promptText":"Amara traces every line of symmetry on two stencils: a pentagon with equal sides and equal corners, and a trapezoid with two equal slanted sides. How many lines does Amara trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0662",
@@ -6612,7 +6602,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"Two window clings — a heptagon and a hexagon — get all their symmetry lines drawn by Diego. How many lines in total? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[7,6]},"promptText":"Diego draws every line of symmetry on two window clings: a heptagon and a hexagon, each with equal sides and equal corners. How many lines does Diego draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0663",
@@ -6622,7 +6612,7 @@ export const ITEMS = [
     structureType: "storyStencil_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[1,2]},"promptText":"Priya scores fold lines into a right triangle card and a rectangle card, one per line of symmetry. How many fold lines altogether? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[1,2]},"promptText":"Priya folds two cards along every line of symmetry: a right triangle with two equal sides, and a rectangle that is not a square. How many fold lines does Priya make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0664",
@@ -6632,7 +6622,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[8,4]},"promptText":"Luca scores fold lines into a octagon card and a square card, one per line of symmetry. How many fold lines altogether? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[8,4]},"promptText":"Luca folds two cards along every line of symmetry: an octagon with equal sides and equal corners, and a square. How many fold lines does Luca make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0665",
@@ -6642,7 +6632,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[9,3]},"promptText":"Nia traces every line of symmetry on a nonagon stencil and a triangle stencil. How many lines does Nia trace in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[9,3]},"promptText":"Nia traces every line of symmetry on two stencils: a nonagon and a triangle, each with equal sides and equal corners. How many lines does Nia trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0666",
@@ -6652,7 +6642,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[10,2]},"promptText":"Two window clings — a decagon and a rectangle — get all their symmetry lines drawn by Theo. How many lines in total? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[10,2]},"promptText":"Theo draws every line of symmetry on two window clings: a decagon with equal sides and equal corners, and a rectangle that is not a square. How many lines does Theo draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0667",
@@ -6662,7 +6652,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[12,4]},"promptText":"Ava scores fold lines into a dodecagon card and a square card, one per line of symmetry. How many fold lines altogether? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[12,4]},"promptText":"Ava folds two cards along every line of symmetry: a dodecagon with equal sides and equal corners, and a square. How many fold lines does Ava make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0668",
@@ -6672,7 +6662,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Kai traces every line of symmetry on a octagon stencil and a pentagon stencil. How many lines does Kai trace in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Kai traces every line of symmetry on two stencils: an octagon and a pentagon, each with equal sides and equal corners. How many lines does Kai trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0669",
@@ -6682,7 +6672,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[9,6]},"promptText":"Two window clings — a nonagon and a hexagon — get all their symmetry lines drawn by Ida. How many lines in total? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[9,6]},"promptText":"Ida draws every line of symmetry on two window clings: a nonagon and a hexagon, each with equal sides and equal corners. How many lines does Ida draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0670",
@@ -6692,7 +6682,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[10,4]},"promptText":"Omar scores fold lines into a decagon card and a square card, one per line of symmetry. How many fold lines altogether? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[10,4]},"promptText":"Omar folds two cards along every line of symmetry: a decagon with equal sides and equal corners, and a square. How many fold lines does Omar make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0671",
@@ -6702,7 +6692,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[12,3]},"promptText":"June traces every line of symmetry on a dodecagon stencil and a triangle stencil. How many lines does June trace in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[12,3]},"promptText":"June traces every line of symmetry on two stencils: a dodecagon and a triangle, each with equal sides and equal corners. How many lines does June trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0672",
@@ -6712,7 +6702,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"Two window clings — a octagon and a hexagon — get all their symmetry lines drawn by Zoe. How many lines in total? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"Zoe draws every line of symmetry on two window clings: an octagon and a hexagon, each with equal sides and equal corners. How many lines does Zoe draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0673",
@@ -6722,7 +6712,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Ben scores fold lines into a nonagon card and a square card, one per line of symmetry. How many fold lines altogether? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Ben folds two cards along every line of symmetry: a nonagon with equal sides and equal corners, and a square. How many fold lines does Ben make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0674",
@@ -6732,7 +6722,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,5]},"promptText":"Lily traces every line of symmetry on a decagon stencil and a pentagon stencil. How many lines does Lily trace in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,5]},"promptText":"Lily traces every line of symmetry on two stencils: a decagon and a pentagon, each with equal sides and equal corners. How many lines does Lily trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0675",
@@ -6742,7 +6732,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[12,2]},"promptText":"Two window clings — a dodecagon and a rectangle — get all their symmetry lines drawn by Rosa. How many lines in total? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[12,2]},"promptText":"Rosa draws every line of symmetry on two window clings: a dodecagon with equal sides and equal corners, and a rectangle that is not a square. How many lines does Rosa draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0676",
@@ -6752,7 +6742,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[0,8]},"promptText":"Finn scores fold lines into a scalene triangle card and a octagon card, one per line of symmetry. How many fold lines altogether? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[0,8]},"promptText":"Finn folds two cards along every line of symmetry: an octagon with equal sides and equal corners, and a scalene triangle. How many fold lines does Finn make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0677",
@@ -6762,7 +6752,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[0,10]},"promptText":"Amara traces every line of symmetry on a parallelogram stencil and a decagon stencil. How many lines does Amara trace in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[0,10]},"promptText":"Amara traces every line of symmetry on two stencils: a decagon with equal sides and equal corners, and a long, slanted parallelogram. How many lines does Amara trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0678",
@@ -6772,7 +6762,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[8,3]},"promptText":"Two window clings — a octagon and a triangle — get all their symmetry lines drawn by Diego. How many lines in total? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[8,3]},"promptText":"Diego draws every line of symmetry on two window clings: an octagon and a triangle, each with equal sides and equal corners. How many lines does Diego draw in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0679",
@@ -6782,7 +6772,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[9,5]},"promptText":"Priya scores fold lines into a nonagon card and a pentagon card, one per line of symmetry. How many fold lines altogether? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[9,5]},"promptText":"Priya folds two cards along every line of symmetry: a nonagon and a pentagon, each with equal sides and equal corners. How many fold lines does Priya make in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0680",
@@ -6792,7 +6782,7 @@ export const ITEMS = [
     structureType: "storyStencil_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Leo traces every line of symmetry on a dodecagon stencil and a hexagon stencil. How many lines does Leo trace in all? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Leo traces every line of symmetry on two stencils: a dodecagon and a hexagon, each with equal sides and equal corners. How many lines does Leo trace in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0681",
@@ -6802,7 +6792,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"square","said":4},"promptText":"Sam inspects a square frame and reports 4 right angles. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"square","said":4},"promptText":"Sam checks a square frame and says it has 4 square corners. Is Sam right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0682",
@@ -6812,7 +6802,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"rectangle","said":3},"promptText":"The quality check on a rectangle tile lists 3 right angles. Mina signs off on it. Should Mina have signed?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"rectangle","said":3},"promptText":"Mina looks at a rectangle tile and counts 3 square corners. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0683",
@@ -6822,7 +6812,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"right triangle","said":1},"promptText":"Luca's build log says the right triangle piece has 1 right angles. Is the log right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"right triangle","said":1},"promptText":"Luca says a right triangle puzzle piece has 1 square corner. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0684",
@@ -6832,7 +6822,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"square","said":2},"promptText":"Nia inspects a square frame and reports 2 right angles. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"square","said":2},"promptText":"Nia checks a square frame and says it has 2 square corners. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0685",
@@ -6842,7 +6832,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"rectangle","said":4},"promptText":"The quality check on a rectangle tile lists 4 right angles. Theo signs off on it. Should Theo have signed?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"rectangle","said":4},"promptText":"Theo looks at a rectangle tile and counts 4 square corners. Is Theo right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0686",
@@ -6852,7 +6842,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"right triangle","said":4},"promptText":"Ava's build log says the right triangle piece has 4 right angles. Is the log right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"right triangle","said":4},"promptText":"Ava says a right triangle puzzle piece has 4 square corners. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0687",
@@ -6862,7 +6852,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"triangle","said":0},"promptText":"Kai inspects a triangle frame and reports 0 right angles. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"triangle","said":0},"promptText":"Kai checks a triangle frame with 3 equal sides and says it has no square corners. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0688",
@@ -6872,7 +6862,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"square","said":3},"promptText":"The quality check on a square tile lists 3 right angles. Ida signs off on it. Should Ida have signed?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"square","said":3},"promptText":"Ida looks at a square tile and counts 3 square corners. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0689",
@@ -6882,7 +6872,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"rectangle","said":2},"promptText":"Omar's build log says the rectangle piece has 2 right angles. Is the log right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"rectangle","said":2},"promptText":"Omar says a rectangle puzzle piece has 2 square corners. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0690",
@@ -6892,7 +6882,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"right triangle","said":2},"promptText":"June inspects a right triangle frame and reports 2 right angles. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"right triangle","said":2},"promptText":"June checks a right triangle frame and says it has 2 square corners. Is June right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0691",
@@ -6902,7 +6892,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"triangle","said":1},"promptText":"The quality check on a triangle tile lists 1 right angles. Zoe signs off on it. Should Zoe have signed?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"triangle","said":1},"promptText":"Zoe looks at a triangle tile with 3 equal sides and counts 1 square corner. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0692",
@@ -6912,7 +6902,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"square","said":4},"promptText":"Ben's build log says the square piece has 4 right angles. Is the log right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"square","said":4},"promptText":"Ben says a square puzzle piece has 4 square corners. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0693",
@@ -6922,7 +6912,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"rectangle","said":4},"promptText":"Lily inspects a rectangle frame and reports 4 right angles. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"rectangle","said":4},"promptText":"Lily checks a rectangle frame and says it has 4 square corners. Is Lily right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0694",
@@ -6932,7 +6922,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"right triangle","said":1},"promptText":"The quality check on a right triangle tile lists 1 right angles. Rosa signs off on it. Should Rosa have signed?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"right triangle","said":1},"promptText":"Rosa looks at a right triangle tile and counts 1 square corner. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0695",
@@ -6942,7 +6932,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"triangle","said":0},"promptText":"Finn's build log says the triangle piece has 0 right angles. Is the log right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"rightSaid","name":"triangle","said":0},"promptText":"Finn has a triangle puzzle piece with all its sides the same length. Finn says it has no square corners. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0696",
@@ -6952,7 +6942,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"square","said":1},"promptText":"Amara inspects a square frame and reports 1 right angles. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"square","said":1},"promptText":"Amara checks a square frame and says it has 1 square corner. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0697",
@@ -6962,7 +6952,7 @@ export const ITEMS = [
     structureType: "storyCheck_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"rectangle","said":0},"promptText":"The quality check on a rectangle tile lists 0 right angles. Diego signs off on it. Should Diego have signed?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"rightSaid","name":"rectangle","said":0},"promptText":"Diego looks at a rectangle tile and says it has no square corners. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0698",
@@ -6972,7 +6962,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"trapezoid","said":1},"promptText":"The quality check on a trapezoid tile lists 1 pairs of parallel sides. Mina signs off on it. Should Mina have signed? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"trapezoid","said":1},"promptText":"Mina looks at a trapezoid tile and counts 1 pair of parallel sides in all. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0699",
@@ -6982,7 +6972,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"rhombus","said":1},"promptText":"Luca's build log says the rhombus piece has 1 pairs of parallel sides. Is the log right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"rhombus","said":1},"promptText":"Luca says a rhombus piece has 1 pair of parallel sides in all. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0700",
@@ -6992,17 +6982,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"parallelogram","said":2},"promptText":"Nia inspects a parallelogram banner and reports 2 pairs of parallel sides. Is Nia right? Look closely."}},
-  },
-  {
-    itemId: "linesShapes-app-b0821-0701",
-    modeId: "linesShapes",
-    itemFamily: "application",
-    subskill: "shapeProperties",
-    structureType: "storyCheck_band2",
-    levelRange: [4,6],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"trapezoid","said":2},"promptText":"The quality check on a trapezoid tile lists 2 pairs of parallel sides. Theo signs off on it. Should Theo have signed? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"parallelogram","said":2},"promptText":"Nia looks at a parallelogram banner and counts 2 pairs of parallel sides in all. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0702",
@@ -7012,7 +6992,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"rhombus","said":2},"promptText":"Ava's build log says the rhombus piece has 2 pairs of parallel sides. Is the log right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"rhombus","said":2},"promptText":"Ava says a rhombus piece has 2 pairs of parallel sides in all. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0703",
@@ -7022,7 +7002,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"parallelogram","said":1},"promptText":"Kai inspects a parallelogram banner and reports 1 pairs of parallel sides. Is Kai right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"parallelogram","said":1},"promptText":"Kai looks at a parallelogram banner and counts 1 pair of parallel sides in all. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0704",
@@ -7032,7 +7012,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"hexagon","said":3},"promptText":"The quality check on a hexagon tile lists 3 pairs of parallel sides. Ida signs off on it. Should Ida have signed? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"hexagon","said":3},"promptText":"Ida's hexagon tile has all sides the same length and all corners the same size. Ida says it has 3 pairs of parallel sides in all. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0705",
@@ -7042,7 +7022,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"trapezoid","said":0},"promptText":"Omar's build log says the trapezoid piece has 0 pairs of parallel sides. Is the log right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"trapezoid","said":0},"promptText":"Omar looks at a trapezoid piece and says it has no parallel sides. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0706",
@@ -7052,7 +7032,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"rhombus","said":0},"promptText":"June inspects a rhombus banner and reports 0 pairs of parallel sides. Is June right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"rhombus","said":0},"promptText":"June looks at a rhombus banner and says it has no parallel sides. Is June right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0707",
@@ -7062,7 +7042,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"parallelogram","said":0},"promptText":"The quality check on a parallelogram tile lists 0 pairs of parallel sides. Zoe signs off on it. Should Zoe have signed? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"parallelogram","said":0},"promptText":"Zoe looks at a parallelogram tile and says it has no parallel sides. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0708",
@@ -7072,7 +7052,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"hexagon","said":2},"promptText":"Ben's build log says the hexagon piece has 2 pairs of parallel sides. Is the log right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"hexagon","said":2},"promptText":"Ben's hexagon puzzle piece has all sides the same length and all corners the same size. Ben says it has 2 pairs of parallel sides in all. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0709",
@@ -7082,7 +7062,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"square","said":2},"promptText":"Lily inspects a square banner and reports 2 pairs of parallel sides. Is Lily right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"square","said":2},"promptText":"Lily says a square banner has 2 pairs of parallel sides in all. Is Lily right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0710",
@@ -7092,7 +7072,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"rectangle","said":2},"promptText":"The quality check on a rectangle tile lists 2 pairs of parallel sides. Rosa signs off on it. Should Rosa have signed? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"rectangle","said":2},"promptText":"Rosa looks at a rectangle tile and counts 2 pairs of parallel sides in all. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0711",
@@ -7102,7 +7082,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"square","said":1},"promptText":"Finn's build log says the square piece has 1 pairs of parallel sides. Is the log right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"square","said":1},"promptText":"Finn says a square piece has 1 pair of parallel sides in all. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0712",
@@ -7112,7 +7092,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"rectangle","said":3},"promptText":"Amara inspects a rectangle banner and reports 3 pairs of parallel sides. Is Amara right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"rectangle","said":3},"promptText":"Amara looks at a rectangle banner and counts 3 pairs of parallel sides in all. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0713",
@@ -7122,7 +7102,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"hexagon","said":1},"promptText":"The quality check on a hexagon tile lists 1 pairs of parallel sides. Diego signs off on it. Should Diego have signed? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"parallelSaid","name":"hexagon","said":1},"promptText":"Diego's hexagon tile has all sides the same length and all corners the same size. Diego says it has 1 pair of parallel sides in all. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0714",
@@ -7132,7 +7112,7 @@ export const ITEMS = [
     structureType: "storyCheck_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"trapezoid","said":1},"promptText":"Priya's build log says the trapezoid piece has 1 pairs of parallel sides. Is the log right? Look closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"parallelSaid","name":"trapezoid","said":1},"promptText":"Priya says a trapezoid piece has 1 pair of parallel sides in all. Is Priya right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0715",
@@ -7142,7 +7122,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"square","said":2},"promptText":"Luca's build log says the square piece has 2 diagonals. Is the log right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"square","said":2},"promptText":"Luca draws every diagonal of a square piece and counts 2. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0716",
@@ -7152,7 +7132,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"pentagon","said":5},"promptText":"Nia inspects a pentagon banner and reports 5 diagonals. Is Nia right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"pentagon","said":5},"promptText":"Nia says a pentagon banner has 5 diagonals in all. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0717",
@@ -7162,7 +7142,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"hexagon","said":9},"promptText":"The quality check on a hexagon tile lists 9 diagonals. Theo signs off on it. Should Theo have signed? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"hexagon","said":9},"promptText":"Theo draws every diagonal of a hexagon tile and counts 9. Is Theo right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0718",
@@ -7172,7 +7152,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"square","said":4},"promptText":"Ava's build log says the square piece has 4 diagonals. Is the log right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"square","said":4},"promptText":"Ava says a square piece has 4 diagonals in all. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0719",
@@ -7182,7 +7162,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"pentagon","said":4},"promptText":"Kai inspects a pentagon banner and reports 4 diagonals. Is Kai right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"pentagon","said":4},"promptText":"Kai draws every diagonal of a pentagon banner and counts 4. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0720",
@@ -7192,7 +7172,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"hexagon","said":6},"promptText":"The quality check on a hexagon tile lists 6 diagonals. Ida signs off on it. Should Ida have signed? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"hexagon","said":6},"promptText":"Ida says a hexagon tile has 6 diagonals in all. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0721",
@@ -7202,7 +7182,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"octagon","said":20},"promptText":"Omar's build log says the octagon piece has 20 diagonals. Is the log right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"octagon","said":20},"promptText":"Omar draws every diagonal of an octagon piece and counts 20. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0722",
@@ -7212,7 +7192,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"heptagon","said":14},"promptText":"June inspects a heptagon banner and reports 14 diagonals. Is June right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"heptagon","said":14},"promptText":"June says a heptagon banner has 14 diagonals in all. Is June right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0723",
@@ -7222,7 +7202,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"octagon","said":16},"promptText":"The quality check on a octagon tile lists 16 diagonals. Zoe signs off on it. Should Zoe have signed? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"octagon","said":16},"promptText":"Zoe draws every diagonal of an octagon tile and counts 16. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0724",
@@ -7232,7 +7212,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"heptagon","said":12},"promptText":"Ben's build log says the heptagon piece has 12 diagonals. Is the log right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"heptagon","said":12},"promptText":"Ben says a heptagon piece has 12 diagonals in all. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0725",
@@ -7242,7 +7222,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"rectangle","said":2},"promptText":"Lily inspects a rectangle banner and reports 2 diagonals. Is Lily right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"rectangle","said":2},"promptText":"Lily draws every diagonal of a rectangle banner and counts 2. Is Lily right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0726",
@@ -7252,7 +7232,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"rhombus","said":2},"promptText":"The quality check on a rhombus tile lists 2 diagonals. Rosa signs off on it. Should Rosa have signed? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"rhombus","said":2},"promptText":"Rosa says a rhombus tile has 2 diagonals in all. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0727",
@@ -7262,7 +7242,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"rectangle","said":4},"promptText":"Finn's build log says the rectangle piece has 4 diagonals. Is the log right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"rectangle","said":4},"promptText":"Finn draws every diagonal of a rectangle piece and counts 4. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0728",
@@ -7272,7 +7252,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"rhombus","said":3},"promptText":"Amara inspects a rhombus banner and reports 3 diagonals. Is Amara right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"rhombus","said":3},"promptText":"Amara says a rhombus banner has 3 diagonals in all. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0729",
@@ -7282,7 +7262,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"trapezoid","said":2},"promptText":"The quality check on a trapezoid tile lists 2 diagonals. Diego signs off on it. Should Diego have signed? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"trapezoid","said":2},"promptText":"Diego draws every diagonal of a trapezoid tile and counts 2. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0730",
@@ -7292,7 +7272,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"trapezoid","said":1},"promptText":"Priya's build log says the trapezoid piece has 1 diagonals. Is the log right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"diagSaid","name":"trapezoid","said":1},"promptText":"Priya says a trapezoid piece has 1 diagonal in all. Is Priya right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0731",
@@ -7302,7 +7282,7 @@ export const ITEMS = [
     structureType: "storyCheck_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"pentagon","said":5},"promptText":"Leo inspects a pentagon banner and reports 5 diagonals. Is Leo right? Study it before answering."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"diagSaid","name":"pentagon","said":5},"promptText":"Leo draws every diagonal of a pentagon banner and counts 5. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-app-b0821-0732",
@@ -7492,7 +7472,7 @@ export const ITEMS = [
     structureType: "storyHunt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Around the room Luca finds a parallelogram ramp, a square gate, and a pentagon plaque. Counting only the ones with two pairs of parallel sides, how many shapes make the cut?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Luca finds a parallelogram ramp, a square gate, and a pentagon plaque with equal sides and equal corners. How many of them have two pairs of parallel sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0751",
@@ -7512,7 +7492,7 @@ export const ITEMS = [
     structureType: "storyHunt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Theo's scavenger list shows a square grid, a rectangle door, and a rhombus tile. How many of those have 4 right angles?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Theo's scavenger list shows a square grid, a rectangle door, and a rhombus tile that is not a square. How many of those have 4 right angles?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0753",
@@ -7532,7 +7512,7 @@ export const ITEMS = [
     structureType: "storyHunt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"On a shape hunt, Kai spots two rhombus charms and a rectangle charm. How many of them have all sides equal?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"On a shape hunt, Kai spots two rhombus charms and a rectangle charm that is not a square. How many of them have all sides equal?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0755",
@@ -7542,7 +7522,7 @@ export const ITEMS = [
     structureType: "storyHunt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ida's scavenger list shows a right-triangle ramp, a square step, and a trapezoid board. How many of those have at least one right angle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Ida's scavenger list shows a right-triangle ramp, a square step, and a trapezoid board with both ends slanted. How many of those have at least one right angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0756",
@@ -7602,7 +7582,7 @@ export const ITEMS = [
     structureType: "storyHunt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Rosa's scavenger list shows two rectangle place mats and a rhombus mat. How many of those have 4 right angles?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Rosa's scavenger list shows two rectangle place mats and a rhombus mat that is not a square. How many of those have 4 right angles?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0762",
@@ -7612,7 +7592,7 @@ export const ITEMS = [
     structureType: "storyHunt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Around the room Finn finds a trapezoid shelf, a square shelf, and a hexagon shelf. Counting only the ones with exactly one pair of parallel sides, how many shapes make the cut?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Finn finds a trapezoid shelf, a square shelf, and a hexagon shelf with equal sides and equal corners. How many of them have exactly one pair of parallel sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0763",
@@ -7972,7 +7952,7 @@ export const ITEMS = [
     structureType: "propJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"propSaid","name":"octagon","prop":"sides","said":8},"promptText":"Finn says a octagon has 8 sides. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"propSaid","name":"octagon","prop":"sides","said":8},"promptText":"Finn says an octagon has 8 sides. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0034",
@@ -8012,7 +7992,7 @@ export const ITEMS = [
     structureType: "propJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"propSaid","name":"octagon","prop":"vertices","said":6},"promptText":"Kai says a octagon has 6 vertices. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"propSaid","name":"octagon","prop":"vertices","said":6},"promptText":"Kai says an octagon has 6 vertices. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0038",
@@ -8052,7 +8032,7 @@ export const ITEMS = [
     structureType: "propJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"propSaid","name":"octagon","prop":"sides","said":10},"promptText":"Leo says a octagon has 10 sides. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"propSaid","name":"octagon","prop":"sides","said":10},"promptText":"Leo says an octagon has 10 sides. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0042",
@@ -8092,7 +8072,7 @@ export const ITEMS = [
     structureType: "propJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"propSaid","name":"octagon","prop":"vertices","said":8},"promptText":"Zoe says a octagon has 8 vertices. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"propSaid","name":"octagon","prop":"vertices","said":8},"promptText":"Zoe says an octagon has 8 vertices. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0046",
@@ -8132,7 +8112,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"triangle"},"promptText":"Luca notices a triangle has the same number of sides as vertices. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"triangle"},"promptText":"Luca says a triangle has the same number of sides as vertices. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0050",
@@ -8142,7 +8122,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square"},"promptText":"Ava notices a square has the same number of sides as vertices. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"square","said":"oneMoreVertex"},"promptText":"Ava says a square has one more vertex than it has sides. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0051",
@@ -8152,7 +8132,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"pentagon"},"promptText":"Omar notices a pentagon has the same number of sides as vertices. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"pentagon"},"promptText":"Omar says a pentagon has just as many vertices as sides. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0052",
@@ -8162,7 +8142,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rectangle"},"promptText":"Ben notices a rectangle has the same number of sides as vertices. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rectangle"},"promptText":"Ben says a rectangle has the same number of sides as vertices. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0053",
@@ -8172,7 +8152,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"triangle"},"promptText":"Finn notices a triangle has the same number of sides as vertices. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"triangle","said":"moreSides"},"promptText":"Finn says a triangle has more sides than vertices. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0054",
@@ -8182,7 +8162,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square"},"promptText":"Priya notices a square has the same number of sides as vertices. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square"},"promptText":"Priya says a square has just as many vertices as sides. Is Priya right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0055",
@@ -8192,7 +8172,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"pentagon"},"promptText":"Sam notices a pentagon has the same number of sides as vertices. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"pentagon","said":"oneFewerVertex"},"promptText":"Sam says a pentagon has one fewer vertex than it has sides. Is Sam right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0056",
@@ -8202,7 +8182,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rectangle"},"promptText":"Nia notices a rectangle has the same number of sides as vertices. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"rectangle","said":"oneMoreVertex"},"promptText":"Nia says a rectangle has one more vertex than it has sides. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0057",
@@ -8212,7 +8192,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"triangle"},"promptText":"Kai notices a triangle has the same number of sides as vertices. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"triangle"},"promptText":"Kai says a triangle has the same number of sides as vertices. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0058",
@@ -8222,7 +8202,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square"},"promptText":"June claims a square's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square","saidSides":4,"saidVertices":4},"promptText":"June counts 4 sides and 4 vertices on a square. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0059",
@@ -8232,7 +8212,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"pentagon"},"promptText":"Lily claims a pentagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"pentagon","saidSides":5,"saidVertices":6},"promptText":"Lily counts 5 sides and 6 vertices on a pentagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0060",
@@ -8242,7 +8222,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rectangle"},"promptText":"Amara claims a rectangle's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rectangle","saidSides":4,"saidVertices":4},"promptText":"Amara counts 4 sides and 4 vertices on a rectangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0061",
@@ -8252,7 +8232,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"triangle"},"promptText":"Leo claims a triangle's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"triangle","saidSides":4,"saidVertices":3},"promptText":"Leo counts 4 sides and 3 vertices on a triangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0062",
@@ -8262,7 +8242,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square"},"promptText":"Mina claims a square's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square","saidSides":4,"saidVertices":4},"promptText":"Mina counts 4 sides and 4 vertices on a square. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0063",
@@ -8272,7 +8252,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"pentagon"},"promptText":"Theo claims a pentagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"pentagon","saidSides":5,"saidVertices":5},"promptText":"Theo counts 5 sides and 5 vertices on a pentagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0064",
@@ -8282,7 +8262,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rectangle"},"promptText":"Ida claims a rectangle's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"rectangle","saidSides":4,"saidVertices":3},"promptText":"Ida counts 4 sides and 3 vertices on a rectangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0065",
@@ -8292,7 +8272,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"triangle"},"promptText":"Zoe claims a triangle's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"triangle","saidSides":3,"saidVertices":3},"promptText":"Zoe counts 3 sides and 3 vertices on a triangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0066",
@@ -8302,7 +8282,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square"},"promptText":"Rosa claims a square's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"square","saidSides":4,"saidVertices":4},"promptText":"Rosa counts 4 sides and 4 vertices on a square. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0067",
@@ -8312,7 +8292,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"hexagon"},"promptText":"June notices a hexagon has the same number of sides as vertices. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"hexagon"},"promptText":"June says a hexagon has the same number of sides as vertices. Is June right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0068",
@@ -8322,7 +8302,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"trapezoid"},"promptText":"Lily notices a trapezoid has the same number of sides as vertices. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"trapezoid"},"promptText":"Lily says a trapezoid has just as many vertices as sides. Is Lily right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0069",
@@ -8332,7 +8312,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rhombus"},"promptText":"Amara notices a rhombus has the same number of sides as vertices. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"rhombus","said":"oneMoreVertex"},"promptText":"Amara says a rhombus has one more vertex than it has sides. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0070",
@@ -8342,7 +8322,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"parallelogram"},"promptText":"Leo notices a parallelogram has the same number of sides as vertices. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"parallelogram"},"promptText":"Leo says a parallelogram has the same number of sides as vertices. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0071",
@@ -8352,7 +8332,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"heptagon"},"promptText":"Mina notices a heptagon has the same number of sides as vertices. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"heptagon","said":"oneFewerVertex"},"promptText":"Mina says a heptagon has one fewer vertex than it has sides. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0072",
@@ -8362,7 +8342,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"hexagon"},"promptText":"Theo notices a hexagon has the same number of sides as vertices. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"hexagon"},"promptText":"Theo says a hexagon has just as many vertices as sides. Is Theo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0073",
@@ -8372,7 +8352,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"trapezoid"},"promptText":"Ida notices a trapezoid has the same number of sides as vertices. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"trapezoid"},"promptText":"Ida says a trapezoid has the same number of sides as vertices. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0074",
@@ -8382,7 +8362,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rhombus"},"promptText":"Zoe notices a rhombus has the same number of sides as vertices. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rhombus"},"promptText":"Zoe says a rhombus has just as many vertices as sides. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0075",
@@ -8392,7 +8372,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"parallelogram"},"promptText":"Rosa notices a parallelogram has the same number of sides as vertices. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"parallelogram","said":"moreSides"},"promptText":"Rosa says a parallelogram has more sides than vertices. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0076",
@@ -8402,7 +8382,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"heptagon"},"promptText":"Diego claims a heptagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"heptagon","saidSides":7,"saidVertices":8},"promptText":"Diego counts 7 sides and 8 vertices on a heptagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0077",
@@ -8412,7 +8392,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"hexagon"},"promptText":"Nora claims a hexagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"hexagon","saidSides":6,"saidVertices":6},"promptText":"Nora counts 6 sides and 6 vertices on a hexagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0078",
@@ -8422,7 +8402,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"trapezoid"},"promptText":"Luca claims a trapezoid's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"trapezoid","saidSides":4,"saidVertices":3},"promptText":"Luca counts 4 sides and 3 vertices on a trapezoid. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0079",
@@ -8432,7 +8412,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rhombus"},"promptText":"Ava claims a rhombus's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rhombus","saidSides":4,"saidVertices":4},"promptText":"Ava counts 4 sides and 4 vertices on a rhombus. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0080",
@@ -8442,7 +8422,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"parallelogram"},"promptText":"Omar claims a parallelogram's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"parallelogram","saidSides":4,"saidVertices":5},"promptText":"Omar counts 4 sides and 5 vertices on a parallelogram. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0081",
@@ -8452,7 +8432,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"heptagon"},"promptText":"Ben claims a heptagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"heptagon","saidSides":7,"saidVertices":7},"promptText":"Ben counts 7 sides and 7 vertices on a heptagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0082",
@@ -8462,7 +8442,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"hexagon"},"promptText":"Finn claims a hexagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"hexagon","saidSides":7,"saidVertices":6},"promptText":"Finn counts 7 sides and 6 vertices on a hexagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0083",
@@ -8472,7 +8452,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"trapezoid"},"promptText":"Priya claims a trapezoid's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"trapezoid","saidSides":4,"saidVertices":4},"promptText":"Priya counts 4 sides and 4 vertices on a trapezoid. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0084",
@@ -8482,7 +8462,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rhombus"},"promptText":"Sam claims a rhombus's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"rhombus","saidSides":4,"saidVertices":4},"promptText":"Sam counts 4 sides and 4 vertices on a rhombus. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0085",
@@ -8492,7 +8472,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"octagon"},"promptText":"Amara notices a octagon has the same number of sides as vertices. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"octagon"},"promptText":"Amara says an octagon has the same number of sides as vertices. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0086",
@@ -8502,7 +8482,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"nonagon"},"promptText":"Leo notices a nonagon has the same number of sides as vertices. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"nonagon","said":"oneMoreVertex"},"promptText":"Leo says a nonagon has one more vertex than it has sides. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0087",
@@ -8512,7 +8492,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"decagon"},"promptText":"Mina notices a decagon has the same number of sides as vertices. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"decagon"},"promptText":"Mina says a decagon has just as many vertices as sides. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0088",
@@ -8522,7 +8502,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"dodecagon"},"promptText":"Theo notices a dodecagon has the same number of sides as vertices. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"dodecagon","said":"oneFewerVertex"},"promptText":"Theo says a dodecagon has one fewer vertex than it has sides. Is Theo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0089",
@@ -8532,7 +8512,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"scalene triangle"},"promptText":"Ida notices a scalene triangle has the same number of sides as vertices. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"scalene triangle"},"promptText":"Ida says a scalene triangle has the same number of sides as vertices. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0090",
@@ -8542,7 +8522,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"octagon"},"promptText":"Zoe notices a octagon has the same number of sides as vertices. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"octagon","said":"moreSides"},"promptText":"Zoe says an octagon has more sides than vertices. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0091",
@@ -8552,7 +8532,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"nonagon"},"promptText":"Rosa notices a nonagon has the same number of sides as vertices. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"nonagon"},"promptText":"Rosa says a nonagon has just as many vertices as sides. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0092",
@@ -8562,7 +8542,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"decagon"},"promptText":"Diego notices a decagon has the same number of sides as vertices. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"decagon","said":"oneMoreVertex"},"promptText":"Diego says a decagon has one more vertex than it has sides. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0093",
@@ -8572,7 +8552,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"dodecagon"},"promptText":"Nora notices a dodecagon has the same number of sides as vertices. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"dodecagon"},"promptText":"Nora says a dodecagon has the same number of sides as vertices. Is Nora right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0094",
@@ -8582,7 +8562,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"scalene triangle"},"promptText":"Luca claims a scalene triangle's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"scalene triangle","saidSides":3,"saidVertices":3},"promptText":"Luca counts 3 sides and 3 vertices on a scalene triangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0095",
@@ -8592,7 +8572,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"octagon"},"promptText":"Ava claims a octagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"octagon","saidSides":8,"saidVertices":8},"promptText":"Ava counts 8 sides and 8 vertices on an octagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0096",
@@ -8602,7 +8582,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"nonagon"},"promptText":"Omar claims a nonagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"nonagon","saidSides":9,"saidVertices":10},"promptText":"Omar counts 9 sides and 10 vertices on a nonagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0097",
@@ -8612,7 +8592,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"decagon"},"promptText":"Ben claims a decagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"decagon","saidSides":10,"saidVertices":10},"promptText":"Ben counts 10 sides and 10 vertices on a decagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0098",
@@ -8622,7 +8602,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"dodecagon"},"promptText":"Finn claims a dodecagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"dodecagon","saidSides":12,"saidVertices":11},"promptText":"Finn counts 12 sides and 11 vertices on a dodecagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0099",
@@ -8632,7 +8612,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"scalene triangle"},"promptText":"Priya claims a scalene triangle's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"scalene triangle","saidSides":3,"saidVertices":3},"promptText":"Priya counts 3 sides and 3 vertices on a scalene triangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0100",
@@ -8642,7 +8622,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"octagon"},"promptText":"Sam claims a octagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"sideVertexEq","name":"octagon","saidSides":9,"saidVertices":8},"promptText":"Sam counts 9 sides and 8 vertices on an octagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0101",
@@ -8652,7 +8632,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"nonagon"},"promptText":"Nia claims a nonagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"nonagon","saidSides":9,"saidVertices":9},"promptText":"Nia counts 9 sides and 9 vertices on a nonagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0102",
@@ -8662,7 +8642,7 @@ export const ITEMS = [
     structureType: "sideVertexEq_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"decagon"},"promptText":"Kai claims a decagon's side count and vertex count are equal. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"sideVertexEq","name":"decagon","saidSides":10,"saidVertices":10},"promptText":"Kai counts 10 sides and 10 vertices on a decagon. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0103",
@@ -8682,7 +8662,7 @@ export const ITEMS = [
     structureType: "moreSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the pentagon","the square"],"display":{"shapeC":{"a":"pentagon","b":"square","kind":"moreSides"},"promptText":"Which has more sides, a pentagon or a square? Kai counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the pentagon","the square"],"display":{"shapeC":{"a":"pentagon","b":"square","kind":"moreSides"},"promptText":"Which has more sides, a pentagon or a square?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0105",
@@ -8702,7 +8682,7 @@ export const ITEMS = [
     structureType: "moreSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the rectangle","the triangle"],"display":{"shapeC":{"a":"rectangle","b":"triangle","kind":"moreSides"},"promptText":"Which has more sides, a rectangle or a triangle? Lily counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the rectangle","the triangle"],"display":{"shapeC":{"a":"rectangle","b":"triangle","kind":"moreSides"},"promptText":"Which shape has more sides, a rectangle or a triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0107",
@@ -8722,7 +8702,7 @@ export const ITEMS = [
     structureType: "moreSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the triangle","the rectangle"],"display":{"shapeC":{"a":"triangle","b":"rectangle","kind":"moreSides"},"promptText":"Which has more sides, a triangle or a rectangle? Leo counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the triangle","the rectangle"],"display":{"shapeC":{"a":"triangle","b":"rectangle","kind":"moreSides"},"promptText":"Think of a triangle and a rectangle. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0109",
@@ -8742,7 +8722,7 @@ export const ITEMS = [
     structureType: "moreSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the pentagon","the triangle"],"display":{"shapeC":{"a":"triangle","b":"pentagon","kind":"moreSides"},"promptText":"Which has more sides, a triangle or a pentagon? Theo counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the pentagon","the triangle"],"display":{"shapeC":{"a":"triangle","b":"pentagon","kind":"moreSides"},"promptText":"Which has more sides, a triangle or a pentagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0111",
@@ -8762,7 +8742,7 @@ export const ITEMS = [
     structureType: "moreSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the triangle","the square"],"display":{"shapeC":{"a":"square","b":"triangle","kind":"moreSides"},"promptText":"Which has more sides, a square or a triangle? Zoe counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the triangle","the square"],"display":{"shapeC":{"a":"square","b":"triangle","kind":"moreSides"},"promptText":"Which shape has more sides, a square or a triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0113",
@@ -8782,7 +8762,7 @@ export const ITEMS = [
     structureType: "moreSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the triangle","the square"],"display":{"shapeC":{"a":"triangle","b":"square","kind":"moreSides"},"promptText":"Which has more sides, a triangle or a square? Diego counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the triangle","the square"],"display":{"shapeC":{"a":"triangle","b":"square","kind":"moreSides"},"promptText":"Think of a triangle and a square. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0115",
@@ -8802,7 +8782,7 @@ export const ITEMS = [
     structureType: "moreSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the triangle","the pentagon"],"display":{"shapeC":{"a":"pentagon","b":"triangle","kind":"moreSides"},"promptText":"Which has more sides, a pentagon or a triangle? Luca counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the triangle","the pentagon"],"display":{"shapeC":{"a":"pentagon","b":"triangle","kind":"moreSides"},"promptText":"Which has more sides, a pentagon or a triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0117",
@@ -8822,7 +8802,7 @@ export const ITEMS = [
     structureType: "moreSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the triangle","the rectangle"],"display":{"shapeC":{"a":"triangle","b":"rectangle","kind":"moreSides"},"promptText":"Which has more sides, a triangle or a rectangle? Omar counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the triangle","the rectangle"],"display":{"shapeC":{"a":"triangle","b":"rectangle","kind":"moreSides"},"promptText":"Which shape has more sides, a triangle or a rectangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0119",
@@ -8852,7 +8832,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the hexagon","the heptagon"],"display":{"shapeC":{"a":"heptagon","b":"hexagon","kind":"moreSides"},"promptText":"Which has more sides, a heptagon or a hexagon? Rosa counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the hexagon","the heptagon"],"display":{"shapeC":{"a":"heptagon","b":"hexagon","kind":"moreSides"},"promptText":"Think of a heptagon and a hexagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0122",
@@ -8872,7 +8852,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the pentagon"],"display":{"shapeC":{"a":"heptagon","b":"pentagon","kind":"moreSides"},"promptText":"Which has more sides, a heptagon or a pentagon? Nora counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the pentagon"],"display":{"shapeC":{"a":"heptagon","b":"pentagon","kind":"moreSides"},"promptText":"Which has more sides, a heptagon or a pentagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0124",
@@ -8892,7 +8872,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the pentagon","the heptagon"],"display":{"shapeC":{"a":"pentagon","b":"heptagon","kind":"moreSides"},"promptText":"Which has more sides, a pentagon or a heptagon? Ava counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the pentagon","the heptagon"],"display":{"shapeC":{"a":"pentagon","b":"heptagon","kind":"moreSides"},"promptText":"Which shape has more sides, a pentagon or a heptagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0126",
@@ -8912,7 +8892,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the trapezoid","the heptagon"],"display":{"shapeC":{"a":"heptagon","b":"trapezoid","kind":"moreSides"},"promptText":"Which has more sides, a heptagon or a trapezoid? Ben counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the trapezoid","the heptagon"],"display":{"shapeC":{"a":"heptagon","b":"trapezoid","kind":"moreSides"},"promptText":"Think of a heptagon and a trapezoid. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0128",
@@ -8932,7 +8912,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the parallelogram"],"display":{"shapeC":{"a":"parallelogram","b":"heptagon","kind":"moreSides"},"promptText":"Which has more sides, a parallelogram or a heptagon? Priya counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the parallelogram"],"display":{"shapeC":{"a":"parallelogram","b":"heptagon","kind":"moreSides"},"promptText":"Which has more sides, a parallelogram or a heptagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0130",
@@ -8952,7 +8932,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the square"],"display":{"shapeC":{"a":"heptagon","b":"square","kind":"moreSides"},"promptText":"Which has more sides, a heptagon or a square? Nia counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the square"],"display":{"shapeC":{"a":"heptagon","b":"square","kind":"moreSides"},"promptText":"Which shape has more sides, a heptagon or a square?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0132",
@@ -8972,7 +8952,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the pentagon","the hexagon"],"display":{"shapeC":{"a":"pentagon","b":"hexagon","kind":"moreSides"},"promptText":"Which has more sides, a pentagon or a hexagon? June counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the pentagon","the hexagon"],"display":{"shapeC":{"a":"pentagon","b":"hexagon","kind":"moreSides"},"promptText":"Think of a pentagon and a hexagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0134",
@@ -8992,7 +8972,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the parallelogram","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"parallelogram","kind":"moreSides"},"promptText":"Which has more sides, a hexagon or a parallelogram? Amara counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the parallelogram","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"parallelogram","kind":"moreSides"},"promptText":"Which has more sides, a hexagon or a parallelogram?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0136",
@@ -9012,7 +8992,7 @@ export const ITEMS = [
     structureType: "moreSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the rhombus"],"display":{"shapeC":{"a":"heptagon","b":"rhombus","kind":"moreSides"},"promptText":"Which has more sides, a heptagon or a rhombus? Mina counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the rhombus"],"display":{"shapeC":{"a":"heptagon","b":"rhombus","kind":"moreSides"},"promptText":"Which shape has more sides, a heptagon or a rhombus?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0138",
@@ -9022,7 +9002,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the hexagon","the octagon"],"display":{"shapeC":{"a":"octagon","b":"hexagon","kind":"moreSides"},"promptText":"Diego compares a octagon with a hexagon. Which shape has more sides?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the hexagon","the octagon"],"display":{"shapeC":{"a":"octagon","b":"hexagon","kind":"moreSides"},"promptText":"Diego compares an octagon with a hexagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0139",
@@ -9032,7 +9012,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the octagon"],"display":{"shapeC":{"a":"nonagon","b":"octagon","kind":"moreSides"},"promptText":"Which has more sides, a nonagon or a octagon? Nora counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the octagon"],"display":{"shapeC":{"a":"nonagon","b":"octagon","kind":"moreSides"},"promptText":"Think of a nonagon and an octagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0140",
@@ -9052,7 +9032,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the dodecagon","the decagon"],"display":{"shapeC":{"a":"dodecagon","b":"decagon","kind":"moreSides"},"promptText":"Which has more sides, a dodecagon or a decagon? Ava counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the dodecagon","the decagon"],"display":{"shapeC":{"a":"dodecagon","b":"decagon","kind":"moreSides"},"promptText":"Which has more sides, a dodecagon or a decagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0142",
@@ -9062,7 +9042,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the octagon","the nonagon"],"display":{"shapeC":{"a":"octagon","b":"nonagon","kind":"moreSides"},"promptText":"Omar compares a octagon with a nonagon. Which shape has more sides?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the octagon","the nonagon"],"display":{"shapeC":{"a":"octagon","b":"nonagon","kind":"moreSides"},"promptText":"Omar compares an octagon with a nonagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0143",
@@ -9072,7 +9052,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the nonagon"],"display":{"shapeC":{"a":"nonagon","b":"decagon","kind":"moreSides"},"promptText":"Which has more sides, a nonagon or a decagon? Ben counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the nonagon"],"display":{"shapeC":{"a":"nonagon","b":"decagon","kind":"moreSides"},"promptText":"Which shape has more sides, a nonagon or a decagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0144",
@@ -9092,7 +9072,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the octagon","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"octagon","kind":"moreSides"},"promptText":"Which has more sides, a dodecagon or a octagon? Priya counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the octagon","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"octagon","kind":"moreSides"},"promptText":"Think of a dodecagon and an octagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0146",
@@ -9102,7 +9082,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the octagon","the decagon"],"display":{"shapeC":{"a":"octagon","b":"decagon","kind":"moreSides"},"promptText":"Sam compares a octagon with a decagon. Which shape has more sides?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the octagon","the decagon"],"display":{"shapeC":{"a":"octagon","b":"decagon","kind":"moreSides"},"promptText":"Sam compares an octagon with a decagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0147",
@@ -9112,7 +9092,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the dodecagon","the nonagon"],"display":{"shapeC":{"a":"nonagon","b":"dodecagon","kind":"moreSides"},"promptText":"Which has more sides, a nonagon or a dodecagon? Nia counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the dodecagon","the nonagon"],"display":{"shapeC":{"a":"nonagon","b":"dodecagon","kind":"moreSides"},"promptText":"Which has more sides, a nonagon or a dodecagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0148",
@@ -9122,7 +9102,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the octagon"],"display":{"shapeC":{"a":"decagon","b":"octagon","kind":"moreSides"},"promptText":"Kai compares a decagon with a octagon. Which shape has more sides?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the octagon"],"display":{"shapeC":{"a":"decagon","b":"octagon","kind":"moreSides"},"promptText":"Kai compares a decagon with an octagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0149",
@@ -9132,7 +9112,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the nonagon","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"nonagon","kind":"moreSides"},"promptText":"Which has more sides, a dodecagon or a nonagon? June counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the nonagon","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"nonagon","kind":"moreSides"},"promptText":"Which shape has more sides, a dodecagon or a nonagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0150",
@@ -9142,7 +9122,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the octagon","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"octagon","kind":"moreSides"},"promptText":"Lily compares a hexagon with a octagon. Which shape has more sides?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the octagon","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"octagon","kind":"moreSides"},"promptText":"Lily compares a hexagon with an octagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0151",
@@ -9152,7 +9132,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the octagon","the dodecagon"],"display":{"shapeC":{"a":"octagon","b":"dodecagon","kind":"moreSides"},"promptText":"Which has more sides, a octagon or a dodecagon? Amara counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the octagon","the dodecagon"],"display":{"shapeC":{"a":"octagon","b":"dodecagon","kind":"moreSides"},"promptText":"Think of an octagon and a dodecagon. Which shape has more sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0152",
@@ -9172,7 +9152,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the hexagon"],"display":{"shapeC":{"a":"decagon","b":"hexagon","kind":"moreSides"},"promptText":"Which has more sides, a decagon or a hexagon? Mina counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the hexagon"],"display":{"shapeC":{"a":"decagon","b":"hexagon","kind":"moreSides"},"promptText":"Which has more sides, a decagon or a hexagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0154",
@@ -9192,7 +9172,7 @@ export const ITEMS = [
     structureType: "moreSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"nonagon","kind":"moreSides"},"promptText":"Which has more sides, a hexagon or a nonagon? Ida counts to decide."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"nonagon","kind":"moreSides"},"promptText":"Which shape has more sides, a hexagon or a nonagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0156",
@@ -9212,7 +9192,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"rectangle","said":4},"promptText":"Amara counts 4 lines of symmetry on a rectangle. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"rectangle","said":4},"promptText":"Amara counts 4 lines of symmetry on a rectangle that is not a square. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0158",
@@ -9222,7 +9202,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"triangle","said":3},"promptText":"Leo says a triangle has 3 lines of symmetry. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"triangle","said":3},"promptText":"Leo counts 3 lines of symmetry on a triangle with 3 equal sides. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0159",
@@ -9232,7 +9212,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"pentagon","said":4},"promptText":"Mina counts 4 lines of symmetry on a pentagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"pentagon","said":4},"promptText":"Mina says a pentagon has 4 lines of symmetry. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0160",
@@ -9242,7 +9222,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"hexagon","said":6},"promptText":"Theo says a hexagon has 6 lines of symmetry. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"hexagon","said":6},"promptText":"Theo's hexagon has all its sides and corners the same. Theo counts 6 lines of symmetry on it. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0161",
@@ -9252,7 +9232,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"trapezoid","said":2},"promptText":"Ida counts 2 lines of symmetry on a trapezoid. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"trapezoid","said":2},"promptText":"Ida says a trapezoid has 2 lines of symmetry. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0162",
@@ -9262,7 +9242,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"right triangle","said":1},"promptText":"Zoe says a right triangle has 1 lines of symmetry. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"right triangle","said":1},"promptText":"Zoe says a right triangle with 2 equal sides has 1 line of symmetry. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0163",
@@ -9272,7 +9252,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"square","said":2},"promptText":"Rosa counts 2 lines of symmetry on a square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"square","said":2},"promptText":"Rosa counts 2 lines of symmetry on a square. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0164",
@@ -9282,7 +9262,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"rectangle","said":2},"promptText":"Diego says a rectangle has 2 lines of symmetry. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"rectangle","said":2},"promptText":"Diego counts 2 lines of symmetry on a rectangle that is not a square. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0165",
@@ -9292,7 +9272,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"triangle","said":1},"promptText":"Nora counts 1 lines of symmetry on a triangle. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"triangle","said":1},"promptText":"Nora's triangle has 3 equal sides. Nora counts 1 line of symmetry on it. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0166",
@@ -9302,7 +9282,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"pentagon","said":5},"promptText":"Luca says a pentagon has 5 lines of symmetry. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"pentagon","said":5},"promptText":"Luca says a pentagon with all its sides and corners the same has 5 lines of symmetry. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0167",
@@ -9312,7 +9292,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"hexagon","said":3},"promptText":"Ava counts 3 lines of symmetry on a hexagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"hexagon","said":3},"promptText":"Ava's hexagon has all its sides and corners the same. Ava says it has 3 lines of symmetry. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0168",
@@ -9322,7 +9302,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"trapezoid","said":1},"promptText":"Omar says a trapezoid has 1 lines of symmetry. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"trapezoid","said":1},"promptText":"Omar says a trapezoid with 2 slanted sides of the same length has 1 line of symmetry. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0169",
@@ -9332,7 +9312,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"right triangle","said":3},"promptText":"Ben counts 3 lines of symmetry on a right triangle. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"right triangle","said":3},"promptText":"Ben counts 3 lines of symmetry on a right triangle. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0170",
@@ -9352,7 +9332,7 @@ export const ITEMS = [
     structureType: "symJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"heptagon","said":7},"promptText":"Priya counts 7 lines of symmetry on a heptagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"heptagon","said":7},"promptText":"Priya's heptagon has all its sides and corners the same. Priya counts 7 lines of symmetry on it. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0172",
@@ -9362,7 +9342,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"octagon","said":8},"promptText":"Leo says a octagon has 8 lines of symmetry. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"octagon","said":8},"promptText":"Leo says a regular octagon has 8 lines of symmetry. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0173",
@@ -9372,7 +9352,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"nonagon","said":9},"promptText":"Mina counts 9 lines of symmetry on a nonagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"nonagon","said":9},"promptText":"Mina counts 9 lines of symmetry on a regular nonagon. Is Mina's count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0174",
@@ -9392,7 +9372,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"dodecagon","said":12},"promptText":"Ida counts 12 lines of symmetry on a dodecagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"dodecagon","said":12},"promptText":"Ida counts 12 lines of symmetry on a regular dodecagon. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0176",
@@ -9412,7 +9392,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"parallelogram","said":2},"promptText":"Rosa counts 2 lines of symmetry on a parallelogram. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"parallelogram","said":2},"promptText":"Rosa counts 2 lines of symmetry on a slanted parallelogram with 2 long sides and 2 short sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0178",
@@ -9422,7 +9402,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"octagon","said":4},"promptText":"Diego says a octagon has 4 lines of symmetry. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"octagon","said":4},"promptText":"Diego says a regular octagon has 4 lines of symmetry. Is Diego right about that?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0179",
@@ -9432,7 +9412,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"nonagon","said":3},"promptText":"Nora counts 3 lines of symmetry on a nonagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"nonagon","said":3},"promptText":"Nora counts 3 lines of symmetry on a regular nonagon. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0180",
@@ -9442,7 +9422,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"decagon","said":10},"promptText":"Luca says a decagon has 10 lines of symmetry. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"decagon","said":10},"promptText":"Luca says a regular decagon has 10 lines of symmetry. Is Luca right about that?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0181",
@@ -9452,7 +9432,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"dodecagon","said":6},"promptText":"Ava counts 6 lines of symmetry on a dodecagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"dodecagon","said":6},"promptText":"Ava counts 6 lines of symmetry on a regular dodecagon. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0182",
@@ -9462,7 +9442,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"scalene triangle","said":1},"promptText":"Omar says a scalene triangle has 1 lines of symmetry. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"scalene triangle","said":1},"promptText":"Omar says a scalene triangle has 1 line of symmetry. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0183",
@@ -9472,7 +9452,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"parallelogram","said":0},"promptText":"Ben counts 0 lines of symmetry on a parallelogram. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"parallelogram","said":0},"promptText":"Ben counts 0 lines of symmetry on a slanted parallelogram with 2 long sides and 2 short sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0184",
@@ -9482,7 +9462,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"octagon","said":8},"promptText":"Finn says a octagon has 8 lines of symmetry. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"octagon","said":8},"promptText":"Finn says a regular octagon has 8 lines of symmetry. Is Finn right about that?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0185",
@@ -9492,7 +9472,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"nonagon","said":9},"promptText":"Priya counts 9 lines of symmetry on a nonagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"nonagon","said":9},"promptText":"Priya counts 9 lines of symmetry on a regular nonagon. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0186",
@@ -9502,7 +9482,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"decagon","said":5},"promptText":"Sam says a decagon has 5 lines of symmetry. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"symSaid","name":"decagon","said":5},"promptText":"Sam says a regular decagon has 5 lines of symmetry. Is Sam right about that?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0187",
@@ -9512,7 +9492,7 @@ export const ITEMS = [
     structureType: "symJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"dodecagon","said":12},"promptText":"Nia counts 12 lines of symmetry on a dodecagon. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"symSaid","name":"dodecagon","said":12},"promptText":"Nia counts 12 lines of symmetry on a regular dodecagon. Is that count right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0188",
@@ -9522,7 +9502,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the rectangle","the square"],"display":{"shapeC":{"a":"square","b":"rectangle","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a square or a rectangle? Rosa pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the rectangle","the square"],"display":{"shapeC":{"a":"square","b":"rectangle","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a square or a rectangle that is not a square?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0189",
@@ -9532,7 +9512,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the hexagon","the square"],"display":{"shapeC":{"a":"hexagon","b":"square","kind":"moreSym"},"promptText":"Diego compares fold lines: a hexagon against a square. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the hexagon","the square"],"display":{"shapeC":{"a":"hexagon","b":"square","kind":"moreSym"},"promptText":"Diego compares a hexagon and a square. The hexagon has all its sides and corners the same. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0190",
@@ -9542,7 +9522,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the rectangle","the pentagon"],"display":{"shapeC":{"a":"pentagon","b":"rectangle","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a pentagon or a rectangle? Nora pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the rectangle","the pentagon"],"display":{"shapeC":{"a":"pentagon","b":"rectangle","kind":"moreSym"},"promptText":"Nora pictures a pentagon and a rectangle. The pentagon has all its sides and corners the same. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0191",
@@ -9552,7 +9532,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the triangle","choices":["the trapezoid","the triangle"],"display":{"shapeC":{"a":"triangle","b":"trapezoid","kind":"moreSym"},"promptText":"Luca compares fold lines: a triangle against a trapezoid. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the triangle","choices":["the trapezoid","the triangle"],"display":{"shapeC":{"a":"triangle","b":"trapezoid","kind":"moreSym"},"promptText":"Luca compares a triangle and a trapezoid. The triangle has 3 equal sides. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0192",
@@ -9562,7 +9542,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the hexagon","the trapezoid"],"display":{"shapeC":{"a":"hexagon","b":"trapezoid","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a hexagon or a trapezoid? Ava pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the hexagon","the trapezoid"],"display":{"shapeC":{"a":"hexagon","b":"trapezoid","kind":"moreSym"},"promptText":"Ava pictures a hexagon and a trapezoid. The hexagon has all its sides and corners the same. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0193",
@@ -9572,7 +9552,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the square","the trapezoid"],"display":{"shapeC":{"a":"square","b":"trapezoid","kind":"moreSym"},"promptText":"Omar compares fold lines: a square against a trapezoid. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the square","the trapezoid"],"display":{"shapeC":{"a":"square","b":"trapezoid","kind":"moreSym"},"promptText":"Which shape has more lines of symmetry, a square or a trapezoid?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0194",
@@ -9582,7 +9562,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the pentagon","the trapezoid"],"display":{"shapeC":{"a":"pentagon","b":"trapezoid","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a pentagon or a trapezoid? Ben pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the pentagon","the trapezoid"],"display":{"shapeC":{"a":"pentagon","b":"trapezoid","kind":"moreSym"},"promptText":"Ben pictures a pentagon and a trapezoid. The pentagon has all its sides and corners the same. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0195",
@@ -9592,7 +9572,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the rectangle","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"rectangle","kind":"moreSym"},"promptText":"Finn compares fold lines: a hexagon against a rectangle. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the rectangle","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"rectangle","kind":"moreSym"},"promptText":"Finn compares a hexagon and a rectangle. The hexagon has all its sides and corners the same. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0196",
@@ -9602,7 +9582,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the triangle","choices":["the rectangle","the triangle"],"display":{"shapeC":{"a":"triangle","b":"rectangle","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a triangle or a rectangle? Priya pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the triangle","choices":["the rectangle","the triangle"],"display":{"shapeC":{"a":"triangle","b":"rectangle","kind":"moreSym"},"promptText":"Priya pictures a triangle and a rectangle. The triangle has 3 equal sides, and the rectangle is not a square. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0197",
@@ -9612,7 +9592,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the pentagon","the right triangle"],"display":{"shapeC":{"a":"pentagon","b":"right triangle","kind":"moreSym"},"promptText":"Sam compares fold lines: a pentagon against a right triangle. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the pentagon","choices":["the pentagon","the right triangle"],"display":{"shapeC":{"a":"pentagon","b":"right triangle","kind":"moreSym"},"promptText":"Sam compares a pentagon and a right triangle. The pentagon has all its sides and corners the same. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0198",
@@ -9622,7 +9602,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the square","the right triangle"],"display":{"shapeC":{"a":"square","b":"right triangle","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a square or a right triangle? Nia pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the square","choices":["the square","the right triangle"],"display":{"shapeC":{"a":"square","b":"right triangle","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a square or a right triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0199",
@@ -9632,7 +9612,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the right triangle","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"right triangle","kind":"moreSym"},"promptText":"Kai compares fold lines: a hexagon against a right triangle. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the hexagon","choices":["the right triangle","the hexagon"],"display":{"shapeC":{"a":"hexagon","b":"right triangle","kind":"moreSym"},"promptText":"Kai compares a hexagon and a right triangle. The hexagon has all its sides and corners the same. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0200",
@@ -9642,7 +9622,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the triangle","choices":["the triangle","the right triangle"],"display":{"shapeC":{"a":"triangle","b":"right triangle","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a triangle or a right triangle? June pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the triangle","choices":["the triangle","the right triangle"],"display":{"shapeC":{"a":"triangle","b":"right triangle","kind":"moreSym"},"promptText":"June pictures a triangle and a right triangle. The triangle has 3 equal sides. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0201",
@@ -9652,7 +9632,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the square"],"display":{"shapeC":{"a":"heptagon","b":"square","kind":"moreSym"},"promptText":"Lily compares fold lines: a heptagon against a square. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the heptagon","the square"],"display":{"shapeC":{"a":"heptagon","b":"square","kind":"moreSym"},"promptText":"Lily compares a heptagon and a square. The heptagon has all its sides and corners the same. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0202",
@@ -9662,7 +9642,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the hexagon","the heptagon"],"display":{"shapeC":{"a":"heptagon","b":"hexagon","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a heptagon or a hexagon? Amara pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the hexagon","the heptagon"],"display":{"shapeC":{"a":"heptagon","b":"hexagon","kind":"moreSym"},"promptText":"Amara pictures a heptagon and a hexagon. Both shapes have all their sides and corners the same. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0203",
@@ -9672,7 +9652,7 @@ export const ITEMS = [
     structureType: "moreSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the trapezoid","the heptagon"],"display":{"shapeC":{"a":"heptagon","b":"trapezoid","kind":"moreSym"},"promptText":"Leo compares fold lines: a heptagon against a trapezoid. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the heptagon","choices":["the trapezoid","the heptagon"],"display":{"shapeC":{"a":"heptagon","b":"trapezoid","kind":"moreSym"},"promptText":"Leo compares a heptagon and a trapezoid. The heptagon has all its sides and corners the same. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0204",
@@ -9682,7 +9662,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the hexagon","the octagon"],"display":{"shapeC":{"a":"octagon","b":"hexagon","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a octagon or a hexagon? Nora pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the hexagon","the octagon"],"display":{"shapeC":{"a":"octagon","b":"hexagon","kind":"moreSym"},"promptText":"Nora pictures a regular octagon and a regular hexagon. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0205",
@@ -9692,7 +9672,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the octagon"],"display":{"shapeC":{"a":"nonagon","b":"octagon","kind":"moreSym"},"promptText":"Luca compares fold lines: a nonagon against a octagon. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the octagon"],"display":{"shapeC":{"a":"nonagon","b":"octagon","kind":"moreSym"},"promptText":"Luca compares a regular nonagon and a regular octagon. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0206",
@@ -9702,7 +9682,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the nonagon"],"display":{"shapeC":{"a":"decagon","b":"nonagon","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a decagon or a nonagon? Ava pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the nonagon"],"display":{"shapeC":{"a":"decagon","b":"nonagon","kind":"moreSym"},"promptText":"Ava pictures a regular decagon and a regular nonagon. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0207",
@@ -9712,7 +9692,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the decagon","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"decagon","kind":"moreSym"},"promptText":"Omar compares fold lines: a dodecagon against a decagon. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the decagon","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"decagon","kind":"moreSym"},"promptText":"Omar compares a regular dodecagon and a regular decagon. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0208",
@@ -9722,7 +9702,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the octagon","the parallelogram"],"display":{"shapeC":{"a":"octagon","b":"parallelogram","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a octagon or a parallelogram? Ben pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the octagon","the parallelogram"],"display":{"shapeC":{"a":"octagon","b":"parallelogram","kind":"moreSym"},"promptText":"Ben pictures a regular octagon and a parallelogram. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0209",
@@ -9732,7 +9712,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the scalene triangle"],"display":{"shapeC":{"a":"nonagon","b":"scalene triangle","kind":"moreSym"},"promptText":"Finn compares fold lines: a nonagon against a scalene triangle. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the scalene triangle"],"display":{"shapeC":{"a":"nonagon","b":"scalene triangle","kind":"moreSym"},"promptText":"Finn compares a regular nonagon and a scalene triangle. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0210",
@@ -9742,7 +9722,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the square","the decagon"],"display":{"shapeC":{"a":"decagon","b":"square","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a decagon or a square? Priya pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the square","the decagon"],"display":{"shapeC":{"a":"decagon","b":"square","kind":"moreSym"},"promptText":"Priya pictures a regular decagon and a square. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0211",
@@ -9752,7 +9732,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the dodecagon","the hexagon"],"display":{"shapeC":{"a":"dodecagon","b":"hexagon","kind":"moreSym"},"promptText":"Sam compares fold lines: a dodecagon against a hexagon. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the dodecagon","the hexagon"],"display":{"shapeC":{"a":"dodecagon","b":"hexagon","kind":"moreSym"},"promptText":"Sam compares a regular dodecagon and a regular hexagon. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0212",
@@ -9762,7 +9742,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the octagon","the scalene triangle"],"display":{"shapeC":{"a":"octagon","b":"scalene triangle","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a octagon or a scalene triangle? Nia pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the octagon","the scalene triangle"],"display":{"shapeC":{"a":"octagon","b":"scalene triangle","kind":"moreSym"},"promptText":"Nia pictures a regular octagon and a scalene triangle. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0213",
@@ -9772,7 +9752,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the parallelogram","the nonagon"],"display":{"shapeC":{"a":"nonagon","b":"parallelogram","kind":"moreSym"},"promptText":"Kai compares fold lines: a nonagon against a parallelogram. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the parallelogram","the nonagon"],"display":{"shapeC":{"a":"nonagon","b":"parallelogram","kind":"moreSym"},"promptText":"Kai compares a regular nonagon and a parallelogram. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0214",
@@ -9782,7 +9762,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the trapezoid"],"display":{"shapeC":{"a":"decagon","b":"trapezoid","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a decagon or a trapezoid? June pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the decagon","the trapezoid"],"display":{"shapeC":{"a":"decagon","b":"trapezoid","kind":"moreSym"},"promptText":"June pictures a regular decagon and a trapezoid. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0215",
@@ -9792,7 +9772,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the square","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"square","kind":"moreSym"},"promptText":"Lily compares fold lines: a dodecagon against a square. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the square","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"square","kind":"moreSym"},"promptText":"Lily compares a regular dodecagon and a square. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0216",
@@ -9802,7 +9782,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the octagon","the trapezoid"],"display":{"shapeC":{"a":"octagon","b":"trapezoid","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a octagon or a trapezoid? Amara pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the octagon","choices":["the octagon","the trapezoid"],"display":{"shapeC":{"a":"octagon","b":"trapezoid","kind":"moreSym"},"promptText":"Amara pictures a regular octagon and a trapezoid. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0217",
@@ -9812,7 +9792,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the square"],"display":{"shapeC":{"a":"nonagon","b":"square","kind":"moreSym"},"promptText":"Leo compares fold lines: a nonagon against a square. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the nonagon","choices":["the nonagon","the square"],"display":{"shapeC":{"a":"nonagon","b":"square","kind":"moreSym"},"promptText":"Leo compares a regular nonagon and a square. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0218",
@@ -9822,7 +9802,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the parallelogram","the decagon"],"display":{"shapeC":{"a":"decagon","b":"parallelogram","kind":"moreSym"},"promptText":"Which has more lines of symmetry, a decagon or a parallelogram? Mina pictures the folds."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the decagon","choices":["the parallelogram","the decagon"],"display":{"shapeC":{"a":"decagon","b":"parallelogram","kind":"moreSym"},"promptText":"Mina pictures a regular decagon and a parallelogram. Which one has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0219",
@@ -9832,7 +9812,7 @@ export const ITEMS = [
     structureType: "moreSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the scalene triangle","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"scalene triangle","kind":"moreSym"},"promptText":"Theo compares fold lines: a dodecagon against a scalene triangle. Which shape has more?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the dodecagon","choices":["the scalene triangle","the dodecagon"],"display":{"shapeC":{"a":"dodecagon","b":"scalene triangle","kind":"moreSym"},"promptText":"Theo compares a regular dodecagon and a scalene triangle. Which shape has more lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0220",
@@ -9852,7 +9832,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe claims a plain capital letter A has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe claims a plain capital letter A folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0222",
@@ -9872,7 +9852,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego claims a heart has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego claims a heart folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0224",
@@ -9892,7 +9872,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca claims a snowflake has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca claims a snowflake folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0226",
@@ -9912,7 +9892,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar claims a ladybug with even spots has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar claims a ladybug with even spots folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0228",
@@ -9932,7 +9912,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn claims a smiley face has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn claims a smiley face folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0230",
@@ -9952,7 +9932,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Sam claims a capital letter P has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Sam claims a capital letter P folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0232",
@@ -9972,7 +9952,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai claims a capital letter Q has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai claims a capital letter Q folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0234",
@@ -9992,7 +9972,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily claims a capital letter Z has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily claims a capital letter Z folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0236",
@@ -10012,7 +9992,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Leo claims a capital letter S has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Leo claims a capital letter S folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0238",
@@ -10032,7 +10012,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Theo claims a capital letter N has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Theo claims a capital letter N folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0240",
@@ -10052,7 +10032,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Zoe claims a capital letter L has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Zoe claims a capital letter L folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0242",
@@ -10072,7 +10052,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Diego claims a capital letter K has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego claims the top half of a capital letter K matches its bottom half. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0244",
@@ -10092,7 +10072,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca claims a capital letter B has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca claims a capital letter B folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0246",
@@ -10112,7 +10092,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar claims a capital letter E has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar claims a capital letter E folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0248",
@@ -10132,7 +10112,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn claims a valentine card heart has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn claims a valentine card heart folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0250",
@@ -10152,7 +10132,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Sam claims a plain diamond shape has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Sam claims a plain diamond shape folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0252",
@@ -10172,7 +10152,7 @@ export const ITEMS = [
     structureType: "mirrorJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai claims a plus sign has two matching halves. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai claims a plus sign folds into two matching halves. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0254",
@@ -10182,7 +10162,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a heart","choices":["a capital letter F","a heart"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a heart or a capital letter F? Omar imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a heart","choices":["a capital letter F","a heart"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a heart or a capital letter F?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0255",
@@ -10192,7 +10172,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a square","choices":["a square","a capital letter J"],"display":{"shapeC":{"kind":"authored"},"promptText":"Ben must pick the one with matching halves — a square or a capital letter J. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a square","choices":["a square","a capital letter J"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one can you fold into two matching halves, a square or a capital letter J?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0256",
@@ -10202,7 +10182,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a butterfly","choices":["a capital letter R","a butterfly"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a butterfly or a capital letter R? Finn imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a butterfly","choices":["a capital letter R","a butterfly"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a butterfly or a capital letter R?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0257",
@@ -10212,7 +10192,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a circle","choices":["a circle","a capital letter G"],"display":{"shapeC":{"kind":"authored"},"promptText":"Priya must pick the one with matching halves — a circle or a capital letter G. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a circle","choices":["a circle","a capital letter G"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one can you fold into two matching halves, a circle or a capital letter G?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0258",
@@ -10222,7 +10202,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a snowflake","choices":["a capital letter P","a snowflake"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a snowflake or a capital letter P? Sam imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a snowflake","choices":["a capital letter P","a snowflake"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a snowflake or a capital letter P?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0259",
@@ -10232,7 +10212,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a capital letter A","choices":["a capital letter Z","a capital letter A"],"display":{"shapeC":{"kind":"authored"},"promptText":"Nia must pick the one with matching halves — a capital letter A or a capital letter Z. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a capital letter A","choices":["a capital letter Z","a capital letter A"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one can you fold into two matching halves, a capital letter A or a capital letter Z?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0260",
@@ -10242,7 +10222,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a capital letter M","choices":["a capital letter M","a capital letter S"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a capital letter M or a capital letter S? Kai imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a capital letter M","choices":["a capital letter M","a capital letter S"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a capital letter M or a capital letter S?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0261",
@@ -10252,7 +10232,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a smiley face","choices":["a capital letter K","a smiley face"],"display":{"shapeC":{"kind":"authored"},"promptText":"June must pick the one with matching halves — a smiley face or a capital letter K. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a smiley face","choices":["a capital letter K","a smiley face"],"display":{"shapeC":{"kind":"authored"},"promptText":"June folds a smiley face and a capital letter K along a line from top to bottom. Which one has matching left and right halves?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0262",
@@ -10262,7 +10242,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a capital letter T","choices":["a capital letter T","a capital letter N"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a capital letter T or a capital letter N? Lily imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a capital letter T","choices":["a capital letter T","a capital letter N"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a capital letter T or a capital letter N?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0263",
@@ -10272,7 +10252,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a capital letter V","choices":["a capital letter V","a capital letter L"],"display":{"shapeC":{"kind":"authored"},"promptText":"Amara must pick the one with matching halves — a capital letter V or a capital letter L. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a capital letter V","choices":["a capital letter V","a capital letter L"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one can you fold into two matching halves, a capital letter V or a capital letter L?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0264",
@@ -10282,7 +10262,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a capital letter O","choices":["a capital letter Q","a capital letter O"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a capital letter O or a capital letter Q? Leo imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a capital letter O","choices":["a capital letter Q","a capital letter O"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a capital letter O or a capital letter Q?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0265",
@@ -10292,7 +10272,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a capital letter U","choices":["a capital letter J","a capital letter U"],"display":{"shapeC":{"kind":"authored"},"promptText":"Mina must pick the one with matching halves — a capital letter U or a capital letter J. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a capital letter U","choices":["a capital letter J","a capital letter U"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one can you fold into two matching halves, a capital letter U or a capital letter J?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0266",
@@ -10302,7 +10282,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a capital letter X","choices":["a capital letter X","a capital letter Z"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a capital letter X or a capital letter Z? Theo imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a capital letter X","choices":["a capital letter X","a capital letter Z"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a capital letter X or a capital letter Z?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0267",
@@ -10312,7 +10292,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a capital letter W","choices":["a capital letter S","a capital letter W"],"display":{"shapeC":{"kind":"authored"},"promptText":"Ida must pick the one with matching halves — a capital letter W or a capital letter S. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a capital letter W","choices":["a capital letter S","a capital letter W"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one can you fold into two matching halves, a capital letter W or a capital letter S?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0268",
@@ -10322,7 +10302,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a heart","choices":["a heart","a capital letter N"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a heart or a capital letter N? Zoe imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a heart","choices":["a heart","a capital letter N"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a heart or a capital letter N?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0269",
@@ -10332,7 +10312,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a butterfly","choices":["a butterfly","a capital letter G"],"display":{"shapeC":{"kind":"authored"},"promptText":"Rosa must pick the one with matching halves — a butterfly or a capital letter G. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a butterfly","choices":["a butterfly","a capital letter G"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one can you fold into two matching halves, a butterfly or a capital letter G?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0270",
@@ -10342,7 +10322,7 @@ export const ITEMS = [
     structureType: "whichFoldsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a snowflake","choices":["a capital letter R","a snowflake"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which folds into two matching halves: a snowflake or a capital letter R? Diego imagines the fold."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a snowflake","choices":["a capital letter R","a snowflake"],"display":{"shapeC":{"kind":"authored"},"promptText":"Which one folds into two matching halves, a snowflake or a capital letter R?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0271",
@@ -10352,7 +10332,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the rectangle","the square","the trapezoid"],"display":{"shapeC":{"kind":"fewestSym","names":["square","rectangle","trapezoid"]},"promptText":"Of a square, a rectangle, and a trapezoid, which has the FEWEST lines of symmetry? Diego compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the rectangle","the square","the trapezoid"],"display":{"shapeC":{"kind":"fewestSym","names":["square","rectangle","trapezoid"]},"promptText":"Of a square, a rectangle, and a trapezoid, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0272",
@@ -10362,7 +10342,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the triangle","the hexagon","the right triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","triangle","right triangle"]},"promptText":"Nora ranks a hexagon, a triangle, and a right triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the triangle","the hexagon","the right triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","triangle","right triangle"]},"promptText":"Nora looks at a hexagon, a triangle, and a right triangle. The hexagon has all its sides and corners the same, and the triangle has 3 equal sides. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0273",
@@ -10372,7 +10352,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the rectangle","the square","the pentagon"],"display":{"shapeC":{"kind":"fewestSym","names":["pentagon","square","rectangle"]},"promptText":"Of a pentagon, a square, and a rectangle, which has the FEWEST lines of symmetry? Luca compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the rectangle","the square","the pentagon"],"display":{"shapeC":{"kind":"fewestSym","names":["pentagon","square","rectangle"]},"promptText":"Luca compares a pentagon, a square, and a rectangle. The pentagon has all its sides and corners the same, and the rectangle is not a square. Which one has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0274",
@@ -10382,7 +10362,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the hexagon","the trapezoid","the square"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","square","trapezoid"]},"promptText":"Ava ranks a hexagon, a square, and a trapezoid by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the hexagon","the trapezoid","the square"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","square","trapezoid"]},"promptText":"Ava looks at a hexagon, a square, and a trapezoid. The hexagon has all its sides and corners the same. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0275",
@@ -10392,7 +10372,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the triangle","the right triangle","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["triangle","rectangle","right triangle"]},"promptText":"Of a triangle, a rectangle, and a right triangle, which has the FEWEST lines of symmetry? Omar compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the triangle","the right triangle","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["triangle","rectangle","right triangle"]},"promptText":"Omar compares a triangle, a rectangle, and a right triangle. The triangle has 3 equal sides. Which one has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0276",
@@ -10402,7 +10382,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the pentagon","the rectangle","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["pentagon","hexagon","rectangle"]},"promptText":"Ben ranks a pentagon, a hexagon, and a rectangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the pentagon","the rectangle","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["pentagon","hexagon","rectangle"]},"promptText":"Ben looks at a pentagon, a hexagon, and a rectangle. The pentagon and the hexagon have all their sides and corners the same. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0277",
@@ -10412,7 +10392,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the triangle","the trapezoid","the square"],"display":{"shapeC":{"kind":"fewestSym","names":["square","triangle","trapezoid"]},"promptText":"Of a square, a triangle, and a trapezoid, which has the FEWEST lines of symmetry? Finn compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the triangle","the trapezoid","the square"],"display":{"shapeC":{"kind":"fewestSym","names":["square","triangle","trapezoid"]},"promptText":"Finn compares a square, a triangle, and a trapezoid. The triangle has 3 equal sides. Which one has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0278",
@@ -10422,7 +10402,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the right triangle","the pentagon","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","pentagon","right triangle"]},"promptText":"Priya ranks a hexagon, a pentagon, and a right triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the right triangle","the pentagon","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","pentagon","right triangle"]},"promptText":"Priya looks at a hexagon, a pentagon, and a right triangle. The hexagon and the pentagon have all their sides and corners the same. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0279",
@@ -10432,7 +10412,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the rectangle","the right triangle","the square"],"display":{"shapeC":{"kind":"fewestSym","names":["square","rectangle","right triangle"]},"promptText":"Of a square, a rectangle, and a right triangle, which has the FEWEST lines of symmetry? Sam compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the rectangle","the right triangle","the square"],"display":{"shapeC":{"kind":"fewestSym","names":["square","rectangle","right triangle"]},"promptText":"Of a square, a rectangle, and a right triangle, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0280",
@@ -10442,7 +10422,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the trapezoid","the pentagon","the triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["pentagon","triangle","trapezoid"]},"promptText":"Nia ranks a pentagon, a triangle, and a trapezoid by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the trapezoid","the pentagon","the triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["pentagon","triangle","trapezoid"]},"promptText":"Nia looks at a pentagon, a triangle, and a trapezoid. The pentagon has all its sides and corners the same, and the triangle has 3 equal sides. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0281",
@@ -10452,7 +10432,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the rectangle","the square","the heptagon"],"display":{"shapeC":{"kind":"fewestSym","names":["heptagon","square","rectangle"]},"promptText":"Of a heptagon, a square, and a rectangle, which has the FEWEST lines of symmetry? Kai compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the rectangle","the square","the heptagon"],"display":{"shapeC":{"kind":"fewestSym","names":["heptagon","square","rectangle"]},"promptText":"Kai compares a heptagon, a square, and a rectangle. The heptagon has all its sides and corners the same, and the rectangle is not a square. Which one has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0282",
@@ -10462,7 +10442,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the trapezoid","the hexagon","the heptagon"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","heptagon","trapezoid"]},"promptText":"June ranks a hexagon, a heptagon, and a trapezoid by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the trapezoid","the hexagon","the heptagon"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","heptagon","trapezoid"]},"promptText":"June looks at a hexagon, a heptagon, and a trapezoid. The hexagon and the heptagon have all their sides and corners the same. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0283",
@@ -10472,7 +10452,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the pentagon","the right triangle","the square"],"display":{"shapeC":{"kind":"fewestSym","names":["square","pentagon","right triangle"]},"promptText":"Of a square, a pentagon, and a right triangle, which has the FEWEST lines of symmetry? Lily compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the pentagon","the right triangle","the square"],"display":{"shapeC":{"kind":"fewestSym","names":["square","pentagon","right triangle"]},"promptText":"Lily compares a square, a pentagon, and a right triangle. The pentagon has all its sides and corners the same. Which one has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0284",
@@ -10482,7 +10462,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the triangle","the heptagon","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["triangle","heptagon","rectangle"]},"promptText":"Amara ranks a triangle, a heptagon, and a rectangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the triangle","the heptagon","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["triangle","heptagon","rectangle"]},"promptText":"Amara looks at a triangle with 3 equal sides, a heptagon with all sides and corners the same, and a rectangle that is not a square. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0285",
@@ -10492,7 +10472,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the pentagon","the right triangle","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["pentagon","rectangle","right triangle"]},"promptText":"Of a pentagon, a rectangle, and a right triangle, which has the FEWEST lines of symmetry? Leo compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the pentagon","the right triangle","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["pentagon","rectangle","right triangle"]},"promptText":"Leo compares a pentagon, a rectangle, and a right triangle. The pentagon has all its sides and corners the same. Which one has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0286",
@@ -10502,7 +10482,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the trapezoid","the triangle","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","triangle","trapezoid"]},"promptText":"Mina ranks a hexagon, a triangle, and a trapezoid by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the trapezoid","the triangle","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["hexagon","triangle","trapezoid"]},"promptText":"Mina looks at a hexagon, a triangle, and a trapezoid. The hexagon has all its sides and corners the same, and the triangle has 3 equal sides. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0287",
@@ -10512,7 +10492,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the heptagon","the rectangle","the pentagon"],"display":{"shapeC":{"kind":"fewestSym","names":["heptagon","pentagon","rectangle"]},"promptText":"Of a heptagon, a pentagon, and a rectangle, which has the FEWEST lines of symmetry? Theo compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the rectangle","choices":["the heptagon","the rectangle","the pentagon"],"display":{"shapeC":{"kind":"fewestSym","names":["heptagon","pentagon","rectangle"]},"promptText":"Theo compares a heptagon, a pentagon, and a rectangle. The heptagon and the pentagon have all their sides and corners the same. Which one has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0288",
@@ -10522,7 +10502,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the hexagon","the square","the right triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["square","hexagon","right triangle"]},"promptText":"Ida ranks a square, a hexagon, and a right triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the right triangle","choices":["the hexagon","the square","the right triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["square","hexagon","right triangle"]},"promptText":"Ida looks at a square, a hexagon, and a right triangle. The hexagon has all its sides and corners the same. Which shape has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0289",
@@ -10532,7 +10512,7 @@ export const ITEMS = [
     structureType: "fewestSym_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the triangle","the pentagon","the trapezoid"],"display":{"shapeC":{"kind":"fewestSym","names":["triangle","pentagon","trapezoid"]},"promptText":"Of a triangle, a pentagon, and a trapezoid, which has the FEWEST lines of symmetry? Zoe compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the trapezoid","choices":["the triangle","the pentagon","the trapezoid"],"display":{"shapeC":{"kind":"fewestSym","names":["triangle","pentagon","trapezoid"]},"promptText":"Zoe compares a triangle, a pentagon, and a trapezoid. The pentagon has all its sides and corners the same, and the triangle has 3 equal sides. Which one has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0290",
@@ -10542,7 +10522,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the square","the octagon"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","square","parallelogram"]},"promptText":"Of a octagon, a square, and a parallelogram, which has the FEWEST lines of symmetry? Luca compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the square","the octagon"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","square","parallelogram"]},"promptText":"Of a regular octagon, a square, and a slanted parallelogram with 2 long sides and 2 short sides, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0291",
@@ -10552,7 +10532,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the nonagon","the scalene triangle","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","hexagon","scalene triangle"]},"promptText":"Ava ranks a nonagon, a hexagon, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the nonagon","the scalene triangle","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","hexagon","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular nonagon, a regular hexagon, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0292",
@@ -10562,7 +10542,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the pentagon","the decagon","the parallelogram"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","pentagon","parallelogram"]},"promptText":"Of a decagon, a pentagon, and a parallelogram, which has the FEWEST lines of symmetry? Omar compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the pentagon","the decagon","the parallelogram"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","pentagon","parallelogram"]},"promptText":"Of a regular decagon, a regular pentagon, and a parallelogram, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0293",
@@ -10572,7 +10552,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the square","the scalene triangle","the dodecagon"],"display":{"shapeC":{"kind":"fewestSym","names":["dodecagon","square","scalene triangle"]},"promptText":"Ben ranks a dodecagon, a square, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the square","the scalene triangle","the dodecagon"],"display":{"shapeC":{"kind":"fewestSym","names":["dodecagon","square","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular dodecagon, a square, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0294",
@@ -10582,7 +10562,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the triangle","the octagon","the parallelogram"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","triangle","parallelogram"]},"promptText":"Of a octagon, a triangle, and a parallelogram, which has the FEWEST lines of symmetry? Finn compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the triangle","the octagon","the parallelogram"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","triangle","parallelogram"]},"promptText":"Of a regular octagon, a triangle with 3 equal sides, and a slanted parallelogram whose sides are not all the same length, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0295",
@@ -10592,7 +10572,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the scalene triangle","the nonagon","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","rectangle","scalene triangle"]},"promptText":"Priya ranks a nonagon, a rectangle, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the scalene triangle","the nonagon","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","rectangle","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular nonagon, a rectangle, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0296",
@@ -10602,7 +10582,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the decagon","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","hexagon","parallelogram"]},"promptText":"Of a decagon, a hexagon, and a parallelogram, which has the FEWEST lines of symmetry? Sam compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the decagon","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","hexagon","parallelogram"]},"promptText":"Of a regular decagon, a regular hexagon, and a parallelogram, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0297",
@@ -10612,7 +10592,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the dodecagon","the scalene triangle","the pentagon"],"display":{"shapeC":{"kind":"fewestSym","names":["dodecagon","pentagon","scalene triangle"]},"promptText":"Nia ranks a dodecagon, a pentagon, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the dodecagon","the scalene triangle","the pentagon"],"display":{"shapeC":{"kind":"fewestSym","names":["dodecagon","pentagon","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular dodecagon, a regular pentagon, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0298",
@@ -10622,7 +10602,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the octagon","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","rectangle","parallelogram"]},"promptText":"Of a octagon, a rectangle, and a parallelogram, which has the FEWEST lines of symmetry? Kai compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the octagon","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","rectangle","parallelogram"]},"promptText":"Of a regular octagon, a rectangle, and a slanted parallelogram whose sides are not all the same length, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0299",
@@ -10632,7 +10612,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the scalene triangle","the square","the nonagon"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","square","scalene triangle"]},"promptText":"June ranks a nonagon, a square, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the scalene triangle","the square","the nonagon"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","square","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular nonagon, a square, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0300",
@@ -10642,7 +10622,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the decagon","the triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","triangle","parallelogram"]},"promptText":"Of a decagon, a triangle, and a parallelogram, which has the FEWEST lines of symmetry? Lily compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the decagon","the triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","triangle","parallelogram"]},"promptText":"Of a regular decagon, a triangle with 3 equal sides, and a slanted parallelogram with 2 long sides and 2 short sides, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0301",
@@ -10652,7 +10632,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the dodecagon","the scalene triangle","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["dodecagon","hexagon","scalene triangle"]},"promptText":"Amara ranks a dodecagon, a hexagon, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the dodecagon","the scalene triangle","the hexagon"],"display":{"shapeC":{"kind":"fewestSym","names":["dodecagon","hexagon","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular dodecagon, a regular hexagon, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0302",
@@ -10662,7 +10642,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the octagon","the pentagon","the parallelogram"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","pentagon","parallelogram"]},"promptText":"Of a octagon, a pentagon, and a parallelogram, which has the FEWEST lines of symmetry? Leo compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the octagon","the pentagon","the parallelogram"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","pentagon","parallelogram"]},"promptText":"Of a regular octagon, a regular pentagon, and a parallelogram, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0303",
@@ -10672,7 +10652,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the nonagon","the scalene triangle","the triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","triangle","scalene triangle"]},"promptText":"Mina ranks a nonagon, a triangle, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the nonagon","the scalene triangle","the triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","triangle","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular nonagon, a triangle with 3 equal sides, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0304",
@@ -10682,7 +10662,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the decagon","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","rectangle","parallelogram"]},"promptText":"Of a decagon, a rectangle, and a parallelogram, which has the FEWEST lines of symmetry? Theo compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the parallelogram","the decagon","the rectangle"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","rectangle","parallelogram"]},"promptText":"Of a regular decagon, a rectangle, and a slanted parallelogram with 2 long sides and 2 short sides, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0305",
@@ -10692,7 +10672,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the dodecagon","the triangle","the scalene triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["dodecagon","triangle","scalene triangle"]},"promptText":"Ida ranks a dodecagon, a triangle, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the dodecagon","the triangle","the scalene triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["dodecagon","triangle","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular dodecagon, a triangle with 3 equal sides, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0306",
@@ -10702,7 +10682,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the octagon","the hexagon","the parallelogram"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","hexagon","parallelogram"]},"promptText":"Of a octagon, a hexagon, and a parallelogram, which has the FEWEST lines of symmetry? Zoe compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the parallelogram","choices":["the octagon","the hexagon","the parallelogram"],"display":{"shapeC":{"kind":"fewestSym","names":["octagon","hexagon","parallelogram"]},"promptText":"Of a regular octagon, a regular hexagon, and a parallelogram, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0307",
@@ -10712,7 +10692,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the scalene triangle","the nonagon","the pentagon"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","pentagon","scalene triangle"]},"promptText":"Rosa ranks a nonagon, a pentagon, and a scalene triangle by symmetry lines. Which has the fewest?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the scalene triangle","the nonagon","the pentagon"],"display":{"shapeC":{"kind":"fewestSym","names":["nonagon","pentagon","scalene triangle"]},"promptText":"Which has the fewest lines of symmetry: a regular nonagon, a regular pentagon, or a scalene triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0308",
@@ -10722,7 +10702,7 @@ export const ITEMS = [
     structureType: "fewestSym_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the decagon","the square","the scalene triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","square","scalene triangle"]},"promptText":"Of a decagon, a square, and a scalene triangle, which has the FEWEST lines of symmetry? Diego compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the scalene triangle","choices":["the decagon","the square","the scalene triangle"],"display":{"shapeC":{"kind":"fewestSym","names":["decagon","square","scalene triangle"]},"promptText":"Of a regular decagon, a square, and a scalene triangle, which has the fewest lines of symmetry?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0309",
@@ -10992,7 +10972,7 @@ export const ITEMS = [
     structureType: "riddle_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["right triangle","triangle","trapezoid","scalene triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Ben reads a shape riddle: I have 3 sides and no equal sides at all. Which shape is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["right triangle","triangle with 3 equal sides","trapezoid","scalene triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Ben reads a shape riddle: I have 3 sides, no equal sides, and no right angle. Which shape is it?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0336",
@@ -11002,7 +10982,7 @@ export const ITEMS = [
     structureType: "riddle_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["trapezoid","scalene triangle","right triangle","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"A riddle for Diego: I have 3 sides and no equal sides at all. Name the shape."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["trapezoid","scalene triangle","right triangle","triangle with 3 equal sides"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"A riddle for Diego: I have 3 sides, no equal sides, and no right angle. What shape am I?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0337",
@@ -11132,7 +11112,7 @@ export const ITEMS = [
     structureType: "riddle_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["trapezoid","rhombus","square","rectangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Finn reads a shape riddle: I am a quadrilateral with 4 equal sides; my angles need not be right angles. Which shape is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["trapezoid","rhombus","square","rectangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Finn reads a shape riddle: I am a quadrilateral with 4 equal sides and no right angles. Which shape is it?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0350",
@@ -11142,7 +11122,7 @@ export const ITEMS = [
     structureType: "riddle_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["rectangle","trapezoid","square","rhombus"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"A riddle for Nora: I am a quadrilateral with 4 equal sides; my angles need not be right angles. Name the shape."}},
+    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["rectangle","trapezoid","square","rhombus"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"A riddle for Nora: I am a quadrilateral with 4 equal sides and no right angles. What shape am I?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0351",
@@ -11152,7 +11132,7 @@ export const ITEMS = [
     structureType: "riddle_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["right triangle","scalene triangle","trapezoid","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Priya reads a shape riddle: I am a triangle with no line of symmetry. Which shape is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["right triangle","scalene triangle","trapezoid","equilateral triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Priya reads a shape riddle: I am a triangle with no line of symmetry and no right angle. Which shape is it?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0352",
@@ -11162,7 +11142,7 @@ export const ITEMS = [
     structureType: "riddle_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["trapezoid","scalene triangle","right triangle","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"A riddle for Luca: I am a triangle with no line of symmetry. Name the shape."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["trapezoid","scalene triangle","right triangle","isosceles triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"A riddle for Luca: I am a triangle with no line of symmetry and no right angle. Which shape am I?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0353",
@@ -11362,7 +11342,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara tells the class: A rectangle has 2 long sides and 2 short sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara draws a rectangle that is not a square. Amara says it has 2 long sides and 2 short sides. Is Amara right about that?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0373",
@@ -11392,7 +11372,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Priya claims: A rhombus has 4 equal sides. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Priya says a rhombus has 4 equal sides. Is Priya right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0376",
@@ -11402,7 +11382,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Sam tells the class: A trapezoid has 2 pairs of parallel sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Sam tells the class that every trapezoid has 2 pairs of parallel sides. Is Sam right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0377",
@@ -11412,7 +11392,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia claims: A parallelogram has 2 pairs of parallel sides. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia tells the class that a parallelogram has 2 pairs of parallel sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0378",
@@ -11422,7 +11402,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai tells the class: A rhombus always has right angles. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai says a rhombus always has right angles. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0379",
@@ -11432,7 +11412,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June claims: A trapezoid has exactly 1 pair of parallel sides. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June thinks every trapezoid has at least 1 pair of parallel sides. Is June right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0380",
@@ -11442,7 +11422,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily tells the class: A parallelogram always has 4 right angles. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily thinks a parallelogram always has 4 right angles. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0381",
@@ -11452,7 +11432,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara claims: A heptagon has 7 sides. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara writes that a heptagon has 7 sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0382",
@@ -11462,7 +11442,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo tells the class: A hexagon has 3 pairs of parallel sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo's hexagon has all its sides and corners the same. Leo tells the class it has 3 pairs of parallel sides. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0383",
@@ -11472,7 +11452,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Mina claims: A rhombus has 5 sides. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Mina writes that a rhombus has 5 sides. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0384",
@@ -11482,7 +11462,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo tells the class: A trapezoid has 4 sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo says a trapezoid has 4 sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0385",
@@ -11492,7 +11472,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida claims: A parallelogram has 3 sides. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida tells the class that a parallelogram has 3 sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0386",
@@ -11502,7 +11482,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Zoe tells the class: A heptagon has 8 sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Zoe says a heptagon has 8 sides. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0387",
@@ -11512,7 +11492,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa claims: A right triangle has exactly 1 right angle. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa writes that a right triangle has exactly 1 right angle. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0388",
@@ -11522,7 +11502,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Diego tells the class: A hexagon has no parallel sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Diego thinks a hexagon never has parallel sides. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0389",
@@ -11532,7 +11512,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nora claims: A scalene triangle has no equal sides. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nora tells the class that a scalene triangle has no equal sides. Is Nora right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0390",
@@ -11542,7 +11522,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Luca tells the class: A rhombus has no parallel sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Luca writes that a rhombus has no parallel sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0391",
@@ -11552,7 +11532,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ava claims: A rhombus has 2 pairs of parallel sides. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ava thinks a rhombus has 2 pairs of parallel sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0392",
@@ -11562,7 +11542,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Omar tells the class: A trapezoid has 3 parallel pairs. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Omar tells the class that a trapezoid has 3 pairs of parallel sides. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0393",
@@ -11572,7 +11552,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben claims: A parallelogram has 4 vertices. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben says a parallelogram has 4 vertices. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0394",
@@ -11602,7 +11582,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June claims: Every square is a rectangle. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June tells the class: Every square is a rectangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0397",
@@ -11612,7 +11592,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily tells the class: Every rectangle is a square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily claims: Every rectangle is a square. Is Lily right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0398",
@@ -11642,7 +11622,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Mina claims: Every square is a parallelogram. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Mina tells the class: Every square is a parallelogram. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0401",
@@ -11652,7 +11632,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Theo tells the class: Every trapezoid is a parallelogram. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Theo claims: Every trapezoid is a parallelogram. Is Theo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0402",
@@ -11672,7 +11652,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa claims: A dodecagon has 12 sides. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa tells the class: A dodecagon has 12 sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0404",
@@ -11702,7 +11682,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Luca tells the class: Every scalene triangle has 1 line of symmetry. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Luca claims: Every scalene triangle has 1 line of symmetry. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0407",
@@ -11712,7 +11692,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ava claims: A decagon has 10 vertices. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ava tells the class: A decagon has 10 vertices. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0408",
@@ -11742,7 +11722,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Finn tells the class: Every rectangle has 4 lines of symmetry. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Finn claims: Every rectangle has 4 lines of symmetry. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0411",
@@ -11752,7 +11732,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Priya claims: A regular decagon has 5 pairs of parallel sides. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Priya tells the class: A regular decagon has 5 pairs of parallel sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0412",
@@ -11782,7 +11762,7 @@ export const ITEMS = [
     structureType: "fitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"triangle","choices":["hexagon","square","pentagon","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 3 corners? Leo checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"triangle","choices":["hexagon","square","pentagon","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 3 corners?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0415",
@@ -11802,7 +11782,7 @@ export const ITEMS = [
     structureType: "fitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["trapezoid","pentagon","square","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 4 right angles and equal sides? Mina checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"square","choices":["trapezoid","pentagon","square","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 4 square corners and 4 equal sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0417",
@@ -11822,7 +11802,7 @@ export const ITEMS = [
     structureType: "fitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pentagon","choices":["square","pentagon","triangle","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 5 corners? Theo checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"pentagon","choices":["square","pentagon","triangle","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 5 corners?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0419",
@@ -11842,7 +11822,7 @@ export const ITEMS = [
     structureType: "fitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"hexagon","choices":["triangle","hexagon","square","pentagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 6 sides? Ida checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"hexagon","choices":["triangle","hexagon","square","pentagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 6 sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0421",
@@ -11862,7 +11842,7 @@ export const ITEMS = [
     structureType: "fitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"rectangle","choices":["triangle","rectangle","square","pentagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 4 right angles with sides not all equal? Zoe checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"rectangle","choices":["triangle","rectangle","square","pentagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 4 square corners but sides that are not all the same length?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0423",
@@ -11882,7 +11862,7 @@ export const ITEMS = [
     structureType: "fitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right triangle","choices":["right triangle","pentagon","square","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has one right angle and 3 sides? Rosa checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right triangle","choices":["right triangle","pentagon","square","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 3 sides and 1 square corner?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0425",
@@ -11902,7 +11882,7 @@ export const ITEMS = [
     structureType: "fitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"hexagon","choices":["rectangle","triangle","square","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has more corners than a pentagon? Diego checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"hexagon","choices":["rectangle","triangle","square","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has more corners than a pentagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0427",
@@ -11922,7 +11902,7 @@ export const ITEMS = [
     structureType: "fitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"triangle","choices":["pentagon","rectangle","triangle","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has fewer sides than a square? Nora checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"triangle","choices":["pentagon","rectangle","triangle","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has fewer sides than a square?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0429",
@@ -11942,7 +11922,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"trapezoid","choices":["parallelogram","trapezoid","square","rhombus"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 1 pair of parallel sides? Ava checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"trapezoid","choices":["parallelogram","trapezoid","square","rhombus"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 1 pair of parallel sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0431",
@@ -11962,7 +11942,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["rhombus","trapezoid","rectangle","square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 4 equal sides and no right angles? Omar checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["rhombus","trapezoid","rectangle","square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 4 equal sides and no right angles?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0433",
@@ -11972,7 +11952,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"parallelogram","choices":["rhombus","parallelogram","square","rectangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Theo hunts for a shape with parallel sides in 2 pairs but no right angles, sides unequal. Which shape works?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"parallelogram","choices":["rhombus","parallelogram","square","rectangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Theo hunts for a shape with 2 pairs of parallel sides, no right angles, and sides that are not all equal. Which shape works?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0434",
@@ -11982,7 +11962,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"parallelogram","choices":["parallelogram","rhombus","square","rectangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has parallel sides in 2 pairs but no right angles, sides unequal? Ben checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"parallelogram","choices":["parallelogram","rhombus","square","rectangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 2 pairs of parallel sides, no right angles, and sides that are not all equal?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0435",
@@ -12002,7 +11982,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"heptagon","choices":["pentagon","heptagon","octagon","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 7 sides? Finn checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"heptagon","choices":["pentagon","heptagon","octagon","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 7 sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0437",
@@ -12022,7 +12002,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"hexagon","choices":["triangle","hexagon","pentagon","trapezoid"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 3 pairs of parallel sides? Priya checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"hexagon","choices":["triangle","hexagon","pentagon","trapezoid"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape can have 3 pairs of parallel sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0439",
@@ -12032,7 +12012,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["scalene triangle","right triangle","triangle","square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Rosa hunts for a shape with no equal sides and 3 corners. Which shape works?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["scalene triangle","right triangle","triangle with 3 equal sides","square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Rosa hunts for a shape with 3 corners, no equal sides, and no right angle. Which shape works?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0440",
@@ -12042,7 +12022,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["right triangle","square","scalene triangle","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has no equal sides and 3 corners? Sam checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["right triangle","square","scalene triangle","triangle with 3 equal sides"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Sam checks each option. Which shape has 3 corners, no equal sides, and no right angle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0441",
@@ -12062,7 +12042,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"heptagon","choices":["pentagon","heptagon","nonagon","square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has more sides than a hexagon but fewer than an octagon? Nia checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"heptagon","choices":["pentagon","heptagon","nonagon","square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has more sides than a hexagon but fewer than an octagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0443",
@@ -12082,7 +12062,7 @@ export const ITEMS = [
     structureType: "fitPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"trapezoid","choices":["trapezoid","rectangle","rhombus","parallelogram"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 4 sides with only one parallel pair? Kai checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"trapezoid","choices":["trapezoid","rectangle","rhombus","parallelogram"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 4 sides and only one pair of parallel sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0445",
@@ -12102,7 +12082,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"nonagon","choices":["nonagon","octagon","decagon","heptagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 9 sides? Ben checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"nonagon","choices":["nonagon","octagon","decagon","heptagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 9 sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0447",
@@ -12122,7 +12102,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"decagon","choices":["dodecagon","octagon","decagon","nonagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 10 vertices? Finn checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"decagon","choices":["dodecagon","octagon","decagon","nonagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 10 vertices?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0449",
@@ -12142,7 +12122,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"dodecagon","choices":["decagon","dodecagon","octagon","nonagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 12 sides? Priya checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"dodecagon","choices":["decagon","dodecagon","octagon","nonagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has exactly 12 sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0451",
@@ -12162,7 +12142,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"octagon","choices":["square","octagon","trapezoid","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has 4 pairs of parallel sides? Sam checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"octagon","choices":["square","octagon","trapezoid","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape can have 4 pairs of parallel sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0453",
@@ -12172,7 +12152,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["scalene triangle","triangle","square","right triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Diego hunts for a shape with zero lines of symmetry among the triangles. Which shape works?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["scalene triangle","equilateral triangle","square","right triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Diego hunts among the triangles for one with zero lines of symmetry and no right angle. Which shape works?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0454",
@@ -12182,7 +12162,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["scalene triangle","right triangle","square","triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has zero lines of symmetry among the triangles? Nia checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scalene triangle","choices":["scalene triangle","right triangle","square","isosceles triangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Nia checks each option. Which shape is a triangle with zero lines of symmetry and no right angle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0455",
@@ -12192,7 +12172,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["rhombus","rectangle","square","trapezoid"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Nora hunts for a shape with equal sides but angles that need not be right. Which shape works?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["rhombus","rectangle","square","trapezoid"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Nora hunts for a shape with 4 equal sides but no square corners. Which shape works?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0456",
@@ -12202,7 +12182,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["trapezoid","square","rhombus","rectangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has equal sides but angles that need not be right? Kai checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"rhombus","choices":["trapezoid","square","rhombus","rectangle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which quadrilateral has 4 equal sides but no right angles?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0457",
@@ -12222,7 +12202,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"dodecagon","choices":["octagon","hexagon","nonagon","dodecagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has more sides than a decagon? June checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"dodecagon","choices":["octagon","hexagon","nonagon","dodecagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has more sides than a decagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0459",
@@ -12242,7 +12222,7 @@ export const ITEMS = [
     structureType: "fitPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"octagon","choices":["pentagon","decagon","octagon","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has fewer sides than a nonagon but more than a heptagon? Lily checks each option."}},
+    question: {"a":null,"b":null,"op":"count","answer":"octagon","choices":["pentagon","decagon","octagon","hexagon"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which shape has fewer sides than a nonagon but more than a heptagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0461",
@@ -12252,7 +12232,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Mina argues: Every square has 4 sides. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Mina says every square has 4 sides. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0462",
@@ -12262,7 +12242,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Theo says: Every triangle has 3 sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo thinks every triangle has 3 sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0463",
@@ -12272,7 +12252,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida argues: Every rectangle has 3 sides. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida says every rectangle has 3 sides. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0464",
@@ -12282,7 +12262,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Zoe says: Every pentagon has 5 corners. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe thinks every pentagon has 5 corners. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0465",
@@ -12292,7 +12272,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Rosa argues: Every hexagon has 4 sides. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Rosa thinks every hexagon has 4 sides. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0466",
@@ -12302,7 +12282,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Diego says: Every square has equal sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego says every square has equal sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0467",
@@ -12312,7 +12292,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nora argues: Every triangle has a square corner. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nora says every triangle has a square corner. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0468",
@@ -12322,7 +12302,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Luca says: Every rectangle has 4 corners. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In math class, Luca says every rectangle has 4 corners. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0469",
@@ -12332,7 +12312,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava argues: Every pentagon has 6 sides. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava thinks every pentagon has 6 sides. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0470",
@@ -12342,7 +12322,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Omar says: Every hexagon has 6 corners. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In math class, Omar says every hexagon has 6 corners. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0471",
@@ -12352,7 +12332,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ben argues: Every square has 3 corners. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In math class, Ben says every square has 3 corners. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0472",
@@ -12362,7 +12342,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Finn says: Every triangle has 3 corners. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn says every triangle has 3 corners. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0473",
@@ -12372,7 +12352,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Priya argues: Every rectangle has equal sides all around. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In math class, Priya says every rectangle has equal sides all around. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0474",
@@ -12382,7 +12362,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Sam says: Every pentagon has 5 sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Sam thinks every pentagon has 5 sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0475",
@@ -12392,7 +12372,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia argues: Every hexagon has 6 sides. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In math class, Nia says every hexagon has 6 sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0476",
@@ -12402,7 +12382,7 @@ export const ITEMS = [
     structureType: "hierJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Kai says: Every square has 5 sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In math class, Kai says every square has 5 sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0477",
@@ -12422,7 +12402,7 @@ export const ITEMS = [
     structureType: "hierJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Ben says: Every rectangle is also a square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ben argues: Every rectangle is also a square. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0479",
@@ -12432,7 +12412,7 @@ export const ITEMS = [
     structureType: "hierJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn argues: Every rhombus has 4 equal sides. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Finn says: Every rhombus has 4 equal sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0480",
@@ -12462,7 +12442,7 @@ export const ITEMS = [
     structureType: "hierJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Nia says: Every rhombus is also a square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nia argues: Every rhombus is also a square. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0483",
@@ -12472,7 +12452,7 @@ export const ITEMS = [
     structureType: "hierJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai argues: Every square is also a rhombus. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Kai says: Every square is also a rhombus. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0484",
@@ -12502,7 +12482,7 @@ export const ITEMS = [
     structureType: "hierJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Amara says: Every triangle is a right triangle. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Amara argues: Every triangle is a right triangle. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0487",
@@ -12512,7 +12492,7 @@ export const ITEMS = [
     structureType: "hierJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo argues: Every rectangle is a parallelogram. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Leo says: Every rectangle is a parallelogram. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0488",
@@ -12542,7 +12522,7 @@ export const ITEMS = [
     structureType: "hierJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Ida says: Every heptagon has 6 sides. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida argues: Every heptagon has 6 sides. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0491",
@@ -12552,7 +12532,7 @@ export const ITEMS = [
     structureType: "hierJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe argues: Every scalene triangle has unequal sides. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Zoe says: Every scalene triangle has unequal sides. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0492",
@@ -12572,7 +12552,7 @@ export const ITEMS = [
     structureType: "hierJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn argues: Every square is a rhombus AND a rectangle. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Finn says: Every square is both a rhombus and a rectangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0494",
@@ -12722,7 +12702,7 @@ export const ITEMS = [
     structureType: "hierJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In the shape debate, Nora says: Every right triangle has 2 right angles. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nora argues: Every right triangle has 2 right angles. Is Nora right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0509",
@@ -13212,7 +13192,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia wonders if one shape can be a square AND a four-sided shape at the same time. Nia says yes. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia says one shape can be both a square and a four-sided shape. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0558",
@@ -13222,7 +13202,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a triangle and a four-sided shape? Kai answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai says one shape can be both a triangle and a four-sided shape. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0559",
@@ -13232,7 +13212,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June wonders if one shape can be a rectangle AND a four-sided shape at the same time. June says yes. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June thinks a shape can be a rectangle and a four-sided shape at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0560",
@@ -13242,7 +13222,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a pentagon and a triangle? Lily answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily thinks a shape can be a pentagon and a triangle at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0561",
@@ -13252,7 +13232,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara wonders if one shape can be a square AND a rectangle at the same time. Amara says yes. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Amara right that one shape can be both a square and a rectangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0562",
@@ -13262,7 +13242,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a hexagon and a pentagon? Leo answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Leo says one shape can be both a hexagon and a pentagon. Is Leo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0563",
@@ -13272,7 +13252,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Mina wonders if one shape can be a triangle AND a three-sided shape at the same time. Mina says yes. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Mina thinks a shape can be a triangle and a three-sided shape at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0564",
@@ -13282,7 +13262,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a square and a triangle? Theo answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Is Theo right that one shape can be both a square and a triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0565",
@@ -13292,7 +13272,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ida wonders if one shape can be a rectangle AND a square at the same time. Ida says yes. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ida says one shape can be both a rectangle and a square. Is Ida right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0566",
@@ -13302,7 +13282,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a pentagon and a five-sided shape? Zoe answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe thinks a shape can be a pentagon and a five-sided shape at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0567",
@@ -13312,7 +13292,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa wonders if one shape can be a hexagon AND a six-sided shape at the same time. Rosa says yes. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Rosa right that one shape can be both a hexagon and a six-sided shape?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0568",
@@ -13322,7 +13302,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a triangle and a six-sided shape? Diego answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Diego thinks a shape can be a triangle and a six-sided shape at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0569",
@@ -13332,7 +13312,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nora wonders if one shape can be a square AND a five-sided shape at the same time. Nora says yes. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Is Nora right that one shape can be both a square and a five-sided shape?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0570",
@@ -13342,7 +13322,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a rectangle and a three-sided shape? Luca answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Luca says one shape can be both a rectangle and a three-sided shape. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0571",
@@ -13352,7 +13332,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava wonders if one shape can be a pentagon AND a four-sided shape at the same time. Ava says yes. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava thinks a shape can be a pentagon and a four-sided shape at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0572",
@@ -13362,7 +13342,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a hexagon and a four-sided shape? Omar answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Is Omar right that one shape can be both a hexagon and a four-sided shape?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0573",
@@ -13372,7 +13352,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben wonders if one shape can be a square AND a shape with equal sides at the same time. Ben says yes. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben says one shape can be both a square and a shape with equal sides. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0574",
@@ -13382,7 +13362,7 @@ export const ITEMS = [
     structureType: "bothNames_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a rectangle and a shape with right angles? Finn answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Finn right that one shape can be both a rectangle and a shape with right angles?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0575",
@@ -13392,7 +13372,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe wonders if one shape can be a square AND a rhombus at the same time. Zoe says yes. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Zoe says one shape can be both a square and a rhombus. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0576",
@@ -13402,7 +13382,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a rectangle and a rhombus? Rosa answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Rosa right that one shape can be both a rectangle and a rhombus?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0577",
@@ -13412,7 +13392,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego wonders if one shape can be a square AND a rectangle at the same time. Diego says yes. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego thinks a shape can be a square and a rectangle at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0578",
@@ -13422,7 +13402,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a trapezoid and a parallelogram? Nora answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nora says a trapezoid with exactly 1 pair of parallel sides can also be a parallelogram. Is Nora right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0579",
@@ -13432,7 +13412,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca wonders if one shape can be a rhombus AND a parallelogram at the same time. Luca says yes. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Luca right that one shape can be both a rhombus and a parallelogram?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0580",
@@ -13442,7 +13422,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a rectangle and a parallelogram? Ava answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ava says one shape can be both a rectangle and a parallelogram. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0581",
@@ -13452,7 +13432,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Omar wonders if one shape can be a trapezoid AND a rectangle at the same time. Omar says yes. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Omar thinks a trapezoid with exactly 1 pair of parallel sides is also a rectangle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0582",
@@ -13462,7 +13442,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a square and a parallelogram? Ben answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben thinks a shape can be a square and a parallelogram at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0583",
@@ -13472,7 +13452,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Finn wonders if one shape can be a rhombus AND a trapezoid at the same time. Finn says yes. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Is Finn right that a trapezoid with exactly 1 pair of parallel sides can also be called a rhombus?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0584",
@@ -13482,7 +13462,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a parallelogram and a quadrilateral? Priya answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Priya right that one shape can be both a parallelogram and a quadrilateral?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0585",
@@ -13492,7 +13472,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Sam wonders if one shape can be a trapezoid AND a quadrilateral at the same time. Sam says yes. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Sam thinks a shape can be a trapezoid and a quadrilateral at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0586",
@@ -13502,7 +13482,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a hexagon and a quadrilateral? Nia answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nia says one shape can be both a hexagon and a quadrilateral. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0587",
@@ -13512,7 +13492,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai wonders if one shape can be a right triangle AND a triangle at the same time. Kai says yes. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai says one shape can be both a right triangle and a triangle. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0588",
@@ -13522,7 +13502,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a scalene triangle and a quadrilateral? June answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"June thinks a shape can be a scalene triangle and a quadrilateral at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0589",
@@ -13532,7 +13512,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Lily wonders if one shape can be a square AND a quadrilateral at the same time. Lily says yes. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Lily thinks a shape can be a square and a quadrilateral at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0590",
@@ -13542,7 +13522,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a heptagon and a hexagon? Amara answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Is Amara right that one shape can be both a heptagon and a hexagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0591",
@@ -13552,7 +13532,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo wonders if one shape can be a rectangle AND a quadrilateral at the same time. Leo says yes. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Leo right that one shape can be both a rectangle and a quadrilateral?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0592",
@@ -13562,7 +13542,7 @@ export const ITEMS = [
     structureType: "bothNames_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a rhombus and a quadrilateral? Mina answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Mina says one shape can be both a rhombus and a quadrilateral. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0593",
@@ -13572,7 +13552,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego wonders if one shape can be a square AND a regular polygon at the same time. Diego says yes. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Diego says one shape can be both a square and a regular polygon. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0594",
@@ -13582,7 +13562,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a rectangle and a regular polygon? Nora answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Nora right that one shape can be both a rectangle and a regular polygon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0595",
@@ -13592,7 +13572,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca wonders if one shape can be a equilateral triangle AND a regular polygon at the same time. Luca says yes. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Luca thinks a shape can be an equilateral triangle and a regular polygon at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0596",
@@ -13602,7 +13582,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a scalene triangle and a regular polygon? Ava answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Is Ava right that one shape can be both a scalene triangle and a regular polygon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0597",
@@ -13612,7 +13592,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar wonders if one shape can be a square AND a rhombus with right angles at the same time. Omar says yes. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Omar says one shape can be both a square and a rhombus with right angles. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0598",
@@ -13622,7 +13602,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a parallelogram and a trapezoid? Ben answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"In Ben's class, a trapezoid has exactly 1 pair of parallel sides. Ben says one shape can be both a parallelogram and a trapezoid. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0599",
@@ -13632,7 +13612,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn wonders if one shape can be a rhombus AND a parallelogram with equal sides at the same time. Finn says yes. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Finn thinks a shape can be a rhombus and a parallelogram with equal sides at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0600",
@@ -13642,7 +13622,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a dodecagon and a decagon? Priya answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Is Priya right that one shape can be both a dodecagon and a decagon?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0601",
@@ -13652,7 +13632,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Sam wonders if one shape can be a square AND a parallelogram at the same time. Sam says yes. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Sam right that one shape can be both a square and a parallelogram?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0602",
@@ -13662,7 +13642,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a kite shape and a parallelogram? Nia answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Nia thinks a kite shape with no parallel sides is also a parallelogram. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0603",
@@ -13672,7 +13652,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai wonders if one shape can be a octagon AND a polygon at the same time. Kai says yes. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Kai says one shape can be both an octagon and a polygon. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0604",
@@ -13682,7 +13662,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a decagon and a polygon? June answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June thinks a shape can be a decagon and a polygon at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0605",
@@ -13692,7 +13672,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily wonders if one shape can be a nonagon AND a quadrilateral at the same time. Lily says yes. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily says one shape can be both a nonagon and a quadrilateral. Is Lily right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0606",
@@ -13702,7 +13682,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a right triangle and a polygon? Amara answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara says one shape can be both a right triangle and a polygon. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0607",
@@ -13712,7 +13692,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo wonders if one shape can be a scalene triangle AND a triangle at the same time. Leo says yes. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Is Leo right that one shape can be both a scalene triangle and a triangle?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0608",
@@ -13722,7 +13702,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a dodecagon and a polygon with 12 sides? Mina answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Mina thinks a shape can be a dodecagon and a polygon with 12 sides at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0609",
@@ -13732,7 +13712,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Theo wonders if one shape can be a decagon AND a polygon with 12 sides at the same time. Theo says yes. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Is Theo right that one shape can be both a decagon and a polygon with 12 sides?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0610",
@@ -13742,7 +13722,7 @@ export const ITEMS = [
     structureType: "bothNames_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Can a single shape be both a hexagon and a polygon with an odd side count? Ida answers yes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida thinks a shape can be a hexagon and a polygon with an odd number of sides at the same time. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0611",
@@ -13752,7 +13732,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo explains: A straight path does not bend. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo says a straight path does not bend. Is Theo right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0612",
@@ -13762,7 +13742,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ida writes in the math journal: A curved path bends. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ida thinks a curved path bends. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0613",
@@ -13772,7 +13752,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Zoe explains: A circle is made of straight parts. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Zoe says a circle is made of straight parts. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0614",
@@ -13782,7 +13762,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa writes in the math journal: A square's sides are straight. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa writes that a square's sides are straight. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0615",
@@ -13792,7 +13772,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Diego explains: A zigzag has curves. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Diego thinks a zigzag has curves. Is Diego right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0616",
@@ -13802,7 +13782,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nora writes in the math journal: A stretched string makes a straight path. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nora says a stretched string makes a straight path. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0617",
@@ -13812,7 +13792,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Luca explains: The letter S is made of straight parts. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Luca writes that the letter S is made of straight parts. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0618",
@@ -13822,7 +13802,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ava writes in the math journal: The letter T is made of straight parts. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ava thinks the letter T is made of straight parts. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0619",
@@ -13832,7 +13812,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Omar explains: A wheel's rim is straight. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Omar says a wheel's rim is straight. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0620",
@@ -13842,7 +13822,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben writes in the math journal: A book's edge is straight. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben writes that a book's edge is straight. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0621",
@@ -13852,7 +13832,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Finn explains: A wavy river is straight. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Finn thinks a wavy river is straight. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0622",
@@ -13862,7 +13842,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Priya writes in the math journal: A ruler draws straight paths. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Priya says a ruler draws straight paths. Is Priya right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0623",
@@ -13872,7 +13852,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Sam explains: The letter O has corners. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Sam writes that the letter O has corners. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0624",
@@ -13882,7 +13862,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia writes in the math journal: A triangle path has 3 corners. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia thinks a triangle path has 3 corners. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0625",
@@ -13892,7 +13872,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai explains: A curved path can make a perfect square. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai says a curved path can make a perfect square. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0626",
@@ -13902,7 +13882,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June writes in the math journal: A straight road never bends. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June says a straight road never bends. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0627",
@@ -13912,7 +13892,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily explains: The letter U is all straight parts. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily thinks the letter U is all straight parts. Is Lily right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0628",
@@ -13922,7 +13902,7 @@ export const ITEMS = [
     structureType: "defJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara writes in the math journal: A fence rail is a straight part. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara writes that a fence rail is a straight part. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0629",
@@ -13932,7 +13912,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben explains: A line goes on forever in both directions. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Ben says a line goes on forever in both directions. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0630",
@@ -13942,7 +13922,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Finn writes in the math journal: A ray has two endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Finn writes that a ray has two endpoints. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0631",
@@ -13952,7 +13932,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Priya explains: A line segment has two endpoints. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Priya thinks a line segment has two endpoints. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0632",
@@ -13962,7 +13942,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Sam writes in the math journal: A point takes up space like a circle. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Sam says a point takes up space like a circle. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0633",
@@ -13972,7 +13952,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia explains: A ray starts at a point and goes on forever. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Nia writes that a ray starts at a point and goes on forever. Is Nia right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0634",
@@ -13982,7 +13962,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai writes in the math journal: A line segment goes on forever. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Kai thinks a line segment goes on forever. Is Kai right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0635",
@@ -13992,7 +13972,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June explains: A point marks one exact location. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"June says a point marks one exact location. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0636",
@@ -14002,7 +13982,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily writes in the math journal: A line has exactly one endpoint. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Lily writes that a line has exactly one endpoint. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0637",
@@ -14012,7 +13992,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara explains: A ray has exactly one endpoint. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Amara thinks a ray has exactly one endpoint. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0638",
@@ -14022,7 +14002,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo writes in the math journal: A line segment is part of a line. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Leo writes that a line segment is part of a line. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0639",
@@ -14032,7 +14012,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Mina explains: A line is shorter than a line segment. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Mina says a line is shorter than a line segment. Is Mina right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0640",
@@ -14042,7 +14022,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo writes in the math journal: Two points can be joined by exactly one straight segment. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Theo says two points can be joined by exactly one straight segment. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0641",
@@ -14052,7 +14032,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida explains: A ray goes on forever in both directions. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ida thinks a ray goes on forever in both directions. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0642",
@@ -14062,7 +14042,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Zoe writes in the math journal: A line can be measured with a ruler end to end. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Zoe writes that a line can be measured with a ruler end to end. Is Zoe right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0643",
@@ -14072,7 +14052,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa explains: A segment can be measured with a ruler. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Rosa thinks a segment can be measured with a ruler. Is Rosa right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0644",
@@ -14082,7 +14062,7 @@ export const ITEMS = [
     structureType: "defJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Diego writes in the math journal: A point has a length of 5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Diego says a point has a length of 5. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0645",
@@ -14252,7 +14232,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a corner","a curved path","a circle","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Ava spots a taut kite string. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a corner","a curved path","a circle","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Ava sees a tight kite string. What is the kite string most like?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0662",
@@ -14262,7 +14242,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a curved path","a circle","a corner","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a taut kite string? Finn decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a curved path","a circle","a corner","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which of these is most like a tight kite string?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0663",
@@ -14272,7 +14252,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a curved path","a square","a corner","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Omar spots a curled garden hose. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a curved path","a square","a corner","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Omar sees a curled garden hose. What is the hose most like?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0664",
@@ -14282,7 +14262,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a straight path","a curved path","a square","a corner"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a curled garden hose? Priya decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a straight path","a curved path","a square","a corner"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which of these is most like a curled garden hose?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0665",
@@ -14292,7 +14272,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a wave","a circle","a straight path","a curved path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Ben spots the edge of a table. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a wave","a circle","a straight path","a curved path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Ben sees the edge of a table. What is the table edge most like?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0666",
@@ -14302,7 +14282,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a wave","a curved path","a straight path","a circle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches the edge of a table? Sam decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a wave","a curved path","a straight path","a circle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which of these is most like the edge of a table?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0667",
@@ -14312,7 +14292,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a triangle","a straight path","a corner","a curved path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Finn spots a slithering snake's trail. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a triangle","a straight path","a corner","a curved path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Finn sees a slithering snake's trail. What is the snake's trail most like?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0668",
@@ -14322,7 +14302,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a corner","a curved path","a triangle","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a slithering snake's trail? Nia decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a corner","a curved path","a triangle","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which of these is most like a slithering snake's trail?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0669",
@@ -14332,7 +14312,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a corner","choices":["a curve","a wave","a corner","a circle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Priya spots a folded book corner. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a corner","choices":["a curve","a wave","a corner","a circle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Priya sees the pointy tip of a folded page. What is the folded tip most like?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0670",
@@ -14342,7 +14322,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a corner","choices":["a circle","a corner","a wave","a curve"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a folded book corner? Kai decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a corner","choices":["a circle","a corner","a wave","a curve"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which of these is most like the pointy tip of a folded page?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0671",
@@ -14352,7 +14332,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a curved path","a corner","a straight path","a square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Sam spots the top of a rainbow. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a curved path","a corner","a straight path","a square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Sam sees the top of a rainbow. What is the top of the rainbow most like?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0672",
@@ -14362,7 +14342,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a curved path","a corner","a straight path","a square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches the top of a rainbow? June decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a curved path","a corner","a straight path","a square"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which of these is most like the top of a rainbow?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0673",
@@ -14372,7 +14352,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a curved path","a circle","a spiral","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Nia spots a crosswalk stripe. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a curved path","a circle","a spiral","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Nia sees a crosswalk stripe. What is the stripe most like?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0674",
@@ -14382,7 +14362,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a spiral","a straight path","a circle","a curved path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a crosswalk stripe? Lily decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a straight path","choices":["a spiral","a straight path","a circle","a curved path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which of these is most like a crosswalk stripe?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0675",
@@ -14392,7 +14372,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a straight path","a curved path","a triangle","a corner"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Kai spots a spring coil. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a straight path","a curved path","a triangle","a corner"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Kai sees a spring coil. What is the coil most like?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0676",
@@ -14402,7 +14382,7 @@ export const ITEMS = [
     structureType: "modelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a triangle","a curved path","a corner","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a spring coil? Amara decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a curved path","choices":["a triangle","a curved path","a corner","a straight path"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which of these is most like a spring coil?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0677",
@@ -14422,7 +14402,7 @@ export const ITEMS = [
     structureType: "modelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a point","a ray","a line segment","a circle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a laser beam shooting into space from a pointer? Mina decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a point","a ray","a line segment","a circle"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a laser beam shooting into space from a pointer?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0679",
@@ -14442,7 +14422,7 @@ export const ITEMS = [
     structureType: "modelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a point","a ray","a line segment","a line"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a piece of dry spaghetti? Theo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a point","a ray","a line segment","a line"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is the best match for a piece of dry spaghetti?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0681",
@@ -14462,7 +14442,7 @@ export const ITEMS = [
     structureType: "modelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a point","choices":["a segment","a line","a ray","a point"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a dot made by a sharp pencil? Ida decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a point","choices":["a segment","a line","a ray","a point"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a dot made by a sharp pencil?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0683",
@@ -14482,7 +14462,7 @@ export const ITEMS = [
     structureType: "modelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line","choices":["a point","a line","a ray","a segment"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a road stretching beyond sight both ways? Zoe decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line","choices":["a point","a line","a ray","a segment"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is the best match for a road stretching beyond sight both ways?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0685",
@@ -14502,7 +14482,7 @@ export const ITEMS = [
     structureType: "modelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a line","a segment","a point","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a flashlight beam from the bulb outward? Rosa decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a line","a segment","a point","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a flashlight beam from the bulb outward?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0687",
@@ -14522,7 +14502,7 @@ export const ITEMS = [
     structureType: "modelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a ray","a point","a line segment","a line"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches one side of a picture frame? Diego decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a ray","a point","a line segment","a line"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is the best match for one side of a picture frame?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0689",
@@ -14542,7 +14522,7 @@ export const ITEMS = [
     structureType: "modelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a point","choices":["a segment","a line","a ray","a point"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a star in the night sky? Nora decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a point","choices":["a segment","a line","a ray","a point"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a star in the night sky?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0693",
@@ -14562,7 +14542,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["perpendicular lines","parallel lines","points","intersecting rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches train tracks running side by side? Ida decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["perpendicular lines","parallel lines","points","intersecting rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is the best match for train tracks running side by side?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0695",
@@ -14572,7 +14552,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["parallel lines","curves","rays","perpendicular lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Mina spots a window's corner where two edges meet squarely. Which math figure does it model best?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["parallel lines","curves","points","perpendicular lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Mina looks at two edges of a window that meet at a square corner. Which math figure do they model best?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0696",
@@ -14582,7 +14562,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["curves","perpendicular lines","rays","parallel lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a window's corner where two edges meet squarely? Zoe decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["curves","perpendicular lines","points","parallel lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches two window edges that meet at a square corner?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0697",
@@ -14602,7 +14582,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"intersecting lines","choices":["points","intersecting lines","parallel lines","circles"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches two crossing hiking trails? Rosa decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"intersecting lines","choices":["points","intersecting lines","parallel lines","circles"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is the best match for two crossing hiking trails?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0699",
@@ -14622,7 +14602,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["parallel lines","spirals","perpendicular lines","rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches the rails of a straight ladder? Diego decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["parallel lines","spirals","perpendicular lines","rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches the rails of a straight ladder?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0701",
@@ -14642,7 +14622,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["points","curved lines","parallel lines","perpendicular lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a capital letter T's two strokes? Nora decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["points","curved lines","parallel lines","perpendicular lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is the best match for the two strokes of a capital letter T?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0703",
@@ -14662,7 +14642,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"intersecting lines","choices":["parallel lines","rays","intersecting lines","circles"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches an open pair of scissors? Luca decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"intersecting lines","choices":["parallel lines","rays","intersecting lines","circles"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches two long, straight roads that cross each other?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0705",
@@ -14682,7 +14662,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["curves","parallel lines","perpendicular lines","points"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches the top and bottom edges of a door? Ava decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["curves","parallel lines","perpendicular lines","points"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is the best match for the top and bottom edges of a door?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0707",
@@ -14702,7 +14682,7 @@ export const ITEMS = [
     structureType: "modelPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["perpendicular lines","spirals","parallel rays","curved lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches a tic-tac-toe grid's crossings? Omar decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["perpendicular lines","spirals","parallel rays","curved lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure best matches the crossings in a tic-tac-toe grid?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0709",
@@ -14712,7 +14692,7 @@ export const ITEMS = [
     structureType: "straightPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the letter L","choices":["the letter O","the letter L"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which one is made of only straight parts: the letter L or the letter O? Lily decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the letter L","choices":["the letter O","the letter L"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which letter is made of only straight parts, the letter L or the letter O?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0710",
@@ -14732,7 +14712,7 @@ export const ITEMS = [
     structureType: "straightPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the letter E","choices":["the letter E","the letter S"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which one is made of only straight parts: the letter E or the letter S? Leo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the letter E","choices":["the letter E","the letter S"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which letter uses only straight lines, the letter E or the letter S?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0712",
@@ -14752,7 +14732,7 @@ export const ITEMS = [
     structureType: "straightPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the letter H","choices":["the letter G","the letter H"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which one is made of only straight parts: the letter H or the letter G? Theo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the letter H","choices":["the letter G","the letter H"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which letter is made of only straight parts, the letter H or the letter G?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0714",
@@ -14772,7 +14752,7 @@ export const ITEMS = [
     structureType: "straightPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the letter W","choices":["the letter W","the letter B"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which one is made of only straight parts: the letter W or the letter B? Zoe decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the letter W","choices":["the letter W","the letter B"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which letter uses only straight lines, the letter W or the letter B?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0716",
@@ -14792,7 +14772,7 @@ export const ITEMS = [
     structureType: "straightPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the letter V","choices":["the letter V","the letter P"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which one is made of only straight parts: the letter V or the letter P? Diego decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the letter V","choices":["the letter V","the letter P"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which letter is made of only straight parts, the letter V or the letter P?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0718",
@@ -14812,7 +14792,7 @@ export const ITEMS = [
     structureType: "straightPickTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"the letter F","choices":["the letter J","the letter F"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which one is made of only straight parts: the letter F or the letter J? Luca decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"the letter F","choices":["the letter J","the letter F"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which letter uses only straight lines, the letter F or the letter J?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0720",
@@ -15022,7 +15002,7 @@ export const ITEMS = [
     structureType: "endJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line segment"},"promptText":"Lily says a line segment has 2 endpoints. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line segment"},"promptText":"Lily labels a line segment with 2 endpoints. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0741",
@@ -15032,7 +15012,7 @@ export const ITEMS = [
     structureType: "endJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":3,"figure":"line segment"},"promptText":"Amara labels a line segment with 3 endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":3,"figure":"line segment"},"promptText":"Amara says a line segment has 3 endpoints. Is Amara right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0742",
@@ -15082,7 +15062,7 @@ export const ITEMS = [
     structureType: "endJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"line"},"promptText":"On the homework, Nora marks a line as having 0 endpoints. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"line"},"promptText":"Nora says a line has 0 endpoints. Is Nora right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0747",
@@ -15092,7 +15072,7 @@ export const ITEMS = [
     structureType: "endJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line"},"promptText":"Luca writes that every line has 2 endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line"},"promptText":"On the homework, Luca marks a line as having 2 endpoints. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0748",
@@ -15102,7 +15082,7 @@ export const ITEMS = [
     structureType: "endJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line segment"},"promptText":"On the homework, Ava marks a line segment as having 2 endpoints. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line segment"},"promptText":"Ava writes that every line segment has 2 endpoints. Is Ava right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0749",
@@ -15112,7 +15092,7 @@ export const ITEMS = [
     structureType: "endJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"ray"},"promptText":"Omar writes that every ray has 0 endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"ray"},"promptText":"Omar says a ray has 0 endpoints. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0750",
@@ -15132,7 +15112,7 @@ export const ITEMS = [
     structureType: "endJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":1,"figure":"line segment"},"promptText":"Finn writes that every line segment has 1 endpoint. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":1,"figure":"line segment"},"promptText":"Finn writes that every line segment has 1 endpoint. Is Finn right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0752",
@@ -15142,7 +15122,7 @@ export const ITEMS = [
     structureType: "endJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":1,"figure":"ray"},"promptText":"On the homework, Priya marks a ray as having 1 endpoint. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":1,"figure":"ray"},"promptText":"On the homework, Priya marks a ray as having 1 endpoint. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0753",
@@ -15162,7 +15142,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":1,"figure":"ray"},"promptText":"In the geometry quiz, Nora answers that a ray has 1 endpoint. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":1,"figure":"ray"},"promptText":"On the geometry quiz, Nora answers that a ray has 1 endpoint. Is Nora right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0755",
@@ -15172,7 +15152,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"line"},"promptText":"Luca defends the claim that a line carries 0 endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"line"},"promptText":"Luca tells the class that a line has 0 endpoints. Is Luca right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0756",
@@ -15182,7 +15162,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line segment"},"promptText":"In the geometry quiz, Ava answers that a line segment has 2 endpoints. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line segment"},"promptText":"On the geometry quiz, Ava answers that a line segment has 2 endpoints. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0757",
@@ -15192,7 +15172,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"ray"},"promptText":"Omar defends the claim that a ray carries 2 endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"ray"},"promptText":"Omar tells the class that a ray has 2 endpoints. Is Omar right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0758",
@@ -15202,7 +15182,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line"},"promptText":"In the geometry quiz, Ben answers that a line has 2 endpoints. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line"},"promptText":"On the geometry quiz, Ben answers that a line has 2 endpoints. Is Ben right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0759",
@@ -15212,7 +15192,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"line segment"},"promptText":"Finn defends the claim that a line segment carries 0 endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"line segment"},"promptText":"Finn says every line segment has 0 endpoints. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0760",
@@ -15222,7 +15202,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":1,"figure":"ray"},"promptText":"In the geometry quiz, Priya answers that a ray has 1 endpoint. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":1,"figure":"ray"},"promptText":"Priya tells the class that a ray has 1 endpoint. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0761",
@@ -15232,7 +15212,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"line"},"promptText":"Sam defends the claim that a line carries 0 endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"line"},"promptText":"Sam says every line has 0 endpoints. Is Sam right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0762",
@@ -15242,7 +15222,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line segment"},"promptText":"In the geometry quiz, Nia answers that a line segment has 2 endpoints. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"endpointsSaid","said":2,"figure":"line segment"},"promptText":"Nia says every line segment has 2 endpoints. Is that right?"}},
   },
   {
     itemId: "linesShapes-conc-b0821-0763",
@@ -15252,7 +15232,7 @@ export const ITEMS = [
     structureType: "endJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"ray"},"promptText":"Kai defends the claim that a ray carries 0 endpoints. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"endpointsSaid","said":0,"figure":"ray"},"promptText":"On the geometry quiz, Kai answers that a ray has 0 endpoints. Is that right?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0001",
@@ -15282,7 +15262,7 @@ export const ITEMS = [
     structureType: "namedSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"triangle"},"promptText":"A triangle has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"triangle"},"promptText":"A triangle has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0004",
@@ -15292,7 +15272,7 @@ export const ITEMS = [
     structureType: "namedVertices_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"verticesByName","name":"triangle"},"promptText":"A triangle has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"verticesByName","name":"triangle"},"promptText":"How many corners does a triangle have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0005",
@@ -15322,7 +15302,7 @@ export const ITEMS = [
     structureType: "namedSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"square"},"promptText":"A square has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"square"},"promptText":"A square has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0008",
@@ -15332,7 +15312,7 @@ export const ITEMS = [
     structureType: "namedVertices_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"square"},"promptText":"A square has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"square"},"promptText":"How many corners does a square have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0009",
@@ -15362,7 +15342,7 @@ export const ITEMS = [
     structureType: "namedSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rectangle"},"promptText":"A rectangle has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rectangle"},"promptText":"A rectangle has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0012",
@@ -15372,7 +15352,7 @@ export const ITEMS = [
     structureType: "namedVertices_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rectangle"},"promptText":"A rectangle has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rectangle"},"promptText":"How many corners does a rectangle have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0013",
@@ -15402,7 +15382,7 @@ export const ITEMS = [
     structureType: "namedSides_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"A pentagon has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"A pentagon has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0016",
@@ -15412,7 +15392,7 @@ export const ITEMS = [
     structureType: "namedVertices_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"verticesByName","name":"pentagon"},"promptText":"A pentagon has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"verticesByName","name":"pentagon"},"promptText":"How many corners does a pentagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0017",
@@ -15442,7 +15422,7 @@ export const ITEMS = [
     structureType: "namedSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"right triangle"},"promptText":"A right triangle has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"right triangle"},"promptText":"A right triangle has how many sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0020",
@@ -15452,7 +15432,7 @@ export const ITEMS = [
     structureType: "namedVertices_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"verticesByName","name":"right triangle"},"promptText":"A right triangle has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"verticesByName","name":"right triangle"},"promptText":"A right triangle has how many vertices?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0021",
@@ -15482,7 +15462,7 @@ export const ITEMS = [
     structureType: "namedSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rhombus"},"promptText":"A rhombus has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"rhombus"},"promptText":"A rhombus has how many sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0024",
@@ -15492,7 +15472,7 @@ export const ITEMS = [
     structureType: "namedVertices_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"A rhombus has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"rhombus"},"promptText":"A rhombus has how many vertices?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0025",
@@ -15522,7 +15502,7 @@ export const ITEMS = [
     structureType: "namedSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"parallelogram"},"promptText":"A parallelogram has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"parallelogram"},"promptText":"A parallelogram has how many sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0028",
@@ -15532,7 +15512,7 @@ export const ITEMS = [
     structureType: "namedVertices_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"parallelogram"},"promptText":"A parallelogram has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"parallelogram"},"promptText":"A parallelogram has how many vertices?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0029",
@@ -15562,7 +15542,7 @@ export const ITEMS = [
     structureType: "namedSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"A trapezoid has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"sidesByName","name":"trapezoid"},"promptText":"A trapezoid has how many sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0032",
@@ -15572,7 +15552,7 @@ export const ITEMS = [
     structureType: "namedVertices_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"A trapezoid has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"verticesByName","name":"trapezoid"},"promptText":"A trapezoid has how many vertices?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0033",
@@ -15602,7 +15582,7 @@ export const ITEMS = [
     structureType: "namedSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"A hexagon has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"A hexagon has how many sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0036",
@@ -15612,7 +15592,7 @@ export const ITEMS = [
     structureType: "namedVertices_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"verticesByName","name":"hexagon"},"promptText":"A hexagon has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"verticesByName","name":"hexagon"},"promptText":"A hexagon has how many vertices?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0037",
@@ -15642,7 +15622,7 @@ export const ITEMS = [
     structureType: "namedSides_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"sidesByName","name":"heptagon"},"promptText":"A heptagon has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"sidesByName","name":"heptagon"},"promptText":"A heptagon has how many sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0040",
@@ -15652,7 +15632,7 @@ export const ITEMS = [
     structureType: "namedVertices_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"verticesByName","name":"heptagon"},"promptText":"A heptagon has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"verticesByName","name":"heptagon"},"promptText":"A heptagon has how many vertices?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0041",
@@ -15682,7 +15662,7 @@ export const ITEMS = [
     structureType: "namedSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"scalene triangle"},"promptText":"A scalene triangle has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"scalene triangle"},"promptText":"A scalene triangle has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0044",
@@ -15692,7 +15672,7 @@ export const ITEMS = [
     structureType: "namedVertices_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"verticesByName","name":"scalene triangle"},"promptText":"A scalene triangle has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"verticesByName","name":"scalene triangle"},"promptText":"A scalene triangle has __ vertices. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0045",
@@ -15702,7 +15682,7 @@ export const ITEMS = [
     structureType: "namedSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"How many sides does a octagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"How many sides does an octagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0046",
@@ -15712,7 +15692,7 @@ export const ITEMS = [
     structureType: "namedVertices_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"How many vertices does a octagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"How many vertices does an octagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0047",
@@ -15722,7 +15702,7 @@ export const ITEMS = [
     structureType: "namedSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"A octagon has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"sidesByName","name":"octagon"},"promptText":"An octagon has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0048",
@@ -15732,7 +15712,7 @@ export const ITEMS = [
     structureType: "namedVertices_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"A octagon has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"verticesByName","name":"octagon"},"promptText":"An octagon has __ vertices. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0049",
@@ -15762,7 +15742,7 @@ export const ITEMS = [
     structureType: "namedSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"A nonagon has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"sidesByName","name":"nonagon"},"promptText":"A nonagon has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0052",
@@ -15772,7 +15752,7 @@ export const ITEMS = [
     structureType: "namedVertices_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"A nonagon has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"verticesByName","name":"nonagon"},"promptText":"A nonagon has __ vertices. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0053",
@@ -15802,7 +15782,7 @@ export const ITEMS = [
     structureType: "namedSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"A decagon has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"sidesByName","name":"decagon"},"promptText":"A decagon has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0056",
@@ -15812,7 +15792,7 @@ export const ITEMS = [
     structureType: "namedVertices_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"A decagon has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"verticesByName","name":"decagon"},"promptText":"A decagon has __ vertices. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0057",
@@ -15842,7 +15822,7 @@ export const ITEMS = [
     structureType: "namedSides_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"A dodecagon has ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"sidesByName","name":"dodecagon"},"promptText":"A dodecagon has __ sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0060",
@@ -15852,7 +15832,7 @@ export const ITEMS = [
     structureType: "namedVertices_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"A dodecagon has ? vertices"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"verticesByName","name":"dodecagon"},"promptText":"A dodecagon has __ vertices. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0061",
@@ -16542,7 +16522,7 @@ export const ITEMS = [
     structureType: "sideSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[3,4]},"promptText":"A triangle and a square together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[3,4]},"promptText":"How many sides do a triangle and a square have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0130",
@@ -16562,7 +16542,7 @@ export const ITEMS = [
     structureType: "sideSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[3,5]},"promptText":"A triangle and a pentagon together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[3,5]},"promptText":"How many sides do a triangle and a pentagon have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0132",
@@ -16582,7 +16562,7 @@ export const ITEMS = [
     structureType: "sideSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[5,4]},"promptText":"A pentagon and a rectangle together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[5,4]},"promptText":"How many sides do a pentagon and a rectangle have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0134",
@@ -16602,7 +16582,7 @@ export const ITEMS = [
     structureType: "sideSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[3,3]},"promptText":"A triangle and a triangle together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[3,3]},"promptText":"How many sides do two triangles have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0136",
@@ -16622,7 +16602,7 @@ export const ITEMS = [
     structureType: "sideSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"A hexagon and a square together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"A hexagon and a square have how many sides in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0138",
@@ -16642,7 +16622,7 @@ export const ITEMS = [
     structureType: "sideSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[6,3]},"promptText":"A hexagon and a triangle together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[6,3]},"promptText":"A hexagon and a triangle have how many sides in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0140",
@@ -16662,7 +16642,7 @@ export const ITEMS = [
     structureType: "sideSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"A heptagon and a square together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[7,4]},"promptText":"A heptagon and a square have how many sides in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0142",
@@ -16682,7 +16662,7 @@ export const ITEMS = [
     structureType: "sideSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[7,5]},"promptText":"A heptagon and a pentagon together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[7,5]},"promptText":"A heptagon and a pentagon have how many sides in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0144",
@@ -16702,7 +16682,7 @@ export const ITEMS = [
     structureType: "sideSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[7,3]},"promptText":"A heptagon and a triangle together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[7,3]},"promptText":"A heptagon and a triangle have how many sides in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0146",
@@ -16722,7 +16702,7 @@ export const ITEMS = [
     structureType: "sideSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"An octagon and a hexagon together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"How many sides do an octagon and a hexagon have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0148",
@@ -16742,7 +16722,7 @@ export const ITEMS = [
     structureType: "sideSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[10,3]},"promptText":"A decagon and a triangle together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[10,3]},"promptText":"How many sides do a decagon and a triangle have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0150",
@@ -16762,7 +16742,7 @@ export const ITEMS = [
     structureType: "sideSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"A dodecagon and a pentagon together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"How many sides do a dodecagon and a pentagon have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0152",
@@ -16782,7 +16762,7 @@ export const ITEMS = [
     structureType: "sideSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[10,8]},"promptText":"A decagon and an octagon together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[10,8]},"promptText":"How many sides do a decagon and an octagon have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0154",
@@ -16802,7 +16782,7 @@ export const ITEMS = [
     structureType: "sideSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[9,10]},"promptText":"A nonagon and a decagon together have ? sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"counting":{"kind":"sum","parts":[9,10]},"promptText":"How many sides do a nonagon and a decagon have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0156",
@@ -16832,7 +16812,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"A square has ? lines of symmetry"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"symmetryByName","name":"square"},"promptText":"A square has __ lines of symmetry. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0159",
@@ -16842,7 +16822,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"How many lines of symmetry does a rectangle have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"How many lines of symmetry does a rectangle that is not a square have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0160",
@@ -16852,7 +16832,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"A rectangle has ? lines of symmetry"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"A rectangle that is not a square has __ lines of symmetry. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0161",
@@ -16862,7 +16842,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"How many lines of symmetry does a triangle have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"How many lines of symmetry does a triangle have if all its sides are the same length?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0162",
@@ -16872,7 +16852,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"A triangle has ? lines of symmetry"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"A triangle has all its sides the same length. How many lines of symmetry does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0163",
@@ -16882,7 +16862,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"How many lines of symmetry does a pentagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"How many lines of symmetry does a pentagon have if all its sides and corners are the same?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0164",
@@ -16892,7 +16872,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"A pentagon has ? lines of symmetry"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"A pentagon has all its sides and corners the same. How many lines of symmetry does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0165",
@@ -16902,7 +16882,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"How many lines of symmetry does a hexagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"How many lines of symmetry does a hexagon have if all its sides and corners are the same?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0166",
@@ -16912,7 +16892,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"A hexagon has ? lines of symmetry"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"A hexagon has all its sides and corners the same. How many lines of symmetry does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0167",
@@ -16922,7 +16902,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"How many lines of symmetry does a trapezoid have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"How many lines of symmetry does a trapezoid have if its 2 slanted sides are the same length?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0168",
@@ -16932,7 +16912,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"A trapezoid has ? lines of symmetry"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"A trapezoid has 2 slanted sides of the same length. How many lines of symmetry does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0169",
@@ -16942,7 +16922,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"How many lines of symmetry does a right triangle have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"How many lines of symmetry does a right triangle have if 2 of its sides are the same length?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0170",
@@ -16952,7 +16932,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"A right triangle has ? lines of symmetry"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"right triangle"},"promptText":"A right triangle has 2 sides of the same length. How many lines of symmetry does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0171",
@@ -16962,7 +16942,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"How many lines of symmetry does a heptagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"How many lines of symmetry does a heptagon have if all its sides and corners are the same?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0172",
@@ -16972,7 +16952,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"A heptagon has ? lines of symmetry"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"shapeC":{"kind":"symmetryByName","name":"heptagon"},"promptText":"A heptagon has all its sides and corners the same. How many lines of symmetry does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0173",
@@ -16982,7 +16962,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Exactly how many lines of symmetry does a octagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Exactly how many lines of symmetry does a regular octagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0174",
@@ -16992,7 +16972,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Count every line of symmetry of a octagon. How many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"shapeC":{"kind":"symmetryByName","name":"octagon"},"promptText":"Count every line of symmetry of a regular octagon. How many lines is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0175",
@@ -17002,7 +16982,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Exactly how many lines of symmetry does a nonagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Exactly how many lines of symmetry does a regular nonagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0176",
@@ -17012,7 +16992,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Count every line of symmetry of a nonagon. How many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"shapeC":{"kind":"symmetryByName","name":"nonagon"},"promptText":"Count every line of symmetry of a regular nonagon. How many lines is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0177",
@@ -17022,7 +17002,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"Exactly how many lines of symmetry does a decagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"Exactly how many lines of symmetry does a regular decagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0178",
@@ -17032,7 +17012,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"Count every line of symmetry of a decagon. How many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"shapeC":{"kind":"symmetryByName","name":"decagon"},"promptText":"Count every line of symmetry of a regular decagon. How many lines is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0179",
@@ -17042,7 +17022,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Exactly how many lines of symmetry does a dodecagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Exactly how many lines of symmetry does a regular dodecagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0180",
@@ -17052,7 +17032,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Count every line of symmetry of a dodecagon. How many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"shapeC":{"kind":"symmetryByName","name":"dodecagon"},"promptText":"Count every line of symmetry of a regular dodecagon. How many lines is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0181",
@@ -17082,7 +17062,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"parallelogram"},"promptText":"Exactly how many lines of symmetry does a parallelogram have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"parallelogram"},"promptText":"A slanted parallelogram has 2 long sides and 2 short sides. How many lines of symmetry does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0184",
@@ -17092,7 +17072,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"parallelogram"},"promptText":"Count every line of symmetry of a parallelogram. How many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"parallelogram"},"promptText":"Count every line of symmetry on a slanted parallelogram with 2 long sides and 2 short sides. How many lines is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0185",
@@ -17102,7 +17082,7 @@ export const ITEMS = [
     structureType: "namedSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Exactly how many lines of symmetry does a hexagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Exactly how many lines of symmetry does a regular hexagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0186",
@@ -17152,7 +17132,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Rosa folds a paper rectangle corner to corner. Will the halves line up exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Rosa's paper rectangle is longer than it is wide. She folds it along a line from one corner to the opposite corner. Will the halves line up exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0191",
@@ -17162,7 +17142,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a triangle from the top point to the middle of the bottom. Do the two halves match exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a triangle with 3 equal sides from the top point to the middle of the bottom. Do the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0192",
@@ -17192,7 +17172,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava folds a paper heart side to side. Will the halves line up exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Ava folds a paper heart so its top half lands on its bottom half. Will the halves line up exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0195",
@@ -17282,7 +17262,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Fold a heart corner to corner. Do the two halves match exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Fold a paper heart across its middle, so the top half folds down onto the bottom half. Do the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0204",
@@ -17302,7 +17282,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Fold a oval along an off-center line. Do the two halves match exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"shapeC":{"kind":"authored"},"promptText":"Fold an oval along an off-center line. Do the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0206",
@@ -17322,7 +17302,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a star side to side through two points. Do the two halves match exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a 6-pointed star along a line through two opposite points. Do the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0208",
@@ -17362,7 +17342,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a oval top to bottom through the short middle. Do the two halves match exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold an oval top to bottom through the short middle. Do the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0212",
@@ -17402,7 +17382,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a triangle from a bottom point to the middle of the far side. Do the two halves match exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a triangle with 3 equal sides from a bottom point to the middle of the far side. Do the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0216",
@@ -17442,7 +17422,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a star through two facing points. Do the two halves match exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a 6-pointed star through two points that face each other. Do the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0220",
@@ -17502,7 +17482,7 @@ export const ITEMS = [
     structureType: "foldMatchTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold a oval through the short middle. Do the two halves match exactly?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"shapeC":{"kind":"authored"},"promptText":"Fold an oval through the short middle. Do the two halves match exactly?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0226",
@@ -17532,7 +17512,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"Count the fold lines that split a rectangle into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"Count the fold lines that split a rectangle that is not a square into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0229",
@@ -17542,7 +17522,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"How many matching-half fold lines does a rectangle have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"symmetryByName","name":"rectangle"},"promptText":"How many matching-half fold lines does a rectangle that is not a square have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0230",
@@ -17552,7 +17532,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"Count the fold lines that split a triangle into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"Count the fold lines that split a triangle with all sides the same length into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0231",
@@ -17562,7 +17542,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"How many matching-half fold lines does a triangle have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"symmetryByName","name":"triangle"},"promptText":"Lily's paper triangle has all its sides the same length. How many fold lines split it into matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0232",
@@ -17572,7 +17552,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Count the fold lines that split a pentagon into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Count the fold lines that split a pentagon with all sides and corners the same into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0233",
@@ -17582,7 +17562,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"How many matching-half fold lines does a pentagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"symmetryByName","name":"pentagon"},"promptText":"Zoe's paper pentagon has all its sides and corners the same. How many fold lines split it into matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0234",
@@ -17592,7 +17572,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Count the fold lines that split a hexagon into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Count the fold lines that split a hexagon with all sides and corners the same into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0235",
@@ -17602,7 +17582,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"How many matching-half fold lines does a hexagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"symmetryByName","name":"hexagon"},"promptText":"Kai's paper hexagon has all its sides and corners the same. How many fold lines split it into matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0236",
@@ -17612,7 +17592,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"Count the fold lines that split a trapezoid into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"Count the fold lines that split a trapezoid with 2 slanted sides of the same length into matching halves. How many fold lines are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0237",
@@ -17622,7 +17602,7 @@ export const ITEMS = [
     structureType: "foldCountTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"How many matching-half fold lines does a trapezoid have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"symmetryByName","name":"trapezoid"},"promptText":"Mina's paper trapezoid has 2 slanted sides of the same length. How many fold lines split it into matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0238",
@@ -17632,7 +17612,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[4,2]},"promptText":"A square and a rectangle: how many lines of symmetry do they have in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[4,2]},"promptText":"How many lines of symmetry do a square and a rectangle that is not a square have in total?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0239",
@@ -17642,7 +17622,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[3,4]},"promptText":"Add the lines of symmetry of a triangle and a square. What is the total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[3,4]},"promptText":"Add the lines of symmetry of a triangle with 3 equal sides and a square. How many lines of symmetry is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0240",
@@ -17652,7 +17632,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[5,2]},"promptText":"A pentagon and a rectangle: how many lines of symmetry do they have in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[5,2]},"promptText":"Think of a pentagon with all its sides and corners the same, and a rectangle that is not a square. How many lines of symmetry do the two shapes have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0241",
@@ -17662,7 +17642,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[6,3]},"promptText":"Add the lines of symmetry of a hexagon and a triangle. What is the total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[6,3]},"promptText":"Add the lines of symmetry of a hexagon with all its sides and corners the same, and a triangle with 3 equal sides. How many lines of symmetry is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0242",
@@ -17672,7 +17652,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[4,1]},"promptText":"A square and a trapezoid: how many lines of symmetry do they have in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[4,1]},"promptText":"Think of a square and a trapezoid with 2 slanted sides of the same length. How many lines of symmetry do the two shapes have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0243",
@@ -17682,7 +17662,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[5,3]},"promptText":"Add the lines of symmetry of a pentagon and a triangle. What is the total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[5,3]},"promptText":"Add the lines of symmetry of a pentagon with all its sides and corners the same, and a triangle with 3 equal sides. How many lines of symmetry is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0244",
@@ -17692,7 +17672,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[6,2]},"promptText":"A hexagon and a rectangle: how many lines of symmetry do they have in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[6,2]},"promptText":"Think of a hexagon with all its sides and corners the same, and a rectangle that is not a square. How many lines of symmetry do the two shapes have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0245",
@@ -17702,7 +17682,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[4,5]},"promptText":"Add the lines of symmetry of a square and a pentagon. What is the total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"counting":{"kind":"sum","parts":[4,5]},"promptText":"Add the lines of symmetry of a square and a pentagon with all its sides and corners the same. How many lines of symmetry is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0246",
@@ -17712,7 +17692,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[3,1]},"promptText":"A triangle and a trapezoid: how many lines of symmetry do they have in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[3,1]},"promptText":"Think of a triangle with 3 equal sides and a trapezoid with 2 slanted sides of the same length. How many lines of symmetry do the two shapes have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0247",
@@ -17722,7 +17702,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Add the lines of symmetry of a hexagon and a square. What is the total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[6,4]},"promptText":"Add the lines of symmetry of a hexagon with all its sides and corners the same, and a square. How many lines of symmetry is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0248",
@@ -17732,7 +17712,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[2,1]},"promptText":"A rectangle and a trapezoid: how many lines of symmetry do they have in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"counting":{"kind":"sum","parts":[2,1]},"promptText":"Think of a rectangle that is not a square and a trapezoid with 2 slanted sides of the same length. How many lines of symmetry do the two shapes have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0249",
@@ -17742,7 +17722,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[5,6]},"promptText":"Add the lines of symmetry of a pentagon and a hexagon. What is the total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[5,6]},"promptText":"Add the lines of symmetry of a pentagon and a hexagon that both have all their sides and corners the same. How many lines of symmetry is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0250",
@@ -17752,7 +17732,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,4]},"promptText":"A right triangle and a square: how many lines of symmetry do they have in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,4]},"promptText":"Think of a right triangle with 2 equal sides and a square. How many lines of symmetry do the two shapes have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0251",
@@ -17762,7 +17742,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[7,3]},"promptText":"Add the lines of symmetry of a heptagon and a triangle. What is the total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[7,3]},"promptText":"Add the lines of symmetry of a heptagon with all its sides and corners the same, and a triangle with 3 equal sides. How many lines of symmetry is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0252",
@@ -17772,7 +17752,7 @@ export const ITEMS = [
     structureType: "symSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[1,6]},"promptText":"A right triangle and a hexagon: how many lines of symmetry do they have in total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"counting":{"kind":"sum","parts":[1,6]},"promptText":"Think of a right triangle with 2 equal sides and a hexagon with all its sides and corners the same. How many lines of symmetry do the two shapes have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0253",
@@ -17782,7 +17762,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[8,4]},"promptText":"Combine the symmetry lines of a octagon and a square. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[8,4]},"promptText":"Combine the lines of symmetry of a regular octagon and a square. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0254",
@@ -17792,7 +17772,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[9,3]},"promptText":"Tally every line of symmetry across a nonagon and a triangle. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[9,3]},"promptText":"Tally every line of symmetry on a regular nonagon and a triangle with 3 equal sides. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0255",
@@ -17802,7 +17782,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[10,2]},"promptText":"Combine the symmetry lines of a decagon and a rectangle. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[10,2]},"promptText":"Combine the lines of symmetry of a regular decagon and a rectangle that is not a square. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0256",
@@ -17812,7 +17792,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[12,4]},"promptText":"Tally every line of symmetry across a dodecagon and a square. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[12,4]},"promptText":"Tally every line of symmetry on a regular dodecagon and a square. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0257",
@@ -17822,7 +17802,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Combine the symmetry lines of a octagon and a pentagon. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[8,5]},"promptText":"Combine the lines of symmetry of a regular octagon and a regular pentagon. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0258",
@@ -17832,7 +17812,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[9,6]},"promptText":"Tally every line of symmetry across a nonagon and a hexagon. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[9,6]},"promptText":"Tally every line of symmetry on a regular nonagon and a regular hexagon. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0259",
@@ -17842,7 +17822,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[10,4]},"promptText":"Combine the symmetry lines of a decagon and a square. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[10,4]},"promptText":"Combine the lines of symmetry of a regular decagon and a square. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0260",
@@ -17852,7 +17832,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[12,3]},"promptText":"Tally every line of symmetry across a dodecagon and a triangle. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[12,3]},"promptText":"Tally every line of symmetry on a regular dodecagon and a triangle with 3 equal sides. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0261",
@@ -17862,7 +17842,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"Combine the symmetry lines of a octagon and a hexagon. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[8,6]},"promptText":"Combine the lines of symmetry of a regular octagon and a regular hexagon. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0262",
@@ -17872,7 +17852,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Tally every line of symmetry across a nonagon and a square. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[9,4]},"promptText":"Tally every line of symmetry on a regular nonagon and a square. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0263",
@@ -17882,7 +17862,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,5]},"promptText":"Combine the symmetry lines of a decagon and a pentagon. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"counting":{"kind":"sum","parts":[10,5]},"promptText":"Combine the lines of symmetry of a regular decagon and a regular pentagon. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0264",
@@ -17892,7 +17872,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[12,2]},"promptText":"Tally every line of symmetry across a dodecagon and a rectangle. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[12,2]},"promptText":"Tally every line of symmetry on a regular dodecagon and a rectangle that is not a square. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0265",
@@ -17902,7 +17882,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[8,3]},"promptText":"Combine the symmetry lines of a octagon and a triangle. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[8,3]},"promptText":"Combine the lines of symmetry of a regular octagon and a triangle with 3 equal sides. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0266",
@@ -17912,7 +17892,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[9,5]},"promptText":"Tally every line of symmetry across a nonagon and a pentagon. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"counting":{"kind":"sum","parts":[9,5]},"promptText":"Tally every line of symmetry on a regular nonagon and a regular pentagon. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0267",
@@ -17922,7 +17902,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[10,6]},"promptText":"Combine the symmetry lines of a decagon and a hexagon. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"counting":{"kind":"sum","parts":[10,6]},"promptText":"Combine the lines of symmetry of a regular decagon and a regular hexagon. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0268",
@@ -17932,7 +17912,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Tally every line of symmetry across a dodecagon and a pentagon. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"counting":{"kind":"sum","parts":[12,5]},"promptText":"Tally every line of symmetry on a regular dodecagon and a regular pentagon. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0269",
@@ -17942,7 +17922,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[8,2]},"promptText":"Combine the symmetry lines of a octagon and a rectangle. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[8,2]},"promptText":"Combine the lines of symmetry of a regular octagon and a rectangle that is not a square. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0270",
@@ -17952,7 +17932,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[9,2]},"promptText":"Tally every line of symmetry across a nonagon and a rectangle. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"counting":{"kind":"sum","parts":[9,2]},"promptText":"Tally every line of symmetry on a regular nonagon and a rectangle that is not a square. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0271",
@@ -17962,7 +17942,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[10,3]},"promptText":"Combine the symmetry lines of a decagon and a triangle. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"counting":{"kind":"sum","parts":[10,3]},"promptText":"Combine the lines of symmetry of a regular decagon and a triangle with 3 equal sides. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0272",
@@ -17972,7 +17952,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Tally every line of symmetry across a dodecagon and a hexagon. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"counting":{"kind":"sum","parts":[12,6]},"promptText":"Tally every line of symmetry on a regular dodecagon and a regular hexagon. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0273",
@@ -17992,7 +17972,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[0,8]},"promptText":"Tally every line of symmetry across a parallelogram and a octagon. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[0,8]},"promptText":"Tally every line of symmetry on a regular octagon and a slanted parallelogram with 2 long sides and 2 short sides. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0275",
@@ -18002,7 +17982,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[0,10]},"promptText":"Combine the symmetry lines of a scalene triangle and a decagon. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"counting":{"kind":"sum","parts":[0,10]},"promptText":"Combine the lines of symmetry of a scalene triangle and a regular decagon. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0276",
@@ -18012,7 +17992,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[0,12]},"promptText":"Tally every line of symmetry across a parallelogram and a dodecagon. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"counting":{"kind":"sum","parts":[0,12]},"promptText":"Tally every line of symmetry on a regular dodecagon and a slanted parallelogram whose sides are not all the same length. How many lines in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0277",
@@ -18022,7 +18002,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[0,6]},"promptText":"Combine the symmetry lines of a scalene triangle and a hexagon. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"counting":{"kind":"sum","parts":[0,6]},"promptText":"Combine the lines of symmetry of a scalene triangle and a regular hexagon. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0278",
@@ -18032,7 +18012,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[0,4]},"promptText":"Tally every line of symmetry across a parallelogram and a square. How many lines in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[0,4]},"promptText":"Count every line of symmetry on a square and a slanted parallelogram with 2 long sides and 2 short sides. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0279",
@@ -18042,7 +18022,7 @@ export const ITEMS = [
     structureType: "symSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[0,8]},"promptText":"Combine the symmetry lines of a scalene triangle and a octagon. Exactly how many lines is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[0,8]},"promptText":"Combine the lines of symmetry of a scalene triangle and a regular octagon. How many lines is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0280",
@@ -18052,7 +18032,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 1: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"How many lines of symmetry does this square have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0281",
@@ -18062,7 +18042,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 2: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"This rectangle is not a square. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0282",
@@ -18072,7 +18052,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 3: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"All the sides of this triangle are the same length. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0283",
@@ -18082,7 +18062,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 4: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"This pentagon has equal sides and equal corners. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0284",
@@ -18092,7 +18072,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 5: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"This hexagon has equal sides and equal corners. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0285",
@@ -18102,7 +18082,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 6: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"The two slanted sides of this trapezoid are the same length. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0286",
@@ -18112,7 +18092,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"triangleRight","rotate":0,"shapeC":{"key":"triangleRight","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 7: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleRight","rotate":0,"shapeC":{"key":"triangleRight","kind":"symmetry"},"shapeMode":"count","promptText":"This right triangle has sides of 3 different lengths. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0287",
@@ -18122,7 +18102,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 8: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"Look at this square. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0288",
@@ -18132,7 +18112,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 9: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"This rectangle is not a square. How many fold lines split it into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0289",
@@ -18142,7 +18122,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 10: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"All the sides of this triangle are the same length. How many fold lines split it into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0290",
@@ -18152,7 +18132,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 11: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"This pentagon has equal sides and equal corners. How many fold lines split it into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0291",
@@ -18162,7 +18142,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 12: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"This hexagon has equal sides and equal corners. How many fold lines split it into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0292",
@@ -18172,7 +18152,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 13: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"The two slanted sides of this trapezoid are the same length. How many fold lines split it into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0293",
@@ -18182,7 +18162,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"triangleRight","rotate":0,"shapeC":{"key":"triangleRight","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 14: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleRight","rotate":0,"shapeC":{"key":"triangleRight","kind":"symmetry"},"shapeMode":"count","promptText":"This right triangle has sides of 3 different lengths. How many fold lines split it into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0294",
@@ -18192,7 +18172,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 15: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"How many fold lines split this square into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0295",
@@ -18202,7 +18182,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 16: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"This rectangle is not a square. In how many different ways can you fold it so the two halves match?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0296",
@@ -18212,7 +18192,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 17: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"All the sides of this triangle are the same length. In how many different ways can you fold it so the two halves match?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0297",
@@ -18222,7 +18202,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 18: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"This pentagon has equal sides and equal corners. In how many different ways can you fold it so the two halves match?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0298",
@@ -18232,7 +18212,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 19: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"This hexagon has equal sides and equal corners. In how many different ways can you fold it so the two halves match?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0299",
@@ -18242,7 +18222,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"Figure 20: how many lines of symmetry does the drawn shape have?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"The two slanted sides of this trapezoid are the same length. In how many different ways can you fold it so the two halves match?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0300",
@@ -18252,7 +18232,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 1. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"How many lines of symmetry does this regular pentagon have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0301",
@@ -18262,7 +18242,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 2. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"How many lines of symmetry does this regular hexagon have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0302",
@@ -18272,7 +18252,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 3. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"Count the lines of symmetry on this square. How many lines of symmetry are there?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0303",
@@ -18282,7 +18262,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 4. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"The two slanted sides of this trapezoid are the same length. How many lines of symmetry can you draw on it?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0304",
@@ -18292,7 +18272,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleScalene","rotate":0,"shapeC":{"key":"triangleScalene","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 5. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleScalene","rotate":0,"shapeC":{"key":"triangleScalene","kind":"symmetry"},"shapeMode":"count","promptText":"This triangle has sides of 3 different lengths. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0305",
@@ -18302,7 +18282,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"parallelogram","rotate":0,"shapeC":{"key":"parallelogram","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 6. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"parallelogram"},"promptText":"A parallelogram has no right angles, and 2 of its sides are longer than the other 2. How many lines of symmetry does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0306",
@@ -18312,7 +18292,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 7. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"This rectangle is not a square. How many lines of symmetry can you draw on it?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0307",
@@ -18322,7 +18302,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"triangleRight","rotate":0,"shapeC":{"key":"triangleRight","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 8. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleRight","rotate":0,"shapeC":{"key":"triangleRight","kind":"symmetry"},"shapeMode":"count","promptText":"This right triangle has sides of 3 different lengths. In how many different ways can you fold it so the two halves match?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0308",
@@ -18332,7 +18312,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 9. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"All the sides of this triangle are the same length. How many lines of symmetry can you draw on it?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0309",
@@ -18342,7 +18322,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 10. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"Look at this regular hexagon. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0310",
@@ -18352,7 +18332,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 11. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shape":"pentagon","rotate":0,"shapeC":{"key":"pentagon","kind":"symmetry"},"shapeMode":"count","promptText":"Look at this regular pentagon. How many lines of symmetry does it have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0311",
@@ -18362,7 +18342,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 12. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"In how many different ways can you fold this square so the two halves match?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0312",
@@ -18372,7 +18352,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 13. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"key":"trapezoid","kind":"symmetry"},"shapeMode":"count","promptText":"The two slanted sides of this trapezoid are the same length. How many lines of symmetry does this trapezoid have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0313",
@@ -18382,7 +18362,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleScalene","rotate":0,"shapeC":{"key":"triangleScalene","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 14. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleScalene","rotate":0,"shapeC":{"key":"triangleScalene","kind":"symmetry"},"shapeMode":"count","promptText":"This triangle has sides of 3 different lengths. How many fold lines split it into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0314",
@@ -18392,7 +18372,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"parallelogram","rotate":0,"shapeC":{"key":"parallelogram","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 15. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"symmetryByName","name":"parallelogram"},"promptText":"Picture a parallelogram with no right angles, 2 long sides and 2 short sides. How many fold lines split it into two matching halves?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0315",
@@ -18402,7 +18382,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 16. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shape":"rectangle","rotate":0,"shapeC":{"key":"rectangle","kind":"symmetry"},"shapeMode":"count","promptText":"This rectangle is not a square. How many lines of symmetry does this rectangle have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0316",
@@ -18412,7 +18392,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shape":"triangleRight","rotate":0,"shapeC":{"key":"triangleRight","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 17. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleRight","rotate":0,"shapeC":{"key":"triangleRight","kind":"symmetry"},"shapeMode":"count","promptText":"This right triangle has sides of 3 different lengths. How many lines of symmetry can you draw on it?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0317",
@@ -18422,7 +18402,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 18. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"key":"triangleEquilateral","kind":"symmetry"},"shapeMode":"count","promptText":"All the sides of this triangle are the same length. How many lines of symmetry does this triangle have?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0318",
@@ -18432,7 +18412,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 19. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shape":"square","rotate":0,"shapeC":{"key":"square","kind":"symmetry"},"shapeMode":"count","promptText":"How many lines of symmetry can you draw on this square?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0319",
@@ -18442,7 +18422,7 @@ export const ITEMS = [
     structureType: "figSymmetry_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"Inspect figure 20. Exactly how many lines of symmetry does it show?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shape":"hexagon","rotate":0,"shapeC":{"key":"hexagon","kind":"symmetry"},"shapeMode":"count","promptText":"How many fold lines split this regular hexagon into two matching halves?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0320",
@@ -18460,7 +18440,7 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
     question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"square"},"promptText":"How many pairs of parallel sides does a square have?"},"answerType":"numberPad"},
   },
@@ -18472,7 +18452,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"rightAnglesByName","name":"square"},"promptText":"A square has ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"rightAnglesByName","name":"square"},"promptText":"How many square corners does a square have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0323",
@@ -18480,9 +18460,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"square"},"promptText":"A square has ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"square"},"promptText":"A square has __ pairs of parallel sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0324",
@@ -18500,7 +18480,7 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
     question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"rectangle"},"promptText":"How many pairs of parallel sides does a rectangle have?"},"answerType":"numberPad"},
   },
@@ -18512,7 +18492,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"rightAnglesByName","name":"rectangle"},"promptText":"A rectangle has ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"rightAnglesByName","name":"rectangle"},"promptText":"How many square corners does a rectangle have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0327",
@@ -18520,9 +18500,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"rectangle"},"promptText":"A rectangle has ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"rectangle"},"promptText":"A rectangle has __ pairs of parallel sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0328",
@@ -18532,7 +18512,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"triangle"},"promptText":"How many right angles does a triangle have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"triangle"},"promptText":"How many right angles does this triangle have?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0329",
@@ -18540,7 +18520,7 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
     question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"triangle"},"promptText":"How many pairs of parallel sides does a triangle have?"},"answerType":"numberPad"},
   },
@@ -18552,7 +18532,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"triangle"},"promptText":"A triangle has ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleEquilateral","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"triangle"},"promptText":"How many square corners does this triangle have?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0331",
@@ -18560,9 +18540,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"triangle"},"promptText":"A triangle has ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"triangle"},"promptText":"A triangle has __ pairs of parallel sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0332",
@@ -18580,7 +18560,7 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
     question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"right triangle"},"promptText":"How many pairs of parallel sides does a right triangle have?"},"answerType":"numberPad"},
   },
@@ -18592,7 +18572,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"rightAnglesByName","name":"right triangle"},"promptText":"A right triangle has ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"rightAnglesByName","name":"right triangle"},"promptText":"How many square corners does a right triangle have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0335",
@@ -18600,9 +18580,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"right triangle"},"promptText":"A right triangle has ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"right triangle"},"promptText":"A right triangle has __ pairs of parallel sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0336",
@@ -18612,7 +18592,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"pentagon"},"promptText":"How many right angles does a pentagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"pentagon"},"promptText":"How many square corners can you find on this pentagon?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0337",
@@ -18620,9 +18600,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"pentagon"},"promptText":"How many pairs of parallel sides does a pentagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"parallelPairsByName","name":"pentagon"},"promptText":"How many pairs of parallel sides does this pentagon have?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0338",
@@ -18632,7 +18612,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"pentagon"},"promptText":"A pentagon has ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"pentagon"},"promptText":"How many square corners does this pentagon have?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0339",
@@ -18640,9 +18620,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"pentagon"},"promptText":"A pentagon has ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"pentagon","rotate":0,"shapeC":{"kind":"parallelPairsByName","name":"pentagon"},"promptText":"This pentagon has __ pairs of parallel sides. What number goes in the blank?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0340",
@@ -18652,7 +18632,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"hexagon"},"promptText":"How many right angles does a hexagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"hexagon"},"promptText":"How many square corners can you find on this hexagon?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0341",
@@ -18660,9 +18640,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"How many pairs of parallel sides does a hexagon have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"How many pairs of parallel sides does a hexagon have if all its sides and corners are the same?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0342",
@@ -18672,7 +18652,7 @@ export const ITEMS = [
     structureType: "rightAngles_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"hexagon"},"promptText":"A hexagon has ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"hexagon","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"hexagon"},"promptText":"How many square corners does this hexagon have?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0343",
@@ -18680,9 +18660,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "shapeProperties",
     structureType: "parallelPairs_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"A hexagon has ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"parallelPairsByName","name":"hexagon"},"promptText":"A hexagon with all its sides and corners the same has __ pairs of parallel sides. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0344",
@@ -18692,7 +18672,7 @@ export const ITEMS = [
     structureType: "rightAngles_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"trapezoid"},"promptText":"Count the right angles of a trapezoid. How many right angles are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"trapezoid"},"promptText":"Count the right angles of this trapezoid. How many right angles are there?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0345",
@@ -18702,7 +18682,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"parallelPairsByName","name":"trapezoid"},"promptText":"Count the parallel pairs of a trapezoid. How many pairs are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"parallelPairsByName","name":"trapezoid"},"promptText":"Count the pairs of parallel sides on a trapezoid. How many pairs is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0346",
@@ -18712,7 +18692,7 @@ export const ITEMS = [
     structureType: "rightAngles_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"trapezoid"},"promptText":"A trapezoid comes with ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"trapezoid","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"trapezoid"},"promptText":"How many right angles are in this trapezoid?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0347",
@@ -18722,7 +18702,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"parallelPairsByName","name":"trapezoid"},"promptText":"A trapezoid comes with ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"parallelPairsByName","name":"trapezoid"},"promptText":"How many pairs of parallel sides are in a trapezoid?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0348",
@@ -18732,7 +18712,7 @@ export const ITEMS = [
     structureType: "rightAngles_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"rhombus"},"promptText":"Count the right angles of a rhombus. How many right angles are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"rhombus"},"promptText":"Count the right angles of a rhombus that is not a square. How many right angles are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0349",
@@ -18742,7 +18722,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"rhombus"},"promptText":"Count the parallel pairs of a rhombus. How many pairs are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"rhombus"},"promptText":"Count the pairs of parallel sides on a rhombus. How many pairs is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0350",
@@ -18752,7 +18732,7 @@ export const ITEMS = [
     structureType: "rightAngles_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"rhombus"},"promptText":"A rhombus comes with ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"rhombus"},"promptText":"How many right angles are in a rhombus that is not a square?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0351",
@@ -18762,7 +18742,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"rhombus"},"promptText":"A rhombus comes with ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"rhombus"},"promptText":"How many pairs of parallel sides are in a rhombus?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0352",
@@ -18772,7 +18752,7 @@ export const ITEMS = [
     structureType: "rightAngles_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"parallelogram"},"promptText":"Count the right angles of a parallelogram. How many right angles are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"parallelogram"},"promptText":"Count the right angles of a parallelogram that is not a rectangle. How many right angles are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0353",
@@ -18782,7 +18762,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"parallelogram"},"promptText":"Count the parallel pairs of a parallelogram. How many pairs are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"parallelogram"},"promptText":"Count the pairs of parallel sides on a parallelogram. How many pairs is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0354",
@@ -18792,7 +18772,7 @@ export const ITEMS = [
     structureType: "rightAngles_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"parallelogram"},"promptText":"A parallelogram comes with ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"parallelogram"},"promptText":"How many right angles are in a parallelogram that is not a rectangle?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0355",
@@ -18802,7 +18782,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"parallelogram"},"promptText":"A parallelogram comes with ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"parallelPairsByName","name":"parallelogram"},"promptText":"How many pairs of parallel sides are in a parallelogram?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0356",
@@ -18812,7 +18792,7 @@ export const ITEMS = [
     structureType: "rightAngles_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"heptagon"},"promptText":"Count the right angles of a heptagon. How many right angles are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"heptagon"},"promptText":"Count the right angles of a heptagon with all sides and corners the same. How many right angles are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0357",
@@ -18822,7 +18802,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"heptagon"},"promptText":"Count the parallel pairs of a heptagon. How many pairs are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"heptagon"},"promptText":"Count the pairs of parallel sides on a heptagon with all sides and corners the same. How many pairs is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0358",
@@ -18832,7 +18812,7 @@ export const ITEMS = [
     structureType: "rightAngles_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"heptagon"},"promptText":"A heptagon comes with ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"heptagon"},"promptText":"How many right angles are in a heptagon with all its sides and corners the same?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0359",
@@ -18842,7 +18822,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"heptagon"},"promptText":"A heptagon comes with ? pairs of parallel sides"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"heptagon"},"promptText":"How many pairs of parallel sides are in a heptagon with all its sides and corners the same?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0360",
@@ -18852,7 +18832,7 @@ export const ITEMS = [
     structureType: "rightAngles_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"octagon"},"promptText":"Exactly how many right angles does a octagon contain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"octagon","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"octagon"},"promptText":"How many right angles does this octagon have?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0361",
@@ -18862,7 +18842,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"parallelPairsByName","name":"octagon"},"promptText":"Exactly how many pairs of parallel sides does a octagon contain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"parallelPairsByName","name":"octagon"},"promptText":"Exactly how many pairs of parallel sides does a regular octagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0362",
@@ -18872,7 +18852,7 @@ export const ITEMS = [
     structureType: "rightAngles_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"octagon"},"promptText":"Tally every right angle of a octagon. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"octagon","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"octagon"},"promptText":"Count every right angle of this octagon. How many right angles is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0363",
@@ -18882,7 +18862,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"parallelPairsByName","name":"octagon"},"promptText":"Tally the parallel pairs of a octagon. How many pairs is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"parallelPairsByName","name":"octagon"},"promptText":"Tally the pairs of parallel sides on a regular octagon. How many pairs are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0364",
@@ -18892,7 +18872,7 @@ export const ITEMS = [
     structureType: "rightAngles_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"scalene triangle"},"promptText":"Exactly how many right angles does a scalene triangle contain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleScalene","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"scalene triangle"},"promptText":"How many right angles does this scalene triangle have?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0365",
@@ -18912,7 +18892,7 @@ export const ITEMS = [
     structureType: "rightAngles_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"scalene triangle"},"promptText":"Tally every right angle of a scalene triangle. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shape":"triangleScalene","rotate":0,"shapeC":{"kind":"rightAnglesByName","name":"scalene triangle"},"promptText":"Count every right angle of this scalene triangle. How many right angles is that?","shapeMode":"count"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0367",
@@ -18932,7 +18912,7 @@ export const ITEMS = [
     structureType: "rightAngles_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"nonagon"},"promptText":"Exactly how many right angles does a nonagon contain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"nonagon"},"promptText":"How many right angles does a regular nonagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0369",
@@ -18942,7 +18922,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"nonagon"},"promptText":"Exactly how many pairs of parallel sides does a nonagon contain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"nonagon"},"promptText":"How many pairs of parallel sides does a regular nonagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0370",
@@ -18952,7 +18932,7 @@ export const ITEMS = [
     structureType: "rightAngles_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"nonagon"},"promptText":"Tally every right angle of a nonagon. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"nonagon"},"promptText":"Count every right angle of a regular nonagon. How many right angles is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0371",
@@ -18962,7 +18942,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"nonagon"},"promptText":"Tally the parallel pairs of a nonagon. How many pairs is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"parallelPairsByName","name":"nonagon"},"promptText":"Count the pairs of parallel sides on a regular nonagon. How many pairs is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0372",
@@ -18972,7 +18952,7 @@ export const ITEMS = [
     structureType: "rightAngles_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"decagon"},"promptText":"Exactly how many right angles does a decagon contain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"decagon"},"promptText":"How many right angles does a regular decagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0373",
@@ -18982,7 +18962,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"parallelPairsByName","name":"decagon"},"promptText":"Exactly how many pairs of parallel sides does a decagon contain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"parallelPairsByName","name":"decagon"},"promptText":"Exactly how many pairs of parallel sides does a regular decagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0374",
@@ -18992,7 +18972,7 @@ export const ITEMS = [
     structureType: "rightAngles_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"decagon"},"promptText":"Tally every right angle of a decagon. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"rightAnglesByName","name":"decagon"},"promptText":"Count every right angle of a regular decagon. How many right angles is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0375",
@@ -19002,7 +18982,7 @@ export const ITEMS = [
     structureType: "parallelPairs_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"parallelPairsByName","name":"decagon"},"promptText":"Tally the parallel pairs of a decagon. How many pairs is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"parallelPairsByName","name":"decagon"},"promptText":"Tally the pairs of parallel sides on a regular decagon. How many pairs are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0376",
@@ -19032,7 +19012,7 @@ export const ITEMS = [
     structureType: "equalSidesTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"triangle"},"promptText":"All the sides of a triangle are equal. How many equal sides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"triangle"},"promptText":"Ben draws a triangle with all its sides equal. How many equal sides does Ben's triangle have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0379",
@@ -19042,7 +19022,7 @@ export const ITEMS = [
     structureType: "equalSidesTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"triangle"},"promptText":"A triangle has all its sides the same length. How many sides are the same?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"sidesByName","name":"triangle"},"promptText":"Rosa cuts out a triangle whose sides are all the same length. How many sides are the same length?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0380",
@@ -19072,7 +19052,7 @@ export const ITEMS = [
     structureType: "equalSidesTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"All the sides of a pentagon are equal. How many equal sides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"Kai draws a pentagon with all its sides equal. How many equal sides does Kai's pentagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0383",
@@ -19082,7 +19062,7 @@ export const ITEMS = [
     structureType: "equalSidesTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"A pentagon has all its sides the same length. How many sides are the same?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"shapeC":{"kind":"sidesByName","name":"pentagon"},"promptText":"Nia cuts out a pentagon whose sides are all the same length. How many sides are the same length?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0384",
@@ -19092,7 +19072,7 @@ export const ITEMS = [
     structureType: "equalSidesTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"All the sides of a hexagon are equal. How many equal sides is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"Omar draws a hexagon with all its sides equal. How many equal sides does Omar's hexagon have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0385",
@@ -19102,7 +19082,7 @@ export const ITEMS = [
     structureType: "equalSidesTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"A hexagon has all its sides the same length. How many sides are the same?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"shapeC":{"kind":"sidesByName","name":"hexagon"},"promptText":"Ida cuts out a hexagon whose sides are all the same length. How many sides are the same length?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0386",
@@ -19282,7 +19262,7 @@ export const ITEMS = [
     structureType: "diagonals_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"shapeC":{"n":20,"kind":"diagonals","name":"octagon"},"promptText":"Exactly how many diagonals does a octagon contain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"shapeC":{"n":20,"kind":"diagonals","name":"octagon"},"promptText":"Exactly how many diagonals does an octagon contain?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0404",
@@ -19292,7 +19272,7 @@ export const ITEMS = [
     structureType: "diagonals_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"shapeC":{"n":20,"kind":"diagonals","name":"octagon"},"promptText":"Tally every diagonal of a octagon. How many diagonals is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"shapeC":{"n":20,"kind":"diagonals","name":"octagon"},"promptText":"Tally every diagonal of an octagon. How many diagonals is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0405",
@@ -19382,7 +19362,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"A square and a rectangle together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"How many square corners do a square and a rectangle have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0414",
@@ -19402,7 +19382,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[4,1]},"promptText":"A rectangle and a right triangle together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[4,1]},"promptText":"How many square corners do a rectangle and a right triangle have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0416",
@@ -19412,7 +19392,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count the right angles of a square and a triangle together. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count the right angles in a square and in a triangle with 3 equal sides. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0417",
@@ -19422,7 +19402,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"A rectangle and a triangle together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many square corners do a rectangle and a triangle with 3 equal sides have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0418",
@@ -19442,7 +19422,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"A rectangle and a rectangle together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"How many square corners do two rectangles have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0420",
@@ -19462,7 +19442,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"A square and a pentagon together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many square corners do a square and a pentagon with equal sides and equal corners have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0422",
@@ -19472,7 +19452,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count the right angles of a rectangle and a pentagon together. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count the square corners of a rectangle and a pentagon with equal sides and equal corners. How many square corners is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0423",
@@ -19482,7 +19462,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"A right triangle and a pentagon together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"How many square corners do a right triangle and a pentagon with equal sides and equal corners have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0424",
@@ -19492,7 +19472,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count the right angles of a square and a hexagon together. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count the square corners of a square and a hexagon with equal sides and equal corners. How many square corners is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0425",
@@ -19502,7 +19482,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"A rectangle and a hexagon together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many square corners do a rectangle and a hexagon with equal sides and equal corners have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0426",
@@ -19512,7 +19492,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Count the right angles of a right triangle and a triangle together. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Count the right angles in a right triangle and in a triangle with 3 equal sides. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0427",
@@ -19522,7 +19502,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"counting":{"kind":"sum","parts":[0,0]},"promptText":"A triangle and a pentagon together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"counting":{"kind":"sum","parts":[0,0]},"promptText":"Think of a triangle with 3 equal sides and a pentagon with equal sides and equal corners. How many square corners do the two shapes have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0428",
@@ -19532,7 +19512,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count the right angles of a square and a trapezoid together. How many right angles is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count the right angles in a square and in a trapezoid with 2 slanted sides. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0429",
@@ -19542,7 +19522,7 @@ export const ITEMS = [
     structureType: "raSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"A rectangle and a trapezoid together have ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many square corners do a rectangle and a trapezoid with 2 slanted sides have in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0430",
@@ -19552,7 +19532,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a square and a rhombus. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a square and a rhombus that is not a square. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0431",
@@ -19562,7 +19542,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Together, a rectangle and a parallelogram hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a rectangle and a parallelogram that is not a rectangle have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0432",
@@ -19572,7 +19552,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Add the right angles of a right triangle and a trapezoid. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Add the right angles of a right triangle and a trapezoid with 2 slanted sides. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0433",
@@ -19582,7 +19562,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Together, a square and a parallelogram hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a square and a parallelogram that is not a rectangle have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0434",
@@ -19592,7 +19572,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a rectangle and a rhombus. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a rectangle and a rhombus that is not a square. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0435",
@@ -19602,7 +19582,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Together, a right triangle and a rhombus hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"How many right angles do a right triangle and a rhombus that is not a square have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0436",
@@ -19612,7 +19592,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a square and a heptagon. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a square and a heptagon with all sides and corners the same. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0437",
@@ -19622,7 +19602,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Together, a rectangle and a heptagon hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a rectangle and a heptagon with all sides and corners the same have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0438",
@@ -19632,7 +19612,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Add the right angles of a right triangle and a parallelogram. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Add the right angles of a right triangle and a parallelogram that is not a rectangle. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0439",
@@ -19642,7 +19622,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Together, a square and a trapezoid hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a square and a trapezoid with 2 slanted sides have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0440",
@@ -19652,7 +19632,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a rectangle and a trapezoid. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a rectangle and a trapezoid with 2 slanted sides. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0441",
@@ -19662,7 +19642,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Together, a right triangle and a heptagon hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"How many right angles do a right triangle and a heptagon with all sides and corners the same have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0442",
@@ -19672,7 +19652,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a square and a hexagon. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a square and a hexagon with all sides and corners the same. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0443",
@@ -19682,7 +19662,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Together, a rectangle and a hexagon hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a rectangle and a hexagon with all sides and corners the same have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0444",
@@ -19692,7 +19672,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Add the right angles of a right triangle and a hexagon. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Add the right angles of a right triangle and a hexagon with all sides and corners the same. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0445",
@@ -19702,7 +19682,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Together, a square and a pentagon hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a square and a pentagon with all sides and corners the same have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0446",
@@ -19712,7 +19692,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a rectangle and a pentagon. What right-angle total do you get?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Add the right angles of a rectangle and a pentagon with all sides and corners the same. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0447",
@@ -19722,7 +19702,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Together, a right triangle and a pentagon hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"How many right angles do a right triangle and a pentagon with all sides and corners the same have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0448",
@@ -19742,7 +19722,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"Together, a rectangle and a rectangle hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"counting":{"kind":"sum","parts":[4,4]},"promptText":"How many right angles do two rectangles have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0450",
@@ -19762,7 +19742,7 @@ export const ITEMS = [
     structureType: "raSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,4]},"promptText":"Together, a right triangle and a square hold ? right angles"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"counting":{"kind":"sum","parts":[1,4]},"promptText":"How many right angles do a right triangle and a square have together?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0452",
@@ -19772,7 +19752,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Exactly how many right angles do a square and a octagon have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a square and a regular octagon have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0453",
@@ -19782,7 +19762,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Tally every right angle across a rectangle and a nonagon. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count every right angle on a rectangle and a regular nonagon. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0454",
@@ -19792,7 +19772,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Exactly how many right angles do a right triangle and a decagon have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"How many right angles do a right triangle and a regular decagon have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0455",
@@ -19802,7 +19782,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Tally every right angle across a square and a scalene triangle. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count every right angle on a square and a scalene triangle with angles of 40°, 60° and 80°. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0456",
@@ -19812,7 +19792,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Exactly how many right angles do a rectangle and a octagon have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a rectangle and a regular octagon have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0457",
@@ -19822,7 +19802,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Tally every right angle across a right triangle and a nonagon. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Count every right angle on a right triangle and a regular nonagon. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0458",
@@ -19832,7 +19812,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Exactly how many right angles do a square and a decagon have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a square and a regular decagon have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0459",
@@ -19842,7 +19822,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Tally every right angle across a rectangle and a scalene triangle. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count every right angle on a rectangle and a scalene triangle with angles of 35°, 60° and 85°. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0460",
@@ -19852,7 +19832,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Exactly how many right angles do a right triangle and a octagon have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"How many right angles do a right triangle and a regular octagon have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0461",
@@ -19862,7 +19842,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Tally every right angle across a square and a nonagon. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count every right angle on a square and a regular nonagon. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0462",
@@ -19872,7 +19852,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Exactly how many right angles do a rectangle and a decagon have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a rectangle and a regular decagon have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0463",
@@ -19882,7 +19862,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Tally every right angle across a right triangle and a scalene triangle. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Count every right angle on a right triangle and a scalene triangle with angles of 50°, 55° and 75°. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0464",
@@ -19892,7 +19872,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Exactly how many right angles do a square and a dodecagon have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a square and a regular dodecagon have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0465",
@@ -19902,7 +19882,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Tally every right angle across a rectangle and a dodecagon. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count every right angle on a rectangle and a regular dodecagon. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0466",
@@ -19912,7 +19892,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Exactly how many right angles do a right triangle and a dodecagon have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"How many right angles do a right triangle and a regular dodecagon have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0467",
@@ -19922,7 +19902,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Tally every right angle across a square and a parallelogram. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count every right angle on a square and a parallelogram that is not a rectangle. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0468",
@@ -19932,7 +19912,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Exactly how many right angles do a rectangle and a parallelogram have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a rectangle and a parallelogram that is not a rectangle have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0469",
@@ -19942,7 +19922,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Tally every right angle across a right triangle and a parallelogram. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Count every right angle on a right triangle and a parallelogram that is not a rectangle. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0470",
@@ -19952,7 +19932,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Exactly how many right angles do a square and a rhombus have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"How many right angles do a square and a rhombus that is not a square have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0471",
@@ -19962,7 +19942,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Tally every right angle across a rectangle and a rhombus. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count every right angle on a rectangle and a rhombus that is not a square. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0472",
@@ -19972,7 +19952,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"Exactly how many right angles do a right triangle and a rhombus have combined?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"counting":{"kind":"sum","parts":[1,0]},"promptText":"How many right angles do a right triangle and a rhombus that is not a square have combined?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0473",
@@ -19982,7 +19962,7 @@ export const ITEMS = [
     structureType: "raSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Tally every right angle across a square and a trapezoid. How many right angles in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"counting":{"kind":"sum","parts":[4,0]},"promptText":"Count every right angle on a square and a trapezoid with 2 slanted sides. How many right angles is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0474",
@@ -20132,7 +20112,7 @@ export const ITEMS = [
     structureType: "whichIs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"select","predicate":{"name":"octagon","type":"isName"},"correctIdx":0,"optionKeys":["octagon","hexagon","pentagon","square"]},"options":[{"shape":"octagon","value":0,"rotate":15},{"shape":"hexagon","value":1,"rotate":30},{"shape":"pentagon","value":2,"rotate":45},{"shape":"square","value":3,"rotate":15}],"shapeMode":"select","promptText":"Round 3: the shapes are tilted. Which one is a octagon?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"kind":"select","predicate":{"name":"octagon","type":"isName"},"correctIdx":0,"optionKeys":["octagon","hexagon","pentagon","square"]},"options":[{"shape":"octagon","value":0,"rotate":15},{"shape":"hexagon","value":1,"rotate":30},{"shape":"pentagon","value":2,"rotate":45},{"shape":"square","value":3,"rotate":15}],"shapeMode":"select","promptText":"Round 3: the shapes are tilted. Which one is an octagon?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0489",
@@ -20192,7 +20172,7 @@ export const ITEMS = [
     structureType: "whichIs_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"select","predicate":{"name":"octagon","type":"isName"},"correctIdx":3,"optionKeys":["hexagon","pentagon","square","octagon"]},"options":[{"shape":"hexagon","value":0,"rotate":15},{"shape":"pentagon","value":1,"rotate":30},{"shape":"square","value":2,"rotate":45},{"shape":"octagon","value":3,"rotate":15}],"shapeMode":"select","promptText":"Round 9: the shapes are tilted. Which one is a octagon?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"select","predicate":{"name":"octagon","type":"isName"},"correctIdx":3,"optionKeys":["hexagon","pentagon","square","octagon"]},"options":[{"shape":"hexagon","value":0,"rotate":15},{"shape":"pentagon","value":1,"rotate":30},{"shape":"square","value":2,"rotate":45},{"shape":"octagon","value":3,"rotate":15}],"shapeMode":"select","promptText":"Round 9: the shapes are tilted. Which one is an octagon?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0495",
@@ -20232,7 +20212,7 @@ export const ITEMS = [
     structureType: "whichIs_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"select","predicate":{"name":"octagon","type":"isName"},"correctIdx":1,"optionKeys":["hexagon","octagon","pentagon","trapezoid"]},"options":[{"shape":"hexagon","value":0,"rotate":30},{"shape":"octagon","value":1,"rotate":45},{"shape":"pentagon","value":2,"rotate":60},{"shape":"trapezoid","value":3,"rotate":30}],"shapeMode":"select","promptText":"Round 1: even turned around, one of these is a octagon. Which one?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"select","predicate":{"name":"octagon","type":"isName"},"correctIdx":1,"optionKeys":["hexagon","octagon","pentagon","trapezoid"]},"options":[{"shape":"hexagon","value":0,"rotate":30},{"shape":"octagon","value":1,"rotate":45},{"shape":"pentagon","value":2,"rotate":60},{"shape":"trapezoid","value":3,"rotate":30}],"shapeMode":"select","promptText":"Round 1: even turned around, one of these is an octagon. Which one?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0499",
@@ -20292,7 +20272,7 @@ export const ITEMS = [
     structureType: "whichIs_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"select","predicate":{"name":"octagon","type":"isName"},"correctIdx":3,"optionKeys":["pentagon","hexagon","trapezoid","octagon"]},"options":[{"shape":"pentagon","value":0,"rotate":30},{"shape":"hexagon","value":1,"rotate":45},{"shape":"trapezoid","value":2,"rotate":60},{"shape":"octagon","value":3,"rotate":30}],"shapeMode":"select","promptText":"Round 7: even turned around, one of these is a octagon. Which one?"},"answerType":"shapeFigure"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"select","predicate":{"name":"octagon","type":"isName"},"correctIdx":3,"optionKeys":["pentagon","hexagon","trapezoid","octagon"]},"options":[{"shape":"pentagon","value":0,"rotate":30},{"shape":"hexagon","value":1,"rotate":45},{"shape":"trapezoid","value":2,"rotate":60},{"shape":"octagon","value":3,"rotate":30}],"shapeMode":"select","promptText":"Round 7: even turned around, one of these is an octagon. Which one?"},"answerType":"shapeFigure"},
   },
   {
     itemId: "linesShapes-proc-b0821-0505",
@@ -21052,7 +21032,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — rhombus, square, rectangle, trapezoid — how many shapes have at least one right angle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — rhombus, square, rectangle, trapezoid — how many shapes always have at least one right angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0581",
@@ -21062,7 +21042,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with at least one right angle in this list: rhombus, square, rectangle, trapezoid. How many shapes match?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes that always have at least one right angle in this list: rhombus, square, rectangle, trapezoid. How many shapes match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0582",
@@ -21092,7 +21072,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — trapezoid, hexagon, rectangle, triangle — how many shapes have exactly one pair of parallel sides?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — trapezoid, hexagon, rectangle, triangle — how many shapes always have exactly one pair of parallel sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0585",
@@ -21102,7 +21082,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with exactly one pair of parallel sides in this list: trapezoid, hexagon, rectangle, triangle. How many shapes match?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes that always have exactly one pair of parallel sides in this list: trapezoid, hexagon, rectangle, triangle. How many shapes match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0586",
@@ -21112,7 +21092,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — square, rectangle, rhombus, parallelogram — how many shapes have 4 equal sides?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — square, rectangle, rhombus, parallelogram — how many shapes always have 4 equal sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0587",
@@ -21122,7 +21102,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with 4 equal sides in this list: square, rectangle, rhombus, parallelogram. How many shapes match?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes that always have 4 equal sides in this list: square, rectangle, rhombus, parallelogram. How many shapes match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0588",
@@ -21192,7 +21172,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — rhombus, rhombus, square, rectangle — how many shapes have all sides equal?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — rhombus, rhombus, square, rectangle — how many shapes always have all sides equal?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0595",
@@ -21202,7 +21182,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with all sides equal in this list: rhombus, rhombus, square, rectangle. How many shapes match?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes that always have all sides equal in this list: rhombus, rhombus, square, rectangle. How many shapes match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0596",
@@ -21212,7 +21192,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — right triangle, square, rectangle, rhombus — how many shapes have at least one right angle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — right triangle, square, rectangle, rhombus — how many shapes always have at least one right angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0597",
@@ -21222,7 +21202,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with at least one right angle in this list: right triangle, square, rectangle, rhombus. How many shapes match?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes that always have at least one right angle in this list: right triangle, square, rectangle, rhombus. How many shapes match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0598",
@@ -21352,7 +21332,7 @@ export const ITEMS = [
     structureType: "sortCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — octagon, hexagon, square, decagon — how many shapes have at least 4 pairs of parallel sides?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Every shape in this list is regular: octagon, hexagon, square, decagon. How many of these shapes have at least 4 pairs of parallel sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0611",
@@ -21362,7 +21342,7 @@ export const ITEMS = [
     structureType: "sortCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with at least 4 pairs of parallel sides in this list: octagon, hexagon, square, decagon. How many shapes match?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Look at this list of regular shapes: octagon, hexagon, square, decagon. Count the shapes with at least 4 pairs of parallel sides. How many shapes match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0612",
@@ -21392,7 +21372,7 @@ export const ITEMS = [
     structureType: "sortCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — square, rhombus, rectangle, parallelogram — how many shapes have all sides equal?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — square, rhombus, rectangle, parallelogram — how many shapes always have all sides equal?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0615",
@@ -21402,7 +21382,7 @@ export const ITEMS = [
     structureType: "sortCount_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with all sides equal in this list: square, rhombus, rectangle, parallelogram. How many shapes match?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes that always have all sides equal in this list: square, rhombus, rectangle, parallelogram. How many shapes match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0616",
@@ -21550,7 +21530,7 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "lineFigures",
     structureType: "endpoints_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
     question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"How many endpoints does a line segment have?"},"answerType":"numberPad"},
   },
@@ -21560,9 +21540,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "lineFigures",
     structureType: "endpoints_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"A line segment has ? endpoints"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"How many endpoints are on a line segment?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0632",
@@ -21570,7 +21550,7 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "lineFigures",
     structureType: "endpoints_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
     question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"How many endpoints does a ray have?"},"answerType":"numberPad"},
   },
@@ -21580,9 +21560,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "lineFigures",
     structureType: "endpoints_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"A ray has ? endpoints"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"How many endpoints are on a ray?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0634",
@@ -21590,7 +21570,7 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "lineFigures",
     structureType: "endpoints_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
     question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"How many endpoints does a line have?"},"answerType":"numberPad"},
   },
@@ -21600,9 +21580,9 @@ export const ITEMS = [
     itemFamily: "procedural",
     subskill: "lineFigures",
     structureType: "endpoints_band1",
-    levelRange: [1,3],
+    levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"A line has ? endpoints"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"How many endpoints are on a line?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0636",
@@ -21612,7 +21592,7 @@ export const ITEMS = [
     structureType: "endpoints_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"How many endpoints does a line segment have? Think before typing."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"A line segment has how many endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0637",
@@ -21622,7 +21602,7 @@ export const ITEMS = [
     structureType: "endpoints_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"A line segment has ? endpoints Think before typing."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"Imagine a line segment. How many endpoints does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0638",
@@ -21632,7 +21612,7 @@ export const ITEMS = [
     structureType: "endpoints_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"How many endpoints does a ray have? Think before typing."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"A ray has how many endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0639",
@@ -21642,7 +21622,7 @@ export const ITEMS = [
     structureType: "endpoints_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"A ray has ? endpoints Think before typing."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Imagine a ray. How many endpoints does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0640",
@@ -21652,7 +21632,7 @@ export const ITEMS = [
     structureType: "endpoints_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"How many endpoints does a line have? Think before typing."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"A line has how many endpoints?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0641",
@@ -21662,7 +21642,7 @@ export const ITEMS = [
     structureType: "endpoints_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"A line has ? endpoints Think before typing."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Imagine a line. How many endpoints does it have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0642",
@@ -21672,7 +21652,7 @@ export const ITEMS = [
     structureType: "endpoints_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"How many endpoints does a line segment have? Recall the exact definition."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"How many endpoints does every line segment have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0643",
@@ -21682,7 +21662,7 @@ export const ITEMS = [
     structureType: "endpoints_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"A line segment has ? endpoints Recall the exact definition."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"n":2,"kind":"endpoints","figure":"line segment"},"promptText":"Think about what a line segment is. How many endpoints does a line segment have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0644",
@@ -21692,7 +21672,7 @@ export const ITEMS = [
     structureType: "endpoints_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"How many endpoints does a ray have? Recall the exact definition."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"How many endpoints does every ray have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0645",
@@ -21702,7 +21682,7 @@ export const ITEMS = [
     structureType: "endpoints_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"A ray has ? endpoints Recall the exact definition."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"n":1,"kind":"endpoints","figure":"ray"},"promptText":"Think about what a ray is. How many endpoints does a ray have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0646",
@@ -21712,7 +21692,7 @@ export const ITEMS = [
     structureType: "endpoints_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"How many endpoints does a line have? Recall the exact definition."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"How many endpoints does every line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0647",
@@ -21722,7 +21702,7 @@ export const ITEMS = [
     structureType: "endpoints_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"A line has ? endpoints Recall the exact definition."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":0,"display":{"shapeC":{"n":0,"kind":"endpoints","figure":"line"},"promptText":"Think about what a line is. How many endpoints does a line have?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0648",
@@ -22242,7 +22222,7 @@ export const ITEMS = [
     structureType: "pathParts_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A capital T path plus one extra stroke. How many straight parts does the path use?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A path is a capital T plus one more straight stroke that does not touch the T. How many straight parts does the path use?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0700",
@@ -22252,7 +22232,7 @@ export const ITEMS = [
     structureType: "pathParts_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A capital T path plus one extra stroke. Count the straight parts. How many straight parts are there?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A path is a capital T with a straight bar added across its bottom, like a capital I. Count the straight parts. How many straight parts are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0701",
@@ -22622,7 +22602,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line","choices":["a point","a ray","a line","a line segment"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure goes on forever in BOTH directions?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line","choices":["a point","a ray","a line","a line segment"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure goes on forever in both directions?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0738",
@@ -22632,7 +22612,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line","choices":["a line","a line segment","a point","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which figure goes on forever in BOTH directions?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line","choices":["a line","a line segment","a point","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure keeps going forever in both directions?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0739",
@@ -22652,7 +22632,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a ray","a line segment","a line","a point"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which figure has a start point but no end?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a ray","a line segment","a line","a point"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure has a starting point but no end?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0741",
@@ -22672,7 +22652,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a line","a point","a line segment","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which figure has two endpoints?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a line","a point","a line segment","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure has exactly two endpoints?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0743",
@@ -22692,7 +22672,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a point","choices":["a line segment","a point","a ray","a line"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which figure marks one exact spot?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a point","choices":["a line segment","a point","a ray","a line"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure shows just one exact spot?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0745",
@@ -22712,7 +22692,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a line segment","a ray","a point","a line"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which figure is part of a line with two endpoints?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a line segment","a ray","a point","a line"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is a piece of a line with two endpoints?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0747",
@@ -22722,7 +22702,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a point","a line","a ray","a line segment"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure goes on forever in exactly ONE direction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a point","a line","a ray","a line segment"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure goes on forever in exactly one direction?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0748",
@@ -22732,7 +22712,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a ray","a point","a line","a line segment"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which figure goes on forever in exactly ONE direction?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a ray","choices":["a ray","a point","a line","a line segment"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure starts at one point and goes on forever in one direction?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0749",
@@ -22752,7 +22732,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line","choices":["a line segment","a line","a point","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which figure never ends on either side?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line","choices":["a line segment","a line","a point","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure has no endpoints and goes on forever both ways?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0751",
@@ -22772,7 +22752,7 @@ export const ITEMS = [
     structureType: "vocabPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a circle","a line segment","a line","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which figure is the shortest path between two points?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"a line segment","choices":["a circle","a line segment","a line","a ray"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which figure is the shortest straight path from one point to another?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0753",
@@ -22792,7 +22772,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["rays","parallel lines","intersecting lines","perpendicular lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which lines never meet, no matter how far they run?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["rays","parallel lines","intersecting lines","perpendicular lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which kind of lines never meet, even if they go on forever?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0755",
@@ -22812,7 +22792,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["parallel lines","perpendicular lines","line segments","rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which lines cross at a square corner?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["parallel lines","perpendicular lines","curved lines","points"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which kind of lines meet to make a square corner?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0757",
@@ -22832,7 +22812,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"intersecting lines","choices":["parallel lines","intersecting lines","points","segments"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which lines cross at exactly one point, at any angle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"intersecting lines","choices":["parallel lines","intersecting lines","points","segments"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which kind of lines cross each other at just one point?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0759",
@@ -22852,7 +22832,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["perpendicular lines","parallel lines","endpoints","intersecting rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Which word names lines that stay the same distance apart forever?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["perpendicular lines","parallel lines","endpoints","intersecting rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which kind of lines always stay the same distance apart?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0761",
@@ -22862,7 +22842,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["points","parallel lines","rays","perpendicular lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Two streets meet at a perfect square corner. What are they like?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["points","parallel lines","curved lines","perpendicular lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Two streets meet at a perfect square corner. What kind of lines are the two streets like?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0762",
@@ -22872,7 +22852,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["parallel lines","perpendicular lines","points","rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Two streets meet at a perfect square corner. What are they like?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["parallel lines","perpendicular lines","points","rays"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Two straight streets cross and make square corners. Which kind of lines do the streets show?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0763",
@@ -22892,7 +22872,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["parallel lines","line segments","perpendicular lines","intersecting lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Train tracks that never touch are like which figure pair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"parallel lines","choices":["parallel lines","line segments","perpendicular lines","intersecting lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"The two rails of a train track never touch. Which kind of lines are the rails like?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0765",
@@ -22912,7 +22892,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["parallel lines","rays","perpendicular lines","points"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. A plus sign shows which kind of line pair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perpendicular lines","choices":["parallel lines","rays","perpendicular lines","points"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which kind of lines does a plus sign show?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0767",
@@ -22932,7 +22912,7 @@ export const ITEMS = [
     structureType: "vocabPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"intersecting lines","choices":["parallel lines","points","curved lines","intersecting lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Think about the definitions. Scissors opened part way show which kind of line pair?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"intersecting lines","choices":["parallel lines","points","curved lines","intersecting lines"],"display":{"shapeC":{"kind":"authoredChoice"},"promptText":"Which kind of lines do the blades of open scissors show?"}},
   },
   {
     itemId: "linesShapes-proc-b0821-0769",

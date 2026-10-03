@@ -6002,7 +6002,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[45,85,105,95],"display":{"promptText":"A bond's parts are 70 and 25. Choose the whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[45,85,105,95],"display":{"promptText":"If the two parts are 70 and 25, what is the whole?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-142",
@@ -6012,7 +6012,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":90,"choices":[90,95,100,80],"display":{"promptText":"A bond's parts are 45 and 45. Choose the whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":90,"choices":[90,95,100,80],"display":{"promptText":"What whole do 45 and 45 make in a number bond?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-143",
@@ -6022,7 +6022,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[35,95,85,105],"display":{"promptText":"A bond's parts are 65 and 30. Choose the whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[35,95,85,105],"display":{"promptText":"Which number is the whole for the parts 65 and 30?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-144",
@@ -6032,7 +6032,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":70,"choices":[40,60,80,70],"display":{"promptText":"A bond's parts are 55 and 15. Choose the whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":70,"choices":[40,60,80,70],"display":{"promptText":"If the two parts are 55 and 15, what is the whole?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-145",
@@ -6042,7 +6042,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[105,65,95,85],"display":{"promptText":"A bond's parts are 80 and 15. Choose the whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[105,65,95,85],"display":{"promptText":"What whole do 80 and 15 make in a number bond?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-146",
@@ -6052,7 +6052,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":60,"choices":[50,70,10,60],"display":{"promptText":"35 and 25 are the two parts of a bond. Choose its whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":60,"choices":[50,70,10,60],"display":{"promptText":"What whole do 35 and 25 make in a number bond?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-147",
@@ -6062,7 +6062,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[85,105,95,55],"display":{"promptText":"75 and 20 are the two parts of a bond. Choose its whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[85,105,95,55],"display":{"promptText":"Which number is the whole for the parts 75 and 20?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-148",
@@ -6072,7 +6072,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":85,"choices":[35,85,75,95],"display":{"promptText":"25 and 60 are the two parts of a bond. Choose its whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":85,"choices":[35,85,75,95],"display":{"promptText":"If the two parts are 25 and 60, what is the whole?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-149",
@@ -6082,7 +6082,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":60,"choices":[70,60,50,30],"display":{"promptText":"15 and 45 are the two parts of a bond. Choose its whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":60,"choices":[70,60,50,30],"display":{"promptText":"What whole do 15 and 45 make in a number bond?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-150",
@@ -6092,7 +6092,7 @@ export const ITEMS = [
     structureType: "chooseWholeBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[105,75,85,95],"display":{"promptText":"85 and 10 are the two parts of a bond. Choose its whole."}},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"choices":[105,75,85,95],"display":{"promptText":"Which number is the whole for the parts 85 and 10?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-151",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "choosePart",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"choices":[2,8,12,9],"display":{"promptText":"A bond shows whole 10 with one part 2. Choose the missing part."}},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"choices":[2,8,12,9],"display":{"promptText":"What part goes with 2 to make a whole of 10?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-201",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "choosePart",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"choices":[16,3,2,7],"display":{"promptText":"A bond shows whole 9 with one part 7. Choose the missing part."}},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"choices":[16,3,2,7],"display":{"promptText":"Which number joins 7 to make 9?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-202",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "choosePart",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"choices":[7,8,9,1],"display":{"promptText":"A bond shows whole 8 with one part 1. Choose the missing part."}},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"choices":[7,8,9,1],"display":{"promptText":"What part goes with 1 to make a whole of 8?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-203",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "choosePart",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"choices":[13,6,1,2],"display":{"promptText":"A bond shows whole 7 with one part 6. Choose the missing part."}},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"choices":[13,6,1,2],"display":{"promptText":"Which number joins 6 to make 7?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-204",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "choosePart",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"choices":[17,3,7,4],"display":{"promptText":"A bond shows whole 10 with one part 7. Choose the missing part."}},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"choices":[17,3,7,4],"display":{"promptText":"What part goes with 7 to make a whole of 10?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-205",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":68,"whole":88,"promptText":"One branch of a 88-bond holds 68. What does the other branch hold?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":68,"whole":88,"promptText":"One branch of an 88-bond holds 68. What does the other branch hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-279",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "oddOneOutBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"2 and 5","choices":["2 and 5","4 and 2","1 and 5","5 and 1"],"display":{"promptText":"Which pair does NOT make 6?"}},
+    question: {"a":null,"b":null,"op":"bond","answer":"2 and 5","choices":["2 and 5","4 and 2","1 and 5","5 and 1"],"display":{"promptText":"Which pair does not make 6?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-318",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "oddOneOutBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"4 and 4","choices":["1 and 6","2 and 5","4 and 4","6 and 1"],"display":{"promptText":"Which pair does NOT make 7?"}},
+    question: {"a":null,"b":null,"op":"bond","answer":"4 and 4","choices":["1 and 6","2 and 5","4 and 4","6 and 1"],"display":{"promptText":"Which pair does not make 7?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-319",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "oddOneOutBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"3 and 6","choices":["6 and 2","3 and 6","7 and 1","5 and 3"],"display":{"promptText":"Which pair does NOT make 8?"}},
+    question: {"a":null,"b":null,"op":"bond","answer":"3 and 6","choices":["6 and 2","3 and 6","7 and 1","5 and 3"],"display":{"promptText":"Which pair does not make 8?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-320",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "oddOneOutBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"5 and 5","choices":["7 and 2","1 and 8","8 and 1","5 and 5"],"display":{"promptText":"Which pair does NOT make 9?"}},
+    question: {"a":null,"b":null,"op":"bond","answer":"5 and 5","choices":["7 and 2","1 and 8","8 and 1","5 and 5"],"display":{"promptText":"Which pair does not make 9?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-321",
@@ -7802,7 +7802,7 @@ export const ITEMS = [
     structureType: "oddOneOutBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"6 and 5","choices":["1 and 9","6 and 5","8 and 2","9 and 1"],"display":{"promptText":"Which pair does NOT make 10?"}},
+    question: {"a":null,"b":null,"op":"bond","answer":"6 and 5","choices":["1 and 9","6 and 5","8 and 2","9 and 1"],"display":{"promptText":"Which pair does not make 10?"}},
   },
   {
     itemId: "numberBonds-conc-b0820-322",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "openDecomposition",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["1 and 5","4 and 2"],"display":{"options":["1 and 5","5 and 3","4 and 2","1 and 7"],"promptText":"Choose BOTH pairs that make 6.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["1 and 5","4 and 2"],"display":{"options":["1 and 5","5 and 3","4 and 2","1 and 7"],"promptText":"Which two pairs make 6?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-328",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "openDecomposition",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["2 and 5","5 and 2"],"display":{"options":["2 and 5","2 and 7","6 and 3","5 and 2"],"promptText":"Choose BOTH pairs that make 7.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["2 and 5","5 and 2"],"display":{"options":["2 and 5","2 and 7","6 and 3","5 and 2"],"promptText":"Which two pairs make 7?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-329",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "openDecomposition",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["1 and 7","3 and 5"],"display":{"options":["4 and 6","1 and 7","3 and 5","1 and 9"],"promptText":"Choose BOTH pairs that make 8.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["1 and 7","3 and 5"],"display":{"options":["4 and 6","1 and 7","3 and 5","1 and 9"],"promptText":"Which two pairs make 8?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-330",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "openDecomposition",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["4 and 5","7 and 2"],"display":{"options":["4 and 7","8 and 3","4 and 5","7 and 2"],"promptText":"Choose BOTH pairs that make 9.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["4 and 5","7 and 2"],"display":{"options":["4 and 7","8 and 3","4 and 5","7 and 2"],"promptText":"Which two pairs make 9?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-331",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "openDecomposition",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["2 and 8","6 and 4"],"display":{"options":["2 and 8","2 and 10","6 and 4","7 and 5"],"promptText":"Choose BOTH pairs that make 10.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["2 and 8","6 and 4"],"display":{"options":["2 and 8","2 and 10","6 and 4","7 and 5"],"promptText":"Which two pairs make 10?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-332",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["3 and 9","8 and 4"],"display":{"options":["8 and 4","3 and 10","8 and 6","3 and 9"],"promptText":"Select BOTH pairs that bond to 12.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["3 and 9","8 and 4"],"display":{"options":["8 and 4","3 and 10","8 and 6","3 and 9"],"promptText":"Which two pairs bond to 12?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-356",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["4 and 9","9 and 4"],"display":{"options":["9 and 6","4 and 9","9 and 4","4 and 10"],"promptText":"Select BOTH pairs that bond to 13.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["4 and 9","9 and 4"],"display":{"options":["9 and 6","4 and 9","9 and 4","4 and 10"],"promptText":"Which two pairs bond to 13?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-357",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["5 and 9","8 and 6"],"display":{"options":["8 and 8","8 and 6","5 and 9","5 and 10"],"promptText":"Select BOTH pairs that bond to 14.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["5 and 9","8 and 6"],"display":{"options":["8 and 8","8 and 6","5 and 9","5 and 10"],"promptText":"Which two pairs bond to 14?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-358",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["6 and 9","9 and 6"],"display":{"options":["9 and 6","6 and 9","9 and 8","6 and 10"],"promptText":"Select BOTH pairs that bond to 15.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["6 and 9","9 and 6"],"display":{"options":["9 and 6","6 and 9","9 and 8","6 and 10"],"promptText":"Which two pairs bond to 15?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-359",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["7 and 9","9 and 7"],"display":{"options":["7 and 10","7 and 9","9 and 9","9 and 7"],"promptText":"Select BOTH pairs that bond to 16.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["7 and 9","9 and 7"],"display":{"options":["7 and 10","7 and 9","9 and 9","9 and 7"],"promptText":"Which two pairs bond to 16?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-360",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["2 and 9","8 and 3"],"display":{"options":["8 and 5","2 and 10","2 and 9","8 and 3"],"promptText":"Which two pairs both make 11? Choose them.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["2 and 9","8 and 3"],"display":{"options":["8 and 5","2 and 10","2 and 9","8 and 3"],"promptText":"Which two pairs both make 11?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-361",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["5 and 7","10 and 2"],"display":{"options":["5 and 8","5 and 7","10 and 2","10 and 4"],"promptText":"Which two pairs both make 12? Choose them.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["5 and 7","10 and 2"],"display":{"options":["5 and 8","5 and 7","10 and 2","10 and 4"],"promptText":"Which two pairs of numbers make 12?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-362",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["4 and 10","11 and 3"],"display":{"options":["4 and 10","11 and 3","4 and 11","11 and 5"],"promptText":"Which two pairs both make 14? Choose them.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["4 and 10","11 and 3"],"display":{"options":["4 and 10","11 and 3","4 and 11","11 and 5"],"promptText":"Which two pairs both make 14?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-363",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["6 and 7","10 and 3"],"display":{"options":["6 and 7","10 and 5","6 and 8","10 and 3"],"promptText":"Which two pairs both make 13? Choose them.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["6 and 7","10 and 3"],"display":{"options":["6 and 7","10 and 5","6 and 8","10 and 3"],"promptText":"Which two pairs of numbers make 13?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-364",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "openDecompositionTeen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["2 and 13","8 and 7"],"display":{"options":["8 and 9","8 and 7","2 and 14","2 and 13"],"promptText":"Which two pairs both make 15? Choose them.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["2 and 13","8 and 7"],"display":{"options":["8 and 9","8 and 7","2 and 14","2 and 13"],"promptText":"Which two pairs both make 15?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-365",
@@ -8292,7 +8292,7 @@ export const ITEMS = [
     structureType: "factFamily",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["12 − 5 = 7","12 − 7 = 5"],"display":{"options":["12 − 5 = 7","12 − 5 = 5","12 − 7 = 5","5 − 7 = 12"],"promptText":"A bond shows whole 12 with parts 5 and 7. Choose BOTH subtraction sentences it makes.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["12 − 5 = 7","12 − 7 = 5"],"display":{"options":["12 − 5 = 7","12 − 5 = 5","12 − 7 = 5","5 − 7 = 12"],"promptText":"A bond shows whole 12 with parts 5 and 7. Which two subtraction sentences does it make?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-371",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "factFamily",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["13 − 4 = 9","13 − 9 = 4"],"display":{"options":["13 − 4 = 9","13 − 9 = 4","13 − 4 = 4","4 − 9 = 13"],"promptText":"A bond shows whole 13 with parts 4 and 9. Choose BOTH subtraction sentences it makes.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["13 − 4 = 9","13 − 9 = 4"],"display":{"options":["13 − 4 = 9","13 − 9 = 4","13 − 4 = 4","4 − 9 = 13"],"promptText":"A bond shows whole 13 with parts 4 and 9. Which two subtraction sentences does it make?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-372",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "factFamily",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["14 − 6 = 8","14 − 8 = 6"],"display":{"options":["14 − 6 = 8","6 − 8 = 14","14 − 8 = 6","14 − 6 = 6"],"promptText":"A bond shows whole 14 with parts 6 and 8. Choose BOTH subtraction sentences it makes.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["14 − 6 = 8","14 − 8 = 6"],"display":{"options":["14 − 6 = 8","6 − 8 = 14","14 − 8 = 6","14 − 6 = 6"],"promptText":"A bond shows whole 14 with parts 6 and 8. Which two subtraction sentences does it make?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-373",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "factFamily",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["15 − 7 = 8","15 − 8 = 7"],"display":{"options":["15 − 7 = 8","7 − 8 = 15","15 − 7 = 7","15 − 8 = 7"],"promptText":"A bond shows whole 15 with parts 7 and 8. Choose BOTH subtraction sentences it makes.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["15 − 7 = 8","15 − 8 = 7"],"display":{"options":["15 − 7 = 8","7 − 8 = 15","15 − 7 = 7","15 − 8 = 7"],"promptText":"A bond shows whole 15 with parts 7 and 8. Which two subtraction sentences does it make?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-374",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "factFamily",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["16 − 5 = 11","16 − 11 = 5"],"display":{"options":["16 − 5 = 11","16 − 5 = 5","5 − 11 = 16","16 − 11 = 5"],"promptText":"A bond shows whole 16 with parts 5 and 11. Choose BOTH subtraction sentences it makes.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["16 − 5 = 11","16 − 11 = 5"],"display":{"options":["16 − 5 = 11","16 − 5 = 5","5 − 11 = 16","16 − 11 = 5"],"promptText":"A bond shows whole 16 with parts 5 and 11. Which two subtraction sentences does it make?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-375",
@@ -8852,7 +8852,7 @@ export const ITEMS = [
     structureType: "twoSplitsOfN",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["30 and 4","24 and 10"],"display":{"options":["40 and 4","30 and 4","24 and 10","30 and 5"],"promptText":"Choose BOTH correct ways to split 34.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["30 and 4","24 and 10"],"display":{"options":["40 and 4","30 and 4","24 and 10","30 and 5"],"promptText":"Which two are correct ways to split 34?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-427",
@@ -8862,7 +8862,7 @@ export const ITEMS = [
     structureType: "twoSplitsOfN",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["40 and 7","37 and 10"],"display":{"options":["37 and 10","50 and 7","40 and 7","40 and 8"],"promptText":"Choose BOTH correct ways to split 47.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["40 and 7","37 and 10"],"display":{"options":["37 and 10","50 and 7","40 and 7","40 and 8"],"promptText":"Which two are correct ways to split 47?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-428",
@@ -8872,7 +8872,7 @@ export const ITEMS = [
     structureType: "twoSplitsOfN",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["50 and 2","42 and 10"],"display":{"options":["60 and 2","50 and 3","42 and 10","50 and 2"],"promptText":"Choose BOTH correct ways to split 52.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["50 and 2","42 and 10"],"display":{"options":["60 and 2","50 and 3","42 and 10","50 and 2"],"promptText":"Which two are correct ways to split 52?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-429",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "twoSplitsOfN",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["60 and 8","58 and 10"],"display":{"options":["60 and 9","60 and 8","70 and 8","58 and 10"],"promptText":"Choose BOTH correct ways to split 68.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["60 and 8","58 and 10"],"display":{"options":["60 and 9","60 and 8","70 and 8","58 and 10"],"promptText":"Which two are correct ways to split 68?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-430",
@@ -8892,7 +8892,7 @@ export const ITEMS = [
     structureType: "twoSplitsOfN",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":["70 and 1","61 and 10"],"display":{"options":["61 and 10","70 and 1","80 and 1","70 and 2"],"promptText":"Choose BOTH correct ways to split 71.","requiredCount":2},"answerType":"multiSelect"},
+    question: {"a":null,"b":null,"op":"bond","answer":["70 and 1","61 and 10"],"display":{"options":["61 and 10","70 and 1","80 and 1","70 and 2"],"promptText":"Which two are correct ways to split 71?","requiredCount":2},"answerType":"multiSelect"},
   },
   {
     itemId: "numberBonds-conc-b0820-431",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"2 + 3 = 5, so 3 + ? = 5"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"4 + 1 = 5, so 3 + __ = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-441",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"3 + 2 = 5, so 2 + ? = 5"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"4 + 1 = 5, so 2 + __ = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-444",
@@ -13652,7 +13652,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"3 + 4 = 7, so 4 + ? = 7"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"6 + 1 = 7, so 4 + __ = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-454",
@@ -13702,7 +13702,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"4 + 3 = 7, so 3 + ? = 7"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"5 + 2 = 7, so 3 + __ = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-459",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"4 + 5 = 9, so 5 + ? = 9"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"7 + 2 = 9, so 5 + __ = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-475",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"5 + 4 = 9, so 4 + ? = 9"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"6 + 3 = 9, so 4 + __ = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-482",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"2 + 4 = 6, so 4 + ? = 6"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"Turn it around: 2 + 4 = 4 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-500",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"5 + 3 = 8, so 3 + ? = 8"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"Same parts, new order: 5 + 3 = 3 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-501",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"3 + 5 = 8, so 5 + ? = 8"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"Turn it around: 3 + 5 = 5 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-502",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"2 + 7 = 9, so 7 + ? = 9"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"Same parts, new order: 2 + 7 = 7 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-503",
@@ -14152,7 +14152,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"7 + 3 = 10, so 3 + ? = 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"Turn it around: 7 + 3 = 3 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-504",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"3 + 7 = 10, so 7 + ? = 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Same parts, new order: 3 + 7 = 7 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-505",
@@ -14172,7 +14172,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"4 + 6 = 10, so 6 + ? = 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"Turn it around: 4 + 6 = 6 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-506",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"1 + 7 = 8, so 7 + ? = 8"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"Same parts, new order: 1 + 7 = 7 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-507",
@@ -14192,7 +14192,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"2 + 5 = 7, so 5 + ? = 7"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Turn it around: 2 + 5 = 5 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-508",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"1 + 5 = 6, so 5 + ? = 6"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"Same parts, new order: 1 + 5 = 5 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-509",
@@ -14212,7 +14212,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"1 + 9 = 10, so 9 + ? = 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"Turn it around: 1 + 9 = 9 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-510",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"1 + 8 = 9, so 8 + ? = 9"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"Same parts, new order: 1 + 8 = 8 + __"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-511",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":9,"whole":19,"promptText":"10 + 9 = 19, so 9 + ? = 19"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":9,"whole":19,"promptText":"9 + 9 = 18, so 9 + __ = 19"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-569",

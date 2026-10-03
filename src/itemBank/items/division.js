@@ -3932,7 +3932,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Sam says 17 ÷ 3 leaves 2 left over. Is that right?"}},
+    question: {"a":17,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Sam says 17 ÷ 3 leaves 2 left over. Is Sam right?"}},
   },
   {
     itemId: "division-conc-b0823-0002",
@@ -3952,7 +3952,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca says 23 ÷ 3 leaves 1 left over. Is that right?"}},
+    question: {"a":23,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Sam divides 23 by 3 and gets 1 left over. Is Sam right?"}},
   },
   {
     itemId: "division-conc-b0823-0004",
@@ -3972,7 +3972,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":29,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo says 29 ÷ 3 leaves 2 left over. Is that right?"}},
+    question: {"a":29,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Luca divides 29 by 3 and gets 2 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0006",
@@ -3992,7 +3992,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai says 35 ÷ 3 leaves 1 left over. Is that right?"}},
+    question: {"a":35,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca says 35 ÷ 3 leaves 1 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0008",
@@ -4012,7 +4012,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Omar says 11 ÷ 3 leaves 2 left over. Is that right?"}},
+    question: {"a":11,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo says 11 ÷ 3 leaves 2 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0010",
@@ -4032,7 +4032,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe says 30 ÷ 4 leaves 3 left over. Is that right?"}},
+    question: {"a":30,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Theo divides 30 by 4 and gets 3 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0012",
@@ -4052,7 +4052,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":37,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Lily says 37 ÷ 4 leaves 1 left over. Is that right?"}},
+    question: {"a":37,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Kai divides 37 by 4 and gets 1 left over. Is Kai right?"}},
   },
   {
     itemId: "division-conc-b0823-0014",
@@ -4062,7 +4062,7 @@ export const ITEMS = [
     structureType: "remainderBounded",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":null,"op":"/","answer":2,"display":{"promptText":"42 shared in 4s — the leftover must be under 4. What is it?"},"answerType":"numberPad"},
+    question: {"a":42,"b":null,"op":"/","answer":2,"display":{"promptText":"Put 42 counters into groups of 4. How many counters are left over?"},"answerType":"numberPad"},
   },
   {
     itemId: "division-conc-b0823-0015",
@@ -4072,7 +4072,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn says 47 ÷ 4 leaves 1 left over. Is that right?"}},
+    question: {"a":47,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai says 47 ÷ 4 leaves 1 left over. Is Kai right?"}},
   },
   {
     itemId: "division-conc-b0823-0016",
@@ -4092,7 +4092,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego says 14 ÷ 4 leaves 2 left over. Is that right?"}},
+    question: {"a":14,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Omar says 14 ÷ 4 leaves 2 left over. Is Omar right?"}},
   },
   {
     itemId: "division-conc-b0823-0018",
@@ -4112,7 +4112,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":21,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo says 21 ÷ 4 leaves 2 left over. Is that right?"}},
+    question: {"a":21,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Omar divides 21 by 4 and gets 2 left over. Is Omar right?"}},
   },
   {
     itemId: "division-conc-b0823-0020",
@@ -4132,7 +4132,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":31,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Sam says 31 ÷ 4 leaves 3 left over. Is that right?"}},
+    question: {"a":31,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Zoe divides 31 by 4 and gets 3 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0022",
@@ -4152,7 +4152,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca says 47 ÷ 5 leaves 3 left over. Is that right?"}},
+    question: {"a":47,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe says 47 ÷ 5 leaves 3 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0024",
@@ -4172,7 +4172,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":59,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo says 59 ÷ 5 leaves 4 left over. Is that right?"}},
+    question: {"a":59,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Lily says 59 ÷ 5 leaves 4 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0026",
@@ -4192,7 +4192,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai says 17 ÷ 5 leaves 3 left over. Is that right?"}},
+    question: {"a":17,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Lily divides 17 by 5 and gets 3 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0028",
@@ -4202,7 +4202,7 @@ export const ITEMS = [
     structureType: "remainderBounded",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":null,"op":"/","answer":3,"display":{"promptText":"23 shared in 5s — the leftover must be under 5. What is it?"},"answerType":"numberPad"},
+    question: {"a":23,"b":null,"op":"/","answer":3,"display":{"promptText":"Make as many groups of 5 as you can from 23 counters. How many counters are left over?"},"answerType":"numberPad"},
   },
   {
     itemId: "division-conc-b0823-0029",
@@ -4212,7 +4212,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":29,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Omar says 29 ÷ 5 leaves 4 left over. Is that right?"}},
+    question: {"a":29,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Finn divides 29 by 5 and gets 4 left over. Is Finn right?"}},
   },
   {
     itemId: "division-conc-b0823-0030",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":37,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe says 37 ÷ 5 leaves 3 left over. Is that right?"}},
+    question: {"a":37,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn says 37 ÷ 5 leaves 3 left over. Is Finn right?"}},
   },
   {
     itemId: "division-conc-b0823-0032",
@@ -4252,7 +4252,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":49,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Lily says 49 ÷ 5 leaves 4 left over. Is that right?"}},
+    question: {"a":49,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego says 49 ÷ 5 leaves 4 left over. Is Diego right?"}},
   },
   {
     itemId: "division-conc-b0823-0034",
@@ -4272,7 +4272,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":68,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn says 68 ÷ 6 leaves 3 left over. Is that right?"}},
+    question: {"a":68,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Diego divides 68 by 6 and gets 3 left over. Is Diego right?"}},
   },
   {
     itemId: "division-conc-b0823-0036",
@@ -4292,7 +4292,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego says 22 ÷ 6 leaves 4 left over. Is that right?"}},
+    question: {"a":22,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Leo divides 22 by 6 and gets 4 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0038",
@@ -4332,7 +4332,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Sam says 45 ÷ 6 leaves 3 left over. Is that right?"}},
+    question: {"a":45,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Mina says 45 ÷ 6 leaves 3 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0042",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "remainderBounded",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":52,"b":null,"op":"/","answer":4,"display":{"promptText":"52 shared in 6s — the leftover must be under 6. What is it?"},"answerType":"numberPad"},
+    question: {"a":52,"b":null,"op":"/","answer":4,"display":{"promptText":"Share 52 counters out in groups of 6. How many counters are left over?"},"answerType":"numberPad"},
   },
   {
     itemId: "division-conc-b0823-0043",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":59,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Luca says 59 ÷ 6 leaves 1 left over. Is that right?"}},
+    question: {"a":59,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Mina divides 59 by 6 and gets 1 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0044",
@@ -4372,7 +4372,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Theo says 23 ÷ 7 leaves 2 left over. Is that right?"}},
+    question: {"a":23,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ava divides 23 by 7 and gets 2 left over. Is Ava right?"}},
   },
   {
     itemId: "division-conc-b0823-0046",
@@ -4392,7 +4392,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":39,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Kai says 39 ÷ 7 leaves 5 left over. Is that right?"}},
+    question: {"a":39,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ava says 39 ÷ 7 leaves 5 left over. Is Ava right?"}},
   },
   {
     itemId: "division-conc-b0823-0048",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":55,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Omar says 55 ÷ 7 leaves 6 left over. Is that right?"}},
+    question: {"a":55,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Rosa says 55 ÷ 7 leaves 6 left over. Is Rosa right?"}},
   },
   {
     itemId: "division-conc-b0823-0050",
@@ -4432,7 +4432,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Zoe says 65 ÷ 7 leaves 3 left over. Is that right?"}},
+    question: {"a":65,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Rosa divides 65 by 7 and gets 3 left over. Is Rosa right?"}},
   },
   {
     itemId: "division-conc-b0823-0052",
@@ -4452,7 +4452,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":81,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Lily says 81 ÷ 7 leaves 4 left over. Is that right?"}},
+    question: {"a":81,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Ben divides 81 by 7 and gets 4 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0054",
@@ -4472,7 +4472,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":27,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Finn says 27 ÷ 7 leaves 1 left over. Is that right?"}},
+    question: {"a":27,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Ben says 27 ÷ 7 leaves 1 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0056",
@@ -4482,7 +4482,7 @@ export const ITEMS = [
     structureType: "remainderBounded",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":29,"b":null,"op":"/","answer":1,"display":{"promptText":"29 shared in 7s — the leftover must be under 7. What is it?"},"answerType":"numberPad"},
+    question: {"a":29,"b":null,"op":"/","answer":1,"display":{"promptText":"Split 29 counters into groups of 7. How many counters are left over?"},"answerType":"numberPad"},
   },
   {
     itemId: "division-conc-b0823-0057",
@@ -4492,7 +4492,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"Diego says 42 ÷ 8 leaves 2 left over. Is that right?"}},
+    question: {"a":42,"b":null,"op":"/","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"June says 42 ÷ 8 leaves 2 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0058",
@@ -4512,7 +4512,7 @@ export const ITEMS = [
     structureType: "remainderJudged",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"Leo says 60 ÷ 8 leaves 5 left over. Is that right?"}},
+    question: {"a":60,"b":null,"op":"/","answer":"No","choices":["Yes","No"],"display":{"promptText":"June divides 60 by 8 and gets 5 left over. Is that right?"}},
   },
   {
     itemId: "division-conc-b0823-0060",
@@ -4532,7 +4532,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":32,"b":4,"op":"÷","answer":8,"display":{"promptText":"Nina shared 32 stickers into 4 equal piles. She thought, \"4 times what makes 32?\" How many stickers are in each pile?"}},
+    question: {"a":32,"b":4,"op":"÷","answer":8,"display":{"promptText":"Nina shared 32 stickers into 4 equal piles. She thought: 4 times what number makes 32? How many stickers are in each pile?"}},
   },
   {
     itemId: "division-conc-inverseFact-2_3-002",
@@ -4542,7 +4542,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":5,"op":"÷","answer":9,"display":{"promptText":"Devon put 45 marbles into 5 equal bags. He used the fact 5 × 9 = 45. How many marbles are in each bag?"}},
+    question: {"a":45,"b":5,"op":"÷","answer":9,"display":{"promptText":"Devon put 45 marbles into 5 equal bags. He used 5 × __ = 45 to help. How many marbles are in each bag?"}},
   },
   {
     itemId: "division-conc-inverseFact-2_3-003",
@@ -4562,7 +4562,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":56,"b":7,"op":"÷","answer":8,"display":{"promptText":"Eli set 56 blocks into 7 equal groups. He knows that 7 × 8 = 56. How many blocks are in each group?"}},
+    question: {"a":56,"b":7,"op":"÷","answer":8,"display":{"promptText":"Eli set 56 blocks into 7 equal groups. He thinks: 7 × __ = 56. How many blocks are in each group?"}},
   },
   {
     itemId: "division-conc-inverseFact-2_3-005",
@@ -4582,7 +4582,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":72,"b":8,"op":"÷","answer":9,"display":{"promptText":"Marcus lined up 72 buttons in 8 equal rows. The fact 8 × 9 = 72 can help. How many buttons are in each row?"}},
+    question: {"a":72,"b":8,"op":"÷","answer":9,"display":{"promptText":"Marcus lined up 72 buttons in 8 equal rows. Think: 8 × __ = 72. How many buttons are in each row?"}},
   },
   {
     itemId: "division-conc-inverseFact-2_3-007",
@@ -4592,7 +4592,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":81,"b":9,"op":"÷","answer":9,"display":{"promptText":"Owen dropped 81 acorns into 9 equal cups. He remembered that 9 × 9 = 81. How many acorns are in each cup?"}},
+    question: {"a":81,"b":9,"op":"÷","answer":9,"display":{"promptText":"Owen dropped 81 acorns into 9 equal cups. He thought of 9 × __ = 81. How many acorns are in each cup?"}},
   },
   {
     itemId: "division-conc-inverseFact-2_3-008",
@@ -4612,7 +4612,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":4,"op":"÷","answer":25,"display":{"promptText":"Talia stacked 100 coins into 4 equal stacks. She used the fact 4 × 25 = 100. How many coins are in each stack?"}},
+    question: {"a":100,"b":4,"op":"÷","answer":25,"display":{"promptText":"Talia stacked 100 coins into 4 equal stacks. She used 4 × __ = 100 to help. How many coins are in each stack?"}},
   },
   {
     itemId: "division-conc-inverseFact-2_3-010",
@@ -4642,7 +4642,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":5,"op":"÷","answer":15,"display":{"promptText":"Leah placed 75 books on 5 equal shelves. She used the fact 5 × 15 = 75. How many books are on each shelf?"}},
+    question: {"a":75,"b":5,"op":"÷","answer":15,"display":{"promptText":"Leah placed 75 books on 5 equal shelves. She thought: 5 × __ = 75. How many books are on each shelf?"}},
   },
   {
     itemId: "division-conc-inverseFact-2_3-013",
@@ -4662,7 +4662,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":7,"op":"÷","answer":6,"display":{"promptText":"Kim put 42 seashells into 7 equal buckets. The fact 7 × 6 = 42 helps here. How many seashells are in each bucket?"}},
+    question: {"a":42,"b":7,"op":"÷","answer":6,"display":{"promptText":"Kim put 42 seashells into 7 equal buckets. The fact 7 × __ = 42 can help. How many seashells are in each bucket?"}},
   },
   {
     itemId: "division-conc-inverseFact-2_3-015",
@@ -4682,7 +4682,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":90,"b":6,"op":"÷","answer":15,"display":{"promptText":"Noah arranged 90 muffins on 6 equal trays. He thought, \"6 times what makes 90?\" How many muffins are on each tray?"}},
+    question: {"a":90,"b":6,"op":"÷","answer":15,"display":{"promptText":"Noah arranged 90 muffins on 6 equal trays. He thought: 6 times what number makes 90? How many muffins are on each tray?"}},
   },
   {
     itemId: "division-conc-inverseFact-23-001",
@@ -4692,7 +4692,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":4,"op":"÷","answer":6,"display":{"promptText":"If 4 × 6 = 24, what is 24 ÷ 4?"}},
+    question: {"a":24,"b":4,"op":"÷","answer":6,"display":{"promptText":"A times fact can help: 4 × __ = 24. What is 24 ÷ 4?"}},
   },
   {
     itemId: "division-conc-inverseFact-23-002",
@@ -4712,7 +4712,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":6,"op":"÷","answer":6,"display":{"promptText":"Since 6 × 6 = 36, what is 36 ÷ 6?"}},
+    question: {"a":36,"b":6,"op":"÷","answer":6,"display":{"promptText":"Find the missing number in 6 × __ = 36. What is 36 ÷ 6?"}},
   },
   {
     itemId: "division-conc-inverseFact-4_5-001",
@@ -4742,7 +4742,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":252,"b":9,"op":"÷","answer":28,"display":{"promptText":"Theo stacks 252 library books equally onto 9 shelves. If 9 × 28 = 252, how many library books are on each shelf?"}},
+    question: {"a":252,"b":9,"op":"÷","answer":28,"display":{"promptText":"Theo stacks 252 library books equally onto 9 shelves. Use the fact 9 × __ = 252. How many library books are on each shelf?"}},
   },
   {
     itemId: "division-conc-inverseFact-4_5-004",
@@ -4772,7 +4772,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":175,"b":7,"op":"÷","answer":25,"display":{"promptText":"Mina sorts 175 stickers equally into 7 folders. If 7 × 25 = 175, how many stickers are in each folder?"}},
+    question: {"a":175,"b":7,"op":"÷","answer":25,"display":{"promptText":"Mina sorts 175 stickers equally into 7 folders. Think: 7 × __ = 175. How many stickers are in each folder?"}},
   },
   {
     itemId: "division-conc-inverseFact-4_5-007",
@@ -4802,7 +4802,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":234,"b":18,"op":"÷","answer":13,"display":{"promptText":"Priya shares 234 marbles equally among 18 jars. If 18 × 13 = 234, how many marbles are in each jar?"}},
+    question: {"a":234,"b":18,"op":"÷","answer":13,"display":{"promptText":"Priya shares 234 marbles equally among 18 jars. Think: 18 × __ = 234. How many marbles are in each jar?"}},
   },
   {
     itemId: "division-conc-inverseFact-4_5-010",
@@ -4842,7 +4842,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":429,"b":13,"op":"÷","answer":33,"display":{"promptText":"Coach Barnes hands out 429 practice cards equally to 13 players. If 13 × 33 = 429, how many practice cards does each player get?"}},
+    question: {"a":429,"b":13,"op":"÷","answer":33,"display":{"promptText":"Coach Barnes hands out 429 practice cards equally to 13 players. Think: 13 × __ = 429. How many practice cards does each player get?"}},
   },
   {
     itemId: "division-conc-inverseFact-4_5-014",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":72,"b":9,"op":"÷","answer":8,"display":{"promptText":"If 9 × 8 = 72, then 72 ÷ 9 equals?"}},
+    question: {"a":72,"b":9,"op":"÷","answer":8,"display":{"promptText":"Use 9 × __ = 72 to help. What is 72 ÷ 9?"}},
   },
   {
     itemId: "division-conc-inverseFact-45-002",
@@ -4902,7 +4902,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":49,"b":7,"op":"÷","answer":7,"display":{"promptText":"Since 7 × 7 = 49, what is 49 ÷ 7?"}},
+    question: {"a":49,"b":7,"op":"÷","answer":7,"display":{"promptText":"A times fact can help: 7 × __ = 49. What is 49 ÷ 7?"}},
   },
   {
     itemId: "division-conc-inverseFact-K_1-001",
@@ -4912,7 +4912,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":2,"op":"÷","answer":4,"display":{"promptText":"If 4 × 2 = 8, what is 8 ÷ 2?"}},
+    question: {"a":8,"b":2,"op":"÷","answer":4,"display":{"promptText":"Think: 2 × __ = 8. What is 8 ÷ 2?"}},
   },
   {
     itemId: "division-conc-inverseFact-K_1-002",
@@ -4932,7 +4932,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":5,"op":"÷","answer":3,"display":{"promptText":"Since 5 × 3 = 15, what does 15 ÷ 5 equal?"}},
+    question: {"a":15,"b":5,"op":"÷","answer":3,"display":{"promptText":"Fill in 5 × __ = 15. Then what is 15 ÷ 5?"}},
   },
   {
     itemId: "division-conc-inverseFact-K_1-004",
@@ -4962,7 +4962,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":4,"op":"÷","answer":5,"display":{"promptText":"The times fact 4 × 5 = 20 can help you. What is 20 ÷ 4?"}},
+    question: {"a":20,"b":4,"op":"÷","answer":5,"display":{"promptText":"Use 4 × __ = 20 to help. What is 20 ÷ 4?"}},
   },
   {
     itemId: "division-conc-inverseFact-K_1-007",
@@ -4992,7 +4992,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":2,"op":"÷","answer":5,"display":{"promptText":"Theo knows 2 × 5 = 10. So what is 10 ÷ 2?"}},
+    question: {"a":10,"b":2,"op":"÷","answer":5,"display":{"promptText":"Fill in 2 × __ = 10. Then what is 10 ÷ 2?"}},
   },
   {
     itemId: "division-conc-inverseFact-K_1-010",
@@ -5012,7 +5012,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":2,"op":"÷","answer":9,"display":{"promptText":"Nia sees that 2 × 9 = 18. What is 18 ÷ 2?"}},
+    question: {"a":18,"b":2,"op":"÷","answer":9,"display":{"promptText":"Use 2 × __ = 18 to help. What is 18 ÷ 2?"}},
   },
   {
     itemId: "division-conc-inverseFact-K_1-012",
@@ -5042,7 +5042,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":3,"op":"÷","answer":5,"display":{"promptText":"If 3 × 5 = 15, then 15 ÷ 3 is what number?"}},
+    question: {"a":15,"b":3,"op":"÷","answer":5,"display":{"promptText":"Find the missing number in 3 × __ = 15. What is 15 ÷ 3?"}},
   },
   {
     itemId: "division-conc-inverseFact-K_1-015",
@@ -5052,7 +5052,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":4,"op":"÷","answer":2,"display":{"promptText":"8 ÷ 4 = ? Use the fact 4 × 2 = 8 to help."}},
+    question: {"a":8,"b":4,"op":"÷","answer":2,"display":{"promptText":"Think: 4 × __ = 8. What is 8 ÷ 4?"}},
   },
   {
     itemId: "division-conc-inverseFact-K_1-016",
@@ -5072,7 +5072,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"÷","answer":2,"display":{"promptText":"If 2 × 3 = 6, then 6 ÷ 3 equals?"}},
+    question: {"a":6,"b":3,"op":"÷","answer":2,"display":{"promptText":"Fill in 3 × __ = 6. Then what is 6 ÷ 3?"}},
   },
   {
     itemId: "division-conc-inverseFact-K1-002",
@@ -5092,7 +5092,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":5,"op":"÷","answer":2,"display":{"promptText":"Since 5 × 2 = 10, what is 10 ÷ 5?"}},
+    question: {"a":10,"b":5,"op":"÷","answer":2,"display":{"promptText":"Think: 5 × __ = 10. What is 10 ÷ 5?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-001",
@@ -5102,7 +5102,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":21,"b":3,"op":"÷","answer":7,"display":{"promptText":"Split 21 crayons into 3 equal boxes. Each box has?"}},
+    question: {"a":21,"b":3,"op":"÷","answer":7,"display":{"promptText":"Split 21 crayons into 3 equal boxes. How many crayons are in each box?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-002",
@@ -5112,7 +5112,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":6,"op":"÷","answer":4,"display":{"promptText":"Share 24 grapes fairly among 6 plates. Each plate gets?"}},
+    question: {"a":24,"b":6,"op":"÷","answer":4,"display":{"promptText":"Share 24 grapes fairly among 6 plates. How many grapes go on each plate?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-003",
@@ -5122,7 +5122,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":27,"b":9,"op":"÷","answer":3,"display":{"promptText":"Divide 27 beads evenly among 9 bracelets. Each bracelet gets?"}},
+    question: {"a":27,"b":9,"op":"÷","answer":3,"display":{"promptText":"Put 27 beads on 9 bracelets so each bracelet gets the same number. How many beads are on each bracelet?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-004",
@@ -5142,7 +5142,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":7,"op":"÷","answer":5,"display":{"promptText":"Split 35 apples into 7 equal baskets. Each basket holds?"}},
+    question: {"a":35,"b":7,"op":"÷","answer":5,"display":{"promptText":"Split 35 apples into 7 equal baskets. How many apples are in each basket?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-006",
@@ -5162,7 +5162,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":7,"op":"÷","answer":6,"display":{"promptText":"Spread 42 books evenly onto 7 shelves. Each shelf holds?"}},
+    question: {"a":42,"b":7,"op":"÷","answer":6,"display":{"promptText":"Put 42 books on 7 shelves so each shelf has the same number. How many books are on each shelf?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-008",
@@ -5182,7 +5182,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":48,"b":4,"op":"÷","answer":12,"display":{"promptText":"Share 48 pencils fairly among 4 tables. Each table gets?"}},
+    question: {"a":48,"b":4,"op":"÷","answer":12,"display":{"promptText":"Share 48 pencils fairly among 4 tables. How many pencils does each table get?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-010",
@@ -5202,7 +5202,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":56,"b":8,"op":"÷","answer":7,"display":{"promptText":"Deal 56 cards into 8 equal piles. Each pile has?"}},
+    question: {"a":56,"b":8,"op":"÷","answer":7,"display":{"promptText":"Deal 56 cards into 8 equal piles. How many cards are in each pile?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-012",
@@ -5222,7 +5222,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":72,"b":6,"op":"÷","answer":12,"display":{"promptText":"Divide 72 stamps evenly into 6 albums. Each album holds?"}},
+    question: {"a":72,"b":6,"op":"÷","answer":12,"display":{"promptText":"Put 72 stamps into 6 albums so each album has the same number. How many stamps are in each album?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-014",
@@ -5242,7 +5242,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":90,"b":9,"op":"÷","answer":10,"display":{"promptText":"Stick 90 stars evenly onto 9 posters. Each poster gets?"}},
+    question: {"a":90,"b":9,"op":"÷","answer":10,"display":{"promptText":"Stick 90 stars onto 9 posters so each poster gets the same number. How many stars go on each poster?"}},
   },
   {
     itemId: "division-conc-partitioning-2_3-016",
@@ -5252,7 +5252,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":66,"b":6,"op":"÷","answer":11,"display":{"promptText":"Put 66 balloons into 6 equal bunches. Each bunch has?"}},
+    question: {"a":66,"b":6,"op":"÷","answer":11,"display":{"promptText":"Put 66 balloons into 6 equal bunches. How many balloons are in each bunch?"}},
   },
   {
     itemId: "division-conc-partitioning-23-001",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":4,"op":"÷","answer":3,"display":{"promptText":"Split 12 into 4 equal groups. Each group has?"}},
+    question: {"a":12,"b":4,"op":"÷","answer":3,"display":{"promptText":"Split 12 counters into 4 equal groups. How many counters are in each group?"}},
   },
   {
     itemId: "division-conc-partitioning-23-002",
@@ -5272,7 +5272,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":3,"op":"÷","answer":5,"display":{"promptText":"Share 15 fairly among 3 friends. Each friend gets?"}},
+    question: {"a":15,"b":3,"op":"÷","answer":5,"display":{"promptText":"Share 15 crackers fairly among 3 friends. How many crackers does each friend get?"}},
   },
   {
     itemId: "division-conc-partitioning-23-003",
@@ -5282,7 +5282,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":6,"op":"÷","answer":3,"display":{"promptText":"Divide 18 evenly into 6 piles. Each pile is?"}},
+    question: {"a":18,"b":6,"op":"÷","answer":3,"display":{"promptText":"Split 18 counters into 6 equal piles. How many counters are in each pile?"}},
   },
   {
     itemId: "division-conc-partitioning-4_5-001",
@@ -5462,7 +5462,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":56,"b":7,"op":"÷","answer":8,"display":{"promptText":"Distribute 56 evenly across 7 boxes. How many per box?"}},
+    question: {"a":56,"b":7,"op":"÷","answer":8,"display":{"promptText":"Pack 56 crayons into 7 boxes with the same number in each box. How many crayons are in each box?"}},
   },
   {
     itemId: "division-conc-partitioning-45-003",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":81,"b":9,"op":"÷","answer":9,"display":{"promptText":"Share 81 fairly among 9 friends. Each friend gets?"}},
+    question: {"a":81,"b":9,"op":"÷","answer":9,"display":{"promptText":"Share 81 marbles fairly among 9 friends. How many marbles does each friend get?"}},
   },
   {
     itemId: "division-conc-partitioning-K_1-001",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"÷","answer":2,"display":{"promptText":"Divide 4 into 2 equal parts. Each part is?"}},
+    question: {"a":4,"b":2,"op":"÷","answer":2,"display":{"promptText":"Split 4 counters into 2 equal groups. How many counters are in each group?"}},
   },
   {
     itemId: "division-conc-unknownQuotient-2_3-001",

@@ -4732,7 +4732,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":7,"op":"−","answer":8,"display":{"promptText":"15 is 7 + 8. What is 15 − 7?"}},
+    question: {"a":14,"b":8,"op":"−","answer":6,"display":{"promptText":"Split 14 into 8 and the rest. What is 14 − 8?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-002",
@@ -4742,7 +4742,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":7,"op":"−","answer":13,"display":{"promptText":"Use 20 = 7 + 13 to find 20 − 7."}},
+    question: {"a":20,"b":7,"op":"−","answer":13,"display":{"promptText":"Use addition to help: 7 + __ = 20. What is 20 − 7?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-003",
@@ -4752,7 +4752,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":9,"op":"−","answer":9,"display":{"promptText":"Use 18 = 9 + 9 to find 18 − 9."}},
+    question: {"a":18,"b":9,"op":"−","answer":9,"display":{"promptText":"Use 9 + __ = 18 to help. What is 18 − 9?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-004",
@@ -4762,7 +4762,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":6,"op":"−","answer":9,"display":{"promptText":"If 6 + 9 = 15, then 15 − 6 = ?"}},
+    question: {"a":15,"b":6,"op":"−","answer":9,"display":{"promptText":"Think 6 + __ = 15. What is 15 − 6?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-005",
@@ -4772,7 +4772,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":8,"op":"−","answer":9,"display":{"promptText":"If 8 + 9 = 17, then 17 − 8 = ?"}},
+    question: {"a":17,"b":8,"op":"−","answer":9,"display":{"promptText":"Think 8 + __ = 17. What is 17 − 8?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-006",
@@ -4782,7 +4782,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":7,"op":"−","answer":12,"display":{"promptText":"If 7 + 12 = 19, then 19 − 7 = ?"}},
+    question: {"a":19,"b":7,"op":"−","answer":12,"display":{"promptText":"Think 7 + __ = 19. What is 19 − 7?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-007",
@@ -4792,7 +4792,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":5,"op":"−","answer":15,"display":{"promptText":"Bar model: whole of 20 with one part 5. The other part is?"}},
+    question: {"a":20,"b":5,"op":"−","answer":15,"display":{"promptText":"If the whole is 20 and one part is 5, what is the other part?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-008",
@@ -4802,7 +4802,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":14,"op":"−","answer":6,"display":{"promptText":"Bar model: whole of 20 with one part 14. The other part is?"}},
+    question: {"a":20,"b":14,"op":"−","answer":6,"display":{"promptText":"What is the other part when the whole is 20 and one part is 14?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-009",
@@ -4812,7 +4812,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":5,"op":"−","answer":13,"display":{"promptText":"Bar model: whole of 18 with one part 5. The other part is?"}},
+    question: {"a":18,"b":5,"op":"−","answer":13,"display":{"promptText":"18 is made of 5 and what other part?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-010",
@@ -4822,7 +4822,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":11,"op":"−","answer":5,"display":{"promptText":"Bar model: whole of 16 with one part 11. The other part is?"}},
+    question: {"a":16,"b":11,"op":"−","answer":5,"display":{"promptText":"If the whole is 16 and one part is 11, what is the other part?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-011",
@@ -4832,7 +4832,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":4,"op":"−","answer":10,"display":{"promptText":"Think of 14 as 4 + 10. What is 14 − 4?"}},
+    question: {"a":14,"b":4,"op":"−","answer":10,"display":{"promptText":"Think of the addition fact 4 + __ = 14. What is 14 − 4?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-012",
@@ -4842,7 +4842,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":5,"op":"−","answer":10,"display":{"promptText":"Think of 15 as 5 + 10. What is 15 − 5?"}},
+    question: {"a":15,"b":5,"op":"−","answer":10,"display":{"promptText":"Think of the addition fact 5 + __ = 15. What is 15 − 5?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-013",
@@ -4852,7 +4852,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":10,"op":"−","answer":7,"display":{"promptText":"Think of 17 as 10 + 7. What is 17 − 10?"}},
+    question: {"a":17,"b":10,"op":"−","answer":7,"display":{"promptText":"Think of the addition fact 10 + __ = 17. What is 17 − 10?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-014",
@@ -4862,7 +4862,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":10,"op":"−","answer":9,"display":{"promptText":"Think of 19 as 10 + 9. What is 19 − 10?"}},
+    question: {"a":19,"b":10,"op":"−","answer":9,"display":{"promptText":"Think of the addition fact 10 + __ = 19. What is 19 − 10?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-015",
@@ -4872,7 +4872,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":8,"op":"−","answer":8,"display":{"promptText":"16 is 8 + 8. Use that to find 16 − 8."}},
+    question: {"a":16,"b":8,"op":"−","answer":8,"display":{"promptText":"Break 16 into 8 and another part. What is 16 − 8?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-016",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":8,"op":"−","answer":10,"display":{"promptText":"18 is 8 + 10. Use that to find 18 − 8."}},
+    question: {"a":18,"b":8,"op":"−","answer":10,"display":{"promptText":"Break 18 into 8 and another part. What is 18 − 8?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-017",
@@ -4892,7 +4892,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":5,"op":"−","answer":7,"display":{"promptText":"Take 5 from 12. Result?"}},
+    question: {"a":12,"b":5,"op":"−","answer":7,"display":{"promptText":"What is 12 take away 5?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-018",
@@ -4902,7 +4902,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":6,"op":"−","answer":7,"display":{"promptText":"Take 6 from 13. Result?"}},
+    question: {"a":13,"b":6,"op":"−","answer":7,"display":{"promptText":"What is left when you take 6 away from 13?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-019",
@@ -4912,7 +4912,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":7,"op":"−","answer":7,"display":{"promptText":"Take 7 from 14. Result?"}},
+    question: {"a":14,"b":7,"op":"−","answer":7,"display":{"promptText":"If you take 7 from 14, how much is left?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-020",
@@ -5022,7 +5022,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":23,"op":"−","answer":27,"display":{"promptText":"50 is 23 + 27. What is 50 − 23?"}},
+    question: {"a":50,"b":23,"op":"−","answer":27,"display":{"promptText":"Add up from 23 to get to 50. What is 50 − 23?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-002",
@@ -5032,7 +5032,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":70,"b":35,"op":"−","answer":35,"display":{"promptText":"Since 70 = 35 + 35, what is 70 − 35?"}},
+    question: {"a":70,"b":35,"op":"−","answer":35,"display":{"promptText":"Use 35 + __ = 70 to help. What is 70 − 35?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-003",
@@ -5042,7 +5042,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":80,"b":44,"op":"−","answer":36,"display":{"promptText":"Use 80 = 44 + 36 to find 80 − 44."}},
+    question: {"a":80,"b":44,"op":"−","answer":36,"display":{"promptText":"Use 44 + __ = 80 to help. What is 80 − 44?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-004",
@@ -5052,7 +5052,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":35,"op":"−","answer":25,"display":{"promptText":"If 35 + 25 = 60, then 60 − 35 = ?"}},
+    question: {"a":60,"b":35,"op":"−","answer":25,"display":{"promptText":"Think 35 + __ = 60. What is 60 − 35?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-005",
@@ -5062,7 +5062,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":80,"b":45,"op":"−","answer":35,"display":{"promptText":"If 45 + 35 = 80, then 80 − 45 = ?"}},
+    question: {"a":80,"b":45,"op":"−","answer":35,"display":{"promptText":"Think 45 + __ = 80. What is 80 − 45?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-006",
@@ -5072,7 +5072,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":65,"op":"−","answer":35,"display":{"promptText":"If 65 + 35 = 100, then 100 − 65 = ?"}},
+    question: {"a":100,"b":65,"op":"−","answer":35,"display":{"promptText":"Use addition to help: 65 + __ = 100. What is 100 − 65?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-007",
@@ -5082,7 +5082,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":25,"op":"−","answer":50,"display":{"promptText":"Bar model: whole of 75 with one part 25. The other part is?"}},
+    question: {"a":75,"b":25,"op":"−","answer":50,"display":{"promptText":"What is the other part when the whole is 75 and one part is 25?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-008",
@@ -5092,7 +5092,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":85,"b":45,"op":"−","answer":40,"display":{"promptText":"Bar model: whole of 85 with one part 45. The other part is?"}},
+    question: {"a":85,"b":45,"op":"−","answer":40,"display":{"promptText":"What part goes with 45 to make a whole of 85?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-009",
@@ -5102,7 +5102,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":120,"b":65,"op":"−","answer":55,"display":{"promptText":"Bar model: whole of 120 with one part 65. The other part is?"}},
+    question: {"a":120,"b":65,"op":"−","answer":55,"display":{"promptText":"If the whole is 120 and one part is 65, what is the other part?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-010",
@@ -5112,7 +5112,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":150,"b":75,"op":"−","answer":75,"display":{"promptText":"Bar model: whole of 150 with one part 75. The other part is?"}},
+    question: {"a":150,"b":75,"op":"−","answer":75,"display":{"promptText":"What is the other part when the whole is 150 and one part is 75?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-011",
@@ -5122,7 +5122,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":30,"op":"−","answer":70,"display":{"promptText":"Think of 100 as 30 + 70. What is 100 − 30?"}},
+    question: {"a":100,"b":30,"op":"−","answer":70,"display":{"promptText":"Count up from 30 to 100. What is 100 − 30?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-012",
@@ -5132,7 +5132,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":200,"b":75,"op":"−","answer":125,"display":{"promptText":"Think of 200 as 75 + 125. What is 200 − 75?"}},
+    question: {"a":200,"b":75,"op":"−","answer":125,"display":{"promptText":"Count up from 75 to 200. What is 200 − 75?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-013",
@@ -5142,7 +5142,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":100,"op":"−","answer":150,"display":{"promptText":"Think of 250 as 100 + 150. What is 250 − 100?"}},
+    question: {"a":250,"b":100,"op":"−","answer":150,"display":{"promptText":"Count up from 100 to 250. What is 250 − 100?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-014",
@@ -5152,7 +5152,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":300,"b":125,"op":"−","answer":175,"display":{"promptText":"Think of 300 as 125 + 175. What is 300 − 125?"}},
+    question: {"a":300,"b":125,"op":"−","answer":175,"display":{"promptText":"Count up from 125 to 300. What is 300 − 125?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-015",
@@ -5162,7 +5162,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":500,"b":125,"op":"−","answer":375,"display":{"promptText":"500 is 125 + 375. Use that to find 500 − 125."}},
+    question: {"a":500,"b":125,"op":"−","answer":375,"display":{"promptText":"Break 500 into 125 and another part. What is 500 − 125?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-016",
@@ -5172,7 +5172,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":400,"b":150,"op":"−","answer":250,"display":{"promptText":"400 is 150 + 250. Use that to find 400 − 150."}},
+    question: {"a":400,"b":150,"op":"−","answer":250,"display":{"promptText":"Break 400 into 150 and another part. What is 400 − 150?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-017",
@@ -5182,7 +5182,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":25,"op":"−","answer":35,"display":{"promptText":"Take 25 from 60. Result?"}},
+    question: {"a":60,"b":25,"op":"−","answer":35,"display":{"promptText":"What is 60 take away 25?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-018",
@@ -5192,7 +5192,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":48,"op":"−","answer":27,"display":{"promptText":"Take 48 from 75. Result?"}},
+    question: {"a":75,"b":48,"op":"−","answer":27,"display":{"promptText":"What is left when you take 48 away from 75?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-019",
@@ -5202,7 +5202,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":37,"op":"−","answer":63,"display":{"promptText":"Take 37 from 100. Result?"}},
+    question: {"a":100,"b":37,"op":"−","answer":63,"display":{"promptText":"If you take 37 from 100, how much is left?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-020",
@@ -5312,7 +5312,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":4,"op":"−","answer":6,"display":{"promptText":"Think of 10 as 4 + 6. What is 10 − 4?"}},
+    question: {"a":10,"b":4,"op":"−","answer":6,"display":{"promptText":"Use 4 + __ = 10 to help. What is 10 − 4?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-002",
@@ -5322,7 +5322,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":2,"op":"−","answer":5,"display":{"promptText":"Use 7 = 5 + 2 to find 7 − 2."}},
+    question: {"a":7,"b":2,"op":"−","answer":5,"display":{"promptText":"Break 7 into 2 and the rest. What is 7 − 2?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-003",
@@ -5332,7 +5332,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":3,"op":"−","answer":5,"display":{"promptText":"Since 8 = 5 + 3, what is 8 − 3?"}},
+    question: {"a":8,"b":3,"op":"−","answer":5,"display":{"promptText":"Think of the addition fact 3 + __ = 8. What is 8 − 3?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-004",
@@ -5342,7 +5342,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":3,"op":"−","answer":7,"display":{"promptText":"If 3 + 7 = 10, then 10 − 3 = ?"}},
+    question: {"a":10,"b":3,"op":"−","answer":7,"display":{"promptText":"Use addition to help: 3 + __ = 10. What is 10 − 3?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-005",
@@ -5352,7 +5352,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"−","answer":5,"display":{"promptText":"If 4 + 5 = 9, then 9 − 4 = ?"}},
+    question: {"a":9,"b":4,"op":"−","answer":5,"display":{"promptText":"Use addition to help: 4 + __ = 9. What is 9 − 4?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-006",
@@ -5362,7 +5362,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":3,"op":"−","answer":5,"display":{"promptText":"If 3 + 5 = 8, then 8 − 3 = ?"}},
+    question: {"a":8,"b":3,"op":"−","answer":5,"display":{"promptText":"Use addition to help: 3 + __ = 8. What is 8 − 3?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-007",
@@ -5372,7 +5372,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":2,"op":"−","answer":5,"display":{"promptText":"Bar model: whole of 7 with one part 2. The other part is?"}},
+    question: {"a":7,"b":2,"op":"−","answer":5,"display":{"promptText":"7 is made of 2 and what other part?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-008",
@@ -5382,7 +5382,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":3,"op":"−","answer":5,"display":{"promptText":"Bar model: whole of 8 with one part 3. The other part is?"}},
+    question: {"a":8,"b":3,"op":"−","answer":5,"display":{"promptText":"If the whole is 8 and one part is 3, what is the other part?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-009",
@@ -5392,7 +5392,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"−","answer":4,"display":{"promptText":"Bar model: whole of 9 with one part 5. The other part is?"}},
+    question: {"a":9,"b":5,"op":"−","answer":4,"display":{"promptText":"What is the other part when the whole is 9 and one part is 5?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-010",
@@ -5402,7 +5402,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":6,"op":"−","answer":4,"display":{"promptText":"Bar model: whole of 10 with one part 6. The other part is?"}},
+    question: {"a":10,"b":6,"op":"−","answer":4,"display":{"promptText":"What part goes with 6 to make a whole of 10?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-011",
@@ -5412,7 +5412,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":4,"op":"−","answer":2,"display":{"promptText":"Think of 6 as 4 + 2. What is 6 − 4?"}},
+    question: {"a":6,"b":4,"op":"−","answer":2,"display":{"promptText":"Use 4 + __ = 6 to help. What is 6 − 4?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-012",
@@ -5422,7 +5422,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":3,"op":"−","answer":4,"display":{"promptText":"Think of 7 as 3 + 4. What is 7 − 3?"}},
+    question: {"a":7,"b":3,"op":"−","answer":4,"display":{"promptText":"Think of 7 as 3 and another part. What is 7 − 3?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-013",
@@ -5432,7 +5432,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":2,"op":"−","answer":7,"display":{"promptText":"Think of 9 as 2 + 7. What is 9 − 2?"}},
+    question: {"a":9,"b":2,"op":"−","answer":7,"display":{"promptText":"Split 9 into 2 and the rest. What is 9 − 2?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-014",
@@ -5442,7 +5442,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":2,"op":"−","answer":8,"display":{"promptText":"Think of 10 as 2 + 8. What is 10 − 2?"}},
+    question: {"a":10,"b":2,"op":"−","answer":8,"display":{"promptText":"Think of 10 as 2 and another part. What is 10 − 2?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-015",
@@ -5452,7 +5452,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"−","answer":3,"display":{"promptText":"5 is 2 + 3. Use that to find 5 − 2."}},
+    question: {"a":5,"b":2,"op":"−","answer":3,"display":{"promptText":"Break 5 into 2 and another part. What is 5 − 2?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-016",
@@ -5462,7 +5462,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":2,"op":"−","answer":6,"display":{"promptText":"8 is 2 + 6. Use that to find 8 − 2."}},
+    question: {"a":8,"b":2,"op":"−","answer":6,"display":{"promptText":"Split 8 into 2 and the rest. What is 8 − 2?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-017",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":8,"op":"−","answer":2,"display":{"promptText":"Take 8 from 10. Result?"}},
+    question: {"a":10,"b":8,"op":"−","answer":2,"display":{"promptText":"What is 10 take away 8?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-018",
@@ -5482,7 +5482,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":3,"op":"−","answer":6,"display":{"promptText":"Take 3 from 9. Result?"}},
+    question: {"a":9,"b":3,"op":"−","answer":6,"display":{"promptText":"What is left when you take 3 away from 9?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-019",
@@ -5492,7 +5492,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":2,"op":"−","answer":6,"display":{"promptText":"Take 2 from 8. Result?"}},
+    question: {"a":8,"b":2,"op":"−","answer":6,"display":{"promptText":"If you take 2 from 8, how much is left?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-020",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":5,"op":"−","answer":8,"display":{"promptText":"Compare 13 and 5. The difference is?"}},
+    question: {"a":13,"b":5,"op":"−","answer":8,"display":{"promptText":"What is the difference between 13 and 5?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-23-011",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":7,"op":"−","answer":9,"display":{"promptText":"Compare 16 and 7. The difference is?"}},
+    question: {"a":16,"b":7,"op":"−","answer":9,"display":{"promptText":"How far apart are 16 and 7 on a number line?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-23-012",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":7,"op":"−","answer":12,"display":{"promptText":"Compare 19 and 7. The difference is?"}},
+    question: {"a":19,"b":7,"op":"−","answer":12,"display":{"promptText":"How much bigger is 19 than 7?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-23-013",
@@ -5982,7 +5982,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":95,"b":42,"op":"−","answer":53,"display":{"promptText":"Compare 95 and 42. The difference is?"}},
+    question: {"a":95,"b":42,"op":"−","answer":53,"display":{"promptText":"What is the difference between 95 and 42?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-45-011",
@@ -5992,7 +5992,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":120,"b":75,"op":"−","answer":45,"display":{"promptText":"Compare 120 and 75. The difference is?"}},
+    question: {"a":120,"b":75,"op":"−","answer":45,"display":{"promptText":"How far apart are 120 and 75 on a number line?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-45-012",
@@ -6002,7 +6002,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":180,"b":95,"op":"−","answer":85,"display":{"promptText":"Compare 180 and 95. The difference is?"}},
+    question: {"a":180,"b":95,"op":"−","answer":85,"display":{"promptText":"How much bigger is 180 than 95?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-45-013",
@@ -6272,7 +6272,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":3,"op":"−","answer":4,"display":{"promptText":"Compare 7 and 3. The difference is?"}},
+    question: {"a":7,"b":3,"op":"−","answer":4,"display":{"promptText":"What is the difference between 7 and 3?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-K1-011",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"−","answer":2,"display":{"promptText":"Compare 7 and 5. The difference is?"}},
+    question: {"a":7,"b":5,"op":"−","answer":2,"display":{"promptText":"How far apart are 7 and 5 on a number line?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-K1-012",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "compareDifferenceUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":2,"op":"−","answer":4,"display":{"promptText":"Compare 6 and 2. The difference is?"}},
+    question: {"a":6,"b":2,"op":"−","answer":4,"display":{"promptText":"How much bigger is 6 than 2?"}},
   },
   {
     itemId: "subtraction-conc-differenceAsDistance-K1-013",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":null,"op":"−","answer":9,"display":{"promptText":"Find the missing subtrahend: 20 − ? = 11"}},
+    question: {"a":20,"b":null,"op":"−","answer":9,"display":{"promptText":"What is the missing number in 20 − __ = 11?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-002",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"−","answer":9,"display":{"promptText":"Solve for the unknown: 18 − ? = 9"}},
+    question: {"a":18,"b":null,"op":"−","answer":9,"display":{"promptText":"What number do you take away from 18 to get 9?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-004",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":null,"op":"−","answer":11,"display":{"promptText":"Open equation: 20 − ? = 9. The missing number is?"}},
+    question: {"a":20,"b":null,"op":"−","answer":11,"display":{"promptText":"How far do you count back from 20 to get to 9?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-005",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":null,"op":"−","answer":10,"display":{"promptText":"Open equation: 19 − ? = 9. The missing number is?"}},
+    question: {"a":19,"b":null,"op":"−","answer":10,"display":{"promptText":"What number do you take away from 19 to get 9?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-006",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"−","answer":10,"display":{"promptText":"Open equation: 18 − ? = 8. The missing number is?"}},
+    question: {"a":18,"b":null,"op":"−","answer":10,"display":{"promptText":"18 take away what number leaves 8?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-007",
@@ -6672,7 +6672,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":null,"op":"−","answer":10,"display":{"promptText":"Equation: 16 − ? = 6. Find the missing value."}},
+    question: {"a":16,"b":null,"op":"−","answer":10,"display":{"promptText":"What number makes 16 − __ = 6 true?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-022",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":null,"op":"−","answer":10,"display":{"promptText":"Equation: 15 − ? = 5. Find the missing value."}},
+    question: {"a":15,"b":null,"op":"−","answer":10,"display":{"promptText":"What number goes in the blank: 15 − __ = 5?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-023",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"−","answer":9,"display":{"promptText":"Equation: 14 − ? = 5. Find the missing value."}},
+    question: {"a":14,"b":null,"op":"−","answer":9,"display":{"promptText":"What is the missing number in 14 − __ = 5?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-024",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":null,"op":"−","answer":9,"display":{"promptText":"Equation: 13 − ? = 4. Find the missing value."}},
+    question: {"a":13,"b":null,"op":"−","answer":9,"display":{"promptText":"13 take away what number leaves 4?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-025",
@@ -6712,7 +6712,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"−","answer":8,"display":{"promptText":"Equation: 12 − ? = 4. Find the missing value."}},
+    question: {"a":12,"b":null,"op":"−","answer":8,"display":{"promptText":"What number do you take away from 12 to get 4?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-23-026",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":null,"op":"−","answer":33,"display":{"promptText":"Find the missing subtrahend: 60 − ? = 27"}},
+    question: {"a":60,"b":null,"op":"−","answer":33,"display":{"promptText":"What number goes in the blank: 60 − __ = 27?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-002",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":80,"b":null,"op":"−","answer":45,"display":{"promptText":"Solve for the unknown: 80 − ? = 35"}},
+    question: {"a":80,"b":null,"op":"−","answer":45,"display":{"promptText":"How far do you count back from 80 to get to 35?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-003",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":null,"op":"−","answer":35,"display":{"promptText":"Open equation: 100 − ? = 65. The missing number is?"}},
+    question: {"a":100,"b":null,"op":"−","answer":35,"display":{"promptText":"What number makes 100 − __ = 65 true?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-005",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":null,"op":"−","answer":45,"display":{"promptText":"Open equation: 100 − ? = 55. The missing number is?"}},
+    question: {"a":100,"b":null,"op":"−","answer":45,"display":{"promptText":"What number goes in the blank: 100 − __ = 55?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-006",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":null,"op":"−","answer":22,"display":{"promptText":"Open equation: 100 − ? = 78. The missing number is?"}},
+    question: {"a":100,"b":null,"op":"−","answer":22,"display":{"promptText":"What is the missing number in 100 − __ = 78?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-007",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":85,"b":null,"op":"−","answer":48,"display":{"promptText":"Equation: 85 − ? = 37. Find the missing value."}},
+    question: {"a":85,"b":null,"op":"−","answer":48,"display":{"promptText":"How far do you count back from 85 to get to 37?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-022",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":95,"b":null,"op":"−","answer":58,"display":{"promptText":"Equation: 95 − ? = 37. Find the missing value."}},
+    question: {"a":95,"b":null,"op":"−","answer":58,"display":{"promptText":"What number makes 95 − __ = 37 true?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-023",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":110,"b":null,"op":"−","answer":65,"display":{"promptText":"Equation: 110 − ? = 45. Find the missing value."}},
+    question: {"a":110,"b":null,"op":"−","answer":65,"display":{"promptText":"What number goes in the blank: 110 − __ = 45?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-024",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":135,"b":null,"op":"−","answer":58,"display":{"promptText":"Equation: 135 − ? = 77. Find the missing value."}},
+    question: {"a":135,"b":null,"op":"−","answer":58,"display":{"promptText":"What is the missing number in 135 − __ = 77?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-025",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":160,"b":null,"op":"−","answer":85,"display":{"promptText":"Equation: 160 − ? = 75. Find the missing value."}},
+    question: {"a":160,"b":null,"op":"−","answer":85,"display":{"promptText":"160 take away what number leaves 75?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-45-026",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"−","answer":3,"display":{"promptText":"What was subtracted? 8 − ? = 5"}},
+    question: {"a":8,"b":null,"op":"−","answer":3,"display":{"promptText":"8 − __ = 5. What number was subtracted?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-003",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"−","answer":3,"display":{"promptText":"Solve for the unknown: 7 − ? = 4"}},
+    question: {"a":7,"b":null,"op":"−","answer":3,"display":{"promptText":"What number makes 7 − __ = 4 true?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-004",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"−","answer":4,"display":{"promptText":"Open equation: 10 − ? = 6. The missing number is?"}},
+    question: {"a":10,"b":null,"op":"−","answer":4,"display":{"promptText":"How far do you count back from 10 to get to 6?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-005",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"−","answer":5,"display":{"promptText":"Open equation: 9 − ? = 4. The missing number is?"}},
+    question: {"a":9,"b":null,"op":"−","answer":5,"display":{"promptText":"What number do you take away from 9 to get 4?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-006",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"−","answer":3,"display":{"promptText":"Open equation: 8 − ? = 5. The missing number is?"}},
+    question: {"a":8,"b":null,"op":"−","answer":3,"display":{"promptText":"8 take away what number leaves 5?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-007",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"−","answer":8,"display":{"promptText":"A number plus 2 equals 10. Find the number that was subtracted from 10."}},
+    question: {"a":10,"b":null,"op":"−","answer":8,"display":{"promptText":"What number do you take away from 10 to leave 2?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-018",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"−","answer":7,"display":{"promptText":"3 plus what makes 10? That is what was subtracted from 10 to get 3."}},
+    question: {"a":10,"b":null,"op":"−","answer":7,"display":{"promptText":"10 take away what number leaves 3?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-019",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":null,"op":"−","answer":4,"display":{"promptText":"Equation: 6 − ? = 2. Find the missing value."}},
+    question: {"a":6,"b":null,"op":"−","answer":4,"display":{"promptText":"What number do you take away from 6 to get 2?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-024",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"−","answer":5,"display":{"promptText":"Equation: 7 − ? = 2. Find the missing value."}},
+    question: {"a":7,"b":null,"op":"−","answer":5,"display":{"promptText":"How far do you count back from 7 to get to 2?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-025",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"−","answer":6,"display":{"promptText":"Equation: 8 − ? = 2. Find the missing value."}},
+    question: {"a":8,"b":null,"op":"−","answer":6,"display":{"promptText":"What number makes 8 − __ = 2 true?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-026",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "separateChangeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"−","answer":8,"display":{"promptText":"Equation: 9 − ? = 1. Find the missing value."}},
+    question: {"a":9,"b":null,"op":"−","answer":8,"display":{"promptText":"What number goes in the blank: 9 − __ = 1?"}},
   },
   {
     itemId: "subtraction-conc-unknownSubtrahend-K1-027",

@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina opens a door just a crack. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina opens a door just a crack. Which kind of angle does the door swing through?"}},
   },
   {
     itemId: "angles-app-b0821-0002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Theo looks at the clock at 3:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Theo looks at the clock at 3:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","acute","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ida holds scissors open a tiny sliver. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","acute","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ida holds scissors open a tiny sliver. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","straight","acute","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca opens a door exactly to a square corner. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","straight","acute","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca opens a door exactly to a square corner. Which kind of angle does the door make with the wall?"}},
   },
   {
     itemId: "angles-app-b0821-0005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","straight","acute"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Ava looks at the clock at 6:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","straight","acute"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Ava looks at the clock at 6:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar holds scissors open to a square corner. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar holds scissors open to a square corner. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia opens a door far past a square corner. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia opens a door past a square corner, but not all the way flat against the wall. Which kind of angle does the door turn through as it opens?"}},
   },
   {
     itemId: "angles-app-b0821-0008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"Kai looks at the clock at 1:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"Kai looks at the clock at 1:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June holds scissors open very wide, past a square corner. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June holds scissors open very wide, past a square corner. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Theo opens a door flat against the wall. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Theo opens a book all the way so both covers lie flat on the table. Which kind of angle do the two covers make?"}},
   },
   {
     itemId: "angles-app-b0821-0011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","right","obtuse"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"Ida looks at the clock at 5:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","right","obtuse"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"Ida looks at the clock at 5:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe holds scissors open completely flat. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe opens a folded map until it lies flat on the table. Which kind of angle do the two halves make at the fold?"}},
   },
   {
     itemId: "angles-app-b0821-0013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","right","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ava opens a door just a crack. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","right","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ava opens a door just a crack. Which kind of angle does the door turn through as it opens?"}},
   },
   {
     itemId: "angles-app-b0821-0014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","right","obtuse"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Omar looks at the clock at 3:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","right","obtuse"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Omar looks at the clock at 3:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ben holds scissors open a tiny sliver. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ben holds scissors open a tiny sliver. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Kai opens a door exactly to a square corner. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Kai opens a door exactly to a square corner. Which kind of angle does the door make with the wall?"}},
   },
   {
     itemId: "angles-app-b0821-0017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","obtuse","right","acute"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"June looks at the clock at 6:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","obtuse","right","acute"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"June looks at the clock at 6:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Lily holds scissors open to a square corner. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Lily holds scissors open to a square corner. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ida opens a door far past a square corner. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ida opens a door past a square corner, but not all the way flat against the wall. As the door swings open, which kind of angle does it turn through?"}},
   },
   {
     itemId: "angles-app-b0821-0020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","straight","obtuse"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"Zoe looks at the clock at 1:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","straight","obtuse"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"Zoe looks at the clock at 1:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Rosa holds scissors open very wide, past a square corner. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Rosa holds scissors open very wide, past a square corner. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","straight","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar opens a door flat against the wall. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","straight","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar spreads a paper fan open into a half circle. Which kind of angle do the two outside edges of the fan make?"}},
   },
   {
     itemId: "angles-app-b0821-0023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"Ben looks at the clock at 5:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"Ben looks at the clock at 5:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn holds scissors open completely flat. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn looks at a clock at 6:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","straight","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June opens a door just a crack. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","straight","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June opens a door just a crack. As the door swings open, which kind of angle does it turn through?"}},
   },
   {
     itemId: "angles-app-b0821-0026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Lily looks at the clock at 3:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Lily looks at the clock at 3:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara holds scissors open a tiny sliver. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara holds scissors open a tiny sliver. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe opens a door exactly to a square corner. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe opens a door exactly to a square corner. Which kind of angle does the door make with the wall?"}},
   },
   {
     itemId: "angles-app-b0821-0029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","straight","right","acute"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Rosa looks at the clock at 6:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","straight","right","acute"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Rosa looks at the clock at 6:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego holds scissors open to a square corner. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego holds scissors open to a square corner. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ben opens a door far past a square corner. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ben opens a door past a square corner, but not all the way flat against the wall. Which kind of angle does the door swing through?"}},
   },
   {
     itemId: "angles-app-b0821-0032",
@@ -322,7 +322,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"Finn looks at the clock at 1:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"Finn looks at the clock at 1:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0033",
@@ -332,7 +332,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya holds scissors open very wide, past a square corner. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya holds scissors open very wide, past a square corner. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0034",
@@ -342,7 +342,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","acute","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Lily opens a door flat against the wall. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","acute","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Lily and a friend balance a seesaw so the board is level. Which kind of angle do the two halves of the board make at the middle?"}},
   },
   {
     itemId: "angles-app-b0821-0035",
@@ -352,7 +352,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","right","straight","acute"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"Amara looks at the clock at 5:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","right","straight","acute"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"Amara looks at the clock at 5:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0036",
@@ -362,7 +362,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Leo holds scissors open completely flat. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Leo opens a picture book and lays it flat on the floor. Which kind of angle do the two covers make?"}},
   },
   {
     itemId: "angles-app-b0821-0037",
@@ -372,7 +372,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Rosa opens a door just a crack. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Rosa opens a door just a crack. Which kind of angle does the door swing through?"}},
   },
   {
     itemId: "angles-app-b0821-0038",
@@ -382,7 +382,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Diego looks at the clock at 3:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Diego looks at the clock at 3:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0039",
@@ -392,7 +392,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nora holds scissors open a tiny sliver. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nora holds scissors open a tiny sliver. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0040",
@@ -402,7 +402,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["obtuse","acute","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn opens a door exactly to a square corner. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["obtuse","acute","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn opens a door exactly to a square corner. Which kind of angle does the door make with the wall?"}},
   },
   {
     itemId: "angles-app-b0821-0041",
@@ -412,7 +412,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","right","straight","obtuse"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Priya looks at the clock at 6:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","right","straight","obtuse"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Priya looks at the clock at 6:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0042",
@@ -422,7 +422,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Sam holds scissors open to a square corner. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Sam holds scissors open to a square corner. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0043",
@@ -432,7 +432,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara opens a door far past a square corner. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara opens a door past a square corner, but not all the way flat against the wall. Which kind of angle does the door turn through as it opens?"}},
   },
   {
     itemId: "angles-app-b0821-0044",
@@ -442,7 +442,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","straight","acute"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"Leo looks at the clock at 1:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","straight","acute"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"Leo looks at the clock at 1:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0045",
@@ -452,7 +452,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina holds scissors open very wide, past a square corner. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina holds scissors open very wide, past a square corner. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0046",
@@ -462,7 +462,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego opens a door flat against the wall. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego opens a notebook and presses it flat on the desk. Which kind of angle do the front and back covers make?"}},
   },
   {
     itemId: "angles-app-b0821-0047",
@@ -472,7 +472,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"Nora looks at the clock at 5:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"Nora looks at the clock at 5:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0048",
@@ -482,7 +482,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca holds scissors open completely flat. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca lays two pencils tip to tip so they point in opposite directions. Which kind of angle do the pencils make where they meet?"}},
   },
   {
     itemId: "angles-app-b0821-0049",
@@ -492,7 +492,7 @@ export const ITEMS = [
     structureType: "storyDoor_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","right","acute","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya opens a door just a crack. Which kind of angle does the door make with the wall? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","right","acute","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya opens a door just a crack. Which kind of angle does the door turn through as it opens?"}},
   },
   {
     itemId: "angles-app-b0821-0050",
@@ -502,7 +502,7 @@ export const ITEMS = [
     structureType: "storyClock_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","obtuse","right","acute"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Sam looks at the clock at 3:00. Which kind of angle do the two hands make? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","obtuse","right","acute"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Sam looks at the clock at 3:00. Which kind of angle do the two hands make?"}},
   },
   {
     itemId: "angles-app-b0821-0051",
@@ -512,7 +512,7 @@ export const ITEMS = [
     structureType: "storyScissors_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia holds scissors open a tiny sliver. Which kind of angle is between the blades? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia holds scissors open a tiny sliver. Which kind of angle is between the blades?"}},
   },
   {
     itemId: "angles-app-b0821-0052",
@@ -522,7 +522,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar swings a locker door just a crack. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar swings a locker door open just a crack. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0053",
@@ -532,7 +532,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Ben checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Ben checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0054",
@@ -542,7 +542,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn spreads compasses a tiny sliver. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn opens a drawing compass a tiny sliver. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0055",
@@ -552,7 +552,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June swings a locker door exactly to a square corner. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June swings a locker door open exactly to a square corner. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0056",
@@ -562,7 +562,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"At 6:00, Lily checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"At 6:00, Lily checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0057",
@@ -572,7 +572,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara spreads compasses to a square corner. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara opens a drawing compass to a square corner. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0058",
@@ -582,7 +582,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe swings a locker door far past a square corner. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe swings a locker door open far past a square corner. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0059",
@@ -592,7 +592,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"At 1:00, Rosa checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"At 1:00, Rosa checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0060",
@@ -602,7 +602,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","obtuse","acute","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego spreads compasses very wide, past a square corner. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","obtuse","acute","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego opens a drawing compass very wide, past a square corner. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0061",
@@ -612,7 +612,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ben swings a locker door flat against the wall. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ben swings a locker door open a half turn. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0062",
@@ -622,7 +622,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"At 5:00, Finn checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"At 5:00, Finn checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0063",
@@ -632,7 +632,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya spreads compasses completely flat. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya opens a drawing compass until its arms point in opposite directions. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0064",
@@ -642,7 +642,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Lily swings a locker door just a crack. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Lily swings a locker door open just a crack. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0065",
@@ -652,7 +652,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","obtuse","straight","acute"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Amara checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","obtuse","straight","acute"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Amara checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0066",
@@ -662,7 +662,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Leo spreads compasses a tiny sliver. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Leo opens a drawing compass a tiny sliver. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0067",
@@ -672,7 +672,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","right","acute","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Rosa swings a locker door exactly to a square corner. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","right","acute","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Rosa swings a locker door open exactly to a square corner. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0068",
@@ -682,7 +682,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","straight","obtuse"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"At 6:00, Diego checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","straight","obtuse"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"At 6:00, Diego checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0069",
@@ -692,7 +692,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["obtuse","acute","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nora spreads compasses to a square corner. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["obtuse","acute","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nora opens a drawing compass to a square corner. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0070",
@@ -702,7 +702,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn swings a locker door far past a square corner. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn swings a locker door open far past a square corner. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0071",
@@ -712,7 +712,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","acute","right","straight"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"At 1:00, Priya checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","acute","right","straight"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"At 1:00, Priya checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0072",
@@ -722,7 +722,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Sam spreads compasses very wide, past a square corner. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Sam opens a drawing compass very wide, past a square corner. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0073",
@@ -732,7 +732,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","straight","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara swings a locker door flat against the wall. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","straight","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara swings a locker door open a half turn. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0074",
@@ -742,7 +742,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","right","obtuse","acute"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"At 5:00, Leo checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","right","obtuse","acute"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"At 5:00, Leo checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0075",
@@ -752,7 +752,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina spreads compasses completely flat. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina opens a drawing compass until its arms point in opposite directions. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0076",
@@ -762,7 +762,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","acute","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego swings a locker door just a crack. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","acute","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego swings a locker door open just a crack. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0077",
@@ -772,7 +772,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Nora checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Nora checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0078",
@@ -782,7 +782,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca spreads compasses a tiny sliver. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca opens a drawing compass a tiny sliver. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0079",
@@ -792,7 +792,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya swings a locker door exactly to a square corner. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya swings a locker door open exactly to a square corner. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0080",
@@ -802,7 +802,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"At 6:00, Sam checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"At 6:00, Sam checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0081",
@@ -812,7 +812,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia spreads compasses to a square corner. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia opens a drawing compass to a square corner. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0082",
@@ -822,7 +822,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Leo swings a locker door far past a square corner. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Leo swings a locker door open far past a square corner. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0083",
@@ -832,7 +832,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"At 1:00, Mina checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"At 1:00, Mina checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0084",
@@ -842,7 +842,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Theo spreads compasses very wide, past a square corner. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Theo opens a drawing compass very wide, past a square corner. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0085",
@@ -852,7 +852,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nora swings a locker door flat against the wall. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nora swings a locker door open a half turn. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0086",
@@ -862,7 +862,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","acute","right","straight"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"At 5:00, Luca checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","acute","right","straight"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"At 5:00, Luca checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0087",
@@ -872,7 +872,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ava spreads compasses completely flat. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ava opens a drawing compass until its arms point in opposite directions. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0088",
@@ -882,7 +882,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Sam swings a locker door just a crack. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Sam swings a locker door open just a crack. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0089",
@@ -892,7 +892,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","straight","obtuse","acute"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Nia checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","straight","obtuse","acute"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Nia checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0090",
@@ -902,7 +902,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Kai spreads compasses a tiny sliver. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Kai opens a drawing compass a tiny sliver. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0091",
@@ -912,7 +912,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina swings a locker door exactly to a square corner. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina swings a locker door open exactly to a square corner. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0092",
@@ -922,7 +922,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","right","acute","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"At 6:00, Theo checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","right","acute","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"At 6:00, Theo checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0093",
@@ -932,7 +932,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","straight","acute","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ida spreads compasses to a square corner. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","straight","acute","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ida opens a drawing compass to a square corner. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0094",
@@ -942,7 +942,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","straight","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca swings a locker door far past a square corner. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","straight","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca swings a locker door open far past a square corner. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0095",
@@ -952,7 +952,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"At 1:00, Ava checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"At 1:00, Ava checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0096",
@@ -962,7 +962,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar spreads compasses very wide, past a square corner. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","straight","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar opens a drawing compass very wide, past a square corner. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0097",
@@ -972,7 +972,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia swings a locker door flat against the wall. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia swings a locker door open a half turn. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0098",
@@ -982,7 +982,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"At 5:00, Kai checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":150,"kind":"classify"},"promptText":"At 5:00, Kai checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0099",
@@ -992,7 +992,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June spreads compasses completely flat. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","straight","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June opens a drawing compass until its arms point in opposite directions. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0100",
@@ -1002,7 +1002,7 @@ export const ITEMS = [
     structureType: "storyDoor_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Theo swings a locker door just a crack. Pick the kind of angle between door and frame."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Theo swings a locker door open just a crack. What kind of angle is between the door and the frame?"}},
   },
   {
     itemId: "angles-app-b0821-0101",
@@ -1012,7 +1012,7 @@ export const ITEMS = [
     structureType: "storyClock_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Ida checks the clock hands. Pick the kind of angle between them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"At 3:00, Ida checks the clock hands. What kind of angle is between the hands?"}},
   },
   {
     itemId: "angles-app-b0821-0102",
@@ -1022,7 +1022,7 @@ export const ITEMS = [
     structureType: "storyScissors_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe spreads compasses a tiny sliver. Pick the kind of angle between the arms."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe opens a drawing compass a tiny sliver. What kind of angle is between its arms?"}},
   },
   {
     itemId: "angles-app-b0821-0103",
@@ -1052,7 +1052,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Sam sets calipers a tiny sliver. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Sam sets a drawing compass open a tiny sliver. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0106",
@@ -1082,7 +1082,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["obtuse","acute","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina sets calipers to a square corner. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["obtuse","acute","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina sets a drawing compass open to a square corner. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0109",
@@ -1112,7 +1112,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca sets calipers very wide, past a square corner. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Luca sets a drawing compass open very wide, past a square corner. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0112",
@@ -1122,7 +1122,7 @@ export const ITEMS = [
     structureType: "storyDoor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","acute","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya props a hatch flat against the wall. Which kind of angle does the hatch form with its frame?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","acute","straight","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Priya props a hatch open a half turn. Which kind of angle does the hatch form with its frame?"}},
   },
   {
     itemId: "angles-app-b0821-0113",
@@ -1142,7 +1142,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","acute","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia sets calipers completely flat. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","acute","right","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Nia sets a drawing compass open so its arms point in opposite directions. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0115",
@@ -1172,7 +1172,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Theo sets calipers a tiny sliver. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Theo sets a drawing compass open a tiny sliver. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0118",
@@ -1202,7 +1202,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ava sets calipers to a square corner. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","straight","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ava sets a drawing compass open to a square corner. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0121",
@@ -1232,7 +1232,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Kai sets calipers very wide, past a square corner. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Kai sets a drawing compass open very wide, past a square corner. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0124",
@@ -1242,7 +1242,7 @@ export const ITEMS = [
     structureType: "storyDoor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina props a hatch flat against the wall. Which kind of angle does the hatch form with its frame?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Mina props a hatch open a half turn. Which kind of angle does the hatch form with its frame?"}},
   },
   {
     itemId: "angles-app-b0821-0125",
@@ -1262,7 +1262,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ida sets calipers completely flat. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","acute","obtuse","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ida sets a drawing compass open so its arms point in opposite directions. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0127",
@@ -1292,7 +1292,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar sets calipers a tiny sliver. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Omar sets a drawing compass open a tiny sliver. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0130",
@@ -1322,7 +1322,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June sets calipers to a square corner. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June sets a drawing compass open to a square corner. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0133",
@@ -1352,7 +1352,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe sets calipers very wide, past a square corner. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Zoe sets a drawing compass open very wide, past a square corner. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0136",
@@ -1362,7 +1362,7 @@ export const ITEMS = [
     structureType: "storyDoor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ava props a hatch flat against the wall. Which kind of angle does the hatch form with its frame?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ava props a hatch open a half turn. Which kind of angle does the hatch form with its frame?"}},
   },
   {
     itemId: "angles-app-b0821-0137",
@@ -1382,7 +1382,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ben sets calipers completely flat. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Ben sets a drawing compass open so its arms point in opposite directions. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0139",
@@ -1412,7 +1412,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Lily sets calipers a tiny sliver. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Lily sets a drawing compass open a tiny sliver. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0142",
@@ -1442,7 +1442,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Rosa sets calipers to a square corner. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","obtuse","straight","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Rosa sets a drawing compass open to a square corner. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0145",
@@ -1472,7 +1472,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn sets calipers very wide, past a square corner. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","obtuse","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Finn sets a drawing compass open very wide, past a square corner. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0148",
@@ -1482,7 +1482,7 @@ export const ITEMS = [
     structureType: "storyDoor_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","right","acute","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June props a hatch flat against the wall. Which kind of angle does the hatch form with its frame?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["obtuse","right","acute","straight"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"June props a hatch open a half turn. Which kind of angle does the hatch form with its frame?"}},
   },
   {
     itemId: "angles-app-b0821-0149",
@@ -1502,7 +1502,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara sets calipers completely flat. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Amara sets a drawing compass open so its arms point in opposite directions. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0151",
@@ -1532,7 +1532,7 @@ export const ITEMS = [
     structureType: "storyScissors_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","obtuse","right","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego sets calipers a tiny sliver. Which kind of angle sits between the jaws?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","obtuse","right","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Diego sets a drawing compass open a tiny sliver. Which kind of angle sits between the arms?"}},
   },
   {
     itemId: "angles-app-b0821-0154",
@@ -1542,7 +1542,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Luca's toy robot makes a half turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Luca's toy robot makes a half turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0155",
@@ -1562,7 +1562,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Omar spins a game wheel through a half turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Omar spins a game wheel through a half turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0157",
@@ -1572,7 +1572,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Nia's toy robot makes a full turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Nia's toy robot makes a full turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0158",
@@ -1592,7 +1592,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"June spins a game wheel through a full turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"June spins a game wheel through a full turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0160",
@@ -1602,7 +1602,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Theo's toy robot makes a full turn. How many half turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Theo's toy robot makes a full turn. How many half turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0161",
@@ -1622,7 +1622,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Zoe spins a game wheel through a full turn. How many half turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Zoe spins a game wheel through a full turn. How many half turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0163",
@@ -1632,7 +1632,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Ava's toy robot makes a straight-line turn. How many square corners is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Ava's toy robot makes a half turn. How many square corners is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0164",
@@ -1652,7 +1652,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Ben spins a game wheel through a straight-line turn. How many square corners does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Ben spins a game wheel through a half turn. How many square corners does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0166",
@@ -1662,7 +1662,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Kai's toy robot makes a half turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Kai's toy robot makes a half turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0167",
@@ -1682,7 +1682,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Lily spins a game wheel through a half turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Lily spins a game wheel through a half turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0169",
@@ -1692,7 +1692,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Ida's toy robot makes a full turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Ida's toy robot makes a full turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0170",
@@ -1712,7 +1712,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Rosa spins a game wheel through a full turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Rosa spins a game wheel through a full turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0172",
@@ -1722,7 +1722,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Omar's toy robot makes a full turn. How many half turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Omar's toy robot makes a full turn. How many half turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0173",
@@ -1742,7 +1742,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Finn spins a game wheel through a full turn. How many half turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Finn spins a game wheel through a full turn. How many half turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0175",
@@ -1752,7 +1752,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"June's toy robot makes a straight-line turn. How many square corners is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"June's toy robot makes a half turn. How many square corners is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0176",
@@ -1772,7 +1772,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Amara spins a game wheel through a straight-line turn. How many square corners does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Amara spins a game wheel through a half turn. How many square corners does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0178",
@@ -1782,7 +1782,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Zoe's toy robot makes a half turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Zoe's toy robot makes a half turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0179",
@@ -1802,7 +1802,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Diego spins a game wheel through a half turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Diego spins a game wheel through a half turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0181",
@@ -1812,7 +1812,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Ben's toy robot makes a full turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Ben's toy robot makes a full turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0182",
@@ -1832,7 +1832,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Priya spins a game wheel through a full turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Priya spins a game wheel through a full turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0184",
@@ -1842,7 +1842,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Lily's toy robot makes a full turn. How many half turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Lily's toy robot makes a full turn. How many half turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0185",
@@ -1862,7 +1862,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Leo spins a game wheel through a full turn. How many half turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Leo spins a game wheel through a full turn. How many half turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0187",
@@ -1872,7 +1872,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Rosa's toy robot makes a straight-line turn. How many square corners is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Rosa's toy robot makes a half turn. How many square corners is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0188",
@@ -1892,7 +1892,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Nora spins a game wheel through a straight-line turn. How many square corners does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Nora spins a game wheel through a half turn. How many square corners does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0190",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Finn's toy robot makes a half turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Finn's toy robot makes a half turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0191",
@@ -1922,7 +1922,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Sam spins a game wheel through a half turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Sam spins a game wheel through a half turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0193",
@@ -1932,7 +1932,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Amara's toy robot makes a full turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Amara's toy robot makes a full turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0194",
@@ -1952,7 +1952,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Mina spins a game wheel through a full turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"Mina spins a game wheel through a full turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0196",
@@ -1962,7 +1962,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Diego's toy robot makes a full turn. How many half turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Diego's toy robot makes a full turn. How many half turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0197",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Luca spins a game wheel through a full turn. How many half turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"Luca spins a game wheel through a full turn. How many half turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0199",
@@ -1992,7 +1992,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Priya's toy robot makes a straight-line turn. How many square corners is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Priya's toy robot makes a half turn. How many square corners is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0200",
@@ -2012,7 +2012,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Nia spins a game wheel through a straight-line turn. How many square corners does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Nia spins a game wheel through a half turn. How many square corners does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0202",
@@ -2022,7 +2022,7 @@ export const ITEMS = [
     structureType: "storyRobot_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Leo's toy robot makes a half turn. How many quarter turns is that? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Leo's toy robot makes a half turn. How many quarter turns is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0203",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "storyWheel_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Theo spins a game wheel through a half turn. How many quarter turns does the wheel pass? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"Theo spins a game wheel through a half turn. How many quarter turns does the wheel pass?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0205",
@@ -2052,7 +2052,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"June's drone rotates through a quarter turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"June's drone rotates through a quarter turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0206",
@@ -2082,7 +2082,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Zoe's drone rotates through a half turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Zoe's drone rotates through a half turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0209",
@@ -2112,7 +2112,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Ben's drone rotates through a full turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Ben's drone rotates through a full turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0212",
@@ -2142,7 +2142,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Lily's drone rotates through three quarter turns. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Lily's drone rotates through three quarter turns. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0215",
@@ -2172,7 +2172,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Rosa's drone rotates through a quarter turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Rosa's drone rotates through a quarter turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0218",
@@ -2202,7 +2202,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Finn's drone rotates through a half turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Finn's drone rotates through a half turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0221",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Amara's drone rotates through a full turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Amara's drone rotates through a full turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0224",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Diego's drone rotates through three quarter turns. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Diego's drone rotates through three quarter turns. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0227",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Priya's drone rotates through a quarter turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Priya's drone rotates through a quarter turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0230",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Leo's drone rotates through a half turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Leo's drone rotates through a half turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0233",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Nora's drone rotates through a full turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Nora's drone rotates through a full turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0236",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Sam's drone rotates through three quarter turns. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Sam's drone rotates through three quarter turns. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0239",
@@ -2412,7 +2412,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Mina's drone rotates through a quarter turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Mina's drone rotates through a quarter turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0242",
@@ -2442,7 +2442,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Luca's drone rotates through a half turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Luca's drone rotates through a half turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0245",
@@ -2472,7 +2472,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Nia's drone rotates through a full turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Nia's drone rotates through a full turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0248",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Theo's drone rotates through three quarter turns. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Theo's drone rotates through three quarter turns. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0251",
@@ -2532,7 +2532,7 @@ export const ITEMS = [
     structureType: "storyRobot_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Ava's drone rotates through a quarter turn. How many degrees does it rotate? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Ava's drone rotates through a quarter turn. How many degrees does it rotate?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0254",
@@ -2572,7 +2572,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Leo rotates a telescope mount through a quarter turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Leo turns a telescope mount through a quarter turn. How many degrees does the mount turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0258",
@@ -2582,7 +2582,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Mina steers a robot arm through a quarter turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Mina steers a robot arm through a quarter turn. How many degrees did the robot arm turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0259",
@@ -2602,7 +2602,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Nora rotates a telescope mount through a half turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Nora turns a telescope a half turn. How many degrees did the telescope turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0261",
@@ -2612,7 +2612,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Luca steers a robot arm through a half turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Luca's robot arm swings a half turn. How many degrees does the arm swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0262",
@@ -2632,7 +2632,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Sam rotates a telescope mount through a full turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Sam's telescope mount swings through a full turn. How many degrees does the mount swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0264",
@@ -2642,7 +2642,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Nia steers a robot arm through a full turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Nia moves a robot arm a full turn. How many degrees is that swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0265",
@@ -2662,7 +2662,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Mina rotates a telescope mount through three quarter turns. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Mina turns a telescope mount through three quarter turns. How many degrees does the mount turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0267",
@@ -2672,7 +2672,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Theo steers a robot arm through three quarter turns. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Theo steers a robot arm through three quarter turns. How many degrees did the robot arm turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0268",
@@ -2692,7 +2692,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Luca rotates a telescope mount through a quarter turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Luca turns a telescope a quarter turn. How many degrees did the telescope turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0270",
@@ -2702,7 +2702,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Ava steers a robot arm through a quarter turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Ava's robot arm swings a quarter turn. How many degrees does the arm swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0271",
@@ -2722,7 +2722,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Nia rotates a telescope mount through a half turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Nia's telescope mount swings through a half turn. How many degrees does the mount swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0273",
@@ -2732,7 +2732,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Kai steers a robot arm through a half turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Kai moves a robot arm a half turn. How many degrees is that swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0274",
@@ -2752,7 +2752,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Theo rotates a telescope mount through a full turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Theo turns a telescope mount through a full turn. How many degrees does the mount turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0276",
@@ -2762,7 +2762,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Ida steers a robot arm through a full turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Ida steers a robot arm through a full turn. How many degrees did the robot arm turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0277",
@@ -2782,7 +2782,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Ava rotates a telescope mount through three quarter turns. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Ava turns a telescope three quarter turns. How many degrees did the telescope turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0279",
@@ -2792,7 +2792,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Omar steers a robot arm through three quarter turns. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Omar's robot arm swings three quarter turns. How many degrees does the arm swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0280",
@@ -2812,7 +2812,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Kai rotates a telescope mount through a quarter turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Kai's telescope mount swings through a quarter turn. How many degrees does the mount swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0282",
@@ -2822,7 +2822,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"June steers a robot arm through a quarter turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"June moves a robot arm a quarter turn. How many degrees is that swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0283",
@@ -2842,7 +2842,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Ida rotates a telescope mount through a half turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Ida turns a telescope mount through a half turn. How many degrees does the mount turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0285",
@@ -2852,7 +2852,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Zoe steers a robot arm through a half turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Zoe steers a robot arm through a half turn. How many degrees did the robot arm turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0286",
@@ -2872,7 +2872,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Omar rotates a telescope mount through a full turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Omar turns a telescope a full turn. How many degrees did the telescope turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0288",
@@ -2882,7 +2882,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Ben steers a robot arm through a full turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Ben's robot arm swings a full turn. How many degrees does the arm swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0289",
@@ -2902,7 +2902,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"June rotates a telescope mount through three quarter turns. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"June's telescope mount swings through three quarter turns. How many degrees does the mount swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0291",
@@ -2912,7 +2912,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Lily steers a robot arm through three quarter turns. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Lily moves a robot arm three quarter turns. How many degrees is that swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0292",
@@ -2932,7 +2932,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Zoe rotates a telescope mount through a quarter turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Zoe turns a telescope mount through a quarter turn. How many degrees does the mount turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0294",
@@ -2942,7 +2942,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Rosa steers a robot arm through a quarter turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Rosa steers a robot arm through a quarter turn. How many degrees did the robot arm turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0295",
@@ -2962,7 +2962,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Ben rotates a telescope mount through a half turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Ben turns a telescope a half turn. How many degrees did the telescope turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0297",
@@ -2972,7 +2972,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Finn steers a robot arm through a half turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"Finn's robot arm swings a half turn. How many degrees does the arm swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0298",
@@ -2992,7 +2992,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Lily rotates a telescope mount through a full turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Lily's telescope mount swings through a full turn. How many degrees does the mount swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0300",
@@ -3002,7 +3002,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Amara steers a robot arm through a full turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"Amara moves a robot arm a full turn. How many degrees is that swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0301",
@@ -3022,7 +3022,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Rosa rotates a telescope mount through three quarter turns. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Rosa turns a telescope mount through three quarter turns. How many degrees does the mount turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0303",
@@ -3032,7 +3032,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Diego steers a robot arm through three quarter turns. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"d":270,"kind":"benchDeg"},"promptText":"Diego steers a robot arm through three quarter turns. How many degrees did the robot arm turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0304",
@@ -3052,7 +3052,7 @@ export const ITEMS = [
     structureType: "storyDial_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Finn rotates a telescope mount through a quarter turn. Determine the rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Finn turns a telescope a quarter turn. How many degrees did the telescope turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0306",
@@ -3062,7 +3062,7 @@ export const ITEMS = [
     structureType: "storyWheel_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Priya steers a robot arm through a quarter turn. Compute the swing in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"Priya's robot arm swings a quarter turn. How many degrees does the arm swing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0307",
@@ -4112,7 +4112,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"ang":{"a":85,"b":40,"kind":"sumDeg"},"promptText":"Sam rotates a stage light 85 degrees, then 40 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"ang":{"a":85,"b":40,"kind":"sumDeg"},"promptText":"Sam turns a stage light 85 degrees, then 40 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0412",
@@ -4142,7 +4142,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"ang":{"a":95,"b":55,"kind":"sumDeg"},"promptText":"Mina rotates a stage light 95 degrees, then 55 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"ang":{"a":95,"b":55,"kind":"sumDeg"},"promptText":"Mina rotates a stage light 95 degrees and then 55 degrees further. How many degrees has the stage light turned altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0415",
@@ -4172,7 +4172,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":110,"b":45,"kind":"sumDeg"},"promptText":"Luca rotates a stage light 110 degrees, then 45 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":110,"b":45,"kind":"sumDeg"},"promptText":"A stage light turns 110 degrees. Then Luca turns it 45 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0418",
@@ -4202,7 +4202,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":75,"b":80,"kind":"sumDeg"},"promptText":"Nia rotates a stage light 75 degrees, then 80 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":75,"b":80,"kind":"sumDeg"},"promptText":"Nia turns a stage light 75 degrees, then 80 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0421",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":120,"b":35,"kind":"sumDeg"},"promptText":"Theo rotates a stage light 120 degrees, then 35 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":120,"b":35,"kind":"sumDeg"},"promptText":"Theo rotates a stage light 120 degrees and then 35 degrees further. How many degrees has the stage light turned altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0424",
@@ -4262,7 +4262,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":65,"b":90,"kind":"sumDeg"},"promptText":"Ava rotates a stage light 65 degrees, then 90 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":65,"b":90,"kind":"sumDeg"},"promptText":"A stage light turns 65 degrees. Then Ava turns it 90 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0427",
@@ -4292,7 +4292,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":105,"b":60,"kind":"sumDeg"},"promptText":"Kai rotates a stage light 105 degrees, then 60 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":105,"b":60,"kind":"sumDeg"},"promptText":"Kai turns a stage light 105 degrees, then 60 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0430",
@@ -4322,7 +4322,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":140,"b":25,"kind":"sumDeg"},"promptText":"Ida rotates a stage light 140 degrees, then 25 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":140,"b":25,"kind":"sumDeg"},"promptText":"Ida rotates a stage light 140 degrees and then 25 degrees further. How many degrees has the stage light turned altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0433",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":55,"b":115,"kind":"sumDeg"},"promptText":"Omar rotates a stage light 55 degrees, then 115 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":55,"b":115,"kind":"sumDeg"},"promptText":"A stage light turns 55 degrees. Then Omar turns it 115 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0436",
@@ -4382,7 +4382,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":175,"display":{"ang":{"a":130,"b":45,"kind":"sumDeg"},"promptText":"June rotates a stage light 130 degrees, then 45 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":175,"display":{"ang":{"a":130,"b":45,"kind":"sumDeg"},"promptText":"June turns a stage light 130 degrees, then 45 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0439",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":70,"b":95,"kind":"sumDeg"},"promptText":"Zoe rotates a stage light 70 degrees, then 95 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":70,"b":95,"kind":"sumDeg"},"promptText":"Zoe rotates a stage light 70 degrees and then 95 degrees further. How many degrees has the stage light turned altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0442",
@@ -4442,7 +4442,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":150,"b":30,"kind":"sumDeg"},"promptText":"Ben rotates a stage light 150 degrees, then 30 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":150,"b":30,"kind":"sumDeg"},"promptText":"A stage light turns 150 degrees. Then Ben turns it 30 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0445",
@@ -4472,7 +4472,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":45,"b":125,"kind":"sumDeg"},"promptText":"Lily rotates a stage light 45 degrees, then 125 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":45,"b":125,"kind":"sumDeg"},"promptText":"Lily turns a stage light 45 degrees, then 125 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0448",
@@ -4502,7 +4502,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"ang":{"a":85,"b":40,"kind":"sumDeg"},"promptText":"Rosa rotates a stage light 85 degrees, then 40 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"ang":{"a":85,"b":40,"kind":"sumDeg"},"promptText":"Rosa rotates a stage light 85 degrees and then 40 degrees further. How many degrees has the stage light turned altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0451",
@@ -4532,7 +4532,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"ang":{"a":95,"b":55,"kind":"sumDeg"},"promptText":"Finn rotates a stage light 95 degrees, then 55 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"ang":{"a":95,"b":55,"kind":"sumDeg"},"promptText":"A stage light turns 95 degrees. Then Finn turns it 55 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0454",
@@ -4562,7 +4562,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":110,"b":45,"kind":"sumDeg"},"promptText":"Amara rotates a stage light 110 degrees, then 45 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":110,"b":45,"kind":"sumDeg"},"promptText":"Amara turns a stage light 110 degrees, then 45 degrees more. How many degrees did the light turn in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0457",
@@ -4592,7 +4592,7 @@ export const ITEMS = [
     structureType: "storyDance_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":75,"b":80,"kind":"sumDeg"},"promptText":"Diego rotates a stage light 75 degrees, then 80 degrees further. Compute the total rotation in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":75,"b":80,"kind":"sumDeg"},"promptText":"Diego rotates a stage light 75 degrees and then 80 degrees further. How many degrees has the stage light turned altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0460",
@@ -5642,7 +5642,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"Mina's telescope has panned 90 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"Mina's telescope needs to turn 360 degrees in all. It has turned 90 degrees so far. How many more degrees does it need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0565",
@@ -5672,7 +5672,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"Luca's telescope has panned 270 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"Luca's telescope has turned 270 degrees of a 360-degree sweep. How many more degrees does the telescope need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0568",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"ang":{"a":120,"kind":"missDeg","total":360},"promptText":"Nia's telescope has panned 120 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"ang":{"a":120,"kind":"missDeg","total":360},"promptText":"Nia's telescope has turned 120 degrees. How many more degrees must it turn to finish a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0571",
@@ -5732,7 +5732,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"ang":{"a":200,"kind":"missDeg","total":360},"promptText":"Theo's telescope has panned 200 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"ang":{"a":200,"kind":"missDeg","total":360},"promptText":"Theo's telescope needs to turn 360 degrees in all. It has turned 200 degrees so far. How many more degrees does it need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0574",
@@ -5762,7 +5762,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"ang":{"a":65,"kind":"missDeg","total":180},"promptText":"Ava's telescope has panned 65 degrees of a 180-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"ang":{"a":65,"kind":"missDeg","total":180},"promptText":"Ava's telescope has turned 65 degrees of a 180-degree sweep. How many more degrees does the telescope need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0577",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"ang":{"a":115,"kind":"missDeg","total":180},"promptText":"Kai's telescope has panned 115 degrees of a 180-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"ang":{"a":115,"kind":"missDeg","total":180},"promptText":"Kai's telescope has turned 115 degrees. How many more degrees must it turn to finish a half turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0580",
@@ -5822,7 +5822,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":25,"kind":"missDeg","total":180},"promptText":"Ida's telescope has panned 25 degrees of a 180-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":25,"kind":"missDeg","total":180},"promptText":"Ida's telescope needs to turn 180 degrees in all. It has turned 25 degrees so far. How many more degrees does it need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0583",
@@ -5852,7 +5852,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":315,"display":{"ang":{"a":45,"kind":"missDeg","total":360},"promptText":"Omar's telescope has panned 45 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":315,"display":{"ang":{"a":45,"kind":"missDeg","total":360},"promptText":"Omar's telescope has turned 45 degrees of a 360-degree sweep. How many more degrees does the telescope need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0586",
@@ -5882,7 +5882,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":310,"kind":"missDeg","total":360},"promptText":"June's telescope has panned 310 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":310,"kind":"missDeg","total":360},"promptText":"June's telescope has turned 310 degrees. How many more degrees must it turn to finish a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0589",
@@ -5912,7 +5912,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"ang":{"a":155,"kind":"missDeg","total":180},"promptText":"Zoe's telescope has panned 155 degrees of a 180-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"ang":{"a":155,"kind":"missDeg","total":180},"promptText":"Zoe's telescope needs to turn 180 degrees in all. It has turned 155 degrees so far. How many more degrees does it need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0592",
@@ -5942,7 +5942,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"ang":{"a":95,"kind":"missDeg","total":180},"promptText":"Ben's telescope has panned 95 degrees of a 180-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"ang":{"a":95,"kind":"missDeg","total":180},"promptText":"Ben's telescope has turned 95 degrees of a 180-degree sweep. How many more degrees does the telescope need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0595",
@@ -5972,7 +5972,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":250,"kind":"missDeg","total":360},"promptText":"Lily's telescope has panned 250 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":250,"kind":"missDeg","total":360},"promptText":"Lily's telescope has turned 250 degrees. How many more degrees must it turn to finish a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0598",
@@ -6002,7 +6002,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"ang":{"a":175,"kind":"missDeg","total":360},"promptText":"Rosa's telescope has panned 175 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":185,"display":{"ang":{"a":175,"kind":"missDeg","total":360},"promptText":"Rosa's telescope needs to turn 360 degrees in all. It has turned 175 degrees so far. How many more degrees does it need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0601",
@@ -6032,7 +6032,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ang":{"a":140,"kind":"missDeg","total":180},"promptText":"Finn's telescope has panned 140 degrees of a 180-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ang":{"a":140,"kind":"missDeg","total":180},"promptText":"Finn's telescope has turned 140 degrees of a 180-degree sweep. How many more degrees does the telescope need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0604",
@@ -6062,7 +6062,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":295,"display":{"ang":{"a":65,"kind":"missDeg","total":360},"promptText":"Amara's telescope has panned 65 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":295,"display":{"ang":{"a":65,"kind":"missDeg","total":360},"promptText":"Amara's telescope has turned 65 degrees. How many more degrees must it turn to finish a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0607",
@@ -6092,7 +6092,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":145,"display":{"ang":{"a":35,"kind":"missDeg","total":180},"promptText":"Diego's telescope has panned 35 degrees of a 180-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":145,"display":{"ang":{"a":35,"kind":"missDeg","total":180},"promptText":"Diego's telescope needs to turn 180 degrees in all. It has turned 35 degrees so far. How many more degrees does it need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-app-b0821-0610",
@@ -6122,7 +6122,7 @@ export const ITEMS = [
     structureType: "storyGate_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"a":300,"kind":"missDeg","total":360},"promptText":"Priya's telescope has panned 300 degrees of a 360-degree sweep. Compute the degrees still to pan."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"a":300,"kind":"missDeg","total":360},"promptText":"Priya's telescope has turned 300 degrees of a 360-degree sweep. How many more degrees does the telescope need to turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-conc-b0821-0001",
@@ -6142,7 +6142,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"less","kind":"relSaid","said":"obtuse"},"truth":false,"promptText":"An angle opens less than a square corner, and Theo labels it obtuse. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"less","kind":"relSaid","said":"obtuse"},"truth":false,"promptText":"An angle opens less than a square corner. Theo says it is an obtuse angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0003",
@@ -6152,7 +6152,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"right"},"truth":true,"promptText":"Ida sees an angle that opens exactly like a square corner and calls it right. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"right"},"truth":true,"promptText":"An angle opens exactly like a square corner. Ida says it is a right angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0004",
@@ -6162,7 +6162,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"acute"},"truth":false,"promptText":"An angle opens exactly like a square corner, and Zoe labels it acute. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"acute"},"truth":false,"promptText":"Is Zoe right that an angle that opens exactly like a square corner is an acute angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0005",
@@ -6172,7 +6172,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"more","kind":"relSaid","said":"obtuse"},"truth":true,"promptText":"Rosa sees an angle that opens more than a square corner but less than a straight line and calls it obtuse. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"more","kind":"relSaid","said":"obtuse"},"truth":true,"promptText":"Is Rosa right that an angle that opens more than a square corner but less than a straight line is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0006",
@@ -6182,7 +6182,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"more","kind":"relSaid","said":"acute"},"truth":false,"promptText":"An angle opens more than a square corner but less than a straight line, and Diego labels it acute. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"more","kind":"relSaid","said":"acute"},"truth":false,"promptText":"Diego sees an angle that opens more than a square corner but less than a straight line and calls it acute. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0007",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"straight","kind":"relSaid","said":"straight"},"truth":true,"promptText":"Nora sees an angle that opens all the way into a straight line and calls it straight. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"straight","kind":"relSaid","said":"straight"},"truth":true,"promptText":"An angle opens all the way into a straight line. Nora says it is a straight angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0008",
@@ -6202,7 +6202,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"straight","kind":"relSaid","said":"right"},"truth":false,"promptText":"An angle opens all the way into a straight line, and Luca labels it right. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"straight","kind":"relSaid","said":"right"},"truth":false,"promptText":"An angle opens all the way into a straight line. Luca says it is a right angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0009",
@@ -6212,7 +6212,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"less","kind":"relSaid","said":"acute"},"truth":true,"promptText":"Ava sees an angle that opens less than a square corner and calls it acute. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"less","kind":"relSaid","said":"acute"},"truth":true,"promptText":"Is Ava right that an angle that opens less than a square corner is an acute angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0010",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"obtuse"},"truth":false,"promptText":"An angle opens exactly like a square corner, and Omar labels it obtuse. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"obtuse"},"truth":false,"promptText":"Is Omar right that an angle that opens exactly like a square corner is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0011",
@@ -6242,7 +6242,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"less","kind":"relSaid","said":"right"},"truth":false,"promptText":"An angle opens less than a square corner, and Finn labels it right. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"less","kind":"relSaid","said":"right"},"truth":false,"promptText":"Finn sees an angle that opens less than a square corner and calls it a right angle. Is Finn right?"}},
   },
   {
     itemId: "angles-conc-b0821-0013",
@@ -6252,7 +6252,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"right"},"truth":true,"promptText":"Priya sees an angle that opens exactly like a square corner and calls it right. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"right"},"truth":true,"promptText":"Is Priya right that an angle that opens exactly like a square corner is a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0014",
@@ -6262,7 +6262,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"more","kind":"relSaid","said":"right"},"truth":false,"promptText":"An angle opens more than a square corner but less than a straight line, and Sam labels it right. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"more","kind":"relSaid","said":"right"},"truth":false,"promptText":"An angle opens more than a square corner but less than a straight line. Sam says it is a right angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0015",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"less","kind":"relSaid","said":"straight"},"truth":false,"promptText":"An angle opens less than a square corner, and Kai labels it straight. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"less","kind":"relSaid","said":"straight"},"truth":false,"promptText":"Is Kai right that an angle that opens less than a square corner is a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0017",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"more","kind":"relSaid","said":"obtuse"},"truth":true,"promptText":"June sees an angle that opens more than a square corner but less than a straight line and calls it obtuse. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"rel":"more","kind":"relSaid","said":"obtuse"},"truth":true,"promptText":"An angle opens more than a square corner but less than a straight line. June says it is an obtuse angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0018",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"straight"},"truth":false,"promptText":"An angle opens exactly like a square corner, and Lily labels it straight. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"rel":"equal","kind":"relSaid","said":"straight"},"truth":false,"promptText":"Lily sees an angle that opens exactly like a square corner and calls it straight. Is Lily right?"}},
   },
   {
     itemId: "angles-conc-b0821-0019",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":40,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Omar measures an angle at 40 degrees and calls it acute. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":40,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Omar measures an angle at 40 degrees and calls it acute. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0020",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":100,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"A 100-degree angle gets the label acute from Ben. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":100,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Is Ben correct that a 100-degree angle is an acute angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0021",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"right"},"truth":true,"promptText":"Finn measures an angle at 90 degrees and calls it right. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"right"},"truth":true,"promptText":"Finn says a 90-degree angle is a right angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0022",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"A 90-degree angle gets the label obtuse from Priya. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Priya measures an angle at 90 degrees and calls it obtuse. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0023",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":120,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Sam measures an angle at 120 degrees and calls it obtuse. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":120,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Is Sam correct that a 120-degree angle is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0024",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":60,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"A 60-degree angle gets the label obtuse from Nia. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":60,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Nia says a 60-degree angle is an obtuse angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0025",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":180,"kind":"classSaid","said":"straight"},"truth":true,"promptText":"Kai measures an angle at 180 degrees and calls it straight. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":180,"kind":"classSaid","said":"straight"},"truth":true,"promptText":"Kai measures an angle at 180 degrees and calls it straight. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0026",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":180,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"A 180-degree angle gets the label obtuse from June. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":180,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Is June correct that a 180-degree angle is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0027",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":30,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Lily measures an angle at 30 degrees and calls it acute. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":30,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Lily says a 30-degree angle is an acute angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0028",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":150,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"A 150-degree angle gets the label acute from Amara. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":150,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Amara measures an angle at 150 degrees and calls it acute. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0029",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":95,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Leo measures an angle at 95 degrees and calls it obtuse. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":95,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Is Leo correct that a 95-degree angle is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0030",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":45,"kind":"classSaid","said":"right"},"truth":false,"promptText":"A 45-degree angle gets the label right from Mina. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":45,"kind":"classSaid","said":"right"},"truth":false,"promptText":"Mina says a 45-degree angle is a right angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0031",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"right"},"truth":true,"promptText":"Theo measures an angle at 90 degrees and calls it right. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"right"},"truth":true,"promptText":"Theo measures an angle at 90 degrees and calls it a right angle. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0032",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":170,"kind":"classSaid","said":"right"},"truth":false,"promptText":"A 170-degree angle gets the label right from Ida. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":170,"kind":"classSaid","said":"right"},"truth":false,"promptText":"Is Ida correct that a 170-degree angle is a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0033",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":20,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Zoe measures an angle at 20 degrees and calls it acute. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":20,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Zoe says a 20-degree angle is an acute angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0034",
@@ -6462,7 +6462,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":110,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"A 110-degree angle gets the label acute from Rosa. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":110,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Rosa measures an angle at 110 degrees and calls it acute. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0035",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":135,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Diego measures an angle at 135 degrees and calls it obtuse. Does the label fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":135,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Is Diego correct that a 135-degree angle is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0036",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":75,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"A 75-degree angle gets the label obtuse from Nora. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":75,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Nora says a 75-degree angle is an obtuse angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0037",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":89,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Finn classifies a 89-degree angle as acute. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":89,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Finn calls an 89-degree angle acute. Is an 89-degree angle an acute angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0038",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":91,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Audit Priya's label: 91 degrees, marked acute. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":91,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Is Priya correct that a 91-degree angle is an acute angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0039",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"right"},"truth":true,"promptText":"Sam classifies a 90-degree angle as right. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"right"},"truth":true,"promptText":"Sam says a 90-degree angle is a right angle. Is Sam correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0040",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":89,"kind":"classSaid","said":"right"},"truth":false,"promptText":"Audit Nia's label: 89 degrees, marked right. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":89,"kind":"classSaid","said":"right"},"truth":false,"promptText":"Is Nia correct to label an 89-degree angle a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0041",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":91,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Kai classifies a 91-degree angle as obtuse. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":91,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Is Kai correct that a 91-degree angle is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0042",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Audit June's label: 90 degrees, marked obtuse. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Is June correct that a 90-degree angle is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0043",
@@ -6552,7 +6552,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":180,"kind":"classSaid","said":"straight"},"truth":true,"promptText":"Lily classifies a 180-degree angle as straight. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":180,"kind":"classSaid","said":"straight"},"truth":true,"promptText":"Lily calls a 180-degree angle straight. Is a 180-degree angle a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0044",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":179,"kind":"classSaid","said":"straight"},"truth":false,"promptText":"Audit Amara's label: 179 degrees, marked straight. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":179,"kind":"classSaid","said":"straight"},"truth":false,"promptText":"Is Amara correct that a 179-degree angle is a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0045",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":1,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Leo classifies a 1-degree angle as acute. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":1,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Leo says a 1-degree angle is an acute angle. Is Leo correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0046",
@@ -6582,7 +6582,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":179,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Audit Mina's label: 179 degrees, marked acute. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":179,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Mina says a 179-degree angle is an acute angle. Is Mina correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0047",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":134,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Theo classifies a 134-degree angle as obtuse. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":134,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Theo calls a 134-degree angle obtuse. Is a 134-degree angle an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0048",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":44,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Audit Ida's label: 44 degrees, marked obtuse. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":44,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Ida calls a 44-degree angle obtuse. Is a 44-degree angle an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0049",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"right"},"truth":true,"promptText":"Zoe classifies a 90-degree angle as right. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":90,"kind":"classSaid","said":"right"},"truth":true,"promptText":"Is Zoe correct that a 90-degree angle is a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0050",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":92,"kind":"classSaid","said":"right"},"truth":false,"promptText":"Audit Rosa's label: 92 degrees, marked right. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":92,"kind":"classSaid","said":"right"},"truth":false,"promptText":"Is Rosa correct that a 92-degree angle is a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0051",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":46,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Diego classifies a 46-degree angle as acute. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":46,"kind":"classSaid","said":"acute"},"truth":true,"promptText":"Diego says a 46-degree angle is an acute angle. Is Diego correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0052",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":136,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Audit Nora's label: 136 degrees, marked acute. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":136,"kind":"classSaid","said":"acute"},"truth":false,"promptText":"Nora calls a 136-degree angle acute. Is a 136-degree angle an acute angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0053",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":178,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Luca classifies a 178-degree angle as obtuse. Is the classification valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"deg":178,"kind":"classSaid","said":"obtuse"},"truth":true,"promptText":"Is Luca correct that a 178-degree angle is an obtuse angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0054",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "classSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":88,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Audit Ava's label: 88 degrees, marked obtuse. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"deg":88,"kind":"classSaid","said":"obtuse"},"truth":false,"promptText":"Ava says an 88-degree angle is an obtuse angle. Is Ava correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0055",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Kai says a square corner is only a right angle when one side points straight up. Is Kai right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Kai correct that a square corner is a right angle only when one side points straight up?"}},
   },
   {
     itemId: "angles-conc-b0821-0064",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"June says a tilted square corner is still a right angle. Is June right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is June correct that a tilted square corner is still a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0065",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Lily says a square corner is only a right angle when one side points straight up. Is Lily right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Does a square corner stop being a right angle when neither side points straight up, as Lily says?"}},
   },
   {
     itemId: "angles-conc-b0821-0066",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Amara says a tilted square corner is still a right angle. Is Amara right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Amara tips a square corner so that it leans to one side. Is it still a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0067",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Leo says a square corner is only a right angle when one side points straight up. Is Leo right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Leo correct that a square corner is a right angle only when one side points straight up?"}},
   },
   {
     itemId: "angles-conc-b0821-0068",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Mina says a tilted square corner is still a right angle. Is Mina right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Mina correct that a tilted square corner is still a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0069",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Theo says a square corner is only a right angle when one side points straight up. Is Theo right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Does a square corner stop being a right angle when neither side points straight up, as Theo says?"}},
   },
   {
     itemId: "angles-conc-b0821-0070",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ida says a tilted square corner is still a right angle. Is Ida right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ida tips a square corner so that it leans to one side. Is it still a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0071",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"June claims a 90-degree angle stops being right when the page is rotated. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"June says a 90-degree angle stops being a right angle when the page is turned. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0072",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rotating the paper does not change a right angle, says Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Lily says turning the paper does not change a right angle. Is Lily right?"}},
   },
   {
     itemId: "angles-conc-b0821-0073",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Amara claims a 90-degree angle stops being right when the page is rotated. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Amara says a 90-degree angle stops being a right angle when the page is turned. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0074",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rotating the paper does not change a right angle, says Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Leo says turning the paper does not change a right angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0075",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Mina claims a 90-degree angle stops being right when the page is rotated. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Mina says a 90-degree angle stops being a right angle when the page is turned. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0076",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rotating the paper does not change a right angle, says Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Theo says turning the paper does not change a right angle. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0077",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ida claims a 90-degree angle stops being right when the page is rotated. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ida says a 90-degree angle stops being a right angle when the page is turned. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0078",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rotating the paper does not change a right angle, says Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Zoe says turning the paper does not change a right angle. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0079",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rosa claims a 90-degree angle stops being right when the page is rotated. Is the claim right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Rosa correct that a 90-degree angle drawn on paper stops being a right angle when she tilts the paper?"}},
   },
   {
     itemId: "angles-conc-b0821-0080",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rotating the paper does not change a right angle, says Diego. Is that right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Diego correct that a right angle is still a right angle after he turns the paper sideways?"}},
   },
   {
     itemId: "angles-conc-b0821-0081",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nora claims a 90-degree angle stops being right when the page is rotated. Is the claim right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nora spins her paper partway around, so a 90-degree angle drawn on it now points a new way. Does the angle stop being a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0082",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rotating the paper does not change a right angle, says Luca. Is that right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Luca draws a right angle and then turns the paper. Is the angle still a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0083",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ava claims a 90-degree angle stops being right when the page is rotated. Is the claim right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ava tilts her paper so a 90-degree angle drawn on it leans to one side. Ava says it is no longer a right angle. Is Ava correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0084",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rotating the paper does not change a right angle, says Omar. Is that right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Omar says a right angle drawn on paper is still a right angle when he tilts the paper. Is Omar correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0085",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ben claims a 90-degree angle stops being right when the page is rotated. Is the claim right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ben turns his paper sideways, so a 90-degree angle drawn on it now points a new way. Does the angle stop being a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0086",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rotating the paper does not change a right angle, says Finn. Is that right? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Finn draws a right angle and then turns the paper. Is the angle still a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0087",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Amara asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Amara says a 90-degree angle stops being a right angle when the whole angle is tilted. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0088",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"A 90-degree angle stays right at any orientation, states Leo. Should the statement stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Leo says a 90-degree angle is still a right angle even when it is tilted. Is Leo correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0089",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Mina asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Mina says a 90-degree angle is a right angle only when one side goes straight across. Is Mina correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0090",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"A 90-degree angle stays right at any orientation, states Theo. Should the statement stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Theo says a 90-degree angle stays a right angle when you turn it to point a new way. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0091",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ida asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ida turns a 90-degree angle so it points a new way and says it is no longer a right angle. Is Ida correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0092",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"A 90-degree angle stays right at any orientation, states Zoe. Should the statement stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Zoe says a 90-degree angle is still a right angle even when it is tilted. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0093",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rosa asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rosa turns a 90-degree angle so it points a new way and says it is no longer a right angle. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0094",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"A 90-degree angle stays right at any orientation, states Diego. Should the statement stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Diego says a right angle can be turned so that no side goes straight across. Is Diego correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0095",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nora asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nora says a 90-degree angle is a right angle only when one side goes straight across. Is Nora right?"}},
   },
   {
     itemId: "angles-conc-b0821-0096",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"A 90-degree angle stays right at any orientation, states Luca. Should the statement stand? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Luca says a 90-degree angle stays a right angle when you turn it to point a new way. Is Luca correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0097",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ava asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ava rotates a 90-degree angle so that its sides point in new directions. Ava says it is no longer a right angle. Is Ava correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0098",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"A 90-degree angle stays right at any orientation, states Omar. Should the statement stand? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Omar turns a 90-degree angle so that neither side goes straight across or straight up. Omar says it is still a right angle. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0099",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ben asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ben says a tilted 90-degree angle still measures 90 degrees but is not a right angle anymore. Is Ben correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0100",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"A 90-degree angle stays right at any orientation, states Finn. Should the statement stand? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Finn says an angle can still be a right angle when no side goes straight across. Is Finn right?"}},
   },
   {
     itemId: "angles-conc-b0821-0101",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Priya asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Priya rotates a 90-degree angle so that its sides point in new directions. Priya says it is no longer a right angle. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0102",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "tiltJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"A 90-degree angle stays right at any orientation, states Sam. Should the statement stand? Think about the opening, not the tilt."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Sam turns a 90-degree angle so that neither side goes straight across or straight up. Sam says it is still a right angle. Is Sam correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0103",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Kai, comparing two square corners. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Kai compares two square corners and says the one with longer sides is a bigger angle. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0105",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Lily, comparing two square corners. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Lily compares two square corners. Lily says the one with longer sides is the bigger angle. Is Lily right?"}},
   },
   {
     itemId: "angles-conc-b0821-0107",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Leo, comparing two square corners. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Leo compares two square corners and thinks the one with longer sides is a bigger angle. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0109",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina draws two square corners, one with long sides and one with short sides, and says the long-sided one is a bigger angle. Is Mina right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina draws two square corners, one with long sides and one with short sides. Is the square corner with long sides a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0110",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Theo, comparing two square corners. Is that right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Theo compares two square corners, and one has longer sides. Does the square corner with longer sides make a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0111",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida draws two square corners, one with long sides and one with short sides, and says the long-sided one is a bigger angle. Is Ida right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida draws one square corner with long sides and one with short sides. Is Ida correct that the one with long sides is a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0112",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Zoe, comparing two square corners. Is that right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Zoe correct that a square corner with longer sides is a bigger angle than a square corner with shorter sides?"}},
   },
   {
     itemId: "angles-conc-b0821-0113",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa draws two square corners, one with long sides and one with short sides, and says the long-sided one is a bigger angle. Is Rosa right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa draws two square corners, one with long sides and one with short sides. Is the square corner with long sides a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0114",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Diego, comparing two square corners. Is that right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Diego compares two square corners, and one has longer sides. Does the square corner with longer sides make a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0115",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora draws two square corners, one with long sides and one with short sides, and says the long-sided one is a bigger angle. Is Nora right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora draws one square corner with long sides and one with short sides. Is Nora correct that the one with long sides is a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0116",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Luca, comparing two square corners. Is that right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Luca correct that a square corner with longer sides is a bigger angle than a square corner with shorter sides?"}},
   },
   {
     itemId: "angles-conc-b0821-0117",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava draws two square corners, one with long sides and one with short sides, and says the long-sided one is a bigger angle. Is Ava right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava draws two square corners, one with long sides and one with short sides. Is the square corner with long sides a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0118",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Omar, comparing two square corners. Is that right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Omar compares two square corners, and one has longer sides. Does the square corner with longer sides make a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0119",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ben draws two square corners, one with long sides and one with short sides, and says the long-sided one is a bigger angle. Is Ben right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ben draws one square corner with long sides and one with short sides. Is Ben correct that the one with long sides is a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0120",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Longer sides make a bigger angle, claims Finn, comparing two square corners. Is that right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Finn correct that a square corner with longer sides is a bigger angle than a square corner with shorter sides?"}},
   },
   {
     itemId: "angles-conc-b0821-0121",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues Rosa, so longer rays mean a wider angle. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says longer rays make an angle wider, so ray length changes an angle's size. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0123",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues Nora, so longer rays mean a wider angle. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora thinks longer rays make a wider angle. Is Nora right?"}},
   },
   {
     itemId: "angles-conc-b0821-0125",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues Ava, so longer rays mean a wider angle. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava says ray length changes an angle's size, so longer rays mean a wider angle. Is Ava right?"}},
   },
   {
     itemId: "angles-conc-b0821-0127",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Omar says a 60-degree angle drawn with long rays beats a 60-degree angle drawn with short rays. Is Omar right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Omar correct that a 60-degree angle with long rays is bigger than a 60-degree angle with short rays?"}},
   },
   {
     itemId: "angles-conc-b0821-0128",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues Ben, so longer rays mean a wider angle. Is that right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Ben correct that making the rays of an angle longer gives the angle more degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0129",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Finn says a 60-degree angle drawn with long rays beats a 60-degree angle drawn with short rays. Is Finn right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Finn makes two 60-degree angles, one with long rays and one with short rays. Is the angle with long rays bigger?"}},
   },
   {
     itemId: "angles-conc-b0821-0130",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues Priya, so longer rays mean a wider angle. Is that right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Priya makes the two rays of an angle longer. Priya says the angle now has more degrees. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0131",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Sam says a 60-degree angle drawn with long rays beats a 60-degree angle drawn with short rays. Is Sam right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Sam correct that a 60-degree angle with long rays is bigger than a 60-degree angle with short rays?"}},
   },
   {
     itemId: "angles-conc-b0821-0132",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues Nia, so longer rays mean a wider angle. Is that right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Nia correct that an angle has more degrees when its rays are drawn longer?"}},
   },
   {
     itemId: "angles-conc-b0821-0133",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Kai says a 60-degree angle drawn with long rays beats a 60-degree angle drawn with short rays. Is Kai right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Kai makes two 60-degree angles, one with long rays and one with short rays. Is the angle with long rays bigger?"}},
   },
   {
     itemId: "angles-conc-b0821-0134",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues June, so longer rays mean a wider angle. Is that right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"June draws the two rays of an angle longer. Does the angle now measure more degrees, as June argues?"}},
   },
   {
     itemId: "angles-conc-b0821-0135",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Lily says a 60-degree angle drawn with long rays beats a 60-degree angle drawn with short rays. Is Lily right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Lily correct that a 60-degree angle with long rays is bigger than a 60-degree angle with short rays?"}},
   },
   {
     itemId: "angles-conc-b0821-0136",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues Amara, so longer rays mean a wider angle. Is that right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Amara says that drawing the rays of an angle longer gives the angle more degrees. Is Amara correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0137",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Leo says a 60-degree angle drawn with long rays beats a 60-degree angle drawn with short rays. Is Leo right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Leo makes two 60-degree angles, one with long rays and one with short rays. Is the angle with long rays bigger?"}},
   },
   {
     itemId: "angles-conc-b0821-0138",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ray length changes an angle's size, argues Mina, so longer rays mean a wider angle. Is that right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina makes both rays of an angle longer and says the angle now measures more degrees. Is Mina correct?"}},
   },
   {
     itemId: "angles-conc-b0821-0139",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Diego ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles both measure 45 degrees, and one has longer rays. Is the angle with longer rays bigger, as Diego says?"}},
   },
   {
     itemId: "angles-conc-b0821-0140",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet Nora calls the long-rayed one larger. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles have the same number of degrees, but one has longer rays. Is Nora correct that the angle with longer rays is larger?"}},
   },
   {
     itemId: "angles-conc-b0821-0141",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Luca ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Luca draws two 45-degree angles, one with longer rays, and says that one is bigger. Is Luca right?"}},
   },
   {
     itemId: "angles-conc-b0821-0142",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet Ava calls the long-rayed one larger. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava has two angles that measure the same number of degrees. One has longer rays. Is the angle with longer rays a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0143",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Omar ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Both of Omar's angles measure 45 degrees, but one has longer rays. Is the angle with longer rays the bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0144",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet Ben calls the long-rayed one larger. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Ben correct that, of two angles with the same number of degrees, the one with longer rays is larger?"}},
   },
   {
     itemId: "angles-conc-b0821-0145",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Finn ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles both measure 45 degrees, and one has longer rays. Is Finn correct that the angle with longer rays is bigger?"}},
   },
   {
     itemId: "angles-conc-b0821-0146",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet Priya calls the long-rayed one larger. Is Priya right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles have the same number of degrees, but one has longer rays. Is Priya correct that the angle with longer rays is larger?"}},
   },
   {
     itemId: "angles-conc-b0821-0147",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Sam ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Sam has two 45-degree angles, and one has much longer rays. Is the angle with longer rays the bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0148",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet Nia calls the long-rayed one larger. Is Nia right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nia has two angles that measure the same number of degrees. One has longer rays. Is the angle with longer rays a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0149",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Kai ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles both measure 45 degrees, and one has longer rays. Is Kai correct that the angle with longer rays is bigger?"}},
   },
   {
     itemId: "angles-conc-b0821-0150",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet June calls the long-rayed one larger. Is June right? Degrees measure the turn, not the sides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is June correct that, of two angles with the same number of degrees, the one with longer rays is larger?"}},
   },
   {
     itemId: "angles-conc-b0821-0151",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Lily ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Lily has two 45-degree angles, and one has much longer rays. Is the angle with longer rays the bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0152",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet Amara calls the long-rayed one larger. Is Amara right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles have the same number of degrees, but one has longer rays. Is Amara correct that the angle with longer rays is larger?"}},
   },
   {
     itemId: "angles-conc-b0821-0153",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Leo ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles both measure 45 degrees, and one has longer rays. Is Leo correct that the angle with longer rays is bigger?"}},
   },
   {
     itemId: "angles-conc-b0821-0154",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet Mina calls the long-rayed one larger. Is Mina right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina has two angles that measure the same number of degrees. One has longer rays. Is the angle with longer rays a bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0155",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Theo ranks two 45-degree angles by the lengths of their rays. Is ray length the right ranking? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Theo has two 45-degree angles, and one has much longer rays. Is the angle with longer rays the bigger angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0156",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "rayLengthTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Two angles of equal degrees but different ray lengths are equal angles, yet Ida calls the long-rayed one larger. Is Ida right? The opening is what counts."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Ida correct that, of two angles with the same number of degrees, the one with longer rays is larger?"}},
   },
   {
     itemId: "angles-conc-b0821-0157",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Mina says a wide-open gate makes an angle wider than a square corner. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Mina opens a laptop until the screen lies almost flat. Mina says the angle between the screen and the keys is wider than a square corner. Is Mina right?"}},
   },
   {
     itemId: "angles-conc-b0821-0158",
@@ -7702,7 +7702,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A door open a crack opens less than a square corner, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Theo says a door open a crack makes an angle smaller than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0159",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ida says a fully spread fan makes an angle wider than a square corner. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ida says a fully spread fan makes an angle wider than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0160",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Scissors barely open opens less than a square corner, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Zoe looks at scissors that are barely open. Zoe says the angle is smaller than a square corner. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0161",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa says a reclined beach chair makes an angle wider than a square corner. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa leans a beach chair far back. Rosa says the angle between its seat and its back is wider than a square corner. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0162",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A slightly open book opens less than a square corner, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Diego says a slightly open book makes an angle smaller than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0163",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Nora says a flat-out ramp makes an angle wider than a square corner. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Nora right that a book opened almost flat makes an angle wider than a square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0164",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A nearly closed laptop opens less than a square corner, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Luca looks at a nearly closed laptop. Luca says the angle is smaller than a square corner. Is Luca right?"}},
   },
   {
     itemId: "angles-conc-b0821-0165",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ava says a wide slice of pie makes an angle wider than a square corner. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ava right that a slice that is more than a quarter of a pie makes an angle wider than a square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0166",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A thin slice of pie opens less than a square corner, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Omar says a thin slice of pie makes an angle smaller than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0167",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ben says an almost flat umbrella makes an angle wider than a square corner. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ben says the two hands of a clock at 5 o'clock make an angle wider than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0168",
@@ -7802,7 +7802,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Tweezers pinched nearly shut opens less than a square corner, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Finn looks at tweezers pinched nearly shut. Finn says the angle is smaller than a square corner. Is Finn right?"}},
   },
   {
     itemId: "angles-conc-b0821-0169",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Priya says a wide-open door makes an angle wider than a square corner. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Priya looks at a clock at 4 o'clock. Priya says the angle between the two hands is wider than a square corner. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0170",
@@ -7822,7 +7822,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A barely open window opens less than a square corner, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam says a lunchbox lid open just a little makes an angle smaller than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0171",
@@ -7832,7 +7832,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Nia says a spread-out wing makes an angle wider than a square corner. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Nia says the two wings of a gliding bird, spread out flat, make an angle wider than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0172",
@@ -7842,7 +7842,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A half-shut beak opens less than a square corner, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Kai looks at a bird's beak that is open just a little. Kai says the angle is smaller than a square corner. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0173",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"June says an opened-out sofa bed makes an angle wider than a square corner. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"June leans a lawn chair all the way back. June says the angle between its seat and its back is wider than a square corner. Is June right?"}},
   },
   {
     itemId: "angles-conc-b0821-0174",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A nearly folded easel opens less than a square corner, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Lily says a nearly folded easel makes an angle smaller than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0175",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Omar estimates the angle of a wide-open gate at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Omar looks at a clock at 5 o'clock. Omar estimates the angle between the two hands at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0176",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a door open a crack, Ben guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a door open a crack, Ben guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0177",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Finn estimates the angle of a fully spread fan at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Finn estimates the angle of a fan spread most of the way open at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0178",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For scissors barely open, Priya guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For scissors barely open, Priya guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0179",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam estimates the angle of a reclined beach chair at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam leans a beach chair far back. Sam estimates the angle between its seat and its back at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0180",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a slightly open book, Nia guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a slightly open book, Nia guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0181",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Kai estimates the angle of a wide-open laptop at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Kai tips a laptop screen back until it is not quite flat. Kai estimates the angle between screen and keys at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0182",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a nearly closed umbrella, June guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a nearly closed umbrella, June guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0183",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Lily estimates the angle of a wide slice of pie at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Lily cuts a slice that is a little less than half of a pie and estimates the angle at its tip at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0184",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a thin slice of pie, Amara guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a thin slice of pie, Amara guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0185",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Leo estimates the angle of a leaned-back office chair at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Leo opens a book most of the way flat. Leo estimates the angle between the two covers at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0186",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For pliers pinched nearly shut, Mina guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For pliers pinched nearly shut, Mina guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0187",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Theo estimates the angle of a wide-open window at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A peacock spreads its tail almost into a half circle. Theo estimates the angle between its outside edges at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0188",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a cracked-open lid, Ida guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a cracked-open lid, Ida guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0189",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Zoe estimates the angle of a spread protractor arm at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Zoe looks at a clock at 7 o'clock. Zoe estimates the smaller angle between the two hands at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0190",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a snipped ribbon vee, Rosa guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a bird's beak open just a little, Rosa guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0191",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Diego estimates the angle of a folded-out futon at about 150 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Diego's dentist tips the chair far back. Diego estimates the angle between the seat and the back at about 150 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0192",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a nearly shut gate, Nora guesses 20 degrees. Does the guess fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a nearly shut gate, Nora guesses about 20 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0193",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Finn pegs a wide-open gate near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Finn tips his laptop screen back until it is almost flat. Finn says the angle between the screen and the keys is about 160 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0194",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for a door open a crack — does Priya's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a door open a crack, Priya guesses an angle of about 15 degrees. Does Priya's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0195",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam pegs a fully spread fan near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam spreads a paper fan open almost into a half circle. Sam estimates the angle between its two outside edges at about 160 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0196",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for scissors barely open — does Nia's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For scissors barely open, Nia guesses an angle of about 15 degrees. Does Nia's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0197",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Kai pegs a reclined dental chair near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Kai's dentist tips the chair back almost flat. Kai estimates the angle between the seat and the back at about 160 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0198",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for a slightly open book — does June's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a slightly open book, June guesses an angle of about 15 degrees. Does June's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0199",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Lily pegs a wide-open hatch near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Lily opens a photo album until it lies almost flat. Lily guesses the two covers make an angle of about 160 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0200",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for a nearly closed compass — does Amara's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a nearly closed drawing compass, Amara guesses an angle of about 15 degrees. Does Amara's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0201",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Leo pegs a wide slice of pie near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Leo cuts a slice that is almost half of a pie. Is about 160 degrees a sensible estimate for the angle at its tip?"}},
   },
   {
     itemId: "angles-conc-b0821-0202",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for a sliver of pie — does Mina's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a sliver of pie, Mina guesses an angle of about 15 degrees. Does Mina's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0203",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Theo pegs a laid-back lounger near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Theo tips a lounge chair back until it is almost flat. Theo guesses the seat and back make an angle of about 160 degrees. Is 160 degrees a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0204",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for calipers pinched nearly shut — does Ida's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For tongs pinched nearly shut, Ida guesses an angle of about 15 degrees. Does Ida's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0205",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Zoe pegs a swung-wide door near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A hawk glides with its wings spread out almost flat. Zoe guesses the angle between its two wings is about 160 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0206",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for a cracked window vent — does Rosa's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a toy chest lid open just a crack, Rosa guesses an angle of about 15 degrees. Does Rosa's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0207",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Diego pegs an unfolded map crease near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Diego guesses that the fold in a map opened almost flat makes an angle of about 160 degrees. Is 160 degrees a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0208",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for a barely open clam shell — does Nora's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For a barely open clam shell, Nora guesses an angle of about 15 degrees. Does Nora's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0209",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Luca pegs an opened-flat laptop near 160 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is 160 degrees a good estimate for the angle of a laptop opened almost flat, as Luca guesses?"}},
   },
   {
     itemId: "angles-conc-b0821-0210",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "estimateJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"An estimate of 15 degrees for a nearly closed shears — does Ava's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"For shears that are nearly closed, Ava guesses an angle of about 15 degrees. Does Ava's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0211",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Luca claims a wide-open gate opens less than a square corner. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Luca looks at a wide-open gate. Luca says the angle is smaller than a square corner. Is Luca right?"}},
   },
   {
     itemId: "angles-conc-b0821-0212",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A door open a crack makes a very wide angle, says Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava says a door open a crack makes an angle wider than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0213",
@@ -8252,7 +8252,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Omar claims a fully spread fan opens less than a square corner. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Omar says a fully spread fan makes an angle smaller than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0214",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Scissors barely open makes a very wide angle, says Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ben looks at scissors that are barely open. Ben says the angle is wider than a square corner. Is Ben right?"}},
   },
   {
     itemId: "angles-conc-b0821-0215",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Finn claims a reclined beach chair opens less than a square corner. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Finn leans a beach chair far back. Finn says the angle between its seat and its back is smaller than a square corner. Is Finn right?"}},
   },
   {
     itemId: "angles-conc-b0821-0216",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A slightly open book makes a very wide angle, says Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Priya says a slightly open book makes an angle wider than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0217",
@@ -8292,7 +8292,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Sam claims a flat-out ramp opens less than a square corner. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Sam leans a lawn chair all the way back. Is Sam right that the angle between its seat and its back is smaller than a square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0218",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A nearly closed laptop makes a very wide angle, says Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nia looks at a nearly closed laptop. Nia says the angle is wider than a square corner. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0219",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Kai claims a wide slice of pie opens less than a square corner. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Kai cuts a slice that is more than a quarter of a pie. Is Kai right that its tip opens less than a square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0220",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A thin slice of pie makes a very wide angle, says June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"June says a thin slice of pie makes an angle wider than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0221",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Lily claims an almost flat umbrella opens less than a square corner. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Lily says the two hands of a clock at 5 o'clock make an angle smaller than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0222",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Tweezers pinched nearly shut makes a very wide angle, says Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Amara looks at tweezers pinched nearly shut. Amara says the angle is wider than a square corner. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0223",
@@ -8352,7 +8352,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Leo claims a wide-open door opens less than a square corner. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Leo looks at a wide-open door. Leo says the angle is smaller than a square corner. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0224",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A barely open window makes a very wide angle, says Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina says a lunchbox lid open just a little makes an angle wider than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0225",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Theo claims a spread-out wing opens less than a square corner. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Theo says the two wings of a gliding bird, spread out flat, make an angle smaller than a square corner. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0226",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A half-shut beak makes a very wide angle, says Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida looks at a bird's beak that is open just a little. Ida says the angle is wider than a square corner. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0227",
@@ -8392,7 +8392,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"June estimates a wide-open gate at 20 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"June estimates the angle of a wide-open gate at about 20 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0228",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a door open a crack, Lily writes 150 degrees. Does the number fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a door open a crack, Lily guesses about 150 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0229",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Amara estimates a fully spread fan at 20 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Amara estimates the angle of a fully spread fan at about 20 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0230",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For scissors barely open, Leo writes 150 degrees. Does the number fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For scissors barely open, Leo guesses about 150 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0231",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina estimates a reclined beach chair at 20 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina leans a beach chair far back. Mina estimates the angle between its seat and its back at about 20 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0232",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a slightly open book, Theo writes 150 degrees. Does the number fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a slightly open book, Theo guesses about 150 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0233",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida estimates a wide-open laptop at 20 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida estimates the angle of a wide-open laptop at about 20 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0234",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a nearly closed umbrella, Zoe writes 150 degrees. Does the number fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a nearly closed umbrella, Zoe guesses about 150 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0235",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa estimates a wide slice of pie at 20 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa cuts a slice that is a quarter of a pie. Rosa estimates the angle at its tip at about 20 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0236",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a thin slice of pie, Diego writes 150 degrees. Does the number fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a thin slice of pie, Diego guesses about 150 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0237",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora estimates a leaned-back office chair at 20 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora leans back in an office chair. Nora estimates the angle between the seat and the back at about 20 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0238",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For pliers pinched nearly shut, Luca writes 150 degrees. Does the number fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For pliers pinched nearly shut, Luca guesses about 150 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0239",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava estimates a wide-open window at 20 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava opens a book until it lies almost flat. Ava estimates the angle between the covers at about 20 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0240",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a cracked-open lid, Omar writes 150 degrees. Does the number fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a cracked-open lid, Omar guesses about 150 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0241",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ben estimates a spread protractor arm at 20 degrees. Is that a sensible estimate?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ben looks at a clock at 5 o'clock. Ben estimates the angle between the two hands at about 20 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0242",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a snipped ribbon vee, Finn writes 150 degrees. Does the number fit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a pair of tweezers pinched nearly shut, Finn guesses about 150 degrees. Is that a good guess?"}},
   },
   {
     itemId: "angles-conc-b0821-0243",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Amara pegs a wide-open gate near 15 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Amara swings a gate wide open. Amara guesses the gate has turned about 15 degrees from where it was closed. Is 15 degrees a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0244",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"An estimate of 160 degrees for a door open a crack — does Leo's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a door open a crack, Leo guesses an angle of about 160 degrees. Does Leo's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0245",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina pegs a fully spread fan near 15 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is 15 degrees a good estimate for the angle of a paper fan spread all the way open, as Mina guesses?"}},
   },
   {
     itemId: "angles-conc-b0821-0246",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"An estimate of 160 degrees for scissors barely open — does Theo's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For scissors barely open, Theo guesses an angle of about 160 degrees. Does Theo's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0247",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida pegs a reclined dental chair near 15 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida's dentist tips the chair back until it is almost flat. Ida guesses the seat and back make an angle of about 15 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0248",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"An estimate of 160 degrees for a slightly open book — does Zoe's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a slightly open book, Zoe guesses an angle of about 160 degrees. Does Zoe's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0249",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa pegs a wide-open hatch near 15 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa opens a hatch wide. Is 15 degrees a good estimate for how far the hatch has turned from closed, as Rosa guesses?"}},
   },
   {
     itemId: "angles-conc-b0821-0250",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"An estimate of 160 degrees for a nearly closed compass — does Diego's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a nearly closed drawing compass, Diego guesses an angle of about 160 degrees. Does Diego's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0251",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora pegs a wide slice of pie near 15 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora cuts a slice that is a quarter of a pie. Nora estimates the angle at its tip at about 15 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0252",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"An estimate of 160 degrees for a sliver of pie — does Luca's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a sliver of pie, Luca guesses an angle of about 160 degrees. Does Luca's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0253",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava pegs a laid-back lounger near 15 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava opens her laptop and tips the screen back until it is almost flat. Ava says the angle between the screen and the keys is about 15 degrees. Is that a good estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0254",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"An estimate of 160 degrees for calipers pinched nearly shut — does Omar's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For tongs pinched nearly shut, Omar guesses an angle of about 160 degrees. Does Omar's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0255",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ben pegs a swung-wide door near 15 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ben swings a door wide open. Ben estimates the angle between the door and its frame at about 15 degrees. Is that a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0256",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"An estimate of 160 degrees for a cracked window vent — does Finn's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a toy chest lid open just a crack, Finn guesses an angle of about 160 degrees. Does Finn's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0257",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Priya pegs an unfolded map crease near 15 degrees. Is the estimate reasonable?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Priya guesses that the fold in a map opened almost flat makes an angle of about 15 degrees. Is 15 degrees a sensible estimate?"}},
   },
   {
     itemId: "angles-conc-b0821-0258",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "estimateTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"An estimate of 160 degrees for a barely open clam shell — does Sam's number make sense?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"For a barely open clam shell, Sam guesses an angle of about 160 degrees. Does Sam's guess make sense?"}},
   },
   {
     itemId: "angles-conc-b0821-0259",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Kai says an angle with no opening is the same as no turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0261",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"June says an angle that has not opened at all is the same as no turn. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"June says an angle that has not opened at all is the same as a quarter turn. Is June right?"}},
   },
   {
     itemId: "angles-conc-b0821-0262",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Lily says an angle with no opening is the same as a quarter turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0263",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Leo says an angle with no opening is the same as no turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0265",
@@ -8772,7 +8772,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Mina says an angle that has not opened at all is the same as no turn. Is Mina right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Mina says an angle that has not opened at all is the same as a quarter turn. Is Mina right?"}},
   },
   {
     itemId: "angles-conc-b0821-0266",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Theo. Is that right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Theo says an angle with no opening at all has no turn. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0267",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ida says an angle that has not opened at all is the same as no turn. Is Ida right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ida right that an angle that has not opened at all is the same as no turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0268",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Zoe. Is that right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Zoe right that an angle with no opening has no turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0269",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa says an angle that has not opened at all is the same as no turn. Is Rosa right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa says an angle that has not opened at all is the same as no turn. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0270",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Diego. Is that right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Diego says an angle with no opening at all has a quarter turn. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0271",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Nora says an angle that has not opened at all is the same as no turn. Is Nora right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Nora right that an angle that has not opened at all is the same as a quarter turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0272",
@@ -8842,7 +8842,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Luca. Is that right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Luca right that an angle with no opening has a quarter turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0273",
@@ -8852,7 +8852,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ava says an angle that has not opened at all is the same as no turn. Is Ava right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ava right that an angle that has not opened at all is the same as no turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0274",
@@ -8862,7 +8862,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Omar. Is that right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Omar says an angle with no opening at all has no turn. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0275",
@@ -8872,7 +8872,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ben says an angle that has not opened at all is the same as no turn. Is Ben right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ben says an angle that has not opened at all is the same as a quarter turn. Is Ben right?"}},
   },
   {
     itemId: "angles-conc-b0821-0276",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"No opening means no angle turn, claims Finn. Is that right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Finn right that an angle with no opening at all has a quarter turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0277",
@@ -8902,7 +8902,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa says a full 360-degree spin leaves you facing the way you began. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0279",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Diego says turning all the way around lands you facing the same way you started. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Diego says turning halfway around lands you facing the same way you started. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0280",
@@ -8922,7 +8922,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims Nora. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nora says a 180-degree spin leaves you facing the way you began. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0281",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ava says a full 360-degree spin leaves you facing the way you began. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0283",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Omar says turning all the way around lands you facing the same way you started. Is Omar right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Omar says that turning all the way around leaves you facing the same way you started. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0284",
@@ -8962,7 +8962,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims Ben. Is that right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ben says that after a full 360-degree spin, you face the same way you started. Is Ben right?"}},
   },
   {
     itemId: "angles-conc-b0821-0285",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Finn says turning all the way around lands you facing the same way you started. Is Finn right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Finn right that turning all the way around leaves you facing the same way you started?"}},
   },
   {
     itemId: "angles-conc-b0821-0286",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims Priya. Is that right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Priya spins all the way around, 360 degrees. Is Priya facing the same way as at the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0287",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam says turning all the way around lands you facing the same way you started. Is Sam right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam turns all the way around. Does Sam end up facing the same way as at the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0288",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims Nia. Is that right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nia says that after a 180-degree spin, you face the same way you started. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0289",
@@ -9012,7 +9012,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Kai says turning all the way around lands you facing the same way you started. Is Kai right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Kai says that turning halfway around leaves you facing the same way you started. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0290",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims June. Is that right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"June spins halfway around, 180 degrees. Is June facing the same way as at the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0291",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Lily says turning all the way around lands you facing the same way you started. Is Lily right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Lily right that turning halfway around leaves you facing the same way you started?"}},
   },
   {
     itemId: "angles-conc-b0821-0292",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims Amara. Is that right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Amara right that after a full 360-degree spin, you face the same way you started?"}},
   },
   {
     itemId: "angles-conc-b0821-0293",
@@ -9052,7 +9052,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Leo says turning all the way around lands you facing the same way you started. Is Leo right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Leo turns halfway around. Does Leo end up facing the same way as at the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0294",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"A full 360-degree spin faces you back where you began, claims Mina. Is that right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Mina right that after a 180-degree spin, you face the same way you started?"}},
   },
   {
     itemId: "angles-conc-b0821-0295",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Diego states that two quarter turns in the same direction equal one half turn. Is the statement right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Diego says two quarter turns in the same direction make one half turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0296",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts Nora. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Nora makes four quarter turns in the same direction. Is Nora facing the same way as at the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0297",
@@ -9092,7 +9092,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Luca states that two quarter turns in the same direction equal one half turn. Is the statement right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Luca says three quarter turns in the same direction make one half turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0298",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts Ava. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ava makes three quarter turns in the same direction. Is Ava facing the same way as at the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0299",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Omar states that two quarter turns in the same direction equal one half turn. Is the statement right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Omar says two quarter turns in the same direction make one full turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0300",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts Ben. Sound assertion?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Ben right that four quarter turns in the same direction bring you back to the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0301",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Finn states that two quarter turns in the same direction equal one half turn. Is the statement right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Finn right that two quarter turns in the same direction make one half turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0302",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts Priya. Sound assertion? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Priya right that three quarter turns in the same direction bring you back to the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0303",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam states that two quarter turns in the same direction equal one half turn. Is the statement right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Sam says two quarter turns in the same direction make one half turn. Is Sam right?"}},
   },
   {
     itemId: "angles-conc-b0821-0304",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts Nia. Sound assertion? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Nia says four quarter turns in the same direction bring you back to the start. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0305",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Kai states that two quarter turns in the same direction equal one half turn. Is the statement right? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Kai says three quarter turns in the same direction make one half turn. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0306",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts June. Sound assertion? Try acting it out."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"June makes four quarter turns in the same direction. Is June facing the same way as at the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0307",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Lily states that two quarter turns in the same direction equal one half turn. Is the statement right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Lily right that three quarter turns in the same direction make one half turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0308",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts Amara. Sound assertion? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Amara says three quarter turns in the same direction bring you back to the start. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0309",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Leo states that two quarter turns in the same direction equal one half turn. Is the statement right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Do two quarter turns in the same direction make one half turn, as Leo says?"}},
   },
   {
     itemId: "angles-conc-b0821-0310",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts Mina. Sound assertion? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Is Mina right that four quarter turns in the same direction bring you back to the start?"}},
   },
   {
     itemId: "angles-conc-b0821-0311",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Theo states that two quarter turns in the same direction equal one half turn. Is the statement right? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Do three quarter turns in the same direction make one half turn, as Theo says?"}},
   },
   {
     itemId: "angles-conc-b0821-0312",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "turnFactJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Four quarter turns in the same direction return you to the start, asserts Ida. Sound assertion? Picture the turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authoredYes"},"truth":true,"promptText":"Ida says four quarter turns in the same direction bring you back to the start. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0313",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":1,"kind":"sumUnitsSaid","said":2},"truth":true,"promptText":"Mina says 1 quarter turn plus 1 more make 2 quarter turns in all. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":1,"kind":"sumUnitsSaid","said":2},"truth":true,"promptText":"Is Mina right that 1 quarter turn and 1 more make 2 quarter turns in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0314",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":1,"b":2,"kind":"sumUnitsSaid","said":4},"truth":false,"promptText":"1 and 2 quarter turns total 4, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":1,"b":2,"kind":"sumUnitsSaid","said":4},"truth":false,"promptText":"Is Theo right that 1 quarter turn and 2 more make 4 quarter turns in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0315",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":2,"b":2,"kind":"sumUnitsSaid","said":3},"truth":false,"promptText":"2 and 2 quarter turns total 3, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":2,"b":2,"kind":"sumUnitsSaid","said":3},"truth":false,"promptText":"Zoe says 2 quarter turns plus 2 more make 3 quarter turns in all. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0317",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":3,"kind":"sumUnitsSaid","said":4},"truth":true,"promptText":"Rosa says 1 quarter turn plus 3 more make 4 quarter turns in all. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":3,"kind":"sumUnitsSaid","said":4},"truth":true,"promptText":"Is Rosa right that 1 quarter turn and 3 more make 4 quarter turns in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0318",
@@ -9302,7 +9302,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":3,"b":1,"kind":"sumUnitsSaid","said":5},"truth":false,"promptText":"3 and 1 quarter turns total 5, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":3,"b":1,"kind":"sumUnitsSaid","said":5},"truth":false,"promptText":"Diego makes 3 quarter turns and then 1 more. Diego says that is 5 quarter turns in all. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0319",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":2,"b":2,"kind":"sumUnitsSaid","said":4},"truth":true,"promptText":"Nora says 2 quarter turns plus 2 more make 4 quarter turns in all. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":2,"b":2,"kind":"sumUnitsSaid","said":4},"truth":true,"promptText":"Nora makes 2 quarter turns and then 2 more. Nora says that is 4 quarter turns in all. Is Nora right?"}},
   },
   {
     itemId: "angles-conc-b0821-0320",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":1,"b":1,"kind":"sumUnitsSaid","said":3},"truth":false,"promptText":"1 and 1 quarter turns total 3, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":1,"b":1,"kind":"sumUnitsSaid","said":3},"truth":false,"promptText":"Is Luca right that 1 quarter turn and 1 more make 3 quarter turns in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0321",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":2,"kind":"sumUnitsSaid","said":3},"truth":true,"promptText":"Ava says 1 quarter turn plus 2 more make 3 quarter turns in all. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":2,"kind":"sumUnitsSaid","said":3},"truth":true,"promptText":"Is Ava right that 1 quarter turn and 2 more make 3 quarter turns in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0322",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":2,"b":1,"kind":"sumUnitsSaid","said":4},"truth":false,"promptText":"2 and 1 quarter turns total 4, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":2,"b":1,"kind":"sumUnitsSaid","said":4},"truth":false,"promptText":"Omar says 2 quarter turns plus 1 more make 4 quarter turns in all. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0323",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":1,"b":3,"kind":"sumUnitsSaid","said":5},"truth":false,"promptText":"Ben says 1 quarter turn plus 3 more make 5 quarter turns in all. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":1,"b":3,"kind":"sumUnitsSaid","said":5},"truth":false,"promptText":"Is Ben right that 1 quarter turn and 3 more make 5 quarter turns in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0324",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":3,"b":1,"kind":"sumUnitsSaid","said":4},"truth":true,"promptText":"3 and 1 quarter turns total 4, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":3,"b":1,"kind":"sumUnitsSaid","said":4},"truth":true,"promptText":"Finn makes 3 quarter turns and then 1 more. Finn says that is 4 quarter turns in all. Is Finn right?"}},
   },
   {
     itemId: "angles-conc-b0821-0325",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":2,"b":2,"kind":"sumUnitsSaid","said":5},"truth":false,"promptText":"Priya says 2 quarter turns plus 2 more make 5 quarter turns in all. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":2,"b":2,"kind":"sumUnitsSaid","said":5},"truth":false,"promptText":"Priya makes 2 quarter turns and then 2 more. Priya says that is 5 quarter turns in all. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0326",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":1,"kind":"sumUnitsSaid","said":2},"truth":true,"promptText":"1 and 1 quarter turns total 2, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":1,"kind":"sumUnitsSaid","said":2},"truth":true,"promptText":"Sam says 1 quarter turn plus 1 more make 2 quarter turns in all. Is Sam right?"}},
   },
   {
     itemId: "angles-conc-b0821-0327",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":2,"kind":"sumUnitsSaid","said":3},"truth":true,"promptText":"Nia says 1 quarter turn plus 2 more make 3 quarter turns in all. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":1,"b":2,"kind":"sumUnitsSaid","said":3},"truth":true,"promptText":"Nia makes 1 quarter turn and then 2 more. Nia says that is 3 quarter turns in all. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0328",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":2,"b":1,"kind":"sumUnitsSaid","said":2},"truth":false,"promptText":"2 and 1 quarter turns total 2, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":2,"b":1,"kind":"sumUnitsSaid","said":2},"truth":false,"promptText":"Kai makes 2 quarter turns and then 1 more. Kai says that is 2 quarter turns in all. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0329",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":3,"b":1,"kind":"sumUnitsSaid","said":3},"truth":false,"promptText":"3 and 1 quarter turns total 3, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":3,"b":1,"kind":"sumUnitsSaid","said":3},"truth":false,"promptText":"Lily says 3 quarter turns plus 1 more make 3 quarter turns in all. Is Lily right?"}},
   },
   {
     itemId: "angles-conc-b0821-0331",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"b":45,"kind":"sumSaid","said":75},"truth":true,"promptText":"Omar adds adjacent angles of 30 and 45 degrees and reports 75 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"b":45,"kind":"sumSaid","said":75},"truth":true,"promptText":"Omar says side-by-side angles of 30 and 45 degrees make 75 degrees together. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0332",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":60,"b":25,"kind":"sumSaid","said":95},"truth":false,"promptText":"Check Ben's total of 95 degrees for angles 60 and 25. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":60,"b":25,"kind":"sumSaid","said":95},"truth":false,"promptText":"Ben puts a 60-degree angle and a 25-degree angle side by side and says they make 95 degrees. Is 95 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0333",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":40,"b":35,"kind":"sumSaid","said":75},"truth":true,"promptText":"Finn adds adjacent angles of 40 and 35 degrees and reports 75 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":40,"b":35,"kind":"sumSaid","said":75},"truth":true,"promptText":"Finn puts a 40-degree angle and a 35-degree angle side by side and says they make 75 degrees. Is 75 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0334",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":50,"b":20,"kind":"sumSaid","said":80},"truth":false,"promptText":"Check Priya's total of 80 degrees for angles 50 and 20. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":50,"b":20,"kind":"sumSaid","said":80},"truth":false,"promptText":"Priya puts a 50-degree angle and a 20-degree angle side by side and says they make 80 degrees. Is 80 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0335",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"b":30,"kind":"sumSaid","said":85},"truth":true,"promptText":"Sam adds adjacent angles of 55 and 30 degrees and reports 85 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"b":30,"kind":"sumSaid","said":85},"truth":true,"promptText":"Is Sam right that angles of 55 degrees and 30 degrees make 85 degrees in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0336",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":15,"b":65,"kind":"sumSaid","said":70},"truth":false,"promptText":"Check Nia's total of 70 degrees for angles 15 and 65. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":15,"b":65,"kind":"sumSaid","said":70},"truth":false,"promptText":"Nia says side-by-side angles of 15 and 65 degrees make 70 degrees together. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0337",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":70,"b":25,"kind":"sumSaid","said":95},"truth":true,"promptText":"Kai adds adjacent angles of 70 and 25 degrees and reports 95 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":70,"b":25,"kind":"sumSaid","said":95},"truth":true,"promptText":"Kai says side-by-side angles of 70 and 25 degrees make 95 degrees together. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0338",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"b":45,"kind":"sumSaid","said":100},"truth":false,"promptText":"Check June's total of 100 degrees for angles 45 and 45. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"b":45,"kind":"sumSaid","said":100},"truth":false,"promptText":"Is June right that angles of 45 degrees and 45 degrees make 100 degrees in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0339",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":20,"b":60,"kind":"sumSaid","said":80},"truth":true,"promptText":"Lily adds adjacent angles of 20 and 60 degrees and reports 80 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":20,"b":60,"kind":"sumSaid","said":80},"truth":true,"promptText":"Lily puts a 20-degree angle and a 60-degree angle side by side and says they make 80 degrees. Is 80 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0340",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":35,"b":50,"kind":"sumSaid","said":95},"truth":false,"promptText":"Check Amara's total of 95 degrees for angles 35 and 50. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":35,"b":50,"kind":"sumSaid","said":95},"truth":false,"promptText":"Is Amara right that angles of 35 degrees and 50 degrees make 95 degrees in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0341",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":65,"b":30,"kind":"sumSaid","said":95},"truth":true,"promptText":"Leo adds adjacent angles of 65 and 30 degrees and reports 95 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":65,"b":30,"kind":"sumSaid","said":95},"truth":true,"promptText":"Is Leo right that angles of 65 degrees and 30 degrees make 95 degrees in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0342",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":25,"b":40,"kind":"sumSaid","said":55},"truth":false,"promptText":"Check Mina's total of 55 degrees for angles 25 and 40. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":25,"b":40,"kind":"sumSaid","said":55},"truth":false,"promptText":"Mina puts a 25-degree angle and a 40-degree angle side by side and says they make 55 degrees. Is 55 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0343",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":10,"b":75,"kind":"sumSaid","said":85},"truth":true,"promptText":"Theo adds adjacent angles of 10 and 75 degrees and reports 85 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":10,"b":75,"kind":"sumSaid","said":85},"truth":true,"promptText":"Theo puts a 10-degree angle and a 75-degree angle side by side and says they make 85 degrees. Is 85 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0344",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":30,"b":45,"kind":"sumSaid","said":85},"truth":false,"promptText":"Check Ida's total of 85 degrees for angles 30 and 45. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":30,"b":45,"kind":"sumSaid","said":85},"truth":false,"promptText":"Ida says side-by-side angles of 30 and 45 degrees make 85 degrees together. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0345",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":60,"b":25,"kind":"sumSaid","said":85},"truth":true,"promptText":"Zoe adds adjacent angles of 60 and 25 degrees and reports 85 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":60,"b":25,"kind":"sumSaid","said":85},"truth":true,"promptText":"Zoe says side-by-side angles of 60 and 25 degrees make 85 degrees together. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0346",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":40,"b":35,"kind":"sumSaid","said":65},"truth":false,"promptText":"Check Rosa's total of 65 degrees for angles 40 and 35. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":40,"b":35,"kind":"sumSaid","said":65},"truth":false,"promptText":"Rosa says side-by-side angles of 40 and 35 degrees make 65 degrees together. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0347",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":55,"b":30,"kind":"sumSaid","said":95},"truth":false,"promptText":"Diego adds adjacent angles of 55 and 30 degrees and reports 95 degrees. Does the report hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":55,"b":30,"kind":"sumSaid","said":95},"truth":false,"promptText":"Is Diego right that angles of 55 degrees and 30 degrees make 95 degrees in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0348",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":50,"b":20,"kind":"sumSaid","said":70},"truth":true,"promptText":"Check Nora's total of 70 degrees for angles 50 and 20. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":50,"b":20,"kind":"sumSaid","said":70},"truth":true,"promptText":"Is Nora right that angles of 50 degrees and 20 degrees make 70 degrees in all?"}},
   },
   {
     itemId: "angles-conc-b0821-0349",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":85,"b":40,"kind":"sumSaid","said":125},"truth":true,"promptText":"Finn certifies 125 degrees as the combined measure of 85 and 40 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":85,"b":40,"kind":"sumSaid","said":125},"truth":true,"promptText":"Finn adds 85 degrees and 40 degrees and gets 125 degrees. Is 125 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0350",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":95,"b":55,"kind":"sumSaid","said":140},"truth":false,"promptText":"Audit the sum: 95 plus 55 degrees, recorded 140 by Priya. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":95,"b":55,"kind":"sumSaid","said":140},"truth":false,"promptText":"Priya adds 95 degrees and 55 degrees and gets 140 degrees. Is 140 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0351",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":110,"b":45,"kind":"sumSaid","said":155},"truth":true,"promptText":"Sam certifies 155 degrees as the combined measure of 110 and 45 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":110,"b":45,"kind":"sumSaid","said":155},"truth":true,"promptText":"Is Sam right that 110 degrees plus 45 degrees is 155 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0352",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":75,"b":80,"kind":"sumSaid","said":165},"truth":false,"promptText":"Audit the sum: 75 plus 80 degrees, recorded 165 by Nia. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":75,"b":80,"kind":"sumSaid","said":165},"truth":false,"promptText":"Nia says 75 degrees and 80 degrees add up to 165 degrees. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0353",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":120,"b":35,"kind":"sumSaid","said":155},"truth":true,"promptText":"Kai certifies 155 degrees as the combined measure of 120 and 35 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":120,"b":35,"kind":"sumSaid","said":155},"truth":true,"promptText":"Kai says 120 degrees and 35 degrees add up to 155 degrees. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0354",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":65,"b":90,"kind":"sumSaid","said":145},"truth":false,"promptText":"Audit the sum: 65 plus 90 degrees, recorded 145 by June. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":65,"b":90,"kind":"sumSaid","said":145},"truth":false,"promptText":"Is June right that 65 degrees plus 90 degrees is 145 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0355",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":105,"b":60,"kind":"sumSaid","said":165},"truth":true,"promptText":"Lily certifies 165 degrees as the combined measure of 105 and 60 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":105,"b":60,"kind":"sumSaid","said":165},"truth":true,"promptText":"Lily adds 105 degrees and 60 degrees and gets 165 degrees. Is 165 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0356",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":140,"b":25,"kind":"sumSaid","said":175},"truth":false,"promptText":"Audit the sum: 140 plus 25 degrees, recorded 175 by Amara. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":140,"b":25,"kind":"sumSaid","said":175},"truth":false,"promptText":"Is Amara right that 140 degrees plus 25 degrees is 175 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0357",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"b":115,"kind":"sumSaid","said":170},"truth":true,"promptText":"Leo certifies 170 degrees as the combined measure of 55 and 115 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"b":115,"kind":"sumSaid","said":170},"truth":true,"promptText":"Is Leo right that 55 degrees plus 115 degrees is 170 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0358",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":130,"b":45,"kind":"sumSaid","said":165},"truth":false,"promptText":"Audit the sum: 130 plus 45 degrees, recorded 165 by Mina. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":130,"b":45,"kind":"sumSaid","said":165},"truth":false,"promptText":"Mina adds 130 degrees and 45 degrees and gets 165 degrees. Is 165 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0359",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":70,"b":95,"kind":"sumSaid","said":165},"truth":true,"promptText":"Theo certifies 165 degrees as the combined measure of 70 and 95 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":70,"b":95,"kind":"sumSaid","said":165},"truth":true,"promptText":"Theo adds 70 degrees and 95 degrees and gets 165 degrees. Is 165 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0360",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":150,"b":30,"kind":"sumSaid","said":190},"truth":false,"promptText":"Audit the sum: 150 plus 30 degrees, recorded 190 by Ida. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":150,"b":30,"kind":"sumSaid","said":190},"truth":false,"promptText":"Ida says 150 degrees and 30 degrees add up to 190 degrees. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0361",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"b":125,"kind":"sumSaid","said":170},"truth":true,"promptText":"Zoe certifies 170 degrees as the combined measure of 45 and 125 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"b":125,"kind":"sumSaid","said":170},"truth":true,"promptText":"Zoe says 45 degrees and 125 degrees add up to 170 degrees. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0362",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":85,"b":40,"kind":"sumSaid","said":135},"truth":false,"promptText":"Audit the sum: 85 plus 40 degrees, recorded 135 by Rosa. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":85,"b":40,"kind":"sumSaid","said":135},"truth":false,"promptText":"Rosa says 85 degrees and 40 degrees add up to 135 degrees. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0363",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":95,"b":55,"kind":"sumSaid","said":150},"truth":true,"promptText":"Diego certifies 150 degrees as the combined measure of 95 and 55 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":95,"b":55,"kind":"sumSaid","said":150},"truth":true,"promptText":"Is Diego right that 95 degrees plus 55 degrees is 150 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0364",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":110,"b":45,"kind":"sumSaid","said":145},"truth":false,"promptText":"Audit the sum: 110 plus 45 degrees, recorded 145 by Nora. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":110,"b":45,"kind":"sumSaid","said":145},"truth":false,"promptText":"Is Nora right that 110 degrees plus 45 degrees is 145 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0365",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":75,"b":80,"kind":"sumSaid","said":155},"truth":true,"promptText":"Luca certifies 155 degrees as the combined measure of 75 and 80 degrees. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":75,"b":80,"kind":"sumSaid","said":155},"truth":true,"promptText":"Luca says 75 degrees and 80 degrees add up to 155 degrees. Is Luca right?"}},
   },
   {
     itemId: "angles-conc-b0821-0366",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "sumSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":120,"b":35,"kind":"sumSaid","said":145},"truth":false,"promptText":"Audit the sum: 120 plus 35 degrees, recorded 145 by Ava. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":120,"b":35,"kind":"sumSaid","said":145},"truth":false,"promptText":"Ava adds 120 degrees and 35 degrees and gets 145 degrees. Is 145 degrees the right total?"}},
   },
   {
     itemId: "angles-conc-b0821-0367",
@@ -9852,7 +9852,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Sam says two square corners put together make a straight line. Is Sam right? Try drawing it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Sam right that two square corners placed side by side make a straight line?"}},
   },
   {
     itemId: "angles-conc-b0821-0374",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nia says two square corners put together make a full turn. Is Nia right? Try drawing it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nia puts two square corners side by side and says they make a full turn. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0375",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Kai says two square corners put together make a straight line. Is Kai right? Try drawing it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Kai puts two square corners side by side. Is Kai right that they make a straight line?"}},
   },
   {
     itemId: "angles-conc-b0821-0376",
@@ -9882,7 +9882,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"June says two square corners put together make a full turn. Is June right? Try drawing it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Do two square corners put together make a full turn, as June says?"}},
   },
   {
     itemId: "angles-conc-b0821-0377",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Lily says two square corners put together make a straight line. Is Lily right? Try drawing it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Do two square corners side by side make a straight line, as Lily says?"}},
   },
   {
     itemId: "angles-conc-b0821-0378",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Amara says two square corners put together make a full turn. Is Amara right? Try drawing it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Amara right that two square corners put together make a full turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0379",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Leo says two square corners put together make a straight line. Is Leo right? Picture the two corners."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Leo puts two square corners side by side and says they make a straight line. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0380",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Mina says two square corners put together make a full turn. Is Mina right? Picture the two corners."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Mina right that two square corners put together make a full turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0381",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Theo says two square corners put together make a straight line. Is Theo right? Picture the two corners."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Theo puts two square corners side by side and says they make a straight line. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0382",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ida says two square corners put together make a full turn. Is Ida right? Picture the two corners."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ida puts two square corners side by side and says they make a full turn. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0383",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Zoe says two square corners put together make a straight line. Is Zoe right? Picture the two corners."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Zoe says two square corners side by side make a straight line. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0384",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rosa says two square corners put together make a full turn. Is Rosa right? Picture the two corners."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Do two square corners put together make a full turn, as Rosa says?"}},
   },
   {
     itemId: "angles-conc-b0821-0385",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"b":60,"kind":"pairSaid","total":90},"truth":true,"promptText":"June claims angles of 30 and 60 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"b":60,"kind":"pairSaid","total":90},"truth":true,"promptText":"June says angles of 30 degrees and 60 degrees together make a right angle. Is June right?"}},
   },
   {
     itemId: "angles-conc-b0821-0386",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":40,"b":40,"kind":"pairSaid","total":90},"truth":false,"promptText":"40 degrees plus 40 degrees complete a right angle, says Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":40,"b":40,"kind":"pairSaid","total":90},"truth":false,"promptText":"Lily puts a 40-degree angle next to a 40-degree angle. Is Lily right that they make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0387",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"b":45,"kind":"pairSaid","total":90},"truth":true,"promptText":"Amara claims angles of 45 and 45 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"b":45,"kind":"pairSaid","total":90},"truth":true,"promptText":"Amara puts a 45-degree angle next to a 45-degree angle. Is Amara right that they make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0388",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":50,"b":30,"kind":"pairSaid","total":90},"truth":false,"promptText":"50 degrees plus 30 degrees complete a right angle, says Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":50,"b":30,"kind":"pairSaid","total":90},"truth":false,"promptText":"Do a 50-degree angle and a 30-degree angle make a right angle together, as Leo says?"}},
   },
   {
     itemId: "angles-conc-b0821-0389",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":20,"b":70,"kind":"pairSaid","total":90},"truth":true,"promptText":"Mina claims angles of 20 and 70 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":20,"b":70,"kind":"pairSaid","total":90},"truth":true,"promptText":"Do a 20-degree angle and a 70-degree angle make a right angle together, as Mina says?"}},
   },
   {
     itemId: "angles-conc-b0821-0390",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":35,"b":45,"kind":"pairSaid","total":90},"truth":false,"promptText":"35 degrees plus 45 degrees complete a right angle, says Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":35,"b":45,"kind":"pairSaid","total":90},"truth":false,"promptText":"Theo says angles of 35 degrees and 45 degrees together make a right angle. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0391",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":10,"b":80,"kind":"pairSaid","total":90},"truth":true,"promptText":"Ida claims angles of 10 and 80 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":10,"b":80,"kind":"pairSaid","total":90},"truth":true,"promptText":"Ida says angles of 10 degrees and 80 degrees together make a right angle. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0392",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":25,"b":55,"kind":"pairSaid","total":90},"truth":false,"promptText":"25 degrees plus 55 degrees complete a right angle, says Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":25,"b":55,"kind":"pairSaid","total":90},"truth":false,"promptText":"Zoe puts a 25-degree angle next to a 55-degree angle. Is Zoe right that they make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0393",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":15,"b":75,"kind":"pairSaid","total":90},"truth":true,"promptText":"Rosa claims angles of 15 and 75 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":15,"b":75,"kind":"pairSaid","total":90},"truth":true,"promptText":"Rosa puts a 15-degree angle next to a 75-degree angle. Is Rosa right that they make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0394",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":60,"b":40,"kind":"pairSaid","total":90},"truth":false,"promptText":"60 degrees plus 40 degrees complete a right angle, says Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":60,"b":40,"kind":"pairSaid","total":90},"truth":false,"promptText":"Do a 60-degree angle and a 40-degree angle make a right angle together, as Diego says?"}},
   },
   {
     itemId: "angles-conc-b0821-0395",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"b":35,"kind":"pairSaid","total":90},"truth":true,"promptText":"Nora claims angles of 55 and 35 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"b":35,"kind":"pairSaid","total":90},"truth":true,"promptText":"Do a 55-degree angle and a 35-degree angle make a right angle together, as Nora says?"}},
   },
   {
     itemId: "angles-conc-b0821-0396",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":65,"b":15,"kind":"pairSaid","total":90},"truth":false,"promptText":"65 degrees plus 15 degrees complete a right angle, says Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":65,"b":15,"kind":"pairSaid","total":90},"truth":false,"promptText":"Luca says angles of 65 degrees and 15 degrees together make a right angle. Is Luca right?"}},
   },
   {
     itemId: "angles-conc-b0821-0397",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":5,"b":85,"kind":"pairSaid","total":90},"truth":true,"promptText":"Ava claims angles of 5 and 85 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":5,"b":85,"kind":"pairSaid","total":90},"truth":true,"promptText":"Ava says angles of 5 degrees and 85 degrees together make a right angle. Is Ava right?"}},
   },
   {
     itemId: "angles-conc-b0821-0398",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":70,"b":30,"kind":"pairSaid","total":90},"truth":false,"promptText":"70 degrees plus 30 degrees complete a right angle, says Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":70,"b":30,"kind":"pairSaid","total":90},"truth":false,"promptText":"Omar puts a 70-degree angle next to a 30-degree angle. Is Omar right that they make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0399",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":80,"b":10,"kind":"pairSaid","total":90},"truth":true,"promptText":"Ben claims angles of 80 and 10 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":80,"b":10,"kind":"pairSaid","total":90},"truth":true,"promptText":"Ben puts an 80-degree angle next to a 10-degree angle. Is Ben right that they make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0400",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"b":55,"kind":"pairSaid","total":90},"truth":false,"promptText":"45 degrees plus 55 degrees complete a right angle, says Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"b":55,"kind":"pairSaid","total":90},"truth":false,"promptText":"Do a 45-degree angle and a 55-degree angle make a right angle together, as Finn says?"}},
   },
   {
     itemId: "angles-conc-b0821-0401",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":25,"b":65,"kind":"pairSaid","total":90},"truth":true,"promptText":"Priya claims angles of 25 and 65 degrees together make a right angle. Is the claim right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":25,"b":65,"kind":"pairSaid","total":90},"truth":true,"promptText":"Do a 25-degree angle and a 65-degree angle make a right angle together, as Priya says?"}},
   },
   {
     itemId: "angles-conc-b0821-0402",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":50,"b":50,"kind":"pairSaid","total":90},"truth":false,"promptText":"50 degrees plus 50 degrees complete a right angle, says Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":50,"b":50,"kind":"pairSaid","total":90},"truth":false,"promptText":"Sam says angles of 50 degrees and 50 degrees together make a right angle. Is Sam right?"}},
   },
   {
     itemId: "angles-conc-b0821-0403",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":90,"b":90,"kind":"pairSaid","total":180},"truth":true,"promptText":"Amara asserts 90 and 90 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":90,"b":90,"kind":"pairSaid","total":180},"truth":true,"promptText":"Is Amara right that 90 degrees and 90 degrees together make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0404",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":85,"b":85,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 85 and 85 degrees form a straight line, states Leo. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":85,"b":85,"kind":"pairSaid","total":180},"truth":false,"promptText":"Is Leo right that 85 degrees and 85 degrees together make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0405",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":120,"b":60,"kind":"pairSaid","total":180},"truth":true,"promptText":"Mina asserts 120 and 60 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":120,"b":60,"kind":"pairSaid","total":180},"truth":true,"promptText":"Mina puts a 120-degree angle next to a 60-degree angle. Is Mina right that they make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0406",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":100,"b":70,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 100 and 70 degrees form a straight line, states Theo. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":100,"b":70,"kind":"pairSaid","total":180},"truth":false,"promptText":"Theo puts a 100-degree angle next to a 70-degree angle. Is Theo right that they make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0407",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"b":135,"kind":"pairSaid","total":180},"truth":true,"promptText":"Ida asserts 45 and 135 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"b":135,"kind":"pairSaid","total":180},"truth":true,"promptText":"Is Ida right that 45 degrees and 135 degrees together make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0408",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":95,"b":75,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 95 and 75 degrees form a straight line, states Zoe. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":95,"b":75,"kind":"pairSaid","total":180},"truth":false,"promptText":"Zoe says angles of 95 degrees and 75 degrees make a straight angle when they are put together. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0409",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"b":150,"kind":"pairSaid","total":180},"truth":true,"promptText":"Rosa asserts 30 and 150 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"b":150,"kind":"pairSaid","total":180},"truth":true,"promptText":"Rosa says angles of 30 degrees and 150 degrees make a straight angle when they are put together. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0410",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":110,"b":60,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 110 and 60 degrees form a straight line, states Diego. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":110,"b":60,"kind":"pairSaid","total":180},"truth":false,"promptText":"Is Diego right that 110 degrees and 60 degrees together make a straight line?"}},
   },
   {
     itemId: "angles-conc-b0821-0411",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":65,"b":115,"kind":"pairSaid","total":180},"truth":true,"promptText":"Nora asserts 65 and 115 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":65,"b":115,"kind":"pairSaid","total":180},"truth":true,"promptText":"Is Nora right that 65 degrees and 115 degrees together make a straight line?"}},
   },
   {
     itemId: "angles-conc-b0821-0412",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":125,"b":45,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 125 and 45 degrees form a straight line, states Luca. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":125,"b":45,"kind":"pairSaid","total":180},"truth":false,"promptText":"Luca puts a 125-degree angle next to a 45-degree angle. Is Luca right that they make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0413",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":140,"b":40,"kind":"pairSaid","total":180},"truth":true,"promptText":"Ava asserts 140 and 40 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":140,"b":40,"kind":"pairSaid","total":180},"truth":true,"promptText":"Ava puts a 140-degree angle next to a 40-degree angle. Is Ava right that they make a straight line?"}},
   },
   {
     itemId: "angles-conc-b0821-0414",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":155,"b":35,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 155 and 35 degrees form a straight line, states Omar. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":155,"b":35,"kind":"pairSaid","total":180},"truth":false,"promptText":"Omar says angles of 155 degrees and 35 degrees make a straight line when they are put together. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0415",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":75,"b":105,"kind":"pairSaid","total":180},"truth":true,"promptText":"Ben asserts 75 and 105 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":75,"b":105,"kind":"pairSaid","total":180},"truth":true,"promptText":"Ben says angles of 75 degrees and 105 degrees make a straight angle when they are put together. Is Ben right?"}},
   },
   {
     itemId: "angles-conc-b0821-0416",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":80,"b":90,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 80 and 90 degrees form a straight line, states Finn. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":80,"b":90,"kind":"pairSaid","total":180},"truth":false,"promptText":"Finn puts an 80-degree angle next to a 90-degree angle. Is Finn right that they make a straight line?"}},
   },
   {
     itemId: "angles-conc-b0821-0417",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":20,"b":160,"kind":"pairSaid","total":180},"truth":true,"promptText":"Priya asserts 20 and 160 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":20,"b":160,"kind":"pairSaid","total":180},"truth":true,"promptText":"Priya puts a 20-degree angle next to a 160-degree angle. Is Priya right that they make a straight line?"}},
   },
   {
     itemId: "angles-conc-b0821-0418",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":130,"b":60,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 130 and 60 degrees form a straight line, states Sam. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":130,"b":60,"kind":"pairSaid","total":180},"truth":false,"promptText":"Is Sam right that 130 degrees and 60 degrees together make a straight line?"}},
   },
   {
     itemId: "angles-conc-b0821-0419",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"b":125,"kind":"pairSaid","total":180},"truth":true,"promptText":"Nia asserts 55 and 125 degrees combine into a straight angle. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"b":125,"kind":"pairSaid","total":180},"truth":true,"promptText":"Nia says angles of 55 degrees and 125 degrees make a straight line when they are put together. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0420",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "pairMakeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":70,"b":100,"kind":"pairSaid","total":180},"truth":false,"promptText":"Together, 70 and 100 degrees form a straight line, states Kai. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":70,"b":100,"kind":"pairSaid","total":180},"truth":false,"promptText":"Kai says angles of 70 degrees and 100 degrees make a straight line when they are put together. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0421",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Nia says turning a quarter and then another quarter gives the same total turn as doing the two quarters in the other order. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Nia turns 1 quarter turn and then 2 more. Next, Nia turns 2 quarter turns and then 1 more. Nia says the total turn is the same both times. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0422",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Swapping the order of two turns changes the total turn, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Kai says swapping the order of two turns changes the total turn. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0423",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"June says turning a quarter and then another quarter gives the same total turn as doing the two quarters in the other order. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is June right that 1 quarter turn and then 2 more quarter turns make the same total turn as 2 quarter turns and then 1 more?"}},
   },
   {
     itemId: "angles-conc-b0821-0424",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Swapping the order of two turns changes the total turn, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Lily says swapping the order of two turns changes the total turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0425",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Amara says turning a quarter and then another quarter gives the same total turn as doing the two quarters in the other order. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Amara says 1 quarter turn and then 2 more quarter turns make the same total turn as 2 quarter turns and then 1 more. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0426",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Swapping the order of two turns changes the total turn, claims Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Leo makes two turns, and then makes the same two turns in the other order. Leo says the total turn changes. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0427",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Mina says turning a quarter and then another quarter gives the same total turn as doing the two quarters in the other order. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Mina turns 1 quarter turn and then 2 more. Next, Mina turns 2 quarter turns and then 1 more. Mina says the total turn is the same both times. Is Mina right?"}},
   },
   {
     itemId: "angles-conc-b0821-0428",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Swapping the order of two turns changes the total turn, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Theo says swapping the order of two turns changes the total turn. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0429",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ida says turning a quarter and then another quarter gives the same total turn as doing the two quarters in the other order. Is Ida right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Ida right that 1 quarter turn and then 2 more quarter turns make the same total turn as 2 quarter turns and then 1 more?"}},
   },
   {
     itemId: "angles-conc-b0821-0430",
@@ -10422,7 +10422,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Swapping the order of two turns changes the total turn, claims Zoe. Is that right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Zoe right that swapping the order of two turns changes the total turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0431",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rosa says turning a quarter and then another quarter gives the same total turn as doing the two quarters in the other order. Is Rosa right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rosa says 1 quarter turn and then 2 more quarter turns make the same total turn as 2 quarter turns and then 1 more. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0432",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Swapping the order of two turns changes the total turn, claims Diego. Is that right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Diego turns a quarter turn, then a half turn. Next, Diego turns a half turn, then a quarter turn. Diego says the second total turn is different. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0433",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Nora says turning a quarter and then another quarter gives the same total turn as doing the two quarters in the other order. Is Nora right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Nora says 1 quarter turn and then 2 more quarter turns make the same total turn as 2 quarter turns and then 1 more. Is Nora right?"}},
   },
   {
     itemId: "angles-conc-b0821-0434",
@@ -10462,7 +10462,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Swapping the order of two turns changes the total turn, claims Luca. Is that right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Luca says swapping the order of two turns changes the total turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0435",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ava says turning a quarter and then another quarter gives the same total turn as doing the two quarters in the other order. Is Ava right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ava says 1 quarter turn and then 2 more quarter turns make the same total turn as 2 quarter turns and then 1 more. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0436",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "orderJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Swapping the order of two turns changes the total turn, claims Omar. Is that right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Omar right that a quarter turn and then a half turn make a different total turn than a half turn and then a quarter turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0437",
@@ -10502,7 +10502,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Order matters when adding two angle measures, argues Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rosa says the order matters when you add two angle measures. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0439",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Diego says adding a 30-degree angle to a 45-degree angle gives the same total as adding them the other way around. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Diego says adding a 30-degree angle to a 45-degree angle gives the same total as adding them the other way around. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0440",
@@ -10522,7 +10522,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Order matters when adding two angle measures, argues Nora. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nora says the order matters when you add two angle measures. Is Nora right?"}},
   },
   {
     itemId: "angles-conc-b0821-0441",
@@ -10542,7 +10542,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Order matters when adding two angle measures, argues Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ava says the order matters when you add two angle measures. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0443",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Omar says adding a 30-degree angle to a 45-degree angle gives the same total as adding them the other way around. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Omar says adding a 30-degree angle to a 45-degree angle gives the same total as adding them the other way around. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0444",
@@ -10562,7 +10562,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Order matters when adding two angle measures, argues Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ben says the order matters when you add two angle measures. Is Ben right?"}},
   },
   {
     itemId: "angles-conc-b0821-0445",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Finn says adding a 30-degree angle to a 45-degree angle gives the same total as adding them the other way around. Is Finn right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Finn right that a 30-degree angle plus a 45-degree angle gives the same total as a 45-degree angle plus a 30-degree angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0446",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Order matters when adding two angle measures, argues Priya. Is that right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Priya right that adding two angle measures in a different order changes the total?"}},
   },
   {
     itemId: "angles-conc-b0821-0447",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Sam says adding a 30-degree angle to a 45-degree angle gives the same total as adding them the other way around. Is Sam right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Sam adds a 30-degree angle to a 45-degree angle. Then Sam adds them the other way around. Does Sam get the same total both times?"}},
   },
   {
     itemId: "angles-conc-b0821-0448",
@@ -10602,7 +10602,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Order matters when adding two angle measures, argues Nia. Is that right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Do 25 + 60 degrees and 60 + 25 degrees give different totals, as Nia argues?"}},
   },
   {
     itemId: "angles-conc-b0821-0449",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Kai says adding a 30-degree angle to a 45-degree angle gives the same total as adding them the other way around. Is Kai right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Kai right that a 30-degree angle plus a 45-degree angle gives the same total as a 45-degree angle plus a 30-degree angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0450",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Order matters when adding two angle measures, argues June. Is that right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is June right that adding two angle measures in a different order changes the total?"}},
   },
   {
     itemId: "angles-conc-b0821-0451",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Lily says adding a 30-degree angle to a 45-degree angle gives the same total as adding them the other way around. Is Lily right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Lily adds a 30-degree angle to a 45-degree angle. Then Lily adds them the other way around. Does Lily get the same total both times?"}},
   },
   {
     itemId: "angles-conc-b0821-0452",
@@ -10642,7 +10642,7 @@ export const ITEMS = [
     structureType: "orderJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Order matters when adding two angle measures, argues Amara. Is that right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Do 20 + 65 degrees and 65 + 20 degrees give different totals, as Amara argues?"}},
   },
   {
     itemId: "angles-conc-b0821-0453",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Diego states that angle measures add in any order without changing the total. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Diego says you can add angle measures in any order and still get the same total. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0454",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rearranging three angle pieces changes their combined measure, asserts Nora. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nora says putting three angle pieces in a different order changes their total. Is Nora right?"}},
   },
   {
     itemId: "angles-conc-b0821-0455",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Luca states that angle measures add in any order without changing the total. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Luca says putting three angle measures in a different order does not change their total. Do you agree with Luca?"}},
   },
   {
     itemId: "angles-conc-b0821-0456",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rearranging three angle pieces changes their combined measure, asserts Ava. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ava says three angle measures only keep the same total if you add them in the same order. Do you agree with Ava?"}},
   },
   {
     itemId: "angles-conc-b0821-0457",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Omar states that angle measures add in any order without changing the total. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Omar says you can add angle measures in any order and still get the same total. Do you agree with Omar?"}},
   },
   {
     itemId: "angles-conc-b0821-0458",
@@ -10702,7 +10702,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rearranging three angle pieces changes their combined measure, asserts Ben. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ben moves three angle pieces into a new order and says their total changes. Do you agree with Ben?"}},
   },
   {
     itemId: "angles-conc-b0821-0459",
@@ -10712,7 +10712,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Finn states that angle measures add in any order without changing the total. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Finn says putting three angle measures in a different order does not change their total. Is Finn right?"}},
   },
   {
     itemId: "angles-conc-b0821-0460",
@@ -10722,7 +10722,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rearranging three angle pieces changes their combined measure, asserts Priya. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Priya says three angle measures only keep the same total if you add them in the same order. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0461",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Sam states that angle measures add in any order without changing the total. Sound statement? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Sam says you can add angle measures in any order and still get the same total. Is Sam right?"}},
   },
   {
     itemId: "angles-conc-b0821-0462",
@@ -10742,7 +10742,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rearranging three angle pieces changes their combined measure, asserts Nia. Is the assertion right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nia says putting three angle pieces in a different order changes their total. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0463",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Kai states that angle measures add in any order without changing the total. Sound statement? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Kai adds 30 + 45 + 20 degrees, then adds 45 + 20 + 30 degrees. Kai says both totals are the same. Do you agree with Kai?"}},
   },
   {
     itemId: "angles-conc-b0821-0464",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rearranging three angle pieces changes their combined measure, asserts June. Is the assertion right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"June puts angles of 10, 70, and 35 degrees side by side, then puts them in a new order. June says the total number of degrees changes. Do you agree with June?"}},
   },
   {
     itemId: "angles-conc-b0821-0465",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Lily states that angle measures add in any order without changing the total. Sound statement? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Lily says putting three angle measures in a different order does not change their total. Is Lily right?"}},
   },
   {
     itemId: "angles-conc-b0821-0466",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rearranging three angle pieces changes their combined measure, asserts Amara. Is the assertion right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Amara says three angle measures only keep the same total if you add them in the same order. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0467",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Leo states that angle measures add in any order without changing the total. Sound statement? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Leo adds 40 + 15 + 50 degrees, then adds 15 + 50 + 40 degrees. Leo says both totals are the same. Do you agree with Leo?"}},
   },
   {
     itemId: "angles-conc-b0821-0468",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "orderJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Rearranging three angle pieces changes their combined measure, asserts Mina. Is the assertion right? Adding is adding."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Mina puts angles of 25, 60, and 15 degrees side by side, then puts them in a new order. Mina says the total number of degrees changes. Do you agree with Mina?"}},
   },
   {
     itemId: "angles-conc-b0821-0469",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":3,"whole":4},"truth":true,"promptText":"Mina says a full spin with 1 quarter turn done is missing 3 quarter turns. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":3,"whole":4},"truth":true,"promptText":"Mina spins and stops after 1 quarter turn. Mina says 3 more quarter turns will finish one full turn. Is Mina right?"}},
   },
   {
     itemId: "angles-conc-b0821-0470",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":3,"whole":4},"truth":false,"promptText":"After 2 quarter turns, 3 more finish the spin, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":3,"whole":4},"truth":false,"promptText":"After 2 quarter turns, Theo says 3 more quarter turns will finish the full spin. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0471",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":1,"whole":4},"truth":true,"promptText":"Ida says a full spin with 3 quarter turns done is missing 1 quarter turns. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":1,"whole":4},"truth":true,"promptText":"After 3 quarter turns, Ida says 1 more quarter turn will finish the full spin. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0472",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":2,"whole":4},"truth":false,"promptText":"After 1 quarter turn, 2 more finish the spin, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":2,"whole":4},"truth":false,"promptText":"Is Zoe right that a full spin with 1 quarter turn done is missing 2 quarter turns?"}},
   },
   {
     itemId: "angles-conc-b0821-0473",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":2,"whole":4},"truth":true,"promptText":"Rosa says a full spin with 2 quarter turns done is missing 2 quarter turns. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":2,"whole":4},"truth":true,"promptText":"Is Rosa right that a full spin with 2 quarter turns done is missing 2 quarter turns?"}},
   },
   {
     itemId: "angles-conc-b0821-0474",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":2,"whole":4},"truth":false,"promptText":"After 3 quarter turns, 2 more finish the spin, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":2,"whole":4},"truth":false,"promptText":"Diego spins and stops after 3 quarter turns. Diego says 2 more quarter turns will finish one full turn. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0475",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":3,"whole":4},"truth":true,"promptText":"Nora says a full spin with 1 quarter turn done is missing 3 quarter turns. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":3,"whole":4},"truth":true,"promptText":"After 1 quarter turn, Nora says 3 more quarter turns will finish the full spin. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0476",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":1,"whole":4},"truth":false,"promptText":"After 2 quarter turns, 1 more finish the spin, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":1,"whole":4},"truth":false,"promptText":"Is Luca right that a full spin with 2 quarter turns done is missing 1 quarter turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0477",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":1,"whole":4},"truth":true,"promptText":"Ava says a full spin with 3 quarter turns done is missing 1 quarter turns. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":1,"whole":4},"truth":true,"promptText":"Is Ava right that a full spin with 3 quarter turns done is missing 1 quarter turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0478",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":1,"whole":4},"truth":false,"promptText":"After 1 quarter turn, 1 more finish the spin, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":1,"whole":4},"truth":false,"promptText":"Omar spins and stops after 1 quarter turn. Omar says 1 more quarter turn will finish one full turn. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0479",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":2,"whole":4},"truth":true,"promptText":"Ben says a full spin with 2 quarter turns done is missing 2 quarter turns. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":2,"whole":4},"truth":true,"promptText":"Ben spins and stops after 2 quarter turns. Ben says 2 more quarter turns will finish one full turn. Is Ben right?"}},
   },
   {
     itemId: "angles-conc-b0821-0480",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":3,"whole":4},"truth":false,"promptText":"After 3 quarter turns, 3 more finish the spin, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":3,"whole":4},"truth":false,"promptText":"After 3 quarter turns, Finn says 3 more quarter turns will finish the full spin. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0481",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":3,"whole":4},"truth":true,"promptText":"Priya says a full spin with 1 quarter turn done is missing 3 quarter turns. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":3,"whole":4},"truth":true,"promptText":"Is Priya right that a full spin with 1 quarter turn done is missing 3 quarter turns?"}},
   },
   {
     itemId: "angles-conc-b0821-0482",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":3,"whole":4},"truth":false,"promptText":"After 2 quarter turns, 3 more finish the spin, claims Sam. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":3,"whole":4},"truth":false,"promptText":"Sam spins and stops after 2 quarter turns. Sam says 3 more quarter turns will finish one full turn. Is Sam right?"}},
   },
   {
     itemId: "angles-conc-b0821-0483",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":1,"whole":4},"truth":true,"promptText":"Nia says a full spin with 3 quarter turns done is missing 1 quarter turns. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":1,"whole":4},"truth":true,"promptText":"Nia spins and stops after 3 quarter turns. Nia says 1 more quarter turn will finish one full turn. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0484",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":2,"whole":4},"truth":false,"promptText":"After 1 quarter turn, 2 more finish the spin, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":1,"kind":"missUnitsSaid","said":2,"whole":4},"truth":false,"promptText":"After 1 quarter turn, Kai says 2 more quarter turns will finish the full spin. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0485",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":2,"whole":4},"truth":true,"promptText":"June says a full spin with 2 quarter turns done is missing 2 quarter turns. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"have":2,"kind":"missUnitsSaid","said":2,"whole":4},"truth":true,"promptText":"After 2 quarter turns, June says 2 more quarter turns will finish the full spin. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0486",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":2,"whole":4},"truth":false,"promptText":"After 3 quarter turns, 2 more finish the spin, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"have":3,"kind":"missUnitsSaid","said":2,"whole":4},"truth":false,"promptText":"Is Lily right that a full spin with 3 quarter turns done is missing 2 quarter turns?"}},
   },
   {
     itemId: "angles-conc-b0821-0487",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"kind":"missSaid","said":60,"total":90},"truth":true,"promptText":"Omar says an angle of 30 degrees needs 60 more degrees to make a right angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"kind":"missSaid","said":60,"total":90},"truth":true,"promptText":"Is Omar right that a 30-degree angle needs 60 more degrees to make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0488",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"missSaid","said":55,"total":90},"truth":false,"promptText":"Check Ben's missing measure: 45 degrees plus 55 makes a right angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"missSaid","said":55,"total":90},"truth":false,"promptText":"Ben says a 45-degree angle needs 55 more degrees to make a right angle. Is Ben right?"}},
   },
   {
     itemId: "angles-conc-b0821-0489",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":60,"kind":"missSaid","said":30,"total":90},"truth":true,"promptText":"Finn says an angle of 60 degrees needs 30 more degrees to make a right angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":60,"kind":"missSaid","said":30,"total":90},"truth":true,"promptText":"Finn says a 60-degree angle needs 30 more degrees to make a right angle. Is Finn right?"}},
   },
   {
     itemId: "angles-conc-b0821-0490",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":20,"kind":"missSaid","said":60,"total":90},"truth":false,"promptText":"Check Priya's missing measure: 20 degrees plus 60 makes a right angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":20,"kind":"missSaid","said":60,"total":90},"truth":false,"promptText":"Priya says a 20-degree angle needs 60 more degrees to make a right angle. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0491",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":120,"kind":"missSaid","said":60,"total":180},"truth":true,"promptText":"Sam says an angle of 120 degrees needs 60 more degrees to make a straight angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":120,"kind":"missSaid","said":60,"total":180},"truth":true,"promptText":"Is Sam right that a 120-degree angle needs 60 more degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0492",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"missSaid","said":145,"total":180},"truth":false,"promptText":"Check Nia's missing measure: 45 degrees plus 145 makes a straight angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"missSaid","said":145,"total":180},"truth":false,"promptText":"Is Nia right that a 45-degree angle needs 145 more degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0493",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":90,"kind":"missSaid","said":90,"total":180},"truth":true,"promptText":"Kai says an angle of 90 degrees needs 90 more degrees to make a straight angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":90,"kind":"missSaid","said":90,"total":180},"truth":true,"promptText":"Is Kai right that a 90-degree angle needs 90 more degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0494",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":60,"kind":"missSaid","said":110,"total":180},"truth":false,"promptText":"Check June's missing measure: 60 degrees plus 110 makes a straight angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":60,"kind":"missSaid","said":110,"total":180},"truth":false,"promptText":"Is June right that a 60-degree angle needs 110 more degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0495",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":70,"kind":"missSaid","said":20,"total":90},"truth":true,"promptText":"Lily says an angle of 70 degrees needs 20 more degrees to make a right angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":70,"kind":"missSaid","said":20,"total":90},"truth":true,"promptText":"Lily says a 70-degree angle needs 20 more degrees to make a right angle. Is Lily right?"}},
   },
   {
     itemId: "angles-conc-b0821-0496",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":15,"kind":"missSaid","said":65,"total":90},"truth":false,"promptText":"Check Amara's missing measure: 15 degrees plus 65 makes a right angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":15,"kind":"missSaid","said":65,"total":90},"truth":false,"promptText":"Amara says a 15-degree angle needs 65 more degrees to make a right angle. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0497",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":135,"kind":"missSaid","said":45,"total":180},"truth":true,"promptText":"Leo says an angle of 135 degrees needs 45 more degrees to make a straight angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":135,"kind":"missSaid","said":45,"total":180},"truth":true,"promptText":"Leo says a 135-degree angle needs 45 more degrees to make a straight angle. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0498",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":30,"kind":"missSaid","said":140,"total":180},"truth":false,"promptText":"Check Mina's missing measure: 30 degrees plus 140 makes a straight angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":30,"kind":"missSaid","said":140,"total":180},"truth":false,"promptText":"Mina says a 30-degree angle needs 140 more degrees to make a straight angle. Is Mina right?"}},
   },
   {
     itemId: "angles-conc-b0821-0499",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":35,"kind":"missSaid","said":55,"total":90},"truth":true,"promptText":"Theo says an angle of 35 degrees needs 55 more degrees to make a right angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":35,"kind":"missSaid","said":55,"total":90},"truth":true,"promptText":"Theo says a 35-degree angle needs 55 more degrees to make a right angle. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0500",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":50,"kind":"missSaid","said":30,"total":90},"truth":false,"promptText":"Check Ida's missing measure: 50 degrees plus 30 makes a right angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":50,"kind":"missSaid","said":30,"total":90},"truth":false,"promptText":"Is Ida right that a 50-degree angle needs 30 more degrees to make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0501",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":100,"kind":"missSaid","said":80,"total":180},"truth":true,"promptText":"Zoe says an angle of 100 degrees needs 80 more degrees to make a straight angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":100,"kind":"missSaid","said":80,"total":180},"truth":true,"promptText":"Is Zoe right that a 100-degree angle needs 80 more degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0502",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":75,"kind":"missSaid","said":115,"total":180},"truth":false,"promptText":"Check Rosa's missing measure: 75 degrees plus 115 makes a straight angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":75,"kind":"missSaid","said":115,"total":180},"truth":false,"promptText":"Is Rosa right that a 75-degree angle needs 115 more degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0503",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":25,"kind":"missSaid","said":65,"total":90},"truth":true,"promptText":"Diego says an angle of 25 degrees needs 65 more degrees to make a right angle. Does the number hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":25,"kind":"missSaid","said":65,"total":90},"truth":true,"promptText":"Is Diego right that a 25-degree angle needs 65 more degrees to make a right angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0504",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":80,"kind":"missSaid","said":20,"total":90},"truth":false,"promptText":"Check Nora's missing measure: 80 degrees plus 20 makes a right angle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":80,"kind":"missSaid","said":20,"total":90},"truth":false,"promptText":"Nora says an 80-degree angle needs 20 more degrees to make a right angle. Is Nora right?"}},
   },
   {
     itemId: "angles-conc-b0821-0505",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":65,"kind":"missSaid","said":115,"total":180},"truth":true,"promptText":"Finn certifies that 65 degrees and 115 degrees complete a straight angle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":65,"kind":"missSaid","said":115,"total":180},"truth":true,"promptText":"Finn says a 65-degree angle needs 115 more degrees to make a straight angle. Is Finn right?"}},
   },
   {
     itemId: "angles-conc-b0821-0506",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":115,"kind":"missSaid","said":75,"total":180},"truth":false,"promptText":"Audit: 115 degrees recorded with a 75-degree partner for a straight angle, per Priya. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":115,"kind":"missSaid","said":75,"total":180},"truth":false,"promptText":"Two angles sit side by side on a straight line. One is 115 degrees. Priya says the other one is 75 degrees. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0507",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":90,"kind":"missSaid","said":270,"total":360},"truth":true,"promptText":"Sam certifies that 90 degrees and 270 degrees complete a full turn. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":90,"kind":"missSaid","said":270,"total":360},"truth":true,"promptText":"Sam has turned 90 degrees. Sam says 270 more degrees will make exactly one full turn. Is Sam right?"}},
   },
   {
     itemId: "angles-conc-b0821-0508",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":270,"kind":"missSaid","said":100,"total":360},"truth":false,"promptText":"Audit: 270 degrees recorded with a 100-degree partner for a full turn, per Nia. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":270,"kind":"missSaid","said":100,"total":360},"truth":false,"promptText":"Nia says a 270-degree turn needs 100 more degrees to make a full turn. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0509",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":25,"kind":"missSaid","said":155,"total":180},"truth":true,"promptText":"Kai certifies that 25 degrees and 155 degrees complete a straight angle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":25,"kind":"missSaid","said":155,"total":180},"truth":true,"promptText":"Two angles sit side by side on a straight line. One is 25 degrees. Kai says the other one is 155 degrees. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0510",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":120,"kind":"missSaid","said":220,"total":360},"truth":false,"promptText":"Audit: 120 degrees recorded with a 220-degree partner for a full turn, per June. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":120,"kind":"missSaid","said":220,"total":360},"truth":false,"promptText":"June has turned 120 degrees. June says 220 more degrees will make exactly one full turn. Is June right?"}},
   },
   {
     itemId: "angles-conc-b0821-0511",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":200,"kind":"missSaid","said":160,"total":360},"truth":true,"promptText":"Lily certifies that 200 degrees and 160 degrees complete a full turn. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":200,"kind":"missSaid","said":160,"total":360},"truth":true,"promptText":"Lily says a 200-degree turn needs 160 more degrees to make a full turn. Is Lily right?"}},
   },
   {
     itemId: "angles-conc-b0821-0512",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"missSaid","said":305,"total":360},"truth":false,"promptText":"Audit: 45 degrees recorded with a 305-degree partner for a full turn, per Amara. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"missSaid","said":305,"total":360},"truth":false,"promptText":"Two angles fill a full turn around a point. One is 45 degrees. Amara says the other one is 305 degrees. Is Amara right?"}},
   },
   {
     itemId: "angles-conc-b0821-0513",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"kind":"missSaid","said":125,"total":180},"truth":true,"promptText":"Leo certifies that 55 degrees and 125 degrees complete a straight angle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":55,"kind":"missSaid","said":125,"total":180},"truth":true,"promptText":"Leo has a 55-degree angle. Leo says adding 125 more degrees makes a straight angle. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0514",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":15,"kind":"missSaid","said":300,"total":360},"truth":false,"promptText":"Audit: 15 degrees recorded with a 300-degree partner for a full turn, per Mina. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":15,"kind":"missSaid","said":300,"total":360},"truth":false,"promptText":"Mina says a 15-degree turn needs 300 more degrees to make a full turn. Is Mina right?"}},
   },
   {
     itemId: "angles-conc-b0821-0515",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":155,"kind":"missSaid","said":25,"total":180},"truth":true,"promptText":"Theo certifies that 155 degrees and 25 degrees complete a straight angle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":155,"kind":"missSaid","said":25,"total":180},"truth":true,"promptText":"Two angles sit side by side on a straight line. One is 155 degrees. Theo says the other one is 25 degrees. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0516",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":310,"kind":"missSaid","said":60,"total":360},"truth":false,"promptText":"Audit: 310 degrees recorded with a 60-degree partner for a full turn, per Ida. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":310,"kind":"missSaid","said":60,"total":360},"truth":false,"promptText":"Ida has turned 310 degrees. Ida says 60 more degrees will make exactly one full turn. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0517",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":95,"kind":"missSaid","said":85,"total":180},"truth":true,"promptText":"Zoe certifies that 95 degrees and 85 degrees complete a straight angle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":95,"kind":"missSaid","said":85,"total":180},"truth":true,"promptText":"Zoe says a 95-degree angle needs 85 more degrees to make a straight angle. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0518",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":140,"kind":"missSaid","said":50,"total":180},"truth":false,"promptText":"Audit: 140 degrees recorded with a 50-degree partner for a straight angle, per Rosa. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":140,"kind":"missSaid","said":50,"total":180},"truth":false,"promptText":"Two angles sit side by side on a straight line. One is 140 degrees. Rosa says the other one is 50 degrees. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0519",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":250,"kind":"missSaid","said":110,"total":360},"truth":true,"promptText":"Diego certifies that 250 degrees and 110 degrees complete a full turn. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":250,"kind":"missSaid","said":110,"total":360},"truth":true,"promptText":"Diego has turned 250 degrees. Diego says 110 more degrees will make exactly one full turn. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0520",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":180,"kind":"missSaid","said":190,"total":360},"truth":false,"promptText":"Audit: 180 degrees recorded with a 190-degree partner for a full turn, per Nora. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":180,"kind":"missSaid","said":190,"total":360},"truth":false,"promptText":"Nora says a 180-degree turn needs 190 more degrees to make a full turn. Is Nora right?"}},
   },
   {
     itemId: "angles-conc-b0821-0521",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":35,"kind":"missSaid","said":145,"total":180},"truth":true,"promptText":"Luca certifies that 35 degrees and 145 degrees complete a straight angle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":35,"kind":"missSaid","said":145,"total":180},"truth":true,"promptText":"Two angles sit side by side on a straight line. One is 35 degrees. Luca says the other one is 145 degrees. Is Luca right?"}},
   },
   {
     itemId: "angles-conc-b0821-0522",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "missSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":65,"kind":"missSaid","said":275,"total":360},"truth":false,"promptText":"Audit: 65 degrees recorded with a 275-degree partner for a full turn, per Ava. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":65,"kind":"missSaid","said":275,"total":360},"truth":false,"promptText":"Ava has turned 65 degrees. Ava says 275 more degrees will make exactly one full turn. Is Ava right?"}},
   },
   {
     itemId: "angles-conc-b0821-0523",
@@ -11362,7 +11362,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a square corner loses some of the turn, claims Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ava says splitting a square corner loses some of the turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0525",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Omar says that when a square corner is split into a big part and a small part, the two parts still make the whole square corner together. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Omar says that when a square corner is split into a big part and a small part, the two parts still make the whole square corner together. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0526",
@@ -11382,7 +11382,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a square corner loses some of the turn, claims Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ben says splitting a square corner loses some of the turn. Is Ben right?"}},
   },
   {
     itemId: "angles-conc-b0821-0527",
@@ -11402,7 +11402,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a square corner loses some of the turn, claims Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Priya says splitting a square corner loses some of the turn. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0529",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Sam says that when a square corner is split into a big part and a small part, the two parts still make the whole square corner together. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Sam says that when a square corner is split into a big part and a small part, the two parts still make the whole square corner together. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0530",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a square corner loses some of the turn, claims Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Nia says splitting a square corner loses some of the turn. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0531",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Kai says that when a square corner is split into a big part and a small part, the two parts still make the whole square corner together. Is Kai right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Kai splits a square corner into a big part and a small part. Do the two parts still make the whole square corner together?"}},
   },
   {
     itemId: "angles-conc-b0821-0532",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a square corner loses some of the turn, claims June. Is that right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is June correct that splitting a square corner into two parts loses some of the turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0533",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Lily says that when a square corner is split into a big part and a small part, the two parts still make the whole square corner together. Is Lily right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Lily correct that the big part and the small part of a split square corner still make the whole square corner together?"}},
   },
   {
     itemId: "angles-conc-b0821-0534",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a square corner loses some of the turn, claims Amara. Is that right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Amara splits a square corner into two parts. Does some of the square corner get lost, as Amara claims?"}},
   },
   {
     itemId: "angles-conc-b0821-0535",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Leo says that when a square corner is split into a big part and a small part, the two parts still make the whole square corner together. Is Leo right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Leo splits a square corner into a big part and a small part. Do the two parts still make the whole square corner together?"}},
   },
   {
     itemId: "angles-conc-b0821-0536",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a square corner loses some of the turn, claims Mina. Is that right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Mina correct that splitting a square corner into two parts loses some of the turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0537",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Theo says that when a square corner is split into a big part and a small part, the two parts still make the whole square corner together. Is Theo right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Theo correct that the big part and the small part of a split square corner still make the whole square corner together?"}},
   },
   {
     itemId: "angles-conc-b0821-0538",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a square corner loses some of the turn, claims Ida. Is that right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Ida splits a square corner into two parts. Does some of the square corner get lost, as Ida claims?"}},
   },
   {
     itemId: "angles-conc-b0821-0539",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"June says the two parts of a split right angle always add back to 90 degrees. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"June says the two parts of a split right angle always add up to 90 degrees. Is June right?"}},
   },
   {
     itemId: "angles-conc-b0821-0540",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a right angle changes its total, argues Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Lily says splitting a right angle into two parts changes its total. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0541",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Amara says the two parts of a split right angle always add back to 90 degrees. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Amara says the two parts of a split right angle always add up to 90 degrees. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0542",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a right angle changes its total, argues Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Leo says splitting a right angle into two parts changes its total. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0543",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Mina says the two parts of a split right angle always add back to 90 degrees. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Mina says the two parts of a split right angle always add up to 90 degrees. Is Mina right?"}},
   },
   {
     itemId: "angles-conc-b0821-0544",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a right angle changes its total, argues Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Theo says splitting a right angle into two parts changes its total. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0545",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ida says the two parts of a split right angle always add back to 90 degrees. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ida says the two parts of a split right angle always add up to 90 degrees. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0546",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a right angle changes its total, argues Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Zoe says splitting a right angle into two parts changes its total. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0547",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rosa says the two parts of a split right angle always add back to 90 degrees. Is Rosa right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Rosa correct that the two parts of a split right angle always add up to 90 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0548",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a right angle changes its total, argues Diego. Is that right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Diego correct that splitting a right angle into two parts changes its total?"}},
   },
   {
     itemId: "angles-conc-b0821-0549",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Nora says the two parts of a split right angle always add back to 90 degrees. Is Nora right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Nora splits a right angle into two parts. Do the two parts always add up to 90 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0550",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a right angle changes its total, argues Luca. Is that right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Luca splits a right angle into a 40-degree part and a 50-degree part. Is Luca correct that the parts no longer add up to 90 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0551",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ava says the two parts of a split right angle always add back to 90 degrees. Is Ava right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Ava correct that the two parts of a split right angle always add up to 90 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0552",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a right angle changes its total, argues Omar. Is that right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Omar correct that splitting a right angle into two parts changes its total?"}},
   },
   {
     itemId: "angles-conc-b0821-0553",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ben says the two parts of a split right angle always add back to 90 degrees. Is Ben right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ben splits a right angle into two parts. Do the two parts always add up to 90 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0554",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Splitting a right angle changes its total, argues Finn. Is that right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Finn splits a right angle into a 10-degree part and an 80-degree part. Is Finn correct that the parts no longer add up to 90 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0555",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Amara states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Amara right that when a straight angle is cut into two parts, the parts always add up to 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0556",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"The pieces of a cut straight angle can total more than 180 degrees, asserts Leo. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Leo cuts a straight angle into pieces and says the pieces can add up to more than 180 degrees. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0557",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Mina states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Mina right that when a straight angle is cut into two parts, the parts always add up to 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0558",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"The pieces of a cut straight angle can total more than 180 degrees, asserts Theo. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Theo right that the pieces of a cut straight angle can add up to more than 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0559",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ida states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ida cuts a straight angle into two parts and says the parts always add up to 180 degrees. Is Ida right?"}},
   },
   {
     itemId: "angles-conc-b0821-0560",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"The pieces of a cut straight angle can total more than 180 degrees, asserts Zoe. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Zoe cuts a straight angle into pieces and says the pieces can add up to more than 180 degrees. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0561",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rosa states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Rosa cuts a straight angle into two parts and says the parts always add up to 180 degrees. Is Rosa right?"}},
   },
   {
     itemId: "angles-conc-b0821-0562",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"The pieces of a cut straight angle can total more than 180 degrees, asserts Diego. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Diego right that the pieces of a cut straight angle can add up to more than 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0563",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Nora states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Nora correct that when a straight angle is cut into two parts, the parts always add up to 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0564",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"The pieces of a cut straight angle can total more than 180 degrees, asserts Luca. Is the assertion right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Luca correct that the pieces of a cut straight angle can add up to more than 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0565",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ava states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ava cuts a straight angle into two parts, in a different place each time. Do the two parts always add up to 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0566",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"The pieces of a cut straight angle can total more than 180 degrees, asserts Omar. Is the assertion right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Omar cuts a straight angle into three pieces. Can the three pieces add up to more than 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0567",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Ben states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Is Ben correct that when a straight angle is cut into two parts, the parts always add up to 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0568",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"The pieces of a cut straight angle can total more than 180 degrees, asserts Finn. Is the assertion right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Is Finn correct that the pieces of a cut straight angle can add up to more than 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0569",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Priya states that however a straight angle is cut in two, the parts sum to 180 degrees. Sound statement? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":true,"promptText":"Priya cuts a straight angle into two parts, in a different place each time. Do the two parts always add up to 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0570",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "splitWholeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"The pieces of a cut straight angle can total more than 180 degrees, asserts Sam. Is the assertion right? The whole stays the whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"authored"},"truth":false,"promptText":"Sam cuts a straight angle into three pieces. Can the three pieces add up to more than 180 degrees?"}},
   },
   {
     itemId: "angles-conc-b0821-0571",
@@ -11832,7 +11832,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nia draws a part of a square corner that is BIGGER than the square corner itself. Can a part be bigger than its whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nia splits a square corner into two parts. Can one of the parts be bigger than the whole square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0572",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A piece of a turn can be larger than the full turn, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Kai says a piece of a full turn can be bigger than the whole turn. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0573",
@@ -11852,7 +11852,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"June draws a part of a square corner that is BIGGER than the square corner itself. Can a part be bigger than its whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"June splits a square corner into a big part and a small part. Can the big part be bigger than the whole square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0574",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A piece of a turn can be larger than the full turn, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Lily thinks one piece of a full turn can be bigger than the whole turn. Is Lily right?"}},
   },
   {
     itemId: "angles-conc-b0821-0575",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Amara draws a part of a square corner that is BIGGER than the square corner itself. Can a part be bigger than its whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Amara wants to cut a square corner into parts. Could one part be bigger than the square corner it came from?"}},
   },
   {
     itemId: "angles-conc-b0821-0576",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A piece of a turn can be larger than the full turn, claims Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Leo says a part of a turn can be larger than the full turn. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0577",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina draws a part of a square corner that is BIGGER than the square corner itself. Can a part be bigger than its whole?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Mina splits a square corner into two parts. Can one of the parts be bigger than the whole square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0578",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A piece of a turn can be larger than the full turn, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Theo thinks a part of a turn can be larger than the full turn. Is Theo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0579",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida draws a part of a square corner that is BIGGER than the square corner itself. Can a part be bigger than its whole? A part never beats its whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ida draws a line inside a square corner that splits it into two parts. Can a part be bigger than the whole square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0580",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A piece of a turn can be larger than the full turn, claims Zoe. Is that right? A part never beats its whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Zoe correct that a piece of a turn can be larger than the whole turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0581",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa draws a part of a square corner that is BIGGER than the square corner itself. Can a part be bigger than its whole? A part never beats its whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Rosa wants to cut a square corner into parts. Could one part be bigger than the square corner it came from?"}},
   },
   {
     itemId: "angles-conc-b0821-0582",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A piece of a turn can be larger than the full turn, claims Diego. Is that right? A part never beats its whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Diego cuts a full turn into two pieces. Can one piece be larger than the whole turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0583",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora draws a part of a square corner that is BIGGER than the square corner itself. Can a part be bigger than its whole? A part never beats its whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Nora splits a square corner into two parts. Can one of the parts be bigger than the whole square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0584",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A piece of a turn can be larger than the full turn, claims Luca. Is that right? A part never beats its whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Is Luca correct that a piece of a turn can be larger than the whole turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0585",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava draws a part of a square corner that is BIGGER than the square corner itself. Can a part be bigger than its whole? A part never beats its whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Ava splits a square corner into two parts. Is either part bigger than the whole square corner?"}},
   },
   {
     itemId: "angles-conc-b0821-0586",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"A piece of a turn can be larger than the full turn, claims Omar. Is that right? A part never beats its whole."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"kind":"trapNo"},"truth":false,"promptText":"Omar cuts a full turn into two pieces. Can one piece be larger than the whole turn?"}},
   },
   {
     itemId: "angles-conc-b0821-0587",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"kind":"partFits","total":90},"truth":true,"promptText":"Zoe says an angle of 30 degrees can be one part of a right angle. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"kind":"partFits","total":90},"truth":true,"promptText":"Zoe says a 30-degree angle can be one part of a right angle. Is Zoe right?"}},
   },
   {
     itemId: "angles-conc-b0821-0588",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":120,"kind":"partFits","total":90},"truth":false,"promptText":"120 degrees fits inside a right angle as a part, claims Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":120,"kind":"partFits","total":90},"truth":false,"promptText":"Rosa wants to split a right angle into two parts. Rosa says one of the parts can be 120 degrees. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0589",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"partFits","total":90},"truth":true,"promptText":"Diego says an angle of 45 degrees can be one part of a right angle. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"partFits","total":90},"truth":true,"promptText":"Diego wants to split a right angle into two parts. Diego says one of the parts can be 45 degrees. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0590",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":95,"kind":"partFits","total":90},"truth":false,"promptText":"95 degrees fits inside a right angle as a part, claims Nora. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":95,"kind":"partFits","total":90},"truth":false,"promptText":"Can a 95-degree angle fit inside a right angle as one of its parts, as Nora says?"}},
   },
   {
     itemId: "angles-conc-b0821-0591",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":60,"kind":"partFits","total":90},"truth":true,"promptText":"Luca says an angle of 60 degrees can be one part of a right angle. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":60,"kind":"partFits","total":90},"truth":true,"promptText":"Can a 60-degree angle fit inside a right angle as one of its parts, as Luca says?"}},
   },
   {
     itemId: "angles-conc-b0821-0592",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":100,"kind":"partFits","total":90},"truth":false,"promptText":"100 degrees fits inside a right angle as a part, claims Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":100,"kind":"partFits","total":90},"truth":false,"promptText":"Ava says a 100-degree angle can be one part of a right angle. Is Ava right?"}},
   },
   {
     itemId: "angles-conc-b0821-0593",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":20,"kind":"partFits","total":90},"truth":true,"promptText":"Omar says an angle of 20 degrees can be one part of a right angle. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":20,"kind":"partFits","total":90},"truth":true,"promptText":"Omar says a 20-degree angle can be one part of a right angle. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0594",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":135,"kind":"partFits","total":90},"truth":false,"promptText":"135 degrees fits inside a right angle as a part, claims Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":135,"kind":"partFits","total":90},"truth":false,"promptText":"Ben wants to split a right angle into two parts. Ben says one of the parts can be 135 degrees. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0595",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":70,"kind":"partFits","total":90},"truth":true,"promptText":"Finn says an angle of 70 degrees can be one part of a right angle. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":70,"kind":"partFits","total":90},"truth":true,"promptText":"Finn wants to split a right angle into two parts. Finn says one of the parts can be 70 degrees. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0596",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":150,"kind":"partFits","total":90},"truth":false,"promptText":"150 degrees fits inside a right angle as a part, claims Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":150,"kind":"partFits","total":90},"truth":false,"promptText":"Can a 150-degree angle fit inside a right angle as one of its parts, as Priya says?"}},
   },
   {
     itemId: "angles-conc-b0821-0597",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":15,"kind":"partFits","total":90},"truth":true,"promptText":"Sam says an angle of 15 degrees can be one part of a right angle. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":15,"kind":"partFits","total":90},"truth":true,"promptText":"Can a 15-degree angle fit inside a right angle as one of its parts, as Sam says?"}},
   },
   {
     itemId: "angles-conc-b0821-0598",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":91,"kind":"partFits","total":90},"truth":false,"promptText":"91 degrees fits inside a right angle as a part, claims Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":91,"kind":"partFits","total":90},"truth":false,"promptText":"Nia says a 91-degree angle can be one part of a right angle. Is Nia right?"}},
   },
   {
     itemId: "angles-conc-b0821-0599",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":85,"kind":"partFits","total":90},"truth":true,"promptText":"Kai says an angle of 85 degrees can be one part of a right angle. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":85,"kind":"partFits","total":90},"truth":true,"promptText":"Kai says an 85-degree angle can be one part of a right angle. Is Kai right?"}},
   },
   {
     itemId: "angles-conc-b0821-0600",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":110,"kind":"partFits","total":90},"truth":false,"promptText":"110 degrees fits inside a right angle as a part, claims June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":110,"kind":"partFits","total":90},"truth":false,"promptText":"June wants to split a right angle into two parts. June says one of the parts can be 110 degrees. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0601",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":40,"kind":"partFits","total":90},"truth":true,"promptText":"Lily says an angle of 40 degrees can be one part of a right angle. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":40,"kind":"partFits","total":90},"truth":true,"promptText":"Lily wants to split a right angle into two parts. Lily says one of the parts can be 40 degrees. Is that right?"}},
   },
   {
     itemId: "angles-conc-b0821-0602",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":175,"kind":"partFits","total":90},"truth":false,"promptText":"175 degrees fits inside a right angle as a part, claims Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":175,"kind":"partFits","total":90},"truth":false,"promptText":"Can a 175-degree angle fit inside a right angle as one of its parts, as Amara says?"}},
   },
   {
     itemId: "angles-conc-b0821-0603",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":120,"kind":"partFits","total":180},"truth":true,"promptText":"Diego offers 120 degrees as one piece of a straight angle. Can it be?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":120,"kind":"partFits","total":180},"truth":true,"promptText":"Diego says a 120-degree angle can be one piece of a straight angle. Is Diego right?"}},
   },
   {
     itemId: "angles-conc-b0821-0604",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":200,"kind":"partFits","total":180},"truth":false,"promptText":"A 200-degree part belongs inside a straight angle, states Nora. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":200,"kind":"partFits","total":180},"truth":false,"promptText":"Can a 200-degree angle be one part of a straight angle, as Nora says?"}},
   },
   {
     itemId: "angles-conc-b0821-0605",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":90,"kind":"partFits","total":180},"truth":true,"promptText":"Luca offers 90 degrees as one piece of a straight angle. Can it be?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":90,"kind":"partFits","total":180},"truth":true,"promptText":"Luca cuts a straight angle into two parts. Can one of the parts be a 90-degree angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0606",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":190,"kind":"partFits","total":180},"truth":false,"promptText":"A 190-degree part belongs inside a straight angle, states Ava. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":190,"kind":"partFits","total":180},"truth":false,"promptText":"Ava says a 190-degree angle can fit inside a straight angle as one of its parts. Is Ava right?"}},
   },
   {
     itemId: "angles-conc-b0821-0607",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"partFits","total":180},"truth":true,"promptText":"Omar offers 45 degrees as one piece of a straight angle. Can it be?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":45,"kind":"partFits","total":180},"truth":true,"promptText":"Omar says a 45-degree angle can be one piece of a straight angle. Is Omar right?"}},
   },
   {
     itemId: "angles-conc-b0821-0608",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":270,"kind":"partFits","total":180},"truth":false,"promptText":"A 270-degree part belongs inside a straight angle, states Ben. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":270,"kind":"partFits","total":180},"truth":false,"promptText":"Ben cuts a straight angle into two parts. Can one of the parts be a 270-degree angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0609",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":150,"kind":"partFits","total":180},"truth":true,"promptText":"Finn offers 150 degrees as one piece of a straight angle. Can it be?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":150,"kind":"partFits","total":180},"truth":true,"promptText":"Is Finn right that a 150-degree angle can be one part of a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0610",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":185,"kind":"partFits","total":180},"truth":false,"promptText":"A 185-degree part belongs inside a straight angle, states Priya. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":185,"kind":"partFits","total":180},"truth":false,"promptText":"Priya says a 185-degree angle can fit inside a straight angle as one of its parts. Is Priya right?"}},
   },
   {
     itemId: "angles-conc-b0821-0611",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"kind":"partFits","total":180},"truth":true,"promptText":"Sam offers 30 degrees as one piece of a straight angle. Can it be?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":30,"kind":"partFits","total":180},"truth":true,"promptText":"Can a 30-degree angle be one part of a straight angle, as Sam says?"}},
   },
   {
     itemId: "angles-conc-b0821-0612",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":225,"kind":"partFits","total":180},"truth":false,"promptText":"A 225-degree part belongs inside a straight angle, states Nia. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":225,"kind":"partFits","total":180},"truth":false,"promptText":"Nia cuts a straight angle into two parts. Can one of the parts be a 225-degree angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0613",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":175,"kind":"partFits","total":180},"truth":true,"promptText":"Kai offers 175 degrees as one piece of a straight angle. Can it be?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":175,"kind":"partFits","total":180},"truth":true,"promptText":"Kai cuts a straight angle into two parts. Can one of the parts be a 175-degree angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0614",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":181,"kind":"partFits","total":180},"truth":false,"promptText":"A 181-degree part belongs inside a straight angle, states June. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":181,"kind":"partFits","total":180},"truth":false,"promptText":"Is June right that a 181-degree angle can be one part of a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0615",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":60,"kind":"partFits","total":180},"truth":true,"promptText":"Lily offers 60 degrees as one piece of a straight angle. Can it be?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":60,"kind":"partFits","total":180},"truth":true,"promptText":"Can a 60-degree angle be one part of a straight angle, as Lily says?"}},
   },
   {
     itemId: "angles-conc-b0821-0616",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":300,"kind":"partFits","total":180},"truth":false,"promptText":"A 300-degree part belongs inside a straight angle, states Amara. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":300,"kind":"partFits","total":180},"truth":false,"promptText":"Is Amara right that a 300-degree angle can be one part of a straight angle?"}},
   },
   {
     itemId: "angles-conc-b0821-0617",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":135,"kind":"partFits","total":180},"truth":true,"promptText":"Leo offers 135 degrees as one piece of a straight angle. Can it be?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ang":{"a":135,"kind":"partFits","total":180},"truth":true,"promptText":"Leo says a 135-degree angle can fit inside a straight angle as one of its parts. Is Leo right?"}},
   },
   {
     itemId: "angles-conc-b0821-0618",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "partWholeTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":210,"kind":"partFits","total":180},"truth":false,"promptText":"A 210-degree part belongs inside a straight angle, states Mina. Sound statement?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ang":{"a":210,"kind":"partFits","total":180},"truth":false,"promptText":"Mina says a 210-degree angle can be one piece of a straight angle. Is Mina right?"}},
   },
   {
     itemId: "angles-proc-b0821-0001",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "cornerClassify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"rel":"less","kind":"classifyRel"},"promptText":"An angle opens less than a square corner. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"rel":"less","kind":"classifyRel"},"promptText":"What kind of angle opens less than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0002",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "cornerClassify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","straight","obtuse"],"display":{"ang":{"rel":"equal","kind":"classifyRel"},"promptText":"An angle opens exactly like a square corner. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","straight","obtuse"],"display":{"ang":{"rel":"equal","kind":"classifyRel"},"promptText":"What kind of angle opens exactly like a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0003",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "cornerClassify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","acute","right"],"display":{"ang":{"rel":"more","kind":"classifyRel"},"promptText":"An angle opens more than a square corner but less than a straight line. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","acute","right"],"display":{"ang":{"rel":"more","kind":"classifyRel"},"promptText":"What kind of angle opens more than a square corner but less than a straight line?"}},
   },
   {
     itemId: "angles-proc-b0821-0004",
@@ -12342,7 +12342,7 @@ export const ITEMS = [
     structureType: "cornerClassify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","obtuse","acute","right"],"display":{"ang":{"rel":"straight","kind":"classifyRel"},"promptText":"An angle opens all the way into a straight line. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","obtuse","acute","right"],"display":{"ang":{"rel":"straight","kind":"classifyRel"},"promptText":"What kind of angle opens all the way into a straight line?"}},
   },
   {
     itemId: "angles-proc-b0821-0005",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "turnClassify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","obtuse","right","acute"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"A quarter turn makes which kind of angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["straight","obtuse","right","acute"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"A quarter turn makes which kind of angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0015",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "turnClassify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"A half turn makes which kind of angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"A half turn makes which kind of angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0016",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "turnClassify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","obtuse","acute","right"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"A small part of a quarter turn makes which kind of angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","obtuse","acute","right"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"A small part of a quarter turn makes which kind of angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0017",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "turnClassify_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","right","obtuse","acute"],"display":{"ang":{"deg":135,"kind":"classify"},"promptText":"A turn between a quarter and a half makes which kind of angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","right","obtuse","acute"],"display":{"ang":{"deg":135,"kind":"classify"},"promptText":"A turn between a quarter and a half makes which kind of angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0018",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A door open a crack opens just a little. Is that angle smaller or bigger than a square corner? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A door is open just a crack. Is the angle between the door and its frame smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0028",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A slightly open book opens just a little. Is that angle smaller or bigger than a square corner? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A book is open just a little. Is the angle between its covers smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0030",
@@ -12612,7 +12612,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A pizza slice tip opens just a little. Is that angle smaller or bigger than a square corner? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Is the angle at the tip of a thin slice of pizza smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0032",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A wide-open gate makes a wide opening beyond a square corner. Smaller or bigger than a square corner?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A book is opened until its front and back covers lie almost flat on the table. Is the angle between the covers smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0033",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A reclined chair back opens very wide, past a square corner. Is that angle smaller or bigger than a square corner? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A recliner chair is leaned all the way back. Is the angle between its seat and its back smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0034",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A fully spread fan makes a wide opening beyond a square corner. Smaller or bigger than a square corner?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A paper fan is spread open all the way. Is the angle between its two outer edges smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0035",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A ramp leaning far back opens very wide, past a square corner. Is that angle smaller or bigger than a square corner? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A laptop screen is pushed back until it is almost flat. Is the angle between the screen and the keys smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0036",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A wide-open door makes a wide opening beyond a square corner. Smaller or bigger than a square corner?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A clock shows 4 o'clock. Is the angle between the hour hand and the minute hand smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0037",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A folded-out sofa bed opens very wide, past a square corner. Is that angle smaller or bigger than a square corner? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A sofa bed is folded out until it is almost flat. Is the angle between its back and its seat smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0038",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A wide slice of pie makes a wide opening beyond a square corner. Smaller or bigger than a square corner?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A slice of pie is more than a quarter of the whole pie. Is the angle at the tip of the slice smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0039",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "cmpCorner_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A nearly flat umbrella opens very wide, past a square corner. Is that angle smaller or bigger than a square corner? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A butterfly rests with its wings spread out almost flat. Is the angle between its two wings smaller or bigger than a square corner?"}},
   },
   {
     itemId: "angles-proc-b0821-0040",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "orderKinds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which kind of angle is the smallest opening: acute, right, obtuse? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which kind of angle has the smallest opening: acute, right, or obtuse?"}},
   },
   {
     itemId: "angles-proc-b0821-0041",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "orderKinds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Pick the widest opening among obtuse, acute, right. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which kind of angle has the widest opening: obtuse, acute, or right?"}},
   },
   {
     itemId: "angles-proc-b0821-0043",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "orderKinds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which kind of angle is the smallest opening: right, obtuse, acute? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which of these angles has the smallest opening: right, obtuse, or acute?"}},
   },
   {
     itemId: "angles-proc-b0821-0045",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "orderKinds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Pick the widest opening among acute, right, obtuse. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","obtuse"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which kind of angle opens the widest: acute, right, or obtuse?"}},
   },
   {
     itemId: "angles-proc-b0821-0047",
@@ -12782,7 +12782,7 @@ export const ITEMS = [
     structureType: "orderKinds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which kind of angle is the smallest opening: obtuse, acute, right? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","acute","right"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which kind of angle opens the least: obtuse, acute, or right?"}},
   },
   {
     itemId: "angles-proc-b0821-0049",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "orderKinds_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Pick the widest opening among right, obtuse, acute. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["right","obtuse","acute"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Which of these angles opens the widest: right, obtuse, or acute?"}},
   },
   {
     itemId: "angles-proc-b0821-0051",
@@ -12822,7 +12822,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","obtuse","acute","right"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"An angle measures 30 degrees. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","obtuse","acute","right"],"display":{"ang":{"deg":30,"kind":"classify"},"promptText":"What kind of angle is a 30-degree angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0053",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","right","obtuse"],"display":{"ang":{"deg":120,"kind":"classify"},"promptText":"An angle measures 120 degrees. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","acute","right","obtuse"],"display":{"ang":{"deg":120,"kind":"classify"},"promptText":"Is a 120-degree angle acute, right, obtuse, or straight?"}},
   },
   {
     itemId: "angles-proc-b0821-0055",
@@ -12862,7 +12862,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"An angle measures 45 degrees. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","right","obtuse"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"What kind of angle is a 45-degree angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0057",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","right","straight","acute"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"An angle measures 60 degrees. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["obtuse","right","straight","acute"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"Is a 60-degree angle acute, right, obtuse, or straight?"}},
   },
   {
     itemId: "angles-proc-b0821-0059",
@@ -12902,7 +12902,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"An angle measures 90 degrees. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"What kind of angle is a 90-degree angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0061",
@@ -12922,7 +12922,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","obtuse","right","acute"],"display":{"ang":{"deg":170,"kind":"classify"},"promptText":"An angle measures 170 degrees. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["straight","obtuse","right","acute"],"display":{"ang":{"deg":170,"kind":"classify"},"promptText":"Is a 170-degree angle acute, right, obtuse, or straight?"}},
   },
   {
     itemId: "angles-proc-b0821-0063",
@@ -12942,7 +12942,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":135,"kind":"classify"},"promptText":"An angle measures 135 degrees. Pick its kind."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":135,"kind":"classify"},"promptText":"What kind of angle is a 135-degree angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0065",
@@ -12952,7 +12952,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","straight","obtuse"],"display":{"ang":{"deg":89,"kind":"classify"},"promptText":"Classify precisely: a 89-degree angle is which kind?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","straight","obtuse"],"display":{"ang":{"deg":89,"kind":"classify"},"promptText":"An 89-degree angle is which kind of angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0066",
@@ -12962,7 +12962,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Determine the kind of an angle measuring 90 degrees."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"What kind of angle measures exactly 90 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0067",
@@ -12972,7 +12972,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":91,"kind":"classify"},"promptText":"Classify precisely: a 91-degree angle is which kind?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":91,"kind":"classify"},"promptText":"Which kind of angle is a 91-degree angle: acute, right, obtuse, or straight?"}},
   },
   {
     itemId: "angles-proc-b0821-0068",
@@ -12982,7 +12982,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Determine the kind of an angle measuring 180 degrees."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Which kind of angle measures 180 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0069",
@@ -12992,7 +12992,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","straight","obtuse"],"display":{"ang":{"deg":1,"kind":"classify"},"promptText":"Classify precisely: a 1-degree angle is which kind?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","straight","obtuse"],"display":{"ang":{"deg":1,"kind":"classify"},"promptText":"A 1-degree angle is which kind of angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0070",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":179,"kind":"classify"},"promptText":"Determine the kind of an angle measuring 179 degrees."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","acute","right"],"display":{"ang":{"deg":179,"kind":"classify"},"promptText":"What kind of angle measures exactly 179 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0071",
@@ -13012,7 +13012,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":44,"kind":"classify"},"promptText":"Classify precisely: a 44-degree angle is which kind?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":44,"kind":"classify"},"promptText":"Which kind of angle is a 44-degree angle: acute, right, obtuse, or straight?"}},
   },
   {
     itemId: "angles-proc-b0821-0072",
@@ -13022,7 +13022,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","right","obtuse","acute"],"display":{"ang":{"deg":46,"kind":"classify"},"promptText":"Determine the kind of an angle measuring 46 degrees."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","right","obtuse","acute"],"display":{"ang":{"deg":46,"kind":"classify"},"promptText":"Which kind of angle measures 46 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0073",
@@ -13032,7 +13032,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Classify precisely: a 90-degree angle is which kind?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"A 90-degree angle is which kind of angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0074",
@@ -13042,7 +13042,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","right","acute"],"display":{"ang":{"deg":134,"kind":"classify"},"promptText":"Determine the kind of an angle measuring 134 degrees."}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["obtuse","straight","right","acute"],"display":{"ang":{"deg":134,"kind":"classify"},"promptText":"What kind of angle measures exactly 134 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0075",
@@ -13052,7 +13052,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","straight","obtuse"],"display":{"ang":{"deg":136,"kind":"classify"},"promptText":"Classify precisely: a 136-degree angle is which kind?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","right","straight","obtuse"],"display":{"ang":{"deg":136,"kind":"classify"},"promptText":"Which kind of angle is a 136-degree angle: acute, right, obtuse, or straight?"}},
   },
   {
     itemId: "angles-proc-b0821-0076",
@@ -13062,7 +13062,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":88,"kind":"classify"},"promptText":"Determine the kind of an angle measuring 88 degrees."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":88,"kind":"classify"},"promptText":"Which kind of angle measures 88 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0077",
@@ -13072,7 +13072,7 @@ export const ITEMS = [
     structureType: "degreeClassify_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":92,"kind":"classify"},"promptText":"Classify precisely: a 92-degree angle is which kind?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"obtuse","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":92,"kind":"classify"},"promptText":"A 92-degree angle is which kind of angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0078",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[90,180,120,40],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these measures is an acute angle: 90, 180, 120, 40 degrees? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[90,180,120,40],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these measures is an acute angle: 90, 180, 120, or 40 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0079",
@@ -13092,7 +13092,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[160,90,120,45],"display":{"ang":{"kind":"rangePick","want":"right"},"promptText":"From 160, 90, 120, 45 degrees, pick the right angle's measure. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[160,90,120,45],"display":{"ang":{"kind":"rangePick","want":"right"},"promptText":"Which of these is a right angle: 160, 90, 120, or 45 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0080",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"choices":[60,30,90,120],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Which of these measures is an obtuse angle: 60, 30, 90, 120 degrees? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":120,"choices":[60,30,90,120],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Which of these angle measures makes an obtuse angle: 60, 30, 90, or 120 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0081",
@@ -13112,7 +13112,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"choices":[135,45,90,180],"display":{"ang":{"kind":"rangePick","want":"straight"},"promptText":"From 135, 45, 90, 180 degrees, pick the straight angle's measure. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":180,"choices":[135,45,90,180],"display":{"ang":{"kind":"rangePick","want":"straight"},"promptText":"Which of these is a straight angle: 135, 45, 90, or 180 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0082",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[90,180,100,25],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these measures is an acute angle: 90, 180, 100, 25 degrees? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[90,180,100,25],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these angle measures makes an acute angle: 90, 180, 100, or 25 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0083",
@@ -13132,7 +13132,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"choices":[150,90,20,80],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"From 150, 90, 20, 80 degrees, pick the obtuse angle's measure. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":150,"choices":[150,90,20,80],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Which of these is an obtuse angle: 150, 90, 20, or 80 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0084",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"choices":[90,110,170,65],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these measures is an acute angle: 90, 110, 170, 65 degrees? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":65,"choices":[90,110,170,65],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these measures is an acute angle: 90, 110, 170, or 65 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0085",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[135,90,30,180],"display":{"ang":{"kind":"rangePick","want":"right"},"promptText":"From 135, 90, 30, 180 degrees, pick the right angle's measure. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[135,90,30,180],"display":{"ang":{"kind":"rangePick","want":"right"},"promptText":"Which one of these angles is a right angle: 135, 90, 30, or 180 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0086",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"choices":[95,15,90,60],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Which of these measures is an obtuse angle: 95, 15, 90, 60 degrees? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":95,"choices":[95,15,90,60],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Which of these measures is an obtuse angle: 95, 15, 90, or 60 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0087",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"choices":[180,125,35,90],"display":{"ang":{"kind":"rangePick","want":"straight"},"promptText":"From 180, 125, 35, 90 degrees, pick the straight angle's measure. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":180,"choices":[180,125,35,90],"display":{"ang":{"kind":"rangePick","want":"straight"},"promptText":"Which one of these angles is a straight angle: 180, 125, 35, or 90 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0088",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"choices":[180,80,140,90],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these measures is an acute angle: 180, 80, 140, 90 degrees? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":80,"choices":[180,80,140,90],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these angle measures makes an acute angle: 180, 80, 140, or 90 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0089",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"choices":[10,70,90,165],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"From 10, 70, 90, 165 degrees, pick the obtuse angle's measure. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":165,"choices":[10,70,90,165],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Which one of these angles is an obtuse angle: 10, 70, 90, or 165 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0090",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "rangePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[90,175,130,50],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these measures is an acute angle: 90, 175, 130, 50 degrees? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[90,175,130,50],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these measures is an acute angle: 90, 175, 130, or 50 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0091",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "rangePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":89,"choices":[89,91,90,180],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Identify the acute measure among 89, 91, 90, 180 degrees. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":89,"choices":[89,91,90,180],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these angle measures is an acute angle: 89, 91, 90, or 180 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0092",
@@ -13232,7 +13232,7 @@ export const ITEMS = [
     structureType: "rangePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[179,90,89,91],"display":{"ang":{"kind":"rangePick","want":"right"},"promptText":"Identify the right measure among 179, 90, 89, 91 degrees. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[179,90,89,91],"display":{"ang":{"kind":"rangePick","want":"right"},"promptText":"Which one is a right angle: 179, 90, 89, or 91 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0094",
@@ -13252,7 +13252,7 @@ export const ITEMS = [
     structureType: "rangePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"choices":[180,91,90,1],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Identify the acute measure among 180, 91, 90, 1 degrees. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1,"choices":[180,91,90,1],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which one is an acute angle: 180°, 91°, 90°, or 1°?"}},
   },
   {
     itemId: "angles-proc-b0821-0096",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "rangePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[44,134,180,90],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Identify the acute measure among 44, 134, 180, 90 degrees. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[44,134,180,90],"display":{"ang":{"kind":"rangePick","want":"acute"},"promptText":"Which of these angle measures is an acute angle: 44, 134, 180, or 90 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0098",
@@ -13292,7 +13292,7 @@ export const ITEMS = [
     structureType: "rangePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[90,135,180,45],"display":{"ang":{"kind":"rangePick","want":"right"},"promptText":"Identify the right measure among 90, 135, 180, 45 degrees. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[90,135,180,45],"display":{"ang":{"kind":"rangePick","want":"right"},"promptText":"Which of these angle measures is a right angle: 90, 135, 180, or 45 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0100",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "rangePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":136,"choices":[88,90,136,46],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Identify the obtuse measure among 88, 90, 136, 46 degrees. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":136,"choices":[88,90,136,46],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Which one is an obtuse angle: 88, 90, 136, or 46 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0102",
@@ -13332,7 +13332,7 @@ export const ITEMS = [
     structureType: "rangePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":92,"choices":[92,88,180,90],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Identify the obtuse measure among 92, 88, 180, 90 degrees. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":92,"choices":[92,88,180,90],"display":{"ang":{"kind":"rangePick","want":"obtuse"},"promptText":"Which of these angle measures is an obtuse angle: 92, 88, 180, or 90 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0104",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "benchKind_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"What kind of angle is a quarter turn? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"What kind of angle is a quarter turn?"}},
   },
   {
     itemId: "angles-proc-b0821-0105",
@@ -13352,7 +13352,7 @@ export const ITEMS = [
     structureType: "benchKind_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","acute","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"What kind of angle is a half turn? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["right","obtuse","acute","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"What kind of angle is a half turn?"}},
   },
   {
     itemId: "angles-proc-b0821-0106",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "benchKind_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","obtuse","straight"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"What kind of angle is half of a right angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["right","acute","obtuse","straight"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"What kind of angle is half of a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0107",
@@ -13372,7 +13372,7 @@ export const ITEMS = [
     structureType: "benchKind_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"What kind of angle is a turn of one third of a half turn? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"What kind of angle is a turn of one third of a half turn?"}},
   },
   {
     itemId: "angles-proc-b0821-0108",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Classify precisely: a quarter turn is which kind of angle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Is a quarter turn an acute, right, obtuse, or straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0118",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Classify precisely: a half turn is which kind of angle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Is a half turn an acute, right, obtuse, or straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0119",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","right","obtuse","acute"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"Classify precisely: half of a right angle is which kind of angle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["straight","right","obtuse","acute"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"Is half of a right angle an acute, right, obtuse, or straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0120",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"Classify precisely: a turn of one third of a half turn is which kind of angle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"Is a turn of one third of a half turn an acute, right, obtuse, or straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0121",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","obtuse","acute","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Determine the kind of angle that a quarter turn makes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["right","obtuse","acute","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Which kind of angle does a quarter turn make?"}},
   },
   {
     itemId: "angles-proc-b0821-0122",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Determine the kind of angle that a half turn makes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["straight","acute","obtuse","right"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Which kind of angle does a half turn make?"}},
   },
   {
     itemId: "angles-proc-b0821-0123",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"Determine the kind of angle that half of a right angle makes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"Which kind of angle do you get from half of a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0124",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"Determine the kind of angle that a turn of one third of a half turn makes."}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"Which kind of angle does a turn of one third of a half turn make?"}},
   },
   {
     itemId: "angles-proc-b0821-0125",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Which class holds a quarter turn?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","right","straight"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Which kind of angle is a quarter turn?"}},
   },
   {
     itemId: "angles-proc-b0821-0126",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Which class holds a half turn?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"straight","choices":["acute","right","obtuse","straight"],"display":{"ang":{"deg":180,"kind":"classify"},"promptText":"Which kind of angle is a half turn?"}},
   },
   {
     itemId: "angles-proc-b0821-0127",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"Which class holds half of a right angle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","right","obtuse"],"display":{"ang":{"deg":45,"kind":"classify"},"promptText":"Which kind of angle is half of a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0128",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"Which class holds a turn of one third of a half turn?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"acute","choices":["acute","straight","obtuse","right"],"display":{"ang":{"deg":60,"kind":"classify"},"promptText":"Which kind of angle is a turn of one third of a half turn?"}},
   },
   {
     itemId: "angles-proc-b0821-0129",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "benchKind_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"Assign a quarter turn its kind of angle."}},
+    question: {"a":null,"b":null,"op":"count","answer":"right","choices":["acute","obtuse","straight","right"],"display":{"ang":{"deg":90,"kind":"classify"},"promptText":"When you make a quarter turn, what kind of angle do you make?"}},
   },
   {
     itemId: "angles-proc-b0821-0130",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":30,"kind":"cmpRight"},"promptText":"Is a 30-degree angle smaller or bigger than a right angle? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":30,"kind":"cmpRight"},"promptText":"Is a 30-degree angle smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0131",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":45,"kind":"cmpRight"},"promptText":"Is a 45-degree angle smaller or bigger than a right angle? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":45,"kind":"cmpRight"},"promptText":"Is an angle of 45 degrees smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0133",
@@ -13642,7 +13642,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":60,"kind":"cmpRight"},"promptText":"Is a 60-degree angle smaller or bigger than a right angle? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":60,"kind":"cmpRight"},"promptText":"Is a 60-degree angle smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0135",
@@ -13662,7 +13662,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":20,"kind":"cmpRight"},"promptText":"Is a 20-degree angle smaller or bigger than a right angle? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":20,"kind":"cmpRight"},"promptText":"Is an angle of 20 degrees smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0137",
@@ -13682,7 +13682,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":75,"kind":"cmpRight"},"promptText":"Is a 75-degree angle smaller or bigger than a right angle? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":75,"kind":"cmpRight"},"promptText":"Is a 75-degree angle smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0139",
@@ -13702,7 +13702,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":40,"kind":"cmpRight"},"promptText":"Is a 40-degree angle smaller or bigger than a right angle? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":40,"kind":"cmpRight"},"promptText":"Is an angle of 40 degrees smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0141",
@@ -13722,7 +13722,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":85,"kind":"cmpRight"},"promptText":"Is a 85-degree angle smaller or bigger than a right angle? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":85,"kind":"cmpRight"},"promptText":"Is an 85-degree angle smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0143",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":89,"kind":"cmpRight"},"promptText":"Judge 89 degrees against a right angle: smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":89,"kind":"cmpRight"},"promptText":"Is 89 degrees smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0144",
@@ -13742,7 +13742,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":91,"kind":"cmpRight"},"promptText":"Relative to 90 degrees, is 91 degrees smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":91,"kind":"cmpRight"},"promptText":"Is a 91-degree angle smaller or bigger than a 90-degree angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0145",
@@ -13752,7 +13752,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":1,"kind":"cmpRight"},"promptText":"Judge 1 degrees against a right angle: smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":1,"kind":"cmpRight"},"promptText":"Is a 1-degree angle smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0146",
@@ -13762,7 +13762,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":179,"kind":"cmpRight"},"promptText":"Relative to 90 degrees, is 179 degrees smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":179,"kind":"cmpRight"},"promptText":"Is 179 degrees smaller or bigger than 90 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0147",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":44,"kind":"cmpRight"},"promptText":"Judge 44 degrees against a right angle: smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":44,"kind":"cmpRight"},"promptText":"Is 44 degrees smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0148",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":136,"kind":"cmpRight"},"promptText":"Relative to 90 degrees, is 136 degrees smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":136,"kind":"cmpRight"},"promptText":"Is a 136-degree angle smaller or bigger than a 90-degree angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0149",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":46,"kind":"cmpRight"},"promptText":"Judge 46 degrees against a right angle: smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":46,"kind":"cmpRight"},"promptText":"Is a 46-degree angle smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0150",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":134,"kind":"cmpRight"},"promptText":"Relative to 90 degrees, is 134 degrees smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":134,"kind":"cmpRight"},"promptText":"Is 134 degrees smaller or bigger than 90 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0151",
@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":88,"kind":"cmpRight"},"promptText":"Judge 88 degrees against a right angle: smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":88,"kind":"cmpRight"},"promptText":"Is 88 degrees smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0152",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":92,"kind":"cmpRight"},"promptText":"Relative to 90 degrees, is 92 degrees smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":92,"kind":"cmpRight"},"promptText":"Is a 92-degree angle smaller or bigger than a 90-degree angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0153",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":2,"kind":"cmpRight"},"promptText":"Judge 2 degrees against a right angle: smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":2,"kind":"cmpRight"},"promptText":"Is a 2-degree angle smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0154",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":178,"kind":"cmpRight"},"promptText":"Relative to 90 degrees, is 178 degrees smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bigger","choices":["smaller","bigger"],"display":{"ang":{"deg":178,"kind":"cmpRight"},"promptText":"Is 178 degrees smaller or bigger than 90 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0155",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "cmpRightDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":87,"kind":"cmpRight"},"promptText":"Judge 87 degrees against a right angle: smaller or bigger?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"smaller","choices":["smaller","bigger"],"display":{"ang":{"deg":87,"kind":"cmpRight"},"promptText":"Is 87 degrees smaller or bigger than a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0156",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"How many square corners fit exactly along a straight line? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"How many square corners fit exactly along a straight line?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0157",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"How many square corners fit exactly along a full turn? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"How many square corners make one full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0158",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"How many half turns fit exactly along a full turn? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"How many half turns make one full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0159",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"How many quarter turns fit exactly along a straight line? Type the count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"How many quarter turns make a half turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0160",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"A straight line is built from how many square corners? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"A straight line is built from how many square corners?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0165",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"A full turn is built from how many square corners? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"A full turn is built from how many square corners?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0166",
@@ -13962,7 +13962,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"A full turn is built from how many half turns? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"A full turn is built from how many half turns?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0167",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"A straight line is built from how many quarter turns? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"A straight line is built from how many quarter turns?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0168",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"It takes how many square corners to build a straight line? Type the number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":90,"whole":180},"promptText":"How many square corners does it take to build a straight line?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0181",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"It takes how many square corners to build a full turn? Type the number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"kind":"divTurn","unit":90,"whole":360},"promptText":"How many square corners does it take to build a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0182",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "turnCount_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"It takes how many half turns to build a full turn? Type the number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"kind":"divTurn","unit":180,"whole":360},"promptText":"How many half turns does it take to build a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0183",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "quartersLeft_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","unit":90,"total":360},"promptText":"One quarter turn of a full turn leaves how many quarter turns to finish? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","unit":90,"total":360},"promptText":"You have made one quarter turn. How many more quarter turns do you need to finish a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0184",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "quartersLeft_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"A full turn is 4 quarter turns. 2 quarter turns of a full turn leaves how many quarter turns to finish? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"A full turn is 4 quarter turns. After 2 quarter turns, how many more quarter turns finish the full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0185",
@@ -14152,7 +14152,7 @@ export const ITEMS = [
     structureType: "quartersLeft_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","unit":90,"total":360},"promptText":"3 quarter turns of a full turn leaves how many quarter turns to finish? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","unit":90,"total":360},"promptText":"After 3 quarter turns, how many more quarter turns finish a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0186",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees is a right angle? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees is a right angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0208",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"How many degrees is a full turn? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"How many degrees is a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0210",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"How many degrees is a half turn? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"How many degrees is a half turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0212",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ang":{"d":120,"kind":"benchDeg"},"promptText":"How many degrees is a third of a full turn? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ang":{"d":120,"kind":"benchDeg"},"promptText":"How many degrees is a third of a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0214",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees is half of a straight angle? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees is half of a straight angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0216",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"d":60,"kind":"benchDeg"},"promptText":"How many degrees is a sixth of a full turn? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"d":60,"kind":"benchDeg"},"promptText":"How many degrees is a sixth of a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0218",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees is half of a half turn? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees is half of a half turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0220",
@@ -14502,7 +14502,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"State the degree measure of a right angle."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees are in a right angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0221",
@@ -14522,7 +14522,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"State the degree measure of a full turn."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":360,"display":{"ang":{"d":360,"kind":"benchDeg"},"promptText":"How many degrees are in a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0223",
@@ -14542,7 +14542,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"State the degree measure of a half turn."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"d":180,"kind":"benchDeg"},"promptText":"How many degrees are in a half turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0225",
@@ -14562,7 +14562,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ang":{"d":120,"kind":"benchDeg"},"promptText":"State the degree measure of a third of a full turn."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ang":{"d":120,"kind":"benchDeg"},"promptText":"How many degrees are in a third of a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0227",
@@ -14582,7 +14582,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"State the degree measure of half of a straight angle."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees are in half of a straight angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0229",
@@ -14602,7 +14602,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"d":60,"kind":"benchDeg"},"promptText":"State the degree measure of a sixth of a full turn."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"d":60,"kind":"benchDeg"},"promptText":"How many degrees are in a sixth of a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0231",
@@ -14622,7 +14622,7 @@ export const ITEMS = [
     structureType: "benchmarkDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"State the degree measure of half of a half turn."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"d":90,"kind":"benchDeg"},"promptText":"How many degrees are in half of a half turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0233",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "halfDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ang":{"of":90,"kind":"halfDeg"},"promptText":"Half of a 90-degree angle measures how many degrees? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ang":{"of":90,"kind":"halfDeg"},"promptText":"Half of a 90-degree angle measures how many degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0260",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "halfDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"of":180,"kind":"halfDeg"},"promptText":"Half of a 180-degree angle measures how many degrees? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"of":180,"kind":"halfDeg"},"promptText":"Half of a 180-degree angle measures how many degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0262",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "halfDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ang":{"of":80,"kind":"halfDeg"},"promptText":"Half of a 80-degree angle measures how many degrees? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ang":{"of":80,"kind":"halfDeg"},"promptText":"Half of an 80-degree angle measures how many degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0264",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "halfDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ang":{"of":40,"kind":"halfDeg"},"promptText":"Half of a 40-degree angle measures how many degrees? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ang":{"of":40,"kind":"halfDeg"},"promptText":"Half of a 40-degree angle measures how many degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0266",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "halfDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ang":{"of":140,"kind":"halfDeg"},"promptText":"Half of a 140-degree angle measures how many degrees? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ang":{"of":140,"kind":"halfDeg"},"promptText":"Half of a 140-degree angle measures how many degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0268",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "halfDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"ang":{"of":50,"kind":"halfDeg"},"promptText":"Half of a 50-degree angle measures how many degrees? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"ang":{"of":50,"kind":"halfDeg"},"promptText":"Half of a 50-degree angle measures how many degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0270",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "halfDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"ang":{"of":110,"kind":"halfDeg"},"promptText":"Half of a 110-degree angle measures how many degrees? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"ang":{"of":110,"kind":"halfDeg"},"promptText":"Half of a 110-degree angle measures how many degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0272",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "halfDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ang":{"of":90,"kind":"halfDeg"},"promptText":"Bisect a 90-degree angle. Each half measures how many degrees?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ang":{"of":90,"kind":"halfDeg"},"promptText":"A 90-degree angle is cut into two equal angles. How many degrees is each one?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0273",
@@ -15042,7 +15042,7 @@ export const ITEMS = [
     structureType: "halfDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"ang":{"of":130,"kind":"halfDeg"},"promptText":"Bisect a 130-degree angle. Each half measures how many degrees?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"ang":{"of":130,"kind":"halfDeg"},"promptText":"A line cuts a 130-degree angle exactly in half. How many degrees is each half?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0275",
@@ -15062,7 +15062,7 @@ export const ITEMS = [
     structureType: "halfDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"ang":{"of":110,"kind":"halfDeg"},"promptText":"Bisect a 110-degree angle. Each half measures how many degrees?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"ang":{"of":110,"kind":"halfDeg"},"promptText":"A 110-degree angle is cut into two equal angles. How many degrees is each one?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0277",
@@ -15082,7 +15082,7 @@ export const ITEMS = [
     structureType: "halfDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"ang":{"of":70,"kind":"halfDeg"},"promptText":"Bisect a 70-degree angle. Each half measures how many degrees?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"ang":{"of":70,"kind":"halfDeg"},"promptText":"A line cuts a 70-degree angle exactly in half. How many degrees is each half?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0279",
@@ -15102,7 +15102,7 @@ export const ITEMS = [
     structureType: "halfDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"ang":{"of":178,"kind":"halfDeg"},"promptText":"Bisect a 178-degree angle. Each half measures how many degrees?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":89,"display":{"ang":{"of":178,"kind":"halfDeg"},"promptText":"A 178-degree angle is cut into two equal angles. How many degrees is each one?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0281",
@@ -15122,7 +15122,7 @@ export const ITEMS = [
     structureType: "halfDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"ang":{"of":94,"kind":"halfDeg"},"promptText":"Bisect a 94-degree angle. Each half measures how many degrees?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"ang":{"of":94,"kind":"halfDeg"},"promptText":"A line cuts a 94-degree angle exactly in half. How many degrees is each half?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0283",
@@ -15142,7 +15142,7 @@ export const ITEMS = [
     structureType: "halfDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"ang":{"of":146,"kind":"halfDeg"},"promptText":"Bisect a 146-degree angle. Each half measures how many degrees?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":73,"display":{"ang":{"of":146,"kind":"halfDeg"},"promptText":"A 146-degree angle is cut into two equal angles. How many degrees is each one?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0285",
@@ -15282,7 +15282,7 @@ export const ITEMS = [
     structureType: "doubleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ang":{"a":35,"b":35,"kind":"sumDeg"},"promptText":"Compute the double of a 35-degree angle in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ang":{"a":35,"b":35,"kind":"sumDeg"},"promptText":"How many degrees is double a 35-degree angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0299",
@@ -15302,7 +15302,7 @@ export const ITEMS = [
     structureType: "doubleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":130,"display":{"ang":{"a":65,"b":65,"kind":"sumDeg"},"promptText":"Compute the double of a 65-degree angle in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":130,"display":{"ang":{"a":65,"b":65,"kind":"sumDeg"},"promptText":"Two 65-degree angles are put side by side. How many degrees is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0301",
@@ -15322,7 +15322,7 @@ export const ITEMS = [
     structureType: "doubleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":85,"b":85,"kind":"sumDeg"},"promptText":"Compute the double of a 85-degree angle in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":85,"b":85,"kind":"sumDeg"},"promptText":"How many degrees is double an 85-degree angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0303",
@@ -15342,7 +15342,7 @@ export const ITEMS = [
     structureType: "doubleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"ang":{"a":105,"b":105,"kind":"sumDeg"},"promptText":"Compute the double of a 105-degree angle in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":210,"display":{"ang":{"a":105,"b":105,"kind":"sumDeg"},"promptText":"Two 105-degree angles are put side by side. How many degrees is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0305",
@@ -15362,7 +15362,7 @@ export const ITEMS = [
     structureType: "doubleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"ang":{"a":125,"b":125,"kind":"sumDeg"},"promptText":"Compute the double of a 125-degree angle in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"ang":{"a":125,"b":125,"kind":"sumDeg"},"promptText":"How many degrees is double a 125-degree angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0307",
@@ -15382,7 +15382,7 @@ export const ITEMS = [
     structureType: "doubleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":290,"display":{"ang":{"a":145,"b":145,"kind":"sumDeg"},"promptText":"Compute the double of a 145-degree angle in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":290,"display":{"ang":{"a":145,"b":145,"kind":"sumDeg"},"promptText":"Two 145-degree angles are put side by side. How many degrees is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0309",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "doubleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"ang":{"a":165,"b":165,"kind":"sumDeg"},"promptText":"Compute the double of a 165-degree angle in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":330,"display":{"ang":{"a":165,"b":165,"kind":"sumDeg"},"promptText":"How many degrees is double a 165-degree angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0311",
@@ -15412,7 +15412,7 @@ export const ITEMS = [
     structureType: "turnsMake_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a straight line","choices":["a small tilt","a full turn","a quarter turn","a straight line"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Two square corners side by side together make what? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a straight line","choices":["a small tilt","a full turn","a quarter turn","a straight line"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"What do two square corners side by side make together?"}},
   },
   {
     itemId: "angles-proc-b0821-0312",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "turnsMake_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a full turn","choices":["a full turn","a quarter turn","a small tilt","a straight line"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Two half turns in the same direction together make what? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a full turn","choices":["a full turn","a quarter turn","a small tilt","a straight line"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"What do two half turns in the same direction make together?"}},
   },
   {
     itemId: "angles-proc-b0821-0313",
@@ -15432,7 +15432,7 @@ export const ITEMS = [
     structureType: "turnsMake_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a half turn","choices":["a quarter turn","a full turn","a half turn","a small tilt"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"A quarter turn followed by another quarter turn together make what? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a half turn","choices":["a quarter turn","a full turn","a half turn","a small tilt"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"What does a quarter turn followed by another quarter turn make?"}},
   },
   {
     itemId: "angles-proc-b0821-0314",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "turnsMake_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a full turn","choices":["a straight line","a quarter turn","a half turn","a full turn"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"Four square corners around a point together make what? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a full turn","choices":["a straight line","a quarter turn","a half turn","a full turn"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"What do four square corners around a point make together?"}},
   },
   {
     itemId: "angles-proc-b0821-0315",
@@ -15532,7 +15532,7 @@ export const ITEMS = [
     structureType: "turnsMake_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"a straight line","choices":["a full turn","a straight line","a quarter turn","a small tilt"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"What do two square corners side by side combine into? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"a straight line","choices":["a full turn","a straight line","a quarter turn","a small tilt"],"display":{"ang":{"kind":"authoredChoice"},"promptText":"What do you get when you put two square corners side by side?"}},
   },
   {
     itemId: "angles-proc-b0821-0324",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "turnsTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":1,"b":1,"kind":"sumUnits"},"promptText":"1 quarter turn, then 1 more. How many quarter turns in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":1,"b":1,"kind":"sumUnits"},"promptText":"1 quarter turn, then 1 more. How many quarter turns in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0325",
@@ -15562,7 +15562,7 @@ export const ITEMS = [
     structureType: "turnsTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":2,"b":1,"kind":"sumUnits"},"promptText":"2 quarter turns, then 1 more. How many quarter turns in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":2,"b":1,"kind":"sumUnits"},"promptText":"2 quarter turns, then 1 more. How many quarter turns in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0327",
@@ -15582,7 +15582,7 @@ export const ITEMS = [
     structureType: "turnsTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"a":1,"b":3,"kind":"sumUnits"},"promptText":"1 quarter turn, then 3 more. How many quarter turns in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"a":1,"b":3,"kind":"sumUnits"},"promptText":"Make 1 quarter turn and then 3 more. How many quarter turns is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0329",
@@ -15662,7 +15662,7 @@ export const ITEMS = [
     structureType: "turnsTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"a":2,"b":2,"kind":"sumUnits"},"promptText":"2 quarter turns, then 2 more. How many quarter turns in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"a":2,"b":2,"kind":"sumUnits"},"promptText":"Make 2 quarter turns and then 2 more. How many quarter turns is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0337",
@@ -15672,7 +15672,7 @@ export const ITEMS = [
     structureType: "cornersTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":1,"b":1,"kind":"sumUnits"},"promptText":"1 square corner plus 1 more square corner: how many square corners in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":1,"b":1,"kind":"sumUnits"},"promptText":"1 square corner plus 1 more square corner: how many square corners in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0338",
@@ -15682,7 +15682,7 @@ export const ITEMS = [
     structureType: "cornersTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":2,"b":1,"kind":"sumUnits"},"promptText":"2 square corners plus 1 more square corner: how many square corners in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":2,"b":1,"kind":"sumUnits"},"promptText":"Put 2 square corners together with 1 more square corner. How many square corners are there in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0339",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "cornersTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"a":3,"b":1,"kind":"sumUnits"},"promptText":"3 square corners plus 1 more square corner: how many square corners in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"a":3,"b":1,"kind":"sumUnits"},"promptText":"3 square corners plus 1 more square corner: how many square corners in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0340",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "halvesTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":1,"b":1,"kind":"sumUnits"},"promptText":"1 half turn and 1 more half turn: how many half turns in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":1,"b":1,"kind":"sumUnits"},"promptText":"1 half turn and 1 more half turn: how many half turns in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0350",
@@ -15802,7 +15802,7 @@ export const ITEMS = [
     structureType: "halvesTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":2,"b":1,"kind":"sumUnits"},"promptText":"2 half turns and 1 more half turn: how many half turns in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":2,"b":1,"kind":"sumUnits"},"promptText":"Make 2 half turns, then 1 more half turn. How many half turns is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0351",
@@ -15812,7 +15812,7 @@ export const ITEMS = [
     structureType: "halvesTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"a":3,"b":1,"kind":"sumUnits"},"promptText":"3 half turns and 1 more half turn: how many half turns in all? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"ang":{"a":3,"b":1,"kind":"sumUnits"},"promptText":"3 half turns and 1 more half turn: how many half turns in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0352",
@@ -15912,7 +15912,7 @@ export const ITEMS = [
     structureType: "addDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"ang":{"a":30,"b":45,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 30 and 45 degrees. Their combined measure = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"ang":{"a":30,"b":45,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 30 and 45 degrees. How many degrees is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0362",
@@ -15932,7 +15932,7 @@ export const ITEMS = [
     structureType: "addDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"ang":{"a":40,"b":35,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 40 and 35 degrees. Their combined measure = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"ang":{"a":40,"b":35,"kind":"sumDeg"},"promptText":"Two side-by-side angles measure 40 degrees and 35 degrees. How many degrees do they measure together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0364",
@@ -15952,7 +15952,7 @@ export const ITEMS = [
     structureType: "addDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"ang":{"a":55,"b":30,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 55 and 30 degrees. Their combined measure = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"ang":{"a":55,"b":30,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 55 and 30 degrees. What is their total measure in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0366",
@@ -15972,7 +15972,7 @@ export const ITEMS = [
     structureType: "addDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"ang":{"a":70,"b":25,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 70 and 25 degrees. Their combined measure = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"ang":{"a":70,"b":25,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 70 and 25 degrees. How many degrees is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0368",
@@ -15992,7 +15992,7 @@ export const ITEMS = [
     structureType: "addDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"ang":{"a":20,"b":60,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 20 and 60 degrees. Their combined measure = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"ang":{"a":20,"b":60,"kind":"sumDeg"},"promptText":"Two side-by-side angles measure 20 degrees and 60 degrees. How many degrees do they measure together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0370",
@@ -16012,7 +16012,7 @@ export const ITEMS = [
     structureType: "addDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"ang":{"a":65,"b":30,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 65 and 30 degrees. Their combined measure = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":95,"display":{"ang":{"a":65,"b":30,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 65 and 30 degrees. What is their total measure in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0372",
@@ -16032,7 +16032,7 @@ export const ITEMS = [
     structureType: "addDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"ang":{"a":10,"b":75,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 10 and 75 degrees. Their combined measure = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"ang":{"a":10,"b":75,"kind":"sumDeg"},"promptText":"Two angles sit side by side, measuring 10 and 75 degrees. How many degrees is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0374",
@@ -16042,7 +16042,7 @@ export const ITEMS = [
     structureType: "addDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"ang":{"a":85,"b":40,"kind":"sumDeg"},"promptText":"Compute the combined measure of adjacent angles 85 and 40 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":125,"display":{"ang":{"a":85,"b":40,"kind":"sumDeg"},"promptText":"An 85-degree angle and a 40-degree angle sit side by side. How many degrees do they make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0375",
@@ -16062,7 +16062,7 @@ export const ITEMS = [
     structureType: "addDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":110,"b":45,"kind":"sumDeg"},"promptText":"Compute the combined measure of adjacent angles 110 and 45 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":110,"b":45,"kind":"sumDeg"},"promptText":"How many degrees do side-by-side angles of 110 and 45 degrees make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0377",
@@ -16082,7 +16082,7 @@ export const ITEMS = [
     structureType: "addDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":120,"b":35,"kind":"sumDeg"},"promptText":"Compute the combined measure of adjacent angles 120 and 35 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":120,"b":35,"kind":"sumDeg"},"promptText":"Two angles that measure 120 degrees and 35 degrees share a side. What is their total in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0379",
@@ -16102,7 +16102,7 @@ export const ITEMS = [
     structureType: "addDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":105,"b":60,"kind":"sumDeg"},"promptText":"Compute the combined measure of adjacent angles 105 and 60 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":105,"b":60,"kind":"sumDeg"},"promptText":"A 105-degree angle and a 60-degree angle sit side by side. How many degrees do they make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0381",
@@ -16122,7 +16122,7 @@ export const ITEMS = [
     structureType: "addDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":55,"b":115,"kind":"sumDeg"},"promptText":"Compute the combined measure of adjacent angles 55 and 115 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":55,"b":115,"kind":"sumDeg"},"promptText":"How many degrees do side-by-side angles of 55 and 115 degrees make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0383",
@@ -16142,7 +16142,7 @@ export const ITEMS = [
     structureType: "addDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":70,"b":95,"kind":"sumDeg"},"promptText":"Compute the combined measure of adjacent angles 70 and 95 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":165,"display":{"ang":{"a":70,"b":95,"kind":"sumDeg"},"promptText":"Two angles that measure 70 degrees and 95 degrees share a side. What is their total in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0385",
@@ -16162,7 +16162,7 @@ export const ITEMS = [
     structureType: "addDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":45,"b":125,"kind":"sumDeg"},"promptText":"Compute the combined measure of adjacent angles 45 and 125 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"ang":{"a":45,"b":125,"kind":"sumDeg"},"promptText":"A 45-degree angle and a 125-degree angle sit side by side. How many degrees do they make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0387",
@@ -16432,7 +16432,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":20,"b":30,"c":40,"kind":"sumDeg3"},"promptText":"Three angles around a line measure 20, 30, and 40 degrees. Type their total in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":20,"b":30,"c":40,"kind":"sumDeg3"},"promptText":"Three angles sit side by side with no gaps. They measure 20, 30, and 40 degrees. How many degrees do they make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0414",
@@ -16452,7 +16452,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"ang":{"a":15,"b":45,"c":20,"kind":"sumDeg3"},"promptText":"Three angles around a line measure 15, 45, and 20 degrees. Type their total in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"ang":{"a":15,"b":45,"c":20,"kind":"sumDeg3"},"promptText":"Three angles share a corner and sit side by side. They measure 15, 45, and 20 degrees. What is their total in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0416",
@@ -16472,7 +16472,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"ang":{"a":10,"b":40,"c":25,"kind":"sumDeg3"},"promptText":"Three angles around a line measure 10, 40, and 25 degrees. Type their total in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"ang":{"a":10,"b":40,"c":25,"kind":"sumDeg3"},"promptText":"Angles of 10, 40, and 25 degrees sit side by side with no gaps or overlaps. How many degrees is the whole angle they make?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0418",
@@ -16492,7 +16492,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":20,"b":20,"c":50,"kind":"sumDeg3"},"promptText":"Three angles around a line measure 20, 20, and 50 degrees. Type their total in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":20,"b":20,"c":50,"kind":"sumDeg3"},"promptText":"Three angles sit side by side with no gaps. They measure 20, 20, and 50 degrees. How many degrees do they make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0420",
@@ -16512,7 +16512,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":25,"b":30,"c":35,"kind":"sumDeg3"},"promptText":"Three angles around a line measure 25, 30, and 35 degrees. Type their total in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":25,"b":30,"c":35,"kind":"sumDeg3"},"promptText":"Three angles share a corner and sit side by side. They measure 25, 30, and 35 degrees. What is their total in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0422",
@@ -16532,7 +16532,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":15,"b":35,"c":40,"kind":"sumDeg3"},"promptText":"Three angles around a line measure 15, 35, and 40 degrees. Type their total in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":15,"b":35,"c":40,"kind":"sumDeg3"},"promptText":"Angles of 15, 35, and 40 degrees sit side by side with no gaps or overlaps. How many degrees is the whole angle they make?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0424",
@@ -16552,7 +16552,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":20,"b":25,"c":45,"kind":"sumDeg3"},"promptText":"Three angles around a line measure 20, 25, and 45 degrees. Type their total in degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":20,"b":25,"c":45,"kind":"sumDeg3"},"promptText":"Three angles sit side by side with no gaps. They measure 20, 25, and 45 degrees. How many degrees do they make together?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0426",
@@ -16562,7 +16562,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":50,"b":60,"c":70,"kind":"sumDeg3"},"promptText":"Compute the total of three adjacent angles: 50, 60, and 70 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":50,"b":60,"c":70,"kind":"sumDeg3"},"promptText":"Three angles side by side measure 50, 60, and 70 degrees. What is their total in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0427",
@@ -16582,7 +16582,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":65,"b":55,"c":60,"kind":"sumDeg3"},"promptText":"Compute the total of three adjacent angles: 65, 55, and 60 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":65,"b":55,"c":60,"kind":"sumDeg3"},"promptText":"What is the total of three side-by-side angles of 65, 55, and 60 degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0429",
@@ -16602,7 +16602,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":80,"b":40,"c":60,"kind":"sumDeg3"},"promptText":"Compute the total of three adjacent angles: 80, 40, and 60 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":80,"b":40,"c":60,"kind":"sumDeg3"},"promptText":"Angles of 80, 40, and 60 degrees are put side by side. How many degrees is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0431",
@@ -16622,7 +16622,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":55,"b":95,"c":30,"kind":"sumDeg3"},"promptText":"Compute the total of three adjacent angles: 55, 95, and 30 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":55,"b":95,"c":30,"kind":"sumDeg3"},"promptText":"Three angles side by side measure 55, 95, and 30 degrees. What is their total in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0433",
@@ -16642,7 +16642,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":70,"b":60,"c":50,"kind":"sumDeg3"},"promptText":"Compute the total of three adjacent angles: 70, 60, and 50 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":70,"b":60,"c":50,"kind":"sumDeg3"},"promptText":"What is the total of three side-by-side angles of 70, 60, and 50 degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0435",
@@ -16662,7 +16662,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":60,"b":45,"c":75,"kind":"sumDeg3"},"promptText":"Compute the total of three adjacent angles: 60, 45, and 75 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":60,"b":45,"c":75,"kind":"sumDeg3"},"promptText":"Angles of 60, 45, and 75 degrees are put side by side. How many degrees is that in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0437",
@@ -16682,7 +16682,7 @@ export const ITEMS = [
     structureType: "tripleDeg_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":110,"b":30,"c":40,"kind":"sumDeg3"},"promptText":"Compute the total of three adjacent angles: 110, 30, and 40 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ang":{"a":110,"b":30,"c":40,"kind":"sumDeg3"},"promptText":"Three angles side by side measure 110, 30, and 40 degrees. What is their total in degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0439",
@@ -16692,7 +16692,7 @@ export const ITEMS = [
     structureType: "sumPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"choices":[85,80,75,65],"display":{"ang":{"a":30,"b":45,"kind":"sumDeg"},"promptText":"Adjacent angles measure 30 and 45 degrees. Pick their total."}},
+    question: {"a":null,"b":null,"op":"count","answer":75,"choices":[85,80,75,65],"display":{"ang":{"a":30,"b":45,"kind":"sumDeg"},"promptText":"Two angles side by side measure 30 degrees and 45 degrees. What is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0440",
@@ -16712,7 +16712,7 @@ export const ITEMS = [
     structureType: "sumPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"choices":[75,80,85,65],"display":{"ang":{"a":40,"b":35,"kind":"sumDeg"},"promptText":"Adjacent angles measure 40 and 35 degrees. Pick their total."}},
+    question: {"a":null,"b":null,"op":"count","answer":75,"choices":[75,80,85,65],"display":{"ang":{"a":40,"b":35,"kind":"sumDeg"},"promptText":"An angle of 40 degrees sits next to an angle of 35 degrees. How many degrees is that in all?"}},
   },
   {
     itemId: "angles-proc-b0821-0442",
@@ -16732,7 +16732,7 @@ export const ITEMS = [
     structureType: "sumPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"choices":[85,75,95,90],"display":{"ang":{"a":55,"b":30,"kind":"sumDeg"},"promptText":"Adjacent angles measure 55 and 30 degrees. Pick their total."}},
+    question: {"a":null,"b":null,"op":"count","answer":85,"choices":[85,75,95,90],"display":{"ang":{"a":55,"b":30,"kind":"sumDeg"},"promptText":"What is the total of two side-by-side angles that measure 55 and 30 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0444",
@@ -16752,7 +16752,7 @@ export const ITEMS = [
     structureType: "sumPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"choices":[105,85,100,95],"display":{"ang":{"a":70,"b":25,"kind":"sumDeg"},"promptText":"Adjacent angles measure 70 and 25 degrees. Pick their total."}},
+    question: {"a":null,"b":null,"op":"count","answer":95,"choices":[105,85,100,95],"display":{"ang":{"a":70,"b":25,"kind":"sumDeg"},"promptText":"Two angles side by side measure 70 degrees and 25 degrees. What is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0446",
@@ -16772,7 +16772,7 @@ export const ITEMS = [
     structureType: "sumPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"choices":[90,80,85,70],"display":{"ang":{"a":20,"b":60,"kind":"sumDeg"},"promptText":"Adjacent angles measure 20 and 60 degrees. Pick their total."}},
+    question: {"a":null,"b":null,"op":"count","answer":80,"choices":[90,80,85,70],"display":{"ang":{"a":20,"b":60,"kind":"sumDeg"},"promptText":"An angle of 20 degrees sits next to an angle of 60 degrees. How many degrees is that in all?"}},
   },
   {
     itemId: "angles-proc-b0821-0448",
@@ -16792,7 +16792,7 @@ export const ITEMS = [
     structureType: "sumPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":95,"choices":[100,95,105,85],"display":{"ang":{"a":65,"b":30,"kind":"sumDeg"},"promptText":"Adjacent angles measure 65 and 30 degrees. Pick their total."}},
+    question: {"a":null,"b":null,"op":"count","answer":95,"choices":[100,95,105,85],"display":{"ang":{"a":65,"b":30,"kind":"sumDeg"},"promptText":"What is the total of two side-by-side angles that measure 65 and 30 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0450",
@@ -16812,7 +16812,7 @@ export const ITEMS = [
     structureType: "sumPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"choices":[95,90,75,85],"display":{"ang":{"a":10,"b":75,"kind":"sumDeg"},"promptText":"Adjacent angles measure 10 and 75 degrees. Pick their total."}},
+    question: {"a":null,"b":null,"op":"count","answer":85,"choices":[95,90,75,85],"display":{"ang":{"a":10,"b":75,"kind":"sumDeg"},"promptText":"Two angles side by side measure 10 degrees and 75 degrees. What is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0452",
@@ -16822,7 +16822,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":125,"choices":[130,115,135,125],"display":{"ang":{"a":85,"b":40,"kind":"sumDeg"},"promptText":"Identify the total of adjacent 85-degree and 40-degree angles."}},
+    question: {"a":null,"b":null,"op":"count","answer":125,"choices":[130,115,135,125],"display":{"ang":{"a":85,"b":40,"kind":"sumDeg"},"promptText":"What is the total of an 85-degree angle and a 40-degree angle side by side?"}},
   },
   {
     itemId: "angles-proc-b0821-0453",
@@ -16832,7 +16832,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"choices":[150,155,140,160],"display":{"ang":{"a":95,"b":55,"kind":"sumDeg"},"promptText":"Which value is the combined sweep of 95 and 55 degrees?"}},
+    question: {"a":null,"b":null,"op":"count","answer":150,"choices":[150,155,140,160],"display":{"ang":{"a":95,"b":55,"kind":"sumDeg"},"promptText":"Two angles measure 95 degrees and 55 degrees. Which is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0454",
@@ -16842,7 +16842,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[155,165,145,160],"display":{"ang":{"a":110,"b":45,"kind":"sumDeg"},"promptText":"Identify the total of adjacent 110-degree and 45-degree angles."}},
+    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[155,165,145,160],"display":{"ang":{"a":110,"b":45,"kind":"sumDeg"},"promptText":"Two angles side by side measure 110 and 45 degrees. Which number is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0455",
@@ -16852,7 +16852,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[165,155,160,145],"display":{"ang":{"a":75,"b":80,"kind":"sumDeg"},"promptText":"Which value is the combined sweep of 75 and 80 degrees?"}},
+    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[165,155,160,145],"display":{"ang":{"a":75,"b":80,"kind":"sumDeg"},"promptText":"What is 75 degrees plus 80 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0456",
@@ -16862,7 +16862,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[155,145,165,160],"display":{"ang":{"a":120,"b":35,"kind":"sumDeg"},"promptText":"Identify the total of adjacent 120-degree and 35-degree angles."}},
+    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[155,145,165,160],"display":{"ang":{"a":120,"b":35,"kind":"sumDeg"},"promptText":"What is the total of a 120-degree angle and a 35-degree angle side by side?"}},
   },
   {
     itemId: "angles-proc-b0821-0457",
@@ -16872,7 +16872,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[145,160,155,165],"display":{"ang":{"a":65,"b":90,"kind":"sumDeg"},"promptText":"Which value is the combined sweep of 65 and 90 degrees?"}},
+    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[145,160,155,165],"display":{"ang":{"a":65,"b":90,"kind":"sumDeg"},"promptText":"Two angles measure 65 degrees and 90 degrees. Which is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0458",
@@ -16882,7 +16882,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"choices":[165,170,155,175],"display":{"ang":{"a":105,"b":60,"kind":"sumDeg"},"promptText":"Identify the total of adjacent 105-degree and 60-degree angles."}},
+    question: {"a":null,"b":null,"op":"count","answer":165,"choices":[165,170,155,175],"display":{"ang":{"a":105,"b":60,"kind":"sumDeg"},"promptText":"Two angles side by side measure 105 and 60 degrees. Which number is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0459",
@@ -16892,7 +16892,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"choices":[175,165,170,155],"display":{"ang":{"a":140,"b":25,"kind":"sumDeg"},"promptText":"Which value is the combined sweep of 140 and 25 degrees?"}},
+    question: {"a":null,"b":null,"op":"count","answer":165,"choices":[175,165,170,155],"display":{"ang":{"a":140,"b":25,"kind":"sumDeg"},"promptText":"What is 140 degrees plus 25 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0460",
@@ -16902,7 +16902,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"choices":[160,175,170,180],"display":{"ang":{"a":55,"b":115,"kind":"sumDeg"},"promptText":"Identify the total of adjacent 55-degree and 115-degree angles."}},
+    question: {"a":null,"b":null,"op":"count","answer":170,"choices":[160,175,170,180],"display":{"ang":{"a":55,"b":115,"kind":"sumDeg"},"promptText":"What is the total of a 55-degree angle and a 115-degree angle side by side?"}},
   },
   {
     itemId: "angles-proc-b0821-0461",
@@ -16912,7 +16912,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":175,"choices":[175,185,165,180],"display":{"ang":{"a":130,"b":45,"kind":"sumDeg"},"promptText":"Which value is the combined sweep of 130 and 45 degrees?"}},
+    question: {"a":null,"b":null,"op":"count","answer":175,"choices":[175,185,165,180],"display":{"ang":{"a":130,"b":45,"kind":"sumDeg"},"promptText":"Two angles measure 130 degrees and 45 degrees. Which is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0462",
@@ -16922,7 +16922,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":165,"choices":[170,175,155,165],"display":{"ang":{"a":70,"b":95,"kind":"sumDeg"},"promptText":"Identify the total of adjacent 70-degree and 95-degree angles."}},
+    question: {"a":null,"b":null,"op":"count","answer":165,"choices":[170,175,155,165],"display":{"ang":{"a":70,"b":95,"kind":"sumDeg"},"promptText":"Two angles side by side measure 70 and 95 degrees. Which number is their total in degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0463",
@@ -16932,7 +16932,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"choices":[180,170,190,185],"display":{"ang":{"a":150,"b":30,"kind":"sumDeg"},"promptText":"Which value is the combined sweep of 150 and 30 degrees?"}},
+    question: {"a":null,"b":null,"op":"count","answer":180,"choices":[180,170,190,185],"display":{"ang":{"a":150,"b":30,"kind":"sumDeg"},"promptText":"What is 150 degrees plus 30 degrees?"}},
   },
   {
     itemId: "angles-proc-b0821-0464",
@@ -16942,7 +16942,7 @@ export const ITEMS = [
     structureType: "sumPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"choices":[160,175,180,170],"display":{"ang":{"a":45,"b":125,"kind":"sumDeg"},"promptText":"Identify the total of adjacent 45-degree and 125-degree angles."}},
+    question: {"a":null,"b":null,"op":"count","answer":170,"choices":[160,175,180,170],"display":{"ang":{"a":45,"b":125,"kind":"sumDeg"},"promptText":"What is the total of a 45-degree angle and a 125-degree angle side by side?"}},
   },
   {
     itemId: "angles-proc-b0821-0465",
@@ -16952,7 +16952,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"A full spin is missing some quarter turns: 1 is done. How many quarter turns are missing? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"Only 1 quarter turn of a full spin is done. How many more quarter turns are needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0466",
@@ -16962,7 +16962,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. A full spin is missing some quarter turns: 2 are done. How many quarter turns are missing? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. 2 are done. How many quarter turns are still missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0467",
@@ -16972,7 +16972,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"A full spin is missing some quarter turns: 3 are done. How many quarter turns are missing? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"3 quarter turns of a full spin are done. How many quarter turns are still missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0468",
@@ -17012,7 +17012,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"1 of the 4 quarter turns in a spin is drawn. How many quarter turns are missing from it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"1 of the 4 quarter turns in a full spin is done. How many quarter turns are still missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0472",
@@ -17022,7 +17022,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"2 of the 4 quarter turns in a spin are drawn. How many quarter turns are missing from it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"2 of the 4 quarter turns in a full spin are done. How many quarter turns are still missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0473",
@@ -17032,7 +17032,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"3 of the 4 quarter turns in a spin are drawn. How many quarter turns are missing from it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"3 of the 4 quarter turns in a full spin are done. How many quarter turns are still missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0474",
@@ -17042,7 +17042,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"The spin diagram shows 1 quarter turn of 4. How many quarter turns does it still lack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"A ballerina has done 1 of the 4 quarter turns in a full spin. How many more quarter turns does the ballerina need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0475",
@@ -17052,7 +17052,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"The spin diagram shows 2 quarter turns of 4. How many quarter turns does it still lack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A ballerina has done 2 of the 4 quarter turns in a full spin. How many more quarter turns does the ballerina need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0476",
@@ -17062,7 +17062,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"The spin diagram shows 3 quarter turns of 4. How many quarter turns does it still lack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"A ballerina has done 3 of the 4 quarter turns in a full spin. How many more quarter turns does the ballerina need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0477",
@@ -17102,7 +17102,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"With 1 quarter turn marked, how many quarter turns are missing from the full spin?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"After 1 quarter turn, how many more quarter turns finish a full spin?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0481",
@@ -17112,7 +17112,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. With 2 quarter turns marked, how many quarter turns are missing from the full spin?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. After 2 quarter turns, how many more quarter turns finish a full spin?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0482",
@@ -17122,7 +17122,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"With 3 quarter turns marked, how many quarter turns are missing from the full spin?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"After 3 quarter turns, how many more quarter turns finish a full spin?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0483",
@@ -17132,7 +17132,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"Of 4 quarter turns, only 1 appears. How many quarter turns are missing?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"A windmill needs 4 quarter turns to spin all the way around. It has made 1 quarter turn. How many quarter turns are missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0484",
@@ -17142,7 +17142,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"Of 4 quarter turns, only 2 appear. How many quarter turns are missing?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A windmill needs 4 quarter turns to spin all the way around. It has made 2 quarter turns. How many quarter turns are missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0485",
@@ -17152,7 +17152,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"Of 4 quarter turns, only 3 appear. How many quarter turns are missing?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"A windmill needs 4 quarter turns to spin all the way around. It has made 3 quarter turns. How many quarter turns are missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0486",
@@ -17162,7 +17162,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"Count the gap: 1 quarter turn shown, a full spin needed. How many quarter turns short is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"A top has spun 1 quarter turn. How many more quarter turns does it need for a full spin?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0487",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. Count the gap: 2 quarter turns shown, a full spin needed. How many quarter turns short is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. A top has spun 2 quarter turns. How many more quarter turns does it need for a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0488",
@@ -17182,7 +17182,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"Count the gap: 3 quarter turns shown, a full spin needed. How many quarter turns short is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"A top has spun 3 quarter turns. How many more quarter turns does it need for a full spin?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0489",
@@ -17192,7 +17192,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"A straight line holds 2 square corners. 1 is drawn. How many square corners are missing? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"It takes 2 square corners side by side to make a straight line. 1 is in place. How many more square corners are needed?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0490",
@@ -17212,7 +17212,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"The line needs 2 square corners and shows 1. How many square corners does it still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"A straight line is made of 2 square corners. Only 1 is there so far. How many square corners does the line still need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0492",
@@ -17222,7 +17222,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Of the 2 square corners along a straight line, 1 is filled. How many square corners are left to fill?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"A straight line can be split into 2 square corners. Lily has colored 1 of them. How many square corners are left to color?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0493",
@@ -17242,7 +17242,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"1 square corner of the 2 along a line is shaded. How many square corners are unshaded?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Kai needs 2 paper square corners to make a straight line. Kai has cut out 1. How many more square corners must Kai cut out?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0495",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"The diagram fills 1 of a straight line's 2 square corners. How many square corners are missing from the diagram?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"A straight line needs 2 square corners, and Omar has put down 1. How many more square corners does Omar need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0497",
@@ -17272,7 +17272,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"A straight line holds 2 square corners. 1 is drawn. How many square corners are missing? Type it. The line is on grid paper."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"On grid paper, 2 square corners side by side make a straight line. Ben has drawn 1 of them. How many more square corners does Ben need to draw?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0498",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"2 square corners make a straight line; 1 is in place. How many square corners are missing now? The line is on the whiteboard."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Zoe is making a straight line on the whiteboard out of 2 paper square corners. She has put up 1. How many more square corners does Zoe need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0499",
@@ -17292,7 +17292,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"The line needs 2 square corners and shows 1. How many square corners does it still need? The line is chalked on the playground."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Kids want to chalk 2 square corners side by side on the playground to make a straight line. They have chalked 1. How many more square corners do they need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0500",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Of the 2 square corners along a straight line, 1 is filled. How many square corners are left to fill? The line runs along a ruler."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Along the straight edge of a ruler, 2 square corners side by side make a straight line. Sam has placed 1. How many more square corners does Sam need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0501",
@@ -17312,7 +17312,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"A straight edge takes 2 square corners; 1 is placed. How many square corners remain to place? The line crosses a poster."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Leo wants to glue 2 paper square corners side by side on his poster to make a straight line. He has glued 1. How many more square corners does Leo need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0502",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"1 square corner of the 2 along a line is shaded. How many square corners are unshaded? The line sits on a worksheet."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"On a worksheet, 2 square corners make a straight line. Zoe has traced 1 of them. How many square corners does Zoe have left to trace?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0503",
@@ -17332,7 +17332,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 2 half turns. 1 is done. How many half turns are missing? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 2 half turns, and 1 is done. How many half turns are missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0504",
@@ -17382,7 +17382,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A dial shows 1 of its 2 half turns. How many half turns does it lack?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A dial needs 2 half turns to go all the way around. It has made 1 half turn. How many more half turns does the dial need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0509",
@@ -17392,7 +17392,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"Just 1 half turn of the needed 2 is drawn. How many half turns are absent?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn needs 2 half turns. Only 1 half turn is done. How many half turns are still missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0510",
@@ -17412,7 +17412,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 2 half turns. 1 is done. How many half turns are missing? Type it. It is a game spinner."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A game spinner needs 2 half turns to spin all the way around. It has done 1. How many half turns are missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0512",
@@ -17422,7 +17422,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"Of the 2 half turns in a full spin, 1 is complete. How many half turns are still missing? It is a bottle cap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A bottle cap has turned 1 of the 2 half turns in a full spin. How many half turns are still missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0513",
@@ -17432,7 +17432,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"The spin needs 2 half turns and has 1. How many half turns are missing? It is a merry-go-round."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A merry-go-round needs 2 half turns to go all the way around and has made 1. How many half turns are missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0514",
@@ -17442,7 +17442,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"1 half turn of 2 is made. How many half turns remain missing? It is a steering wheel."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A steering wheel has turned 1 of the 2 half turns in a full turn. How many half turns are still missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0515",
@@ -17452,7 +17452,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"To close the full turn's 2 half turns, with 1 done, how many half turns are missing? It is a record on a turntable."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A record on a turntable needs 2 half turns for a full turn. It has made 1. How many half turns are missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0516",
@@ -17462,7 +17462,7 @@ export const ITEMS = [
     structureType: "missingHalf_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A dial shows 1 of its 2 half turns. How many half turns does it lack? It is a revolving door."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A revolving door needs 2 half turns to go all the way around. It has made 1 half turn. How many more half turns does the door need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0517",
@@ -17472,7 +17472,7 @@ export const ITEMS = [
     structureType: "missingTo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"a":30,"kind":"missDeg","total":90},"promptText":"Two angles form a right angle. One measures 30 degrees. The other = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"a":30,"kind":"missDeg","total":90},"promptText":"Two angles form a right angle. One measures 30 degrees. How many degrees is the other angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0518",
@@ -17492,7 +17492,7 @@ export const ITEMS = [
     structureType: "missingTo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"ang":{"a":60,"kind":"missDeg","total":90},"promptText":"Two angles form a right angle. One measures 60 degrees. The other = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"ang":{"a":60,"kind":"missDeg","total":90},"promptText":"Two angles form a right angle. One measures 60 degrees. What is the measure of the other angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0520",
@@ -17512,7 +17512,7 @@ export const ITEMS = [
     structureType: "missingTo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ang":{"a":70,"kind":"missDeg","total":90},"promptText":"Two angles form a right angle. One measures 70 degrees. The other = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ang":{"a":70,"kind":"missDeg","total":90},"promptText":"Two angles form a right angle. One measures 70 degrees. How many degrees is the other angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0522",
@@ -17532,7 +17532,7 @@ export const ITEMS = [
     structureType: "missingTo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"a":120,"kind":"missDeg","total":180},"promptText":"Two angles form a straight angle. One measures 120 degrees. The other = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"a":120,"kind":"missDeg","total":180},"promptText":"Two angles form a straight angle. One measures 120 degrees. How many degrees is the other angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0524",
@@ -17552,7 +17552,7 @@ export const ITEMS = [
     structureType: "missingTo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Two angles form a straight angle. One measures 90 degrees. The other = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Two angles form a straight angle. One measures 90 degrees. What is the measure of the other angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0526",
@@ -17572,7 +17572,7 @@ export const ITEMS = [
     structureType: "missingTo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ang":{"a":135,"kind":"missDeg","total":180},"promptText":"Two angles form a straight angle. One measures 135 degrees. The other = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ang":{"a":135,"kind":"missDeg","total":180},"promptText":"Two angles form a straight angle. One measures 135 degrees. How many degrees is the other angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0528",
@@ -17592,7 +17592,7 @@ export const ITEMS = [
     structureType: "missingTo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"ang":{"a":35,"kind":"missDeg","total":90},"promptText":"Two angles form a right angle. One measures 35 degrees. The other = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"ang":{"a":35,"kind":"missDeg","total":90},"promptText":"Two angles form a right angle. One measures 35 degrees. What is the measure of the other angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0530",
@@ -17602,7 +17602,7 @@ export const ITEMS = [
     structureType: "missingTo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"ang":{"a":65,"kind":"missDeg","total":180},"promptText":"Compute the partner: 65 degrees plus what makes a straight angle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"ang":{"a":65,"kind":"missDeg","total":180},"promptText":"How many degrees must be added to 65 degrees to make a straight angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0531",
@@ -17622,7 +17622,7 @@ export const ITEMS = [
     structureType: "missingTo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":25,"kind":"missDeg","total":180},"promptText":"Compute the partner: 25 degrees plus what makes a straight angle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ang":{"a":25,"kind":"missDeg","total":180},"promptText":"25 degrees plus how many degrees makes a straight angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0533",
@@ -17642,7 +17642,7 @@ export const ITEMS = [
     structureType: "missingTo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"Compute the partner: 270 degrees plus what makes a full turn?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"270 degrees plus how many degrees makes a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0535",
@@ -17662,7 +17662,7 @@ export const ITEMS = [
     structureType: "missingTo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"ang":{"a":200,"kind":"missDeg","total":360},"promptText":"Compute the partner: 200 degrees plus what makes a full turn?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"ang":{"a":200,"kind":"missDeg","total":360},"promptText":"How many degrees must be added to 200 degrees to make a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0537",
@@ -17682,7 +17682,7 @@ export const ITEMS = [
     structureType: "missingTo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":40,"kind":"missDeg","total":90},"promptText":"Compute the partner: 40 degrees plus what makes a right angle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":40,"kind":"missDeg","total":90},"promptText":"40 degrees plus how many degrees makes a right angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0539",
@@ -17702,7 +17702,7 @@ export const ITEMS = [
     structureType: "missingTo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"ang":{"a":155,"kind":"missDeg","total":180},"promptText":"Compute the partner: 155 degrees plus what makes a straight angle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"ang":{"a":155,"kind":"missDeg","total":180},"promptText":"How many degrees must be added to 155 degrees to make a straight angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0541",
@@ -17722,7 +17722,7 @@ export const ITEMS = [
     structureType: "missingTo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"ang":{"a":95,"kind":"missDeg","total":180},"promptText":"Compute the partner: 95 degrees plus what makes a straight angle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":85,"display":{"ang":{"a":95,"kind":"missDeg","total":180},"promptText":"95 degrees plus how many degrees makes a straight angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0543",
@@ -17742,7 +17742,7 @@ export const ITEMS = [
     structureType: "missLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ang":{"a":50,"kind":"missDeg","total":90},"promptText":"90 - 50 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ang":{"a":50,"kind":"missDeg","total":90},"promptText":"What is 90 degrees minus 50 degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0545",
@@ -17762,7 +17762,7 @@ export const ITEMS = [
     structureType: "missLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ang":{"a":20,"kind":"missDeg","total":90},"promptText":"90 - 20 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ang":{"a":20,"kind":"missDeg","total":90},"promptText":"How many degrees is 90 degrees minus 20 degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0547",
@@ -17782,7 +17782,7 @@ export const ITEMS = [
     structureType: "missLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"ang":{"a":15,"kind":"missDeg","total":90},"promptText":"90 - 15 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":75,"display":{"ang":{"a":15,"kind":"missDeg","total":90},"promptText":"What is 90 degrees minus 15 degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0549",
@@ -17802,7 +17802,7 @@ export const ITEMS = [
     structureType: "missLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":135,"display":{"ang":{"a":45,"kind":"missDeg","total":180},"promptText":"180 - 45 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":135,"display":{"ang":{"a":45,"kind":"missDeg","total":180},"promptText":"How many degrees is 180 degrees minus 45 degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0551",
@@ -17822,7 +17822,7 @@ export const ITEMS = [
     structureType: "missLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ang":{"a":60,"kind":"missDeg","total":180},"promptText":"180 - 60 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ang":{"a":60,"kind":"missDeg","total":180},"promptText":"What is 180 degrees minus 60 degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0553",
@@ -17842,7 +17842,7 @@ export const ITEMS = [
     structureType: "missLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"ang":{"a":30,"kind":"missDeg","total":180},"promptText":"180 - 30 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"ang":{"a":30,"kind":"missDeg","total":180},"promptText":"How many degrees is 180 degrees minus 30 degrees?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0555",
@@ -17872,7 +17872,7 @@ export const ITEMS = [
     structureType: "missLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"ang":{"a":115,"kind":"missDeg","total":180},"promptText":"180 - 115 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"ang":{"a":115,"kind":"missDeg","total":180},"promptText":"What is 180° - 115°?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0558",
@@ -17892,7 +17892,7 @@ export const ITEMS = [
     structureType: "missLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"360 - 90 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":270,"display":{"ang":{"a":90,"kind":"missDeg","total":360},"promptText":"360° - 90° = __°. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0560",
@@ -17912,7 +17912,7 @@ export const ITEMS = [
     structureType: "missLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"ang":{"a":120,"kind":"missDeg","total":360},"promptText":"360 - 120 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":240,"display":{"ang":{"a":120,"kind":"missDeg","total":360},"promptText":"What is 360° - 120°?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0562",
@@ -17932,7 +17932,7 @@ export const ITEMS = [
     structureType: "missLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":315,"display":{"ang":{"a":45,"kind":"missDeg","total":360},"promptText":"360 - 45 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":315,"display":{"ang":{"a":45,"kind":"missDeg","total":360},"promptText":"360° - 45° = __°. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0564",
@@ -17952,7 +17952,7 @@ export const ITEMS = [
     structureType: "missLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"ang":{"a":25,"kind":"missDeg","total":90},"promptText":"90 - 25 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":65,"display":{"ang":{"a":25,"kind":"missDeg","total":90},"promptText":"What is 90° - 25°?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0566",
@@ -17972,7 +17972,7 @@ export const ITEMS = [
     structureType: "missLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":310,"kind":"missDeg","total":360},"promptText":"360 - 310 = ? (degrees)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":310,"kind":"missDeg","total":360},"promptText":"360° - 310° = __°. What number goes in the blank?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0568",
@@ -17992,7 +17992,7 @@ export const ITEMS = [
     structureType: "missingThird_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":60,"b":70,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two measure 60 and 70 degrees. The third = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":60,"b":70,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two of them measure 60 and 70 degrees. How many degrees is the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0570",
@@ -18012,7 +18012,7 @@ export const ITEMS = [
     structureType: "missingThird_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"a":90,"b":30,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two measure 90 and 30 degrees. The third = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ang":{"a":90,"b":30,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two of them measure 90 degrees and 30 degrees. What is the measure of the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0572",
@@ -18032,7 +18032,7 @@ export const ITEMS = [
     structureType: "missingThird_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ang":{"a":40,"b":95,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two measure 40 and 95 degrees. The third = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ang":{"a":40,"b":95,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two of them measure 40 and 95 degrees. How many degrees is the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0574",
@@ -18052,7 +18052,7 @@ export const ITEMS = [
     structureType: "missingThird_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":20,"b":110,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two measure 20 and 110 degrees. The third = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":20,"b":110,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two of them measure 20 degrees and 110 degrees. What is the measure of the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0576",
@@ -18072,7 +18072,7 @@ export const ITEMS = [
     structureType: "missingThird_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ang":{"a":65,"b":45,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two measure 65 and 45 degrees. The third = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ang":{"a":65,"b":45,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two of them measure 65 and 45 degrees. How many degrees is the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0578",
@@ -18092,7 +18092,7 @@ export const ITEMS = [
     structureType: "missingThird_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":25,"b":105,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two measure 25 and 105 degrees. The third = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ang":{"a":25,"b":105,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two of them measure 25 degrees and 105 degrees. What is the measure of the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0580",
@@ -18112,7 +18112,7 @@ export const ITEMS = [
     structureType: "missingThird_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"ang":{"a":35,"b":90,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two measure 35 and 90 degrees. The third = ? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"ang":{"a":35,"b":90,"kind":"missDeg3","total":180},"promptText":"Three angles make a straight angle. Two of them measure 35 and 90 degrees. How many degrees is the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0582",
@@ -18122,7 +18122,7 @@ export const ITEMS = [
     structureType: "missingThird_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":120,"b":130,"kind":"missDeg3","total":360},"promptText":"Compute the third angle when a full turn contains parts of 120 and 130 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":120,"b":130,"kind":"missDeg3","total":360},"promptText":"A full turn is cut into three angles. Two of them are 120 and 130 degrees. How many degrees is the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0583",
@@ -18142,7 +18142,7 @@ export const ITEMS = [
     structureType: "missingThird_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":100,"b":150,"kind":"missDeg3","total":360},"promptText":"Compute the third angle when a full turn contains parts of 100 and 150 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":100,"b":150,"kind":"missDeg3","total":360},"promptText":"Three angles make a full turn. Two of them measure 100 degrees and 150 degrees. What is the measure of the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0585",
@@ -18162,7 +18162,7 @@ export const ITEMS = [
     structureType: "missingThird_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"ang":{"a":140,"b":105,"kind":"missDeg3","total":360},"promptText":"Compute the third angle when a full turn contains parts of 140 and 105 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":115,"display":{"ang":{"a":140,"b":105,"kind":"missDeg3","total":360},"promptText":"A full turn is cut into three angles. Two of them are 140 and 105 degrees. How many degrees is the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0587",
@@ -18182,7 +18182,7 @@ export const ITEMS = [
     structureType: "missingThird_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"ang":{"a":70,"b":190,"kind":"missDeg3","total":360},"promptText":"Compute the third angle when a full turn contains parts of 70 and 190 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"ang":{"a":70,"b":190,"kind":"missDeg3","total":360},"promptText":"Three angles make a full turn. Two of them measure 70 degrees and 190 degrees. What is the measure of the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0589",
@@ -18202,7 +18202,7 @@ export const ITEMS = [
     structureType: "missingThird_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":130,"b":120,"kind":"missDeg3","total":360},"promptText":"Compute the third angle when a full turn contains parts of 130 and 120 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":130,"b":120,"kind":"missDeg3","total":360},"promptText":"A full turn is cut into three angles. Two of them are 130 and 120 degrees. How many degrees is the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0591",
@@ -18222,7 +18222,7 @@ export const ITEMS = [
     structureType: "missingThird_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":160,"b":90,"kind":"missDeg3","total":360},"promptText":"Compute the third angle when a full turn contains parts of 160 and 90 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":160,"b":90,"kind":"missDeg3","total":360},"promptText":"Three angles make a full turn. Two of them measure 160 degrees and 90 degrees. What is the measure of the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0593",
@@ -18242,7 +18242,7 @@ export const ITEMS = [
     structureType: "missingThird_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":105,"b":145,"kind":"missDeg3","total":360},"promptText":"Compute the third angle when a full turn contains parts of 105 and 145 degrees."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"ang":{"a":105,"b":145,"kind":"missDeg3","total":360},"promptText":"A full turn is cut into three angles. Two of them are 105 and 145 degrees. How many degrees is the third angle?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0595",
@@ -18252,7 +18252,7 @@ export const ITEMS = [
     structureType: "missPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[60,50,70,90],"display":{"ang":{"a":30,"kind":"missDeg","total":90},"promptText":"An angle of 30 degrees needs which partner to complete a right angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[60,50,70,90],"display":{"ang":{"a":30,"kind":"missDeg","total":90},"promptText":"How many more degrees does a 30-degree angle need to make a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0596",
@@ -18272,7 +18272,7 @@ export const ITEMS = [
     structureType: "missPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[30,90,20,40],"display":{"ang":{"a":60,"kind":"missDeg","total":90},"promptText":"An angle of 60 degrees needs which partner to complete a right angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":30,"choices":[30,90,20,40],"display":{"ang":{"a":60,"kind":"missDeg","total":90},"promptText":"Which angle goes with a 60-degree angle to make a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0598",
@@ -18292,7 +18292,7 @@ export const ITEMS = [
     structureType: "missPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[10,90,20,30],"display":{"ang":{"a":70,"kind":"missDeg","total":90},"promptText":"An angle of 70 degrees needs which partner to complete a right angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":20,"choices":[10,90,20,30],"display":{"ang":{"a":70,"kind":"missDeg","total":90},"promptText":"How many more degrees does a 70-degree angle need to make a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0600",
@@ -18312,7 +18312,7 @@ export const ITEMS = [
     structureType: "missPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[180,70,50,60],"display":{"ang":{"a":120,"kind":"missDeg","total":180},"promptText":"An angle of 120 degrees needs which partner to complete a straight angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":60,"choices":[180,70,50,60],"display":{"ang":{"a":120,"kind":"missDeg","total":180},"promptText":"How many more degrees does a 120-degree angle need to make a straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0602",
@@ -18332,7 +18332,7 @@ export const ITEMS = [
     structureType: "missPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[80,180,100,90],"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"An angle of 90 degrees needs which partner to complete a straight angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[80,180,100,90],"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Which angle goes with a 90-degree angle to make a straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0604",
@@ -18352,7 +18352,7 @@ export const ITEMS = [
     structureType: "missPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"choices":[45,35,180,55],"display":{"ang":{"a":135,"kind":"missDeg","total":180},"promptText":"An angle of 135 degrees needs which partner to complete a straight angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":45,"choices":[45,35,180,55],"display":{"ang":{"a":135,"kind":"missDeg","total":180},"promptText":"How many more degrees does a 135-degree angle need to make a straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0606",
@@ -18372,7 +18372,7 @@ export const ITEMS = [
     structureType: "missPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[65,90,45,55],"display":{"ang":{"a":35,"kind":"missDeg","total":90},"promptText":"An angle of 35 degrees needs which partner to complete a right angle? Pick it."}},
+    question: {"a":null,"b":null,"op":"count","answer":55,"choices":[65,90,45,55],"display":{"ang":{"a":35,"kind":"missDeg","total":90},"promptText":"Which angle goes with a 35-degree angle to make a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0608",
@@ -18382,7 +18382,7 @@ export const ITEMS = [
     structureType: "missPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":115,"choices":[180,115,105,125],"display":{"ang":{"a":65,"kind":"missDeg","total":180},"promptText":"Identify the partner of 65 degrees in a straight angle."}},
+    question: {"a":null,"b":null,"op":"count","answer":115,"choices":[180,115,105,125],"display":{"ang":{"a":65,"kind":"missDeg","total":180},"promptText":"What must be added to 65 degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0609",
@@ -18402,7 +18402,7 @@ export const ITEMS = [
     structureType: "missPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[180,165,145,155],"display":{"ang":{"a":25,"kind":"missDeg","total":180},"promptText":"Identify the partner of 25 degrees in a straight angle."}},
+    question: {"a":null,"b":null,"op":"count","answer":155,"choices":[180,165,145,155],"display":{"ang":{"a":25,"kind":"missDeg","total":180},"promptText":"Which angle measure goes with 25 degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0611",
@@ -18422,7 +18422,7 @@ export const ITEMS = [
     structureType: "missPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[90,360,100,80],"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"Identify the partner of 270 degrees in a full turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[90,360,100,80],"display":{"ang":{"a":270,"kind":"missDeg","total":360},"promptText":"Which angle measure goes with 270 degrees to make a full turn?"}},
   },
   {
     itemId: "angles-proc-b0821-0613",
@@ -18442,7 +18442,7 @@ export const ITEMS = [
     structureType: "missPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"choices":[150,160,170,360],"display":{"ang":{"a":200,"kind":"missDeg","total":360},"promptText":"Identify the partner of 200 degrees in a full turn."}},
+    question: {"a":null,"b":null,"op":"count","answer":160,"choices":[150,160,170,360],"display":{"ang":{"a":200,"kind":"missDeg","total":360},"promptText":"What must be added to 200 degrees to make a full turn?"}},
   },
   {
     itemId: "angles-proc-b0821-0615",
@@ -18462,7 +18462,7 @@ export const ITEMS = [
     structureType: "missPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[50,90,60,40],"display":{"ang":{"a":40,"kind":"missDeg","total":90},"promptText":"Identify the partner of 40 degrees in a right angle."}},
+    question: {"a":null,"b":null,"op":"count","answer":50,"choices":[50,90,60,40],"display":{"ang":{"a":40,"kind":"missDeg","total":90},"promptText":"Which angle measure goes with 40 degrees to make a right angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0617",
@@ -18482,7 +18482,7 @@ export const ITEMS = [
     structureType: "missPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[35,15,180,25],"display":{"ang":{"a":155,"kind":"missDeg","total":180},"promptText":"Identify the partner of 155 degrees in a straight angle."}},
+    question: {"a":null,"b":null,"op":"count","answer":25,"choices":[35,15,180,25],"display":{"ang":{"a":155,"kind":"missDeg","total":180},"promptText":"What must be added to 155 degrees to make a straight angle?"}},
   },
   {
     itemId: "angles-proc-b0821-0619",
@@ -18502,6 +18502,6 @@ export const ITEMS = [
     structureType: "missPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":85,"choices":[85,75,95,180],"display":{"ang":{"a":95,"kind":"missDeg","total":180},"promptText":"Identify the partner of 95 degrees in a straight angle."}},
+    question: {"a":null,"b":null,"op":"count","answer":85,"choices":[85,75,95,180],"display":{"ang":{"a":95,"kind":"missDeg","total":180},"promptText":"Which angle measure goes with 95 degrees to make a straight angle?"}},
   },
 ];

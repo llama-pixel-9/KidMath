@@ -3592,7 +3592,7 @@ export const ITEMS = [
     structureType: "storyPatio_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"ap":{"a":8,"b":8,"c":4,"d":2,"kind":"joinAreas"},"promptText":"Ben builds an L-shaped patio from a 8 by 8 slab and a 4 by 2 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"ap":{"a":8,"b":8,"c":4,"d":2,"kind":"joinAreas"},"promptText":"Ben builds an L-shaped patio from an 8 by 8 slab and a 4 by 2 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0360",
@@ -3682,7 +3682,7 @@ export const ITEMS = [
     structureType: "storyPatio_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"ap":{"a":11,"b":6,"c":4,"d":5,"kind":"joinAreas"},"promptText":"Finn builds an L-shaped patio from a 11 by 6 slab and a 4 by 5 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"ap":{"a":11,"b":6,"c":4,"d":5,"kind":"joinAreas"},"promptText":"Finn builds an L-shaped patio from an 11 by 6 slab and a 4 by 5 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0369",
@@ -3692,7 +3692,7 @@ export const ITEMS = [
     structureType: "storyCut_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"ap":{"H":7,"W":11,"h":4,"w":4,"kind":"cutArea"},"promptText":"Priya trims a 4 cm by 4 cm notch from a 11 cm by 7 cm board. How many square cm of board remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"ap":{"H":7,"W":11,"h":4,"w":4,"kind":"cutArea"},"promptText":"Priya trims a 4 cm by 4 cm notch from an 11 cm by 7 cm board. How many square cm of board remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0370",
@@ -3802,7 +3802,7 @@ export const ITEMS = [
     structureType: "storyPatio_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"a":8,"b":5,"c":4,"d":3,"kind":"joinAreas"},"promptText":"Leo builds an L-shaped patio from a 8 by 5 slab and a 4 by 3 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"a":8,"b":5,"c":4,"d":3,"kind":"joinAreas"},"promptText":"Leo builds an L-shaped patio from an 8 by 5 slab and a 4 by 3 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0381",
@@ -3812,7 +3812,7 @@ export const ITEMS = [
     structureType: "storyCut_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"ap":{"H":9,"W":11,"h":4,"w":5,"kind":"cutArea"},"promptText":"Mina trims a 5 cm by 4 cm notch from a 11 cm by 9 cm board. How many square cm of board remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"ap":{"H":9,"W":11,"h":4,"w":5,"kind":"cutArea"},"promptText":"Mina trims a 5 cm by 4 cm notch from an 11 cm by 9 cm board. How many square cm of board remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0382",
@@ -3922,7 +3922,7 @@ export const ITEMS = [
     structureType: "storyPatio_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"a":8,"b":5,"c":4,"d":3,"kind":"joinAreas"},"promptText":"Luca builds an L-shaped patio from a 8 by 5 slab and a 4 by 3 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"a":8,"b":5,"c":4,"d":3,"kind":"joinAreas"},"promptText":"Luca builds an L-shaped patio from an 8 by 5 slab and a 4 by 3 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0393",
@@ -3932,7 +3932,7 @@ export const ITEMS = [
     structureType: "storyCut_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":103,"display":{"ap":{"H":11,"W":11,"h":3,"w":6,"kind":"cutArea"},"promptText":"Ava trims a 6 cm by 3 cm notch from a 11 cm by 11 cm board. How many square cm of board remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":103,"display":{"ap":{"H":11,"W":11,"h":3,"w":6,"kind":"cutArea"},"promptText":"Ava trims a 6 cm by 3 cm notch from an 11 cm by 11 cm board. How many square cm of board remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0394",
@@ -4012,7 +4012,7 @@ export const ITEMS = [
     structureType: "storyPatio_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"ap":{"a":11,"b":4,"c":3,"d":3,"kind":"joinAreas"},"promptText":"Ava builds an L-shaped patio from a 11 by 4 slab and a 3 by 3 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"ap":{"a":11,"b":4,"c":3,"d":3,"kind":"joinAreas"},"promptText":"Ava builds an L-shaped patio from an 11 by 4 slab and a 3 by 3 slab, no overlap. How many square cm is the patio on the plan?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0402",
@@ -4082,7 +4082,7 @@ export const ITEMS = [
     structureType: "storyCut_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"ap":{"H":7,"W":11,"h":4,"w":4,"kind":"cutArea"},"promptText":"Zoe trims a 4 cm by 4 cm notch from a 11 cm by 7 cm board. How many square cm of board remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"ap":{"H":7,"W":11,"h":4,"w":4,"kind":"cutArea"},"promptText":"Zoe trims a 4 cm by 4 cm notch from an 11 cm by 7 cm board. How many square cm of board remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0409",
@@ -4172,7 +4172,7 @@ export const ITEMS = [
     structureType: "storyCut_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"ap":{"H":12,"W":15,"h":5,"w":8,"kind":"cutArea"},"promptText":"Luca clears a 8 m by 5 m pond corner out of a 15 m by 12 m lawn. How many square m of lawn remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"ap":{"H":12,"W":15,"h":5,"w":8,"kind":"cutArea"},"promptText":"Luca clears an 8 m by 5 m pond corner out of a 15 m by 12 m lawn. How many square m of lawn remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0418",
@@ -4222,7 +4222,7 @@ export const ITEMS = [
     structureType: "storyPatio_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":265,"display":{"ap":{"a":15,"b":15,"c":8,"d":5,"kind":"joinAreas"},"promptText":"Mina pours an L-shaped court from a 15 m by 15 m pad and a 8 m by 5 m pad. How many square m is the court?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":265,"display":{"ap":{"a":15,"b":15,"c":8,"d":5,"kind":"joinAreas"},"promptText":"Mina pours an L-shaped court from a 15 m by 15 m pad and an 8 m by 5 m pad. How many square m is the court?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0423",
@@ -4262,7 +4262,7 @@ export const ITEMS = [
     structureType: "storyCut_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":116,"display":{"ap":{"H":10,"W":14,"h":3,"w":8,"kind":"cutArea"},"promptText":"Ava clears a 8 m by 3 m pond corner out of a 14 m by 10 m lawn. How many square m of lawn remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":116,"display":{"ap":{"H":10,"W":14,"h":3,"w":8,"kind":"cutArea"},"promptText":"Ava clears an 8 m by 3 m pond corner out of a 14 m by 10 m lawn. How many square m of lawn remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0427",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "storyPatio_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":102,"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinAreas"},"promptText":"Ava pours an L-shaped court from a 14 m by 5 m pad and a 8 m by 4 m pad. How many square m is the court?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":102,"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinAreas"},"promptText":"Ava pours an L-shaped court from a 14 m by 5 m pad and an 8 m by 4 m pad. How many square m is the court?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0435",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "storyCut_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":117,"display":{"ap":{"H":11,"W":15,"h":6,"w":8,"kind":"cutArea"},"promptText":"Zoe clears a 8 m by 6 m pond corner out of a 15 m by 11 m lawn. How many square m of lawn remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":117,"display":{"ap":{"H":11,"W":15,"h":6,"w":8,"kind":"cutArea"},"promptText":"Zoe clears an 8 m by 6 m pond corner out of a 15 m by 11 m lawn. How many square m of lawn remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0442",
@@ -4462,7 +4462,7 @@ export const ITEMS = [
     structureType: "storyPatio_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":102,"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinAreas"},"promptText":"June pours an L-shaped court from a 14 m by 5 m pad and a 8 m by 4 m pad. How many square m is the court?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":102,"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinAreas"},"promptText":"June pours an L-shaped court from a 14 m by 5 m pad and an 8 m by 4 m pad. How many square m is the court?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0447",
@@ -4562,7 +4562,7 @@ export const ITEMS = [
     structureType: "storyCut_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"ap":{"H":12,"W":15,"h":5,"w":8,"kind":"cutArea"},"promptText":"Amara clears a 8 m by 5 m pond corner out of a 15 m by 12 m lawn. How many square m of lawn remain?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"ap":{"H":12,"W":15,"h":5,"w":8,"kind":"cutArea"},"promptText":"Amara clears an 8 m by 5 m pond corner out of a 15 m by 12 m lawn. How many square m of lawn remain?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0457",
@@ -4582,7 +4582,7 @@ export const ITEMS = [
     structureType: "storyPatio_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":146,"display":{"ap":{"a":14,"b":7,"c":8,"d":6,"kind":"joinAreas"},"promptText":"Rosa pours an L-shaped court from a 14 m by 7 m pad and a 8 m by 6 m pad. How many square m is the court?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":146,"display":{"ap":{"a":14,"b":7,"c":8,"d":6,"kind":"joinAreas"},"promptText":"Rosa pours an L-shaped court from a 14 m by 7 m pad and an 8 m by 6 m pad. How many square m is the court?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0459",
@@ -5192,7 +5192,7 @@ export const ITEMS = [
     structureType: "storyTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":5,"w":8,"kind":"perimOf"},"promptText":"Planning trim, not paint, Priya measures around a 8 cm by 5 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":5,"w":8,"kind":"perimOf"},"promptText":"Planning trim, not paint, Priya measures around an 8 cm by 5 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0520",
@@ -5312,7 +5312,7 @@ export const ITEMS = [
     structureType: "storyTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":5,"w":8,"kind":"perimOf"},"promptText":"Planning trim, not paint, Mina measures around a 8 cm by 5 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":5,"w":8,"kind":"perimOf"},"promptText":"Planning trim, not paint, Mina measures around an 8 cm by 5 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0532",
@@ -5402,7 +5402,7 @@ export const ITEMS = [
     structureType: "storyTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"ap":{"h":4,"w":11,"kind":"perimOf"},"promptText":"Planning trim, not paint, Theo measures around a 11 cm by 4 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"ap":{"h":4,"w":11,"kind":"perimOf"},"promptText":"Planning trim, not paint, Theo measures around an 11 cm by 4 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0541",
@@ -5492,7 +5492,7 @@ export const ITEMS = [
     structureType: "storyTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":8,"w":8,"kind":"perimOf"},"promptText":"Planning trim, not paint, Ida measures around a 8 cm by 8 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":8,"w":8,"kind":"perimOf"},"promptText":"Planning trim, not paint, Ida measures around an 8 cm by 8 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0550",
@@ -5582,7 +5582,7 @@ export const ITEMS = [
     structureType: "storyTrim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"ap":{"h":6,"w":11,"kind":"perimOf"},"promptText":"Planning trim, not paint, Zoe measures around a 11 cm by 6 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"ap":{"h":6,"w":11,"kind":"perimOf"},"promptText":"Planning trim, not paint, Zoe measures around an 11 cm by 6 cm panel. How many cm does the trim run?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-app-b0821-0559",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar computes the area of a 7 cm by 4 cm rectangle as 7 + 4 = 11 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar says the area of a 7 cm by 4 cm rectangle is 7 + 4 = 11 square cm. Is Omar right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0020",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, Ben reports 13 square cm for a 8 by 5 rectangle's area. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ben says the area of an 8 cm by 5 cm rectangle is 13 square cm. Is Ben right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0021",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn computes the area of a 9 cm by 3 cm rectangle as 9 + 3 = 12 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"To find the area of a 9 cm by 3 cm rectangle, Finn writes 9 + 3 = 12 square cm. Is Finn's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0022",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, Priya reports 16 square cm for a 10 by 6 rectangle's area. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya gives 16 square cm as the area of a 10 cm by 6 cm rectangle. Is Priya's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0023",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam computes the area of a 11 cm by 4 cm rectangle as 11 + 4 = 15 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam finds the area of an 11 cm by 4 cm rectangle by adding 11 + 4 = 15 square cm. Is Sam right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0024",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, Nia reports 17 square cm for a 12 by 5 rectangle's area. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia says the area of a 12 cm by 5 cm rectangle is 17 square cm. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0025",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai computes the area of a 7 cm by 6 cm rectangle as 7 + 6 = 13 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai says the area of a 7 cm by 6 cm rectangle is 7 + 6 = 13 square cm. Is Kai right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0026",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, June reports 16 square cm for a 8 by 8 rectangle's area. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June gives 16 square cm as the area of an 8 cm by 8 cm rectangle. Is June's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0027",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily computes the area of a 9 cm by 7 cm rectangle as 9 + 7 = 16 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"To find the area of a 9 cm by 7 cm rectangle, Lily writes 9 + 7 = 16 square cm. Is Lily's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0028",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, Amara reports 20 square cm for a 10 by 10 rectangle's area. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara says the area of a 10 cm by 10 cm rectangle is 20 square cm. Is Amara right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0029",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo computes the area of a 11 cm by 6 cm rectangle as 11 + 6 = 17 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo finds the area of an 11 cm by 6 cm rectangle by adding 11 + 6 = 17 square cm. Is Leo right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0030",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, Mina reports 15 square cm for a 12 by 3 rectangle's area. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina gives 15 square cm as the area of a 12 cm by 3 cm rectangle. Is Mina's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0031",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo computes the area of a 9 cm by 9 cm rectangle as 9 + 9 = 18 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"To find the area of a 9 cm by 9 cm rectangle, Theo writes 9 + 9 = 18 square cm. Is Theo's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0032",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, Ida reports 11 square cm for a 7 by 4 rectangle's area. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida says the area of a 7 cm by 4 cm rectangle is 11 square cm. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0033",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe computes the area of a 8 cm by 5 cm rectangle as 8 + 5 = 13 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe says the area of an 8 cm by 5 cm rectangle is 8 + 5 = 13 square cm. Is Zoe right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0034",
@@ -6462,7 +6462,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, Rosa reports 12 square cm for a 9 by 3 rectangle's area. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa gives 12 square cm as the area of a 9 cm by 3 cm rectangle. Is Rosa's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0035",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego computes the area of a 10 cm by 6 cm rectangle as 10 + 6 = 16 square cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego finds the area of a 10 cm by 6 cm rectangle by adding 10 + 6 = 16 square cm. Is Diego right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0036",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding the sides, Nora reports 15 square cm for a 11 by 4 rectangle's area. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora says the area of an 11 cm by 4 cm rectangle is 15 square cm. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0037",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn's worked area for a 12 m by 8 m rectangle reads 12 + 8 = 20 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn works out the area of a 12 m by 8 m rectangle as 12 + 8 = 20 square m. Is Finn right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0038",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya defends 19 square m as the area of a 13 by 6 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya gives 19 square m as the area of a 13 m by 6 m rectangle. Is Priya's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0039",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam's worked area for a 14 m by 5 m rectangle reads 14 + 5 = 19 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"To find the area of a 14 m by 5 m rectangle, Sam writes 14 + 5 = 19 square m. Is Sam's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0040",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia defends 19 square m as the area of a 15 by 4 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia gives 19 square m as the area of a 15 m by 4 m rectangle. Is Nia's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0041",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai's worked area for a 12 m by 12 m rectangle reads 12 + 12 = 24 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"To find the area of a 12 m by 12 m rectangle, Kai writes 12 + 12 = 24 square m. Is Kai's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0042",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June defends 22 square m as the area of a 13 by 9 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June gives 22 square m as the area of a 13 m by 9 m rectangle. Is June's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0043",
@@ -6552,7 +6552,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily's worked area for a 14 m by 7 m rectangle reads 14 + 7 = 21 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"To find the area of a 14 m by 7 m rectangle, Lily writes 14 + 7 = 21 square m. Is Lily's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0044",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara defends 23 square m as the area of a 15 by 8 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara says the area of a 15 m by 8 m rectangle is 23 square m. Is Amara right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0045",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo's worked area for a 12 m by 11 m rectangle reads 12 + 11 = 23 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo works out the area of a 12 m by 11 m rectangle as 12 + 11 = 23 square m. Is Leo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0046",
@@ -6582,7 +6582,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina defends 26 square m as the area of a 13 by 13 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina says the area of a 13 m by 13 m rectangle is 26 square m. Is Mina right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0047",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo's worked area for a 14 m by 10 m rectangle reads 14 + 10 = 24 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo works out the area of a 14 m by 10 m rectangle as 14 + 10 = 24 square m. Is Theo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0048",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida defends 30 square m as the area of a 15 by 15 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida says the area of a 15 m by 15 m rectangle is 30 square m. Is Ida right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0049",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe's worked area for a 14 m by 14 m rectangle reads 14 + 14 = 28 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"To find the area of a 14 m by 14 m rectangle, Zoe writes 14 + 14 = 28 square m. Is Zoe's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0050",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa defends 20 square m as the area of a 12 by 8 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa says the area of a 12 m by 8 m rectangle is 20 square m. Is Rosa right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0051",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego's worked area for a 13 m by 6 m rectangle reads 13 + 6 = 19 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"To find the area of a 13 m by 6 m rectangle, Diego writes 13 + 6 = 19 square m. Is Diego's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0052",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora defends 19 square m as the area of a 14 by 5 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora says the area of a 14 m by 5 m rectangle is 19 square m. Is Nora right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0053",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca's worked area for a 15 m by 4 m rectangle reads 15 + 4 = 19 square m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca works out the area of a 15 m by 4 m rectangle as 15 + 4 = 19 square m. Is Luca right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0054",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "areaAddTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava defends 24 square m as the area of a 12 by 12 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava gives 24 square m as the area of a 12 m by 12 m rectangle. Is Ava's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0055",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":3,"kind":"areaSaid","said":14},"truth":false,"promptText":"A 3-by-4 grid rectangle covers 14 unit squares, claims Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":3,"kind":"areaSaid","said":14},"truth":false,"promptText":"Ava says a 3-by-4 rectangle covers 14 unit squares. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0057",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":4,"kind":"areaSaid","said":18},"truth":false,"promptText":"A 4-by-5 grid rectangle covers 18 unit squares, claims Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":4,"kind":"areaSaid","said":18},"truth":false,"promptText":"Ben thinks a 4-by-5 grid rectangle covers 18 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0059",
@@ -6722,7 +6722,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":2,"kind":"areaSaid","said":16},"truth":false,"promptText":"A 2-by-6 grid rectangle covers 16 unit squares, claims Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":2,"kind":"areaSaid","said":16},"truth":false,"promptText":"Priya says a 2-by-6 rectangle covers 16 unit squares. Is Priya right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0061",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":3,"kind":"areaSaid","said":12},"truth":false,"promptText":"A 3-by-3 grid rectangle covers 12 unit squares, claims Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":3,"kind":"areaSaid","said":12},"truth":false,"promptText":"Nia thinks a 3-by-3 grid rectangle covers 12 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0063",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":5,"kind":"areaSaid","said":20},"truth":false,"promptText":"A 5-by-5 grid rectangle covers 20 unit squares, claims June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":5,"kind":"areaSaid","said":20},"truth":false,"promptText":"June thinks a 5-by-5 grid rectangle covers 20 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0065",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":2,"kind":"areaSaid","said":10},"truth":false,"promptText":"A 2-by-3 grid rectangle covers 10 unit squares, claims Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":2,"kind":"areaSaid","said":10},"truth":false,"promptText":"Amara thinks a 2-by-3 grid rectangle covers 10 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0067",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":4,"kind":"areaSaid","said":20},"truth":true,"promptText":"Leo says a 4-by-5 rectangle covers 20 unit squares. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":4,"kind":"areaSaid","said":20},"truth":true,"promptText":"Leo thinks a 4-by-5 grid rectangle covers 20 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0068",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":2,"kind":"areaSaid","said":7},"truth":false,"promptText":"A 2-by-5 grid rectangle covers 7 unit squares, claims Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":2,"kind":"areaSaid","said":7},"truth":false,"promptText":"Mina says a 2-by-5 rectangle covers 7 unit squares. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0069",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":2,"kind":"areaSaid","said":12},"truth":true,"promptText":"Theo says a 2-by-6 rectangle covers 12 unit squares. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":2,"kind":"areaSaid","said":12},"truth":true,"promptText":"Theo thinks a 2-by-6 grid rectangle covers 12 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0070",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":3,"kind":"areaSaid","said":9},"truth":false,"promptText":"A 3-by-6 grid rectangle covers 9 unit squares, claims Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":3,"kind":"areaSaid","said":18},"truth":true,"promptText":"Ida thinks a 3-by-6 grid rectangle covers 18 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0071",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":3,"kind":"areaSaid","said":9},"truth":true,"promptText":"Zoe says a 3-by-3 rectangle covers 9 unit squares. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":3,"kind":"areaSaid","said":9},"truth":true,"promptText":"Zoe thinks a 3-by-3 grid rectangle covers 9 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0072",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":4,"kind":"areaSaid","said":8},"truth":false,"promptText":"A 4-by-4 grid rectangle covers 8 unit squares, claims Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":4,"kind":"areaSaid","said":16},"truth":true,"promptText":"Rosa thinks a 4-by-4 grid rectangle covers 16 unit squares. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0073",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":7,"kind":"areaSaid","said":28},"truth":true,"promptText":"June records 28 square cm for a 7 cm by 4 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":7,"kind":"areaSaid","said":28},"truth":true,"promptText":"June finds that a 7 cm by 4 cm rectangle has an area of 28 square cm. Is June right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0074",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":8,"kind":"areaSaid","said":45},"truth":false,"promptText":"Check Lily's area of 45 square cm for a 8 by 5 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":8,"kind":"areaSaid","said":45},"truth":false,"promptText":"Lily finds that an 8 cm by 5 cm rectangle has an area of 45 square cm. Is Lily right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0075",
@@ -6872,7 +6872,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":9,"kind":"areaSaid","said":27},"truth":true,"promptText":"Amara records 27 square cm for a 9 cm by 3 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":9,"kind":"areaSaid","said":27},"truth":true,"promptText":"Amara finds that a 9 cm by 3 cm rectangle has an area of 27 square cm. Is Amara right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0076",
@@ -6882,7 +6882,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":10,"kind":"areaSaid","said":66},"truth":false,"promptText":"Check Leo's area of 66 square cm for a 10 by 6 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":10,"kind":"areaSaid","said":66},"truth":false,"promptText":"Leo writes 66 square cm as the area of a 10 cm by 6 cm rectangle. Is Leo's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0077",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":11,"kind":"areaSaid","said":44},"truth":true,"promptText":"Mina records 44 square cm for a 11 cm by 4 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":11,"kind":"areaSaid","said":44},"truth":true,"promptText":"Mina writes 44 square cm as the area of an 11 cm by 4 cm rectangle. Is Mina's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0078",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":12,"kind":"areaSaid","said":65},"truth":false,"promptText":"Check Theo's area of 65 square cm for a 12 by 5 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":12,"kind":"areaSaid","said":65},"truth":false,"promptText":"Theo finds that a 12 cm by 5 cm rectangle has an area of 65 square cm. Is Theo right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0079",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":7,"kind":"areaSaid","said":42},"truth":true,"promptText":"Ida records 42 square cm for a 7 cm by 6 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":7,"kind":"areaSaid","said":42},"truth":true,"promptText":"Ida writes 42 square cm as the area of a 7 cm by 6 cm rectangle. Is Ida's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0080",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":8,"kind":"areaSaid","said":60},"truth":false,"promptText":"Check Zoe's area of 60 square cm for a 8 by 8 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"w":8,"kind":"areaSaid","said":64},"truth":true,"promptText":"Zoe finds that an 8 cm by 8 cm rectangle has an area of 64 square cm. Is Zoe right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0081",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"w":9,"kind":"areaSaid","said":63},"truth":true,"promptText":"Rosa records 63 square cm for a 9 cm by 7 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"w":9,"kind":"areaSaid","said":63},"truth":true,"promptText":"Rosa finds that a 9 cm by 7 cm rectangle has an area of 63 square cm. Is Rosa right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0082",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":10,"w":10,"kind":"areaSaid","said":90},"truth":false,"promptText":"Check Diego's area of 90 square cm for a 10 by 10 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":10,"w":10,"kind":"areaSaid","said":90},"truth":false,"promptText":"Diego writes 90 square cm as the area of a 10 cm by 10 cm rectangle. Is Diego's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0083",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":11,"kind":"areaSaid","said":66},"truth":true,"promptText":"Nora records 66 square cm for a 11 cm by 6 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":11,"kind":"areaSaid","said":66},"truth":true,"promptText":"Nora finds that an 11 cm by 6 cm rectangle has an area of 66 square cm. Is Nora right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0084",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":12,"kind":"areaSaid","said":30},"truth":false,"promptText":"Check Luca's area of 30 square cm for a 12 by 3 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":12,"kind":"areaSaid","said":36},"truth":true,"promptText":"Luca writes 36 square cm as the area of a 12 cm by 3 cm rectangle. Is Luca's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0085",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"w":9,"kind":"areaSaid","said":81},"truth":true,"promptText":"Ava records 81 square cm for a 9 cm by 9 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"w":9,"kind":"areaSaid","said":81},"truth":true,"promptText":"Ava writes 81 square cm as the area of a 9 cm by 9 cm rectangle. Is Ava's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0086",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":7,"kind":"areaSaid","said":24},"truth":false,"promptText":"Check Omar's area of 24 square cm for a 7 by 4 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":7,"kind":"areaSaid","said":24},"truth":false,"promptText":"Omar finds that a 7 cm by 4 cm rectangle has an area of 24 square cm. Is Omar right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0087",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":8,"kind":"areaSaid","said":40},"truth":true,"promptText":"Ben records 40 square cm for a 8 cm by 5 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":8,"kind":"areaSaid","said":40},"truth":true,"promptText":"Ben finds that an 8 cm by 5 cm rectangle has an area of 40 square cm. Is Ben right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0088",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":9,"kind":"areaSaid","said":21},"truth":false,"promptText":"Check Finn's area of 21 square cm for a 9 by 3 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":9,"kind":"areaSaid","said":21},"truth":false,"promptText":"Finn writes 21 square cm as the area of a 9 cm by 3 cm rectangle. Is Finn's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0089",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":10,"kind":"areaSaid","said":60},"truth":true,"promptText":"Priya records 60 square cm for a 10 cm by 6 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":10,"kind":"areaSaid","said":60},"truth":true,"promptText":"Priya writes 60 square cm as the area of a 10 cm by 6 cm rectangle. Is Priya's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0090",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":11,"kind":"areaSaid","said":40},"truth":false,"promptText":"Check Sam's area of 40 square cm for a 11 by 4 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":11,"kind":"areaSaid","said":40},"truth":false,"promptText":"Sam writes 40 square cm as the area of an 11 cm by 4 cm rectangle. Is Sam's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0091",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"w":12,"kind":"areaSaid","said":96},"truth":true,"promptText":"Amara certifies 96 square m as the area of a 12 m by 8 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"w":12,"kind":"areaSaid","said":96},"truth":true,"promptText":"Amara says a 12 m by 8 m rectangle has an area of 96 square m. Is Amara right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0092",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":13,"kind":"areaSaid","said":84},"truth":false,"promptText":"Audit Leo's sheet: a 13 by 6 rectangle, area written 84. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":13,"kind":"areaSaid","said":84},"truth":false,"promptText":"Leo writes 84 square m for the area of a 13 m by 6 m rectangle. Is Leo right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0093",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":14,"kind":"areaSaid","said":70},"truth":true,"promptText":"Mina certifies 70 square m as the area of a 14 m by 5 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":14,"kind":"areaSaid","said":70},"truth":true,"promptText":"Mina says a 14 m by 5 m rectangle has an area of 70 square m. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0094",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":15,"kind":"areaSaid","said":64},"truth":false,"promptText":"Audit Theo's sheet: a 15 by 4 rectangle, area written 64. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":15,"kind":"areaSaid","said":64},"truth":false,"promptText":"Theo says a 15 m by 4 m rectangle has an area of 64 square m. Is Theo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0095",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"w":12,"kind":"areaSaid","said":144},"truth":true,"promptText":"Ida certifies 144 square m as the area of a 12 m by 12 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"w":12,"kind":"areaSaid","said":144},"truth":true,"promptText":"Ida works out that a 12 m by 12 m rectangle has an area of 144 square m. Is Ida's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0096",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":9,"w":13,"kind":"areaSaid","said":121},"truth":false,"promptText":"Audit Zoe's sheet: a 13 by 9 rectangle, area written 121. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"w":13,"kind":"areaSaid","said":117},"truth":true,"promptText":"On Zoe's worksheet, the area of a 13 m by 9 m rectangle is written as 117 square m. Is Zoe's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0097",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"w":14,"kind":"areaSaid","said":98},"truth":true,"promptText":"Rosa certifies 98 square m as the area of a 14 m by 7 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"w":14,"kind":"areaSaid","said":98},"truth":true,"promptText":"Rosa says a 14 m by 7 m rectangle has an area of 98 square m. Is Rosa right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0098",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":15,"kind":"areaSaid","said":115},"truth":false,"promptText":"Audit Diego's sheet: a 15 by 8 rectangle, area written 115. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":15,"kind":"areaSaid","said":115},"truth":false,"promptText":"Diego works out that a 15 m by 8 m rectangle has an area of 115 square m. Is Diego's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0099",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":11,"w":12,"kind":"areaSaid","said":132},"truth":true,"promptText":"Nora certifies 132 square m as the area of a 12 m by 11 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":11,"w":12,"kind":"areaSaid","said":132},"truth":true,"promptText":"Nora says a 12 m by 11 m rectangle has an area of 132 square m. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0100",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":13,"w":13,"kind":"areaSaid","said":168},"truth":false,"promptText":"Audit Luca's sheet: a 13 by 13 rectangle, area written 168. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":13,"w":13,"kind":"areaSaid","said":168},"truth":false,"promptText":"On Luca's worksheet, the area of a 13 m by 13 m rectangle is written as 168 square m. Is Luca's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0101",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"w":14,"kind":"areaSaid","said":140},"truth":true,"promptText":"Ava certifies 140 square m as the area of a 14 m by 10 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"w":14,"kind":"areaSaid","said":140},"truth":true,"promptText":"Ava works out that a 14 m by 10 m rectangle has an area of 140 square m. Is Ava's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0102",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":15,"w":15,"kind":"areaSaid","said":220},"truth":false,"promptText":"Audit Omar's sheet: a 15 by 15 rectangle, area written 220. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":15,"w":15,"kind":"areaSaid","said":225},"truth":true,"promptText":"Omar writes 225 square m for the area of a 15 m by 15 m rectangle. Is Omar right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0103",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"w":14,"kind":"areaSaid","said":196},"truth":true,"promptText":"Ben certifies 196 square m as the area of a 14 m by 14 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"w":14,"kind":"areaSaid","said":196},"truth":true,"promptText":"Ben writes 196 square m for the area of a 14 m by 14 m rectangle. Is Ben right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0104",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":12,"kind":"areaSaid","said":88},"truth":false,"promptText":"Audit Finn's sheet: a 12 by 8 rectangle, area written 88. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":12,"kind":"areaSaid","said":88},"truth":false,"promptText":"Finn writes 88 square m for the area of a 12 m by 8 m rectangle. Is Finn right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0105",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":13,"kind":"areaSaid","said":78},"truth":true,"promptText":"Priya certifies 78 square m as the area of a 13 m by 6 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":13,"kind":"areaSaid","said":78},"truth":true,"promptText":"Priya works out that a 13 m by 6 m rectangle has an area of 78 square m. Is Priya's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0106",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":14,"kind":"areaSaid","said":75},"truth":false,"promptText":"Audit Sam's sheet: a 14 by 5 rectangle, area written 75. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":14,"kind":"areaSaid","said":75},"truth":false,"promptText":"On Sam's worksheet, the area of a 14 m by 5 m rectangle is written as 75 square m. Is Sam's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0107",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":15,"kind":"areaSaid","said":60},"truth":true,"promptText":"Nia certifies 60 square m as the area of a 15 m by 4 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":15,"kind":"areaSaid","said":60},"truth":true,"promptText":"On Nia's worksheet, the area of a 15 m by 4 m rectangle is written as 60 square m. Is Nia's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0108",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "areaSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":12,"w":12,"kind":"areaSaid","said":124},"truth":false,"promptText":"Audit Kai's sheet: a 12 by 12 rectangle, area written 124. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":12,"w":12,"kind":"areaSaid","said":124},"truth":false,"promptText":"On Kai's worksheet, the area of a 12 m by 12 m rectangle is written as 124 square m. Is Kai's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0109",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia turns a 2-by-3 rectangle on its side and says it now covers a different number of unit squares. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nia turns a 2-by-3 rectangle on its side and says it covers the same number of unit squares as before. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0110",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Turning a 3-by-4 card sideways changes how much table it covers, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Kai turns a 3-by-4 card sideways and says it covers the same amount of the table as before. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0111",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June turns a 2-by-5 rectangle on its side and says it now covers a different number of unit squares. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"June turns a 2-by-5 rectangle on its side and says it covers the same number of unit squares as before. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0112",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Turning a 4-by-5 card sideways changes how much table it covers, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily turns a 4-by-5 card sideways and says it now covers more of the table. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0113",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Turning a 2-by-6 card sideways changes how much table it covers, claims Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Leo turns a 2-by-6 card sideways and says it covers the same amount of the table as before. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0115",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina turns a 5-by-6 rectangle on its side and says it now covers a different number of unit squares. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Mina turns a 5-by-6 rectangle on its side and says it covers the same number of unit squares as before. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0116",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Turning a 4-by-4 card sideways changes how much table it covers, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Theo turns a 4-by-4 card sideways and says it covers the same amount of the table as before. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0117",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Turning a 2-by-4 card sideways changes how much table it covers, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe turns a 2-by-4 card sideways and says it now covers less of the table. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0119",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa turns a 5-by-5 rectangle on its side and says it now covers a different number of unit squares. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa turns a 5-by-5 rectangle on its side and says it covers the same number of unit squares as before. Is Rosa right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0120",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Turning a 6-by-6 card sideways changes how much table it covers, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Diego turns a 6-by-6 card sideways and says it covers the same amount of the table as before. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0121",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Turning a 2-by-3 card sideways changes how much table it covers, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca turns a 2-by-3 card sideways and says it now covers more of the table. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0123",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava turns a 3-by-4 rectangle on its side and says it now covers a different number of unit squares. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava turns a 3-by-4 rectangle on its side and says it covers the same number of unit squares as before. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0124",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "turnJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Turning a 2-by-5 card sideways changes how much table it covers, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Omar turns a 2-by-5 card sideways and says it covers the same amount of the table as before. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0125",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe rotates a 7 cm by 4 cm rectangle and expects its area to change. Will it change?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Zoe rotates a 7 cm by 4 cm rectangle and expects its area to stay the same. Is Zoe right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0126",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"A 8 by 5 rectangle covers more after a quarter turn, argues Rosa. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa gives an 8 cm by 5 cm rectangle a quarter turn and says it covers the same space as before. Is Rosa right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0127",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego rotates a 9 cm by 3 cm rectangle and expects its area to change. Will it change?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego rotates a 9 cm by 3 cm rectangle and expects its area to change. Is Diego right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0128",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"A 10 by 6 rectangle covers more after a quarter turn, argues Nora. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora gives a 10 cm by 6 cm rectangle a quarter turn and says it covers more space now. Is Nora right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0129",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca rotates a 11 cm by 4 cm rectangle and expects its area to change. Will it change?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Luca rotates an 11 cm by 4 cm rectangle and expects its area to stay the same. Is Luca right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0130",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"A 12 by 5 rectangle covers more after a quarter turn, argues Ava. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava gives a 12 cm by 5 cm rectangle a quarter turn and says it covers the same space as before. Is Ava right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0131",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar rotates a 7 cm by 6 cm rectangle and expects its area to change. Will it change?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Omar rotates a 7 cm by 6 cm rectangle and expects its area to stay the same. Is Omar right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0132",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"A 8 by 8 rectangle covers more after a quarter turn, argues Ben. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben gives an 8 cm by 8 cm rectangle a quarter turn and says it covers the same space as before. Is Ben right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0133",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn rotates a 9 cm by 7 cm rectangle and expects its area to change. Will it change?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn rotates a 9 cm by 7 cm rectangle and expects its area to change. Is Finn right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0134",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"A 10 by 10 rectangle covers more after a quarter turn, argues Priya. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya gives a 10 cm by 10 cm rectangle a quarter turn and says it covers more space now. Is Priya right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0135",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam rotates a 11 cm by 6 cm rectangle and expects its area to change. Will it change?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Sam rotates an 11 cm by 6 cm rectangle and expects its area to stay the same. Is Sam right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0136",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"A 12 by 3 rectangle covers more after a quarter turn, argues Nia. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nia gives a 12 cm by 3 cm rectangle a quarter turn and says it covers the same space as before. Is Nia right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0137",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai rotates a 9 cm by 9 cm rectangle and expects its area to change. Will it change?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai rotates a 9 cm by 9 cm rectangle and expects its area to change. Is Kai right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0138",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"A 7 by 4 rectangle covers more after a quarter turn, argues June. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June gives a 7 cm by 4 cm rectangle a quarter turn and says it covers more space now. Is June right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0139",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily rotates a 8 cm by 5 cm rectangle and expects its area to change. Will it change?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Lily rotates an 8 cm by 5 cm rectangle and expects its area to stay the same. Is Lily right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0140",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "turnJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"A 9 by 3 rectangle covers more after a quarter turn, argues Amara. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Amara gives a 9 cm by 3 cm rectangle a quarter turn and says it covers the same space as before. Is Amara right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0141",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego asserts a 12 m by 8 m rectangle's area shifts when the rectangle is rotated. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Diego turns a 12 m by 8 m rectangle on its side and says its area stays the same. Is Diego right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0142",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rotation changes area, per Nora, so a 13 by 6 rectangle covers differently on its side. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nora turns a 13 m by 6 m rectangle on its side. Nora says the area is the same as before. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0143",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca asserts a 14 m by 5 m rectangle's area shifts when the rectangle is rotated. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca says a 14 m by 5 m rectangle has a different area after it is turned. Is Luca right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0144",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rotation changes area, per Ava, so a 15 by 4 rectangle covers differently on its side. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava says a 15 by 4 rectangle covers the same amount of space when it is turned on its side. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0145",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar asserts a 12 m by 12 m rectangle's area shifts when the rectangle is rotated. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar turns a 12 m by 12 m rectangle on its side and says its area changes. Is Omar right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0146",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rotation changes area, per Ben, so a 13 by 9 rectangle covers differently on its side. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ben turns a 13 m by 9 m rectangle on its side. Ben says the area is now bigger. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0147",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn asserts a 14 m by 7 m rectangle's area shifts when the rectangle is rotated. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Finn says a 14 m by 7 m rectangle has the same area after it is turned. Is Finn right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0148",
@@ -7602,7 +7602,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rotation changes area, per Priya, so a 15 by 8 rectangle covers differently on its side. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya says a 15 by 8 rectangle covers a different amount of space when it is turned on its side. Is Priya right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0149",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam asserts a 12 m by 11 m rectangle's area shifts when the rectangle is rotated. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam says a 12 m by 11 m rectangle has a different area after it is turned. Is Sam right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0150",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rotation changes area, per Nia, so a 13 by 13 rectangle covers differently on its side. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nia says a 13 by 13 rectangle covers the same amount of space when it is turned on its side. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0151",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai asserts a 14 m by 10 m rectangle's area shifts when the rectangle is rotated. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Kai turns a 14 m by 10 m rectangle on its side and says its area stays the same. Is Kai right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0152",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rotation changes area, per June, so a 15 by 15 rectangle covers differently on its side. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"June says a 15 by 15 rectangle covers the same amount of space when it is turned on its side. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0153",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily asserts a 14 m by 14 m rectangle's area shifts when the rectangle is rotated. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Lily turns a 14 m by 14 m rectangle on its side and says its area stays the same. Is Lily right about the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0154",
@@ -7662,7 +7662,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rotation changes area, per Amara, so a 12 by 8 rectangle covers differently on its side. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Amara turns a 12 m by 8 m rectangle on its side. Amara says the area is the same as before. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0155",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo asserts a 13 m by 6 m rectangle's area shifts when the rectangle is rotated. Is the assertion right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Leo says a 13 m by 6 m rectangle has the same area after it is turned. Is Leo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0156",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "turnJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rotation changes area, per Mina, so a 14 by 5 rectangle covers differently on its side. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina turns a 14 m by 5 m rectangle on its side. Mina says the area is now bigger. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0157",
@@ -7692,7 +7692,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina finds the trip around a 2-by-3 rectangle by adding just two sides: 2 + 3 = 5 units. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":3,"said":5},"truth":false,"promptText":"Mina finds the trip around a 2-by-3 rectangle by adding just two sides: 2 + 3 = 5 units. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0158",
@@ -7702,7 +7702,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 3-unit by 4-unit rectangle, Theo says the border is 3 + 4 = 7 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":4,"said":7},"truth":false,"promptText":"For a 3-unit by 4-unit rectangle, Theo says the border is 3 + 4 = 7 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0159",
@@ -7712,7 +7712,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida finds the trip around a 2-by-5 rectangle by adding just two sides: 2 + 5 = 7 units. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":5,"said":7},"truth":false,"promptText":"Ida finds the trip around a 2-by-5 rectangle by adding just two sides: 2 + 5 = 7 units. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0160",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 4-unit by 5-unit rectangle, Zoe says the border is 4 + 5 = 9 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":4,"h":5,"said":9},"truth":false,"promptText":"For a 4-unit by 5-unit rectangle, Zoe says the border is 4 + 5 = 9 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0161",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa finds the trip around a 3-by-6 rectangle by adding just two sides: 3 + 6 = 9 units. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":6,"said":9},"truth":false,"promptText":"Rosa finds the trip around a 3-by-6 rectangle by adding just two sides: 3 + 6 = 9 units. Is Rosa right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0162",
@@ -7742,7 +7742,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 2-unit by 6-unit rectangle, Diego says the border is 2 + 6 = 8 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":6,"said":8},"truth":false,"promptText":"For a 2-unit by 6-unit rectangle, Diego says the border is 2 + 6 = 8 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0163",
@@ -7752,7 +7752,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora finds the trip around a 5-by-6 rectangle by adding just two sides: 5 + 6 = 11 units. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":5,"h":6,"said":11},"truth":false,"promptText":"Nora finds the trip around a 5-by-6 rectangle by adding just two sides: 5 + 6 = 11 units. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0164",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 4-unit by 4-unit rectangle, Luca says the border is 4 + 4 = 8 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":4,"h":4,"said":8},"truth":false,"promptText":"For a 4-unit by 4-unit rectangle, Luca says the border is 4 + 4 = 8 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0165",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava finds the trip around a 3-by-3 rectangle by adding just two sides: 3 + 3 = 6 units. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":3,"said":6},"truth":false,"promptText":"Ava finds the trip around a 3-by-3 rectangle by adding just two sides: 3 + 3 = 6 units. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0166",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 2-unit by 4-unit rectangle, Omar says the border is 2 + 4 = 6 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":4,"said":6},"truth":false,"promptText":"For a 2-unit by 4-unit rectangle, Omar says the border is 2 + 4 = 6 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0167",
@@ -7792,7 +7792,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ben finds the trip around a 5-by-5 rectangle by adding just two sides: 5 + 5 = 10 units. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":5,"h":5,"said":10},"truth":false,"promptText":"Ben finds the trip around a 5-by-5 rectangle by adding just two sides: 5 + 5 = 10 units. Is Ben right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0168",
@@ -7802,7 +7802,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 6-unit by 6-unit rectangle, Finn says the border is 6 + 6 = 12 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":6,"h":6,"said":12},"truth":false,"promptText":"For a 6-unit by 6-unit rectangle, Finn says the border is 6 + 6 = 12 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0169",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya finds the trip around a 4-by-6 rectangle by adding just two sides: 4 + 6 = 10 units. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":4,"h":6,"said":10},"truth":false,"promptText":"Priya finds the trip around a 4-by-6 rectangle by adding just two sides: 4 + 6 = 10 units. Is Priya right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0170",
@@ -7822,7 +7822,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 2-unit by 3-unit rectangle, Sam says the border is 2 + 3 = 5 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":3,"said":5},"truth":false,"promptText":"For a 2-unit by 3-unit rectangle, Sam says the border is 2 + 3 = 5 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0171",
@@ -7832,7 +7832,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia finds the trip around a 3-by-4 rectangle by adding just two sides: 3 + 4 = 7 units. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":4,"said":7},"truth":false,"promptText":"Nia finds the trip around a 3-by-4 rectangle by adding just two sides: 3 + 4 = 7 units. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0172",
@@ -7842,7 +7842,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 2-unit by 5-unit rectangle, Kai says the border is 2 + 5 = 7 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":5,"said":7},"truth":false,"promptText":"For a 2-unit by 5-unit rectangle, Kai says the border is 2 + 5 = 7 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0173",
@@ -7852,7 +7852,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June finds the trip around a 4-by-5 rectangle by adding just two sides: 4 + 5 = 9 units. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":4,"h":5,"said":9},"truth":false,"promptText":"June finds the trip around a 4-by-5 rectangle by adding just two sides: 4 + 5 = 9 units. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0174",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For a 3-unit by 6-unit rectangle, Lily says the border is 3 + 6 = 9 units. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":6,"said":9},"truth":false,"promptText":"For a 3-unit by 6-unit rectangle, Lily says the border is 3 + 6 = 9 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0175",
@@ -7872,7 +7872,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar computes the perimeter of a 7 cm by 4 cm rectangle as 7 + 4 = 11 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":7,"h":4,"said":11},"truth":false,"promptText":"Omar says the perimeter of a 7 cm by 4 cm rectangle is 7 + 4 = 11 cm. Is Omar right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0176",
@@ -7882,7 +7882,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, Ben reports 13 cm of perimeter for a 8 by 5 rectangle. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":8,"h":5,"said":13},"truth":false,"promptText":"Ben says the perimeter of an 8 cm by 5 cm rectangle is 13 cm. Is Ben right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0177",
@@ -7892,7 +7892,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn computes the perimeter of a 9 cm by 3 cm rectangle as 9 + 3 = 12 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":9,"h":3,"said":12},"truth":false,"promptText":"To find the perimeter of a 9 cm by 3 cm rectangle, Finn writes 9 + 3 = 12 cm. Is Finn's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0178",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, Priya reports 16 cm of perimeter for a 10 by 6 rectangle. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":10,"h":6,"said":16},"truth":false,"promptText":"Priya gives 16 cm as the perimeter of a 10 cm by 6 cm rectangle. Is Priya's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0179",
@@ -7912,7 +7912,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam computes the perimeter of a 11 cm by 4 cm rectangle as 11 + 4 = 15 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":11,"h":4,"said":15},"truth":false,"promptText":"Sam finds the perimeter of an 11 cm by 4 cm rectangle by adding 11 + 4 = 15 cm. Is Sam right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0180",
@@ -7922,7 +7922,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, Nia reports 17 cm of perimeter for a 12 by 5 rectangle. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":5,"said":17},"truth":false,"promptText":"Nia says the perimeter of a 12 cm by 5 cm rectangle is 17 cm. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0181",
@@ -7932,7 +7932,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai computes the perimeter of a 7 cm by 6 cm rectangle as 7 + 6 = 13 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":7,"h":6,"said":13},"truth":false,"promptText":"Kai says the perimeter of a 7 cm by 6 cm rectangle is 7 + 6 = 13 cm. Is Kai right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0182",
@@ -7942,7 +7942,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, June reports 16 cm of perimeter for a 8 by 8 rectangle. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":8,"h":8,"said":16},"truth":false,"promptText":"June gives 16 cm as the perimeter of an 8 cm by 8 cm rectangle. Is June's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0183",
@@ -7952,7 +7952,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily computes the perimeter of a 9 cm by 7 cm rectangle as 9 + 7 = 16 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":9,"h":7,"said":16},"truth":false,"promptText":"To find the perimeter of a 9 cm by 7 cm rectangle, Lily writes 9 + 7 = 16 cm. Is Lily's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0184",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, Amara reports 20 cm of perimeter for a 10 by 10 rectangle. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":10,"h":10,"said":20},"truth":false,"promptText":"Amara says the perimeter of a 10 cm by 10 cm rectangle is 20 cm. Is Amara right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0185",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo computes the perimeter of a 11 cm by 6 cm rectangle as 11 + 6 = 17 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":11,"h":6,"said":17},"truth":false,"promptText":"Leo finds the perimeter of an 11 cm by 6 cm rectangle by adding 11 + 6 = 17 cm. Is Leo right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0186",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, Mina reports 15 cm of perimeter for a 12 by 3 rectangle. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":3,"said":15},"truth":false,"promptText":"Mina gives 15 cm as the perimeter of a 12 cm by 3 cm rectangle. Is Mina's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0187",
@@ -7992,7 +7992,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo computes the perimeter of a 9 cm by 9 cm rectangle as 9 + 9 = 18 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":9,"h":9,"said":18},"truth":false,"promptText":"To find the perimeter of a 9 cm by 9 cm rectangle, Theo writes 9 + 9 = 18 cm. Is Theo's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0188",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, Ida reports 11 cm of perimeter for a 7 by 4 rectangle. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":7,"h":4,"said":11},"truth":false,"promptText":"Ida says the perimeter of a 7 cm by 4 cm rectangle is 11 cm. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0189",
@@ -8012,7 +8012,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe computes the perimeter of a 8 cm by 5 cm rectangle as 8 + 5 = 13 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":8,"h":5,"said":13},"truth":false,"promptText":"Zoe says the perimeter of an 8 cm by 5 cm rectangle is 8 + 5 = 13 cm. Is Zoe right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0190",
@@ -8022,7 +8022,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, Rosa reports 12 cm of perimeter for a 9 by 3 rectangle. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":9,"h":3,"said":12},"truth":false,"promptText":"Rosa gives 12 cm as the perimeter of a 9 cm by 3 cm rectangle. Is Rosa's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0191",
@@ -8032,7 +8032,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego computes the perimeter of a 10 cm by 6 cm rectangle as 10 + 6 = 16 cm. Does the work hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":10,"h":6,"said":16},"truth":false,"promptText":"Diego finds the perimeter of a 10 cm by 6 cm rectangle by adding 10 + 6 = 16 cm. Is Diego right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0192",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Adding one length and one width, Nora reports 15 cm of perimeter for a 11 by 4 rectangle. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":11,"h":4,"said":15},"truth":false,"promptText":"Nora says the perimeter of an 11 cm by 4 cm rectangle is 15 cm. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0193",
@@ -8052,7 +8052,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn's perimeter for a 12 m by 8 m rectangle reads 12 + 8 = 20 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":8,"said":20},"truth":false,"promptText":"Finn works out the perimeter of a 12 m by 8 m rectangle as 12 + 8 = 20 m. Is Finn right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0194",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya defends 19 m as the perimeter of a 13 by 6 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":13,"h":6,"said":19},"truth":false,"promptText":"Priya gives 19 m as the perimeter of a 13 m by 6 m rectangle. Is Priya's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0195",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam's perimeter for a 14 m by 5 m rectangle reads 14 + 5 = 19 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":5,"said":19},"truth":false,"promptText":"To find the perimeter of a 14 m by 5 m rectangle, Sam writes 14 + 5 = 19 m. Is Sam's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0196",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia defends 19 m as the perimeter of a 15 by 4 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":15,"h":4,"said":19},"truth":false,"promptText":"Nia gives 19 m as the perimeter of a 15 m by 4 m rectangle. Is Nia's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0197",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai's perimeter for a 12 m by 12 m rectangle reads 12 + 12 = 24 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":12,"said":24},"truth":false,"promptText":"To find the perimeter of a 12 m by 12 m rectangle, Kai writes 12 + 12 = 24 m. Is Kai's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0198",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June defends 22 m as the perimeter of a 13 by 9 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":13,"h":9,"said":22},"truth":false,"promptText":"June gives 22 m as the perimeter of a 13 m by 9 m rectangle. Is June's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0199",
@@ -8112,7 +8112,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily's perimeter for a 14 m by 7 m rectangle reads 14 + 7 = 21 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":7,"said":21},"truth":false,"promptText":"To find the perimeter of a 14 m by 7 m rectangle, Lily writes 14 + 7 = 21 m. Is Lily's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0200",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara defends 23 m as the perimeter of a 15 by 8 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":15,"h":8,"said":23},"truth":false,"promptText":"Amara says the perimeter of a 15 m by 8 m rectangle is 23 m. Is Amara right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0201",
@@ -8132,7 +8132,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo's perimeter for a 12 m by 11 m rectangle reads 12 + 11 = 23 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":11,"said":23},"truth":false,"promptText":"Leo works out the perimeter of a 12 m by 11 m rectangle as 12 + 11 = 23 m. Is Leo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0202",
@@ -8142,7 +8142,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina defends 26 m as the perimeter of a 13 by 13 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":13,"h":13,"said":26},"truth":false,"promptText":"Mina says the perimeter of a 13 m by 13 m rectangle is 26 m. Is Mina right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0203",
@@ -8152,7 +8152,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo's perimeter for a 14 m by 10 m rectangle reads 14 + 10 = 24 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":10,"said":24},"truth":false,"promptText":"Theo works out the perimeter of a 14 m by 10 m rectangle as 14 + 10 = 24 m. Is Theo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0204",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida defends 30 m as the perimeter of a 15 by 15 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":15,"h":15,"said":30},"truth":false,"promptText":"Ida says the perimeter of a 15 m by 15 m rectangle is 30 m. Is Ida right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0205",
@@ -8172,7 +8172,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe's perimeter for a 14 m by 14 m rectangle reads 14 + 14 = 28 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":14,"said":28},"truth":false,"promptText":"To find the perimeter of a 14 m by 14 m rectangle, Zoe writes 14 + 14 = 28 m. Is Zoe's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0206",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa defends 20 m as the perimeter of a 12 by 8 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":8,"said":20},"truth":false,"promptText":"Rosa says the perimeter of a 12 m by 8 m rectangle is 20 m. Is Rosa right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0207",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego's perimeter for a 13 m by 6 m rectangle reads 13 + 6 = 19 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":13,"h":6,"said":19},"truth":false,"promptText":"To find the perimeter of a 13 m by 6 m rectangle, Diego writes 13 + 6 = 19 m. Is Diego's work correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0208",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora defends 19 m as the perimeter of a 14 by 5 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":5,"said":19},"truth":false,"promptText":"Nora says the perimeter of a 14 m by 5 m rectangle is 19 m. Is Nora right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0209",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca's perimeter for a 15 m by 4 m rectangle reads 15 + 4 = 19 m. Is the work sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":15,"h":4,"said":19},"truth":false,"promptText":"Luca works out the perimeter of a 15 m by 4 m rectangle as 15 + 4 = 19 m. Is Luca right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0210",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "perimHalfTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava defends 24 m as the perimeter of a 12 by 12 rectangle. Should the defense stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":12,"said":24},"truth":false,"promptText":"Ava gives 24 m as the perimeter of a 12 m by 12 m rectangle. Is Ava's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0211",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":3,"kind":"perimSaid","said":12},"truth":false,"promptText":"The border of a 3-unit by 4-unit rectangle is 12 units, claims Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":3,"kind":"perimSaid","said":12},"truth":false,"promptText":"Ava says the trip around a 3-by-4 rectangle is 12 units. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0213",
@@ -8262,7 +8262,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":4,"kind":"perimSaid","said":20},"truth":false,"promptText":"The border of a 4-unit by 5-unit rectangle is 20 units, claims Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":4,"kind":"perimSaid","said":18},"truth":true,"promptText":"Ben finds that the border of a 4-unit by 5-unit rectangle is 18 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0215",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":2,"kind":"perimSaid","said":12},"truth":false,"promptText":"The border of a 2-unit by 6-unit rectangle is 12 units, claims Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":2,"kind":"perimSaid","said":16},"truth":true,"promptText":"Priya finds that the border of a 2-unit by 6-unit rectangle is 16 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0217",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":3,"kind":"perimSaid","said":9},"truth":false,"promptText":"The border of a 3-unit by 3-unit rectangle is 9 units, claims Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":3,"kind":"perimSaid","said":12},"truth":true,"promptText":"Nia finds that the border of a 3-unit by 3-unit rectangle is 12 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0219",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":2,"kind":"perimSaid","said":12},"truth":true,"promptText":"Kai says the trip around a 2-by-4 rectangle is 12 units. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":2,"kind":"perimSaid","said":12},"truth":true,"promptText":"Kai finds that the border of a 2-unit by 4-unit rectangle is 12 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0220",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":5,"kind":"perimSaid","said":10},"truth":false,"promptText":"The border of a 5-unit by 5-unit rectangle is 10 units, claims June. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":5,"kind":"perimSaid","said":10},"truth":false,"promptText":"June says the trip around a 5-by-5 rectangle is 10 units. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0221",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":3,"kind":"perimSaid","said":14},"truth":true,"promptText":"Lily says the trip around a 3-by-4 rectangle is 14 units. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":3,"kind":"perimSaid","said":14},"truth":true,"promptText":"Lily finds that the border of a 3-unit by 4-unit rectangle is 14 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0222",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":2,"kind":"perimSaid","said":6},"truth":false,"promptText":"The border of a 2-unit by 3-unit rectangle is 6 units, claims Amara. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":2,"kind":"perimSaid","said":10},"truth":true,"promptText":"Amara finds that the border of a 2-unit by 3-unit rectangle is 10 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0223",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":2,"kind":"perimSaid","said":10},"truth":false,"promptText":"The border of a 2-unit by 5-unit rectangle is 10 units, claims Mina. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":2,"kind":"perimSaid","said":10},"truth":false,"promptText":"Mina finds that the border of a 2-unit by 5-unit rectangle is 10 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0225",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":3,"kind":"perimSaid","said":9},"truth":false,"promptText":"The border of a 3-unit by 6-unit rectangle is 9 units, claims Ida. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":3,"kind":"perimSaid","said":18},"truth":true,"promptText":"Ida finds that the border of a 3-unit by 6-unit rectangle is 18 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0227",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":4,"kind":"perimSaid","said":8},"truth":false,"promptText":"The border of a 4-unit by 4-unit rectangle is 8 units, claims Rosa. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":4,"kind":"perimSaid","said":8},"truth":false,"promptText":"Rosa finds that the border of a 4-unit by 4-unit rectangle is 8 units. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0229",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":7,"kind":"perimSaid","said":22},"truth":true,"promptText":"June records 22 cm for the perimeter of a 7 cm by 4 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":7,"kind":"perimSaid","said":22},"truth":true,"promptText":"June finds that the perimeter of a 7 cm by 4 cm rectangle is 22 cm. Is June right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0230",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":8,"kind":"perimSaid","said":40},"truth":false,"promptText":"Check Lily's perimeter of 40 cm for a 8 by 5 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":8,"kind":"perimSaid","said":40},"truth":false,"promptText":"Lily finds that the perimeter of an 8 cm by 5 cm rectangle is 40 cm. Is Lily right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0231",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":9,"kind":"perimSaid","said":24},"truth":true,"promptText":"Amara records 24 cm for the perimeter of a 9 cm by 3 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":9,"kind":"perimSaid","said":24},"truth":true,"promptText":"Amara finds that the perimeter of a 9 cm by 3 cm rectangle is 24 cm. Is Amara right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0232",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":10,"kind":"perimSaid","said":60},"truth":false,"promptText":"Check Leo's perimeter of 60 cm for a 10 by 6 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":10,"kind":"perimSaid","said":60},"truth":false,"promptText":"Leo writes 60 cm as the perimeter of a 10 cm by 6 cm rectangle. Is Leo's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0233",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":11,"kind":"perimSaid","said":30},"truth":true,"promptText":"Mina records 30 cm for the perimeter of a 11 cm by 4 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":11,"kind":"perimSaid","said":30},"truth":true,"promptText":"Mina writes 30 cm as the perimeter of an 11 cm by 4 cm rectangle. Is Mina's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0234",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":12,"kind":"perimSaid","said":60},"truth":false,"promptText":"Check Theo's perimeter of 60 cm for a 12 by 5 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":12,"kind":"perimSaid","said":34},"truth":true,"promptText":"Theo finds that the perimeter of a 12 cm by 5 cm rectangle is 34 cm. Is Theo right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0235",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":7,"kind":"perimSaid","said":26},"truth":true,"promptText":"Ida records 26 cm for the perimeter of a 7 cm by 6 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":7,"kind":"perimSaid","said":26},"truth":true,"promptText":"Ida writes 26 cm as the perimeter of a 7 cm by 6 cm rectangle. Is Ida's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0236",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":8,"kind":"perimSaid","said":64},"truth":false,"promptText":"Check Zoe's perimeter of 64 cm for a 8 by 8 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"w":8,"kind":"perimSaid","said":32},"truth":true,"promptText":"Zoe writes 32 cm as the perimeter of an 8 cm by 8 cm rectangle. Is Zoe's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0237",
@@ -8492,7 +8492,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"w":9,"kind":"perimSaid","said":32},"truth":true,"promptText":"Rosa records 32 cm for the perimeter of a 9 cm by 7 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"w":9,"kind":"perimSaid","said":32},"truth":true,"promptText":"Rosa finds that the perimeter of a 9 cm by 7 cm rectangle is 32 cm. Is Rosa right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0238",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":10,"w":10,"kind":"perimSaid","said":100},"truth":false,"promptText":"Check Diego's perimeter of 100 cm for a 10 by 10 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"w":10,"kind":"perimSaid","said":40},"truth":true,"promptText":"Diego finds that the perimeter of a 10 cm by 10 cm rectangle is 40 cm. Is Diego right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0239",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":11,"kind":"perimSaid","said":34},"truth":true,"promptText":"Nora records 34 cm for the perimeter of a 11 cm by 6 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":11,"kind":"perimSaid","said":34},"truth":true,"promptText":"Nora finds that the perimeter of an 11 cm by 6 cm rectangle is 34 cm. Is Nora right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0240",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":12,"kind":"perimSaid","said":36},"truth":false,"promptText":"Check Luca's perimeter of 36 cm for a 12 by 3 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":12,"kind":"perimSaid","said":30},"truth":true,"promptText":"Luca writes 30 cm as the perimeter of a 12 cm by 3 cm rectangle. Is Luca's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0241",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"w":9,"kind":"perimSaid","said":36},"truth":true,"promptText":"Ava records 36 cm for the perimeter of a 9 cm by 9 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"w":9,"kind":"perimSaid","said":36},"truth":true,"promptText":"Ava writes 36 cm as the perimeter of a 9 cm by 9 cm rectangle. Is Ava's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0242",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":7,"kind":"perimSaid","said":28},"truth":false,"promptText":"Check Omar's perimeter of 28 cm for a 7 by 4 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":7,"kind":"perimSaid","said":28},"truth":false,"promptText":"Omar finds that the perimeter of a 7 cm by 4 cm rectangle is 28 cm. Is Omar right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0243",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":8,"kind":"perimSaid","said":26},"truth":true,"promptText":"Ben records 26 cm for the perimeter of a 8 cm by 5 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":8,"kind":"perimSaid","said":26},"truth":true,"promptText":"Ben finds that the perimeter of an 8 cm by 5 cm rectangle is 26 cm. Is Ben right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0244",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"w":9,"kind":"perimSaid","said":27},"truth":false,"promptText":"Check Finn's perimeter of 27 cm for a 9 by 3 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":3,"w":9,"kind":"perimSaid","said":24},"truth":true,"promptText":"Finn writes 24 cm as the perimeter of a 9 cm by 3 cm rectangle. Is Finn's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0245",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":10,"kind":"perimSaid","said":32},"truth":true,"promptText":"Priya records 32 cm for the perimeter of a 10 cm by 6 cm rectangle. Does the record hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":10,"kind":"perimSaid","said":32},"truth":true,"promptText":"Priya writes 32 cm as the perimeter of a 10 cm by 6 cm rectangle. Is Priya's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0246",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":11,"kind":"perimSaid","said":44},"truth":false,"promptText":"Check Sam's perimeter of 44 cm for a 11 by 4 rectangle. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":11,"kind":"perimSaid","said":44},"truth":false,"promptText":"Sam writes 44 cm as the perimeter of an 11 cm by 4 cm rectangle. Is Sam's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0247",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"w":12,"kind":"perimSaid","said":40},"truth":true,"promptText":"Amara certifies 40 m as the perimeter of a 12 m by 8 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"w":12,"kind":"perimSaid","said":40},"truth":true,"promptText":"Amara works out that a 12 m by 8 m rectangle has a perimeter of 40 m. Is Amara's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0248",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":13,"kind":"perimSaid","said":78},"truth":false,"promptText":"Audit Leo's sheet: a 13 by 6 rectangle, perimeter written 78. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"w":13,"kind":"perimSaid","said":78},"truth":false,"promptText":"Leo works out that a 13 m by 6 m rectangle has a perimeter of 78 m. Is Leo's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0249",
@@ -8612,7 +8612,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":14,"kind":"perimSaid","said":38},"truth":true,"promptText":"Mina certifies 38 m as the perimeter of a 14 m by 5 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"w":14,"kind":"perimSaid","said":38},"truth":true,"promptText":"Mina works out that a 14 m by 5 m rectangle has a perimeter of 38 m. Is Mina's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0250",
@@ -8622,7 +8622,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":15,"kind":"perimSaid","said":60},"truth":false,"promptText":"Audit Theo's sheet: a 15 by 4 rectangle, perimeter written 60. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"w":15,"kind":"perimSaid","said":60},"truth":false,"promptText":"Theo says a 15 m by 4 m rectangle has a perimeter of 60 m. Is Theo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0251",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"w":12,"kind":"perimSaid","said":48},"truth":true,"promptText":"Ida certifies 48 m as the perimeter of a 12 m by 12 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"w":12,"kind":"perimSaid","said":48},"truth":true,"promptText":"Ida says a 12 m by 12 m rectangle has a perimeter of 48 m. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0252",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":9,"w":13,"kind":"perimSaid","said":117},"truth":false,"promptText":"Audit Zoe's sheet: a 13 by 9 rectangle, perimeter written 117. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"w":13,"kind":"perimSaid","said":44},"truth":true,"promptText":"On Zoe's worksheet, the perimeter of a 13 m by 9 m rectangle is written as 44 m. Is Zoe's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0253",
@@ -8652,7 +8652,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"w":14,"kind":"perimSaid","said":42},"truth":true,"promptText":"Rosa certifies 42 m as the perimeter of a 14 m by 7 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"w":14,"kind":"perimSaid","said":42},"truth":true,"promptText":"Rosa works out that a 14 m by 7 m rectangle has a perimeter of 42 m. Is Rosa's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0254",
@@ -8662,7 +8662,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":15,"kind":"perimSaid","said":120},"truth":false,"promptText":"Audit Diego's sheet: a 15 by 8 rectangle, perimeter written 120. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"w":15,"kind":"perimSaid","said":46},"truth":true,"promptText":"On Diego's worksheet, the perimeter of a 15 m by 8 m rectangle is written as 46 m. Is Diego's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0255",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":11,"w":12,"kind":"perimSaid","said":46},"truth":true,"promptText":"Nora certifies 46 m as the perimeter of a 12 m by 11 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":11,"w":12,"kind":"perimSaid","said":46},"truth":true,"promptText":"Nora works out that a 12 m by 11 m rectangle has a perimeter of 46 m. Is Nora's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0256",
@@ -8682,7 +8682,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":13,"w":13,"kind":"perimSaid","said":169},"truth":false,"promptText":"Audit Luca's sheet: a 13 by 13 rectangle, perimeter written 169. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":13,"w":13,"kind":"perimSaid","said":52},"truth":true,"promptText":"On Luca's worksheet, the perimeter of a 13 m by 13 m rectangle is written as 52 m. Is Luca's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0257",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"w":14,"kind":"perimSaid","said":48},"truth":true,"promptText":"Ava certifies 48 m as the perimeter of a 14 m by 10 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"w":14,"kind":"perimSaid","said":48},"truth":true,"promptText":"Ava says a 14 m by 10 m rectangle has a perimeter of 48 m. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0258",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":15,"w":15,"kind":"perimSaid","said":225},"truth":false,"promptText":"Audit Omar's sheet: a 15 by 15 rectangle, perimeter written 225. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":15,"w":15,"kind":"perimSaid","said":60},"truth":true,"promptText":"Omar writes 60 m for the perimeter of a 15 m by 15 m rectangle. Is Omar right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0259",
@@ -8712,7 +8712,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"w":14,"kind":"perimSaid","said":56},"truth":true,"promptText":"Ben certifies 56 m as the perimeter of a 14 m by 14 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"w":14,"kind":"perimSaid","said":56},"truth":true,"promptText":"Ben writes 56 m for the perimeter of a 14 m by 14 m rectangle. Is Ben right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0260",
@@ -8722,7 +8722,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":12,"kind":"perimSaid","said":96},"truth":false,"promptText":"Audit Finn's sheet: a 12 by 8 rectangle, perimeter written 96. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"w":12,"kind":"perimSaid","said":96},"truth":false,"promptText":"Finn writes 96 m for the perimeter of a 12 m by 8 m rectangle. Is Finn right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0261",
@@ -8732,7 +8732,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":13,"kind":"perimSaid","said":38},"truth":true,"promptText":"Priya certifies 38 m as the perimeter of a 13 m by 6 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"w":13,"kind":"perimSaid","said":38},"truth":true,"promptText":"Priya says a 13 m by 6 m rectangle has a perimeter of 38 m. Is Priya right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0262",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":14,"kind":"perimSaid","said":70},"truth":false,"promptText":"Audit Sam's sheet: a 14 by 5 rectangle, perimeter written 70. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":5,"w":14,"kind":"perimSaid","said":70},"truth":false,"promptText":"On Sam's worksheet, the perimeter of a 14 m by 5 m rectangle is written as 70 m. Is Sam's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0263",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":15,"kind":"perimSaid","said":38},"truth":true,"promptText":"Nia certifies 38 m as the perimeter of a 15 m by 4 m rectangle. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":4,"w":15,"kind":"perimSaid","said":38},"truth":true,"promptText":"Nia says a 15 m by 4 m rectangle has a perimeter of 38 m. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0264",
@@ -8762,7 +8762,7 @@ export const ITEMS = [
     structureType: "perimSaidJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":12,"w":12,"kind":"perimSaid","said":144},"truth":false,"promptText":"Audit Kai's sheet: a 12 by 12 rectangle, perimeter written 144. Clean audit?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"w":12,"kind":"perimSaid","said":48},"truth":true,"promptText":"On Kai's worksheet, the perimeter of a 12 m by 12 m rectangle is written as 48 m. Is Kai's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0265",
@@ -8772,7 +8772,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia wants the trip AROUND a 2-by-3 rectangle and answers with the 6 unit squares inside it. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":3,"said":6},"truth":false,"promptText":"Nia wants the trip around a 2-by-3 rectangle and counts the 6 unit squares inside it. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0266",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Asked for the border length of a 3-by-4 rectangle, Kai counts the 12 squares it covers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":4,"said":12},"truth":false,"promptText":"Asked for the border length of a 3-by-4 rectangle, Kai counts the 12 squares it covers. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0267",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June wants the trip AROUND a 2-by-5 rectangle and answers with the 10 unit squares inside it. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":5,"said":14},"truth":true,"promptText":"June wants the trip around a 2-by-5 rectangle and counts the 14 units along its edges. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0268",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Asked for the border length of a 4-by-5 rectangle, Lily counts the 20 squares it covers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":4,"h":5,"said":18},"truth":true,"promptText":"Asked for the border length of a 4-by-5 rectangle, Lily counts the 18 units along its edges. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0269",
@@ -8812,7 +8812,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara wants the trip AROUND a 3-by-6 rectangle and answers with the 18 unit squares inside it. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":5,"said":15},"truth":false,"promptText":"Amara wants the distance around a 3-by-5 rectangle. Amara counts the 15 unit squares inside it and says the distance around is 15 units. Is Amara right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0270",
@@ -8822,7 +8822,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Asked for the border length of a 2-by-6 rectangle, Leo counts the 12 squares it covers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":6,"said":12},"truth":false,"promptText":"Asked for the border length of a 2-by-6 rectangle, Leo counts the 12 squares it covers. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0271",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina wants the trip AROUND a 4-by-4 rectangle and answers with the 16 unit squares inside it. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":6,"said":12},"truth":false,"promptText":"Mina counts the 12 unit squares inside a 2-by-6 rectangle and says the distance around it is 12 units. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0272",
@@ -8842,7 +8842,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Asked for the border length of a 3-by-3 rectangle, Theo counts the 9 squares it covers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":3,"said":12},"truth":true,"promptText":"Asked for the border length of a 3-by-3 rectangle, Theo counts the 12 units along its edges. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0273",
@@ -8852,7 +8852,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida wants the trip AROUND a 2-by-4 rectangle and answers with the 8 unit squares inside it. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":4,"said":12},"truth":true,"promptText":"Ida wants the trip around a 2-by-4 rectangle and counts the 12 units along its edges. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0274",
@@ -8862,7 +8862,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Asked for the border length of a 5-by-4 rectangle, Zoe counts the 20 squares it covers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":5,"h":4,"said":20},"truth":false,"promptText":"Asked for the border length of a 5-by-4 rectangle, Zoe counts the 20 squares it covers. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0275",
@@ -8872,7 +8872,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa wants the trip AROUND a 2-by-3 rectangle and answers with the 6 unit squares inside it. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":3,"said":10},"truth":true,"promptText":"Rosa wants the trip around a 2-by-3 rectangle and counts the 10 units along its edges. Is Rosa right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0276",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Asked for the border length of a 3-by-4 rectangle, Diego counts the 12 squares it covers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":3,"h":4,"said":12},"truth":false,"promptText":"Asked for the border length of a 3-by-4 rectangle, Diego counts the 12 squares it covers. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0277",
@@ -8892,7 +8892,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora wants the trip AROUND a 2-by-5 rectangle and answers with the 10 unit squares inside it. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":5,"said":10},"truth":false,"promptText":"Nora wants the trip around a 2-by-5 rectangle and counts the 10 unit squares inside it. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0278",
@@ -8902,7 +8902,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Asked for the border length of a 4-by-5 rectangle, Luca counts the 20 squares it covers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":4,"h":5,"said":20},"truth":false,"promptText":"Asked for the border length of a 4-by-5 rectangle, Luca counts the 20 squares it covers. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0279",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava wants the trip AROUND a 3-by-6 rectangle and answers with the 18 unit squares inside it. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":7,"said":14},"truth":false,"promptText":"Ava wants the distance around a 2-by-7 rectangle, so Ava counts the 14 unit squares inside it. Is 14 units the distance around the rectangle?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0280",
@@ -8922,7 +8922,7 @@ export const ITEMS = [
     structureType: "swapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Asked for the border length of a 2-by-6 rectangle, Omar counts the 12 squares it covers. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":2,"h":6,"said":16},"truth":true,"promptText":"Asked for the border length of a 2-by-6 rectangle, Omar counts the 16 units along its edges. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0281",
@@ -8932,7 +8932,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe answers a perimeter question about a 7 cm by 4 cm rectangle with its area, 28. Does the answer fit the question?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":7,"h":4,"said":28},"truth":false,"promptText":"Zoe is asked for the perimeter of a 7 cm by 4 cm rectangle and answers 28 cm. Is Zoe right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0282",
@@ -8942,7 +8942,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For the distance around a 8 by 5 rectangle, Rosa gives 40, the area. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":8,"h":5,"said":40},"truth":false,"promptText":"For the distance around an 8 cm by 5 cm rectangle, Rosa gives 40 cm. Is Rosa's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0283",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego answers a perimeter question about a 9 cm by 3 cm rectangle with its area, 27. Does the answer fit the question?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":9,"h":3,"said":24},"truth":true,"promptText":"Diego is asked for the perimeter of a 9 cm by 3 cm rectangle and answers 24 cm. Is Diego right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0284",
@@ -8962,7 +8962,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For the distance around a 10 by 6 rectangle, Nora gives 60, the area. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":10,"h":6,"said":60},"truth":false,"promptText":"For the distance around a 10 cm by 6 cm rectangle, Nora gives 60 cm. Is Nora's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0285",
@@ -8972,7 +8972,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca answers a perimeter question about a 11 cm by 4 cm rectangle with its area, 44. Does the answer fit the question?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":11,"h":4,"said":44},"truth":false,"promptText":"Luca is asked for the perimeter of an 11 cm by 4 cm rectangle and answers 44 cm. Is Luca right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0286",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For the distance around a 12 by 5 rectangle, Ava gives 60, the area. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":5,"said":34},"truth":true,"promptText":"For the distance around a 12 cm by 5 cm rectangle, Ava gives 34 cm. Is Ava's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0287",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar answers a perimeter question about a 7 cm by 6 cm rectangle with its area, 42. Does the answer fit the question?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":7,"h":6,"said":26},"truth":true,"promptText":"Omar is asked for the perimeter of a 7 cm by 6 cm rectangle and answers 26 cm. Is Omar right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0288",
@@ -9002,7 +9002,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For the distance around a 8 by 8 rectangle, Ben gives 64, the area. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":8,"h":8,"said":64},"truth":false,"promptText":"For the distance around an 8 cm by 8 cm rectangle, Ben gives 64 cm. Is Ben's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0289",
@@ -9012,7 +9012,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn answers a perimeter question about a 9 cm by 7 cm rectangle with its area, 63. Does the answer fit the question?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":9,"h":7,"said":63},"truth":false,"promptText":"Finn is asked for the perimeter of a 9 cm by 7 cm rectangle and answers 63 cm. Is Finn right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0290",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For the distance around a 10 by 10 rectangle, Priya gives 100, the area. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":10,"h":10,"said":40},"truth":true,"promptText":"For the distance around a 10 cm by 10 cm rectangle, Priya gives 40 cm. Is Priya's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0291",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam answers a perimeter question about a 11 cm by 6 cm rectangle with its area, 66. Does the answer fit the question?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":11,"h":6,"said":66},"truth":false,"promptText":"Sam is asked for the perimeter of an 11 cm by 6 cm rectangle and answers 66 cm. Is Sam right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0292",
@@ -9042,7 +9042,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For the distance around a 12 by 3 rectangle, Nia gives 36, the area. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":3,"said":36},"truth":false,"promptText":"For the distance around a 12 cm by 3 cm rectangle, Nia gives 36 cm. Is Nia's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0293",
@@ -9052,7 +9052,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai answers a perimeter question about a 9 cm by 9 cm rectangle with its area, 81. Does the answer fit the question?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":9,"h":9,"said":36},"truth":true,"promptText":"Kai is asked for the perimeter of a 9 cm by 9 cm rectangle and answers 36 cm. Is Kai right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0294",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For the distance around a 7 by 4 rectangle, June gives 28, the area. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":7,"h":4,"said":22},"truth":true,"promptText":"For the distance around a 7 cm by 4 cm rectangle, June gives 22 cm. Is June's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0295",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily answers a perimeter question about a 8 cm by 5 cm rectangle with its area, 40. Does the answer fit the question?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":8,"h":5,"said":40},"truth":false,"promptText":"Lily is asked for the perimeter of an 8 cm by 5 cm rectangle and answers 40 cm. Is Lily right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0296",
@@ -9082,7 +9082,7 @@ export const ITEMS = [
     structureType: "swapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"For the distance around a 9 by 3 rectangle, Amara gives 27, the area. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":9,"h":3,"said":27},"truth":false,"promptText":"For the distance around a 9 cm by 3 cm rectangle, Amara gives 27 cm. Is Amara's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0297",
@@ -9092,7 +9092,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego swaps measures: asked for perimeter of a 12 m by 8 m rectangle, Diego reports the area 96. Is the report right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":8,"said":96},"truth":false,"promptText":"Diego is asked for the perimeter of a 12 m by 8 m rectangle. Diego says it is 96 m. Is Diego's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0298",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"The question asks perimeter; Nora supplies 78 square m of area for the 13 by 6 rectangle. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":13,"h":6,"said":78},"truth":false,"promptText":"A question asks for the perimeter of a 13 m by 6 m rectangle. Nora answers 78 m. Is Nora's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0299",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca swaps measures: asked for perimeter of a 14 m by 5 m rectangle, Luca reports the area 70. Is the report right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":5,"said":70},"truth":false,"promptText":"Luca says the perimeter of a 14 m by 5 m rectangle is 70 m. Is Luca right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0300",
@@ -9122,7 +9122,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"The question asks perimeter; Ava supplies 60 square m of area for the 15 by 4 rectangle. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":15,"h":4,"said":60},"truth":false,"promptText":"Ava is asked for the perimeter of a 15 m by 4 m rectangle and answers 60 m. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0301",
@@ -9132,7 +9132,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar swaps measures: asked for perimeter of a 12 m by 12 m rectangle, Omar reports the area 144. Is the report right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":12,"said":48},"truth":true,"promptText":"Omar is asked for the perimeter of a 12 m by 12 m rectangle. Omar says it is 48 m. Is Omar's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0302",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"The question asks perimeter; Ben supplies 117 square m of area for the 13 by 9 rectangle. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":13,"h":9,"said":44},"truth":true,"promptText":"A question asks for the perimeter of a 13 m by 9 m rectangle. Ben answers 44 m. Is Ben's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0303",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn swaps measures: asked for perimeter of a 14 m by 7 m rectangle, Finn reports the area 98. Is the report right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":7,"said":42},"truth":true,"promptText":"Finn says the perimeter of a 14 m by 7 m rectangle is 42 m. Is Finn right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0304",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"The question asks perimeter; Priya supplies 120 square m of area for the 15 by 8 rectangle. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":15,"h":8,"said":120},"truth":false,"promptText":"Priya is asked for the perimeter of a 15 m by 8 m rectangle and answers 120 m. Is Priya right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0305",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam swaps measures: asked for perimeter of a 12 m by 11 m rectangle, Sam reports the area 132. Is the report right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":11,"said":46},"truth":true,"promptText":"Sam says the perimeter of a 12 m by 11 m rectangle is 46 m. Is Sam right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0306",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"The question asks perimeter; Nia supplies 169 square m of area for the 13 by 13 rectangle. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":13,"h":13,"said":52},"truth":true,"promptText":"Nia is asked for the perimeter of a 13 m by 13 m rectangle and answers 52 m. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0307",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai swaps measures: asked for perimeter of a 14 m by 10 m rectangle, Kai reports the area 140. Is the report right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":10,"said":140},"truth":false,"promptText":"Kai is asked for the perimeter of a 14 m by 10 m rectangle. Kai says it is 140 m. Is Kai's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0308",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"The question asks perimeter; June supplies 225 square m of area for the 15 by 15 rectangle. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":15,"h":15,"said":225},"truth":false,"promptText":"June is asked for the perimeter of a 15 m by 15 m rectangle and answers 225 m. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0309",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily swaps measures: asked for perimeter of a 14 m by 14 m rectangle, Lily reports the area 196. Is the report right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":14,"said":56},"truth":true,"promptText":"Lily is asked for the perimeter of a 14 m by 14 m rectangle. Lily says it is 56 m. Is Lily's answer right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0310",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"The question asks perimeter; Amara supplies 96 square m of area for the 12 by 8 rectangle. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":12,"h":8,"said":96},"truth":false,"promptText":"A question asks for the perimeter of a 12 m by 8 m rectangle. Amara answers 96 m. Is Amara's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0311",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo swaps measures: asked for perimeter of a 13 m by 6 m rectangle, Leo reports the area 78. Is the report right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":13,"h":6,"said":78},"truth":false,"promptText":"Leo says the perimeter of a 13 m by 6 m rectangle is 78 m. Is Leo right about the perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0312",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "swapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"The question asks perimeter; Mina supplies 70 square m of area for the 14 by 5 rectangle. Correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"perimSaid","w":14,"h":5,"said":70},"truth":false,"promptText":"A question asks for the perimeter of a 14 m by 5 m rectangle. Mina answers 70 m. Is Mina's answer correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0313",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora slides two paper rectangles so they overlap, then adds their two areas to get the area they cover on the table. Is Nora right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora slides two paper rectangles on a table so they overlap. Nora adds their two areas. Is that the area they cover on the table?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0320",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping stickers cover the page, and Luca just adds their areas to find the covered space. Is that right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca puts two stickers on a page so they overlap. Luca adds their two areas. Does that give the space the stickers cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0321",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava slides two paper rectangles so they overlap, then adds their two areas to get the area they cover on the table. Is Ava right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava slides two paper rectangles on a table so they overlap. Ava adds their two areas. Is that the area they cover on the table?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0322",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping stickers cover the page, and Omar just adds their areas to find the covered space. Is that right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two stickers overlap on Omar's page. Omar adds the areas of the two stickers. Is that the space the stickers cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0323",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ben slides two paper rectangles so they overlap, then adds their two areas to get the area they cover on the table. Is Ben right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ben lays two paper rectangles on a table so that they overlap. Will adding their two areas give the area they cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0324",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping stickers cover the page, and Finn just adds their areas to find the covered space. Is that right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two stickers overlap on Finn's page. Finn adds the areas of the two stickers. Is that the space the stickers cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0325",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya slides two paper rectangles so they overlap, then adds their two areas to get the area they cover on the table. Is Priya right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya lays two paper rectangles on a table so that they overlap. Will adding their two areas give the area they cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0326",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping stickers cover the page, and Sam just adds their areas to find the covered space. Is that right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam puts two stickers on a page so they overlap. Sam adds their two areas. Does that give the space the stickers cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0327",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia slides two paper rectangles so they overlap, then adds their two areas to get the area they cover on the table. Is Nia right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia lays two paper rectangles on a table so that they overlap. Will adding their two areas give the area they cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0328",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping stickers cover the page, and Kai just adds their areas to find the covered space. Is that right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai puts two stickers on a page so they overlap. Kai adds their two areas. Does that give the space the stickers cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0329",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June slides two paper rectangles so they overlap, then adds their two areas to get the area they cover on the table. Is June right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June slides two paper rectangles on a table so they overlap. June adds their two areas. Is that the area they cover on the table?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0330",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping stickers cover the page, and Lily just adds their areas to find the covered space. Is that right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two stickers overlap on Lily's page. Lily adds the areas of the two stickers. Is that the space the stickers cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0331",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two rugs overlap on Omar's floor. Omar adds their areas to find the floor space they cover. Is Omar right about the floor space?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0332",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two rugs overlap on Finn's floor. Finn adds their areas to find the floor space they cover. Is Finn right about the floor space?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0334",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam lays two rugs on the floor so they overlap. Sam adds the two rug areas. Is that how much floor the rugs cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0336",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai lays two rugs on the floor so they overlap. Kai adds the two rug areas. Is that how much floor the rugs cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0338",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"With two overlapping posters, June adds the two areas for the covered wall space. Is June right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June hangs two posters so they overlap on a wall. June adds the two poster areas. Is that how much wall the posters cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0339",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily lays two rugs on the floor so they overlap. Lily adds the two rug areas. Is that how much floor the rugs cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0340",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"With two overlapping posters, Amara adds the two areas for the covered wall space. Is Amara right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara hangs two posters so they overlap on a wall. Amara adds the two poster areas. Is that how much wall the posters cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0341",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two rugs overlap on Leo's floor. Leo adds their areas to find the floor space they cover. Is Leo right about the floor space?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0342",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"With two overlapping posters, Mina adds the two areas for the covered wall space. Is Mina right? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two posters overlap on Mina's wall. Mina adds their two areas to find the wall space they cover. Is Mina right about the wall space?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0343",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two rugs overlap on Theo's floor. Theo adds their areas to find the floor space they cover. Is Theo right about the floor space?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0344",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"With two overlapping posters, Ida adds the two areas for the covered wall space. Is Ida right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two posters overlap on Ida's wall. Ida adds their two areas to find the wall space they cover. Is Ida right about the wall space?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0345",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe lays two rugs on the floor so they overlap. Zoe adds the two rug areas. Is that how much floor the rugs cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0346",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"With two overlapping posters, Rosa adds the two areas for the covered wall space. Is Rosa right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two posters overlap on Rosa's wall. Rosa adds their two areas to find the wall space they cover. Is Rosa right about the wall space?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0347",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego lays two rugs on the floor so they overlap. Diego adds the two rug areas. Is that how much floor the rugs cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0348",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"With two overlapping posters, Nora adds the two areas for the covered wall space. Is Nora right? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora hangs two posters so they overlap on a wall. Nora adds the two poster areas. Is that how much wall the posters cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0349",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two tarps overlap on the ground. Finn adds their areas to find how much ground they cover. Is Finn right about the ground covered?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0350",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; Priya adds both areas for the enclosed ground. Should the addition stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"One fence goes around two fields that overlap. Priya adds the areas of the two fields. Does that give the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0351",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam spreads two tarps on the ground so they overlap. Sam adds the two tarp areas. Is that how much ground the tarps cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0352",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; Nia adds both areas for the enclosed ground. Should the addition stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"One fence goes around two fields that overlap. Nia adds the areas of the two fields. Does that give the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0353",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai spreads two tarps on the ground so they overlap. Kai adds the two tarp areas. Is that how much ground the tarps cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0354",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; June adds both areas for the enclosed ground. Should the addition stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"One fence goes around two fields that overlap. June adds the areas of the two fields. Does that give the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0355",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily spreads two tarps on the ground so they overlap. Lily adds the two tarp areas. Is that how much ground the tarps cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0356",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; Amara adds both areas for the enclosed ground. Should the addition stand? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two fields overlap, and one fence goes around both of them. Amara adds the two field areas. Is that the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0357",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two tarps overlap on the ground. Leo adds their areas to find how much ground they cover. Is Leo right about the ground covered?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0358",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; Mina adds both areas for the enclosed ground. Should the addition stand? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two fields overlap, and one fence goes around both of them. Mina adds the two field areas. Is that the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0359",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two tarps overlap on the ground. Theo adds their areas to find how much ground they cover. Is Theo right about the ground covered?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0360",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; Ida adds both areas for the enclosed ground. Should the addition stand? The overlap counts once."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two fields overlap, and one fence goes around both of them. Ida adds the two field areas. Is that the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0361",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe spreads two tarps on the ground so they overlap. Zoe adds the two tarp areas. Is that how much ground the tarps cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0362",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; Rosa adds both areas for the enclosed ground. Should the addition stand? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two fields overlap, and one fence goes around both of them. Rosa adds the two field areas. Is that the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0363",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego spreads two tarps on the ground so they overlap. Diego adds the two tarp areas. Is that how much ground the tarps cover?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0364",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; Nora adds both areas for the enclosed ground. Should the addition stand? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two fields overlap, and one fence goes around both of them. Nora adds the two field areas. Is that the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0365",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two tarps overlap on the ground. Luca adds their areas to find how much ground they cover. Is Luca right about the ground covered?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0366",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "overlapTrap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Two overlapping fields are fenced as one; Ava adds both areas for the enclosed ground. Should the addition stand? Think about the doubled part."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"One fence goes around two fields that overlap. Ava adds the areas of the two fields. Does that give the area inside the fence?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0367",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Cutting a shape in two does not change the total space it covers, says Ava. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava says cutting a shape in two does not change the total space it covers. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0369",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Omar cuts a paper rectangle into two pieces and says the two pieces together cover the same amount as before. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar cuts a paper rectangle into two pieces and says the two pieces together cover more than before. Is Omar right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0370",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Cutting a shape in two does not change the total space it covers, says Ben. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ben says cutting a shape in two makes it cover more space in all. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0371",
@@ -9842,7 +9842,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Cutting a shape in two does not change the total space it covers, says Priya. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Priya says cutting a shape in two does not change the total space it covers. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0373",
@@ -9862,7 +9862,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Cutting a shape in two does not change the total space it covers, says Nia. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia says cutting a shape in two makes it cover more space in all. Is that right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0375",
@@ -9872,7 +9872,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Kai cuts a paper rectangle into two pieces and says the two pieces together cover the same amount as before. Is Kai right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Kai cuts a paper rectangle into two pieces. Do the two pieces together cover the same amount of space as the whole rectangle?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0376",
@@ -9882,7 +9882,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Cutting a shape in two does not change the total space it covers, says June. Is that right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"June cuts a paper shape in two. Do the two parts together cover the same space as the whole shape?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0377",
@@ -9892,7 +9892,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Lily cuts a paper rectangle into two pieces and says the two pieces together cover the same amount as before. Is Lily right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Lily cuts a paper rectangle into two pieces. Do the two pieces together cover the same amount of space as the whole rectangle?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0378",
@@ -9902,7 +9902,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Cutting a shape in two does not change the total space it covers, says Amara. Is that right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Amara cuts a paper shape in two. Do the two parts together cover the same space as the whole shape?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0379",
@@ -9912,7 +9912,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Leo cuts a paper rectangle into two pieces and says the two pieces together cover the same amount as before. Is Leo right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Leo cuts a paper rectangle into two pieces and says the pieces together cover as much as the whole rectangle did. Is Leo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0380",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Cutting a shape in two does not change the total space it covers, says Mina. Is that right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Mina says cutting a paper shape into two parts does not change the total space it covers. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0381",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Theo cuts a paper rectangle into two pieces and says the two pieces together cover the same amount as before. Is Theo right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo cuts a paper rectangle into two pieces and says the pieces together cover less than the whole rectangle did. Is Theo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0382",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "splitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Cutting a shape in two does not change the total space it covers, says Ida. Is that right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida says cutting a paper shape into two parts changes the total space it covers. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0383",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"June splits a garden into two beds and claims the total planted area stays the same. Does the claim hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"June splits a garden into two beds. Is the area of the two beds together the same as the area of the whole garden?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0384",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Dividing a floor plan into two rooms keeps the total floor area, argues Lily. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Lily says dividing a floor plan into two rooms keeps the total floor area the same. Is Lily right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0385",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Amara splits a garden into two beds and claims the total planted area stays the same. Does the claim hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Amara splits a garden into two beds. Is the area of the two beds together the same as the area of the whole garden?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0386",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Dividing a floor plan into two rooms keeps the total floor area, argues Leo. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo says dividing a floor plan into two rooms makes the total floor area bigger. Is Leo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0387",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Mina splits a garden into two beds and claims the total planted area stays the same. Does the claim hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Mina splits a garden into two beds and says the total planted area stays the same. Is Mina right about the planted area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0388",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Dividing a floor plan into two rooms keeps the total floor area, argues Theo. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Theo says dividing a floor plan into two rooms keeps the total floor area the same. Is Theo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0389",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ida splits a garden into two beds and claims the total planted area stays the same. Does the claim hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida splits a garden into two beds and says the total planted area gets smaller. Is Ida right about the planted area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0390",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Dividing a floor plan into two rooms keeps the total floor area, argues Zoe. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe says dividing a floor plan into two rooms makes the total floor area bigger. Is Zoe right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0391",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa splits a garden into two beds and claims the total planted area stays the same. Does the claim hold? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa splits a garden into two beds and says the total planted area stays the same. Is Rosa right about the planted area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0392",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Dividing a floor plan into two rooms keeps the total floor area, argues Diego. Is Diego right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Diego splits a floor plan into two rooms. Do the two rooms together have the same floor area as the whole plan?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0393",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nora splits a garden into two beds and claims the total planted area stays the same. Does the claim hold? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nora splits a garden into two beds. Is the area of the two beds together the same as the area of the whole garden?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0394",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Dividing a floor plan into two rooms keeps the total floor area, argues Luca. Is Luca right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Luca splits a floor plan into two rooms. Do the two rooms together have the same floor area as the whole plan?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0395",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava splits a garden into two beds and claims the total planted area stays the same. Does the claim hold? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava splits a garden into two beds and says the total planted area gets smaller. Is Ava right about the planted area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0396",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Dividing a floor plan into two rooms keeps the total floor area, argues Omar. Is Omar right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Omar says splitting a floor plan into two rooms keeps the total floor area the same. Is Omar right about the floor area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0397",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben splits a garden into two beds and claims the total planted area stays the same. Does the claim hold? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben splits a garden into two beds. Is the area of the two beds together the same as the area of the whole garden?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0398",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "splitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Dividing a floor plan into two rooms keeps the total floor area, argues Finn. Is Finn right? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn says splitting a floor plan into two rooms makes the total floor area bigger. Is Finn right about the floor area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0399",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"A region cut into two non-overlapping parts keeps its total area, states Leo. Should the statement stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Leo cuts a shape into two parts that do not overlap. Is the total area of the two parts the same as the area of the whole shape?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0401",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Mina cuts a field into two plots and says the two areas add up to the whole field. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina cuts a field into two plots and says the two areas add up to more than the whole field. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0402",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"A region cut into two non-overlapping parts keeps its total area, states Theo. Should the statement stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Theo cuts a shape into two parts that do not overlap. Is the total area of the two parts the same as the area of the whole shape?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0403",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"A region cut into two non-overlapping parts keeps its total area, states Zoe. Should the statement stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Zoe says a shape cut into two parts that do not overlap keeps its total area. Is Zoe right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0405",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa cuts a field into two plots and says the two areas add up to the whole field. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa cuts a field into two plots and says the two areas add up to more than the whole field. Is Rosa right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0406",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"A region cut into two non-overlapping parts keeps its total area, states Diego. Should the statement stand?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Diego cuts a shape into two parts that do not overlap. Is the total area of the two parts the same as the area of the whole shape?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0407",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nora cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nora cuts a field into two plots. Do the areas of the two plots add up to the area of the whole field?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0408",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"A region cut into two non-overlapping parts keeps its total area, states Luca. Should the statement stand? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca says a shape cut into two parts that do not overlap loses some of its total area. Is Luca right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0409",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava cuts a field into two plots. Do the areas of the two plots add up to the area of the whole field?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0410",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"A region cut into two non-overlapping parts keeps its total area, states Omar. Should the statement stand? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Omar cuts a shape into two parts that do not overlap. Is the total area of the two parts the same as the area of the whole shape?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0411",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben cuts a field into two plots and says the two areas add up to the area of the whole field. Is Ben right about the two plots?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0412",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"A region cut into two non-overlapping parts keeps its total area, states Finn. Should the statement stand? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn says a shape cut into two parts that do not overlap loses some of its total area. Is Finn right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0413",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Priya cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya cuts a field into two plots and says the two areas add up to more than the area of the whole field. Is Priya right about the two plots?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0414",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"A region cut into two non-overlapping parts keeps its total area, states Sam. Should the statement stand? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Sam says a shape cut into two parts that do not overlap keeps its total area. Is Sam right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0415",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":3,"c":2,"d":2,"kind":"joinSaid","said":10},"truth":true,"promptText":"Nia joins a 2-by-3 piece and a 2-by-2 piece (no overlap) and says they cover 10 unit squares. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":3,"c":2,"d":2,"kind":"joinSaid","said":10},"truth":true,"promptText":"Nia joins a 2-by-3 piece and a 2-by-2 piece with no overlap. Nia says they cover 10 unit squares. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0416",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":3,"b":3,"c":2,"d":2,"kind":"joinSaid","said":12},"truth":false,"promptText":"A 3-by-3 patch plus a 2-by-2 patch covers 12 unit squares, claims Kai. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":3,"b":3,"c":2,"d":2,"kind":"joinSaid","said":12},"truth":false,"promptText":"Kai joins a 3-by-3 piece and a 2-by-2 piece with no overlap. Kai says they cover 12 unit squares. Is Kai right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0417",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":4,"c":2,"d":2,"kind":"joinSaid","said":12},"truth":true,"promptText":"June joins a 2-by-4 piece and a 2-by-2 piece (no overlap) and says they cover 12 unit squares. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":4,"c":2,"d":2,"kind":"joinSaid","said":12},"truth":true,"promptText":"June puts a 2-by-4 rectangle next to a 2-by-2 rectangle with no overlap. June says the two cover 12 unit squares in all. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0418",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":3,"b":4,"c":2,"d":2,"kind":"joinSaid","said":14},"truth":false,"promptText":"A 3-by-4 patch plus a 2-by-2 patch covers 14 unit squares, claims Lily. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":3,"b":4,"c":2,"d":2,"kind":"joinSaid","said":14},"truth":false,"promptText":"Lily puts a 3-by-4 rectangle next to a 2-by-2 rectangle with no overlap. Lily says the two cover 14 unit squares in all. Is Lily right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0419",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":3,"c":2,"d":3,"kind":"joinSaid","said":12},"truth":true,"promptText":"Amara joins a 2-by-3 piece and a 2-by-3 piece (no overlap) and says they cover 12 unit squares. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":3,"c":2,"d":3,"kind":"joinSaid","said":12},"truth":true,"promptText":"Amara joins a 2-by-3 piece and a 2-by-3 piece with no overlap. Amara says they cover 12 unit squares. Is Amara right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0420",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":4,"c":2,"d":3,"kind":"joinSaid","said":15},"truth":false,"promptText":"A 2-by-4 patch plus a 2-by-3 patch covers 15 unit squares, claims Leo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":4,"c":2,"d":3,"kind":"joinSaid","said":15},"truth":false,"promptText":"Is Leo right that a 2-by-4 rectangle and a 2-by-3 rectangle with no overlap cover 15 unit squares in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0421",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":3,"b":3,"c":2,"d":3,"kind":"joinSaid","said":15},"truth":true,"promptText":"Mina joins a 3-by-3 piece and a 2-by-3 piece (no overlap) and says they cover 15 unit squares. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":3,"b":3,"c":2,"d":3,"kind":"joinSaid","said":15},"truth":true,"promptText":"Is Mina right that a 3-by-3 rectangle and a 2-by-3 rectangle with no overlap cover 15 unit squares in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0422",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":2,"c":2,"d":2,"kind":"joinSaid","said":6},"truth":false,"promptText":"A 2-by-2 patch plus a 2-by-2 patch covers 6 unit squares, claims Theo. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":2,"c":2,"d":2,"kind":"joinSaid","said":6},"truth":false,"promptText":"Theo joins a 2-by-2 piece and a 2-by-2 piece with no overlap. Theo says they cover 6 unit squares. Is Theo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0423",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":5,"c":2,"d":2,"kind":"joinSaid","said":14},"truth":true,"promptText":"Ida joins a 2-by-5 piece and a 2-by-2 piece (no overlap) and says they cover 14 unit squares. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":5,"c":2,"d":2,"kind":"joinSaid","said":14},"truth":true,"promptText":"Ida joins a 2-by-5 piece and a 2-by-2 piece with no overlap. Ida says they cover 14 unit squares. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0424",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":4,"b":3,"c":2,"d":2,"kind":"joinSaid","said":18},"truth":false,"promptText":"A 4-by-3 patch plus a 2-by-2 patch covers 18 unit squares, claims Zoe. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":4,"b":3,"c":2,"d":2,"kind":"joinSaid","said":18},"truth":false,"promptText":"Zoe puts a 4-by-3 rectangle next to a 2-by-2 rectangle with no overlap. Zoe says the two cover 18 unit squares in all. Is Zoe right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0425",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":4,"c":3,"d":2,"kind":"joinSaid","said":14},"truth":true,"promptText":"Rosa joins a 2-by-4 piece and a 3-by-2 piece (no overlap) and says they cover 14 unit squares. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":2,"b":4,"c":3,"d":2,"kind":"joinSaid","said":14},"truth":true,"promptText":"Rosa puts a 2-by-4 rectangle next to a 3-by-2 rectangle with no overlap. Rosa says the two cover 14 unit squares in all. Is Rosa right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0426",
@@ -10382,7 +10382,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":5,"c":2,"d":3,"kind":"joinSaid","said":17},"truth":false,"promptText":"A 2-by-5 patch plus a 2-by-3 patch covers 17 unit squares, claims Diego. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":5,"c":2,"d":3,"kind":"joinSaid","said":17},"truth":false,"promptText":"Diego joins a 2-by-5 piece and a 2-by-3 piece with no overlap. Diego says they cover 17 unit squares. Is Diego right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0427",
@@ -10392,7 +10392,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":3,"b":4,"c":2,"d":3,"kind":"joinSaid","said":18},"truth":true,"promptText":"Nora joins a 3-by-4 piece and a 2-by-3 piece (no overlap) and says they cover 18 unit squares. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":3,"b":4,"c":2,"d":3,"kind":"joinSaid","said":18},"truth":true,"promptText":"Is Nora right that a 3-by-4 rectangle and a 2-by-3 rectangle with no overlap cover 18 unit squares in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0428",
@@ -10402,7 +10402,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":3,"c":2,"d":2,"kind":"joinSaid","said":12},"truth":false,"promptText":"A 2-by-3 patch plus a 2-by-2 patch covers 12 unit squares, claims Luca. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":3,"c":2,"d":2,"kind":"joinSaid","said":12},"truth":false,"promptText":"Is Luca right that a 2-by-3 rectangle and a 2-by-2 rectangle with no overlap cover 12 unit squares in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0429",
@@ -10412,7 +10412,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":3,"b":3,"c":2,"d":2,"kind":"joinSaid","said":13},"truth":true,"promptText":"Ava joins a 3-by-3 piece and a 2-by-2 piece (no overlap) and says they cover 13 unit squares. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":3,"b":3,"c":2,"d":2,"kind":"joinSaid","said":13},"truth":true,"promptText":"Ava puts a 3-by-3 rectangle next to a 2-by-2 rectangle with no overlap. Ava says the two cover 13 unit squares in all. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0430",
@@ -10422,7 +10422,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":4,"c":2,"d":2,"kind":"joinSaid","said":10},"truth":false,"promptText":"A 2-by-4 patch plus a 2-by-2 patch covers 10 unit squares, claims Omar. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":4,"c":2,"d":2,"kind":"joinSaid","said":10},"truth":false,"promptText":"Omar puts a 2-by-4 rectangle next to a 2-by-2 rectangle with no overlap. Omar says the two cover 10 unit squares in all. Is Omar right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0431",
@@ -10432,7 +10432,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":3,"c":2,"d":3,"kind":"joinSaid","said":11},"truth":false,"promptText":"Ben joins a 2-by-3 piece and a 2-by-3 piece (no overlap) and says they cover 11 unit squares. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":2,"b":3,"c":2,"d":3,"kind":"joinSaid","said":11},"truth":false,"promptText":"Is Ben right that a 2-by-3 rectangle and a 2-by-3 rectangle with no overlap cover 11 unit squares in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0432",
@@ -10442,7 +10442,7 @@ export const ITEMS = [
     structureType: "sumJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":3,"b":4,"c":2,"d":2,"kind":"joinSaid","said":16},"truth":true,"promptText":"A 3-by-4 patch plus a 2-by-2 patch covers 16 unit squares, claims Finn. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":3,"b":4,"c":2,"d":2,"kind":"joinSaid","said":16},"truth":true,"promptText":"Is Finn right that a 3-by-4 rectangle and a 2-by-2 rectangle with no overlap cover 16 unit squares in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0433",
@@ -10452,7 +10452,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":7,"b":4,"c":3,"d":2,"kind":"joinSaid","said":34},"truth":true,"promptText":"Zoe totals a 7 by 4 rectangle and a 3 by 2 rectangle at 34 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":7,"b":4,"c":3,"d":2,"kind":"joinSaid","said":34},"truth":true,"promptText":"Zoe says a 7 cm by 4 cm rectangle and a 3 cm by 2 cm rectangle cover 34 square cm in all. Is Zoe right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0434",
@@ -10462,7 +10462,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":8,"b":5,"c":4,"d":3,"kind":"joinSaid","said":56},"truth":false,"promptText":"Check Rosa's combined area of 56 square cm for 8 by 5 plus 4 by 3. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":8,"b":5,"c":4,"d":3,"kind":"joinSaid","said":56},"truth":false,"promptText":"Rosa says an 8 cm by 5 cm rectangle and a 4 cm by 3 cm rectangle cover 56 square cm in all. Is Rosa right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0435",
@@ -10472,7 +10472,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":9,"b":3,"c":5,"d":2,"kind":"joinSaid","said":37},"truth":true,"promptText":"Diego totals a 9 by 3 rectangle and a 5 by 2 rectangle at 37 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":9,"b":3,"c":5,"d":2,"kind":"joinSaid","said":37},"truth":true,"promptText":"Two rectangles are 9 cm by 3 cm and 5 cm by 2 cm. Is Diego right that they cover 37 square cm in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0436",
@@ -10482,7 +10482,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":10,"b":6,"c":4,"d":4,"kind":"joinSaid","said":80},"truth":false,"promptText":"Check Nora's combined area of 80 square cm for 10 by 6 plus 4 by 4. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":10,"b":6,"c":4,"d":4,"kind":"joinSaid","said":80},"truth":false,"promptText":"Two rectangles are 10 cm by 6 cm and 4 cm by 4 cm. Is Nora right that they cover 80 square cm in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0437",
@@ -10492,7 +10492,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":11,"b":4,"c":3,"d":3,"kind":"joinSaid","said":53},"truth":true,"promptText":"Luca totals a 11 by 4 rectangle and a 3 by 3 rectangle at 53 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":11,"b":4,"c":3,"d":3,"kind":"joinSaid","said":53},"truth":true,"promptText":"Luca finds the total area of an 11 cm by 4 cm rectangle and a 3 cm by 3 cm rectangle. Luca gets 53 square cm. Is Luca's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0438",
@@ -10502,7 +10502,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":12,"b":5,"c":5,"d":4,"kind":"joinSaid","said":84},"truth":false,"promptText":"Check Ava's combined area of 84 square cm for 12 by 5 plus 5 by 4. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":12,"b":5,"c":5,"d":4,"kind":"joinSaid","said":84},"truth":false,"promptText":"Ava finds the total area of a 12 cm by 5 cm rectangle and a 5 cm by 4 cm rectangle. Ava gets 84 square cm. Is Ava's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0439",
@@ -10512,7 +10512,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":7,"b":6,"c":2,"d":2,"kind":"joinSaid","said":46},"truth":true,"promptText":"Omar totals a 7 by 6 rectangle and a 2 by 2 rectangle at 46 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":7,"b":6,"c":2,"d":2,"kind":"joinSaid","said":46},"truth":true,"promptText":"Omar says a 7 cm by 6 cm rectangle and a 2 cm by 2 cm rectangle cover 46 square cm in all. Is Omar right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0440",
@@ -10522,7 +10522,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":8,"b":8,"c":4,"d":2,"kind":"joinSaid","said":76},"truth":false,"promptText":"Check Ben's combined area of 76 square cm for 8 by 8 plus 4 by 2. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":8,"b":8,"c":4,"d":2,"kind":"joinSaid","said":76},"truth":false,"promptText":"Ben says an 8 cm by 8 cm rectangle and a 4 cm by 2 cm rectangle cover 76 square cm in all. Is Ben right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0441",
@@ -10532,7 +10532,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":9,"b":7,"c":3,"d":4,"kind":"joinSaid","said":75},"truth":true,"promptText":"Finn totals a 9 by 7 rectangle and a 3 by 4 rectangle at 75 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":9,"b":7,"c":3,"d":4,"kind":"joinSaid","said":75},"truth":true,"promptText":"Finn finds the total area of a 9 cm by 7 cm rectangle and a 3 cm by 4 cm rectangle. Finn gets 75 square cm. Is Finn's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0442",
@@ -10542,7 +10542,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":10,"b":10,"c":5,"d":3,"kind":"joinSaid","said":120},"truth":false,"promptText":"Check Priya's combined area of 120 square cm for 10 by 10 plus 5 by 3. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":10,"b":10,"c":5,"d":3,"kind":"joinSaid","said":120},"truth":false,"promptText":"Two rectangles are 10 cm by 10 cm and 5 cm by 3 cm. Is Priya right that they cover 120 square cm in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0443",
@@ -10552,7 +10552,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":11,"b":6,"c":4,"d":5,"kind":"joinSaid","said":86},"truth":true,"promptText":"Sam totals a 11 by 6 rectangle and a 4 by 5 rectangle at 86 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":11,"b":6,"c":4,"d":5,"kind":"joinSaid","said":86},"truth":true,"promptText":"Sam finds the total area of an 11 cm by 6 cm rectangle and a 4 cm by 5 cm rectangle. Sam gets 86 square cm. Is Sam's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0444",
@@ -10562,7 +10562,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":12,"b":3,"c":6,"d":2,"kind":"joinSaid","said":52},"truth":false,"promptText":"Check Nia's combined area of 52 square cm for 12 by 3 plus 6 by 2. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":12,"b":3,"c":6,"d":2,"kind":"joinSaid","said":52},"truth":false,"promptText":"Two rectangles are 12 cm by 3 cm and 6 cm by 2 cm. Is Nia right that they cover 52 square cm in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0445",
@@ -10572,7 +10572,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":9,"b":9,"c":2,"d":5,"kind":"joinSaid","said":91},"truth":true,"promptText":"Kai totals a 9 by 9 rectangle and a 2 by 5 rectangle at 91 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":9,"b":9,"c":2,"d":5,"kind":"joinSaid","said":91},"truth":true,"promptText":"Kai says a 9 cm by 9 cm rectangle and a 2 cm by 5 cm rectangle cover 91 square cm in all. Is Kai right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0446",
@@ -10582,7 +10582,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":7,"b":4,"c":3,"d":2,"kind":"joinSaid","said":36},"truth":false,"promptText":"Check June's combined area of 36 square cm for 7 by 4 plus 3 by 2. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":7,"b":4,"c":3,"d":2,"kind":"joinSaid","said":36},"truth":false,"promptText":"June says a 7 cm by 4 cm rectangle and a 3 cm by 2 cm rectangle cover 36 square cm in all. Is June right about the total area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0447",
@@ -10592,7 +10592,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":8,"b":5,"c":4,"d":3,"kind":"joinSaid","said":52},"truth":true,"promptText":"Lily totals a 8 by 5 rectangle and a 4 by 3 rectangle at 52 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":8,"b":5,"c":4,"d":3,"kind":"joinSaid","said":52},"truth":true,"promptText":"Two rectangles are 8 cm by 5 cm and 4 cm by 3 cm. Is Lily right that they cover 52 square cm in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0448",
@@ -10602,7 +10602,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":9,"b":3,"c":5,"d":2,"kind":"joinSaid","said":35},"truth":false,"promptText":"Check Amara's combined area of 35 square cm for 9 by 3 plus 5 by 2. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":9,"b":3,"c":5,"d":2,"kind":"joinSaid","said":35},"truth":false,"promptText":"Amara finds the total area of a 9 cm by 3 cm rectangle and a 5 cm by 2 cm rectangle. Amara gets 35 square cm. Is Amara's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0449",
@@ -10612,7 +10612,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":11,"b":4,"c":3,"d":3,"kind":"joinSaid","said":50},"truth":false,"promptText":"Leo totals a 11 by 4 rectangle and a 3 by 3 rectangle at 50 square cm. Does the total hold?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":11,"b":4,"c":3,"d":3,"kind":"joinSaid","said":50},"truth":false,"promptText":"Leo finds the total area of an 11 cm by 4 cm rectangle and a 3 cm by 3 cm rectangle. Leo gets 50 square cm. Is Leo's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0450",
@@ -10622,7 +10622,7 @@ export const ITEMS = [
     structureType: "sumJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":10,"b":6,"c":4,"d":4,"kind":"joinSaid","said":76},"truth":true,"promptText":"Check Mina's combined area of 76 square cm for 10 by 6 plus 4 by 4. Right or not?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":10,"b":6,"c":4,"d":4,"kind":"joinSaid","said":76},"truth":true,"promptText":"Two rectangles are 10 cm by 6 cm and 4 cm by 4 cm. Is Mina right that they cover 76 square cm in all?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0451",
@@ -10632,7 +10632,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":12,"b":8,"c":6,"d":4,"kind":"joinSaid","said":120},"truth":true,"promptText":"Diego certifies 120 square m for the union of non-overlapping 12 by 8 and 6 by 4 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":12,"b":8,"c":6,"d":4,"kind":"joinSaid","said":120},"truth":true,"promptText":"Diego says a 12 m by 8 m rectangle and a 6 m by 4 m rectangle that do not overlap cover 120 square m in all. Is Diego's total right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0452",
@@ -10642,7 +10642,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":13,"b":6,"c":7,"d":3,"kind":"joinSaid","said":105},"truth":false,"promptText":"Audit the composite total: 13 by 6 plus 7 by 3, recorded 105 by Nora. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":13,"b":6,"c":7,"d":3,"kind":"joinSaid","said":105},"truth":false,"promptText":"Nora writes 105 square m as the total area of a 13 m by 6 m rectangle and a 7 m by 3 m rectangle. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0453",
@@ -10652,7 +10652,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinSaid","said":102},"truth":true,"promptText":"Luca certifies 102 square m for the union of non-overlapping 14 by 5 and 8 by 4 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinSaid","said":102},"truth":true,"promptText":"Two rectangles that do not overlap are 14 m by 5 m and 8 m by 4 m. Luca says they cover 102 square m in all. Is Luca right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0454",
@@ -10662,7 +10662,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":15,"b":4,"c":9,"d":5,"kind":"joinSaid","said":110},"truth":false,"promptText":"Audit the composite total: 15 by 4 plus 9 by 5, recorded 110 by Ava. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":15,"b":4,"c":9,"d":5,"kind":"joinSaid","said":110},"truth":false,"promptText":"Ava writes 110 square m as the total area of a 15 m by 4 m rectangle and a 9 m by 5 m rectangle. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0455",
@@ -10672,7 +10672,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":12,"b":12,"c":6,"d":6,"kind":"joinSaid","said":180},"truth":true,"promptText":"Omar certifies 180 square m for the union of non-overlapping 12 by 12 and 6 by 6 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":12,"b":12,"c":6,"d":6,"kind":"joinSaid","said":180},"truth":true,"promptText":"Omar says a 12 m by 12 m rectangle and a 6 m by 6 m rectangle that do not overlap cover 180 square m in all. Is Omar's total right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0456",
@@ -10682,7 +10682,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":13,"b":9,"c":7,"d":5,"kind":"joinSaid","said":160},"truth":false,"promptText":"Audit the composite total: 13 by 9 plus 7 by 5, recorded 160 by Ben. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":13,"b":9,"c":7,"d":5,"kind":"joinSaid","said":160},"truth":false,"promptText":"Ben finds the total area of a 13 m by 9 m rectangle and a 7 m by 5 m rectangle and gets 160 square m. Is Ben's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0457",
@@ -10692,7 +10692,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":14,"b":7,"c":8,"d":6,"kind":"joinSaid","said":146},"truth":true,"promptText":"Finn certifies 146 square m for the union of non-overlapping 14 by 7 and 8 by 6 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":14,"b":7,"c":8,"d":6,"kind":"joinSaid","said":146},"truth":true,"promptText":"Two rectangles that do not overlap are 14 m by 7 m and 8 m by 6 m. Finn says they cover 146 square m in all. Is Finn right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0458",
@@ -10702,7 +10702,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":15,"b":8,"c":9,"d":4,"kind":"joinSaid","said":150},"truth":false,"promptText":"Audit the composite total: 15 by 8 plus 9 by 4, recorded 150 by Priya. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":15,"b":8,"c":9,"d":4,"kind":"joinSaid","said":150},"truth":false,"promptText":"Priya finds the total area of a 15 m by 8 m rectangle and a 9 m by 4 m rectangle and gets 150 square m. Is Priya's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0459",
@@ -10712,7 +10712,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":12,"b":11,"c":5,"d":5,"kind":"joinSaid","said":157},"truth":true,"promptText":"Sam certifies 157 square m for the union of non-overlapping 12 by 11 and 5 by 5 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":12,"b":11,"c":5,"d":5,"kind":"joinSaid","said":157},"truth":true,"promptText":"Sam finds the total area of a 12 m by 11 m rectangle and a 5 m by 5 m rectangle and gets 157 square m. Is Sam's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0460",
@@ -10722,7 +10722,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":13,"b":13,"c":6,"d":3,"kind":"joinSaid","said":190},"truth":false,"promptText":"Audit the composite total: 13 by 13 plus 6 by 3, recorded 190 by Nia. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":13,"b":13,"c":6,"d":3,"kind":"joinSaid","said":190},"truth":false,"promptText":"Nia says a 13 m by 13 m rectangle and a 6 m by 3 m rectangle that do not overlap cover 190 square m in all. Is Nia's total right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0461",
@@ -10732,7 +10732,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":14,"b":10,"c":7,"d":7,"kind":"joinSaid","said":189},"truth":true,"promptText":"Kai certifies 189 square m for the union of non-overlapping 14 by 10 and 7 by 7 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":14,"b":10,"c":7,"d":7,"kind":"joinSaid","said":189},"truth":true,"promptText":"Kai says a 14 m by 10 m rectangle and a 7 m by 7 m rectangle that do not overlap cover 189 square m in all. Is Kai's total right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0462",
@@ -10742,7 +10742,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":15,"b":15,"c":8,"d":5,"kind":"joinSaid","said":270},"truth":false,"promptText":"Audit the composite total: 15 by 15 plus 8 by 5, recorded 270 by June. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":15,"b":15,"c":8,"d":5,"kind":"joinSaid","said":270},"truth":false,"promptText":"June finds the total area of a 15 m by 15 m rectangle and an 8 m by 5 m rectangle and gets 270 square m. Is June's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0463",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":14,"b":14,"c":9,"d":6,"kind":"joinSaid","said":250},"truth":true,"promptText":"Lily certifies 250 square m for the union of non-overlapping 14 by 14 and 9 by 6 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":14,"b":14,"c":9,"d":6,"kind":"joinSaid","said":250},"truth":true,"promptText":"Lily finds the total area of a 14 m by 14 m rectangle and a 9 m by 6 m rectangle and gets 250 square m. Is Lily's total correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0464",
@@ -10762,7 +10762,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":12,"b":8,"c":6,"d":4,"kind":"joinSaid","said":116},"truth":false,"promptText":"Audit the composite total: 12 by 8 plus 6 by 4, recorded 116 by Amara. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":12,"b":8,"c":6,"d":4,"kind":"joinSaid","said":116},"truth":false,"promptText":"Two rectangles that do not overlap are 12 m by 8 m and 6 m by 4 m. Amara says they cover 116 square m in all. Is Amara right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0465",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":13,"b":6,"c":7,"d":3,"kind":"joinSaid","said":99},"truth":true,"promptText":"Leo certifies 99 square m for the union of non-overlapping 13 by 6 and 7 by 3 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":13,"b":6,"c":7,"d":3,"kind":"joinSaid","said":99},"truth":true,"promptText":"Leo writes 99 square m as the total area of a 13 m by 6 m rectangle and a 7 m by 3 m rectangle. Is Leo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0466",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinSaid","said":98},"truth":false,"promptText":"Audit the composite total: 14 by 5 plus 8 by 4, recorded 98 by Mina. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinSaid","said":98},"truth":false,"promptText":"Two rectangles that do not overlap are 14 m by 5 m and 8 m by 4 m. Mina says they cover 98 square m in all. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0467",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":12,"b":12,"c":6,"d":6,"kind":"joinSaid","said":176},"truth":false,"promptText":"Theo certifies 176 square m for the union of non-overlapping 12 by 12 and 6 by 6 rectangles. Valid?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"a":12,"b":12,"c":6,"d":6,"kind":"joinSaid","said":176},"truth":false,"promptText":"Theo says a 12 m by 12 m rectangle and a 6 m by 6 m rectangle that do not overlap cover 176 square m in all. Is Theo's total right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0468",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "sumJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":15,"b":4,"c":9,"d":5,"kind":"joinSaid","said":105},"truth":true,"promptText":"Audit the composite total: 15 by 4 plus 9 by 5, recorded 105 by Ida. Clean?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"a":15,"b":4,"c":9,"d":5,"kind":"joinSaid","said":105},"truth":true,"promptText":"Ida writes 105 square m as the total area of a 15 m by 4 m rectangle and a 9 m by 5 m rectangle. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0469",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Mina wants to put ribbon around a card and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Mina wants to put ribbon around a card and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0470",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To color a whole card, Theo counts the unit squares inside. Is Theo measuring the right thing?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Theo wants to color a whole card and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0471",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Ida wants to tape the edge of a photo and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To tape the edge of a photo, Ida counts the unit squares inside. Is Ida measuring the right thing?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0472",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Rosa wants to outline a page with stars and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Rosa wants to outline a page with stars and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0474",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To fill a page with a drawing, Diego counts the unit squares inside. Is Diego measuring the right thing?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Diego wants to fill a page with a drawing and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0475",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Nora wants to string beads around a frame and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To string beads around a frame, Nora counts the unit squares inside. Is Nora measuring the right thing?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0476",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Ava wants to walk the border of a rug and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Ava wants to walk the border of a rug and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0478",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To tile the top of a table, Omar counts the unit squares inside. Is Omar measuring the right thing?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Omar wants to tile the top of a table and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0479",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Ben wants to put a fence of blocks around a mat and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To put a fence of blocks around a mat, Ben counts the unit squares inside. Is Ben measuring the right thing?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0480",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To blanket a doll bed, Finn counts the unit squares inside. Is Finn measuring the right thing?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To cover a doll bed with a blanket, Finn counts the unit squares inside. Is Finn measuring the right thing?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0481",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Priya wants to chalk around a hopscotch court and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Priya wants to chalk around a hopscotch court and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0482",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To cover a lid with glitter, Sam counts the unit squares inside. Is Sam measuring the right thing?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Sam wants to cover a lid with glitter and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0483",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Nia wants to lace around a bookmark and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To lace around a bookmark, Nia counts the unit squares inside. Is Nia measuring the right thing?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0484",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To sticker a whole notebook cover, Kai counts the unit squares inside. Is Kai measuring the right thing?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To cover a notebook with stickers, Kai counts the unit squares inside. Is Kai measuring the right thing?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0485",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"June wants to hem the edge of a napkin and measures the space INSIDE the shape to do it. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"June wants to hem the edge of a napkin and measures the space inside the shape to do it. Is that the right measure?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0486",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Omar plans to fence a chicken run and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Omar wants to fence a chicken run. Omar works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0488",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of sod the backyard, Ben works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Ben wants to cover the backyard with new grass. Ben works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0489",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Finn plans to frame a poster and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To frame a poster, Finn finds the area. Does Finn need the area for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0490",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of carpet a hallway, Priya works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Priya wants to put carpet in a hallway. Priya works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0491",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Sam plans to put trim around a mirror and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Sam wants to put trim around a mirror. Sam works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0492",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of paint a ceiling, Nia works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To paint a whole tabletop, Nia finds the area. Does Nia need the area for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0493",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Kai plans to edge a walkway with stones and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To edge a walkway with stones, Kai finds the area. Does Kai need the area for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0494",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of mulch a whole flower bed, June works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"June wants to spread mulch over a whole flower bed. June works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0495",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Lily plans to border a quilt and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Lily wants to sew a border around a quilt. Lily works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0496",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of cover a corkboard in fabric, Amara works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To cover a corkboard with fabric, Amara finds the area. Does Amara need the area for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0497",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Leo plans to gutter the roof edge and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To put a paper border along the edge of a bulletin board, Leo finds the area. Does Leo need the area for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0498",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of turf a play area, Mina works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To cover a play area with fake grass, Mina finds the area. Does Mina need the area for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0499",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Theo plans to put tape around a box lid seam and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Theo wants to put tape around the edge of a box lid. Theo works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0500",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of wrap the top of a bench in vinyl, Ida works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Ida wants to cover the top of a bench with plastic. Ida works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0501",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Zoe plans to chalk the boundary of a field and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To chalk the boundary of a field, Zoe finds the area. Does Zoe need the area for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0502",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of resurface a patio, Rosa works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Rosa wants to lay new stones over a whole patio. Rosa works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0503",
@@ -11152,7 +11152,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Diego plans to ring a fire pit with bricks and calculates the area. Is area the measure the job needs?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Diego wants to put a ring of bricks around a garden bed. Diego works out the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0504",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"For the task of seed a lawn, Nora works out the area. Is that the right measure?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To spread grass seed over a lawn, Nora finds the area. Does Nora need the area for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0505",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Finn prepares to rail a balcony by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Before Finn starts to put a fence around a vegetable garden, Finn works out the area. Does this job need the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0506",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what Priya computes before starting to seal a parking lot. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Before Priya starts to coat a whole parking lot with sealer, Priya works out the area. Does this job need the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0507",
@@ -11192,7 +11192,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Sam prepares to cable around a tower base by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Sam wants to put a string of flags around the edge of a playground. Sam works out the area. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0508",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what Nia computes before starting to floor a gymnasium. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To put a new floor in a gym, Nia finds the area. Does this job need the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0509",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Kai prepares to curb a roundabout by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Kai wants to put a border of stones around a round flower bed. Kai works out the area. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0510",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what June computes before starting to asphalt a basketball court. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"To pave a whole basketball court, June finds the area. Does this job need the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0511",
@@ -11232,7 +11232,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Lily prepares to tape off a construction boundary by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Lily wants to put a rope around a pumpkin patch. Lily works out the area. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0512",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what Amara computes before starting to insulate an attic floor. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Amara wants to lay a rug over a whole bedroom floor. Amara finds the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0513",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Leo prepares to pipe the edge of a banner by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To sew piping along the edge of a banner, Leo finds the area. Does this job need the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0514",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what Mina computes before starting to laminate a countertop surface. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Mina wants to put a new top on a kitchen counter. Mina finds the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0515",
@@ -11272,7 +11272,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Theo prepares to fence a vineyard row by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Before Theo starts to put a fence along a row of grapevines, Theo works out the area. Does this job need the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0516",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what Ida computes before starting to shingle a shed roof. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Ida wants to put new tiles on a whole bathroom floor. Ida finds the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0517",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Zoe prepares to weld a rim around a tank lid by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Zoe wants to put a metal rim around a tank lid. Zoe finds the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0518",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what Rosa computes before starting to paint a mural wall. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Rosa wants to paint a mural over a whole wall. Rosa works out the area. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0519",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Diego prepares to trim a stage apron edge by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Diego wants to put trim along the front edge of a stage. Diego finds the area first. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0520",
@@ -11322,7 +11322,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what Nora computes before starting to felt a pool table surface. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Nora wants to cover the top of a pool table with felt. Nora works out the area. Is area the right measure for this job?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0521",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"Luca prepares to wire the border of a sign by computing the area. Does the job call for area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":false,"promptText":"To run a wire around the border of a sign, Luca finds the area. Does this job need the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0522",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "purposeJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Area is what Ava computes before starting to tar a flat roof. Is that the measure required?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authored"},"truth":true,"promptText":"Before Ava starts to cover a whole garden with straw, Ava works out the area. Does this job need the area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0523",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca reports the area of a 2-by-3 rectangle as \"6 units\" instead of unit squares. Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca finds the area of a 2-by-3 grid rectangle and writes 6 units. Is that the right unit for area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0524",
@@ -11362,7 +11362,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava labels the border of a 3-by-4 rectangle \"14 unit squares\". Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava finds the perimeter of a 3-by-4 grid rectangle and writes 14 square units. Is that the right unit for perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0525",
@@ -11372,7 +11372,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar reports the area of a 2-by-5 rectangle as \"10 units\" instead of unit squares. Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar finds the area of a 2-by-5 grid rectangle and writes 10 units. Did Omar use the right unit?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0526",
@@ -11382,7 +11382,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ben labels the border of a 4-by-4 rectangle \"16 unit squares\". Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben finds the perimeter of a 4-by-4 grid rectangle and writes 16 units. Is that the right unit for perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0527",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Finn reports the area of a 3-by-3 rectangle as \"9 units\" instead of unit squares. Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Finn finds the area of a 3-by-3 grid rectangle and writes 9 square units. Is that the right unit for area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0528",
@@ -11402,7 +11402,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya labels the border of a 2-by-4 rectangle \"12 unit squares\". Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya finds the perimeter of a 2-by-4 grid rectangle and writes 12 square units. Is that the right unit for perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0529",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam reports the area of a 2-by-6 rectangle as \"12 units\" instead of unit squares. Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Sam finds the area of a 2-by-6 grid rectangle and writes 12 units. Is that the right unit for area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0530",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia labels the border of a 5-by-2 rectangle \"14 unit squares\". Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nia finds the perimeter of a 5-by-2 grid rectangle and writes 14 square units. Did Nia use the right unit?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0531",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Kai reports the area of a 4-by-3 rectangle as \"12 units\" instead of unit squares. Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Kai finds the area of a 4-by-3 grid rectangle and writes 12 square units. Is that the right unit for area?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0532",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"June labels the border of a 3-by-2 rectangle \"10 unit squares\". Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"June finds the perimeter of a 3-by-2 grid rectangle and writes 10 units. Is that the right unit for perimeter?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0533",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily reports the area of a 5-by-3 rectangle as \"15 units\" instead of unit squares. Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily finds the area of a 5-by-3 grid rectangle and writes 15 units. Did Lily use the right unit?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0534",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara labels the border of a 6-by-2 rectangle \"16 unit squares\". Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara finds the perimeter of a 6-by-2 grid rectangle and writes 16 square units. Did Amara use the right unit?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0535",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo reports the area of a 4-by-2 rectangle as \"8 units\" instead of unit squares. Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Leo finds the area of a 4-by-2 grid rectangle and writes 8 square units. Did Leo use the right unit?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0536",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina labels the border of a 2-by-3 rectangle \"10 unit squares\". Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina finds the perimeter of a 2-by-3 grid rectangle and writes 10 square units. Did Mina use the right unit?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0537",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo reports the area of a 3-by-4 rectangle as \"12 units\" instead of unit squares. Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Theo finds the area of a 3-by-4 grid rectangle and writes 12 square units. Did Theo use the right unit?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0538",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "unitJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida labels the border of a 2-by-5 rectangle \"14 unit squares\". Is the label right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ida finds the perimeter of a 2-by-5 grid rectangle and writes 14 units. Did Ida use the right unit?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0539",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily writes the perimeter of a 8 cm by 5 cm rectangle as 26 square cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Lily writes the perimeter of an 8 cm by 5 cm rectangle as 26 square cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0541",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Amara writes the area of a 9 cm by 3 cm rectangle as 27 cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Amara writes the area of a 9 cm by 3 cm rectangle as 27 square cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0542",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Leo writes the perimeter of a 10 cm by 6 cm rectangle as 32 square cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Leo writes the perimeter of a 10 cm by 6 cm rectangle as 32 cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0543",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina writes the area of a 11 cm by 4 cm rectangle as 44 cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina writes the area of an 11 cm by 4 cm rectangle as 44 cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0544",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ida writes the area of a 7 cm by 6 cm rectangle as 42 cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ida writes the area of a 7 cm by 6 cm rectangle as 42 square cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0546",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Zoe writes the perimeter of a 8 cm by 8 cm rectangle as 32 square cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Zoe writes the perimeter of an 8 cm by 8 cm rectangle as 32 cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0547",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Nora writes the area of a 11 cm by 6 cm rectangle as 66 cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nora writes the area of an 11 cm by 6 cm rectangle as 66 square cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0550",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Luca writes the perimeter of a 12 cm by 3 cm rectangle as 30 square cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Luca writes the perimeter of a 12 cm by 3 cm rectangle as 30 cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0551",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "unitJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ben writes the area of a 8 cm by 5 cm rectangle as 40 cm. Is the unit right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben writes the area of an 8 cm by 5 cm rectangle as 40 square cm. Is the unit right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0554",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "unitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Mina states a 14 m by 5 m rectangle's area as 70 m. Is the unit correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Mina states a 14 m by 5 m rectangle's area as 70 square m. Is the unit correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0558",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "unitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Theo states a 15 m by 4 m rectangle's perimeter as 38 square m. Is the unit correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Theo states a 15 m by 4 m rectangle's perimeter as 38 m. Is the unit correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0559",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "unitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Rosa states a 14 m by 7 m rectangle's area as 98 m. Is the unit correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa states a 14 m by 7 m rectangle's area as 98 square m. Is the unit correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0562",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "unitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Diego states a 15 m by 8 m rectangle's perimeter as 46 square m. Is the unit correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Diego states a 15 m by 8 m rectangle's perimeter as 46 m. Is the unit correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0563",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "unitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Ava states a 14 m by 10 m rectangle's area as 140 m. Is the unit correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava states a 14 m by 10 m rectangle's area as 140 square m. Is the unit correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0566",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "unitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Omar states a 15 m by 15 m rectangle's perimeter as 60 square m. Is the unit correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Omar states a 15 m by 15 m rectangle's perimeter as 60 m. Is the unit correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0567",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "unitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"kind":"trapNo"},"truth":false,"promptText":"Priya states a 13 m by 6 m rectangle's area as 78 m. Is the unit correct?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Priya states a 13 m by 6 m rectangle's area as 78 square m. Is the unit correct?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0570",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"s":3,"w":1,"kind":"samePerimSaid"},"truth":true,"promptText":"Same trip around, different space inside: Kai claims that happens for a 1-by-5 rectangle and a 3-by-3 square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"s":3,"w":1,"kind":"samePerimSaid"},"truth":true,"promptText":"Kai says a 1-by-5 rectangle and a 3-by-3 square go the same distance around, but one covers more unit squares. Is Kai right about the two shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0573",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"s":4,"w":3,"kind":"samePerimSaid"},"truth":true,"promptText":"Same trip around, different space inside: Lily claims that happens for a 3-by-5 rectangle and a 4-by-4 square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"s":4,"w":3,"kind":"samePerimSaid"},"truth":true,"promptText":"Lily says a 3-by-5 rectangle and a 4-by-4 square go the same distance around, but one covers more unit squares. Is Lily right about the two shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0575",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"s":4,"w":2,"kind":"samePerimSaid"},"truth":false,"promptText":"Same trip around, different space inside: Leo claims that happens for a 2-by-4 rectangle and a 4-by-4 square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"s":4,"w":2,"kind":"samePerimSaid"},"truth":false,"promptText":"Leo says a 2-by-4 rectangle and a 4-by-4 square have the same distance around but cover different numbers of unit squares. Is Leo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0577",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"s":3,"w":2,"kind":"samePerimSaid"},"truth":false,"promptText":"Same trip around, different space inside: Theo claims that happens for a 2-by-6 rectangle and a 3-by-3 square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":6,"s":3,"w":2,"kind":"samePerimSaid"},"truth":false,"promptText":"Theo says a 2-by-6 rectangle and a 3-by-3 square have the same distance around but cover different numbers of unit squares. Is Theo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0579",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"s":3,"w":1,"kind":"samePerimSaid"},"truth":false,"promptText":"Same trip around, different space inside: Zoe claims that happens for a 1-by-3 rectangle and a 3-by-3 square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":3,"s":3,"w":1,"kind":"samePerimSaid"},"truth":false,"promptText":"Zoe says a 1-by-3 rectangle and a 3-by-3 square go the same distance around, but one covers more unit squares. Is Zoe right about the two shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0581",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"s":4,"w":2,"kind":"samePerimSaid"},"truth":true,"promptText":"Same trip around, different space inside: Diego claims that happens for a 2-by-6 rectangle and a 4-by-4 square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":6,"s":4,"w":2,"kind":"samePerimSaid"},"truth":true,"promptText":"Diego says a 2-by-6 rectangle and a 4-by-4 square have the same distance around but cover different numbers of unit squares. Is Diego right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0583",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"s":4,"w":3,"kind":"samePerimSaid"},"truth":true,"promptText":"Same trip around, different space inside: Luca claims that happens for a 3-by-5 rectangle and a 4-by-4 square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":5,"s":4,"w":3,"kind":"samePerimSaid"},"truth":true,"promptText":"Luca says a 3-by-5 rectangle and a 4-by-4 square have the same distance around but cover different numbers of unit squares. Is Luca right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0585",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"s":2,"w":2,"kind":"samePerimSaid"},"truth":false,"promptText":"Same trip around, different space inside: Omar claims that happens for a 2-by-4 rectangle and a 2-by-2 square. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":4,"s":2,"w":2,"kind":"samePerimSaid"},"truth":false,"promptText":"Omar says a 2-by-4 rectangle and a 2-by-2 square go the same distance around, but one covers more unit squares. Is Omar right about the two shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0587",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"s":6,"w":4,"kind":"samePerimSaid"},"truth":true,"promptText":"Zoe claims a 4 by 8 rectangle and a 6 by 6 square share a perimeter yet differ in area. Does the claim hold here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"s":6,"w":4,"kind":"samePerimSaid"},"truth":true,"promptText":"Zoe says a 4 by 8 rectangle and a 6 by 6 square have equal perimeters and different areas. Is Zoe right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0588",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"s":6,"w":3,"kind":"samePerimSaid"},"truth":true,"promptText":"Equal perimeter, unequal area — Rosa offers the 3 by 9 rectangle and the 6 by 6 square. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"s":6,"w":3,"kind":"samePerimSaid"},"truth":true,"promptText":"For two shapes with the same perimeter but different areas, Rosa picks a 3 by 9 rectangle and a 6 by 6 square. Is Rosa right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0589",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"s":6,"w":5,"kind":"samePerimSaid"},"truth":true,"promptText":"Diego claims a 5 by 7 rectangle and a 6 by 6 square share a perimeter yet differ in area. Does the claim hold here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"s":6,"w":5,"kind":"samePerimSaid"},"truth":true,"promptText":"Diego says a 5 by 7 rectangle and a 6 by 6 square have the same perimeter but different areas. Is Diego right about the two shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0590",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"s":7,"w":4,"kind":"samePerimSaid"},"truth":true,"promptText":"Equal perimeter, unequal area — Nora offers the 4 by 10 rectangle and the 7 by 7 square. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"s":7,"w":4,"kind":"samePerimSaid"},"truth":true,"promptText":"For two shapes with the same perimeter but different areas, Nora picks a 4 by 10 rectangle and a 7 by 7 square. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0591",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"s":7,"w":6,"kind":"samePerimSaid"},"truth":true,"promptText":"Luca claims a 6 by 8 rectangle and a 7 by 7 square share a perimeter yet differ in area. Does the claim hold here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"s":7,"w":6,"kind":"samePerimSaid"},"truth":true,"promptText":"Luca says a 6 by 8 rectangle and a 7 by 7 square have the same perimeter but different areas. Is Luca right about the two shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0592",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"s":5,"w":4,"kind":"samePerimSaid"},"truth":false,"promptText":"Equal perimeter, unequal area — Ava offers the 4 by 8 rectangle and the 5 by 5 square. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"s":5,"w":4,"kind":"samePerimSaid"},"truth":false,"promptText":"For two shapes with the same perimeter but different areas, Ava picks a 4 by 8 rectangle and a 5 by 5 square. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0593",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":9,"s":7,"w":3,"kind":"samePerimSaid"},"truth":false,"promptText":"Omar claims a 3 by 9 rectangle and a 7 by 7 square share a perimeter yet differ in area. Does the claim hold here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":9,"s":7,"w":3,"kind":"samePerimSaid"},"truth":false,"promptText":"Omar says a 3 by 9 rectangle and a 7 by 7 square have equal perimeters and different areas. Is Omar right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0594",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":7,"s":5,"w":5,"kind":"samePerimSaid"},"truth":false,"promptText":"Equal perimeter, unequal area — Ben offers the 5 by 7 rectangle and the 5 by 5 square. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":7,"s":5,"w":5,"kind":"samePerimSaid"},"truth":false,"promptText":"Ben picks a 5 by 7 rectangle and a 5 by 5 square as two shapes with the same perimeter but different areas. Is Ben's example right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0595",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":10,"s":6,"w":4,"kind":"samePerimSaid"},"truth":false,"promptText":"Finn claims a 4 by 10 rectangle and a 6 by 6 square share a perimeter yet differ in area. Does the claim hold here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":10,"s":6,"w":4,"kind":"samePerimSaid"},"truth":false,"promptText":"Finn says a 4 by 10 rectangle and a 6 by 6 square have equal perimeters and different areas. Is Finn right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0596",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"s":8,"w":6,"kind":"samePerimSaid"},"truth":false,"promptText":"Equal perimeter, unequal area — Priya offers the 6 by 8 rectangle and the 8 by 8 square. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"s":8,"w":6,"kind":"samePerimSaid"},"truth":false,"promptText":"Priya picks a 6 by 8 rectangle and an 8 by 8 square as two shapes with the same perimeter but different areas. Is Priya's example right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0597",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"s":6,"w":4,"kind":"samePerimSaid"},"truth":true,"promptText":"Sam claims a 4 by 8 rectangle and a 6 by 6 square share a perimeter yet differ in area. Does the claim hold here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"s":6,"w":4,"kind":"samePerimSaid"},"truth":true,"promptText":"Sam says a 4 by 8 rectangle and a 6 by 6 square have the same perimeter but different areas. Is Sam right about the two shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0598",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"s":6,"w":5,"kind":"samePerimSaid"},"truth":true,"promptText":"Equal perimeter, unequal area — Nia offers the 5 by 7 rectangle and the 6 by 6 square. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":7,"s":6,"w":5,"kind":"samePerimSaid"},"truth":true,"promptText":"Nia picks a 5 by 7 rectangle and a 6 by 6 square as two shapes with the same perimeter but different areas. Is Nia's example right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0599",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"s":6,"w":3,"kind":"samePerimSaid"},"truth":true,"promptText":"Kai claims a 3 by 9 rectangle and a 6 by 6 square share a perimeter yet differ in area. Does the claim hold here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":9,"s":6,"w":3,"kind":"samePerimSaid"},"truth":true,"promptText":"Kai picks a 3 by 9 rectangle and a 6 by 6 square as two shapes with the same perimeter but different areas. Is Kai's example right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0600",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"s":7,"w":4,"kind":"samePerimSaid"},"truth":true,"promptText":"Equal perimeter, unequal area — June offers the 4 by 10 rectangle and the 7 by 7 square. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":10,"s":7,"w":4,"kind":"samePerimSaid"},"truth":true,"promptText":"For two shapes with the same perimeter but different areas, June picks a 4 by 10 rectangle and a 7 by 7 square. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0601",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"s":7,"w":6,"kind":"samePerimSaid"},"truth":true,"promptText":"Lily claims a 6 by 8 rectangle and a 7 by 7 square share a perimeter yet differ in area. Does the claim hold here?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":8,"s":7,"w":6,"kind":"samePerimSaid"},"truth":true,"promptText":"Lily says a 6 by 8 rectangle and a 7 by 7 square have equal perimeters and different areas. Is Lily right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0602",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"s":7,"w":4,"kind":"samePerimSaid"},"truth":false,"promptText":"Equal perimeter, unequal area — Amara offers the 4 by 8 rectangle and the 7 by 7 square. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":8,"s":7,"w":4,"kind":"samePerimSaid"},"truth":false,"promptText":"Amara says a 4 by 8 rectangle and a 7 by 7 square have the same perimeter but different areas. Is Amara right about the two shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0603",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"s":10,"w":8,"kind":"samePerimSaid"},"truth":true,"promptText":"Diego presents the 8 m by 12 m rectangle and the 10 m square as equal-perimeter, unequal-area shapes. Is the presentation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"s":10,"w":8,"kind":"samePerimSaid"},"truth":true,"promptText":"Diego says an 8 m by 12 m rectangle and a square with 10 m sides have the same perimeter but different areas. Is Diego right about these shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0604",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"s":10,"w":6,"kind":"samePerimSaid"},"truth":true,"promptText":"Same fence, different field: Nora cites the 6 by 14 rectangle versus the 10 by 10 square. Correct example?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"s":10,"w":6,"kind":"samePerimSaid"},"truth":true,"promptText":"Nora says a 6 by 14 rectangle and a 10 by 10 square need the same length of fence around them but cover different areas. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0605",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":11,"s":10,"w":9,"kind":"samePerimSaid"},"truth":true,"promptText":"Luca presents the 9 m by 11 m rectangle and the 10 m square as equal-perimeter, unequal-area shapes. Is the presentation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":11,"s":10,"w":9,"kind":"samePerimSaid"},"truth":true,"promptText":"Luca says a 9 m by 11 m rectangle and a square with 10 m sides have equal perimeters and different areas. Is Luca right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0606",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":13,"s":10,"w":7,"kind":"samePerimSaid"},"truth":true,"promptText":"Same fence, different field: Ava cites the 7 by 13 rectangle versus the 10 by 10 square. Correct example?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":13,"s":10,"w":7,"kind":"samePerimSaid"},"truth":true,"promptText":"Ava says the same length of fence fits around a 7 by 13 rectangle and a 10 by 10 square, but their areas differ. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0607",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"s":12,"w":10,"kind":"samePerimSaid"},"truth":true,"promptText":"Omar presents the 10 m by 14 m rectangle and the 12 m square as equal-perimeter, unequal-area shapes. Is the presentation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"s":12,"w":10,"kind":"samePerimSaid"},"truth":true,"promptText":"Omar says a 10 m by 14 m rectangle and a square with 12 m sides have the same perimeter but different areas. Is Omar right about these shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0608",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":12,"s":9,"w":8,"kind":"samePerimSaid"},"truth":false,"promptText":"Same fence, different field: Ben cites the 8 by 12 rectangle versus the 9 by 9 square. Correct example?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":12,"s":9,"w":8,"kind":"samePerimSaid"},"truth":false,"promptText":"Ben says an 8 by 12 rectangle and a 9 by 9 square need the same length of fence around them but cover different areas. Is Ben right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0609",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":14,"s":11,"w":6,"kind":"samePerimSaid"},"truth":false,"promptText":"Finn presents the 6 m by 14 m rectangle and the 11 m square as equal-perimeter, unequal-area shapes. Is the presentation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":14,"s":11,"w":6,"kind":"samePerimSaid"},"truth":false,"promptText":"Finn says a 6 m by 14 m rectangle and a square with 11 m sides have the same perimeter but different areas. Is Finn right about these shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0610",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":11,"s":12,"w":9,"kind":"samePerimSaid"},"truth":false,"promptText":"Same fence, different field: Priya cites the 9 by 11 rectangle versus the 12 by 12 square. Correct example?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":11,"s":12,"w":9,"kind":"samePerimSaid"},"truth":false,"promptText":"Priya says the same length of fence fits around a 9 by 11 rectangle and a 12 by 12 square, but their areas differ. Is Priya right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0611",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":13,"s":9,"w":7,"kind":"samePerimSaid"},"truth":false,"promptText":"Sam presents the 7 m by 13 m rectangle and the 9 m square as equal-perimeter, unequal-area shapes. Is the presentation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":13,"s":9,"w":7,"kind":"samePerimSaid"},"truth":false,"promptText":"Sam says a 7 m by 13 m rectangle and a square with 9 m sides have equal perimeters and different areas. Is Sam right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0612",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":14,"s":11,"w":10,"kind":"samePerimSaid"},"truth":false,"promptText":"Same fence, different field: Nia cites the 10 by 14 rectangle versus the 11 by 11 square. Correct example?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":14,"s":11,"w":10,"kind":"samePerimSaid"},"truth":false,"promptText":"Nia says the same length of fence fits around a 10 by 14 rectangle and an 11 by 11 square, but their areas differ. Is Nia right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0613",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"s":10,"w":8,"kind":"samePerimSaid"},"truth":true,"promptText":"Kai presents the 8 m by 12 m rectangle and the 10 m square as equal-perimeter, unequal-area shapes. Is the presentation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":12,"s":10,"w":8,"kind":"samePerimSaid"},"truth":true,"promptText":"Kai says an 8 m by 12 m rectangle and a square with 10 m sides have the same perimeter but different areas. Is Kai right about these shapes?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0614",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":11,"s":10,"w":9,"kind":"samePerimSaid"},"truth":true,"promptText":"Same fence, different field: June cites the 9 by 11 rectangle versus the 10 by 10 square. Correct example?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":11,"s":10,"w":9,"kind":"samePerimSaid"},"truth":true,"promptText":"June says the same length of fence fits around a 9 by 11 rectangle and a 10 by 10 square, but their areas differ. Is June right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0615",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"s":10,"w":6,"kind":"samePerimSaid"},"truth":true,"promptText":"Lily presents the 6 m by 14 m rectangle and the 10 m square as equal-perimeter, unequal-area shapes. Is the presentation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"s":10,"w":6,"kind":"samePerimSaid"},"truth":true,"promptText":"Lily says a 6 m by 14 m rectangle and a square with 10 m sides have equal perimeters and different areas. Is Lily right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0616",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":13,"s":10,"w":7,"kind":"samePerimSaid"},"truth":true,"promptText":"Same fence, different field: Amara cites the 7 by 13 rectangle versus the 10 by 10 square. Correct example?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":13,"s":10,"w":7,"kind":"samePerimSaid"},"truth":true,"promptText":"Amara says a 7 by 13 rectangle and a 10 by 10 square need the same length of fence around them but cover different areas. Is Amara right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0617",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"s":12,"w":10,"kind":"samePerimSaid"},"truth":true,"promptText":"Leo presents the 10 m by 14 m rectangle and the 12 m square as equal-perimeter, unequal-area shapes. Is the presentation sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"h":14,"s":12,"w":10,"kind":"samePerimSaid"},"truth":true,"promptText":"Leo says a 10 m by 14 m rectangle and a square with 12 m sides have equal perimeters and different areas. Is Leo right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0618",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "samePerimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":12,"s":11,"w":8,"kind":"samePerimSaid"},"truth":false,"promptText":"Same fence, different field: Mina cites the 8 by 12 rectangle versus the 11 by 11 square. Correct example?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"ap":{"h":12,"s":11,"w":8,"kind":"samePerimSaid"},"truth":false,"promptText":"Mina says an 8 by 12 rectangle and an 11 by 11 square need the same length of fence around them but cover different areas. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0001",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "areaDims_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":5,"w":8,"kind":"areaOf"},"promptText":"Find the area of a 8 cm by 5 cm rectangle in square cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":5,"w":8,"kind":"areaOf"},"promptText":"Find the area of an 8 cm by 5 cm rectangle in square cm."},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0019",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "areaDims_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"ap":{"h":8,"w":8,"kind":"areaOf"},"promptText":"Find the area of a 8 cm by 8 cm rectangle in square cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"ap":{"h":8,"w":8,"kind":"areaOf"},"promptText":"Find the area of an 8 cm by 8 cm rectangle in square cm."},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0025",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "areaDims_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":4,"w":8,"kind":"areaOf"},"promptText":"Compute the area in square cm of a rectangle 8 cm by 4 cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":4,"w":8,"kind":"areaOf"},"promptText":"What is the area of a rectangle 8 cm by 4 cm, in square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0031",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "areaDims_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"ap":{"h":6,"w":12,"kind":"areaOf"},"promptText":"Compute the area in square cm of a rectangle 12 cm by 6 cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"ap":{"h":6,"w":12,"kind":"areaOf"},"promptText":"How many square cm is the area of a rectangle 12 cm by 6 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0033",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "areaDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"ap":{"h":8,"w":12,"kind":"areaOf"},"promptText":"A rectangle measures 12 m by 8 m. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":96,"display":{"ap":{"h":8,"w":12,"kind":"areaOf"},"promptText":"A rectangle measures 12 m by 8 m. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0034",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "areaDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ap":{"h":5,"w":14,"kind":"areaOf"},"promptText":"A rectangle measures 14 m by 5 m. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"ap":{"h":5,"w":14,"kind":"areaOf"},"promptText":"A rectangle measures 14 m by 5 m. How many square m is its area?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0036",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "areaDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":144,"display":{"ap":{"h":12,"w":12,"kind":"areaOf"},"promptText":"A rectangle measures 12 m by 12 m. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":144,"display":{"ap":{"h":12,"w":12,"kind":"areaOf"},"promptText":"A rectangle measures 12 m by 12 m. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0038",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "areaDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":98,"display":{"ap":{"h":7,"w":14,"kind":"areaOf"},"promptText":"A rectangle measures 14 m by 7 m. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":98,"display":{"ap":{"h":7,"w":14,"kind":"areaOf"},"promptText":"A rectangle measures 14 m by 7 m. How many square m is its area?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0040",
@@ -12712,7 +12712,7 @@ export const ITEMS = [
     structureType: "areaDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":132,"display":{"ap":{"h":11,"w":12,"kind":"areaOf"},"promptText":"A rectangle measures 12 m by 11 m. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":132,"display":{"ap":{"h":11,"w":12,"kind":"areaOf"},"promptText":"A rectangle measures 12 m by 11 m. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0042",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "areaDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"ap":{"h":10,"w":14,"kind":"areaOf"},"promptText":"A rectangle measures 14 m by 10 m. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"ap":{"h":10,"w":14,"kind":"areaOf"},"promptText":"A rectangle measures 14 m by 10 m. How many square m is its area?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0044",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "areaDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":196,"display":{"ap":{"h":14,"w":14,"kind":"areaOf"},"promptText":"A rectangle measures 14 m by 14 m. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":196,"display":{"ap":{"h":14,"w":14,"kind":"areaOf"},"promptText":"A rectangle measures 14 m by 14 m. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0046",
@@ -12772,7 +12772,7 @@ export const ITEMS = [
     structureType: "areaDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"ap":{"h":7,"w":13,"kind":"areaOf"},"promptText":"Determine the area of a 13 m by 7 m rectangle in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"ap":{"h":7,"w":13,"kind":"areaOf"},"promptText":"What is the area of a 13 m by 7 m rectangle in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0048",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "squareArea_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"ap":{"h":7,"w":7,"kind":"areaOf"},"promptText":"Compute the area in square cm of a 7 cm square."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"ap":{"h":7,"w":7,"kind":"areaOf"},"promptText":"What is the area of a 7 cm square, in square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0113",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "squareArea_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"ap":{"h":9,"w":9,"kind":"areaOf"},"promptText":"Compute the area in square cm of a 9 cm square."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":81,"display":{"ap":{"h":9,"w":9,"kind":"areaOf"},"promptText":"How many square cm is the area of a 9 cm square?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0115",
@@ -13462,7 +13462,7 @@ export const ITEMS = [
     structureType: "squareArea_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"ap":{"h":11,"w":11,"kind":"areaOf"},"promptText":"Compute the area in square cm of a 11 cm square."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"ap":{"h":11,"w":11,"kind":"areaOf"},"promptText":"What is the area of an 11 cm square, in square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0117",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "squareArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"ap":{"h":11,"w":11,"kind":"areaOf"},"promptText":"A square measures 11 m on each side. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"ap":{"h":11,"w":11,"kind":"areaOf"},"promptText":"A square measures 11 m on each side. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0118",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "squareArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":169,"display":{"ap":{"h":13,"w":13,"kind":"areaOf"},"promptText":"A square measures 13 m on each side. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":169,"display":{"ap":{"h":13,"w":13,"kind":"areaOf"},"promptText":"A square measures 13 m on each side. How many square m is its area?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0120",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "squareArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":225,"display":{"ap":{"h":15,"w":15,"kind":"areaOf"},"promptText":"A square measures 15 m on each side. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":225,"display":{"ap":{"h":15,"w":15,"kind":"areaOf"},"promptText":"A square measures 15 m on each side. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0122",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "squareArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"ap":{"h":11,"w":11,"kind":"areaOf"},"promptText":"The area of a 11 m square is how many square m?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":121,"display":{"ap":{"h":11,"w":11,"kind":"areaOf"},"promptText":"The area of an 11 m square is how many square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0123",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "squareArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":144,"display":{"ap":{"h":12,"w":12,"kind":"areaOf"},"promptText":"Determine the area of a square with 12 m sides in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":144,"display":{"ap":{"h":12,"w":12,"kind":"areaOf"},"promptText":"What is the area of a square with 12 m sides, in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0124",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "squareArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":196,"display":{"ap":{"h":14,"w":14,"kind":"areaOf"},"promptText":"Determine the area of a square with 14 m sides in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":196,"display":{"ap":{"h":14,"w":14,"kind":"areaOf"},"promptText":"What is the area of a square with 14 m sides, in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0126",
@@ -13742,7 +13742,7 @@ export const ITEMS = [
     structureType: "areaPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[48,26,13,40],"display":{"ap":{"h":5,"w":8,"kind":"areaOf"},"promptText":"Which choice equals the area of a 8 cm by 5 cm rectangle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":40,"choices":[48,26,13,40],"display":{"ap":{"h":5,"w":8,"kind":"areaOf"},"promptText":"Which choice equals the area of an 8 cm by 5 cm rectangle?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0145",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "areaPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[15,44,55,30],"display":{"ap":{"h":4,"w":11,"kind":"areaOf"},"promptText":"Select the area in square cm of a 11 cm by 4 cm rectangle."}},
+    question: {"a":null,"b":null,"op":"count","answer":44,"choices":[15,44,55,30],"display":{"ap":{"h":4,"w":11,"kind":"areaOf"},"promptText":"Select the area in square cm of an 11 cm by 4 cm rectangle."}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0148",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "areaPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":64,"choices":[16,32,72,64],"display":{"ap":{"h":8,"w":8,"kind":"areaOf"},"promptText":"Which choice equals the area of a 8 cm by 8 cm rectangle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":64,"choices":[16,32,72,64],"display":{"ap":{"h":8,"w":8,"kind":"areaOf"},"promptText":"Which choice equals the area of an 8 cm by 8 cm rectangle?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0151",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "areaPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"choices":[17,34,77,66],"display":{"ap":{"h":6,"w":11,"kind":"areaOf"},"promptText":"Select the area in square cm of a 11 cm by 6 cm rectangle."}},
+    question: {"a":null,"b":null,"op":"count","answer":66,"choices":[17,34,77,66],"display":{"ap":{"h":6,"w":11,"kind":"areaOf"},"promptText":"Select the area in square cm of an 11 cm by 6 cm rectangle."}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0154",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "areaPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[21,42,90,105],"display":{"ap":{"h":6,"w":15,"kind":"areaOf"},"promptText":"Determine the area of the 15 m by 6 m rectangle from the choices."}},
+    question: {"a":null,"b":null,"op":"count","answer":90,"choices":[21,42,90,105],"display":{"ap":{"h":6,"w":15,"kind":"areaOf"},"promptText":"Which choice is the area of the 15 m by 6 m rectangle?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0173",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "areaPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"choices":[40,91,104,20],"display":{"ap":{"h":7,"w":13,"kind":"areaOf"},"promptText":"Precisely which choice equals the area of a 13 by 7 rectangle?"}},
+    question: {"a":null,"b":null,"op":"count","answer":91,"choices":[40,91,104,20],"display":{"ap":{"h":7,"w":13,"kind":"areaOf"},"promptText":"Which choice is the area of a 13 by 7 rectangle?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0174",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "areaPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":108,"choices":[42,21,120,108],"display":{"ap":{"h":9,"w":12,"kind":"areaOf"},"promptText":"Determine the area of the 12 m by 9 m rectangle from the choices."}},
+    question: {"a":null,"b":null,"op":"count","answer":108,"choices":[42,21,120,108],"display":{"ap":{"h":9,"w":12,"kind":"areaOf"},"promptText":"Which number is the area of the 12 m by 9 m rectangle, in square m?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0175",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "perimDims_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":5,"w":8,"kind":"perimOf"},"promptText":"Find the perimeter of a 8 cm by 5 cm rectangle in cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":5,"w":8,"kind":"perimOf"},"promptText":"Find the perimeter of an 8 cm by 5 cm rectangle in cm."},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0193",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "perimDims_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":8,"w":8,"kind":"perimOf"},"promptText":"Find the perimeter of a 8 cm by 8 cm rectangle in cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":8,"w":8,"kind":"perimOf"},"promptText":"Find the perimeter of an 8 cm by 8 cm rectangle in cm."},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0199",
@@ -14342,7 +14342,7 @@ export const ITEMS = [
     structureType: "perimDims_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"ap":{"h":4,"w":8,"kind":"perimOf"},"promptText":"Compute the perimeter in cm of a rectangle 8 cm by 4 cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"ap":{"h":4,"w":8,"kind":"perimOf"},"promptText":"What is the perimeter of a rectangle 8 cm by 4 cm, in cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0205",
@@ -14362,7 +14362,7 @@ export const ITEMS = [
     structureType: "perimDims_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"ap":{"h":6,"w":12,"kind":"perimOf"},"promptText":"Compute the perimeter in cm of a rectangle 12 cm by 6 cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"ap":{"h":6,"w":12,"kind":"perimOf"},"promptText":"How many cm is the perimeter of a rectangle 12 cm by 6 cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0207",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "perimDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":8,"w":12,"kind":"perimOf"},"promptText":"A rectangle measures 12 m by 8 m. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":8,"w":12,"kind":"perimOf"},"promptText":"A rectangle measures 12 m by 8 m. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0208",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "perimDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":5,"w":14,"kind":"perimOf"},"promptText":"A rectangle measures 14 m by 5 m. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":5,"w":14,"kind":"perimOf"},"promptText":"A rectangle measures 14 m by 5 m. How many m is its perimeter?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0210",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "perimDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":12,"w":12,"kind":"perimOf"},"promptText":"A rectangle measures 12 m by 12 m. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":12,"w":12,"kind":"perimOf"},"promptText":"A rectangle measures 12 m by 12 m. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0212",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "perimDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":7,"w":14,"kind":"perimOf"},"promptText":"A rectangle measures 14 m by 7 m. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":7,"w":14,"kind":"perimOf"},"promptText":"A rectangle measures 14 m by 7 m. How many m is its perimeter?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0214",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "perimDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"ap":{"h":11,"w":12,"kind":"perimOf"},"promptText":"A rectangle measures 12 m by 11 m. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"ap":{"h":11,"w":12,"kind":"perimOf"},"promptText":"A rectangle measures 12 m by 11 m. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0216",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "perimDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":10,"w":14,"kind":"perimOf"},"promptText":"A rectangle measures 14 m by 10 m. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":10,"w":14,"kind":"perimOf"},"promptText":"A rectangle measures 14 m by 10 m. How many m is its perimeter?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0218",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "perimDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"ap":{"h":14,"w":14,"kind":"perimOf"},"promptText":"A rectangle measures 14 m by 14 m. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"ap":{"h":14,"w":14,"kind":"perimOf"},"promptText":"A rectangle measures 14 m by 14 m. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0220",
@@ -14512,7 +14512,7 @@ export const ITEMS = [
     structureType: "perimDims_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":7,"w":13,"kind":"perimOf"},"promptText":"Determine the perimeter of a 13 m by 7 m rectangle in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":7,"w":13,"kind":"perimOf"},"promptText":"What is the perimeter of a 13 m by 7 m rectangle in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0222",
@@ -14532,7 +14532,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"ap":{"h":3,"w":2,"kind":"perimOf"},"promptText":"Perim: 2 + 3 + 2 + 3 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"ap":{"h":3,"w":2,"kind":"perimOf"},"promptText":"Perimeter: 2 + 3 + 2 + 3 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0224",
@@ -14542,7 +14542,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"ap":{"h":4,"w":3,"kind":"perimOf"},"promptText":"3 + 4 + 3 + 4 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"ap":{"h":4,"w":3,"kind":"perimOf"},"promptText":"3 + 4 + 3 + 4 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0225",
@@ -14552,7 +14552,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"ap":{"h":5,"w":2,"kind":"perimOf"},"promptText":"Perim: 2 + 5 + 2 + 5 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"ap":{"h":5,"w":2,"kind":"perimOf"},"promptText":"Perimeter: 2 + 5 + 2 + 5 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0226",
@@ -14562,7 +14562,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"h":5,"w":4,"kind":"perimOf"},"promptText":"4 + 5 + 4 + 5 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"h":5,"w":4,"kind":"perimOf"},"promptText":"4 + 5 + 4 + 5 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0227",
@@ -14572,7 +14572,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"h":6,"w":3,"kind":"perimOf"},"promptText":"Perim: 3 + 6 + 3 + 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"h":6,"w":3,"kind":"perimOf"},"promptText":"Perimeter: 3 + 6 + 3 + 6 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0228",
@@ -14582,7 +14582,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"ap":{"h":6,"w":2,"kind":"perimOf"},"promptText":"2 + 6 + 2 + 6 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"ap":{"h":6,"w":2,"kind":"perimOf"},"promptText":"2 + 6 + 2 + 6 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0229",
@@ -14592,7 +14592,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"ap":{"h":6,"w":5,"kind":"perimOf"},"promptText":"Perim: 5 + 6 + 5 + 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"ap":{"h":6,"w":5,"kind":"perimOf"},"promptText":"Perimeter: 5 + 6 + 5 + 6 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0230",
@@ -14602,7 +14602,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"ap":{"h":4,"w":4,"kind":"perimOf"},"promptText":"4 + 4 + 4 + 4 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"ap":{"h":4,"w":4,"kind":"perimOf"},"promptText":"4 + 4 + 4 + 4 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0231",
@@ -14612,7 +14612,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"ap":{"h":3,"w":3,"kind":"perimOf"},"promptText":"Perim: 3 + 3 + 3 + 3 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"ap":{"h":3,"w":3,"kind":"perimOf"},"promptText":"Perimeter: 3 + 3 + 3 + 3 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0232",
@@ -14622,7 +14622,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"ap":{"h":4,"w":2,"kind":"perimOf"},"promptText":"2 + 4 + 2 + 4 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"ap":{"h":4,"w":2,"kind":"perimOf"},"promptText":"2 + 4 + 2 + 4 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0233",
@@ -14632,7 +14632,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ap":{"h":5,"w":5,"kind":"perimOf"},"promptText":"Perim: 5 + 5 + 5 + 5 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ap":{"h":5,"w":5,"kind":"perimOf"},"promptText":"Perimeter: 5 + 5 + 5 + 5 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0234",
@@ -14642,7 +14642,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"ap":{"h":6,"w":6,"kind":"perimOf"},"promptText":"6 + 6 + 6 + 6 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"ap":{"h":6,"w":6,"kind":"perimOf"},"promptText":"6 + 6 + 6 + 6 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0235",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ap":{"h":6,"w":4,"kind":"perimOf"},"promptText":"Perim: 4 + 6 + 4 + 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ap":{"h":6,"w":4,"kind":"perimOf"},"promptText":"Perimeter: 4 + 6 + 4 + 6 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0236",
@@ -14662,7 +14662,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"h":3,"w":6,"kind":"perimOf"},"promptText":"6 + 3 + 6 + 3 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"h":3,"w":6,"kind":"perimOf"},"promptText":"6 + 3 + 6 + 3 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0237",
@@ -14672,7 +14672,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ap":{"h":4,"w":6,"kind":"perimOf"},"promptText":"Perim: 6 + 4 + 6 + 4 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ap":{"h":4,"w":6,"kind":"perimOf"},"promptText":"Perimeter: 6 + 4 + 6 + 4 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0238",
@@ -14682,7 +14682,7 @@ export const ITEMS = [
     structureType: "perimLF_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"ap":{"h":3,"w":5,"kind":"perimOf"},"promptText":"5 + 3 + 5 + 3 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"ap":{"h":3,"w":5,"kind":"perimOf"},"promptText":"5 + 3 + 5 + 3 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0239",
@@ -14692,7 +14692,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"ap":{"h":4,"w":7,"kind":"perimOf"},"promptText":"Perim: 7 + 4 + 7 + 4 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"ap":{"h":4,"w":7,"kind":"perimOf"},"promptText":"Perimeter: 7 + 4 + 7 + 4 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0240",
@@ -14702,7 +14702,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":5,"w":8,"kind":"perimOf"},"promptText":"8 + 5 + 8 + 5 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":5,"w":8,"kind":"perimOf"},"promptText":"8 + 5 + 8 + 5 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0241",
@@ -14712,7 +14712,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"ap":{"h":3,"w":9,"kind":"perimOf"},"promptText":"Perim: 9 + 3 + 9 + 3 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"ap":{"h":3,"w":9,"kind":"perimOf"},"promptText":"Perimeter: 9 + 3 + 9 + 3 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0242",
@@ -14722,7 +14722,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":6,"w":10,"kind":"perimOf"},"promptText":"10 + 6 + 10 + 6 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":6,"w":10,"kind":"perimOf"},"promptText":"10 + 6 + 10 + 6 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0243",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"ap":{"h":4,"w":11,"kind":"perimOf"},"promptText":"Perim: 11 + 4 + 11 + 4 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"ap":{"h":4,"w":11,"kind":"perimOf"},"promptText":"Perimeter: 11 + 4 + 11 + 4 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0244",
@@ -14742,7 +14742,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"ap":{"h":5,"w":12,"kind":"perimOf"},"promptText":"12 + 5 + 12 + 5 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"ap":{"h":5,"w":12,"kind":"perimOf"},"promptText":"12 + 5 + 12 + 5 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0245",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":6,"w":7,"kind":"perimOf"},"promptText":"Perim: 7 + 6 + 7 + 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"ap":{"h":6,"w":7,"kind":"perimOf"},"promptText":"Perimeter: 7 + 6 + 7 + 6 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0246",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":8,"w":8,"kind":"perimOf"},"promptText":"8 + 8 + 8 + 8 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":8,"w":8,"kind":"perimOf"},"promptText":"8 + 8 + 8 + 8 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0247",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":7,"w":9,"kind":"perimOf"},"promptText":"Perim: 9 + 7 + 9 + 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"ap":{"h":7,"w":9,"kind":"perimOf"},"promptText":"Perimeter: 9 + 7 + 9 + 7 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0248",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":10,"w":10,"kind":"perimOf"},"promptText":"10 + 10 + 10 + 10 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":10,"w":10,"kind":"perimOf"},"promptText":"10 + 10 + 10 + 10 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0249",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"ap":{"h":6,"w":11,"kind":"perimOf"},"promptText":"Perim: 11 + 6 + 11 + 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"ap":{"h":6,"w":11,"kind":"perimOf"},"promptText":"Perimeter: 11 + 6 + 11 + 6 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0250",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"ap":{"h":3,"w":12,"kind":"perimOf"},"promptText":"12 + 3 + 12 + 3 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"ap":{"h":3,"w":12,"kind":"perimOf"},"promptText":"12 + 3 + 12 + 3 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0251",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"ap":{"h":9,"w":9,"kind":"perimOf"},"promptText":"Perim: 9 + 9 + 9 + 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"ap":{"h":9,"w":9,"kind":"perimOf"},"promptText":"Perimeter: 9 + 9 + 9 + 9 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0252",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"ap":{"h":4,"w":8,"kind":"perimOf"},"promptText":"8 + 4 + 8 + 4 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"ap":{"h":4,"w":8,"kind":"perimOf"},"promptText":"8 + 4 + 8 + 4 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0253",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"ap":{"h":4,"w":10,"kind":"perimOf"},"promptText":"Perim: 10 + 4 + 10 + 4 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"ap":{"h":4,"w":10,"kind":"perimOf"},"promptText":"Perimeter: 10 + 4 + 10 + 4 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0254",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "perimLF_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"ap":{"h":6,"w":12,"kind":"perimOf"},"promptText":"12 + 6 + 12 + 6 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"ap":{"h":6,"w":12,"kind":"perimOf"},"promptText":"12 + 6 + 12 + 6 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0255",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":8,"w":12,"kind":"perimOf"},"promptText":"Perim: 12 + 8 + 12 + 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":8,"w":12,"kind":"perimOf"},"promptText":"Perimeter: 12 + 8 + 12 + 8 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0256",
@@ -14862,7 +14862,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":6,"w":13,"kind":"perimOf"},"promptText":"13 + 6 + 13 + 6 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":6,"w":13,"kind":"perimOf"},"promptText":"13 + 6 + 13 + 6 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0257",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":5,"w":14,"kind":"perimOf"},"promptText":"Perim: 14 + 5 + 14 + 5 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":5,"w":14,"kind":"perimOf"},"promptText":"Perimeter: 14 + 5 + 14 + 5 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0258",
@@ -14882,7 +14882,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":4,"w":15,"kind":"perimOf"},"promptText":"15 + 4 + 15 + 4 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":4,"w":15,"kind":"perimOf"},"promptText":"15 + 4 + 15 + 4 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0259",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":12,"w":12,"kind":"perimOf"},"promptText":"Perim: 12 + 12 + 12 + 12 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":12,"w":12,"kind":"perimOf"},"promptText":"Perimeter: 12 + 12 + 12 + 12 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0260",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"ap":{"h":9,"w":13,"kind":"perimOf"},"promptText":"13 + 9 + 13 + 9 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"ap":{"h":9,"w":13,"kind":"perimOf"},"promptText":"13 + 9 + 13 + 9 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0261",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":7,"w":14,"kind":"perimOf"},"promptText":"Perim: 14 + 7 + 14 + 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":7,"w":14,"kind":"perimOf"},"promptText":"Perimeter: 14 + 7 + 14 + 7 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0262",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"ap":{"h":8,"w":15,"kind":"perimOf"},"promptText":"15 + 8 + 15 + 8 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"ap":{"h":8,"w":15,"kind":"perimOf"},"promptText":"15 + 8 + 15 + 8 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0263",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"ap":{"h":11,"w":12,"kind":"perimOf"},"promptText":"Perim: 12 + 11 + 12 + 11 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"ap":{"h":11,"w":12,"kind":"perimOf"},"promptText":"Perimeter: 12 + 11 + 12 + 11 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0264",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"h":13,"w":13,"kind":"perimOf"},"promptText":"13 + 13 + 13 + 13 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"h":13,"w":13,"kind":"perimOf"},"promptText":"13 + 13 + 13 + 13 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0265",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":10,"w":14,"kind":"perimOf"},"promptText":"Perim: 14 + 10 + 14 + 10 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":10,"w":14,"kind":"perimOf"},"promptText":"Perimeter: 14 + 10 + 14 + 10 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0266",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ap":{"h":15,"w":15,"kind":"perimOf"},"promptText":"15 + 15 + 15 + 15 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ap":{"h":15,"w":15,"kind":"perimOf"},"promptText":"15 + 15 + 15 + 15 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0267",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"ap":{"h":14,"w":14,"kind":"perimOf"},"promptText":"Perim: 14 + 14 + 14 + 14 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"ap":{"h":14,"w":14,"kind":"perimOf"},"promptText":"Perimeter: 14 + 14 + 14 + 14 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0268",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":6,"w":15,"kind":"perimOf"},"promptText":"15 + 6 + 15 + 6 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":6,"w":15,"kind":"perimOf"},"promptText":"15 + 6 + 15 + 6 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0269",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":7,"w":13,"kind":"perimOf"},"promptText":"Perim: 13 + 7 + 13 + 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":7,"w":13,"kind":"perimOf"},"promptText":"Perimeter: 13 + 7 + 13 + 7 = ?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0270",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "perimLF_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":9,"w":12,"kind":"perimOf"},"promptText":"12 + 9 + 12 + 9 = ? (perim)"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":9,"w":12,"kind":"perimOf"},"promptText":"12 + 9 + 12 + 9 = ? (perimeter)"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0271",
@@ -15162,7 +15162,7 @@ export const ITEMS = [
     structureType: "squarePerim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"ap":{"h":7,"w":7,"kind":"perimOf"},"promptText":"Compute the perimeter in cm of a 7 cm square."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"ap":{"h":7,"w":7,"kind":"perimOf"},"promptText":"What is the perimeter of a 7 cm square, in cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0287",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "squarePerim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"ap":{"h":9,"w":9,"kind":"perimOf"},"promptText":"Compute the perimeter in cm of a 9 cm square."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"ap":{"h":9,"w":9,"kind":"perimOf"},"promptText":"How many cm is the perimeter of a 9 cm square?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0289",
@@ -15202,7 +15202,7 @@ export const ITEMS = [
     structureType: "squarePerim_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"ap":{"h":11,"w":11,"kind":"perimOf"},"promptText":"Compute the perimeter in cm of a 11 cm square."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"ap":{"h":11,"w":11,"kind":"perimOf"},"promptText":"What is the perimeter of an 11 cm square, in cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0291",
@@ -15212,7 +15212,7 @@ export const ITEMS = [
     structureType: "squarePerim_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"ap":{"h":11,"w":11,"kind":"perimOf"},"promptText":"A square measures 11 m on each side. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"ap":{"h":11,"w":11,"kind":"perimOf"},"promptText":"A square measures 11 m on each side. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0292",
@@ -15232,7 +15232,7 @@ export const ITEMS = [
     structureType: "squarePerim_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"h":13,"w":13,"kind":"perimOf"},"promptText":"A square measures 13 m on each side. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"h":13,"w":13,"kind":"perimOf"},"promptText":"A square measures 13 m on each side. How many m is its perimeter?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0294",
@@ -15252,7 +15252,7 @@ export const ITEMS = [
     structureType: "squarePerim_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ap":{"h":15,"w":15,"kind":"perimOf"},"promptText":"A square measures 15 m on each side. Compute its perimeter in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ap":{"h":15,"w":15,"kind":"perimOf"},"promptText":"A square measures 15 m on each side. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0296",
@@ -15262,7 +15262,7 @@ export const ITEMS = [
     structureType: "squarePerim_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"ap":{"h":11,"w":11,"kind":"perimOf"},"promptText":"The perimeter of a 11 m square is how many m?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":44,"display":{"ap":{"h":11,"w":11,"kind":"perimOf"},"promptText":"The perimeter of an 11 m square is how many m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0297",
@@ -15272,7 +15272,7 @@ export const ITEMS = [
     structureType: "squarePerim_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":12,"w":12,"kind":"perimOf"},"promptText":"Determine the perimeter of a square with 12 m sides in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":12,"w":12,"kind":"perimOf"},"promptText":"What is the perimeter of a square with 12 m sides, in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0298",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "squarePerim_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"ap":{"h":14,"w":14,"kind":"perimOf"},"promptText":"Determine the perimeter of a square with 14 m sides in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"ap":{"h":14,"w":14,"kind":"perimOf"},"promptText":"What is the perimeter of a square with 14 m sides, in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0300",
@@ -15452,7 +15452,7 @@ export const ITEMS = [
     structureType: "missingSide_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"ap":{"p":26,"w":8,"kind":"missSidePerim"},"promptText":"With perimeter 26 cm and a 8 cm side, a rectangle's other side is how many cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"ap":{"p":26,"w":8,"kind":"missSidePerim"},"promptText":"With perimeter 26 cm and an 8 cm side, a rectangle's other side is how many cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0316",
@@ -15512,7 +15512,7 @@ export const ITEMS = [
     structureType: "missingSide_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"ap":{"p":30,"w":8,"kind":"missSidePerim"},"promptText":"With perimeter 30 cm and a 8 cm side, a rectangle's other side is how many cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"ap":{"p":30,"w":8,"kind":"missSidePerim"},"promptText":"With perimeter 30 cm and an 8 cm side, a rectangle's other side is how many cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0322",
@@ -15572,7 +15572,7 @@ export const ITEMS = [
     structureType: "missingSide_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"ap":{"p":40,"w":12,"kind":"missSidePerim"},"promptText":"A rectangle has perimeter 40 m and one side of 12 m. Compute the other side in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"ap":{"p":40,"w":12,"kind":"missSidePerim"},"promptText":"The perimeter of a rectangle is 40 m. Its length is 12 m. What is its width in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0328",
@@ -15592,7 +15592,7 @@ export const ITEMS = [
     structureType: "missingSide_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"ap":{"p":38,"w":14,"kind":"missSidePerim"},"promptText":"A rectangle has perimeter 38 m and one side of 14 m. Compute the other side in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"ap":{"p":38,"w":14,"kind":"missSidePerim"},"promptText":"A rectangle has a perimeter of 38 m. One side is 14 m long. How many m long is the side next to it?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0330",
@@ -15612,7 +15612,7 @@ export const ITEMS = [
     structureType: "missingSide_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"ap":{"p":46,"w":12,"kind":"missSidePerim"},"promptText":"A rectangle has perimeter 46 m and one side of 12 m. Compute the other side in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"ap":{"p":46,"w":12,"kind":"missSidePerim"},"promptText":"The perimeter of a rectangle is 46 m. Its length is 12 m. What is its width in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0332",
@@ -15632,7 +15632,7 @@ export const ITEMS = [
     structureType: "missingSide_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"ap":{"p":42,"w":14,"kind":"missSidePerim"},"promptText":"A rectangle has perimeter 42 m and one side of 14 m. Compute the other side in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"ap":{"p":42,"w":14,"kind":"missSidePerim"},"promptText":"A rectangle has a perimeter of 42 m. One side is 14 m long. How many m long is the side next to it?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0334",
@@ -15652,7 +15652,7 @@ export const ITEMS = [
     structureType: "missingSide_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"ap":{"p":48,"w":13,"kind":"missSidePerim"},"promptText":"A rectangle has perimeter 48 m and one side of 13 m. Compute the other side in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"ap":{"p":48,"w":13,"kind":"missSidePerim"},"promptText":"The perimeter of a rectangle is 48 m. Its length is 13 m. What is its width in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0336",
@@ -15672,7 +15672,7 @@ export const ITEMS = [
     structureType: "missingSide_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"ap":{"p":48,"w":14,"kind":"missSidePerim"},"promptText":"A rectangle has perimeter 48 m and one side of 14 m. Compute the other side in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"ap":{"p":48,"w":14,"kind":"missSidePerim"},"promptText":"A rectangle has a perimeter of 48 m. One side is 14 m long. How many m long is the side next to it?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0338",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "missingSide_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"ap":{"p":54,"w":14,"kind":"missSidePerim"},"promptText":"A rectangle has perimeter 54 m and one side of 14 m. Compute the other side in m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"ap":{"p":54,"w":14,"kind":"missSidePerim"},"promptText":"The perimeter of a rectangle is 54 m. Its length is 14 m. What is its width in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0340",
@@ -15872,7 +15872,7 @@ export const ITEMS = [
     structureType: "joinAreas_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"ap":{"a":11,"b":4,"c":3,"d":3,"kind":"joinAreas"},"promptText":"A figure is a 11 cm by 4 cm rectangle joined to a 3 cm by 3 cm rectangle, no overlap. What is its total area in square cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"ap":{"a":11,"b":4,"c":3,"d":3,"kind":"joinAreas"},"promptText":"A figure is an 11 cm by 4 cm rectangle joined to a 3 cm by 3 cm rectangle, no overlap. What is its total area in square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0358",
@@ -15932,7 +15932,7 @@ export const ITEMS = [
     structureType: "joinAreas_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"ap":{"a":11,"b":6,"c":4,"d":5,"kind":"joinAreas"},"promptText":"A figure is a 11 cm by 6 cm rectangle joined to a 4 cm by 5 cm rectangle, no overlap. What is its total area in square cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":86,"display":{"ap":{"a":11,"b":6,"c":4,"d":5,"kind":"joinAreas"},"promptText":"A figure is an 11 cm by 6 cm rectangle joined to a 4 cm by 5 cm rectangle, no overlap. What is its total area in square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0364",
@@ -15962,7 +15962,7 @@ export const ITEMS = [
     structureType: "joinAreas_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ap":{"a":12,"b":8,"c":6,"d":4,"kind":"joinAreas"},"promptText":"A composite figure is a 12 m by 8 m rectangle plus a 6 m by 4 m rectangle, no overlap. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ap":{"a":12,"b":8,"c":6,"d":4,"kind":"joinAreas"},"promptText":"A shape is made of a 12 m by 8 m rectangle and a 6 m by 4 m rectangle that do not overlap. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0367",
@@ -15982,7 +15982,7 @@ export const ITEMS = [
     structureType: "joinAreas_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":102,"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinAreas"},"promptText":"A composite figure is a 14 m by 5 m rectangle plus a 8 m by 4 m rectangle, no overlap. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":102,"display":{"ap":{"a":14,"b":5,"c":8,"d":4,"kind":"joinAreas"},"promptText":"A 14 m by 5 m rectangle and an 8 m by 4 m rectangle are joined with no overlap. What is the total area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0369",
@@ -16002,7 +16002,7 @@ export const ITEMS = [
     structureType: "joinAreas_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ap":{"a":12,"b":12,"c":6,"d":6,"kind":"joinAreas"},"promptText":"A composite figure is a 12 m by 12 m rectangle plus a 6 m by 6 m rectangle, no overlap. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"ap":{"a":12,"b":12,"c":6,"d":6,"kind":"joinAreas"},"promptText":"A shape is made of a 12 m by 12 m rectangle and a 6 m by 6 m rectangle that do not overlap. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0371",
@@ -16022,7 +16022,7 @@ export const ITEMS = [
     structureType: "joinAreas_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":146,"display":{"ap":{"a":14,"b":7,"c":8,"d":6,"kind":"joinAreas"},"promptText":"A composite figure is a 14 m by 7 m rectangle plus a 8 m by 6 m rectangle, no overlap. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":146,"display":{"ap":{"a":14,"b":7,"c":8,"d":6,"kind":"joinAreas"},"promptText":"A 14 m by 7 m rectangle and an 8 m by 6 m rectangle are joined with no overlap. What is the total area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0373",
@@ -16042,7 +16042,7 @@ export const ITEMS = [
     structureType: "joinAreas_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":157,"display":{"ap":{"a":12,"b":11,"c":5,"d":5,"kind":"joinAreas"},"promptText":"A composite figure is a 12 m by 11 m rectangle plus a 5 m by 5 m rectangle, no overlap. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":157,"display":{"ap":{"a":12,"b":11,"c":5,"d":5,"kind":"joinAreas"},"promptText":"A shape is made of a 12 m by 11 m rectangle and a 5 m by 5 m rectangle that do not overlap. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0375",
@@ -16062,7 +16062,7 @@ export const ITEMS = [
     structureType: "joinAreas_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":189,"display":{"ap":{"a":14,"b":10,"c":7,"d":7,"kind":"joinAreas"},"promptText":"A composite figure is a 14 m by 10 m rectangle plus a 7 m by 7 m rectangle, no overlap. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":189,"display":{"ap":{"a":14,"b":10,"c":7,"d":7,"kind":"joinAreas"},"promptText":"A 14 m by 10 m rectangle and a 7 m by 7 m rectangle are joined with no overlap. What is the total area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0377",
@@ -16082,7 +16082,7 @@ export const ITEMS = [
     structureType: "joinAreas_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"ap":{"a":14,"b":14,"c":9,"d":6,"kind":"joinAreas"},"promptText":"A composite figure is a 14 m by 14 m rectangle plus a 9 m by 6 m rectangle, no overlap. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":250,"display":{"ap":{"a":14,"b":14,"c":9,"d":6,"kind":"joinAreas"},"promptText":"A shape is made of a 14 m by 14 m rectangle and a 9 m by 6 m rectangle that do not overlap. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0379",
@@ -16252,7 +16252,7 @@ export const ITEMS = [
     structureType: "cutArea_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"ap":{"H":7,"W":11,"h":4,"w":4,"kind":"cutArea"},"promptText":"Cutting a 4 by 4 notch from a 11 by 7 sheet leaves how many square cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":61,"display":{"ap":{"H":7,"W":11,"h":4,"w":4,"kind":"cutArea"},"promptText":"Cutting a 4 by 4 notch from an 11 by 7 sheet leaves how many square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0396",
@@ -16292,7 +16292,7 @@ export const ITEMS = [
     structureType: "cutArea_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"ap":{"H":9,"W":11,"h":4,"w":5,"kind":"cutArea"},"promptText":"Cutting a 5 by 4 notch from a 11 by 9 sheet leaves how many square cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":79,"display":{"ap":{"H":9,"W":11,"h":4,"w":5,"kind":"cutArea"},"promptText":"Cutting a 5 by 4 notch from an 11 by 9 sheet leaves how many square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0400",
@@ -16332,7 +16332,7 @@ export const ITEMS = [
     structureType: "cutArea_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":103,"display":{"ap":{"H":11,"W":11,"h":3,"w":6,"kind":"cutArea"},"promptText":"Cutting a 6 by 3 notch from a 11 by 11 sheet leaves how many square cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":103,"display":{"ap":{"H":11,"W":11,"h":3,"w":6,"kind":"cutArea"},"promptText":"Cutting a 6 by 3 notch from an 11 by 11 sheet leaves how many square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0404",
@@ -16352,7 +16352,7 @@ export const ITEMS = [
     structureType: "cutArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":126,"display":{"ap":{"H":10,"W":15,"h":4,"w":6,"kind":"cutArea"},"promptText":"A 15 m by 10 m plot has a 6 m by 4 m corner excluded. Compute the remaining area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":126,"display":{"ap":{"H":10,"W":15,"h":4,"w":6,"kind":"cutArea"},"promptText":"A 15 m by 10 m plot has a 6 m by 4 m corner cut off. How many square m of the plot are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0406",
@@ -16372,7 +16372,7 @@ export const ITEMS = [
     structureType: "cutArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"ap":{"H":12,"W":15,"h":5,"w":8,"kind":"cutArea"},"promptText":"A 15 m by 12 m plot has a 8 m by 5 m corner excluded. Compute the remaining area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"ap":{"H":12,"W":15,"h":5,"w":8,"kind":"cutArea"},"promptText":"An 8 m by 5 m corner is cut out of a 15 m by 12 m plot. What is the area of the part that is left, in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0408",
@@ -16392,7 +16392,7 @@ export const ITEMS = [
     structureType: "cutArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":197,"display":{"ap":{"H":15,"W":15,"h":4,"w":7,"kind":"cutArea"},"promptText":"A 15 m by 15 m plot has a 7 m by 4 m corner excluded. Compute the remaining area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":197,"display":{"ap":{"H":15,"W":15,"h":4,"w":7,"kind":"cutArea"},"promptText":"A 15 m by 15 m plot has a 7 m by 4 m corner cut off. How many square m of the plot are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0410",
@@ -16402,7 +16402,7 @@ export const ITEMS = [
     structureType: "cutArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":116,"display":{"ap":{"H":10,"W":14,"h":3,"w":8,"kind":"cutArea"},"promptText":"Excluding a 8 by 3 section from a 14 by 10 plot leaves exactly how many square m?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":116,"display":{"ap":{"H":10,"W":14,"h":3,"w":8,"kind":"cutArea"},"promptText":"Excluding an 8 by 3 section from a 14 by 10 plot leaves exactly how many square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0411",
@@ -16412,7 +16412,7 @@ export const ITEMS = [
     structureType: "cutArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":134,"display":{"ap":{"H":13,"W":13,"h":7,"w":5,"kind":"cutArea"},"promptText":"A 13 m by 13 m plot has a 5 m by 7 m corner excluded. Compute the remaining area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":134,"display":{"ap":{"H":13,"W":13,"h":7,"w":5,"kind":"cutArea"},"promptText":"A 5 m by 7 m corner is cut out of a 13 m by 13 m plot. What is the area of the part that is left, in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0412",
@@ -16432,7 +16432,7 @@ export const ITEMS = [
     structureType: "cutArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":124,"display":{"ap":{"H":11,"W":14,"h":5,"w":6,"kind":"cutArea"},"promptText":"A 14 m by 11 m plot has a 6 m by 5 m corner excluded. Compute the remaining area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":124,"display":{"ap":{"H":11,"W":14,"h":5,"w":6,"kind":"cutArea"},"promptText":"A 14 m by 11 m plot has a 6 m by 5 m corner cut off. How many square m of the plot are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0414",
@@ -16452,7 +16452,7 @@ export const ITEMS = [
     structureType: "cutArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":117,"display":{"ap":{"H":11,"W":15,"h":6,"w":8,"kind":"cutArea"},"promptText":"A 15 m by 11 m plot has a 8 m by 6 m corner excluded. Compute the remaining area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":117,"display":{"ap":{"H":11,"W":15,"h":6,"w":8,"kind":"cutArea"},"promptText":"An 8 m by 6 m corner is cut out of a 15 m by 11 m plot. What is the area of the part that is left, in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0416",
@@ -16472,7 +16472,7 @@ export const ITEMS = [
     structureType: "cutArea_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ap":{"H":13,"W":15,"h":4,"w":10,"kind":"cutArea"},"promptText":"A 15 m by 13 m plot has a 10 m by 4 m corner excluded. Compute the remaining area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":155,"display":{"ap":{"H":13,"W":15,"h":4,"w":10,"kind":"cutArea"},"promptText":"A 15 m by 13 m plot has a 10 m by 4 m corner cut off. How many square m of the plot are left?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0418",
@@ -16492,7 +16492,7 @@ export const ITEMS = [
     structureType: "twoSquares_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"ap":{"a":2,"b":2,"c":2,"d":2,"kind":"joinAreas"},"promptText":"A 2-unit square and a 2-unit square join with no overlap. How many unit squares in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"ap":{"a":2,"b":2,"c":2,"d":2,"kind":"joinAreas"},"promptText":"Two squares, each with sides 2 units long, join with no overlap. How many unit squares do they cover in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0420",
@@ -16502,7 +16502,7 @@ export const ITEMS = [
     structureType: "twoSquares_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"a":3,"b":3,"c":3,"d":3,"kind":"joinAreas"},"promptText":"Two squares sit side by side: one 3 units on a side, one 3 units on a side. How many unit squares do they cover together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"a":3,"b":3,"c":3,"d":3,"kind":"joinAreas"},"promptText":"Two squares sit side by side, each 3 units on a side. How many unit squares do they cover together?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0421",
@@ -16512,7 +16512,7 @@ export const ITEMS = [
     structureType: "twoSquares_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ap":{"a":2,"b":2,"c":4,"d":4,"kind":"joinAreas"},"promptText":"A 2-unit square and a 4-unit square join with no overlap. How many unit squares in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"ap":{"a":2,"b":2,"c":4,"d":4,"kind":"joinAreas"},"promptText":"A square with sides 2 units long and a square with sides 4 units long join with no overlap. How many unit squares do they cover in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0422",
@@ -16532,7 +16532,7 @@ export const ITEMS = [
     structureType: "twoSquares_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"ap":{"a":3,"b":3,"c":2,"d":2,"kind":"joinAreas"},"promptText":"A 3-unit square and a 2-unit square join with no overlap. How many unit squares in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"ap":{"a":3,"b":3,"c":2,"d":2,"kind":"joinAreas"},"promptText":"A square with sides 3 units long and a square with sides 2 units long join with no overlap. How many unit squares do they cover in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0424",
@@ -16552,7 +16552,7 @@ export const ITEMS = [
     structureType: "twoSquares_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"ap":{"a":4,"b":4,"c":3,"d":3,"kind":"joinAreas"},"promptText":"A 4-unit square and a 3-unit square join with no overlap. How many unit squares in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"ap":{"a":4,"b":4,"c":3,"d":3,"kind":"joinAreas"},"promptText":"A square with sides 4 units long and a square with sides 3 units long join with no overlap. How many unit squares do they cover in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0426",
@@ -16572,7 +16572,7 @@ export const ITEMS = [
     structureType: "twoSquares_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"ap":{"a":2,"b":2,"c":2,"d":2,"kind":"joinAreas"},"promptText":"Together, a square of side 2 and a square of side 2 cover how many unit squares?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"ap":{"a":2,"b":2,"c":2,"d":2,"kind":"joinAreas"},"promptText":"Together, two squares of side 2 cover how many unit squares?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0428",
@@ -16582,7 +16582,7 @@ export const ITEMS = [
     structureType: "twoSquares_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"a":3,"b":3,"c":3,"d":3,"kind":"joinAreas"},"promptText":"Squares of side 3 and side 3 make one figure without overlapping. How many unit squares is the figure?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"ap":{"a":3,"b":3,"c":3,"d":3,"kind":"joinAreas"},"promptText":"Two squares of side 3 make one figure with no overlap. How many unit squares is the figure?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0429",
@@ -16672,7 +16672,7 @@ export const ITEMS = [
     structureType: "twoSquares_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"ap":{"a":6,"b":6,"c":6,"d":6,"kind":"joinAreas"},"promptText":"Two squares with sides 6 cm and 6 cm combine without overlap. What is the total area in square cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"ap":{"a":6,"b":6,"c":6,"d":6,"kind":"joinAreas"},"promptText":"Two squares with 6 cm sides combine without overlap. What is the total area in square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0438",
@@ -16682,7 +16682,7 @@ export const ITEMS = [
     structureType: "twoSquares_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":98,"display":{"ap":{"a":7,"b":7,"c":7,"d":7,"kind":"joinAreas"},"promptText":"Find the combined area of squares of side 7 cm and side 7 cm, in square cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":98,"display":{"ap":{"a":7,"b":7,"c":7,"d":7,"kind":"joinAreas"},"promptText":"Find the combined area of two squares with 7 cm sides, in square cm."},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0439",
@@ -16692,7 +16692,7 @@ export const ITEMS = [
     structureType: "twoSquares_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":128,"display":{"ap":{"a":8,"b":8,"c":8,"d":8,"kind":"joinAreas"},"promptText":"Two squares with sides 8 cm and 8 cm combine without overlap. What is the total area in square cm?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":128,"display":{"ap":{"a":8,"b":8,"c":8,"d":8,"kind":"joinAreas"},"promptText":"Two squares with 8 cm sides combine without overlap. What is the total area in square cm?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0440",
@@ -16702,7 +16702,7 @@ export const ITEMS = [
     structureType: "twoSquares_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ap":{"a":5,"b":5,"c":5,"d":5,"kind":"joinAreas"},"promptText":"Find the combined area of squares of side 5 cm and side 5 cm, in square cm."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"ap":{"a":5,"b":5,"c":5,"d":5,"kind":"joinAreas"},"promptText":"Find the combined area of two squares with 5 cm sides, in square cm."},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0441",
@@ -16742,7 +16742,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":181,"display":{"ap":{"a":9,"b":9,"c":10,"d":10,"kind":"joinAreas"},"promptText":"Squares of side 9 m and side 10 m form one non-overlapping figure. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":181,"display":{"ap":{"a":9,"b":9,"c":10,"d":10,"kind":"joinAreas"},"promptText":"A square with 9 m sides and a square with 10 m sides are joined with no overlap. What is the area of the new shape in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0445",
@@ -16762,7 +16762,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":202,"display":{"ap":{"a":9,"b":9,"c":11,"d":11,"kind":"joinAreas"},"promptText":"Squares of side 9 m and side 11 m form one non-overlapping figure. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":202,"display":{"ap":{"a":9,"b":9,"c":11,"d":11,"kind":"joinAreas"},"promptText":"Two squares, one with 9 m sides and one with 11 m sides, make one shape without overlapping. How many square m is the area of the shape?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0447",
@@ -16782,7 +16782,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":265,"display":{"ap":{"a":11,"b":11,"c":12,"d":12,"kind":"joinAreas"},"promptText":"Squares of side 11 m and side 12 m form one non-overlapping figure. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":265,"display":{"ap":{"a":11,"b":11,"c":12,"d":12,"kind":"joinAreas"},"promptText":"A square with 11 m sides and a square with 12 m sides are joined with no overlap. What is the area of the new shape in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0449",
@@ -16802,7 +16802,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"ap":{"a":10,"b":10,"c":10,"d":10,"kind":"joinAreas"},"promptText":"Squares of side 10 m and side 10 m form one non-overlapping figure. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":200,"display":{"ap":{"a":10,"b":10,"c":10,"d":10,"kind":"joinAreas"},"promptText":"Two squares, each with 10 m sides, make one shape without overlapping. How many square m is the area of the shape?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0451",
@@ -16812,7 +16812,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":242,"display":{"ap":{"a":11,"b":11,"c":11,"d":11,"kind":"joinAreas"},"promptText":"Exactly how many square m do squares of sides 11 m and 11 m cover together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":242,"display":{"ap":{"a":11,"b":11,"c":11,"d":11,"kind":"joinAreas"},"promptText":"Exactly how many square m do two squares with 11 m sides cover together?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0452",
@@ -16822,7 +16822,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":288,"display":{"ap":{"a":12,"b":12,"c":12,"d":12,"kind":"joinAreas"},"promptText":"Squares of side 12 m and side 12 m form one non-overlapping figure. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":288,"display":{"ap":{"a":12,"b":12,"c":12,"d":12,"kind":"joinAreas"},"promptText":"Two squares with 12 m sides are joined with no overlap. What is the area of the new shape in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0453",
@@ -16832,7 +16832,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":162,"display":{"ap":{"a":9,"b":9,"c":9,"d":9,"kind":"joinAreas"},"promptText":"Exactly how many square m do squares of sides 9 m and 9 m cover together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":162,"display":{"ap":{"a":9,"b":9,"c":9,"d":9,"kind":"joinAreas"},"promptText":"Exactly how many square m do two squares with 9 m sides cover together?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0454",
@@ -16842,7 +16842,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":181,"display":{"ap":{"a":10,"b":10,"c":9,"d":9,"kind":"joinAreas"},"promptText":"Squares of side 10 m and side 9 m form one non-overlapping figure. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":181,"display":{"ap":{"a":10,"b":10,"c":9,"d":9,"kind":"joinAreas"},"promptText":"Two squares, one with 10 m sides and one with 9 m sides, make one shape without overlapping. How many square m is the area of the shape?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0455",
@@ -16862,7 +16862,7 @@ export const ITEMS = [
     structureType: "twoSquares_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":265,"display":{"ap":{"a":12,"b":12,"c":11,"d":11,"kind":"joinAreas"},"promptText":"Squares of side 12 m and side 11 m form one non-overlapping figure. Compute its area in square m."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":265,"display":{"ap":{"a":12,"b":12,"c":11,"d":11,"kind":"joinAreas"},"promptText":"A square with 12 m sides and a square with 11 m sides are joined with no overlap. What is the area of the new shape in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0457",
@@ -16942,7 +16942,7 @@ export const ITEMS = [
     structureType: "missingPart_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"ap":{"T":18,"a":3,"b":4,"kind":"missingPart"},"promptText":"Two pieces make a 18-square figure. The first piece is 3 by 4. How many unit squares does the second piece cover?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"ap":{"T":18,"a":3,"b":4,"kind":"missingPart"},"promptText":"Two pieces make an 18-square figure. The first piece is 3 by 4. How many unit squares does the second piece cover?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0465",
@@ -17132,7 +17132,7 @@ export const ITEMS = [
     structureType: "missingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"T":100,"a":8,"b":6,"kind":"missingPart"},"promptText":"A composite region of 100 square m contains a 8 m by 6 m rectangle and one other rectangle. Compute the other rectangle's area."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"ap":{"T":100,"a":8,"b":6,"kind":"missingPart"},"promptText":"A shape with an area of 100 square m is made of an 8 m by 6 m rectangle and one other rectangle. What is the area of the other rectangle in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0484",
@@ -17152,7 +17152,7 @@ export const ITEMS = [
     structureType: "missingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"ap":{"T":120,"a":8,"b":7,"kind":"missingPart"},"promptText":"A composite region of 120 square m contains a 8 m by 7 m rectangle and one other rectangle. Compute the other rectangle's area."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":64,"display":{"ap":{"T":120,"a":8,"b":7,"kind":"missingPart"},"promptText":"Two rectangles make a shape with an area of 120 square m. One rectangle is 8 m by 7 m. What is the area of the other rectangle, in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0486",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "missingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"T":96,"a":6,"b":8,"kind":"missingPart"},"promptText":"A composite region of 96 square m contains a 6 m by 8 m rectangle and one other rectangle. Compute the other rectangle's area."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"T":96,"a":6,"b":8,"kind":"missingPart"},"promptText":"A shape with an area of 96 square m is made of a 6 m by 8 m rectangle and one other rectangle. What is the area of the other rectangle in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0488",
@@ -17192,7 +17192,7 @@ export const ITEMS = [
     structureType: "missingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ap":{"T":126,"a":9,"b":9,"kind":"missingPart"},"promptText":"A composite region of 126 square m contains a 9 m by 9 m rectangle and one other rectangle. Compute the other rectangle's area."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"ap":{"T":126,"a":9,"b":9,"kind":"missingPart"},"promptText":"Two rectangles make a shape with an area of 126 square m. One rectangle is 9 m by 9 m. What is the area of the other rectangle, in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0490",
@@ -17212,7 +17212,7 @@ export const ITEMS = [
     structureType: "missingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"T":112,"a":8,"b":8,"kind":"missingPart"},"promptText":"A composite region of 112 square m contains a 8 m by 8 m rectangle and one other rectangle. Compute the other rectangle's area."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"T":112,"a":8,"b":8,"kind":"missingPart"},"promptText":"A shape with an area of 112 square m is made of an 8 m by 8 m rectangle and one other rectangle. What is the area of the other rectangle in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0492",
@@ -17232,7 +17232,7 @@ export const ITEMS = [
     structureType: "missingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"ap":{"T":135,"a":9,"b":7,"kind":"missingPart"},"promptText":"A composite region of 135 square m contains a 9 m by 7 m rectangle and one other rectangle. Compute the other rectangle's area."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":72,"display":{"ap":{"T":135,"a":9,"b":7,"kind":"missingPart"},"promptText":"Two rectangles make a shape with an area of 135 square m. One rectangle is 9 m by 7 m. What is the area of the other rectangle, in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0494",
@@ -17252,7 +17252,7 @@ export const ITEMS = [
     structureType: "missingPart_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"ap":{"T":154,"a":11,"b":8,"kind":"missingPart"},"promptText":"A composite region of 154 square m contains a 11 m by 8 m rectangle and one other rectangle. Compute the other rectangle's area."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":66,"display":{"ap":{"T":154,"a":11,"b":8,"kind":"missingPart"},"promptText":"A shape with an area of 154 square m is made of an 11 m by 8 m rectangle and one other rectangle. What is the area of the other rectangle in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0496",
@@ -17262,7 +17262,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To put tape all the way around a card, do you need the trip AROUND the shape or the space INSIDE it? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To put tape all the way around a card, which do you measure: around the edge or inside the shape?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0497",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To walk the border of the rug, do you need the trip AROUND the shape or the space INSIDE it? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To walk the border of the rug, which do you measure: around the edge or inside the shape?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0499",
@@ -17302,7 +17302,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To string lights around a window, do you need the trip AROUND the shape or the space INSIDE it? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To string lights around a window, which do you measure: around the edge or inside the shape?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0501",
@@ -17322,7 +17322,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To draw a line around a photo, do you need the trip AROUND the shape or the space INSIDE it? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To draw a line around a photo, which do you measure: around the edge or inside the shape?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0503",
@@ -17342,7 +17342,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To ribbon the edge of a gift lid, do you need the trip AROUND the shape or the space INSIDE it? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Do you measure around the edge or inside the shape to trim a gift lid with ribbon?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0505",
@@ -17362,7 +17362,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To trace the outline of a book, do you need the trip AROUND the shape or the space INSIDE it? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Do you measure around the edge or inside the shape to trace the outline of a book?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0507",
@@ -17382,7 +17382,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To put a border of dots on a page, do you need the trip AROUND the shape or the space INSIDE it? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"around the edge","choices":["around the edge","inside the shape"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Do you measure around the edge or inside the shape to put a border of dots on a page?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0509",
@@ -17402,7 +17402,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measurement fits the job of sod a lawn: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To cover a lawn with new grass, which measure do you need: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0511",
@@ -17422,7 +17422,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measurement fits the job of carpet a bedroom: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measure do you need to put carpet on a bedroom floor: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0513",
@@ -17442,7 +17442,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measurement fits the job of tile a kitchen floor: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measure do you need to tile a kitchen floor: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0515",
@@ -17462,7 +17462,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measurement fits the job of paint a wall: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measure do you need to paint a wall: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0517",
@@ -17482,7 +17482,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measurement fits the job of cover a table in cloth: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To cover a table with a cloth, which measure do you need: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0519",
@@ -17502,7 +17502,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measurement fits the job of turf a soccer field: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"area","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To cover a soccer field with fake grass, which measure do you need: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0521",
@@ -17522,7 +17522,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Deciding how to install a railing around a deck calls for which measure: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To put a railing around a deck, which measure do you need: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0523",
@@ -17542,7 +17542,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Deciding how to string a banner around a stage calls for which measure: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measure do you use to hang a banner around a stage: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0525",
@@ -17562,7 +17562,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Deciding how to put curbing around a pond calls for which measure: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To put a curb around a pond, which measure do you need: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0527",
@@ -17582,7 +17582,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Deciding how to wrap caution tape around a site calls for which measure: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To put caution tape around a work site, which measure do you need: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0529",
@@ -17602,7 +17602,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Deciding how to mount weather stripping around a window calls for which measure: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measure do you use to put a seal strip around a window: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0531",
@@ -17622,7 +17622,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Deciding how to put piping around a cushion edge calls for which measure: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Which measure do you use to sew piping around the edge of a cushion: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0533",
@@ -17642,7 +17642,7 @@ export const ITEMS = [
     structureType: "whichMeasure_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"Deciding how to run a fence line around a paddock calls for which measure: perimeter or area?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"perimeter","choices":["perimeter","area"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"To run a fence around a horse pen, which measure do you need: perimeter or area?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0535",
@@ -17652,7 +17652,7 @@ export const ITEMS = [
     structureType: "unitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the space inside a card. Is the answer counted in unit squares or in units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the space inside a card. Is your answer counted in unit squares or in units?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0536",
@@ -17662,7 +17662,7 @@ export const ITEMS = [
     structureType: "unitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the trip around a rug. Is the answer counted in unit squares or in units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the trip around a rug. Is your answer counted in unit squares or in units?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0537",
@@ -17692,7 +17692,7 @@ export const ITEMS = [
     structureType: "unitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the space inside a tray. Is the answer counted in unit squares or in units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the space inside a tray. Do you count your answer in unit squares or in units?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0540",
@@ -17702,7 +17702,7 @@ export const ITEMS = [
     structureType: "unitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the trip around a mat. Is the answer counted in unit squares or in units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the trip around a mat. Do you count your answer in unit squares or in units?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0541",
@@ -17732,7 +17732,7 @@ export const ITEMS = [
     structureType: "unitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the space inside a tile patch. Is the answer counted in unit squares or in units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the space inside a tile patch. Is your answer counted in unit squares or in units?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0544",
@@ -17742,7 +17742,7 @@ export const ITEMS = [
     structureType: "unitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the trip around a game board. Is the answer counted in unit squares or in units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the trip around a game board. Is your answer counted in unit squares or in units?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0545",
@@ -17772,7 +17772,7 @@ export const ITEMS = [
     structureType: "unitPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the space inside a sticker sheet. Is the answer counted in unit squares or in units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"You measured the space inside a sticker sheet. Do you count your answer in unit squares or in units?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0548",
@@ -18042,7 +18042,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 2 units by 3 units. Its area is 6 of which count: unit squares or units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 2 units by 3 units. Its area is 6. What does the 6 count?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0575",
@@ -18052,7 +18052,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The border of a 3-by-4 rectangle is 14 of which count: units or unit squares? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The border of a 3-by-4 rectangle measures 14. What is the 14 counting?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0576",
@@ -18062,7 +18062,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 2 units by 5 units. Its area is 10 of which count: unit squares or units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 2 units by 5 units, so its area is 10. What is the 10 counting?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0577",
@@ -18072,7 +18072,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The border of a 4-by-4 rectangle is 16 of which count: units or unit squares? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The distance around a 5-by-3 rectangle is 16. What does the 16 count?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0578",
@@ -18082,7 +18082,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 3 units by 3 units. Its area is 9 of which count: unit squares or units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The area of a 3-by-3 square is 9. What does the 9 count?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0579",
@@ -18092,7 +18092,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The border of a 2-by-4 rectangle is 12 of which count: units or unit squares? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 2 units by 4 units. The distance around it is 12. What does the 12 count?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0580",
@@ -18102,7 +18102,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 2 units by 6 units. Its area is 12 of which count: unit squares or units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 2 units by 6 units, so its area is 12. What is the 12 counting?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0581",
@@ -18112,7 +18112,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The border of a 5-by-2 rectangle is 14 of which count: units or unit squares? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The distance around a 5-by-2 rectangle is 14. What is the 14 counting?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0582",
@@ -18122,7 +18122,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 4 units by 3 units. Its area is 12 of which count: unit squares or units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The area of a 4-by-3 rectangle is 12. What does the 12 count?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0583",
@@ -18132,7 +18132,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The border of a 3-by-2 rectangle is 10 of which count: units or unit squares? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 3 units by 2 units. Its border measures 10. What is the 10 counting?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0584",
@@ -18142,7 +18142,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 5 units by 3 units. Its area is 15 of which count: unit squares or units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 5 units by 3 units, so its area is 15. What is the 15 counting?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0585",
@@ -18152,7 +18152,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The border of a 6-by-2 rectangle is 16 of which count: units or unit squares? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"units","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"The distance around a 6-by-2 rectangle is 16. What does the 16 count?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0586",
@@ -18162,7 +18162,7 @@ export const ITEMS = [
     structureType: "labelPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 4 units by 2 units. Its area is 8 of which count: unit squares or units? Pick one."}},
+    question: {"a":null,"b":null,"op":"count","answer":"unit squares","choices":["unit squares","units"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A rectangle is 4 units by 2 units. Its area is 8. What does the 8 count?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0587",
@@ -18182,7 +18182,7 @@ export const ITEMS = [
     structureType: "labelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cm","choices":["square cm","cm"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A 8 cm by 5 cm rectangle has perimeter 26. Which unit finishes that: cm or square cm?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"cm","choices":["square cm","cm"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"An 8 cm by 5 cm rectangle has perimeter 26. Which unit finishes that: cm or square cm?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0589",
@@ -18212,7 +18212,7 @@ export const ITEMS = [
     structureType: "labelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"square cm","choices":["square cm","cm"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A 11 cm by 4 cm rectangle has area 44. Which unit finishes that: square cm or cm?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"square cm","choices":["square cm","cm"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"An 11 cm by 4 cm rectangle has area 44. Which unit finishes that: square cm or cm?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0592",
@@ -18242,7 +18242,7 @@ export const ITEMS = [
     structureType: "labelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cm","choices":["square cm","cm"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A 8 cm by 8 cm rectangle has perimeter 32. Which unit finishes that: cm or square cm?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"cm","choices":["square cm","cm"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"An 8 cm by 8 cm rectangle has perimeter 32. Which unit finishes that: cm or square cm?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0595",
@@ -18272,7 +18272,7 @@ export const ITEMS = [
     structureType: "labelPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"square cm","choices":["square cm","cm"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"A 11 cm by 6 cm rectangle has area 66. Which unit finishes that: square cm or cm?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"square cm","choices":["square cm","cm"],"display":{"ap":{"kind":"authoredChoice"},"promptText":"An 11 cm by 6 cm rectangle has area 66. Which unit finishes that: square cm or cm?"}},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0598",
@@ -18692,7 +18692,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":8,"w":12,"kind":"perimOf"},"promptText":"Compute and type the perimeter of a 12 m by 8 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"ap":{"h":8,"w":12,"kind":"perimOf"},"promptText":"How many m is the perimeter of a 12 m by 8 m rectangle?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0640",
@@ -18702,7 +18702,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"ap":{"h":6,"w":13,"kind":"areaOf"},"promptText":"Compute and type the area of a 13 m by 6 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":78,"display":{"ap":{"h":6,"w":13,"kind":"areaOf"},"promptText":"How many square m is the area of a 13 m by 6 m rectangle?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0641",
@@ -18712,7 +18712,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":5,"w":14,"kind":"perimOf"},"promptText":"Compute and type the perimeter of a 14 m by 5 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"ap":{"h":5,"w":14,"kind":"perimOf"},"promptText":"A rectangle is 14 m by 5 m. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0642",
@@ -18722,7 +18722,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ap":{"h":4,"w":15,"kind":"areaOf"},"promptText":"Compute and type the area of a 15 m by 4 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"ap":{"h":4,"w":15,"kind":"areaOf"},"promptText":"A rectangle is 15 m by 4 m. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0643",
@@ -18732,7 +18732,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":12,"w":12,"kind":"perimOf"},"promptText":"Compute and type the perimeter of a 12 m by 12 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":12,"w":12,"kind":"perimOf"},"promptText":"How many m is the perimeter of a 12 m by 12 m rectangle?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0644",
@@ -18742,7 +18742,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":117,"display":{"ap":{"h":9,"w":13,"kind":"areaOf"},"promptText":"Compute and type the area of a 13 m by 9 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":117,"display":{"ap":{"h":9,"w":13,"kind":"areaOf"},"promptText":"How many square m is the area of a 13 m by 9 m rectangle?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0645",
@@ -18752,7 +18752,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":7,"w":14,"kind":"perimOf"},"promptText":"Compute and type the perimeter of a 14 m by 7 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"ap":{"h":7,"w":14,"kind":"perimOf"},"promptText":"A rectangle is 14 m by 7 m. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0646",
@@ -18762,7 +18762,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ap":{"h":8,"w":15,"kind":"areaOf"},"promptText":"Compute and type the area of a 15 m by 8 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"ap":{"h":8,"w":15,"kind":"areaOf"},"promptText":"A rectangle is 15 m by 8 m. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0647",
@@ -18772,7 +18772,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"ap":{"h":11,"w":12,"kind":"perimOf"},"promptText":"Compute and type the perimeter of a 12 m by 11 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":46,"display":{"ap":{"h":11,"w":12,"kind":"perimOf"},"promptText":"How many m is the perimeter of a 12 m by 11 m rectangle?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0648",
@@ -18782,7 +18782,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":169,"display":{"ap":{"h":13,"w":13,"kind":"areaOf"},"promptText":"Compute and type the area of a 13 m by 13 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":169,"display":{"ap":{"h":13,"w":13,"kind":"areaOf"},"promptText":"How many square m is the area of a 13 m by 13 m rectangle?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0649",
@@ -18792,7 +18792,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":10,"w":14,"kind":"perimOf"},"promptText":"Compute and type the perimeter of a 14 m by 10 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"ap":{"h":10,"w":14,"kind":"perimOf"},"promptText":"A rectangle is 14 m by 10 m. What is its perimeter in m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0650",
@@ -18802,7 +18802,7 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":225,"display":{"ap":{"h":15,"w":15,"kind":"areaOf"},"promptText":"Compute and type the area of a 15 m by 15 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":225,"display":{"ap":{"h":15,"w":15,"kind":"areaOf"},"promptText":"A rectangle is 15 m by 15 m. What is its area in square m?"},"answerType":"numberPad"},
   },
   {
     itemId: "areaPerimeter-proc-b0821-0651",
@@ -18812,6 +18812,6 @@ export const ITEMS = [
     structureType: "bothMeasures_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"ap":{"h":14,"w":14,"kind":"perimOf"},"promptText":"Compute and type the perimeter of a 14 m by 14 m rectangle (number only)."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":56,"display":{"ap":{"h":14,"w":14,"kind":"perimOf"},"promptText":"How many m is the perimeter of a 14 m by 14 m rectangle?"},"answerType":"numberPad"},
   },
 ];

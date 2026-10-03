@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Kai surveyed the class and drew the recess games graph. A friend asks about soccer. How many soccer does the graph show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Kai surveyed the class and drew the recess games graph. A friend asks about soccer. How many kids picked soccer?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0008",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Omar pins the recess games graph to the wall and reads out the hopscotch bar. How many hopscotch is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Omar pins the recess games graph to the wall and reads out the hopscotch bar. How many kids picked hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"June surveyed the class and drew the favorite colors graph. A friend asks about red. How many red does the graph show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"June surveyed the class and drew the favorite colors graph. A friend asks about red. How many kids picked red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0011",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"Ben pins the favorite colors graph to the wall and reads out the green bar. How many green is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"Ben pins the favorite colors graph to the wall and reads out the votes for green. How many votes did green get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0013",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Finn pins the recess games graph to the wall and reads out the tag bar. How many tag is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Finn pins the recess games graph to the wall and reads out the tag bar. How many kids picked tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Amara surveyed the class and drew the recess games graph. A friend asks about hopscotch. How many hopscotch does the graph show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Amara surveyed the class and drew the recess games graph. A friend asks about hopscotch. How many kids picked hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0027",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Priya pins the favorite colors graph to the wall and reads out the blue bar. How many blue is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Priya pins the favorite colors graph to the wall and reads out the votes for blue. How many votes did blue get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"Leo surveyed the class and drew the favorite colors graph. A friend asks about green. How many green does the graph show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"Leo surveyed the class and drew the favorite colors graph. A friend asks about green. How many kids picked green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0030",
@@ -422,7 +422,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Sam pins the recess games graph to the wall and reads out the tag bar. How many tag is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Sam pins the recess games graph to the wall and reads out the tag bar. How many kids picked tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0043",
@@ -432,7 +432,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Mina surveyed the class and drew the recess games graph. A friend asks about hopscotch. How many hopscotch does the graph show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Mina surveyed the class and drew the recess games graph. A friend asks about hopscotch. How many kids picked hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0044",
@@ -452,7 +452,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Nia pins the favorite colors graph to the wall and reads out the blue bar. How many blue is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Nia pins the favorite colors graph to the wall and reads out the votes for blue. How many votes did blue get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0046",
@@ -462,7 +462,7 @@ export const ITEMS = [
     structureType: "storySurveyRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"Theo surveyed the class and drew the favorite colors graph. A friend asks about green. How many green does the graph show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"Theo surveyed the class and drew the favorite colors graph. A friend asks about green. How many kids picked green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0047",
@@ -1052,7 +1052,7 @@ export const ITEMS = [
     structureType: "storyMargin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph shows tag on top of soccer. Ida wants the exact margin. How many more votes?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida looks at the recess games graph. How many more votes did tag get than soccer?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0106",
@@ -1082,7 +1082,7 @@ export const ITEMS = [
     structureType: "storyMargin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The school ride graph shows scooters on top of buses. Zoe wants the exact margin. How many more votes?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Zoe looks at the school ride graph. How many more votes did scooters get than buses?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0109",
@@ -1112,7 +1112,7 @@ export const ITEMS = [
     structureType: "storyMargin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph shows tag on top of soccer. Rosa wants the exact margin. How many more votes?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Rosa looks at the recess games graph. How many more votes did tag get than soccer?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0112",
@@ -1142,7 +1142,7 @@ export const ITEMS = [
     structureType: "storyMargin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The school ride graph shows scooters on top of buses. Diego wants the exact margin. How many more votes?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Diego looks at the school ride graph. How many more votes did scooters get than buses?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0115",
@@ -1172,7 +1172,7 @@ export const ITEMS = [
     structureType: "storyMargin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph shows tag on top of soccer. Nora wants the exact margin. How many more votes?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nora looks at the recess games graph. How many more votes did tag get than soccer?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0118",
@@ -1372,7 +1372,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Leo's pet fair report needs the precise spread between chicks and puppies. How many votes wide is it?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Leo looks at the pet fair graph. How many more votes did chicks get than puppies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0138",
@@ -1382,7 +1382,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"For the fruit stand recap, Nora subtracts the cherries bar from the plums bar. How many votes remain?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nora compares the plums bar and the cherries bar on the fruit stand graph. How many more votes do plums have than cherries?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0139",
@@ -1392,7 +1392,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled recess games graph, Sam computes the lead of soccer over hopscotch. How many votes is the lead?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Sam reads the recess games graph. By how many votes does soccer beat hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0140",
@@ -1402,7 +1402,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Mina's favorite colors report needs the precise spread between yellow and red. How many votes wide is it?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Mina looks at the favorite colors graph. How many more votes did yellow get than red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0141",
@@ -1412,7 +1412,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"For the bird watch recap, Luca subtracts the jays bar from the wrens bar. How many votes remain?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Luca compares the wrens bar and the jays bar on the bird watch graph. How many more votes do wrens have than jays?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0142",
@@ -1422,7 +1422,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"bikes","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled school ride graph, Nia computes the lead of vans over bikes. How many votes is the lead?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"bikes","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nia reads the school ride graph. By how many votes does vans beat bikes?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0143",
@@ -1432,7 +1432,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Theo's pet fair report needs the precise spread between chicks and puppies. How many votes wide is it?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Theo looks at the pet fair graph. How many more votes did chicks get than puppies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0144",
@@ -1442,7 +1442,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"For the fruit stand recap, Ava subtracts the cherries bar from the plums bar. How many votes remain?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ava compares the plums bar and the cherries bar on the fruit stand graph. How many more votes do plums have than cherries?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0145",
@@ -1452,7 +1452,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled recess games graph, Kai computes the lead of soccer over hopscotch. How many votes is the lead?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Kai reads the recess games graph. By how many votes does soccer beat hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0146",
@@ -1462,7 +1462,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida's favorite colors report needs the precise spread between yellow and red. How many votes wide is it?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida looks at the favorite colors graph. How many more votes did yellow get than red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0147",
@@ -1472,7 +1472,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"For the bird watch recap, Omar subtracts the jays bar from the wrens bar. How many votes remain?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Omar compares the wrens bar and the jays bar on the bird watch graph. How many more votes do wrens have than jays?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0148",
@@ -1482,7 +1482,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"bikes","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled school ride graph, June computes the lead of vans over bikes. How many votes is the lead?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"bikes","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"June reads the school ride graph. By how many votes does vans beat bikes?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0149",
@@ -1492,7 +1492,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Zoe's pet fair report needs the precise spread between chicks and puppies. How many votes wide is it?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Zoe looks at the pet fair graph. How many more votes did chicks get than puppies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0150",
@@ -1502,7 +1502,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"For the fruit stand recap, Ben subtracts the cherries bar from the plums bar. How many votes remain?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ben compares the plums bar and the cherries bar on the fruit stand graph. How many more votes do plums have than cherries?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0151",
@@ -1512,7 +1512,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled recess games graph, Lily computes the lead of soccer over hopscotch. How many votes is the lead?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Lily reads the recess games graph. By how many votes does soccer beat hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0152",
@@ -1522,7 +1522,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Rosa's favorite colors report needs the precise spread between yellow and red. How many votes wide is it?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Rosa looks at the favorite colors graph. How many more votes did yellow get than red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0153",
@@ -1532,7 +1532,7 @@ export const ITEMS = [
     structureType: "storyMargin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"For the bird watch recap, Finn subtracts the jays bar from the wrens bar. How many votes remain?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Finn compares the wrens bar and the jays bar on the bird watch graph. How many more votes do wrens have than jays?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0154",
@@ -1562,7 +1562,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"hopscotch","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the recess games survey merged hopscotch with jump rope, how many votes would the pair have? June adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"hopscotch","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did hopscotch and jump rope get together in the recess games survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0157",
@@ -1572,7 +1572,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"red","b":"yellow","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Zoe adds the red bar to the yellow bar of the favorite colors graph. What is their combined count?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"red","b":"yellow","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Zoe adds the votes for red and yellow on the favorite colors graph. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0158",
@@ -1592,7 +1592,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"vans","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the school ride survey merged vans with buses, how many votes would the pair have? Lily adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"vans","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did vans and buses get together in the school ride survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0160",
@@ -1622,7 +1622,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"soccer","b":"tag","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the recess games survey merged soccer with tag, how many votes would the pair have? Amara adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"soccer","b":"tag","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games survey, how many votes did soccer and tag get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0163",
@@ -1632,7 +1632,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Diego adds the blue bar to the green bar of the favorite colors graph. What is their combined count?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Diego adds the votes for blue and green on the favorite colors graph. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0164",
@@ -1652,7 +1652,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"bikes","b":"scooters","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the school ride survey merged bikes with scooters, how many votes would the pair have? Leo adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"bikes","b":"scooters","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did bikes and scooters get together in the school ride survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0166",
@@ -1682,7 +1682,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the recess games survey merged tag with hopscotch, how many votes would the pair have? Mina adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games survey, how many votes did tag and hopscotch get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0169",
@@ -1692,7 +1692,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"red","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Luca adds the red bar to the blue bar of the favorite colors graph. What is their combined count?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"red","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Luca adds the votes for red and blue on the favorite colors graph. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0170",
@@ -1722,7 +1722,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the fruit stand survey merged pears with plums, how many votes would the pair have? Amara adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand survey, how many votes did pears and plums get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0173",
@@ -1752,7 +1752,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"wrens","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the bird watch survey merged wrens with finches, how many votes would the pair have? Leo adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"wrens","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did wrens and finches get together in the bird watch survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0176",
@@ -1782,7 +1782,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"apples","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the fruit stand survey merged apples with cherries, how many votes would the pair have? Mina adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"apples","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand survey, how many votes did apples and cherries get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0179",
@@ -1812,7 +1812,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"robins","b":"jays","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the bird watch survey merged robins with jays, how many votes would the pair have? Theo adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"robins","b":"jays","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did robins and jays get together in the bird watch survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0182",
@@ -1842,7 +1842,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the fruit stand survey merged pears with cherries, how many votes would the pair have? Ida adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand survey, how many votes did pears and cherries get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0185",
@@ -1872,7 +1872,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the bird watch survey merged jays with finches, how many votes would the pair have? Zoe adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did jays and finches get together in the bird watch survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0188",
@@ -1892,7 +1892,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"pears","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the fruit stand survey merged pears with plums, how many votes would the pair have? Mina adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"pears","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did pears and plums get together in the fruit stand survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0190",
@@ -1922,7 +1922,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the bird watch survey merged wrens with finches, how many votes would the pair have? Theo adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch survey, how many votes did wrens and finches get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0193",
@@ -1952,7 +1952,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"apples","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the fruit stand survey merged apples with cherries, how many votes would the pair have? Ida adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"apples","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did apples and cherries get together in the fruit stand survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0196",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"robins","b":"jays","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the bird watch survey merged robins with jays, how many votes would the pair have? Zoe adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"robins","b":"jays","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch survey, how many votes did robins and jays get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0199",
@@ -2012,7 +2012,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the fruit stand survey merged pears with cherries, how many votes would the pair have? Rosa adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did pears and cherries get together in the fruit stand survey?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0202",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "storyTeamUp_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"jays","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"If the bird watch survey merged jays with finches, how many votes would the pair have? Diego adds the bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"jays","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch survey, how many votes did jays and finches get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0205",
@@ -2052,7 +2052,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"key":1,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Sam's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"key":1,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the stars row of Sam's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0206",
@@ -2062,7 +2062,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"key":1,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Mina's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"key":1,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the flowers row of Mina's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0207",
@@ -2072,7 +2072,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"key":1,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Luca's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"key":1,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the smileys row of Luca's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0208",
@@ -2082,7 +2082,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"key":1,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Nia's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"key":1,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the stars row of Nia's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0209",
@@ -2092,7 +2092,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"key":1,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Theo's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"key":1,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the flowers row of Theo's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0210",
@@ -2102,7 +2102,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"key":1,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Ava's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"key":1,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the smileys row of Ava's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0211",
@@ -2112,7 +2112,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"key":1,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":8}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Kai's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"key":1,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":8}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the stars row of Kai's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0212",
@@ -2122,7 +2122,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"key":1,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":9}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Ida's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"key":1,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":9}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the flowers row of Ida's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0213",
@@ -2132,7 +2132,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":1,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":10}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Omar's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":1,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":10}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the smileys row of Omar's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0214",
@@ -2142,7 +2142,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"key":1,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on June's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"key":1,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the stars row of June's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0215",
@@ -2152,7 +2152,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"key":1,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Zoe's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"key":1,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the flowers row of Zoe's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0216",
@@ -2162,7 +2162,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"key":1,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Ben's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"key":1,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the smileys row of Ben's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0217",
@@ -2172,7 +2172,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"key":1,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Lily's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"key":1,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the stars row of Lily's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0218",
@@ -2182,7 +2182,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"key":1,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Rosa's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"key":1,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the flowers row of Rosa's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0219",
@@ -2192,7 +2192,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"key":1,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Finn's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"key":1,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the smileys row of Finn's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0220",
@@ -2202,7 +2202,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"key":1,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":8}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Amara's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"key":1,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":8}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the stars row of Amara's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0221",
@@ -2212,7 +2212,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"key":1,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":9}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Diego's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"key":1,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":9}],"figure":"pictograph","keyValue":1,"promptText":"Each picture in the flowers row of Diego's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0222",
@@ -2222,7 +2222,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":5,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":2}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Ida's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":5,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":2}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the flowers row of Ida's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0223",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"key":5,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":3}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Omar's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"key":5,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":3}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the smileys row of Omar's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0224",
@@ -2242,7 +2242,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":5,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on June's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":5,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the stars row of June's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0225",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"data":{"key":5,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Zoe's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"data":{"key":5,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the flowers row of Zoe's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0226",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":5,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Ben's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":5,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the smileys row of Ben's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0227",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"key":5,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on Lily's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"key":5,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the stars row of Lily's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0228",
@@ -2282,7 +2282,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"key":5,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":8}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Rosa's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"key":5,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":8}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the flowers row of Rosa's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0229",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"key":5,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":9}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Finn's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"key":5,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":9}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the smileys row of Finn's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0230",
@@ -2302,7 +2302,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"key":5,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":10}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on Amara's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"key":5,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":10}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the stars row of Amara's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0231",
@@ -2312,7 +2312,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"data":{"key":5,"sym":11,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":11}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Diego's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"data":{"key":5,"sym":11,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":11}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the flowers row of Diego's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0232",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"key":5,"sym":12,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":12}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Priya's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"key":5,"sym":12,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":12}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the smileys row of Priya's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0233",
@@ -2332,7 +2332,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":5,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on Leo's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":5,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the stars row of Leo's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0234",
@@ -2342,7 +2342,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"key":5,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Nora's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"key":5,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the flowers row of Nora's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0235",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":5,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Sam's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":5,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the smileys row of Sam's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0236",
@@ -2362,7 +2362,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"data":{"key":5,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on Mina's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"data":{"key":5,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the stars row of Mina's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0237",
@@ -2372,7 +2372,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":5,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Luca's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":5,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the flowers row of Luca's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0238",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"key":5,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Nia's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"key":5,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Each picture in the smileys row of Nia's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0239",
@@ -2392,7 +2392,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":10,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":2}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Rosa's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":10,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":2}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the smileys row of Rosa's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0240",
@@ -2402,7 +2402,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":10,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":3}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Finn's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":10,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":3}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the stars row of Finn's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0241",
@@ -2412,7 +2412,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"key":10,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Amara's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"key":10,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the flowers row of Amara's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0242",
@@ -2422,7 +2422,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"key":10,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":5}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Diego's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"key":10,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":5}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the smileys row of Diego's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0243",
@@ -2432,7 +2432,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"key":10,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Priya's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"key":10,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the stars row of Priya's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0244",
@@ -2442,7 +2442,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"key":10,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Leo's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"key":10,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the flowers row of Leo's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0245",
@@ -2452,7 +2452,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"key":10,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":8}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Nora's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"key":10,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":8}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the smileys row of Nora's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0246",
@@ -2462,7 +2462,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"key":10,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":9}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Sam's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"key":10,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":9}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the stars row of Sam's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0247",
@@ -2472,7 +2472,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"key":10,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":10}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Mina's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"key":10,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":10}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the flowers row of Mina's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0248",
@@ -2482,7 +2482,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"data":{"key":10,"sym":11,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":11}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Luca's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"data":{"key":10,"sym":11,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":11}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the smileys row of Luca's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0249",
@@ -2492,7 +2492,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"data":{"key":10,"sym":12,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":12}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Nia's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"data":{"key":10,"sym":12,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":12}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the stars row of Nia's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0250",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":130,"display":{"data":{"key":10,"sym":13,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":13}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Theo's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":130,"display":{"data":{"key":10,"sym":13,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":13}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the flowers row of Theo's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0251",
@@ -2512,7 +2512,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"data":{"key":10,"sym":14,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":14}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Ava's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"data":{"key":10,"sym":14,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":14}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the smileys row of Ava's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0252",
@@ -2522,7 +2522,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"data":{"key":10,"sym":15,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":15}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Kai's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"data":{"key":10,"sym":15,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":15}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the stars row of Kai's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0253",
@@ -2532,7 +2532,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"data":{"key":10,"sym":16,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":16}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Ida's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"data":{"key":10,"sym":16,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":16}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the flowers row of Ida's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0254",
@@ -2542,7 +2542,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"data":{"key":10,"sym":17,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":17}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Omar's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"data":{"key":10,"sym":17,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":17}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the smileys row of Omar's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0255",
@@ -2552,7 +2552,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"data":{"key":10,"sym":18,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":18}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on June's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"data":{"key":10,"sym":18,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":18}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the stars row of June's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0256",
@@ -3672,7 +3672,7 @@ export const ITEMS = [
     structureType: "storyReachGoal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"goal":10,"kind":"barGoalGap","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"The red bar of the favorite colors graph is chasing a goal of 10. Sam counts the missing votes. How many more votes are needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"goal":10,"kind":"barGoalGap","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"Sam wants red to reach 10 votes on the favorite colors graph. How many more votes does red need?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0368",
@@ -3862,7 +3862,7 @@ export const ITEMS = [
     structureType: "storyReachGoal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"goal":15,"kind":"barGoalGap","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"The yellow bar of the favorite colors graph is chasing a goal of 15. June counts the missing votes. How many more votes are needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"goal":15,"kind":"barGoalGap","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"June wants yellow to reach 15 votes on the favorite colors graph. How many more votes does yellow need?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0387",
@@ -4032,7 +4032,7 @@ export const ITEMS = [
     structureType: "storyReachGoal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"goal":25,"kind":"barGoalGap","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"The yellow bar of the favorite colors graph is chasing a goal of 25. Amara counts the missing votes. How many more votes are needed?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"goal":25,"kind":"barGoalGap","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Amara wants yellow to reach 25 votes on the favorite colors graph. How many more votes does yellow need?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0404",
@@ -4092,7 +4092,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barTotalSkip","skip":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Rosa counts every pet fair vote EXCEPT the kittens votes. How many votes are left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barTotalSkip","skip":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Rosa counts all the pet fair votes except the votes for kittens. How many votes does Rosa count?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0410",
@@ -4122,7 +4122,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barTotalSkip","skip":"apples"},"type":"barGraph","figure":"barGraph","promptText":"Diego counts every fruit stand vote EXCEPT the apples votes. How many votes are left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barTotalSkip","skip":"apples"},"type":"barGraph","figure":"barGraph","promptText":"Diego counts all the fruit stand votes except the votes for apples. How many votes does Diego count?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0413",
@@ -4152,7 +4152,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barTotalSkip","skip":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Nora counts every recess games vote EXCEPT the soccer votes. How many votes are left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barTotalSkip","skip":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Nora counts all the recess games votes except the votes for soccer. How many votes does Nora count?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0416",
@@ -4182,7 +4182,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barTotalSkip","skip":"red"},"type":"barGraph","figure":"barGraph","promptText":"Luca counts every favorite colors vote EXCEPT the red votes. How many votes are left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barTotalSkip","skip":"red"},"type":"barGraph","figure":"barGraph","promptText":"Luca counts all the favorite colors votes except the votes for red. How many votes does Luca count?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0419",
@@ -4192,7 +4192,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barTotalSkip","skip":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Leaving the blue bar out, Nia adds the rest of the favorite colors graph. What total remains?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barTotalSkip","skip":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Leaving out blue, Nia adds up the rest of the favorite colors votes. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0420",
@@ -4212,7 +4212,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barTotalSkip","skip":"robins"},"type":"barGraph","figure":"barGraph","promptText":"Ava counts every bird watch vote EXCEPT the robins votes. How many votes are left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barTotalSkip","skip":"robins"},"type":"barGraph","figure":"barGraph","promptText":"Ava counts all the bird watch votes except the votes for robins. How many votes does Ava count?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0422",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"barTotalSkip","skip":"vans"},"type":"barGraph","figure":"barGraph","promptText":"Omar counts every school ride vote EXCEPT the vans votes. How many votes are left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"barTotalSkip","skip":"vans"},"type":"barGraph","figure":"barGraph","promptText":"Omar counts all the school ride votes except the votes for vans. How many votes does Omar count?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0425",
@@ -4362,7 +4362,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barTotalSkip","skip":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Zoe covers the blue bar and adds the remaining favorite colors bars. How many votes show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barTotalSkip","skip":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Zoe adds up the favorite colors votes for every color but blue. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0437",
@@ -4372,7 +4372,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barTotalSkip","skip":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Ben retallies the favorite colors survey without the yellow column. What is the new total?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barTotalSkip","skip":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Ben adds up the favorite colors votes again, leaving out yellow. What is the new total?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0438",
@@ -4432,7 +4432,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barTotalSkip","skip":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Kai's pet fair appendix drops the kittens category entirely. What total do the other bars make?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barTotalSkip","skip":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Kai adds up the pet fair bars but leaves out kittens. What total does Kai get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0444",
@@ -4442,7 +4442,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barTotalSkip","skip":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"After archiving the puppies data, Ida recomputes the pet fair total. What number results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barTotalSkip","skip":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Ida takes the puppies votes off the pet fair graph. How many votes are still on the graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0445",
@@ -4452,7 +4452,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barTotalSkip","skip":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Excluding chicks, Omar sums the scaled pet fair graph precisely. What exact total is left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barTotalSkip","skip":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Omar adds every pet fair bar except chicks. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0446",
@@ -4462,7 +4462,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barTotalSkip","skip":"apples"},"type":"barGraph","figure":"barGraph","promptText":"June's fruit stand appendix drops the apples category entirely. What total do the other bars make?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barTotalSkip","skip":"apples"},"type":"barGraph","figure":"barGraph","promptText":"June adds up the fruit stand bars but leaves out apples. What total does June get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0447",
@@ -4472,7 +4472,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barTotalSkip","skip":"pears"},"type":"barGraph","figure":"barGraph","promptText":"After archiving the pears data, Zoe recomputes the fruit stand total. What number results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barTotalSkip","skip":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Zoe takes the pears votes off the fruit stand graph. How many votes are still on the graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0448",
@@ -4482,7 +4482,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barTotalSkip","skip":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Excluding cherries, Ben sums the scaled fruit stand graph precisely. What exact total is left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":43,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barTotalSkip","skip":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Ben adds every fruit stand bar except cherries. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0449",
@@ -4492,7 +4492,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barTotalSkip","skip":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Lily's recess games appendix drops the soccer category entirely. What total do the other bars make?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barTotalSkip","skip":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Lily adds up the recess games bars but leaves out soccer. What total does Lily get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0450",
@@ -4502,7 +4502,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barTotalSkip","skip":"tag"},"type":"barGraph","figure":"barGraph","promptText":"After archiving the tag data, Rosa recomputes the recess games total. What number results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":42,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barTotalSkip","skip":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Rosa takes the tag votes off the recess games graph. How many votes are still on the graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0451",
@@ -4512,7 +4512,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barTotalSkip","skip":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Excluding jump rope, Finn sums the scaled recess games graph precisely. What exact total is left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":37,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barTotalSkip","skip":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Finn adds every recess games bar except jump rope. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0452",
@@ -4522,7 +4522,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barTotalSkip","skip":"red"},"type":"barGraph","figure":"barGraph","promptText":"Amara's favorite colors appendix drops the red category entirely. What total do the other bars make?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barTotalSkip","skip":"red"},"type":"barGraph","figure":"barGraph","promptText":"Amara adds up the favorite colors bars but leaves out red. What total does Amara get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0453",
@@ -4532,7 +4532,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barTotalSkip","skip":"blue"},"type":"barGraph","figure":"barGraph","promptText":"After archiving the blue data, Diego recomputes the favorite colors total. What number results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barTotalSkip","skip":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Diego takes the blue votes off the favorite colors graph. How many votes are still on the graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0454",
@@ -4542,7 +4542,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barTotalSkip","skip":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Excluding yellow, Priya sums the scaled favorite colors graph precisely. What exact total is left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barTotalSkip","skip":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Priya adds every favorite colors bar except yellow. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0455",
@@ -4552,7 +4552,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barTotalSkip","skip":"robins"},"type":"barGraph","figure":"barGraph","promptText":"Leo's bird watch appendix drops the robins category entirely. What total do the other bars make?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barTotalSkip","skip":"robins"},"type":"barGraph","figure":"barGraph","promptText":"Leo adds up the bird watch bars but leaves out robins. What total does Leo get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0456",
@@ -4562,7 +4562,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barTotalSkip","skip":"wrens"},"type":"barGraph","figure":"barGraph","promptText":"After archiving the wrens data, Nora recomputes the bird watch total. What number results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barTotalSkip","skip":"wrens"},"type":"barGraph","figure":"barGraph","promptText":"Nora takes the wrens votes off the bird watch graph. How many votes are still on the graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0457",
@@ -4572,7 +4572,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barTotalSkip","skip":"finches"},"type":"barGraph","figure":"barGraph","promptText":"Excluding finches, Sam sums the scaled bird watch graph precisely. What exact total is left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":39,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barTotalSkip","skip":"finches"},"type":"barGraph","figure":"barGraph","promptText":"Sam adds every bird watch bar except finches. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0458",
@@ -4582,7 +4582,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barTotalSkip","skip":"vans"},"type":"barGraph","figure":"barGraph","promptText":"Mina's school ride appendix drops the vans category entirely. What total do the other bars make?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barTotalSkip","skip":"vans"},"type":"barGraph","figure":"barGraph","promptText":"Mina adds up the school ride bars but leaves out vans. What total does Mina get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0459",
@@ -4592,7 +4592,7 @@ export const ITEMS = [
     structureType: "storySkipTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barTotalSkip","skip":"bikes"},"type":"barGraph","figure":"barGraph","promptText":"After archiving the bikes data, Luca recomputes the school ride total. What number results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barTotalSkip","skip":"bikes"},"type":"barGraph","figure":"barGraph","promptText":"Luca takes the bikes votes off the school ride graph. How many votes are still on the graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0460",
@@ -4602,7 +4602,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","chicks","puppies","bunnies"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Amara looks for the pet fair choice with the FEWEST votes. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","chicks","puppies","bunnies"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Amara looks at the pet fair graph. Which choice got the fewest votes?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0461",
@@ -4612,7 +4612,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["apples","cherries","pears","plums"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which fruit stand choice came in last? Diego finds the littlest bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["apples","cherries","pears","plums"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which fruit got the fewest votes in the fruit stand survey?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0462",
@@ -4632,7 +4632,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["yellow","green","blue","red"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Leo looks for the favorite colors choice with the FEWEST votes. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["yellow","green","blue","red"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Leo looks at the favorite colors graph. Which choice got the fewest votes?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0464",
@@ -4642,7 +4642,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["wrens","robins","jays","finches"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which bird watch choice came in last? Nora finds the littlest bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["wrens","robins","jays","finches"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which bird got the fewest votes in the bird watch survey?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0465",
@@ -4662,7 +4662,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","bunnies","puppies","chicks"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Mina looks for the pet fair choice with the FEWEST votes. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","bunnies","puppies","chicks"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Mina looks at the pet fair graph. Which choice got the fewest votes?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0467",
@@ -4672,7 +4672,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["pears","plums","cherries","apples"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which fruit stand choice came in last? Luca finds the littlest bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["pears","plums","cherries","apples"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand survey, which choice got the fewest votes?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0468",
@@ -4692,7 +4692,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["red","yellow","green","blue"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Theo looks for the favorite colors choice with the FEWEST votes. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["red","yellow","green","blue"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Theo looks at the favorite colors graph. Which choice got the fewest votes?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0470",
@@ -4702,7 +4702,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["wrens","finches","jays","robins"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which bird watch choice came in last? Ava finds the littlest bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["wrens","finches","jays","robins"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch survey, which choice got the fewest votes?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0471",
@@ -4722,7 +4722,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","puppies","chicks","bunnies"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Ida looks for the pet fair choice with the FEWEST votes. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","puppies","chicks","bunnies"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Ida looks at the pet fair graph. Which choice got the fewest votes?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0473",
@@ -4732,7 +4732,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["cherries","pears","apples","plums"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which fruit stand choice came in last? Omar finds the littlest bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["cherries","pears","apples","plums"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which choice got the fewest votes in the fruit stand survey?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0474",
@@ -4752,7 +4752,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["red","yellow","blue","green"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Zoe looks for the favorite colors choice with the FEWEST votes. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["red","yellow","blue","green"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Zoe looks at the favorite colors graph. Which choice got the fewest votes?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0476",
@@ -4762,7 +4762,7 @@ export const ITEMS = [
     structureType: "storyShortest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["finches","jays","robins","wrens"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which bird watch choice came in last? Ben finds the littlest bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["finches","jays","robins","wrens"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which choice got the fewest votes in the bird watch survey?"}},
   },
   {
     itemId: "dataGraphs-app-b0821-0477",
@@ -5112,7 +5112,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Together, how many votes do the pet fair front-runners chicks and puppies hold? Priya adds them."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Chicks and puppies got the most votes in the pet fair survey. How many votes did they get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0512",
@@ -5142,7 +5142,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Together, how many votes do the favorite colors front-runners yellow and blue hold? Sam adds them."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors survey, how many votes did the two top choices, yellow and blue, get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0515",
@@ -5172,7 +5172,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Together, how many votes do the pet fair front-runners chicks and puppies hold? Nia adds them."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did the top two choices in the pet fair survey get together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0518",
@@ -5202,7 +5202,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Together, how many votes do the favorite colors front-runners yellow and blue hold? Kai adds them."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Yellow and blue got the most votes in the favorite colors survey. How many votes did they get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0521",
@@ -5232,7 +5232,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Together, how many votes do the pet fair front-runners chicks and puppies hold? June adds them."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair survey, how many votes did the two top choices, chicks and puppies, get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0524",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Together, how many votes do the favorite colors front-runners yellow and blue hold? Lily adds them."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"How many votes did the top two choices in the favorite colors survey get together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0527",
@@ -5292,7 +5292,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand final round keeps only pears and cherries. How many combined votes advance with them? Ava counts."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Only pears and cherries move on to the final round of the fruit stand survey. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0530",
@@ -5322,7 +5322,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch final round keeps only jays and robins. How many combined votes advance with them? Omar counts."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Jays and robins are the two choices left for the bird watch final round. How many votes do they have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0533",
@@ -5352,7 +5352,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand final round keeps only pears and cherries. How many combined votes advance with them? Ben counts."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand final round has only pears and cherries. How many votes do those two choices have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0536",
@@ -5382,7 +5382,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch final round keeps only jays and robins. How many combined votes advance with them? Finn counts."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Only jays and robins move on to the final round of the bird watch survey. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0539",
@@ -5412,7 +5412,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand final round keeps only pears and cherries. How many combined votes advance with them? Priya counts."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Pears and cherries are the two choices left for the fruit stand final round. How many votes do they have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0542",
@@ -5442,7 +5442,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch final round keeps only jays and robins. How many combined votes advance with them? Sam counts."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch final round has only jays and robins. How many votes do those two choices have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0545",
@@ -5452,7 +5452,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the scaled pet fair graph, Zoe adds the exact chicks and kittens counts. What precise total results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Zoe adds the chicks votes and the kittens votes on the pet fair graph. What total does Zoe get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0546",
@@ -5462,7 +5462,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"apples","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand summary pairs its two leaders, plums and apples. Ben computes their joint votes. How many votes is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"apples","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Ben looks at the two tallest bars on the fruit stand graph, plums and apples. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0547",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Lily verifies the recess games top-two total of soccer and jump rope for the record. What total goes on record?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Lily checks the two tallest recess games bars, soccer and jump rope. How many votes do the two bars have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0548",
@@ -5482,7 +5482,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the scaled favorite colors graph, Rosa adds the exact yellow and blue counts. What precise total results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Rosa adds the yellow votes and the blue votes on the favorite colors graph. What total does Rosa get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0549",
@@ -5492,7 +5492,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch summary pairs its two leaders, wrens and robins. Finn computes their joint votes. How many votes is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Finn looks at the two tallest bars on the bird watch graph, wrens and robins. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0550",
@@ -5502,7 +5502,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Amara verifies the school ride top-two total of vans and buses for the record. What total goes on record?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Amara checks the two tallest school ride bars, vans and buses. How many votes do the two bars have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0551",
@@ -5512,7 +5512,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the scaled pet fair graph, Diego adds the exact chicks and kittens counts. What precise total results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Diego adds the chicks votes and the kittens votes on the pet fair graph. What total does Diego get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0552",
@@ -5522,7 +5522,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"apples","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand summary pairs its two leaders, plums and apples. Priya computes their joint votes. How many votes is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"apples","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Priya looks at the two tallest bars on the fruit stand graph, plums and apples. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0553",
@@ -5532,7 +5532,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Leo verifies the recess games top-two total of soccer and jump rope for the record. What total goes on record?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Leo checks the two tallest recess games bars, soccer and jump rope. How many votes do the two bars have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0554",
@@ -5542,7 +5542,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the scaled favorite colors graph, Nora adds the exact yellow and blue counts. What precise total results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Nora adds the yellow votes and the blue votes on the favorite colors graph. What total does Nora get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0555",
@@ -5552,7 +5552,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch summary pairs its two leaders, wrens and robins. Sam computes their joint votes. How many votes is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Sam looks at the two tallest bars on the bird watch graph, wrens and robins. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0556",
@@ -5562,7 +5562,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Mina verifies the school ride top-two total of vans and buses for the record. What total goes on record?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Mina checks the two tallest school ride bars, vans and buses. How many votes do the two bars have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0557",
@@ -5572,7 +5572,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the scaled pet fair graph, Luca adds the exact chicks and kittens counts. What precise total results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Luca adds the chicks votes and the kittens votes on the pet fair graph. What total does Luca get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0558",
@@ -5582,7 +5582,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"apples","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand summary pairs its two leaders, plums and apples. Nia computes their joint votes. How many votes is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"apples","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Nia looks at the two tallest bars on the fruit stand graph, plums and apples. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0559",
@@ -5592,7 +5592,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Theo verifies the recess games top-two total of soccer and jump rope for the record. What total goes on record?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Theo checks the two tallest recess games bars, soccer and jump rope. How many votes do the two bars have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0560",
@@ -5602,7 +5602,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the scaled favorite colors graph, Ava adds the exact yellow and blue counts. What precise total results?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Ava adds the yellow votes and the blue votes on the favorite colors graph. What total does Ava get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0561",
@@ -5612,7 +5612,7 @@ export const ITEMS = [
     structureType: "storyTopTwo_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch summary pairs its two leaders, wrens and robins. Kai computes their joint votes. How many votes is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Kai looks at the two tallest bars on the bird watch graph, wrens and robins. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-app-b0821-0562",
@@ -6172,7 +6172,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"puppies","choices":["kittens","chicks","bunnies","puppies"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ava wants the SECOND tallest bar of the pet fair graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"puppies","choices":["kittens","chicks","bunnies","puppies"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ava looks at the pet fair graph. Which bar is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0006",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["plums","apples","cherries","pears"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Omar wants the SECOND tallest bar of the fruit stand graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["plums","apples","cherries","pears"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Omar looks at the fruit stand graph. Which bar is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0011",
@@ -6272,7 +6272,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["tag","soccer","jump rope","hopscotch"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ben wants the SECOND tallest bar of the recess games graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["tag","soccer","jump rope","hopscotch"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ben looks at the recess games graph. Which bar is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0016",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "readJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barReadSaid","said":3,"label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Lily reads the green bar of the favorite colors graph as 3. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barReadSaid","said":3,"label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Lily reads the favorite colors graph and says green got 3 votes. Is Lily right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0019",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["yellow","red","blue","green"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Finn wants the SECOND tallest bar of the favorite colors graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["yellow","red","blue","green"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Finn looks at the favorite colors graph. Which bar is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0020",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"wrens","choices":["wrens","robins","finches","jays"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Priya wants the SECOND tallest bar of the bird watch graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"wrens","choices":["wrens","robins","finches","jays"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Priya looks at the bird watch graph. Which bar is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0024",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["bikes","buses","vans","scooters"],"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Sam wants the SECOND tallest bar of the school ride graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["bikes","buses","vans","scooters"],"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Sam looks at the school ride graph. Which bar is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0028",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "mostPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"puppies","choices":["bunnies","chicks","kittens","puppies"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar is tallest? Nora looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"puppies","choices":["bunnies","chicks","kittens","puppies"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0029",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "leastPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["bunnies","kittens","chicks","puppies"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar is shortest? Sam hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["bunnies","kittens","chicks","puppies"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0030",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["kittens","bunnies","chicks","puppies"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the pet fair graph's bars tallest to shortest, which comes second? Nia decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["kittens","bunnies","chicks","puppies"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Put the pet fair graph's bars in order from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0032",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "mostPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["cherries","plums","pears","apples"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar is tallest? Luca looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["cherries","plums","pears","apples"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Luca is reading the fruit stand graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0033",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "leastPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["pears","cherries","apples","plums"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar is shortest? Nia hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["pears","cherries","apples","plums"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Nia is reading the fruit stand graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0034",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["pears","apples","plums","cherries"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the fruit stand graph's bars tallest to shortest, which comes second? Kai decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["pears","apples","plums","cherries"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Kai lines up the fruit stand graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0036",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "mostPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["jump rope","hopscotch","tag","soccer"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar is tallest? Ava looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["jump rope","hopscotch","tag","soccer"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Ava is reading the recess games graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0037",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "leastPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["jump rope","soccer","hopscotch","tag"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar is shortest? Kai hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["jump rope","soccer","hopscotch","tag"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Kai is reading the recess games graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0038",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "readJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barReadSaid","said":6,"label":"jump rope"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Ida says the recess games graph shows 6 jump rope. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barReadSaid","said":6,"label":"jump rope"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Ida says the recess games graph shows that 6 kids picked jump rope. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0039",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["jump rope","hopscotch","tag","soccer"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the recess games graph's bars tallest to shortest, which comes second? June decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["jump rope","hopscotch","tag","soccer"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"June lines up the recess games graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0040",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "mostPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"yellow","choices":["red","green","blue","yellow"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar is tallest? Omar looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"yellow","choices":["red","green","blue","yellow"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0041",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "leastPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"green","choices":["green","blue","yellow","red"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar is shortest? June hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"green","choices":["green","blue","yellow","red"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0042",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "readJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barReadSaid","said":6,"label":"blue"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Zoe says the favorite colors graph shows 6 blue. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barReadSaid","said":6,"label":"blue"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Zoe says the favorite colors graph shows that 6 kids picked blue. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0043",
@@ -6552,7 +6552,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["red","green","blue","yellow"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the favorite colors graph's bars tallest to shortest, which comes second? Lily decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["red","green","blue","yellow"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Put the favorite colors graph's bars in order from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0044",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "mostPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"wrens","choices":["jays","robins","wrens","finches"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar is tallest? Ben looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"wrens","choices":["jays","robins","wrens","finches"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Ben is reading the bird watch graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0045",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "leastPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["robins","wrens","finches","jays"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar is shortest? Lily hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["robins","wrens","finches","jays"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Lily is reading the bird watch graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0046",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["finches","jays","wrens","robins"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the bird watch graph's bars tallest to shortest, which comes second? Amara decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["finches","jays","wrens","robins"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Amara lines up the bird watch graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0048",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "mostPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["bikes","vans","buses","scooters"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar is tallest? Finn looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["bikes","vans","buses","scooters"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0049",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "leastPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"vans","choices":["vans","scooters","bikes","buses"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar is shortest? Amara hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"vans","choices":["vans","scooters","bikes","buses"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0050",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "secondPick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["scooters","bikes","vans","buses"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the school ride graph's bars tallest to shortest, which comes second? Leo decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["scooters","bikes","vans","buses"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Put the school ride graph's bars in order from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0052",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","puppies","bunnies","chicks"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Lily wants the SECOND tallest bar of the pet fair graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","puppies","bunnies","chicks"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Lily wants the second tallest bar of the pet fair graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0057",
@@ -6732,7 +6732,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["apples","plums","pears","cherries"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Amara wants the SECOND tallest bar of the fruit stand graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["apples","plums","pears","cherries"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Amara wants the second tallest bar of the fruit stand graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0062",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"hopscotch","choices":["soccer","jump rope","tag","hopscotch"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Leo wants the SECOND tallest bar of the recess games graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"hopscotch","choices":["soccer","jump rope","tag","hopscotch"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Leo wants the second tallest bar of the recess games graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0067",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "readJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barReadSaid","said":4,"label":"red"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nora reads the red bar of the favorite colors graph as 4. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barReadSaid","said":4,"label":"red"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nora reads the favorite colors graph and says red got 4 votes. Is Nora right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0070",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["yellow","green","blue","red"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Mina wants the SECOND tallest bar of the favorite colors graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["yellow","green","blue","red"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Mina wants the second tallest bar of the favorite colors graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0071",
@@ -6862,7 +6862,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["robins","jays","wrens","finches"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Theo wants the SECOND tallest bar of the bird watch graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["robins","jays","wrens","finches"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Theo wants the second tallest bar of the bird watch graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0075",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["vans","scooters","buses","bikes"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ida wants the SECOND tallest bar of the school ride graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["vans","scooters","buses","bikes"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ida wants the second tallest bar of the school ride graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0079",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "mostPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["puppies","chicks","bunnies","kittens"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar is tallest? Kai looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["puppies","chicks","bunnies","kittens"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Kai is reading the pet fair graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0080",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "leastPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["chicks","puppies","kittens","bunnies"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar is shortest? Ida hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["chicks","puppies","kittens","bunnies"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Ida is reading the pet fair graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0081",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["kittens","puppies","chicks","bunnies"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the pet fair graph's bars tallest to shortest, which comes second? Zoe decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["kittens","puppies","chicks","bunnies"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Zoe lines up the pet fair graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0083",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "mostPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["cherries","pears","apples","plums"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar is tallest? June looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["cherries","pears","apples","plums"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the fruit stand graph is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0084",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "leastPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["apples","pears","cherries","plums"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar is shortest? Zoe hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["apples","pears","cherries","plums"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the fruit stand graph is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0085",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"plums","choices":["apples","cherries","pears","plums"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the fruit stand graph's bars tallest to shortest, which comes second? Rosa decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"plums","choices":["apples","cherries","pears","plums"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Order the bars of the fruit stand graph from tallest to shortest. Which bar is second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0087",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "mostPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"hopscotch","choices":["jump rope","hopscotch","soccer","tag"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar is tallest? Lily looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"hopscotch","choices":["jump rope","hopscotch","soccer","tag"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the recess games graph is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0088",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "leastPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["soccer","hopscotch","jump rope","tag"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar is shortest? Rosa hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["soccer","hopscotch","jump rope","tag"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the recess games graph is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0089",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "readJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barReadSaid","said":10,"label":"soccer"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Finn says the recess games graph shows 10 soccer. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barReadSaid","said":10,"label":"soccer"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Finn says the recess games graph shows that 10 kids picked soccer. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0090",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["hopscotch","jump rope","soccer","tag"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the recess games graph's bars tallest to shortest, which comes second? Diego decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["hopscotch","jump rope","soccer","tag"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Order the bars of the recess games graph from tallest to shortest. Which bar is second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0091",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "mostPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"yellow","choices":["green","yellow","blue","red"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar is tallest? Amara looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"yellow","choices":["green","yellow","blue","red"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Amara is reading the favorite colors graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0092",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "leastPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["green","yellow","red","blue"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar is shortest? Diego hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["green","yellow","red","blue"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Diego is reading the favorite colors graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0093",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "readJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barReadSaid","said":10,"label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Priya says the favorite colors graph shows 10 green. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barReadSaid","said":10,"label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Priya says the favorite colors graph shows that 10 kids picked green. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0094",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["green","red","blue","yellow"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the favorite colors graph's bars tallest to shortest, which comes second? Nora decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["green","red","blue","yellow"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Nora lines up the favorite colors graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0095",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "mostPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["finches","jays","wrens","robins"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar is tallest? Leo looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["finches","jays","wrens","robins"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the bird watch graph is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0096",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "leastPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jays","choices":["wrens","finches","jays","robins"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar is shortest? Nora hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jays","choices":["wrens","finches","jays","robins"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the bird watch graph is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0097",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["jays","robins","wrens","finches"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the bird watch graph's bars tallest to shortest, which comes second? Luca decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["jays","robins","wrens","finches"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Order the bars of the bird watch graph from tallest to shortest. Which bar is second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0099",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "mostPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"buses","choices":["scooters","vans","bikes","buses"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar is tallest? Mina looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"buses","choices":["scooters","vans","bikes","buses"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Mina is reading the school ride graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0100",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "leastPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["vans","bikes","scooters","buses"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar is shortest? Luca hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["vans","bikes","scooters","buses"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Luca is reading the school ride graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0101",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "secondPick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["bikes","scooters","buses","vans"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the school ride graph's bars tallest to shortest, which comes second? Ava decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["bikes","scooters","buses","vans"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ava lines up the school ride graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0103",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["bunnies","kittens","chicks","puppies"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Leo wants the SECOND tallest bar of the pet fair graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["bunnies","kittens","chicks","puppies"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Leo wants the second tallest bar of the pet fair graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0108",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["cherries","plums","apples","pears"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Mina wants the SECOND tallest bar of the fruit stand graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["cherries","plums","apples","pears"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Mina wants the second tallest bar of the fruit stand graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0113",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["hopscotch","jump rope","soccer","tag"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Theo wants the SECOND tallest bar of the recess games graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["hopscotch","jump rope","soccer","tag"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Theo wants the second tallest bar of the recess games graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0118",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "readJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barReadSaid","said":7,"label":"red"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Ava reads the red bar of the favorite colors graph as 7. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barReadSaid","said":7,"label":"red"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Ava reads the favorite colors graph and says red got 7 votes. Is Ava right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0121",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["red","green","yellow","blue"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ida wants the SECOND tallest bar of the favorite colors graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["red","green","yellow","blue"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ida wants the second tallest bar of the favorite colors graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0122",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["wrens","finches","jays","robins"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Zoe wants the SECOND tallest bar of the bird watch graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["wrens","finches","jays","robins"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Zoe wants the second tallest bar of the bird watch graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0126",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"buses","choices":["buses","bikes","vans","scooters"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Rosa wants the SECOND tallest bar of the school ride graph. Which one is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"buses","choices":["buses","bikes","vans","scooters"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Rosa wants the second tallest bar of the school ride graph. Which one is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0130",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "mostPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"puppies","choices":["puppies","kittens","chicks","bunnies"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar is tallest? Lily looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"puppies","choices":["puppies","kittens","chicks","bunnies"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Look at the pet fair graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0131",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "leastPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["bunnies","puppies","chicks","kittens"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar is shortest? Rosa hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["bunnies","puppies","chicks","kittens"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Look at the pet fair graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0132",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["puppies","chicks","bunnies","kittens"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the pet fair graph's bars tallest to shortest, which comes second? Diego decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["puppies","chicks","bunnies","kittens"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the pet fair graph is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0134",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "mostPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"plums","choices":["apples","plums","cherries","pears"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar is tallest? Amara looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"plums","choices":["apples","plums","cherries","pears"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Amara is reading the fruit stand graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0135",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "leastPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["pears","apples","plums","cherries"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar is shortest? Diego hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["pears","apples","plums","cherries"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Diego is reading the fruit stand graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0136",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["cherries","plums","apples","pears"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the fruit stand graph's bars tallest to shortest, which comes second? Nora decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["cherries","plums","apples","pears"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Nora lines up the fruit stand graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0138",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "mostPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["jump rope","tag","soccer","hopscotch"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar is tallest? Leo looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["jump rope","tag","soccer","hopscotch"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Leo is reading the recess games graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0139",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "leastPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["hopscotch","tag","jump rope","soccer"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar is shortest? Nora hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["hopscotch","tag","jump rope","soccer"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Nora is reading the recess games graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0140",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "readJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barReadSaid","said":4,"label":"tag"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam says the recess games graph shows 4 tag. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barReadSaid","said":4,"label":"tag"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam says the recess games graph shows that 4 kids picked tag. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0141",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["jump rope","soccer","hopscotch","tag"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the recess games graph's bars tallest to shortest, which comes second? Luca decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["jump rope","soccer","hopscotch","tag"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Luca lines up the recess games graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0142",
@@ -7542,7 +7542,7 @@ export const ITEMS = [
     structureType: "mostPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["blue","yellow","red","green"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar is tallest? Mina looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["blue","yellow","red","green"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0143",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "leastPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"green","choices":["green","red","yellow","blue"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar is shortest? Luca hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"green","choices":["green","red","yellow","blue"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0144",
@@ -7562,7 +7562,7 @@ export const ITEMS = [
     structureType: "readJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barReadSaid","said":8,"label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nia says the favorite colors graph shows 8 green. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barReadSaid","said":8,"label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nia says the favorite colors graph shows that 8 kids picked green. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0145",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"yellow","choices":["red","green","blue","yellow"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the favorite colors graph's bars tallest to shortest, which comes second? Ava decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"yellow","choices":["red","green","blue","yellow"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the favorite colors graph is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0146",
@@ -7582,7 +7582,7 @@ export const ITEMS = [
     structureType: "mostPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jays","choices":["robins","jays","wrens","finches"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar is tallest? Theo looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jays","choices":["robins","jays","wrens","finches"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Theo is reading the bird watch graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0147",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "leastPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["wrens","jays","finches","robins"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar is shortest? Ava hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["wrens","jays","finches","robins"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Ava is reading the bird watch graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0148",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["finches","robins","jays","wrens"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the bird watch graph's bars tallest to shortest, which comes second? Omar decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["finches","robins","jays","wrens"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Omar lines up the bird watch graph's bars from tallest to shortest. Which bar comes second?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0150",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "mostPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["bikes","vans","buses","scooters"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar is tallest? Ida looks for the winner."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["bikes","vans","buses","scooters"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barMax"},"type":"barGraph","figure":"barGraph","promptText":"Look at the school ride graph. Which bar is the tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0151",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "leastPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"buses","choices":["buses","vans","scooters","bikes"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar is shortest? Omar hunts for it."}},
+    question: {"a":null,"b":null,"op":"count","answer":"buses","choices":["buses","vans","scooters","bikes"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barMin"},"type":"barGraph","figure":"barGraph","promptText":"Look at the school ride graph. Which bar is the shortest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0152",
@@ -7652,7 +7652,7 @@ export const ITEMS = [
     structureType: "secondPick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["buses","bikes","vans","scooters"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Ordering the school ride graph's bars tallest to shortest, which comes second? Ben decides."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bikes","choices":["buses","bikes","vans","scooters"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barSecondMax"},"type":"barGraph","figure":"barGraph","promptText":"Which bar in the school ride graph is the second tallest?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0154",
@@ -7672,7 +7672,7 @@ export const ITEMS = [
     structureType: "whichMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["chicks","bunnies"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar shows more: bunnies or chicks? Theo compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["chicks","bunnies"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which got more votes, bunnies or chicks?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0156",
@@ -7682,7 +7682,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["bunnies","kittens"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"bunnies","b":"kittens","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Amara settles a debate with the pet fair graph: bunnies or kittens — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["bunnies","kittens"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"bunnies","b":"kittens","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Amara looks at the pet fair graph. Are there more bunnies or more kittens?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0157",
@@ -7722,7 +7722,7 @@ export const ITEMS = [
     structureType: "whichMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["apples","cherries"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar shows more: cherries or apples? Ida compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["apples","cherries"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Ida compares two bars in the fruit stand graph. Which got more votes, cherries or apples?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0161",
@@ -7732,7 +7732,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["pears","cherries"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"pears","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Leo settles a debate with the fruit stand graph: cherries or pears — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["pears","cherries"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"pears","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Leo looks at the fruit stand graph. Are there more cherries or more pears?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0162",
@@ -7762,7 +7762,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"hopscotch","b":"jump rope","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Ida says the recess games graph shows more hopscotch than jump rope. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"hopscotch","b":"jump rope","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Ida says the recess games graph shows that more kids picked hopscotch than jump rope. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0165",
@@ -7772,7 +7772,7 @@ export const ITEMS = [
     structureType: "whichMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["soccer","tag"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"soccer","b":"tag","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar shows more: soccer or tag? Zoe compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["soccer","tag"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"soccer","b":"tag","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Zoe compares two bars in the recess games graph. Which got more votes, soccer or tag?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0166",
@@ -7782,7 +7782,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"hopscotch","choices":["soccer","hopscotch"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"soccer","b":"hopscotch","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Mina settles a debate with the recess games graph: soccer or hopscotch — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"hopscotch","choices":["soccer","hopscotch"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"soccer","b":"hopscotch","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Mina looks at the recess games graph. Which did more kids pick, soccer or hopscotch?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0167",
@@ -7812,7 +7812,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Zoe says the favorite colors graph shows more yellow than red. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Zoe says the favorite colors graph shows that more kids picked yellow than red. Is Zoe right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0170",
@@ -7822,7 +7822,7 @@ export const ITEMS = [
     structureType: "whichMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["blue","green"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"blue","b":"green","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar shows more: blue or green? Rosa compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["blue","green"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"blue","b":"green","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which got more votes, blue or green?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0171",
@@ -7832,7 +7832,7 @@ export const ITEMS = [
     structureType: "diffJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barDiffSaid","said":6},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Diego figures the favorite colors graph's yellow bar beats red by 6. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barDiffSaid","said":6},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Diego figures yellow beat red by 6 votes on the favorite colors graph. Is Diego right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0172",
@@ -7862,7 +7862,7 @@ export const ITEMS = [
     structureType: "whichMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["jays","finches"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"jays","b":"finches","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar shows more: jays or finches? Diego compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["jays","finches"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"jays","b":"finches","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Diego compares two bars in the bird watch graph. Which got more votes, jays or finches?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0175",
@@ -7902,7 +7902,7 @@ export const ITEMS = [
     structureType: "whichMore_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["vans","scooters"],"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"vans","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar shows more: scooters or vans? Nora compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["vans","scooters"],"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"vans","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which got more votes, scooters or vans?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0179",
@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "pairBeats_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"a":"kittens","b":"bunnies","c":"puppies","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Ida wonders: in the pet fair graph, do kittens and bunnies together beat puppies? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"a":"kittens","b":"bunnies","c":"puppies","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Ida wonders about the pet fair graph. Is it true that kittens and bunnies together got more votes than puppies?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0185",
@@ -8002,7 +8002,7 @@ export const ITEMS = [
     structureType: "pairBeats_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"a":"apples","b":"pears","c":"cherries","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Zoe wonders: in the fruit stand graph, do apples and pears together beat cherries? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"a":"apples","b":"pears","c":"cherries","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Zoe wonders about the fruit stand graph. Is it true that apples and pears together got more votes than cherries?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0189",
@@ -8042,7 +8042,7 @@ export const ITEMS = [
     structureType: "pairBeats_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"a":"soccer","b":"tag","c":"jump rope","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Rosa wonders: in the recess games graph, do soccer and tag together beat jump rope? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"a":"soccer","b":"tag","c":"jump rope","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Rosa looks at the recess games graph. Are there more votes for soccer and tag together than for jump rope?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0193",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "pairBeats_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"red","b":"blue","c":"yellow","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Diego wonders: in the favorite colors graph, do red and blue together beat yellow? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"red","b":"blue","c":"yellow","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Diego looks at the favorite colors graph. Are there more votes for red and blue together than for yellow?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0197",
@@ -8122,7 +8122,7 @@ export const ITEMS = [
     structureType: "pairBeats_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"a":"robins","b":"jays","c":"wrens","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nora wonders: in the bird watch graph, do robins and jays together beat wrens? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"a":"robins","b":"jays","c":"wrens","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nora wonders about the bird watch graph. Is it true that robins and jays together got more votes than wrens?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0201",
@@ -8162,7 +8162,7 @@ export const ITEMS = [
     structureType: "pairBeats_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"a":"vans","b":"bikes","c":"scooters","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Luca wonders: in the school ride graph, do vans and bikes together beat scooters? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"a":"vans","b":"bikes","c":"scooters","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Luca looks at the school ride graph. Are there more votes for vans and bikes together than for scooters?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0205",
@@ -8182,7 +8182,7 @@ export const ITEMS = [
     structureType: "whichMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["bunnies","chicks"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar shows more: bunnies or chicks? Ben compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["bunnies","chicks"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Ben compares two bars in the pet fair graph. Which got more votes, bunnies or chicks?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0207",
@@ -8192,7 +8192,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["bunnies","kittens"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"bunnies","b":"kittens","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Luca settles a debate with the pet fair graph: bunnies or kittens — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bunnies","choices":["bunnies","kittens"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"bunnies","b":"kittens","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Luca looks at the pet fair graph. Are there more bunnies or more kittens?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0208",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "whichMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["apples","cherries"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"cherries","b":"apples","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar shows more: cherries or apples? Finn compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["apples","cherries"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"cherries","b":"apples","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Look at the fruit stand graph. Which bar shows more votes, cherries or apples?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0212",
@@ -8242,7 +8242,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["pears","cherries"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"cherries","b":"pears","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Ava settles a debate with the fruit stand graph: cherries or pears — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["pears","cherries"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"cherries","b":"pears","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Ava looks at the fruit stand graph. Are there more cherries or more pears?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0213",
@@ -8272,7 +8272,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"hopscotch","b":"jump rope","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Finn says the recess games graph shows more hopscotch than jump rope. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"hopscotch","b":"jump rope","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Finn says the recess games graph shows that more kids picked hopscotch than jump rope. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0216",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "whichMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["tag","soccer"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"tag","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar shows more: soccer or tag? Priya compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["tag","soccer"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"tag","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Look at the recess games graph. Which bar shows more votes, soccer or tag?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0217",
@@ -8292,7 +8292,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["soccer","hopscotch"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"hopscotch","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Omar settles a debate with the recess games graph: soccer or hopscotch — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["soccer","hopscotch"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"hopscotch","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Omar looks at the recess games graph. Which did more kids pick, soccer or hopscotch?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0218",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"red","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Priya says the favorite colors graph shows more yellow than red. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"red","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Priya says the favorite colors graph shows that more kids picked yellow than red. Is Priya right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0221",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "whichMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["green","blue"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"blue","b":"green","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar shows more: blue or green? Sam compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["green","blue"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"blue","b":"green","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Sam compares two bars in the favorite colors graph. Which got more votes, blue or green?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0222",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "diffJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"red","kind":"barDiffSaid","said":9},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Nia figures the favorite colors graph's yellow bar beats red by 9. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"red","kind":"barDiffSaid","said":9},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Nia figures yellow beat red by 9 votes on the favorite colors graph. Is Nia right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0223",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"robins","b":"wrens","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam says the bird watch graph shows more robins than wrens. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"robins","b":"wrens","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam thinks the bird watch graph shows more robins than wrens. Is Sam right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0225",
@@ -8372,7 +8372,7 @@ export const ITEMS = [
     structureType: "whichMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jays","choices":["jays","finches"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"finches","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar shows more: jays or finches? Nia compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jays","choices":["jays","finches"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"finches","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Look at the bird watch graph. Which bar shows more votes, jays or finches?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0226",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"bikes","b":"buses","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Nia says the school ride graph shows more bikes than buses. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"bikes","b":"buses","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Nia thinks the school ride graph shows more bikes than buses. Is Nia right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0229",
@@ -8412,7 +8412,7 @@ export const ITEMS = [
     structureType: "whichMore_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["scooters","vans"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"scooters","b":"vans","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar shows more: scooters or vans? Kai compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters","choices":["scooters","vans"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"scooters","b":"vans","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Kai compares two bars in the school ride graph. Which got more votes, scooters or vans?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0230",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Looking at the pet fair graph, Kai claims bunnies beat chicks. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Kai says the pet fair graph shows more bunnies than chicks. Is Kai right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0233",
@@ -8472,7 +8472,7 @@ export const ITEMS = [
     structureType: "pairBeats_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"puppies","b":"bunnies","c":"kittens","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Finn wonders: in the pet fair graph, do puppies and bunnies together beat kittens? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"puppies","b":"bunnies","c":"kittens","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Finn looks at the pet fair graph. Are there more votes for puppies and bunnies together than for kittens?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0236",
@@ -8482,7 +8482,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"cherries","b":"apples","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Looking at the fruit stand graph, June claims cherries beat apples. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"cherries","b":"apples","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"June says the fruit stand graph shows more cherries than apples. Is June right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0237",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "pairBeats_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"apples","b":"plums","c":"pears","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Priya wonders: in the fruit stand graph, do apples and plums together beat pears? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"apples","b":"plums","c":"pears","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Priya looks at the fruit stand graph. Are there more votes for apples and plums together than for pears?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0240",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"soccer","b":"tag","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Looking at the recess games graph, Lily claims soccer beat tag. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"soccer","b":"tag","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Lily thinks the recess games graph shows that more kids picked soccer than tag. Is Lily right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0241",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "pairBeats_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"soccer","b":"tag","c":"hopscotch","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Sam wonders: in the recess games graph, do soccer and tag together beat hopscotch? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"soccer","b":"tag","c":"hopscotch","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Sam wonders about the recess games graph. Is it true that soccer and tag together got more votes than hopscotch?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0244",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Looking at the favorite colors graph, Amara claims blue beat green. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Is Amara right that the favorite colors graph shows more kids picking blue than green?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0245",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "pairBeats_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"red","b":"blue","c":"yellow","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Nia wonders: in the favorite colors graph, do red and blue together beat yellow? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"red","b":"blue","c":"yellow","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Nia wonders about the favorite colors graph. Is it true that red and blue together got more votes than yellow?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0248",
@@ -8602,7 +8602,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"jays","b":"finches","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Looking at the bird watch graph, Leo claims jays beat finches. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"jays","b":"finches","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Leo thinks the bird watch graph shows more jays than finches. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0249",
@@ -8632,7 +8632,7 @@ export const ITEMS = [
     structureType: "pairBeats_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","c":"robins","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Kai wonders: in the bird watch graph, do wrens and jays together beat robins? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","c":"robins","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Kai looks at the bird watch graph. Are there more votes for wrens and jays together than for robins?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0252",
@@ -8642,7 +8642,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"scooters","b":"vans","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Looking at the school ride graph, Mina claims scooters beat vans. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"scooters","b":"vans","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Mina thinks the school ride graph shows more scooters than vans. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0253",
@@ -8672,7 +8672,7 @@ export const ITEMS = [
     structureType: "pairBeats_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"vans","b":"bikes","c":"buses","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"June wonders: in the school ride graph, do vans and bikes together beat buses? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"vans","b":"bikes","c":"buses","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"June wonders about the school ride graph. Is it true that vans and bikes together got more votes than buses?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0256",
@@ -8692,7 +8692,7 @@ export const ITEMS = [
     structureType: "whichMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["bunnies","chicks"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, which bar shows more: bunnies or chicks? Priya compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["bunnies","chicks"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Which got more votes in the pet fair graph, bunnies or chicks?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0258",
@@ -8702,7 +8702,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","bunnies"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"bunnies","b":"kittens","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Omar settles a debate with the pet fair graph: bunnies or kittens — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens","choices":["kittens","bunnies"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"bunnies","b":"kittens","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Omar looks at the pet fair graph. Are there more bunnies or more kittens?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0259",
@@ -8742,7 +8742,7 @@ export const ITEMS = [
     structureType: "whichMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["cherries","apples"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"cherries","b":"apples","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, which bar shows more: cherries or apples? Sam compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"apples","choices":["cherries","apples"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"cherries","b":"apples","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Sam compares two bars in the fruit stand graph. Which got more votes, cherries or apples?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0263",
@@ -8752,7 +8752,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["pears","cherries"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"cherries","b":"pears","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Ben settles a debate with the fruit stand graph: cherries or pears — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["pears","cherries"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"cherries","b":"pears","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Ben looks at the fruit stand graph. Are there more cherries or more pears?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0264",
@@ -8782,7 +8782,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"hopscotch","b":"jump rope","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Sam says the recess games graph shows more hopscotch than jump rope. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"hopscotch","b":"jump rope","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Sam says the recess games graph shows that more kids picked hopscotch than jump rope. Is Sam right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0267",
@@ -8792,7 +8792,7 @@ export const ITEMS = [
     structureType: "whichMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["soccer","tag"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"tag","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, which bar shows more: soccer or tag? Nia compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["soccer","tag"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"tag","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Nia compares two bars in the recess games graph. Which got more votes, soccer or tag?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0268",
@@ -8802,7 +8802,7 @@ export const ITEMS = [
     structureType: "whichMoreExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["hopscotch","soccer"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Finn settles a debate with the recess games graph: soccer or hopscotch — which got more votes?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer","choices":["hopscotch","soccer"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Finn looks at the recess games graph. Which did more kids pick, soccer or hopscotch?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0269",
@@ -8832,7 +8832,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Nia says the favorite colors graph shows more yellow than red. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Nia says the favorite colors graph shows that more kids picked yellow than red. Is Nia right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0272",
@@ -8842,7 +8842,7 @@ export const ITEMS = [
     structureType: "whichMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["blue","green"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"blue","b":"green","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, which bar shows more: blue or green? Kai compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue","choices":["blue","green"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"blue","b":"green","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Which got more votes in the favorite colors graph, blue or green?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0273",
@@ -8852,7 +8852,7 @@ export const ITEMS = [
     structureType: "diffJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiffSaid","said":11},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"June figures the favorite colors graph's yellow bar beats red by 11. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiffSaid","said":11},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"June figures yellow beat red by 11 votes on the favorite colors graph. Is June right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0274",
@@ -8872,7 +8872,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"robins","b":"wrens","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Kai says the bird watch graph shows more robins than wrens. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"robins","b":"wrens","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Kai thinks the bird watch graph shows more robins than wrens. Is Kai right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0276",
@@ -8882,7 +8882,7 @@ export const ITEMS = [
     structureType: "whichMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["jays","finches"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"jays","b":"finches","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, which bar shows more: jays or finches? June compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"finches","choices":["jays","finches"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"jays","b":"finches","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"June compares two bars in the bird watch graph. Which got more votes, jays or finches?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0277",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"bikes","b":"buses","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"June says the school ride graph shows more bikes than buses. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"bikes","b":"buses","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Is June right that the school ride graph shows more bikes than buses?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0280",
@@ -8922,7 +8922,7 @@ export const ITEMS = [
     structureType: "whichMore_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"vans","choices":["scooters","vans"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"scooters","b":"vans","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, which bar shows more: scooters or vans? Lily compares them."}},
+    question: {"a":null,"b":null,"op":"count","answer":"vans","choices":["scooters","vans"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"scooters","b":"vans","kind":"barCmpPick"},"type":"barGraph","figure":"barGraph","promptText":"Which got more votes in the school ride graph, scooters or vans?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0281",
@@ -8952,7 +8952,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Looking at the pet fair graph, Lily claims bunnies beat chicks. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"bunnies","b":"chicks","kind":"barCmpSaid"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Is Lily right that the pet fair graph shows more bunnies than chicks?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0284",
@@ -8982,7 +8982,7 @@ export const ITEMS = [
     structureType: "pairBeats_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"kittens","b":"bunnies","c":"puppies","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam wonders: in the pet fair graph, do kittens and bunnies together beat puppies? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"kittens","b":"bunnies","c":"puppies","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam wonders about the pet fair graph. Is it true that kittens and bunnies together got more votes than puppies?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0287",
@@ -8992,7 +8992,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"cherries","b":"apples","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Looking at the fruit stand graph, Amara claims cherries beat apples. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"cherries","b":"apples","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Amara thinks the fruit stand graph shows more cherries than apples. Is Amara right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0288",
@@ -9022,7 +9022,7 @@ export const ITEMS = [
     structureType: "pairBeats_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"apples","b":"pears","c":"plums","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nia wonders: in the fruit stand graph, do apples and pears together beat plums? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"apples","b":"pears","c":"plums","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nia looks at the fruit stand graph. Are there more votes for apples and pears together than for plums?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0291",
@@ -9032,7 +9032,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"soccer","b":"tag","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Looking at the recess games graph, Leo claims soccer beat tag. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"soccer","b":"tag","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Leo thinks the recess games graph shows that more kids picked soccer than tag. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0292",
@@ -9062,7 +9062,7 @@ export const ITEMS = [
     structureType: "pairBeats_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"soccer","b":"tag","c":"jump rope","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Kai wonders: in the recess games graph, do soccer and tag together beat jump rope? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"soccer","b":"tag","c":"jump rope","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Kai looks at the recess games graph. Are there more votes for soccer and tag together than for jump rope?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0295",
@@ -9072,7 +9072,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Looking at the favorite colors graph, Mina claims blue beat green. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Is Mina right that the favorite colors graph shows more kids picking blue than green?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0296",
@@ -9102,7 +9102,7 @@ export const ITEMS = [
     structureType: "pairBeats_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"red","b":"green","c":"blue","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"June wonders: in the favorite colors graph, do red and green together beat blue? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"red","b":"green","c":"blue","kind":"pairBeats"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"June wonders about the favorite colors graph. Is it true that red and green together got more votes than blue?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0299",
@@ -9112,7 +9112,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"jays","b":"finches","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Looking at the bird watch graph, Theo claims jays beat finches. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"jays","b":"finches","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Is Theo right that the bird watch graph shows more jays than finches?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0300",
@@ -9142,7 +9142,7 @@ export const ITEMS = [
     structureType: "pairBeats_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"robins","b":"wrens","c":"jays","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Lily wonders: in the bird watch graph, do robins and wrens together beat jays? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"robins","b":"wrens","c":"jays","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Lily wonders about the bird watch graph. Is it true that robins and wrens together got more votes than jays?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0303",
@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "cmpJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"scooters","b":"vans","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Looking at the school ride graph, Ida claims scooters beat vans. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"scooters","b":"vans","kind":"barCmpSaid"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Is Ida right that the school ride graph shows more scooters than vans?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0304",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "pairBeats_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"vans","b":"bikes","c":"scooters","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Amara wonders: in the school ride graph, do vans and bikes together beat scooters? What does the math say?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"vans","b":"bikes","c":"scooters","kind":"pairBeats"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Amara looks at the school ride graph. Are there more votes for vans and bikes together than for scooters?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0307",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Kittens","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Omar says this chart shows 2 kittens. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Kittens","symbols":2}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"Omar says this chart shows 10 kittens. Is Omar right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0308",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Ben announces 3 pears. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Ben reads this chart and says there are 3 pears. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0309",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":4}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Finn looks at this chart and claims there are 4 hopscotch. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":4}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"Finn looks at this chart and finds 20 votes for hopscotch. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0310",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":5}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Priya says this chart shows 5 yellow. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":5}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Priya says this chart shows 5 votes for yellow. Is Priya right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0311",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":6}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Sam announces 6 robins. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":6}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"Sam reads this chart and says there are 30 robins. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0312",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Nia looks at this chart and claims there are 2 bikes. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Nia looks at this chart and finds 2 bikes. Is Nia right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0313",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Cherries","symbols":4}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, June announces 4 cherries. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Cherries","symbols":4}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"June reads this chart and says there are 20 cherries. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0315",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Soccer","symbols":5}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Lily looks at this chart and claims there are 5 soccer. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Soccer","symbols":5}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Lily looks at this chart and finds 5 votes for soccer. Is Lily right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0316",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Blue","symbols":6}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Amara says this chart shows 6 blue. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Blue","symbols":6}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"Amara says this chart shows 30 votes for blue. Is Amara right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0317",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Jays","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Leo announces 2 jays. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Jays","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Leo reads this chart and says there are 2 jays. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0318",
@@ -9302,7 +9302,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Scooters","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Mina looks at this chart and claims there are 3 scooters. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Scooters","symbols":3}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"Mina looks at this chart and finds 15 scooters. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0319",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":5}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Ida announces 5 pears. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":5}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"Ida reads this chart and says there are 25 pears. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0321",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":6}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Zoe looks at this chart and claims there are 6 hopscotch. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":6}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Zoe looks at this chart and finds 6 votes for hopscotch. Is Zoe right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0322",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Rosa says this chart shows 2 yellow. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":2}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"Rosa says this chart shows 10 votes for yellow. Is Rosa right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0323",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Diego announces 3 robins. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Diego reads this chart and says there are 3 robins. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0324",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":4}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Nora looks at this chart and claims there are 4 bikes. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":4}],"truth":true,"figure":"pictograph","keyValue":5,"promptText":"Nora looks at this chart and finds 20 bikes. Is Nora right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0325",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Priya announces 3 pears. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":3}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Priya reads this chart and says there are 30 pears. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0327",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Sam looks at this chart and claims there are 4 hopscotch. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Sam looks at this chart and finds 4 votes for hopscotch. Is Sam right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0328",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":5}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Nia says this chart shows 5 yellow. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":5}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Nia says this chart shows 50 votes for yellow. Is Nia right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0329",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":6}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Kai announces 6 robins. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":6}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Kai reads this chart and says there are 6 robins. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0330",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"June looks at this chart and claims there are 2 bikes. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"June looks at this chart and finds 20 bikes. Is June right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0331",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bunnies","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Lily says this chart shows 3 bunnies. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bunnies","symbols":3}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Lily says this chart shows 30 bunnies. Is Lily right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0332",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Cherries","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Amara announces 4 cherries. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Cherries","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Amara reads this chart and says there are 4 cherries. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0333",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Soccer","symbols":5}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Leo looks at this chart and claims there are 5 soccer. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Soccer","symbols":5}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Leo looks at this chart and finds 50 votes for soccer. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0334",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Blue","symbols":6}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Mina says this chart shows 6 blue. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Blue","symbols":6}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Mina says this chart shows 6 votes for blue. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0335",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Jays","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Theo announces 2 jays. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Jays","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Theo reads this chart and says there are 20 jays. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0336",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Scooters","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Ida looks at this chart and claims there are 3 scooters. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Scooters","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Ida looks at this chart and finds 3 scooters. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0337",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Kittens","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Zoe says this chart shows 4 kittens. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Kittens","symbols":4}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Zoe says this chart shows 40 kittens. Is Zoe right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0338",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":5}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Rosa announces 5 pears. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":5}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Rosa reads this chart and says there are 5 pears. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0339",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":6}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Diego looks at this chart and claims there are 6 hopscotch. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":6}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Diego looks at this chart and finds 60 votes for hopscotch. Is Diego right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0340",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Nora says this chart shows 2 yellow. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Nora says this chart shows 2 votes for yellow. Is Nora right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0341",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Luca announces 3 robins. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":3}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Luca reads this chart and says there are 30 robins. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0342",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Ava looks at this chart and claims there are 4 bikes. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Ava looks at this chart and finds 4 bikes. Is Ava right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0343",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":2},"rows":[{"label":"Puppies","symbols":2}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Luca counts the puppies on this chart and says 2. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":2},"rows":[{"label":"Puppies","symbols":2}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Luca counts the pictures in the puppies row of this chart and says 2. Is Luca right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0344",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":4},"rows":[{"label":"Jump rope","symbols":4}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Omar reads this chart and reports 4 jump rope. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":4},"rows":[{"label":"Jump rope","symbols":4}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Omar reads this chart and reports that 4 kids picked jump rope. Is Omar right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0346",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":5,"kind":"pictoSaid","said":4},"rows":[{"label":"Red","symbols":5}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ben counts the red on this chart and says 4. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":5,"kind":"pictoSaid","said":4},"rows":[{"label":"Red","symbols":5}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ben counts the pictures in the red row of this chart and says 4. Is Ben right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0347",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":8},"rows":[{"label":"Chicks","symbols":8}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Sam counts the chicks on this chart and says 8. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":8},"rows":[{"label":"Chicks","symbols":8}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Sam counts the pictures in the chicks row of this chart and says 8. Is Sam right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0350",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":3},"rows":[{"label":"Tag","symbols":3}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Kai reads this chart and reports 3 tag. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":3},"rows":[{"label":"Tag","symbols":3}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Kai reads this chart and reports that 3 kids picked tag. Is Kai right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0352",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":5},"rows":[{"label":"Green","symbols":4}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"June counts the green on this chart and says 5. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":5},"rows":[{"label":"Green","symbols":4}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"June counts the pictures in the green row of this chart and says 5. Is June right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0353",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":7,"kind":"pictoSaid","said":7},"rows":[{"label":"Puppies","symbols":7}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Leo counts the puppies on this chart and says 7. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":7,"kind":"pictoSaid","said":7},"rows":[{"label":"Puppies","symbols":7}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Leo counts the pictures in the puppies row of this chart and says 7. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0356",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":2},"rows":[{"label":"Jump rope","symbols":2}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Theo reads this chart and reports 2 jump rope. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":2},"rows":[{"label":"Jump rope","symbols":2}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Theo reads this chart and reports that 2 kids picked jump rope. Is Theo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0358",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":2},"rows":[{"label":"Red","symbols":3}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ida counts the red on this chart and says 2. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":2},"rows":[{"label":"Red","symbols":3}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ida counts the pictures in the red row of this chart and says 2. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0359",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":6,"kind":"pictoSaid","said":6},"rows":[{"label":"Chicks","symbols":6}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Diego counts the chicks on this chart and says 6. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":6,"kind":"pictoSaid","said":6},"rows":[{"label":"Chicks","symbols":6}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Diego counts the pictures in the chicks row of this chart and says 6. Is Diego right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0362",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":8},"rows":[{"label":"Tag","symbols":8}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Luca reads this chart and reports 8 tag. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":8},"rows":[{"label":"Tag","symbols":8}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Luca reads this chart and reports that 8 kids picked tag. Is Luca right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0364",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":3},"rows":[{"label":"Green","symbols":2}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ava counts the green on this chart and says 3. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":3},"rows":[{"label":"Green","symbols":2}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ava counts the pictures in the green row of this chart and says 3. Is Ava right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0365",
@@ -9922,7 +9922,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","red"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"In the favorite colors picture chart, which row has more pictures: red or blue? Omar looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["blue","red"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Omar looks at the favorite colors picture chart. Which row has more pictures, red or blue?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0381",
@@ -9932,7 +9932,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["robins","wrens"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"robins","symbols":6},{"label":"wrens","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"In the bird watch picture chart, which row has more pictures: robins or wrens? Ben looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["robins","wrens"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"robins","symbols":6},{"label":"wrens","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Ben looks at the bird watch picture chart. Which row has more pictures, robins or wrens?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0382",
@@ -9942,7 +9942,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"vans","choices":["vans","bikes"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"vans","symbols":7},{"label":"bikes","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"In the school ride picture chart, which row has more pictures: vans or bikes? Finn looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"vans","choices":["vans","bikes"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"vans","symbols":7},{"label":"bikes","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Finn looks at the school ride picture chart. Which row has more pictures, vans or bikes?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0383",
@@ -9952,7 +9952,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["bunnies","chicks"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"bunnies","symbols":2},{"label":"chicks","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"In the pet fair picture chart, which row has more pictures: bunnies or chicks? Priya looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks","choices":["bunnies","chicks"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"bunnies","symbols":2},{"label":"chicks","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Look at the pet fair picture chart. Which has more pictures, the bunnies row or the chicks row?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0384",
@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["cherries","plums"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"plums","symbols":3},{"label":"cherries","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"In the fruit stand picture chart, which row has more pictures: plums or cherries? Sam looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries","choices":["cherries","plums"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"plums","symbols":3},{"label":"cherries","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Sam looks at the fruit stand picture chart. Which row has more pictures, plums or cherries?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0385",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["hopscotch","jump rope"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"hopscotch","symbols":4},{"label":"jump rope","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"In the recess games picture chart, which row has more pictures: hopscotch or jump rope? Nia looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jump rope","choices":["hopscotch","jump rope"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"hopscotch","symbols":4},{"label":"jump rope","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Nia looks at the recess games picture chart. Which row has more pictures, hopscotch or jump rope?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0386",
@@ -9982,7 +9982,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"green","choices":["yellow","green"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"In the favorite colors picture chart, which row has more pictures: green or yellow? Kai looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"green","choices":["yellow","green"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"In the favorite colors picture chart, which row has more pictures, green or yellow?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0387",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jays","choices":["jays","finches"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"jays","symbols":6},{"label":"finches","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"In the bird watch picture chart, which row has more pictures: jays or finches? June looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jays","choices":["jays","finches"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"jays","symbols":6},{"label":"finches","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"In the bird watch picture chart, which row has more pictures, jays or finches?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0388",
@@ -10002,7 +10002,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"buses","choices":["scooters","buses"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"buses","symbols":7},{"label":"scooters","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"In the school ride picture chart, which row has more pictures: buses or scooters? Lily looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"buses","choices":["scooters","buses"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"buses","symbols":7},{"label":"scooters","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"In the school ride picture chart, which row has more pictures, buses or scooters?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0389",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"puppies","choices":["kittens","puppies"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"kittens","symbols":2},{"label":"puppies","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"In the pet fair picture chart, which row has more pictures: kittens or puppies? Amara looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"puppies","choices":["kittens","puppies"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"kittens","symbols":2},{"label":"puppies","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"In the pet fair picture chart, which row has more pictures, kittens or puppies?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0390",
@@ -10022,7 +10022,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["pears","apples"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"apples","symbols":3},{"label":"pears","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"In the fruit stand picture chart, which row has more pictures: apples or pears? Leo looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears","choices":["pears","apples"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"apples","symbols":3},{"label":"pears","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"In the fruit stand picture chart, which row has more pictures, apples or pears?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0391",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["soccer","tag"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"soccer","symbols":4},{"label":"tag","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"In the recess games picture chart, which row has more pictures: soccer or tag? Mina looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"tag","choices":["soccer","tag"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"soccer","symbols":4},{"label":"tag","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Look at the recess games picture chart. Which has more pictures, the soccer row or the tag row?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0392",
@@ -10042,7 +10042,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["red","blue"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"In the favorite colors picture chart, which row has more pictures: red or blue? Theo looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"red","choices":["red","blue"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Look at the favorite colors picture chart. Which has more pictures, the red row or the blue row?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0393",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "rowMoreTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["robins","wrens"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"robins","symbols":6},{"label":"wrens","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"In the bird watch picture chart, which row has more pictures: robins or wrens? Ida looks closely."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins","choices":["robins","wrens"],"display":{"data":{"kind":"pictoRowMore"},"rows":[{"label":"robins","symbols":6},{"label":"wrens","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Look at the bird watch picture chart. Which has more pictures, the robins row or the wrens row?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0394",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stars","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Amara counts the half as 1. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stars","symbols":2}],"truth":false,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Amara counts the half as 2. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0396",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Books","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"Mina sees the half picture at the end of this chart's row and counts it as 1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Books","symbols":2}],"truth":false,"figure":"pictograph","keyValue":2,"promptText":"Mina sees the half picture at the end of this chart's row and counts it as 2. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0398",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Leaves","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Ida says the half counts as 1. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Leaves","symbols":2}],"truth":false,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Ida says the half counts as 2. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0400",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Cards","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Rosa counts the half as 1. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Cards","symbols":2}],"truth":false,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Rosa counts the half as 2. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0402",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stickers","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Diego says the half counts as 1. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stickers","symbols":2}],"truth":false,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Diego says the half counts as 2. Is Diego right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0403",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Apples","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Luca counts the half as 1. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Apples","symbols":2}],"truth":false,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Luca counts the half as 2. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0405",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Shells","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"Omar sees the half picture at the end of this chart's row and counts it as 1. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Shells","symbols":2}],"truth":false,"figure":"pictograph","keyValue":2,"promptText":"Omar sees the half picture at the end of this chart's row and counts it as 2. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0407",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Coins","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Finn says the half counts as 1. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Coins","symbols":2}],"truth":false,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Finn says the half counts as 2. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0409",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stars","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Mina says the half counts as 5. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stars","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Mina says the half counts as 10. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0412",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Books","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Ida counts the half as 5. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Books","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Ida counts the half as 10. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0414",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Leaves","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Rosa sees the half picture at the end of this chart's row and counts it as 5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Leaves","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Rosa sees the half picture at the end of this chart's row and counts it as 10. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0416",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Cards","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Nora says the half counts as 5. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Cards","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Nora says the half counts as 10. Is Nora right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0418",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stickers","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Luca sees the half picture at the end of this chart's row and counts it as 5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stickers","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Luca sees the half picture at the end of this chart's row and counts it as 10. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0419",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Apples","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Omar says the half counts as 5. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Apples","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Omar says the half counts as 10. Is Omar right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0421",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Shells","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Finn counts the half as 5. Do you agree?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Shells","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Finn counts the half as 10. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0423",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Coins","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Sam sees the half picture at the end of this chart's row and counts it as 5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Coins","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Sam sees the half picture at the end of this chart's row and counts it as 10. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0425",
@@ -10742,7 +10742,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"claimMax","label":"chicks"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Mina looks at the pet fair graph and says: \"chicks got the most.\" Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"claimMax","label":"chicks"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Mina looks at the pet fair graph and says chicks got the most votes. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0463",
@@ -10752,7 +10752,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks got the most","choices":["chicks got the most","chicks got the fewest","kittens got the most","every bar is the same"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"truePickMax","label":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Nia must pick the TRUE statement about the pet fair graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks got the most","choices":["chicks got the most","chicks got the fewest","kittens got the most","every bar is the same"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"truePickMax","label":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Nia looks at the pet fair graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0464",
@@ -10772,7 +10772,7 @@ export const ITEMS = [
     structureType: "truePickMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens got the fewest","choices":["kittens got the most","chicks got the fewest","every bar is the same","kittens got the fewest"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"truePickMin","label":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Ben needs the true statement about the pet fair graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens got the fewest","choices":["kittens got the most","chicks got the fewest","every bar is the same","kittens got the fewest"],"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"truePickMin","label":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Ben looks at the shortest bar on the pet fair graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0466",
@@ -10782,7 +10782,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida wonders how many more kittens the pet fair graph would need to tie with chicks. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida looks at the pet fair graph. How many more votes would kittens need to tie with chicks?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0467",
@@ -10792,7 +10792,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"claimMaxFalse","label":"apples"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Theo looks at the fruit stand graph and says: \"apples got the most.\" Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"claimMaxFalse","label":"apples"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Theo says the apples bar is the tallest one in the fruit stand graph. Is it true that apples got the most votes?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0468",
@@ -10802,7 +10802,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries got the most","choices":["cherries got the most","cherries got the fewest","apples got the most","every bar is the same"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"truePickMax","label":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Kai must pick the TRUE statement about the fruit stand graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries got the most","choices":["cherries got the most","cherries got the fewest","apples got the most","every bar is the same"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"truePickMax","label":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Kai looks at the fruit stand graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0469",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "truePickMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"apples got the fewest","choices":["apples got the most","apples got the fewest","cherries got the fewest","every bar is the same"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"truePickMin","label":"apples"},"type":"barGraph","figure":"barGraph","promptText":"Finn needs the true statement about the fruit stand graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"apples got the fewest","choices":["apples got the most","apples got the fewest","cherries got the fewest","every bar is the same"],"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"truePickMin","label":"apples"},"type":"barGraph","figure":"barGraph","promptText":"Finn looks at the shortest bar on the fruit stand graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0471",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Zoe wonders how many more apples the fruit stand graph would need to tie with cherries. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Zoe looks at the fruit stand graph. How many more votes would apples need to tie with cherries?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0472",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"claimMin","label":"soccer"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Ida looks at the recess games graph and says: \"soccer got the fewest.\" Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"claimMin","label":"soccer"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Ida looks at the recess games graph and says soccer got the fewest votes. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0473",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"tag got the most","choices":["tag got the most","soccer got the most","every bar is the same","tag got the fewest"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"truePickMax","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"June must pick the TRUE statement about the recess games graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"tag got the most","choices":["tag got the most","soccer got the most","every bar is the same","tag got the fewest"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"truePickMax","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"June looks at the recess games graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0474",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "truePickMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer got the fewest","choices":["every bar is the same","soccer got the most","tag got the fewest","soccer got the fewest"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"truePickMin","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Priya needs the true statement about the recess games graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer got the fewest","choices":["every bar is the same","soccer got the most","tag got the fewest","soccer got the fewest"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"truePickMin","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Priya looks at the shortest bar on the recess games graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0476",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Rosa wonders how many more soccer the recess games graph would need to tie with tag. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Rosa looks at the recess games graph. How many more votes would soccer need to tie with tag?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0477",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"claimMinFalse","label":"yellow"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Zoe looks at the favorite colors graph and says: \"yellow got the fewest.\" Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"claimMinFalse","label":"yellow"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Zoe looks at the favorite colors graph and says yellow got the fewest votes. Is Zoe right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0478",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["red got the most","yellow got the most","yellow got the fewest","every bar is the same"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Lily must pick the TRUE statement about the favorite colors graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["red got the most","yellow got the most","yellow got the fewest","every bar is the same"],"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Lily looks at the favorite colors graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0479",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Diego wonders how many more red the favorite colors graph would need to tie with yellow. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Diego looks at the favorite colors graph. How many more votes would red need to tie with yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0481",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"claimMax","label":"finches"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Rosa looks at the bird watch graph and says: \"finches got the most.\" Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"claimMax","label":"finches"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Rosa says the finches bar is the tallest one in the bird watch graph. Is it true that finches got the most votes?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0482",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"finches got the most","choices":["finches got the most","every bar is the same","robins got the most","finches got the fewest"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"truePickMax","label":"finches"},"type":"barGraph","figure":"barGraph","promptText":"Amara must pick the TRUE statement about the bird watch graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"finches got the most","choices":["finches got the most","every bar is the same","robins got the most","finches got the fewest"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"truePickMax","label":"finches"},"type":"barGraph","figure":"barGraph","promptText":"Amara looks at the bird watch graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0483",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"finches","b":"robins","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nora wonders how many more robins the bird watch graph would need to tie with finches. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"finches","b":"robins","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nora looks at the bird watch graph. How many more votes would robins need to tie with finches?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0485",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"claimMaxFalse","label":"buses"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Diego looks at the school ride graph and says: \"buses got the most.\" Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"claimMaxFalse","label":"buses"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Diego looks at the school ride graph and says buses got the most votes. Is Diego right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0486",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters got the most","choices":["every bar is the same","buses got the most","scooters got the most","scooters got the fewest"],"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"truePickMax","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Leo must pick the TRUE statement about the school ride graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters got the most","choices":["every bar is the same","buses got the most","scooters got the most","scooters got the fewest"],"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"truePickMax","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Leo looks at the school ride graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0487",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Luca wonders how many more buses the school ride graph would need to tie with scooters. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Luca looks at the school ride graph. How many more votes would buses need to tie with scooters?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0489",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"claimMin","label":"kittens"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the pet fair graph, Nora claims: \"kittens got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"claimMin","label":"kittens"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the pet fair graph, Nora says kittens got the fewest votes. Is Nora right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0490",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"puppies got the most","choices":["puppies got the most","every bar is the same","puppies got the fewest","kittens got the most"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"truePickMax","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the pet fair graph? Mina checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"puppies got the most","choices":["puppies got the most","every bar is the same","puppies got the fewest","kittens got the most"],"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"truePickMax","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Which sentence about the pet fair graph is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0491",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"a":"puppies","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ava wonders how many more kittens the pet fair graph would need to tie with puppies. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"a":"puppies","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ava looks at the pet fair graph. How many more votes would kittens need to catch up to puppies?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0493",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"claimMinFalse","label":"cherries"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the fruit stand graph, Luca claims: \"cherries got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"claimMinFalse","label":"cherries"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the fruit stand graph, Luca says cherries got the fewest votes. Is Luca right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0494",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries got the most","choices":["cherries got the most","every bar is the same","apples got the most","cherries got the fewest"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"truePickMax","label":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the fruit stand graph? Theo checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries got the most","choices":["cherries got the most","every bar is the same","apples got the most","cherries got the fewest"],"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"truePickMax","label":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Theo checks each bar of the fruit stand graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0495",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Omar wonders how many more apples the fruit stand graph would need to tie with cherries. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the fruit stand graph. How many more votes would apples need to tie with cherries?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0497",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"claimMax","label":"jump rope"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the recess games graph, Ava claims: \"jump rope got the most.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"claimMax","label":"jump rope"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the recess games graph, Ava says jump rope got the most votes. Is Ava right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0498",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jump rope got the most","choices":["jump rope got the fewest","jump rope got the most","every bar is the same","soccer got the most"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"truePickMax","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the recess games graph? Ida checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jump rope got the most","choices":["jump rope got the fewest","jump rope got the most","every bar is the same","soccer got the most"],"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"truePickMax","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Ida checks each bar of the recess games graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0499",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"a":"jump rope","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ben wonders how many more soccer the recess games graph would need to tie with jump rope. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"a":"jump rope","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the recess games graph. How many more votes would soccer need to tie with jump rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0501",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"claimMaxFalse","label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the favorite colors graph, Omar claims: \"green got the most.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"claimMaxFalse","label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the favorite colors graph, Omar says green got the most votes. Is Omar right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0502",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["yellow got the most","green got the most","yellow got the fewest","every bar is the same"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the favorite colors graph? Zoe checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["yellow got the most","green got the most","yellow got the fewest","every bar is the same"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Which sentence about the favorite colors graph is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0503",
@@ -11162,7 +11162,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Finn wonders how many more green the favorite colors graph would need to tie with yellow. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Finn looks at the favorite colors graph. How many more votes would green need to catch up to yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0505",
@@ -11172,7 +11172,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"claimMin","label":"robins"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the bird watch graph, Ben claims: \"robins got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"claimMin","label":"robins"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the bird watch graph, Ben says robins got the fewest votes. Is Ben right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0506",
@@ -11182,7 +11182,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"wrens got the most","choices":["every bar is the same","wrens got the most","wrens got the fewest","robins got the most"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"truePickMax","label":"wrens"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the bird watch graph? Rosa checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"wrens got the most","choices":["every bar is the same","wrens got the most","wrens got the fewest","robins got the most"],"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"truePickMax","label":"wrens"},"type":"barGraph","figure":"barGraph","promptText":"Rosa checks each bar of the bird watch graph. Which sentence is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0507",
@@ -11202,7 +11202,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"a":"wrens","b":"robins","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Priya wonders how many more robins the bird watch graph would need to tie with wrens. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"a":"wrens","b":"robins","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Priya looks at the bird watch graph. How many more votes would robins need to catch up to wrens?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0509",
@@ -11212,7 +11212,7 @@ export const ITEMS = [
     structureType: "claimJudge_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"claimMinFalse","label":"scooters"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the school ride graph, Finn claims: \"scooters got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"claimMinFalse","label":"scooters"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the school ride graph, Finn says scooters got the fewest votes. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0510",
@@ -11222,7 +11222,7 @@ export const ITEMS = [
     structureType: "truePick_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters got the most","choices":["scooters got the most","scooters got the fewest","vans got the most","every bar is the same"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"truePickMax","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the school ride graph? Diego checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters got the most","choices":["scooters got the most","scooters got the fewest","vans got the most","every bar is the same"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"truePickMax","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Which sentence about the school ride graph is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0511",
@@ -11242,7 +11242,7 @@ export const ITEMS = [
     structureType: "tieGap_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"a":"scooters","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Sam wonders how many more vans the school ride graph would need to tie with scooters. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"a":"scooters","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the school ride graph. How many more votes would vans need to tie with scooters?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0513",
@@ -11252,7 +11252,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"claimMax","label":"bunnies"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Omar looks at the pet fair graph and says: \"bunnies got the most.\" Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"claimMax","label":"bunnies"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Omar looks at the pet fair graph and says bunnies got the most votes. Is Omar right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0514",
@@ -11262,7 +11262,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"bunnies got the most","choices":["bunnies got the fewest","chicks got the most","every bar is the same","bunnies got the most"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"truePickMax","label":"bunnies"},"type":"barGraph","figure":"barGraph","promptText":"Zoe must pick the TRUE statement about the pet fair graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"bunnies got the most","choices":["bunnies got the fewest","chicks got the most","every bar is the same","bunnies got the most"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"truePickMax","label":"bunnies"},"type":"barGraph","figure":"barGraph","promptText":"Zoe must pick the true statement about the pet fair graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0515",
@@ -11282,7 +11282,7 @@ export const ITEMS = [
     structureType: "truePickMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks got the fewest","choices":["chicks got the fewest","chicks got the most","bunnies got the fewest","every bar is the same"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"truePickMin","label":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Leo needs the true statement about the pet fair graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks got the fewest","choices":["chicks got the fewest","chicks got the most","bunnies got the fewest","every bar is the same"],"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"truePickMin","label":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Leo needs the true statement about the pet fair graph's smallest bar. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0517",
@@ -11292,7 +11292,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"bunnies","b":"chicks","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Finn wonders how many more chicks the pet fair graph would need to tie with bunnies. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"bunnies","b":"chicks","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Finn looks at the pet fair graph. How many more votes would chicks need to tie with bunnies?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0518",
@@ -11302,7 +11302,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"claimMaxFalse","label":"plums"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Ben looks at the fruit stand graph and says: \"plums got the most.\" Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"claimMaxFalse","label":"plums"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Ben looks at the fruit stand graph and says plums got the most votes. Is Ben right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0519",
@@ -11312,7 +11312,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears got the most","choices":["every bar is the same","plums got the most","pears got the most","pears got the fewest"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"truePickMax","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Rosa must pick the TRUE statement about the fruit stand graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears got the most","choices":["every bar is the same","plums got the most","pears got the most","pears got the fewest"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"truePickMax","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Rosa must pick the true statement about the fruit stand graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0520",
@@ -11332,7 +11332,7 @@ export const ITEMS = [
     structureType: "truePickMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"plums got the fewest","choices":["plums got the fewest","plums got the most","pears got the fewest","every bar is the same"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"truePickMin","label":"plums"},"type":"barGraph","figure":"barGraph","promptText":"Mina needs the true statement about the fruit stand graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"plums got the fewest","choices":["plums got the fewest","plums got the most","pears got the fewest","every bar is the same"],"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"truePickMin","label":"plums"},"type":"barGraph","figure":"barGraph","promptText":"Mina needs the true statement about the fruit stand graph's smallest bar. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0522",
@@ -11342,7 +11342,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"plums","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Priya wonders how many more plums the fruit stand graph would need to tie with pears. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"plums","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Priya looks at the fruit stand graph. How many more votes would plums need to tie with pears?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0523",
@@ -11352,7 +11352,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"claimMin","label":"jump rope"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Finn looks at the recess games graph and says: \"jump rope got the fewest.\" Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"claimMin","label":"jump rope"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Finn looks at the recess games graph and says jump rope got the fewest votes. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0524",
@@ -11362,7 +11362,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer got the most","choices":["soccer got the fewest","every bar is the same","jump rope got the most","soccer got the most"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"truePickMax","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Diego must pick the TRUE statement about the recess games graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer got the most","choices":["soccer got the fewest","every bar is the same","jump rope got the most","soccer got the most"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"truePickMax","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Diego must pick the true statement about the recess games graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0525",
@@ -11382,7 +11382,7 @@ export const ITEMS = [
     structureType: "truePickMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jump rope got the fewest","choices":["jump rope got the fewest","every bar is the same","soccer got the fewest","jump rope got the most"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"truePickMin","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Theo needs the true statement about the recess games graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"jump rope got the fewest","choices":["jump rope got the fewest","every bar is the same","soccer got the fewest","jump rope got the most"],"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"truePickMin","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Theo needs the true statement about the recess games graph's smallest bar. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0527",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"jump rope","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Sam wonders how many more jump rope the recess games graph would need to tie with soccer. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"jump rope","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Sam looks at the recess games graph. How many more votes would jump rope need to tie with soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0528",
@@ -11402,7 +11402,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"claimMinFalse","label":"yellow"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Priya looks at the favorite colors graph and says: \"yellow got the fewest.\" Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"claimMinFalse","label":"yellow"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Priya looks at the favorite colors graph and says yellow got the fewest votes. Is Priya right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0529",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["yellow got the most","every bar is the same","red got the most","yellow got the fewest"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Nora must pick the TRUE statement about the favorite colors graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["yellow got the most","every bar is the same","red got the most","yellow got the fewest"],"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Nora must pick the true statement about the favorite colors graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0530",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nia wonders how many more red the favorite colors graph would need to tie with yellow. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nia looks at the favorite colors graph. How many more votes would red need to tie with yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0532",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"claimMax","label":"jays"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam looks at the bird watch graph and says: \"jays got the most.\" Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"claimMax","label":"jays"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam says the jays bar is the tallest one in the bird watch graph. Is it true that jays got the most votes?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0533",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jays got the most","choices":["every bar is the same","jays got the most","wrens got the most","jays got the fewest"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"truePickMax","label":"jays"},"type":"barGraph","figure":"barGraph","promptText":"Luca must pick the TRUE statement about the bird watch graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"jays got the most","choices":["every bar is the same","jays got the most","wrens got the most","jays got the fewest"],"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"truePickMax","label":"jays"},"type":"barGraph","figure":"barGraph","promptText":"Luca must pick the true statement about the bird watch graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0534",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"wrens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Kai wonders how many more wrens the bird watch graph would need to tie with jays. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"jays","b":"wrens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Kai looks at the bird watch graph. How many more votes would wrens need to tie with jays?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0536",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"claimMaxFalse","label":"vans"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nia looks at the school ride graph and says: \"vans got the most.\" Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"claimMaxFalse","label":"vans"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nia says the vans bar is the tallest one in the school ride graph. Is it true that vans got the most votes?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0537",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters got the most","choices":["every bar is the same","scooters got the fewest","vans got the most","scooters got the most"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"truePickMax","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Ava must pick the TRUE statement about the school ride graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters got the most","choices":["every bar is the same","scooters got the fewest","vans got the most","scooters got the most"],"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"truePickMax","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Ava must pick the true statement about the school ride graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0538",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"scooters","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"June wonders how many more vans the school ride graph would need to tie with scooters. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"scooters","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"June looks at the school ride graph. How many more votes would vans need to tie with scooters?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0540",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"claimMin","label":"bunnies"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the pet fair graph, Kai claims: \"bunnies got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"claimMin","label":"bunnies"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the pet fair graph, Kai says bunnies got the fewest votes. Is Kai right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0541",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"kittens got the most","choices":["bunnies got the most","kittens got the most","kittens got the fewest","every bar is the same"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"truePickMax","label":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the pet fair graph? Omar checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"kittens got the most","choices":["bunnies got the most","kittens got the most","kittens got the fewest","every bar is the same"],"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"truePickMax","label":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Omar checks each bar of the pet fair graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0542",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"kittens","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Lily wonders how many more bunnies the pet fair graph would need to tie with kittens. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"kittens","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Lily looks at the pet fair graph. How many more votes would bunnies need to catch up to kittens?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0544",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"claimMinFalse","label":"pears"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the fruit stand graph, June claims: \"pears got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"claimMinFalse","label":"pears"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the fruit stand graph, June says pears got the fewest votes. Is June right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0545",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"pears got the most","choices":["pears got the most","pears got the fewest","every bar is the same","cherries got the most"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"truePickMax","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the fruit stand graph? Ben checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"pears got the most","choices":["pears got the most","pears got the fewest","every bar is the same","cherries got the most"],"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"truePickMax","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the fruit stand graph?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0546",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"pears","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Amara wonders how many more cherries the fruit stand graph would need to tie with pears. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"pears","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, how many more votes would cherries need to tie with pears?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0548",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"claimMax","label":"hopscotch"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the recess games graph, Lily claims: \"hopscotch got the most.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"claimMax","label":"hopscotch"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the recess games graph, Lily says hopscotch got the most votes. Is Lily right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0549",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"hopscotch got the most","choices":["hopscotch got the most","hopscotch got the fewest","tag got the most","every bar is the same"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"truePickMax","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the recess games graph? Finn checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"hopscotch got the most","choices":["hopscotch got the most","hopscotch got the fewest","tag got the most","every bar is the same"],"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"truePickMax","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the recess games graph?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0550",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"hopscotch","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Leo wonders how many more tag the recess games graph would need to tie with hopscotch. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"hopscotch","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, how many more votes would tag need to tie with hopscotch?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0552",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"claimMaxFalse","label":"red"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the favorite colors graph, Amara claims: \"red got the most.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"claimMaxFalse","label":"red"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the favorite colors graph, Amara says red got the most votes. Is Amara right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0553",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["red got the most","yellow got the fewest","every bar is the same","yellow got the most"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the favorite colors graph? Priya checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["red got the most","yellow got the fewest","every bar is the same","yellow got the most"],"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Priya checks each bar of the favorite colors graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0554",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Mina wonders how many more red the favorite colors graph would need to tie with yellow. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, how many more votes would red need to tie with yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0556",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"claimMin","label":"jays"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the bird watch graph, Leo claims: \"jays got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"claimMin","label":"jays"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the bird watch graph, Leo says jays got the fewest votes. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0557",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"robins got the most","choices":["robins got the most","robins got the fewest","jays got the most","every bar is the same"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"truePickMax","label":"robins"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the bird watch graph? Sam checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"robins got the most","choices":["robins got the most","robins got the fewest","jays got the most","every bar is the same"],"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"truePickMax","label":"robins"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the bird watch graph?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0558",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"robins","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Theo wonders how many more jays the bird watch graph would need to tie with robins. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"robins","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Theo looks at the bird watch graph. How many more votes would jays need to catch up to robins?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0560",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "claimJudge_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"claimMinFalse","label":"buses"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the school ride graph, Mina claims: \"buses got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"claimMinFalse","label":"buses"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the school ride graph, Mina says buses got the fewest votes. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0561",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "truePick_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"buses got the most","choices":["buses got the most","every bar is the same","buses got the fewest","scooters got the most"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"truePickMax","label":"buses"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the school ride graph? Nia checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"buses got the most","choices":["buses got the most","every bar is the same","buses got the fewest","scooters got the most"],"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"truePickMax","label":"buses"},"type":"barGraph","figure":"barGraph","promptText":"Nia checks each bar of the school ride graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0562",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "tieGap_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"buses","b":"scooters","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida wonders how many more scooters the school ride graph would need to tie with buses. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"buses","b":"scooters","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida looks at the school ride graph. How many more votes would scooters need to catch up to buses?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0564",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"claimMax","label":"chicks"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Finn looks at the pet fair graph and says: \"chicks got the most.\" Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"claimMax","label":"chicks"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Finn looks at the pet fair graph and says chicks got the most votes. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0565",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"chicks got the most","choices":["puppies got the most","every bar is the same","chicks got the fewest","chicks got the most"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"truePickMax","label":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Diego must pick the TRUE statement about the pet fair graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"chicks got the most","choices":["puppies got the most","every bar is the same","chicks got the fewest","chicks got the most"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"truePickMax","label":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Diego must pick the true statement about the pet fair graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0566",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "truePickMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"puppies got the fewest","choices":["every bar is the same","chicks got the fewest","puppies got the fewest","puppies got the most"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"truePickMin","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Theo needs the true statement about the pet fair graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"puppies got the fewest","choices":["every bar is the same","chicks got the fewest","puppies got the fewest","puppies got the most"],"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"truePickMin","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Theo needs the true statement about the pet fair graph's smallest bar. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0568",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Sam wonders how many more puppies the pet fair graph would need to tie with chicks. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Sam looks at the pet fair graph. How many more votes would puppies need to tie with chicks?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0569",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"claimMaxFalse","label":"cherries"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Priya looks at the fruit stand graph and says: \"cherries got the most.\" Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"claimMaxFalse","label":"cherries"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Priya says the cherries bar is the tallest one in the fruit stand graph. Is it true that cherries got the most votes?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0570",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"plums got the most","choices":["plums got the most","cherries got the most","every bar is the same","plums got the fewest"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"truePickMax","label":"plums"},"type":"barGraph","figure":"barGraph","promptText":"Nora must pick the TRUE statement about the fruit stand graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"plums got the most","choices":["plums got the most","cherries got the most","every bar is the same","plums got the fewest"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"truePickMax","label":"plums"},"type":"barGraph","figure":"barGraph","promptText":"Nora must pick the true statement about the fruit stand graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0571",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "truePickMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"cherries got the fewest","choices":["every bar is the same","plums got the fewest","cherries got the fewest","cherries got the most"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"truePickMin","label":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Ida needs the true statement about the fruit stand graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"cherries got the fewest","choices":["every bar is the same","plums got the fewest","cherries got the fewest","cherries got the most"],"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"truePickMin","label":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Ida needs the true statement about the fruit stand graph's smallest bar. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0573",
@@ -11852,7 +11852,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nia wonders how many more cherries the fruit stand graph would need to tie with plums. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Nia looks at the fruit stand graph. How many more votes would cherries need to tie with plums?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0574",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"claimMin","label":"hopscotch"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam looks at the recess games graph and says: \"hopscotch got the fewest.\" Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"claimMin","label":"hopscotch"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Sam looks at the recess games graph and says hopscotch got the fewest votes. Is Sam right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0575",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"soccer got the most","choices":["soccer got the most","hopscotch got the most","every bar is the same","soccer got the fewest"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"truePickMax","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Luca must pick the TRUE statement about the recess games graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"soccer got the most","choices":["soccer got the most","hopscotch got the most","every bar is the same","soccer got the fewest"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"truePickMax","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Luca must pick the true statement about the recess games graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0576",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "truePickMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"hopscotch got the fewest","choices":["hopscotch got the fewest","every bar is the same","soccer got the fewest","hopscotch got the most"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"truePickMin","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Zoe needs the true statement about the recess games graph's SMALLEST bar. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"hopscotch got the fewest","choices":["hopscotch got the fewest","every bar is the same","soccer got the fewest","hopscotch got the most"],"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"truePickMin","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Zoe needs the true statement about the recess games graph's smallest bar. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0578",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Kai wonders how many more hopscotch the recess games graph would need to tie with soccer. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Kai looks at the recess games graph. How many more votes would hopscotch need to tie with soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0579",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"claimMinFalse","label":"yellow"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nia looks at the favorite colors graph and says: \"yellow got the fewest.\" Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"claimMinFalse","label":"yellow"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"Nia looks at the favorite colors graph and says yellow got the fewest votes. Is Nia right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0580",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["every bar is the same","yellow got the fewest","yellow got the most","red got the most"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Ava must pick the TRUE statement about the favorite colors graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"yellow got the most","choices":["every bar is the same","yellow got the fewest","yellow got the most","red got the most"],"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"truePickMax","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Ava must pick the true statement about the favorite colors graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0581",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"June wonders how many more red the favorite colors graph would need to tie with yellow. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"June looks at the favorite colors graph. How many more votes would red need to tie with yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0583",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"claimMax","label":"wrens"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Kai looks at the bird watch graph and says: \"wrens got the most.\" Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"claimMax","label":"wrens"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"Kai says the wrens bar is the tallest one in the bird watch graph. Is it true that wrens got the most votes?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0584",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"wrens got the most","choices":["wrens got the most","wrens got the fewest","every bar is the same","jays got the most"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"truePickMax","label":"wrens"},"type":"barGraph","figure":"barGraph","promptText":"Omar must pick the TRUE statement about the bird watch graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"wrens got the most","choices":["wrens got the most","wrens got the fewest","every bar is the same","jays got the most"],"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"truePickMax","label":"wrens"},"type":"barGraph","figure":"barGraph","promptText":"Omar must pick the true statement about the bird watch graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0585",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Lily wonders how many more jays the bird watch graph would need to tie with wrens. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Lily looks at the bird watch graph. How many more votes would jays need to tie with wrens?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0587",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"claimMaxFalse","label":"bikes"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"June looks at the school ride graph and says: \"bikes got the most.\" Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"claimMaxFalse","label":"bikes"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"June looks at the school ride graph and says bikes got the most votes. Is June right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0588",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"vans got the most","choices":["vans got the fewest","every bar is the same","vans got the most","bikes got the most"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"truePickMax","label":"vans"},"type":"barGraph","figure":"barGraph","promptText":"Ben must pick the TRUE statement about the school ride graph. Which is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"vans got the most","choices":["vans got the fewest","every bar is the same","vans got the most","bikes got the most"],"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"truePickMax","label":"vans"},"type":"barGraph","figure":"barGraph","promptText":"Ben must pick the true statement about the school ride graph. Which is it?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0589",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"bikes","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Amara wonders how many more bikes the school ride graph would need to tie with vans. How many more votes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"bikes","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Amara looks at the school ride graph. How many more votes would bikes need to tie with vans?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0591",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"claimMin","label":"bunnies"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the pet fair graph, Lily claims: \"bunnies got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"claimMin","label":"bunnies"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the pet fair graph, Lily says bunnies got the fewest votes. Is Lily right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0592",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"puppies got the most","choices":["puppies got the fewest","every bar is the same","bunnies got the most","puppies got the most"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"truePickMax","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the pet fair graph? Finn checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"puppies got the most","choices":["puppies got the fewest","every bar is the same","bunnies got the most","puppies got the most"],"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"truePickMax","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Look at the pet fair graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0593",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"puppies","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Leo wonders how many more bunnies the pet fair graph would need to tie with puppies. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"puppies","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the pet fair graph. How many more votes would bunnies need to tie puppies?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0595",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"claimMinFalse","label":"plums"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the fruit stand graph, Amara claims: \"plums got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"claimMinFalse","label":"plums"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the fruit stand graph, Amara says plums got the fewest votes. Is Amara right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0596",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"plums got the most","choices":["plums got the fewest","every bar is the same","plums got the most","apples got the most"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"truePickMax","label":"plums"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the fruit stand graph? Priya checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"plums got the most","choices":["plums got the fewest","every bar is the same","plums got the most","apples got the most"],"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"truePickMax","label":"plums"},"type":"barGraph","figure":"barGraph","promptText":"Priya checks each bar of the fruit stand graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0597",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"plums","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Mina wonders how many more apples the fruit stand graph would need to tie with plums. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"plums","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Mina looks at the fruit stand graph. How many more votes would apples need to catch up to plums?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0599",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"claimMax","label":"jump rope"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the recess games graph, Leo claims: \"jump rope got the most.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"claimMax","label":"jump rope"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the recess games graph, Leo says jump rope got the most votes. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0600",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jump rope got the most","choices":["jump rope got the fewest","jump rope got the most","tag got the most","every bar is the same"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"truePickMax","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the recess games graph? Sam checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jump rope got the most","choices":["jump rope got the fewest","jump rope got the most","tag got the most","every bar is the same"],"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"truePickMax","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Sam checks each bar of the recess games graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0601",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"jump rope","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Theo wonders how many more tag the recess games graph would need to tie with jump rope. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"jump rope","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Theo looks at the recess games graph. How many more votes would tag need to catch up to jump rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0603",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"claimMaxFalse","label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the favorite colors graph, Mina claims: \"green got the most.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"claimMaxFalse","label":"green"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the favorite colors graph, Mina says green got the most votes. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0604",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"blue got the most","choices":["every bar is the same","blue got the fewest","green got the most","blue got the most"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"truePickMax","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the favorite colors graph? Nia checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"blue got the most","choices":["every bar is the same","blue got the fewest","green got the most","blue got the most"],"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"truePickMax","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0605",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida wonders how many more green the favorite colors graph would need to tie with blue. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Ida looks at the favorite colors graph. How many more votes would green need to catch up to blue?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0607",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"claimMin","label":"finches"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the bird watch graph, Theo claims: \"finches got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"claimMin","label":"finches"},"type":"barGraph","truth":true,"figure":"barGraph","promptText":"After studying the bird watch graph, Theo says finches got the fewest votes. Is Theo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0608",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"jays got the most","choices":["finches got the most","every bar is the same","jays got the fewest","jays got the most"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"truePickMax","label":"jays"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the bird watch graph? Kai checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"jays got the most","choices":["finches got the most","every bar is the same","jays got the fewest","jays got the most"],"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"truePickMax","label":"jays"},"type":"barGraph","figure":"barGraph","promptText":"Kai checks each bar of the bird watch graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0609",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"jays","b":"finches","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Zoe wonders how many more finches the bird watch graph would need to tie with jays. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"jays","b":"finches","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. How many more votes would finches need to tie jays?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0611",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "claimJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"claimMinFalse","label":"scooters"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the school ride graph, Ida claims: \"scooters got the fewest.\" Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"claimMinFalse","label":"scooters"},"type":"barGraph","truth":false,"figure":"barGraph","promptText":"After studying the school ride graph, Ida says scooters got the fewest votes. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0612",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "truePick_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"scooters got the most","choices":["scooters got the fewest","scooters got the most","buses got the most","every bar is the same"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"truePickMax","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Which statement matches the school ride graph? June checks each bar."}},
+    question: {"a":null,"b":null,"op":"count","answer":"scooters got the most","choices":["scooters got the fewest","scooters got the most","buses got the most","every bar is the same"],"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"truePickMax","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Look at the school ride graph. Which statement is true?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0613",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "tieGap_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Rosa wonders how many more buses the school ride graph would need to tie with scooters. How many more votes? Count the gap."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the school ride graph. How many more votes would buses need to tie scooters?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0001",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barRead","label":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"The pet fair graph: how many kittens?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barRead","label":"kittens"},"type":"barGraph","figure":"barGraph","promptText":"Use the pet fair graph. How many kittens are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0002",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barRead","label":"bunnies"},"type":"barGraph","figure":"barGraph","promptText":"The pet fair graph: how many bunnies?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barRead","label":"bunnies"},"type":"barGraph","figure":"barGraph","promptText":"Find the bunnies bar on the pet fair graph. How many bunnies are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0003",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barRead","label":"apples"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand graph: how many apples?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barRead","label":"apples"},"type":"barGraph","figure":"barGraph","promptText":"Read the fruit stand graph. How many apples are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0006",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barRead","label":"plums"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand graph: how many plums?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barRead","label":"plums"},"type":"barGraph","figure":"barGraph","promptText":"Use the fruit stand graph. How many plums are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0007",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph: how many soccer?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"Find the soccer bar on the recess games graph. How many kids picked soccer?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0010",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph: how many hopscotch?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph. How many kids picked hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0011",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph: how many red?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. How many kids picked red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0014",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph: how many green?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"Find the green bar on the favorite colors graph. How many kids picked green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0015",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barRead","label":"robins"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch graph: how many robins?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barRead","label":"robins"},"type":"barGraph","figure":"barGraph","promptText":"Read the bird watch graph. How many robins are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0018",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barRead","label":"jays"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch graph: how many jays?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"kind":"barRead","label":"jays"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. How many jays are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0019",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"barRead","label":"vans"},"type":"barGraph","figure":"barGraph","promptText":"The school ride graph: how many vans?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"barRead","label":"vans"},"type":"barGraph","figure":"barGraph","promptText":"Find the vans bar on the school ride graph. How many votes did vans get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0022",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"barRead","label":"buses"},"type":"barGraph","figure":"barGraph","promptText":"The school ride graph: how many buses?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"kind":"barRead","label":"buses"},"type":"barGraph","figure":"barGraph","promptText":"Read the school ride graph. How many votes did buses get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0023",
@@ -12532,7 +12532,7 @@ export const ITEMS = [
     structureType: "barMax_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the pet fair graph's tallest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"What number does the tallest bar in the pet fair graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0028",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "barMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the pet fair graph's shortest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"What number does the shortest bar in the pet fair graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0029",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "barMax_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the fruit stand graph's tallest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the fruit stand graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0032",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "barMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the fruit stand graph's shortest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the fruit stand graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0033",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Look at the recess games graph. How many tag are there?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Look at the recess games graph. How many kids picked tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0034",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barRead","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Look at the recess games graph. How many jump rope are there?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barRead","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Look at the recess games graph. How many kids picked jump rope?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0035",
@@ -12612,7 +12612,7 @@ export const ITEMS = [
     structureType: "barMax_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the recess games graph's tallest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the recess games graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0036",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "barMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the recess games graph's shortest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the recess games graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0037",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many blue are there?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many kids picked blue?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0038",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "barRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many yellow are there?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barRead","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many kids picked yellow?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0039",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "barMax_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the favorite colors graph's tallest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"What number does the tallest bar in the favorite colors graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0040",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "barMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the favorite colors graph's shortest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"What number does the shortest bar in the favorite colors graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0041",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "barMax_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the bird watch graph's tallest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the bird watch graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0044",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "barMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the bird watch graph's shortest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Look at the bird watch graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0045",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "barMax_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the school ride graph's tallest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"What number does the tallest bar in the school ride graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0048",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "barMin_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the school ride graph's shortest bar reach? Type the number."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"What number does the shortest bar in the school ride graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0049",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barRead","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Check the pet fair graph one more time: how many puppies?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"kind":"barRead","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Check the pet fair graph. How many puppies are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0050",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barRead","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Check the fruit stand graph one more time: how many pears?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"kind":"barRead","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Check the fruit stand graph. How many pears are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0051",
@@ -12772,7 +12772,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Check the recess games graph one more time: how many tag?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Check the recess games graph. How many kids picked tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0052",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the pet fair graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale to read the pet fair graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0055",
@@ -12812,7 +12812,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the pet fair graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale to read the pet fair graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0056",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the fruit stand graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the fruit stand graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0059",
@@ -12852,7 +12852,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the fruit stand graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the fruit stand graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0060",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the recess games graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the recess games graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0063",
@@ -12892,7 +12892,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the recess games graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the recess games graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0064",
@@ -12902,7 +12902,7 @@ export const ITEMS = [
     structureType: "barRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barRead","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, what count does the red bar show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barRead","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, how many votes did red get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0065",
@@ -12912,7 +12912,7 @@ export const ITEMS = [
     structureType: "barRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, what count does the green bar show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, how many votes did green get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0066",
@@ -12922,7 +12922,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the favorite colors graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale to read the favorite colors graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0067",
@@ -12932,7 +12932,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the favorite colors graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale to read the favorite colors graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0068",
@@ -12962,7 +12962,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the bird watch graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the bird watch graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0071",
@@ -12972,7 +12972,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the bird watch graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the bird watch graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0072",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the school ride graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale to read the school ride graph. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0075",
@@ -13012,7 +13012,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the school ride graph. How many votes does it show? Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale to read the school ride graph. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0076",
@@ -13042,7 +13042,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the pet fair graph's tallest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"What number on the scale does the tallest bar of the pet fair graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0079",
@@ -13052,7 +13052,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the pet fair graph's shortest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"What number on the scale does the shortest bar of the pet fair graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0080",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the fruit stand graph's tallest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the fruit stand graph. What number does the tallest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0083",
@@ -13092,7 +13092,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the fruit stand graph's shortest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the fruit stand graph. What number does the shortest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0084",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "barRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph carefully. How many tag does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph carefully. How many kids picked tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0085",
@@ -13112,7 +13112,7 @@ export const ITEMS = [
     structureType: "barRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barRead","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph carefully. How many jump rope does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barRead","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph carefully. How many kids picked jump rope?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0086",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the recess games graph's tallest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the recess games graph. What number does the tallest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0087",
@@ -13132,7 +13132,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the recess games graph's shortest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the recess games graph. What number does the shortest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0088",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "barRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Read the favorite colors graph carefully. How many blue does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Read the favorite colors graph carefully. How many kids picked blue?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0089",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "barRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barRead","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Read the favorite colors graph carefully. How many yellow does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barRead","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Read the favorite colors graph carefully. How many kids picked yellow?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0090",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the favorite colors graph's tallest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"What number on the scale does the tallest bar of the favorite colors graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0091",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the favorite colors graph's shortest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"What number on the scale does the shortest bar of the favorite colors graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0092",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the bird watch graph's tallest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the bird watch graph. What number does the tallest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0095",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the bird watch graph's shortest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the bird watch graph. What number does the shortest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0096",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "barMax_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the school ride graph's tallest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"What number on the scale does the tallest bar of the school ride graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0099",
@@ -13252,7 +13252,7 @@ export const ITEMS = [
     structureType: "barMin_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the school ride graph's shortest bar reach? Type the number. Check the scale."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"What number on the scale does the shortest bar of the school ride graph reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0100",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"barRead","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Check the pet fair graph once more: how many puppies?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"kind":"barRead","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Look carefully at the pet fair graph. How many puppies are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0101",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"barRead","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Check the fruit stand graph once more: how many pears?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"kind":"barRead","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Look carefully at the fruit stand graph. How many pears are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0102",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Check the recess games graph once more: how many tag?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Look carefully at the recess games graph. How many kids picked tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0103",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the pet fair graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the tallest bar of the pet fair graph to the exact line. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0106",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the pet fair graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the shortest bar of the pet fair graph to the exact line. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0107",
@@ -13352,7 +13352,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the fruit stand graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the fruit stand graph to the exact line. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0110",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the fruit stand graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the fruit stand graph to the exact line. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0111",
@@ -13372,7 +13372,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph is scaled — read carefully. How many soccer does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"soccer"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph is scaled — read carefully. How many kids picked soccer?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0112",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph is scaled — read carefully. How many hopscotch does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"hopscotch"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph is scaled — read carefully. How many kids picked hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0113",
@@ -13392,7 +13392,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the recess games graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph to the exact line. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0114",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the recess games graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph to the exact line. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0115",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barRead","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph is scaled — read carefully. How many red does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barRead","label":"red"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph is scaled — read carefully. How many kids picked red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0116",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph is scaled — read carefully. How many green does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barRead","label":"green"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph is scaled — read carefully. How many kids picked green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0117",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the favorite colors graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the tallest bar of the favorite colors graph to the exact line. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0118",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the favorite colors graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the shortest bar of the favorite colors graph to the exact line. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0119",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the bird watch graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the bird watch graph to the exact line. How many votes does the tallest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0122",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the bird watch graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the bird watch graph to the exact line. How many votes does the shortest bar show?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0123",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the tallest bar of the school ride graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the tallest bar of the school ride graph to the exact line. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0126",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Find the shortest bar of the school ride graph. How many votes does it show? Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the shortest bar of the school ride graph to the exact line. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0127",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barRead","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"From the pet fair graph, find the precise count. How many puppies is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barRead","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Use the pet fair graph. Exactly how many puppies are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0128",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barRead","label":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"From the pet fair graph, find the precise count. How many chicks is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barRead","label":"chicks"},"type":"barGraph","figure":"barGraph","promptText":"Look closely at the pet fair graph. How many chicks are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0129",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the pet fair graph's tallest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Trace the top of the tallest bar in the pet fair graph over to the scale. What number does it reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0130",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the pet fair graph's shortest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Trace the top of the shortest bar in the pet fair graph over to the scale. What number does it reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0131",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barRead","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"From the fruit stand graph, find the precise count. How many pears is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barRead","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Use the fruit stand graph. Exactly how many pears are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0132",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barRead","label":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"From the fruit stand graph, find the precise count. How many cherries is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barRead","label":"cherries"},"type":"barGraph","figure":"barGraph","promptText":"Look closely at the fruit stand graph. How many cherries are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0133",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the fruit stand graph's tallest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the scale on the fruit stand graph carefully. What number does the tallest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0134",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the fruit stand graph's shortest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the scale on the fruit stand graph carefully. What number does the shortest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0135",
@@ -13612,7 +13612,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"From the recess games graph, find the precise count. How many tag is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. Exactly how many kids picked tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0136",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barRead","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"From the recess games graph, find the precise count. How many jump rope is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barRead","label":"jump rope"},"type":"barGraph","figure":"barGraph","promptText":"Look closely at the recess games graph. How many kids picked jump rope?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0137",
@@ -13632,7 +13632,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the recess games graph's tallest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the scale on the recess games graph carefully. What number does the tallest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0138",
@@ -13642,7 +13642,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the recess games graph's shortest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the scale on the recess games graph carefully. What number does the shortest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0139",
@@ -13652,7 +13652,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"From the favorite colors graph, find the precise count. How many blue is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barRead","label":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. Exactly how many kids picked blue?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0140",
@@ -13662,7 +13662,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barRead","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"From the favorite colors graph, find the precise count. How many yellow is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barRead","label":"yellow"},"type":"barGraph","figure":"barGraph","promptText":"Look closely at the favorite colors graph. How many kids picked yellow?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0141",
@@ -13672,7 +13672,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the favorite colors graph's tallest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Trace the top of the tallest bar in the favorite colors graph over to the scale. What number does it reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0142",
@@ -13682,7 +13682,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the favorite colors graph's shortest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Trace the top of the shortest bar in the favorite colors graph over to the scale. What number does it reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0143",
@@ -13692,7 +13692,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barRead","label":"wrens"},"type":"barGraph","figure":"barGraph","promptText":"From the bird watch graph, find the precise count. How many wrens is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barRead","label":"wrens"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. Exactly how many wrens are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0144",
@@ -13702,7 +13702,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barRead","label":"finches"},"type":"barGraph","figure":"barGraph","promptText":"From the bird watch graph, find the precise count. How many finches is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barRead","label":"finches"},"type":"barGraph","figure":"barGraph","promptText":"Look closely at the bird watch graph. How many finches are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0145",
@@ -13712,7 +13712,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the bird watch graph's tallest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the scale on the bird watch graph carefully. What number does the tallest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0146",
@@ -13722,7 +13722,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the bird watch graph's shortest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Read the scale on the bird watch graph carefully. What number does the shortest bar reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0147",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barRead","label":"bikes"},"type":"barGraph","figure":"barGraph","promptText":"From the school ride graph, find the precise count. How many bikes is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barRead","label":"bikes"},"type":"barGraph","figure":"barGraph","promptText":"Use the school ride graph. Exactly how many votes did bikes get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0148",
@@ -13742,7 +13742,7 @@ export const ITEMS = [
     structureType: "barRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barRead","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"From the school ride graph, find the precise count. How many scooters is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barRead","label":"scooters"},"type":"barGraph","figure":"barGraph","promptText":"Look closely at the school ride graph. How many votes did scooters get?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0149",
@@ -13752,7 +13752,7 @@ export const ITEMS = [
     structureType: "barMax_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the school ride graph's tallest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barMaxValue"},"type":"barGraph","figure":"barGraph","promptText":"Trace the top of the tallest bar in the school ride graph over to the scale. What number does it reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0150",
@@ -13762,7 +13762,7 @@ export const ITEMS = [
     structureType: "barMin_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Which count does the school ride graph's shortest bar reach? Type the number. Read to the exact line."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barMinValue"},"type":"barGraph","figure":"barGraph","promptText":"Trace the top of the shortest bar in the school ride graph over to the scale. What number does it reach?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0151",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barRead","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Check the pet fair graph one last time: how many puppies?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barRead","label":"puppies"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the pet fair graph. How many puppies are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0152",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barRead","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Check the fruit stand graph one last time: how many pears?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barRead","label":"pears"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the fruit stand graph. How many pears are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0153",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "barReadExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Check the recess games graph one last time: how many tag?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barRead","label":"tag"},"type":"barGraph","figure":"barGraph","promptText":"Use the scale on the recess games graph. How many kids picked tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0154",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "barDiff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The pet fair graph: how many more chicks than kittens?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the pet fair graph. How many more chicks than kittens are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0155",
@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "barSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The pet fair graph: how many chicks and puppies in all?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the pet fair graph. How many chicks and puppies are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0156",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"puppies","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, the puppies bar beats the bunnies bar by how many votes? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"puppies","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the pet fair graph. How many more votes did puppies get than bunnies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0157",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the pet fair graph, the chicks bar beats the kittens bar by how many votes? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"chicks","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the pet fair graph. How many more votes did chicks get than kittens?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0158",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"puppies","b":"bunnies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the puppies bar and the bunnies bar of the pet fair graph. How many votes together? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"kittens","value":2},{"label":"puppies","value":5},{"label":"bunnies","value":3},{"label":"chicks","value":7}],"data":{"a":"puppies","b":"bunnies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the puppies and bunnies bars of the pet fair graph. How many votes do they have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0159",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "barDiff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand graph: how many more cherries than apples?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the fruit stand graph. How many more cherries than apples are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0160",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "barSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"pears","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand graph: how many cherries and pears in all?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"pears","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the fruit stand graph. How many cherries and pears are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0161",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"pears","b":"plums","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, the pears bar beats the plums bar by how many votes? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"pears","b":"plums","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, how many more votes did pears get than plums?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0162",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, the cherries bar beats the apples bar by how many votes? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the fruit stand graph, how many more votes did cherries get than apples?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0163",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"pears","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the pears bar and the plums bar of the fruit stand graph. How many votes together? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"apples","value":1},{"label":"pears","value":6},{"label":"plums","value":4},{"label":"cherries","value":8}],"data":{"a":"pears","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the pears bar and the plums bar of the fruit stand graph. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0164",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "barDiff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph: how many more tag than soccer?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph. How many more kids picked tag than soccer?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0165",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "barSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph: how many tag and hopscotch in all?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the recess games graph. How many kids picked tag or hopscotch in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0166",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"jump rope","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, the jump rope bar beats the hopscotch bar by how many votes? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"jump rope","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, how many more votes did jump rope get than hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0167",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, the tag bar beats the soccer bar by how many votes? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"tag","b":"soccer","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the recess games graph, how many more votes did tag get than soccer?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0168",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"hopscotch","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the hopscotch bar and the jump rope bar of the recess games graph. How many votes together? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":7},{"label":"hopscotch","value":3},{"label":"jump rope","value":5}],"data":{"a":"hopscotch","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the hopscotch and jump rope bars of the recess games graph. How many votes do they have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0169",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "barDiff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph: how many more yellow than red?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many more kids picked yellow than red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0170",
@@ -13962,7 +13962,7 @@ export const ITEMS = [
     structureType: "barSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph: how many yellow and blue in all?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many kids picked yellow or blue in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0171",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, the blue bar beats the green bar by how many votes? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many more votes did blue get than green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0172",
@@ -13982,7 +13982,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the blue bar and the green bar of the favorite colors graph. How many votes together? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"red","value":2},{"label":"blue","value":6},{"label":"green","value":4},{"label":"yellow","value":8}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many votes did blue and green get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0173",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "barDiff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"finches","b":"robins","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch graph: how many more finches than robins?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"finches","b":"robins","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. How many more finches than robins are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0174",
@@ -14002,7 +14002,7 @@ export const ITEMS = [
     structureType: "barSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"finches","b":"wrens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch graph: how many finches and wrens in all?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"finches","b":"wrens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. How many finches and wrens are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0175",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, the wrens bar beats the jays bar by how many votes? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the bird watch graph, how many more votes did wrens get than jays?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0176",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"wrens","b":"jays","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the wrens bar and the jays bar of the bird watch graph. How many votes together? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":5},{"label":"jays","value":2},{"label":"finches","value":9}],"data":{"a":"wrens","b":"jays","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the wrens and jays bars of the bird watch graph. How many votes do they have together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0177",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "barDiff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The school ride graph: how many more scooters than buses?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the school ride graph. How many more votes did scooters get than buses?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0178",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "barSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"vans","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The school ride graph: how many scooters and vans in all?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"scooters","b":"vans","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the school ride graph. How many votes did scooters and vans get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0179",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"bikes","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the school ride graph, the bikes bar beats the vans bar by how many votes? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"bikes","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the school ride graph. How many more votes did bikes get than vans?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0180",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"vans","b":"bikes","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the vans bar and the bikes bar of the school ride graph. How many votes together? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"vans","value":3},{"label":"bikes","value":6},{"label":"buses","value":2},{"label":"scooters","value":7}],"data":{"a":"vans","b":"bikes","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the vans bar and the bikes bar of the school ride graph. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0181",
@@ -14092,7 +14092,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"a":"chicks","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The pet fair graph: how many more chicks than bunnies? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"a":"chicks","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the pet fair graph. How many more votes are there for chicks than for bunnies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0184",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"a":"bunnies","b":"chicks","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The pet fair graph: how many bunnies and chicks in all? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"kittens","value":1},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":6}],"data":{"a":"bunnies","b":"chicks","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the pet fair graph. How many votes for bunnies and chicks in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0185",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"a":"pears","b":"plums","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand graph: how many more pears than plums? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"a":"pears","b":"plums","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the fruit stand graph. How many more pears than plums are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0188",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"a":"pears","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The fruit stand graph: how many pears and plums in all? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"apples","value":2},{"label":"pears","value":7},{"label":"plums","value":3},{"label":"cherries","value":8}],"data":{"a":"pears","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the fruit stand graph. How many pears and plums are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0189",
@@ -14172,7 +14172,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"a":"tag","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph: how many more tag than hopscotch? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"a":"tag","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look closely at the recess games graph. How many more kids picked tag than hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0192",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"a":"tag","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The recess games graph: how many tag and hopscotch in all? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"soccer","value":1},{"label":"tag","value":4},{"label":"hopscotch","value":2},{"label":"jump rope","value":6}],"data":{"a":"tag","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look closely at the recess games graph. How many kids picked tag or hopscotch in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0193",
@@ -14192,7 +14192,7 @@ export const ITEMS = [
     structureType: "barDiff_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, the yellow bar beats the green bar by how many votes?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the favorite colors graph, how many more votes did yellow get than green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0194",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "barSum_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the yellow bar and the red bar of the favorite colors graph. How many votes together?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"yellow","b":"red","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many votes did yellow and red get together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0195",
@@ -14212,7 +14212,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"blue","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph: how many more blue than red? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"blue","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. How many more votes are there for blue than for red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0196",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"red","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The favorite colors graph: how many red and blue in all? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":5},{"label":"green","value":2},{"label":"yellow","value":8}],"data":{"a":"red","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the favorite colors graph. How many votes for red and blue in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0197",
@@ -14252,7 +14252,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"a":"finches","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch graph: how many more finches than jays? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"a":"finches","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the bird watch graph. How many more finches than jays are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0200",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"a":"jays","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The bird watch graph: how many jays and finches in all? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"robins","value":1},{"label":"wrens","value":9},{"label":"jays","value":2},{"label":"finches","value":7}],"data":{"a":"jays","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the bird watch graph. How many jays and finches are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0201",
@@ -14292,7 +14292,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"a":"bikes","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The school ride graph: how many more bikes than buses? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"a":"bikes","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the school ride graph. How many more votes are there for bikes than for buses?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0204",
@@ -14302,7 +14302,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"a":"bikes","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The school ride graph: how many bikes and buses in all? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":4},{"label":"buses","value":3},{"label":"scooters","value":9}],"data":{"a":"bikes","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the school ride graph. How many votes for bikes and buses in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0205",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"kittens","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the pet fair graph, find the gap between kittens and puppies. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"kittens","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the pet fair graph, find the gap between kittens and puppies. How many more votes did kittens get than puppies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0208",
@@ -14342,7 +14342,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"bunnies","b":"chicks","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the pet fair graph, find the gap between bunnies and chicks. What is the gap? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"bunnies","b":"chicks","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the pet fair graph, find the gap between bunnies and chicks. How many more votes did bunnies get than chicks?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0209",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"kittens","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the pet fair graph, total the kittens and puppies bars. What total is that? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"bars":[{"label":"kittens","value":12},{"label":"puppies","value":7},{"label":"bunnies","value":14},{"label":"chicks","value":3}],"data":{"a":"kittens","b":"puppies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Put the kittens and puppies bars of the pet fair graph together. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0210",
@@ -14382,7 +14382,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the fruit stand graph, find the gap between cherries and apples. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"cherries","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compare the cherries and apples bars in the fruit stand graph. How many more votes did cherries get than apples?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0213",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"plums","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the fruit stand graph, find the gap between pears and plums. What is the gap? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"pears","b":"plums","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compare the pears and plums bars in the fruit stand graph. How many more votes did pears get than plums?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0214",
@@ -14402,7 +14402,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"apples","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the fruit stand graph, total the apples and cherries bars. What total is that? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"apples","value":9},{"label":"pears","value":13},{"label":"plums","value":2},{"label":"cherries","value":11}],"data":{"a":"apples","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the fruit stand graph, add the apples and cherries bars. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0215",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "barDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"jump rope","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. How many more soccer than jump rope does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"jump rope","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. How many more kids picked soccer than jump rope?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0216",
@@ -14422,7 +14422,7 @@ export const ITEMS = [
     structureType: "barSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"tag","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. What do soccer and tag add up to?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"tag","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. How many kids picked soccer or tag in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0217",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"hopscotch","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the recess games graph, find the gap between hopscotch and tag. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"hopscotch","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compare the hopscotch and tag bars in the recess games graph. How many more votes did hopscotch get than tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0218",
@@ -14442,7 +14442,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"jump rope","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the recess games graph, find the gap between soccer and jump rope. What is the gap? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"soccer","b":"jump rope","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compare the soccer and jump rope bars in the recess games graph. How many more votes did soccer get than jump rope?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0219",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"tag","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the recess games graph, total the tag and hopscotch bars. What total is that? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"soccer","value":14},{"label":"tag","value":6},{"label":"hopscotch","value":10},{"label":"jump rope","value":1}],"data":{"a":"tag","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the recess games graph, add the tag and hopscotch bars. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0220",
@@ -14462,7 +14462,7 @@ export const ITEMS = [
     structureType: "barDiff_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. How many more yellow than red does it show?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. How many more kids picked yellow than red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0221",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "barSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. What do yellow and blue add up to?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. How many kids picked yellow or blue in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0222",
@@ -14482,7 +14482,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the favorite colors graph, find the gap between blue and green. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the favorite colors graph, find the gap between blue and green. How many more votes did blue get than green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0223",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the favorite colors graph, total the blue and green bars. What total is that? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the favorite colors graph, how many votes did blue and green get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0224",
@@ -14522,7 +14522,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"robins","b":"finches","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the bird watch graph, find the gap between robins and finches. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"robins","b":"finches","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compare the robins and finches bars in the bird watch graph. How many more votes did robins get than finches?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0227",
@@ -14532,7 +14532,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"robins","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the bird watch graph, total the robins and finches bars. What total is that? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"robins","value":11},{"label":"wrens","value":3},{"label":"jays","value":13},{"label":"finches","value":7}],"data":{"a":"robins","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the bird watch graph, add the robins and finches bars. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0228",
@@ -14562,7 +14562,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"bikes","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the school ride graph, find the gap between bikes and buses. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"bikes","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"From the school ride graph, find the gap between bikes and buses. How many more votes did bikes get than buses?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0231",
@@ -14572,7 +14572,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"bikes","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the school ride graph, total the bikes and buses bars. What total is that? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":2},{"label":"bikes","value":10},{"label":"buses","value":6},{"label":"scooters","value":12}],"data":{"a":"bikes","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Put the bikes and buses bars of the school ride graph together. How many votes is that?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0232",
@@ -14602,7 +14602,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the pet fair graph. How many more chicks than puppies does it show? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the pet fair graph to compare chicks and puppies. How many more votes did chicks get than puppies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0235",
@@ -14612,7 +14612,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"puppies","b":"chicks","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the pet fair graph. What do puppies and chicks add up to? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"bars":[{"label":"kittens","value":13},{"label":"puppies","value":8},{"label":"bunnies","value":4},{"label":"chicks","value":9}],"data":{"a":"puppies","b":"chicks","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the pet fair graph. How many votes did puppies and chicks get together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0236",
@@ -14642,7 +14642,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"plums","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the fruit stand graph. How many more plums than apples does it show? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"plums","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the fruit stand graph. How many more votes did plums get than apples?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0239",
@@ -14652,7 +14652,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"apples","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the fruit stand graph. What do apples and plums add up to? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"apples","value":7},{"label":"pears","value":14},{"label":"plums","value":11},{"label":"cherries","value":5}],"data":{"a":"apples","b":"plums","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the fruit stand graph. How many votes do apples and plums have altogether?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0240",
@@ -14682,7 +14682,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"soccer","b":"jump rope","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. How many more soccer than jump rope does it show? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"soccer","b":"jump rope","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. How many more votes did soccer get than jump rope?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0243",
@@ -14692,7 +14692,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"soccer","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. What do soccer and jump rope add up to? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"bars":[{"label":"soccer","value":10},{"label":"tag","value":2},{"label":"hopscotch","value":12},{"label":"jump rope","value":8}],"data":{"a":"soccer","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the recess games graph. How many votes do soccer and jump rope have altogether?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0244",
@@ -14712,7 +14712,7 @@ export const ITEMS = [
     structureType: "barSum_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the favorite colors graph, total the yellow and blue bars. What total is that?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"From the favorite colors graph, how many votes did yellow and blue get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0246",
@@ -14722,7 +14722,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. How many more blue than green does it show? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph to compare blue and green. How many more votes did blue get than green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0247",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. What do blue and green add up to? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"bars":[{"label":"red","value":3},{"label":"blue","value":11},{"label":"green","value":9},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the favorite colors graph. How many votes did blue and green get together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0248",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"finches","b":"wrens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. How many more finches than wrens does it show? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"finches","b":"wrens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. How many more votes did finches get than wrens?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0251",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"wrens","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. What do wrens and finches add up to? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":12},{"label":"wrens","value":5},{"label":"jays","value":1},{"label":"finches","value":10}],"data":{"a":"wrens","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the bird watch graph. How many votes do wrens and finches have altogether?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0252",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"bikes","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the school ride graph. How many more bikes than vans does it show? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"bikes","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Use the school ride graph to compare bikes and vans. How many more votes did bikes get than vans?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0255",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"vans","b":"bikes","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the school ride graph. What do vans and bikes add up to? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"vans","value":6},{"label":"bikes","value":9},{"label":"buses","value":14},{"label":"scooters","value":2}],"data":{"a":"vans","b":"bikes","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the school ride graph. How many votes did vans and bikes get together?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0256",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled pet fair graph: exactly how many more chicks than puppies?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scale on the pet fair graph. How many more chicks than puppies are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0257",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled pet fair graph: what is the exact total of chicks and kittens?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":38,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scale on the pet fair graph. How many chicks and kittens are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0258",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"kittens","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact kittens-minus-bunnies gap in the pet fair graph. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"kittens","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the kittens and bunnies bars on the pet fair graph. How many more votes did kittens get than bunnies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0259",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact chicks-minus-puppies gap in the pet fair graph. What is the gap? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"chicks","b":"puppies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scaled pet fair graph. How many more votes did chicks get than puppies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0260",
@@ -14862,7 +14862,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"kittens","b":"bunnies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise kittens and bunnies counts from the pet fair graph. What total do you get? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"a":"kittens","b":"bunnies","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the scaled pet fair graph. How many votes did kittens and bunnies get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0261",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled fruit stand graph: exactly how many more plums than cherries?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled fruit stand graph carefully. How many more plums than cherries are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0262",
@@ -14882,7 +14882,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"apples","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled fruit stand graph: what is the exact total of plums and apples?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"apples","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled fruit stand graph carefully. How many plums and apples are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0263",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"apples","b":"pears","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact apples-minus-pears gap in the fruit stand graph. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"apples","b":"pears","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scaled fruit stand graph. How many more votes did apples get than pears?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0264",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact plums-minus-cherries gap in the fruit stand graph. What is the gap? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"plums","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the plums and cherries bars on the fruit stand graph. How many more votes did plums get than cherries?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0265",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"apples","b":"pears","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise apples and pears counts from the fruit stand graph. What total do you get? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"a":"apples","b":"pears","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the scaled fruit stand graph. How many votes did apples and pears get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0266",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled recess games graph: exactly how many more soccer than hopscotch?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scale on the recess games graph. How many more kids picked soccer than hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0267",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"tag","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled recess games graph: what is the exact total of soccer and tag?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"tag","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scale on the recess games graph. How many kids picked soccer or tag in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0268",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"jump rope","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact jump rope-minus-tag gap in the recess games graph. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"jump rope","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scaled recess games graph. How many more votes did jump rope get than tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0269",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "barDiffExtra_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact soccer-minus-hopscotch gap in the recess games graph. What is the gap? Look twice."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled recess games graph, how many more votes did soccer get than hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0270",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"tag","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise tag and jump rope counts from the recess games graph. What total do you get? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"a":"tag","b":"jump rope","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the tag and jump rope bars of the recess games graph. What is the total number of votes?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0271",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled favorite colors graph: exactly how many more yellow than red?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled favorite colors graph carefully. How many more kids picked yellow than red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0272",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled favorite colors graph: what is the exact total of yellow and blue?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":36,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"yellow","b":"blue","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled favorite colors graph carefully. How many kids picked yellow or blue in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0273",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact blue-minus-green gap in the favorite colors graph. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the favorite colors graph. How many more votes did blue get than green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0274",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise blue and green counts from the favorite colors graph. What total do you get? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"a":"blue","b":"green","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the favorite colors graph. How many votes did blue and green get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0275",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled bird watch graph: exactly how many more wrens than jays?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"jays","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scale on the bird watch graph. How many more wrens than jays are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0276",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled bird watch graph: what is the exact total of wrens and robins?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"wrens","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scale on the bird watch graph. How many wrens and robins are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0277",
@@ -15032,7 +15032,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"robins","b":"finches","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact robins-minus-finches gap in the bird watch graph. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"robins","b":"finches","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled bird watch graph, how many more votes did robins get than finches?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0278",
@@ -15042,7 +15042,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"robins","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise robins and finches counts from the bird watch graph. What total do you get? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"a":"robins","b":"finches","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the robins and finches bars on the bird watch graph. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0279",
@@ -15052,7 +15052,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"bikes","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled school ride graph: exactly how many more vans than bikes?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"bikes","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled school ride graph carefully. How many more votes did vans get than bikes?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0280",
@@ -15062,7 +15062,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled school ride graph: what is the exact total of vans and buses?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"vans","b":"buses","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled school ride graph carefully. How many votes did vans and buses get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0281",
@@ -15072,7 +15072,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"buses","b":"scooters","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact buses-minus-scooters gap in the school ride graph. What is the gap? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"buses","b":"scooters","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled school ride graph, how many more votes did buses get than scooters?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0282",
@@ -15082,7 +15082,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"buses","b":"scooters","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise buses and scooters counts from the school ride graph. What total do you get? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":28,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"a":"buses","b":"scooters","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the buses and scooters bars of the school ride graph. What is the total number of votes?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0283",
@@ -15092,7 +15092,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"puppies","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact puppies-minus-bunnies gap in the pet fair graph. What is the gap?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"puppies","b":"bunnies","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the puppies and bunnies bars on the pet fair graph. How many more votes did puppies get than bunnies?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0284",
@@ -15102,7 +15102,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"puppies","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise puppies and kittens counts from the pet fair graph. What total do you get?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"puppies","b":"kittens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the puppies and kittens bars on the pet fair graph. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0285",
@@ -15112,7 +15112,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"chicks","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled pet fair graph: exactly how many more chicks than kittens? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"chicks","b":"kittens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled pet fair graph. How many more votes did chicks get than kittens?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0286",
@@ -15122,7 +15122,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"kittens","b":"chicks","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled pet fair graph: what is the exact total of kittens and chicks? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":26,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"a":"kittens","b":"chicks","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled pet fair graph. How many votes did kittens and chicks get altogether?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0287",
@@ -15132,7 +15132,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"plums","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact plums-minus-apples gap in the fruit stand graph. What is the gap?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"plums","b":"apples","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scaled fruit stand graph. How many more votes did plums get than apples?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0288",
@@ -15142,7 +15142,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"plums","b":"pears","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise plums and pears counts from the fruit stand graph. What total do you get?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":33,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"plums","b":"pears","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the scaled fruit stand graph. How many votes did plums and pears get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0289",
@@ -15152,7 +15152,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"pears","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled fruit stand graph: exactly how many more pears than cherries? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"pears","b":"cherries","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the fruit stand graph. How many more pears than cherries are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0290",
@@ -15162,7 +15162,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled fruit stand graph: what is the exact total of pears and cherries? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"a":"pears","b":"cherries","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the fruit stand graph. How many pears and cherries are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0291",
@@ -15172,7 +15172,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"jump rope","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact jump rope-minus-tag gap in the recess games graph. What is the gap?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"jump rope","b":"tag","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled recess games graph, how many more votes did jump rope get than tag?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0292",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"jump rope","b":"soccer","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise jump rope and soccer counts from the recess games graph. What total do you get?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"jump rope","b":"soccer","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the jump rope and soccer bars of the recess games graph. What is the total number of votes?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0293",
@@ -15192,7 +15192,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled recess games graph: exactly how many more soccer than hopscotch? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"soccer","b":"hopscotch","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the recess games graph. How many more kids picked soccer than hopscotch?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0294",
@@ -15202,7 +15202,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"soccer","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled recess games graph: what is the exact total of soccer and hopscotch? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":31,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"a":"soccer","b":"hopscotch","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the recess games graph. How many kids picked soccer or hopscotch in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0295",
@@ -15212,7 +15212,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact blue-minus-green gap in the favorite colors graph. What is the gap?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"blue","b":"green","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Look at the scaled favorite colors graph. How many more votes did blue get than green?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0296",
@@ -15222,7 +15222,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"blue","b":"red","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise blue and red counts from the favorite colors graph. What total do you get?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"blue","b":"red","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Use the scaled favorite colors graph. How many votes did blue and red get in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0297",
@@ -15232,7 +15232,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled favorite colors graph: exactly how many more yellow than red? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"yellow","b":"red","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled favorite colors graph. How many more votes did yellow get than red?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0298",
@@ -15242,7 +15242,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"red","b":"yellow","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled favorite colors graph: what is the exact total of red and yellow? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":23,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"a":"red","b":"yellow","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled favorite colors graph. How many votes did red and yellow get altogether?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0299",
@@ -15252,7 +15252,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"jays","b":"finches","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact jays-minus-finches gap in the bird watch graph. What is the gap?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"jays","b":"finches","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the jays and finches bars on the bird watch graph. How many more votes did jays get than finches?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0300",
@@ -15262,7 +15262,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"jays","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise jays and robins counts from the bird watch graph. What total do you get?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":34,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"jays","b":"robins","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the jays and robins bars on the bird watch graph. How many votes do they have in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0301",
@@ -15272,7 +15272,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"robins","b":"wrens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled bird watch graph: exactly how many more robins than wrens? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"robins","b":"wrens","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the bird watch graph. How many more robins than wrens are there?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0302",
@@ -15282,7 +15282,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"robins","b":"wrens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled bird watch graph: what is the exact total of robins and wrens? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":24,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"a":"robins","b":"wrens","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Check the scale on the bird watch graph. How many robins and wrens are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0303",
@@ -15292,7 +15292,7 @@ export const ITEMS = [
     structureType: "barDiff_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Compute the exact scooters-minus-buses gap in the school ride graph. What is the gap?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"scooters","b":"buses","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"In the scaled school ride graph, how many more votes did scooters get than buses?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0304",
@@ -15302,7 +15302,7 @@ export const ITEMS = [
     structureType: "barSum_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"scooters","b":"vans","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the precise scooters and vans counts from the school ride graph. What total do you get?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":29,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"scooters","b":"vans","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Add the scooters and vans bars of the school ride graph. What is the total number of votes?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0305",
@@ -15312,7 +15312,7 @@ export const ITEMS = [
     structureType: "barDiffAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"bikes","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"The scaled school ride graph: exactly how many more bikes than vans? Compare carefully."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"bikes","b":"vans","kind":"barDiff"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled school ride graph. How many more votes did bikes get than vans?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0306",
@@ -15322,7 +15322,7 @@ export const ITEMS = [
     structureType: "barSumAlt_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"vans","b":"bikes","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"The scaled school ride graph: what is the exact total of vans and bikes? Count both bars."},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"a":"vans","b":"bikes","kind":"barSum"},"type":"barGraph","figure":"barGraph","promptText":"Read the scaled school ride graph. How many votes did vans and bikes get altogether?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0307",
@@ -15332,7 +15332,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"kittens"},"rows":[{"label":"kittens","symbols":2},{"label":"puppies","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"The pet fair picture chart: each picture means 1. How many kittens?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"kittens"},"rows":[{"label":"kittens","symbols":2},{"label":"puppies","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Look at the pet fair picture chart. Each picture means 1. How many kittens are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0308",
@@ -15342,7 +15342,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"pictoRead","label":"pears"},"rows":[{"label":"apples","symbols":5},{"label":"pears","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"The fruit stand picture chart: each picture means 1. How many pears?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"pictoRead","label":"pears"},"rows":[{"label":"apples","symbols":5},{"label":"pears","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Use the fruit stand picture chart. Each picture means 1. How many pears are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0309",
@@ -15352,7 +15352,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"The recess games picture chart: each picture means 1. How many soccer?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Read the recess games picture chart. Each picture means 1. How many kids picked soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0310",
@@ -15362,7 +15362,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"The favorite colors picture chart: each picture means 1. How many blue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Look at the favorite colors picture chart. Each picture means 1. How many kids picked blue?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0311",
@@ -15372,7 +15372,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"robins"},"rows":[{"label":"robins","symbols":2},{"label":"wrens","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"The bird watch picture chart: each picture means 1. How many robins?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"robins"},"rows":[{"label":"robins","symbols":2},{"label":"wrens","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Use the bird watch picture chart. Each picture means 1. How many robins are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0312",
@@ -15382,7 +15382,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"pictoRead","label":"bikes"},"rows":[{"label":"vans","symbols":5},{"label":"bikes","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"The school ride picture chart: each picture means 1. How many bikes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"pictoRead","label":"bikes"},"rows":[{"label":"vans","symbols":5},{"label":"bikes","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Read the school ride picture chart. Each picture means 1. How many votes did bikes get?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0313",
@@ -15392,7 +15392,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"bunnies"},"rows":[{"label":"bunnies","symbols":2},{"label":"chicks","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"The pet fair picture chart: each picture means 1. How many bunnies?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"bunnies"},"rows":[{"label":"bunnies","symbols":2},{"label":"chicks","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Look at the pet fair picture chart. Each picture means 1. How many bunnies are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0314",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"pictoRead","label":"cherries"},"rows":[{"label":"plums","symbols":5},{"label":"cherries","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"The fruit stand picture chart: each picture means 1. How many cherries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"pictoRead","label":"cherries"},"rows":[{"label":"plums","symbols":5},{"label":"cherries","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Use the fruit stand picture chart. Each picture means 1. How many cherries are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0315",
@@ -15412,7 +15412,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":2},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"The recess games picture chart: each picture means 1. How many hopscotch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":2},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Read the recess games picture chart. Each picture means 1. How many kids picked hopscotch?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0316",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"The favorite colors picture chart: each picture means 1. How many yellow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Look at the favorite colors picture chart. Each picture means 1. How many kids picked yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0317",
@@ -15432,7 +15432,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"jays"},"rows":[{"label":"jays","symbols":2},{"label":"finches","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"The bird watch picture chart: each picture means 1. How many jays?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"jays"},"rows":[{"label":"jays","symbols":2},{"label":"finches","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Use the bird watch picture chart. Each picture means 1. How many jays are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0318",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"pictoRead","label":"scooters"},"rows":[{"label":"buses","symbols":5},{"label":"scooters","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"The school ride picture chart: each picture means 1. How many scooters?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"pictoRead","label":"scooters"},"rows":[{"label":"buses","symbols":5},{"label":"scooters","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Read the school ride picture chart. Each picture means 1. How many votes did scooters get?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0319",
@@ -15452,7 +15452,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"kittens"},"rows":[{"label":"kittens","symbols":2},{"label":"puppies","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Count the kittens pictures in the pet fair chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"kittens"},"rows":[{"label":"kittens","symbols":2},{"label":"puppies","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Look at the pet fair picture chart. How many pictures are in the kittens row?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0320",
@@ -15462,7 +15462,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"pictoRead","label":"pears"},"rows":[{"label":"apples","symbols":5},{"label":"pears","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Count the pears pictures in the fruit stand chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"pictoRead","label":"pears"},"rows":[{"label":"apples","symbols":5},{"label":"pears","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"In the fruit stand picture chart, how many pictures are in the pears row?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0321",
@@ -15472,7 +15472,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Count the soccer pictures in the recess games chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Use the recess games picture chart. How many pictures does the soccer row have?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0322",
@@ -15482,7 +15482,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Count the blue pictures in the favorite colors chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Look at the favorite colors picture chart. How many pictures are in the blue row?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0323",
@@ -15492,7 +15492,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"robins"},"rows":[{"label":"robins","symbols":2},{"label":"wrens","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Count the robins pictures in the bird watch chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"robins"},"rows":[{"label":"robins","symbols":2},{"label":"wrens","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"In the bird watch picture chart, how many pictures are in the robins row?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0324",
@@ -15502,7 +15502,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"pictoRead","label":"bikes"},"rows":[{"label":"vans","symbols":5},{"label":"bikes","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Count the bikes pictures in the school ride chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"pictoRead","label":"bikes"},"rows":[{"label":"vans","symbols":5},{"label":"bikes","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Use the school ride picture chart. How many pictures does the bikes row have?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0325",
@@ -15512,7 +15512,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"bunnies"},"rows":[{"label":"bunnies","symbols":2},{"label":"chicks","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Count the bunnies pictures in the pet fair chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"bunnies"},"rows":[{"label":"bunnies","symbols":2},{"label":"chicks","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Look at the pet fair picture chart. How many pictures are in the bunnies row?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0326",
@@ -15522,7 +15522,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"pictoRead","label":"cherries"},"rows":[{"label":"plums","symbols":5},{"label":"cherries","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Count the cherries pictures in the fruit stand chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"pictoRead","label":"cherries"},"rows":[{"label":"plums","symbols":5},{"label":"cherries","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"In the fruit stand picture chart, how many pictures are in the cherries row?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0327",
@@ -15532,7 +15532,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":2},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Count the hopscotch pictures in the recess games chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":2},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Use the recess games picture chart. How many pictures does the hopscotch row have?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0328",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Count the yellow pictures in the favorite colors chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Look at the favorite colors picture chart. How many pictures are in the yellow row?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0329",
@@ -15552,7 +15552,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"jays"},"rows":[{"label":"jays","symbols":2},{"label":"finches","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Count the jays pictures in the bird watch chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"kind":"pictoRead","label":"jays"},"rows":[{"label":"jays","symbols":2},{"label":"finches","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"In the bird watch picture chart, how many pictures are in the jays row?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0330",
@@ -15562,7 +15562,7 @@ export const ITEMS = [
     structureType: "pictoRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"pictoRead","label":"scooters"},"rows":[{"label":"buses","symbols":5},{"label":"scooters","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Count the scooters pictures in the school ride chart. How many pictures do you see?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"pictoRead","label":"scooters"},"rows":[{"label":"buses","symbols":5},{"label":"scooters","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Use the school ride picture chart. How many pictures does the scooters row have?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0331",
@@ -15592,7 +15592,7 @@ export const ITEMS = [
     structureType: "pictoRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":2}],"figure":"pictograph","keyValue":2,"promptText":"In the recess games picture chart, each picture means 2. How many soccer?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":2}],"figure":"pictograph","keyValue":2,"promptText":"In the recess games picture chart, each picture means 2. How many kids picked soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0334",
@@ -15602,7 +15602,7 @@ export const ITEMS = [
     structureType: "pictoRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"In the favorite colors picture chart, each picture means 5. How many blue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"In the favorite colors picture chart, each picture means 5. How many kids picked blue?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0335",
@@ -15652,7 +15652,7 @@ export const ITEMS = [
     structureType: "pictoRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":2},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":2,"promptText":"In the recess games picture chart, each picture means 2. How many hopscotch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":2},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":2,"promptText":"In the recess games picture chart, each picture means 2. How many kids picked hopscotch?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0340",
@@ -15662,7 +15662,7 @@ export const ITEMS = [
     structureType: "pictoRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"In the favorite colors picture chart, each picture means 5. How many yellow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"In the favorite colors picture chart, each picture means 5. How many kids picked yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0341",
@@ -15712,7 +15712,7 @@ export const ITEMS = [
     structureType: "pictoRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":2}],"figure":"pictograph","keyValue":2,"promptText":"The recess games chart's key is 2 per picture. How many soccer does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":2}],"figure":"pictograph","keyValue":2,"promptText":"The recess games chart's key is 2 per picture. How many kids picked soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0346",
@@ -15722,7 +15722,7 @@ export const ITEMS = [
     structureType: "pictoRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"The favorite colors chart's key is 5 per picture. How many blue does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"The favorite colors chart's key is 5 per picture. How many kids picked blue?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0347",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "pictoRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":2},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":2,"promptText":"The recess games chart's key is 2 per picture. How many hopscotch does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":2},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":2,"promptText":"The recess games chart's key is 2 per picture. How many kids picked hopscotch?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0352",
@@ -15782,7 +15782,7 @@ export const ITEMS = [
     structureType: "pictoRead_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"The favorite colors chart's key is 5 per picture. How many yellow does it show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":5},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"The favorite colors chart's key is 5 per picture. How many kids picked yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0353",
@@ -15832,7 +15832,7 @@ export const ITEMS = [
     structureType: "pictoRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":8},{"label":"tag","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"The recess games picture chart uses a key of 10. Exactly how many soccer?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":8},{"label":"tag","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"The recess games picture chart uses a key of 10. How many kids picked soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0358",
@@ -15842,7 +15842,7 @@ export const ITEMS = [
     structureType: "pictoRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":4},{"label":"blue","symbols":5}],"figure":"pictograph","keyValue":10,"promptText":"The favorite colors picture chart uses a key of 10. Exactly how many blue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":4},{"label":"blue","symbols":5}],"figure":"pictograph","keyValue":10,"promptText":"The favorite colors picture chart uses a key of 10. How many kids picked blue?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0359",
@@ -15892,7 +15892,7 @@ export const ITEMS = [
     structureType: "pictoRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":5},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":10,"promptText":"The recess games picture chart uses a key of 10. Exactly how many hopscotch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":5},{"label":"jump rope","symbols":2}],"figure":"pictograph","keyValue":10,"promptText":"The recess games picture chart uses a key of 10. How many kids picked hopscotch?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0364",
@@ -15902,7 +15902,7 @@ export const ITEMS = [
     structureType: "pictoRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":8},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"The favorite colors picture chart uses a key of 10. Exactly how many yellow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":8},{"label":"yellow","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"The favorite colors picture chart uses a key of 10. How many kids picked yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0365",
@@ -15952,7 +15952,7 @@ export const ITEMS = [
     structureType: "pictoRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the recess games chart is worth 10. What is the soccer count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"kind":"pictoRead","label":"soccer"},"rows":[{"label":"soccer","symbols":2},{"label":"tag","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the recess games chart is worth 10. How many kids picked soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0370",
@@ -15962,7 +15962,7 @@ export const ITEMS = [
     structureType: "pictoRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":2}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the favorite colors chart is worth 10. What is the blue count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"kind":"pictoRead","label":"blue"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":2}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the favorite colors chart is worth 10. How many kids picked blue?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0371",
@@ -16012,7 +16012,7 @@ export const ITEMS = [
     structureType: "pictoRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":6},{"label":"jump rope","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the recess games chart is worth 10. What is the hopscotch count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"kind":"pictoRead","label":"hopscotch"},"rows":[{"label":"hopscotch","symbols":6},{"label":"jump rope","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the recess games chart is worth 10. How many kids picked hopscotch?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0376",
@@ -16022,7 +16022,7 @@ export const ITEMS = [
     structureType: "pictoRead_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":2},{"label":"yellow","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the favorite colors chart is worth 10. What is the yellow count?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"kind":"pictoRead","label":"yellow"},"rows":[{"label":"green","symbols":2},{"label":"yellow","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Each picture in the favorite colors chart is worth 10. How many kids picked yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0377",
@@ -16052,7 +16052,7 @@ export const ITEMS = [
     structureType: "pictoBothRowsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"kittens","symbols":2},{"label":"puppies","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"The pet fair picture chart, key of one: how many pictures in both rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"kittens","symbols":2},{"label":"puppies","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"In the pet fair picture chart, how many pictures are in the kittens row and the puppies row in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0380",
@@ -16062,7 +16062,7 @@ export const ITEMS = [
     structureType: "pictoBothRowsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"apples","symbols":3},{"label":"pears","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"The fruit stand picture chart, key of one: how many pictures in both rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"apples","symbols":3},{"label":"pears","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Look at the fruit stand picture chart. How many pictures are in both rows together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0381",
@@ -16072,7 +16072,7 @@ export const ITEMS = [
     structureType: "pictoBothRowsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"soccer","symbols":4},{"label":"tag","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"The recess games picture chart, key of one: how many pictures in both rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"soccer","symbols":4},{"label":"tag","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Look at the recess games picture chart. How many pictures are in both rows together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0382",
@@ -16082,7 +16082,7 @@ export const ITEMS = [
     structureType: "pictoBothRowsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"The favorite colors picture chart, key of one: how many pictures in both rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"red","symbols":5},{"label":"blue","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Look at the favorite colors picture chart. How many pictures are in the red row and the blue row together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0383",
@@ -16092,7 +16092,7 @@ export const ITEMS = [
     structureType: "pictoBothRowsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"robins","symbols":6},{"label":"wrens","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"The bird watch picture chart, key of one: how many pictures in both rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"robins","symbols":6},{"label":"wrens","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Look at the bird watch picture chart. How many pictures are in both rows together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0384",
@@ -16102,7 +16102,7 @@ export const ITEMS = [
     structureType: "pictoBothRowsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"vans","symbols":2},{"label":"bikes","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"The school ride picture chart, key of one: how many pictures in both rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"vans","symbols":2},{"label":"bikes","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Look at the school ride picture chart. How many pictures are in the vans row and the bikes row together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0385",
@@ -16112,207 +16112,7 @@ export const ITEMS = [
     structureType: "pictoBothRowsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"kittens","symbols":3},{"label":"puppies","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"The pet fair picture chart, key of one: how many pictures in both rows together? Count them all."},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0386",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"n":3,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 3?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0387",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"n":5,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 5?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0388",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"n":7,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 7?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0389",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"n":2,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 2?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0390",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"n":8,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 8?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0391",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"n":4,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 4?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0392",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"n":9,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 9?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0393",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"n":6,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 6?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0394",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"n":10,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 10?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0395",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"data":{"n":12,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 12?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0396",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"n":11,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 11?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0397",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"data":{"n":13,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 13?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0398",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"n":15,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 15?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0399",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"data":{"n":14,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 14?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0400",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"n":16,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 16?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0401",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"data":{"n":17,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 17?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0402",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"data":{"n":18,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 18?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0403",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"data":{"n":19,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 19?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0404",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"n":20,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 20?"},"answerType":"numberPad"},
-  },
-  {
-    itemId: "dataGraphs-proc-b0821-0405",
-    modeId: "dataGraphs",
-    itemFamily: "procedural",
-    subskill: "pictograph",
-    structureType: "pictoSymbolsTeen",
-    levelRange: [1,3],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"data":{"n":1,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means one. How many pictures show one thing?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"kind":"pictoBothRows"},"rows":[{"label":"kittens","symbols":3},{"label":"puppies","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Look at the pet fair picture chart. How many pictures are in both rows together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0406",
@@ -16842,7 +16642,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"tallyRead","label":"kittens"},"rows":[{"count":3,"label":"kittens"},{"count":5,"label":"puppies"}],"figure":"tallyChart","promptText":"The pet fair tally chart: how many chose kittens?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"kind":"tallyRead","label":"kittens"},"rows":[{"count":3,"label":"kittens"},{"count":5,"label":"puppies"}],"figure":"tallyChart","promptText":"Look at the pet fair tally chart. How many kittens are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0459",
@@ -16852,7 +16652,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"kind":"tallyRead","label":"pears"},"rows":[{"count":6,"label":"apples"},{"count":10,"label":"pears"}],"figure":"tallyChart","promptText":"The fruit stand tally chart: how many chose pears?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"kind":"tallyRead","label":"pears"},"rows":[{"count":6,"label":"apples"},{"count":10,"label":"pears"}],"figure":"tallyChart","promptText":"Read the fruit stand tally chart. How many pears are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0460",
@@ -16862,7 +16662,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"kind":"tallyRead","label":"soccer"},"rows":[{"count":9,"label":"soccer"},{"count":4,"label":"tag"}],"figure":"tallyChart","promptText":"The recess games tally chart: how many chose soccer?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"kind":"tallyRead","label":"soccer"},"rows":[{"count":9,"label":"soccer"},{"count":4,"label":"tag"}],"figure":"tallyChart","promptText":"Use the recess games tally chart. How many kids chose soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0461",
@@ -16872,7 +16672,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"kind":"tallyRead","label":"blue"},"rows":[{"count":12,"label":"red"},{"count":9,"label":"blue"}],"figure":"tallyChart","promptText":"The favorite colors tally chart: how many chose blue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"kind":"tallyRead","label":"blue"},"rows":[{"count":12,"label":"red"},{"count":9,"label":"blue"}],"figure":"tallyChart","promptText":"Look at the favorite colors tally chart. How many kids chose blue?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0462",
@@ -16882,7 +16682,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"tallyRead","label":"robins"},"rows":[{"count":4,"label":"robins"},{"count":3,"label":"wrens"}],"figure":"tallyChart","promptText":"The bird watch tally chart: how many chose robins?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"kind":"tallyRead","label":"robins"},"rows":[{"count":4,"label":"robins"},{"count":3,"label":"wrens"}],"figure":"tallyChart","promptText":"Read the bird watch tally chart. How many robins are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0463",
@@ -16892,7 +16692,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyRead","label":"bikes"},"rows":[{"count":7,"label":"vans"},{"count":8,"label":"bikes"}],"figure":"tallyChart","promptText":"The school ride tally chart: how many chose bikes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyRead","label":"bikes"},"rows":[{"count":7,"label":"vans"},{"count":8,"label":"bikes"}],"figure":"tallyChart","promptText":"Use the school ride tally chart. How many kids chose bikes?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0464",
@@ -16902,7 +16702,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"kind":"tallyRead","label":"bunnies"},"rows":[{"count":10,"label":"bunnies"},{"count":13,"label":"chicks"}],"figure":"tallyChart","promptText":"The pet fair tally chart: how many chose bunnies?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"kind":"tallyRead","label":"bunnies"},"rows":[{"count":10,"label":"bunnies"},{"count":13,"label":"chicks"}],"figure":"tallyChart","promptText":"Look at the pet fair tally chart. How many bunnies are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0465",
@@ -16912,7 +16712,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"tallyRead","label":"cherries"},"rows":[{"count":13,"label":"plums"},{"count":7,"label":"cherries"}],"figure":"tallyChart","promptText":"The fruit stand tally chart: how many chose cherries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"kind":"tallyRead","label":"cherries"},"rows":[{"count":13,"label":"plums"},{"count":7,"label":"cherries"}],"figure":"tallyChart","promptText":"Read the fruit stand tally chart. How many cherries are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0466",
@@ -16922,7 +16722,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"tallyRead","label":"hopscotch"},"rows":[{"count":5,"label":"hopscotch"},{"count":12,"label":"jump rope"}],"figure":"tallyChart","promptText":"The recess games tally chart: how many chose hopscotch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"tallyRead","label":"hopscotch"},"rows":[{"count":5,"label":"hopscotch"},{"count":12,"label":"jump rope"}],"figure":"tallyChart","promptText":"Use the recess games tally chart. How many kids chose hopscotch?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0467",
@@ -16932,7 +16732,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"kind":"tallyRead","label":"yellow"},"rows":[{"count":8,"label":"green"},{"count":6,"label":"yellow"}],"figure":"tallyChart","promptText":"The favorite colors tally chart: how many chose yellow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"kind":"tallyRead","label":"yellow"},"rows":[{"count":8,"label":"green"},{"count":6,"label":"yellow"}],"figure":"tallyChart","promptText":"Look at the favorite colors tally chart. How many kids chose yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0468",
@@ -16942,7 +16742,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"kind":"tallyRead","label":"jays"},"rows":[{"count":11,"label":"jays"},{"count":11,"label":"finches"}],"figure":"tallyChart","promptText":"The bird watch tally chart: how many chose jays?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"kind":"tallyRead","label":"jays"},"rows":[{"count":11,"label":"jays"},{"count":11,"label":"finches"}],"figure":"tallyChart","promptText":"Read the bird watch tally chart. How many jays are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0469",
@@ -16952,7 +16752,7 @@ export const ITEMS = [
     structureType: "tallyRead_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"tallyRead","label":"scooters"},"rows":[{"count":3,"label":"buses"},{"count":5,"label":"scooters"}],"figure":"tallyChart","promptText":"The school ride tally chart: how many chose scooters?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"kind":"tallyRead","label":"scooters"},"rows":[{"count":3,"label":"buses"},{"count":5,"label":"scooters"}],"figure":"tallyChart","promptText":"Use the school ride tally chart. How many kids chose scooters?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0470",
@@ -17442,7 +17242,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Sum the whole pet fair graph, bar by bar. What total does it hold?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"bars":[{"label":"kittens","value":18},{"label":"puppies","value":7},{"label":"bunnies","value":12},{"label":"chicks","value":20}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Add the bars of the pet fair graph one at a time. How many votes are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0519",
@@ -17452,7 +17252,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Sum the whole fruit stand graph, bar by bar. What total does it hold?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bars":[{"label":"apples","value":15},{"label":"pears","value":9},{"label":"plums","value":19},{"label":"cherries","value":4}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Add all four bars of the fruit stand graph. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0520",
@@ -17462,7 +17262,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Sum the whole recess games graph, bar by bar. What total does it hold?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"bars":[{"label":"soccer","value":20},{"label":"tag","value":11},{"label":"hopscotch","value":6},{"label":"jump rope","value":16}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Add all four bars of the recess games graph. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0521",
@@ -17472,7 +17272,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Sum the whole favorite colors graph, bar by bar. What total does it hold?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":57,"display":{"bars":[{"label":"red","value":8},{"label":"blue","value":17},{"label":"green","value":13},{"label":"yellow","value":19}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Add the bars of the favorite colors graph one at a time. How many votes are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0522",
@@ -17482,7 +17282,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Sum the whole bird watch graph, bar by bar. What total does it hold?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"bars":[{"label":"robins","value":14},{"label":"wrens","value":20},{"label":"jays","value":5},{"label":"finches","value":10}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Add all four bars of the bird watch graph. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0523",
@@ -17492,7 +17292,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Sum the whole school ride graph, bar by bar. What total does it hold?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"bars":[{"label":"vans","value":19},{"label":"bikes","value":3},{"label":"buses","value":16},{"label":"scooters","value":12}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Add the bars of the school ride graph one at a time. How many votes are there in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0524",
@@ -17502,7 +17302,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Every bar of the pet fair graph together makes what exact total?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":52,"display":{"bars":[{"label":"kittens","value":11},{"label":"puppies","value":18},{"label":"bunnies","value":8},{"label":"chicks","value":15}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"What is the total number of votes in the pet fair graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0525",
@@ -17512,7 +17312,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Every bar of the fruit stand graph together makes what exact total?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":48,"display":{"bars":[{"label":"apples","value":6},{"label":"pears","value":13},{"label":"plums","value":20},{"label":"cherries","value":9}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"How many votes does the fruit stand graph show in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0526",
@@ -17522,7 +17322,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Every bar of the recess games graph together makes what exact total?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":53,"display":{"bars":[{"label":"soccer","value":17},{"label":"tag","value":4},{"label":"hopscotch","value":14},{"label":"jump rope","value":18}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"How many votes does the recess games graph show in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0527",
@@ -17532,7 +17332,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Every bar of the favorite colors graph together makes what exact total?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":49,"display":{"bars":[{"label":"red","value":10},{"label":"blue","value":19},{"label":"green","value":7},{"label":"yellow","value":13}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"What is the total number of votes in the favorite colors graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0528",
@@ -17542,7 +17342,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Every bar of the bird watch graph together makes what exact total?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bars":[{"label":"robins","value":16},{"label":"wrens","value":8},{"label":"jays","value":18},{"label":"finches","value":5}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"How many votes does the bird watch graph show in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0529",
@@ -17552,7 +17352,7 @@ export const ITEMS = [
     structureType: "barTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"Every bar of the school ride graph together makes what exact total?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":47,"display":{"bars":[{"label":"vans","value":12},{"label":"bikes","value":15},{"label":"buses","value":3},{"label":"scooters","value":17}],"data":{"kind":"barTotal"},"type":"barGraph","figure":"barGraph","promptText":"What is the total number of votes in the school ride graph?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0530",
@@ -17712,7 +17512,7 @@ export const ITEMS = [
     structureType: "barTotalSkipBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barTotalSkip","skip":"blue"},"type":"barGraph","figure":"barGraph","promptText":"Add every favorite colors bar EXCEPT blue. What total is left?"},"answerType":"barGraph"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"bars":[{"label":"red","value":5},{"label":"blue","value":12},{"label":"green","value":8},{"label":"yellow","value":14}],"data":{"kind":"barTotalSkip","skip":"blue"},"type":"barGraph","figure":"barGraph","promptText":"On the favorite colors graph, add the votes for every color except blue. How many votes is that in all?"},"answerType":"barGraph"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0546",
@@ -17922,7 +17722,7 @@ export const ITEMS = [
     structureType: "tallyDiffMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"a":"green","b":"yellow","kind":"tallyDiff"},"rows":[{"count":19,"label":"green"},{"count":8,"label":"yellow"}],"figure":"tallyChart","promptText":"In the favorite colors tally chart, how many more chose green than yellow?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"a":"green","b":"yellow","kind":"tallyDiff"},"rows":[{"count":19,"label":"green"},{"count":8,"label":"yellow"}],"figure":"tallyChart","promptText":"In the favorite colors tally chart, how many more kids chose green than yellow?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0567",
@@ -17932,7 +17732,7 @@ export const ITEMS = [
     structureType: "tallyDiffMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"a":"jays","b":"finches","kind":"tallyDiff"},"rows":[{"count":22,"label":"jays"},{"count":13,"label":"finches"}],"figure":"tallyChart","promptText":"In the bird watch tally chart, how many more chose jays than finches?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"a":"jays","b":"finches","kind":"tallyDiff"},"rows":[{"count":22,"label":"jays"},{"count":13,"label":"finches"}],"figure":"tallyChart","promptText":"In the bird watch tally chart, how many more jays than finches are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0568",
@@ -17942,7 +17742,7 @@ export const ITEMS = [
     structureType: "tallyDiffMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"a":"buses","b":"scooters","kind":"tallyDiff"},"rows":[{"count":17,"label":"buses"},{"count":9,"label":"scooters"}],"figure":"tallyChart","promptText":"In the school ride tally chart, how many more chose buses than scooters?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"a":"buses","b":"scooters","kind":"tallyDiff"},"rows":[{"count":17,"label":"buses"},{"count":9,"label":"scooters"}],"figure":"tallyChart","promptText":"In the school ride tally chart, how many more kids chose buses than scooters?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0569",
@@ -17952,7 +17752,7 @@ export const ITEMS = [
     structureType: "tallyDiffBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"a":"bunnies","b":"chicks","kind":"tallyDiff"},"rows":[{"count":34,"label":"bunnies"},{"count":18,"label":"chicks"}],"figure":"tallyChart","promptText":"In the pet fair tally chart, how many more chose bunnies than chicks?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"a":"bunnies","b":"chicks","kind":"tallyDiff"},"rows":[{"count":34,"label":"bunnies"},{"count":18,"label":"chicks"}],"figure":"tallyChart","promptText":"In the pet fair tally chart, how many more bunnies than chicks are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0570",
@@ -17962,7 +17762,7 @@ export const ITEMS = [
     structureType: "tallyDiffBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"data":{"a":"plums","b":"cherries","kind":"tallyDiff"},"rows":[{"count":38,"label":"plums"},{"count":21,"label":"cherries"}],"figure":"tallyChart","promptText":"In the fruit stand tally chart, how many more chose plums than cherries?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"data":{"a":"plums","b":"cherries","kind":"tallyDiff"},"rows":[{"count":38,"label":"plums"},{"count":21,"label":"cherries"}],"figure":"tallyChart","promptText":"In the fruit stand tally chart, how many more plums than cherries are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0571",
@@ -17972,7 +17772,7 @@ export const ITEMS = [
     structureType: "tallyDiffBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"data":{"a":"hopscotch","b":"jump rope","kind":"tallyDiff"},"rows":[{"count":29,"label":"hopscotch"},{"count":16,"label":"jump rope"}],"figure":"tallyChart","promptText":"In the recess games tally chart, how many more chose hopscotch than jump rope?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":13,"display":{"data":{"a":"hopscotch","b":"jump rope","kind":"tallyDiff"},"rows":[{"count":29,"label":"hopscotch"},{"count":16,"label":"jump rope"}],"figure":"tallyChart","promptText":"In the recess games tally chart, how many more kids chose hopscotch than jump rope?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0572",
@@ -17982,7 +17782,7 @@ export const ITEMS = [
     structureType: "tallyReadBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"kind":"tallyRead","label":"kittens"},"rows":[{"count":15,"label":"kittens"},{"count":17,"label":"puppies"}],"figure":"tallyChart","promptText":"The pet fair tally chart runs long — count every mark. How many chose kittens?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"kind":"tallyRead","label":"kittens"},"rows":[{"count":15,"label":"kittens"},{"count":17,"label":"puppies"}],"figure":"tallyChart","promptText":"Count every mark on the pet fair tally chart. How many kittens are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0573",
@@ -17992,7 +17792,7 @@ export const ITEMS = [
     structureType: "tallyReadBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"data":{"kind":"tallyRead","label":"pears"},"rows":[{"count":18,"label":"apples"},{"count":22,"label":"pears"}],"figure":"tallyChart","promptText":"The fruit stand tally chart runs long — count every mark. How many chose pears?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":22,"display":{"data":{"kind":"tallyRead","label":"pears"},"rows":[{"count":18,"label":"apples"},{"count":22,"label":"pears"}],"figure":"tallyChart","promptText":"Count every mark on the fruit stand tally chart. How many pears are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0574",
@@ -18002,7 +17802,7 @@ export const ITEMS = [
     structureType: "tallyReadBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"data":{"kind":"tallyRead","label":"soccer"},"rows":[{"count":21,"label":"soccer"},{"count":27,"label":"tag"}],"figure":"tallyChart","promptText":"The recess games tally chart runs long — count every mark. How many chose soccer?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":21,"display":{"data":{"kind":"tallyRead","label":"soccer"},"rows":[{"count":21,"label":"soccer"},{"count":27,"label":"tag"}],"figure":"tallyChart","promptText":"Count every mark on the recess games tally chart. How many kids chose soccer?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0575",
@@ -18012,7 +17812,7 @@ export const ITEMS = [
     structureType: "tallyReadBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"data":{"kind":"tallyRead","label":"blue"},"rows":[{"count":24,"label":"red"},{"count":32,"label":"blue"}],"figure":"tallyChart","promptText":"The favorite colors tally chart runs long — count every mark. How many chose blue?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":32,"display":{"data":{"kind":"tallyRead","label":"blue"},"rows":[{"count":24,"label":"red"},{"count":32,"label":"blue"}],"figure":"tallyChart","promptText":"Count every mark on the favorite colors tally chart. How many kids chose blue?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0576",
@@ -18022,7 +17822,7 @@ export const ITEMS = [
     structureType: "tallyReadBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"data":{"kind":"tallyRead","label":"robins"},"rows":[{"count":27,"label":"robins"},{"count":37,"label":"wrens"}],"figure":"tallyChart","promptText":"The bird watch tally chart runs long — count every mark. How many chose robins?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":27,"display":{"data":{"kind":"tallyRead","label":"robins"},"rows":[{"count":27,"label":"robins"},{"count":37,"label":"wrens"}],"figure":"tallyChart","promptText":"Count every mark on the bird watch tally chart. How many robins are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0577",
@@ -18032,7 +17832,7 @@ export const ITEMS = [
     structureType: "tallyReadBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyRead","label":"bikes"},"rows":[{"count":30,"label":"vans"},{"count":16,"label":"bikes"}],"figure":"tallyChart","promptText":"The school ride tally chart runs long — count every mark. How many chose bikes?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyRead","label":"bikes"},"rows":[{"count":30,"label":"vans"},{"count":16,"label":"bikes"}],"figure":"tallyChart","promptText":"Count every mark on the school ride tally chart. How many kids chose bikes?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0578",
@@ -18102,7 +17902,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":3,"label":"soccer"},{"count":5,"label":"tag"}],"figure":"tallyChart","promptText":"In the recess games tally chart, how many chose soccer or tag altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":3,"label":"soccer"},{"count":5,"label":"tag"}],"figure":"tallyChart","promptText":"In the recess games tally chart, how many kids chose soccer or tag altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0585",
@@ -18112,7 +17912,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":6,"label":"red"},{"count":10,"label":"blue"}],"figure":"tallyChart","promptText":"In the favorite colors tally chart, how many chose red or blue altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":6,"label":"red"},{"count":10,"label":"blue"}],"figure":"tallyChart","promptText":"In the favorite colors tally chart, how many kids chose red or blue altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0586",
@@ -18122,7 +17922,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":9,"label":"robins"},{"count":7,"label":"wrens"}],"figure":"tallyChart","promptText":"In the bird watch tally chart, how many chose robins or wrens altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":9,"label":"robins"},{"count":7,"label":"wrens"}],"figure":"tallyChart","promptText":"In the bird watch tally chart, how many robins and wrens are there altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0587",
@@ -18132,7 +17932,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":4,"label":"vans"},{"count":4,"label":"bikes"}],"figure":"tallyChart","promptText":"In the school ride tally chart, how many chose vans or bikes altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":4,"label":"vans"},{"count":4,"label":"bikes"}],"figure":"tallyChart","promptText":"In the school ride tally chart, how many kids chose vans or bikes altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0588",
@@ -18142,7 +17942,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":7,"label":"kittens"},{"count":9,"label":"puppies"}],"figure":"tallyChart","promptText":"In the pet fair tally chart, how many chose kittens or puppies altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":7,"label":"kittens"},{"count":9,"label":"puppies"}],"figure":"tallyChart","promptText":"In the pet fair tally chart, how many kittens and puppies are there altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0589",
@@ -18152,7 +17952,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":10,"label":"apples"},{"count":6,"label":"pears"}],"figure":"tallyChart","promptText":"In the fruit stand tally chart, how many chose apples or pears altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":10,"label":"apples"},{"count":6,"label":"pears"}],"figure":"tallyChart","promptText":"In the fruit stand tally chart, how many apples and pears are there altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0590",
@@ -18162,7 +17962,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":5,"label":"hopscotch"},{"count":3,"label":"jump rope"}],"figure":"tallyChart","promptText":"In the recess games tally chart, how many chose hopscotch or jump rope altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":5,"label":"hopscotch"},{"count":3,"label":"jump rope"}],"figure":"tallyChart","promptText":"In the recess games tally chart, how many kids chose hopscotch or jump rope altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0591",
@@ -18172,7 +17972,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":8,"label":"green"},{"count":8,"label":"yellow"}],"figure":"tallyChart","promptText":"In the favorite colors tally chart, how many chose green or yellow altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":8,"label":"green"},{"count":8,"label":"yellow"}],"figure":"tallyChart","promptText":"In the favorite colors tally chart, how many kids chose green or yellow altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0592",
@@ -18182,7 +17982,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":3,"label":"jays"},{"count":5,"label":"finches"}],"figure":"tallyChart","promptText":"In the bird watch tally chart, how many chose jays or finches altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":3,"label":"jays"},{"count":5,"label":"finches"}],"figure":"tallyChart","promptText":"In the bird watch tally chart, how many jays and finches are there altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0593",
@@ -18192,7 +17992,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":6,"label":"buses"},{"count":10,"label":"scooters"}],"figure":"tallyChart","promptText":"In the school ride tally chart, how many chose buses or scooters altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":6,"label":"buses"},{"count":10,"label":"scooters"}],"figure":"tallyChart","promptText":"In the school ride tally chart, how many kids chose buses or scooters altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0594",
@@ -18202,7 +18002,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":9,"label":"bunnies"},{"count":7,"label":"chicks"}],"figure":"tallyChart","promptText":"In the pet fair tally chart, how many chose bunnies or chicks altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":9,"label":"bunnies"},{"count":7,"label":"chicks"}],"figure":"tallyChart","promptText":"In the pet fair tally chart, how many bunnies and chicks are there altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0595",
@@ -18212,7 +18012,7 @@ export const ITEMS = [
     structureType: "tallyTotalTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":4,"label":"plums"},{"count":4,"label":"cherries"}],"figure":"tallyChart","promptText":"In the fruit stand tally chart, how many chose plums or cherries altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"kind":"tallyTotal"},"rows":[{"count":4,"label":"plums"},{"count":4,"label":"cherries"}],"figure":"tallyChart","promptText":"In the fruit stand tally chart, how many plums and cherries are there altogether?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0596",
@@ -18342,7 +18142,7 @@ export const ITEMS = [
     structureType: "tallyDiffTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"a":"kittens","b":"puppies","kind":"tallyDiff"},"rows":[{"count":9,"label":"kittens"},{"count":4,"label":"puppies"}],"figure":"tallyChart","promptText":"In the pet fair tally chart, how many more chose kittens than puppies?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"a":"kittens","b":"puppies","kind":"tallyDiff"},"rows":[{"count":9,"label":"kittens"},{"count":4,"label":"puppies"}],"figure":"tallyChart","promptText":"In the pet fair tally chart, how many more kittens than puppies are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0609",
@@ -18352,7 +18152,7 @@ export const ITEMS = [
     structureType: "tallyDiffTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"a":"apples","b":"pears","kind":"tallyDiff"},"rows":[{"count":11,"label":"apples"},{"count":6,"label":"pears"}],"figure":"tallyChart","promptText":"In the fruit stand tally chart, how many more chose apples than pears?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"a":"apples","b":"pears","kind":"tallyDiff"},"rows":[{"count":11,"label":"apples"},{"count":6,"label":"pears"}],"figure":"tallyChart","promptText":"In the fruit stand tally chart, how many more apples than pears are there?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0610",
@@ -18362,6 +18162,6 @@ export const ITEMS = [
     structureType: "tallyDiffTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"a":"soccer","b":"tag","kind":"tallyDiff"},"rows":[{"count":8,"label":"soccer"},{"count":3,"label":"tag"}],"figure":"tallyChart","promptText":"In the recess games tally chart, how many more chose soccer than tag?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"a":"soccer","b":"tag","kind":"tallyDiff"},"rows":[{"count":8,"label":"soccer"},{"count":3,"label":"tag"}],"figure":"tallyChart","promptText":"In the recess games tally chart, how many more kids chose soccer than tag?"},"answerType":"numberPad"},
   },
 ];

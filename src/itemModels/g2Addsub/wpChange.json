@@ -1,0 +1,2009 @@
+[
+  {
+    "id": "wp-g2-add-to-result-noregroup",
+    "blueprintId": "wp-g2-add-to-result",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "addToResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      5
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {start} {object_plural}. {giver} gives {name} {added} more {object_plural}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 21,
+        "max": 69
+      },
+      "added": {
+        "kind": "int",
+        "min": 11,
+        "max": 39
+      },
+      "g": {
+        "kind": "int",
+        "min": 1,
+        "max": 5
+      },
+      "giver": {
+        "kind": "expr",
+        "expr": "g == 1 ? 'Grandpa' : g == 2 ? 'Grandma' : g == 3 ? 'Mom' : g == 4 ? 'Dad' : pal",
+        "format": "text"
+      },
+      "at": {
+        "kind": "expr",
+        "expr": "tens(added) / 10",
+        "format": "int"
+      },
+      "ao": {
+        "kind": "expr",
+        "expr": "ones(added)",
+        "format": "int"
+      },
+      "tensW": {
+        "kind": "expr",
+        "expr": "(at) == 1 ? '1 ten' : (at) + ' tens'",
+        "format": "text"
+      },
+      "onesW": {
+        "kind": "expr",
+        "expr": "(ao) == 1 ? '1 one' : (ao) + ' ones'",
+        "format": "text"
+      },
+      "hopStep": {
+        "kind": "expr",
+        "expr": "ao == 0 ? 'Hop ahead ' + tensW + '.' : 'Hop ahead ' + tensW + ', then ' + onesW + '.'",
+        "format": "text"
+      },
+      "afterTens": {
+        "kind": "expr",
+        "expr": "start + tens(added)",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "start + added",
+        "format": "int"
+      },
+      "soln2": {
+        "kind": "expr",
+        "expr": "ao == 0 ? 'There are no ones to hop, so you stay on ' + afterTens + '.' : 'Then hop ahead ' + onesW + ' to ' + total + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'trading-card' || object.id == 'sticker' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'building-brick' || object.id == 'magnetic-tile' || object.id == 'bead' || object.id == 'loom-band' || object.id == 'crayon') && sum(drop(object.count_one_kid, 1)) >= start + added",
+      "start + added <= 99",
+      "ones(start) + ones(added) < 10",
+      "start != added"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "added",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "start + added",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "abs(start - added)",
+        "mistake": "subtractedInsteadOfAdded"
+      },
+      {
+        "expr": "start + added - 1",
+        "mistake": "offByOne"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. {name} gets more, so the number of {object_plural} goes up.",
+      "steps": [
+        "Start at {start} on the number line.",
+        "{hopStep}",
+        "The number you land on is how many {object_plural} {name} has now."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "floorTen(start)",
+        "max": "min(100, floorTen(start) + 50)",
+        "mark": "start",
+        "step": "10"
+      },
+      "example": "auto",
+      "feedback": {
+        "answeredWithAGiven": "That is how many {object_plural} {name} had at the start. Add the {added} more {object_plural} too.",
+        "subtractedInsteadOfAdded": "That takes one number away from the other. {name} gets more {object_plural}, so add {start} and {added}.",
+        "offByOne": "That is one short. When you count on from {start}, start counting with the number after {start}."
+      },
+      "solution": {
+        "steps": [
+          "Start at {start}. Hop ahead {tensW} to {afterTens}.",
+          "{soln2}",
+          "{start} + {added} = {total}. {name} has {total} {object_plural} now."
+        ],
+        "answer": "start + added"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-add-to-result-regroup",
+    "blueprintId": "wp-g2-add-to-result",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "addToResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      5,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural} and {verb} {added} more {tail}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 21,
+        "max": 69
+      },
+      "added": {
+        "kind": "int",
+        "min": 11,
+        "max": 39
+      },
+      "verb": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' ? 'won' : object.id == 'trading-card' ? 'got' : object.id == 'marble' ? 'got' : object.id == 'toy-car' ? 'got' : object.id == 'building-brick' ? 'got' : object.id == 'magnetic-tile' ? 'got' : object.id == 'bead' ? 'bought' : object.id == 'loom-band' ? 'bought' : object.id == 'sticker' ? 'got' : 'got'",
+        "format": "text"
+      },
+      "tail": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' ? 'at the arcade' : object.id == 'trading-card' ? 'from ' + pal : object.id == 'marble' ? 'from ' + pal : object.id == 'toy-car' ? 'from Grandpa' : object.id == 'building-brick' ? 'as a birthday gift' : object.id == 'magnetic-tile' ? 'as a birthday gift' : object.id == 'bead' ? 'at the craft store' : object.id == 'loom-band' ? 'at the craft store' : object.id == 'sticker' ? 'from the teacher' : 'from Grandma'",
+        "format": "text"
+      },
+      "st": {
+        "kind": "expr",
+        "expr": "tens(start) / 10",
+        "format": "int"
+      },
+      "at": {
+        "kind": "expr",
+        "expr": "tens(added) / 10",
+        "format": "int"
+      },
+      "so": {
+        "kind": "expr",
+        "expr": "ones(start)",
+        "format": "int"
+      },
+      "ao": {
+        "kind": "expr",
+        "expr": "ones(added)",
+        "format": "int"
+      },
+      "stW": {
+        "kind": "expr",
+        "expr": "(st) == 1 ? '1 ten' : (st) + ' tens'",
+        "format": "text"
+      },
+      "atW": {
+        "kind": "expr",
+        "expr": "(at) == 1 ? '1 ten' : (at) + ' tens'",
+        "format": "text"
+      },
+      "soW": {
+        "kind": "expr",
+        "expr": "(so) == 1 ? '1 one' : (so) + ' ones'",
+        "format": "text"
+      },
+      "aoW": {
+        "kind": "expr",
+        "expr": "(ao) == 1 ? '1 one' : (ao) + ' ones'",
+        "format": "text"
+      },
+      "onesSum": {
+        "kind": "expr",
+        "expr": "so + ao",
+        "format": "int"
+      },
+      "onesLeftW": {
+        "kind": "expr",
+        "expr": "(so + ao - 10) == 1 ? '1 one' : (so + ao - 10) + ' ones'",
+        "format": "text"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "st + at + 1",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "start + added",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "(object.id == 'arcade-ticket' || object.id == 'trading-card' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'building-brick' || object.id == 'magnetic-tile' || object.id == 'bead' || object.id == 'loom-band' || object.id == 'sticker' || object.id == 'crayon') && sum(drop(object.count_one_kid, 1)) >= start + added",
+      "start + added <= 99",
+      "ones(start) + ones(added) >= 10",
+      "start != added"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "added",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "start + added",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + added - 10",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "start",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "abs(start - added)",
+        "mistake": "subtractedInsteadOfAdded"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. {name} got more, so add the two numbers.",
+      "steps": [
+        "Add the ones first: {soW} and {aoW}.",
+        "That is ten or more ones, so trade ten ones for one new ten.",
+        "Then add the tens: {stW}, {atW}, and the new ten."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "forgotToCarry": "That is one ten short. {soW} and {aoW} make a new ten, so add that ten to the tens.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} had before. Add the {added} more {object_plural} too.",
+        "subtractedInsteadOfAdded": "That takes one number away from the other. {name} got more {object_plural}, so add {start} and {added}."
+      },
+      "solution": {
+        "steps": [
+          "Ones: {soW} + {aoW} = {onesSum} ones. Trade ten ones for one ten, and {onesLeftW} stay.",
+          "Tens: {stW} + {atW} + 1 new ten = {tensSum} tens.",
+          "{start} + {added} = {total}. {name} has {total} {object_plural} now."
+        ],
+        "answer": "start + added"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-take-from-result-noregroup",
+    "blueprintId": "wp-g2-take-from-result",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "takeFromResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      5
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {start} {object_plural}. {name} {act} {taken} {object_plural} {tail}. How many {object_plural} does {name} have left?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 30,
+        "max": 99
+      },
+      "taken": {
+        "kind": "int",
+        "min": 11,
+        "max": 49
+      },
+      "act": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'uses' : object.id == 'loom-band' ? 'uses' : object.id == 'sticker' ? 'puts' : object.id == 'pom-pom' ? 'glues' : object.id == 'trading-card' ? 'gives' : object.id == 'marble' ? 'gives' : object.id == 'toy-car' ? 'gives' : object.id == 'crayon' ? 'gives' : 'trades'",
+        "format": "text"
+      },
+      "tail": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'to make a bracelet' : object.id == 'loom-band' ? 'to make bracelets' : object.id == 'sticker' ? 'on thank-you cards' : object.id == 'pom-pom' ? 'onto a poster' : object.id == 'trading-card' ? 'to ' + pal : object.id == 'marble' ? 'to ' + pal : object.id == 'toy-car' ? 'to ' + pal : object.id == 'crayon' ? 'to ' + pal : 'for a prize'",
+        "format": "text"
+      },
+      "gone": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'used' : object.id == 'loom-band' ? 'used' : object.id == 'sticker' ? 'put on cards' : object.id == 'pom-pom' ? 'glued on' : object.id == 'trading-card' ? 'gave away' : object.id == 'marble' ? 'gave away' : object.id == 'toy-car' ? 'gave away' : object.id == 'crayon' ? 'gave away' : 'traded'",
+        "format": "text"
+      },
+      "tt": {
+        "kind": "expr",
+        "expr": "tens(taken) / 10",
+        "format": "int"
+      },
+      "to": {
+        "kind": "expr",
+        "expr": "ones(taken)",
+        "format": "int"
+      },
+      "ttW": {
+        "kind": "expr",
+        "expr": "(tt) == 1 ? '1 ten' : (tt) + ' tens'",
+        "format": "text"
+      },
+      "toW": {
+        "kind": "expr",
+        "expr": "(to) == 1 ? '1 one' : (to) + ' ones'",
+        "format": "text"
+      },
+      "hopStep": {
+        "kind": "expr",
+        "expr": "to == 0 ? 'Hop back ' + ttW + '.' : 'Hop back ' + ttW + ', then ' + toW + '.'",
+        "format": "text"
+      },
+      "afterTens": {
+        "kind": "expr",
+        "expr": "start - tens(taken)",
+        "format": "int"
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - taken",
+        "format": "int"
+      },
+      "soln2": {
+        "kind": "expr",
+        "expr": "to == 0 ? 'There are no ones to hop, so you stay on ' + afterTens + '.' : 'Then hop back ' + toW + ' to ' + left + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'bead' || object.id == 'loom-band' || object.id == 'sticker' || object.id == 'pom-pom' || object.id == 'trading-card' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'crayon' || object.id == 'arcade-ticket') && sum(drop(object.count_one_kid, 1)) >= start",
+      "start - taken >= 5",
+      "ones(start) >= ones(taken)",
+      "start != 2 * taken",
+      "start - taken + 1 != taken",
+      "start - taken >= 10 || (start - taken != tt && start - taken != to)"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "taken",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start - taken",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + taken",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "taken",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "start - taken + 1",
+        "mistake": "offByOne"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has left. Some {object_plural} are gone, so take them away.",
+      "steps": [
+        "Start at {start} on the number line.",
+        "{hopStep}",
+        "The number you land on is how many {object_plural} {name} has left."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "max(0, nextTen(start) - 60)",
+        "max": "nextTen(start)",
+        "mark": "start",
+        "step": "10"
+      },
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds the two numbers. {name} has fewer {object_plural} after this, so take {taken} away from {start}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} {gone}. The question asks how many {object_plural} are left.",
+        "offByOne": "That is one too many. When you count back, do not count {start} itself."
+      },
+      "solution": {
+        "steps": [
+          "Start at {start}. Hop back {ttW} to {afterTens}.",
+          "{soln2}",
+          "{start} − {taken} = {left}. {name} has {left} {object_plural} left."
+        ],
+        "answer": "start - taken"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-take-from-result-regroup",
+    "blueprintId": "wp-g2-take-from-result",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "takeFromResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      5,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} puts {start} {object_plural} in a bowl for a party. The kids eat {taken} {object_plural}. How many {object_plural} are left in the bowl?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "food-treats"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 30,
+        "max": 99
+      },
+      "taken": {
+        "kind": "int",
+        "min": 11,
+        "max": 49
+      },
+      "st": {
+        "kind": "expr",
+        "expr": "tens(start) / 10",
+        "format": "int"
+      },
+      "so": {
+        "kind": "expr",
+        "expr": "ones(start)",
+        "format": "int"
+      },
+      "tt": {
+        "kind": "expr",
+        "expr": "tens(taken) / 10",
+        "format": "int"
+      },
+      "to": {
+        "kind": "expr",
+        "expr": "ones(taken)",
+        "format": "int"
+      },
+      "stW": {
+        "kind": "expr",
+        "expr": "(st) == 1 ? '1 ten' : (st) + ' tens'",
+        "format": "text"
+      },
+      "soW": {
+        "kind": "expr",
+        "expr": "(so) == 1 ? '1 one' : (so) + ' ones'",
+        "format": "text"
+      },
+      "ttW": {
+        "kind": "expr",
+        "expr": "(tt) == 1 ? '1 ten' : (tt) + ' tens'",
+        "format": "text"
+      },
+      "toW": {
+        "kind": "expr",
+        "expr": "(to) == 1 ? '1 one' : (to) + ' ones'",
+        "format": "text"
+      },
+      "stM1": {
+        "kind": "expr",
+        "expr": "st - 1",
+        "format": "int"
+      },
+      "stM1W": {
+        "kind": "expr",
+        "expr": "(st - 1) == 1 ? '1 ten' : (st - 1) + ' tens'",
+        "format": "text"
+      },
+      "soP10": {
+        "kind": "expr",
+        "expr": "so + 10",
+        "format": "int"
+      },
+      "lo": {
+        "kind": "expr",
+        "expr": "so + 10 - to",
+        "format": "int"
+      },
+      "lt": {
+        "kind": "expr",
+        "expr": "st - 1 - tt",
+        "format": "int"
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - taken",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "(object.id == 'grape' || object.id == 'pretzel' || object.id == 'cracker' || object.id == 'gummy-bear' || object.id == 'jelly-bean' || object.id == 'piece-of-candy') && sum(drop(object.count_group, 1)) >= start",
+      "start - taken >= 5",
+      "ones(start) < ones(taken)",
+      "ones(start) != 0",
+      "ones(taken) - ones(start) != 5",
+      "start != 2 * taken",
+      "start - taken >= 10 || (start - taken != st && start - taken != so && start - taken != tt && start - taken != to)"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "taken",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start - taken",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "tens(start) - tens(taken) + ones(taken) - ones(start)",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "start - taken + 10",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "start + taken",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} are left in the bowl. The kids ate some, so take them away.",
+      "steps": [
+        "{start} is {stW} and {soW}.",
+        "You cannot take {toW} from {soW}, so trade one ten for ten ones first.",
+        "Then take away {toW} and {ttW}."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "smallerFromLarger": "That takes {so} from {to} in the ones place. You have to take {toW} away from {soW}, so trade one ten for ten ones first.",
+        "offByTen": "That is ten too many. After you trade a ten for ten ones, there is one fewer ten.",
+        "addedInsteadOfSubtracted": "That adds the two numbers. The kids ate some {object_plural}, so take {taken} away from {start}."
+      },
+      "solution": {
+        "steps": [
+          "Trade one ten for ten ones: {start} is {stM1W} and {soP10} ones.",
+          "Ones: {soP10} − {to} = {lo}. Tens: {stM1} − {tt} = {lt}.",
+          "{start} − {taken} = {left}. There are {left} {object_plural} left in the bowl."
+        ],
+        "answer": "start - taken"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-take-from-result-acrosszero",
+    "blueprintId": "wp-g2-take-from-result",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "takeFromResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      5,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural} and {act} {taken} of them {tail}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "tensStart": {
+        "kind": "int",
+        "min": 3,
+        "max": 9
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "tensStart * 10",
+        "format": "int"
+      },
+      "taken": {
+        "kind": "int",
+        "min": 11,
+        "max": 49
+      },
+      "act": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'used' : object.id == 'loom-band' ? 'used' : object.id == 'sticker' ? 'put' : object.id == 'pom-pom' ? 'glued' : object.id == 'trading-card' ? 'gave' : object.id == 'marble' ? 'gave' : object.id == 'toy-car' ? 'gave' : object.id == 'crayon' ? 'gave' : 'traded'",
+        "format": "text"
+      },
+      "tail": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'to make a bracelet' : object.id == 'loom-band' ? 'to make bracelets' : object.id == 'sticker' ? 'on thank-you cards' : object.id == 'pom-pom' ? 'onto a poster' : object.id == 'trading-card' ? 'to ' + pal : object.id == 'marble' ? 'to ' + pal : object.id == 'toy-car' ? 'to ' + pal : object.id == 'crayon' ? 'to ' + pal : 'for a prize'",
+        "format": "text"
+      },
+      "st": {
+        "kind": "expr",
+        "expr": "tens(start) / 10",
+        "format": "int"
+      },
+      "so": {
+        "kind": "expr",
+        "expr": "ones(start)",
+        "format": "int"
+      },
+      "tt": {
+        "kind": "expr",
+        "expr": "tens(taken) / 10",
+        "format": "int"
+      },
+      "to": {
+        "kind": "expr",
+        "expr": "ones(taken)",
+        "format": "int"
+      },
+      "stW": {
+        "kind": "expr",
+        "expr": "(st) == 1 ? '1 ten' : (st) + ' tens'",
+        "format": "text"
+      },
+      "soW": {
+        "kind": "expr",
+        "expr": "(so) == 1 ? '1 one' : (so) + ' ones'",
+        "format": "text"
+      },
+      "ttW": {
+        "kind": "expr",
+        "expr": "(tt) == 1 ? '1 ten' : (tt) + ' tens'",
+        "format": "text"
+      },
+      "toW": {
+        "kind": "expr",
+        "expr": "(to) == 1 ? '1 one' : (to) + ' ones'",
+        "format": "text"
+      },
+      "stM1": {
+        "kind": "expr",
+        "expr": "st - 1",
+        "format": "int"
+      },
+      "stM1W": {
+        "kind": "expr",
+        "expr": "(st - 1) == 1 ? '1 ten' : (st - 1) + ' tens'",
+        "format": "text"
+      },
+      "soP10": {
+        "kind": "expr",
+        "expr": "so + 10",
+        "format": "int"
+      },
+      "lo": {
+        "kind": "expr",
+        "expr": "so + 10 - to",
+        "format": "int"
+      },
+      "lt": {
+        "kind": "expr",
+        "expr": "st - 1 - tt",
+        "format": "int"
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - taken",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "(object.id == 'bead' || object.id == 'loom-band' || object.id == 'sticker' || object.id == 'pom-pom' || object.id == 'trading-card' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'crayon' || object.id == 'arcade-ticket') && sum(drop(object.count_one_kid, 1)) >= start",
+      "start - taken >= 5",
+      "ones(taken) != 0",
+      "ones(taken) != 5",
+      "start - taken >= 10 || (start - taken != st && start - taken != so && start - taken != tt && start - taken != to)"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "taken",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start - taken",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "tens(start) - tens(taken) + ones(taken)",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "start - taken + 10",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "start + taken",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. {name} {act} some {tail}, so take them away.",
+      "steps": [
+        "{start} is {stW} and no ones.",
+        "To take away {toW}, trade one ten for ten ones first.",
+        "Then take away {toW} and {ttW}."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "smallerFromLarger": "That takes zero from {to} in the ones place. You have to take {toW} away from zero ones, so trade one ten for ten ones first.",
+        "offByTen": "That is ten too many. After you trade a ten for ten ones, there is one fewer ten.",
+        "addedInsteadOfSubtracted": "That adds the two numbers. {name} has fewer {object_plural} now, so take {taken} away from {start}."
+      },
+      "solution": {
+        "steps": [
+          "Trade one ten for ten ones: {start} is {stM1W} and 10 ones.",
+          "Ones: 10 − {to} = {lo}. Tens: {stM1} − {tt} = {lt}.",
+          "{start} − {taken} = {left}. {name} has {left} {object_plural} now."
+        ],
+        "answer": "start - taken"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-add-to-change",
+    "blueprintId": "wp-g2-add-to-change",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "addToChangeUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural}. {name} got some more {object_plural} {source}. Now {name} has {end} {object_plural}. How many {object_plural} did {name} get?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 11,
+        "max": 79
+      },
+      "change": {
+        "kind": "int",
+        "min": 5,
+        "max": 49
+      },
+      "rg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "s": {
+        "kind": "int",
+        "min": 1,
+        "max": 4
+      },
+      "source": {
+        "kind": "expr",
+        "expr": "s == 1 ? 'from ' + pal : s == 2 ? 'from Grandma' : s == 3 ? 'from Grandpa' : 'from a cousin'",
+        "format": "text"
+      },
+      "end": {
+        "kind": "expr",
+        "expr": "start + change",
+        "format": "int"
+      },
+      "plan": {
+        "kind": "expr",
+        "expr": "tens(start) == tens(start + change) ? 'Hop by ones up to ' + (start + change) + '.' : nextTen(start) == (start + change) ? 'Hop up to the next ten, ' + (start + change) + '.' : ones(start) == 0 ? 'Hop by tens, then by ones, up to ' + (start + change) + '.' : 'Hop to the next ten first. Then keep hopping up to ' + (start + change) + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'trading-card' || object.id == 'sticker' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'building-brick' || object.id == 'magnetic-tile' || object.id == 'bead' || object.id == 'loom-band' || object.id == 'crayon') && sum(drop(object.count_one_kid, 1)) >= start + change",
+      "start + change <= 99",
+      "rg == 1 ? ones(start) + ones(change) >= 10 : ones(start) + ones(change) < 10",
+      "change != start"
+    ],
+    "operation": {
+      "a": "end",
+      "b": "start",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "change",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + end",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "end",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "change + 1",
+        "mistake": "offByOne"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} got. Count up from how many {name} had to how many {name} has now.",
+      "steps": [
+        "Start at {start} on the number line.",
+        "{plan}",
+        "Add up your hops. That is how many {object_plural} {name} got."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "floorTen(start)",
+        "max": "nextTen(end)",
+        "mark": "start",
+        "step": "nextTen(end) - floorTen(start) <= 40 ? 5 : 10"
+      },
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds {start} and {end}. {name} has {end} {object_plural} in all now, so count up from {start} to {end} instead.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} has now. The question asks how many more {object_plural} {name} got.",
+        "offByOne": "That is one too many. When you count up from {start}, do not count {start} itself."
+      },
+      "solution": {
+        "steps": [
+          "Count up from {start} to {end}.",
+          "{start} + {change} = {end}, so {end} − {start} = {change}.",
+          "{name} got {change} {object_plural}."
+        ],
+        "answer": "change"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-take-from-change",
+    "blueprintId": "wp-g2-take-from-change",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "takeFromChangeUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural} and {act} some {tail}. Now {name} has {end} {object_plural}. How many {object_plural} did {name} {base}{qTail}?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "end": {
+        "kind": "int",
+        "min": 11,
+        "max": 69
+      },
+      "change": {
+        "kind": "int",
+        "min": 5,
+        "max": 49
+      },
+      "rg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "act": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'used' : object.id == 'loom-band' ? 'used' : object.id == 'sticker' ? 'put' : object.id == 'pom-pom' ? 'glued' : object.id == 'trading-card' ? 'gave' : object.id == 'marble' ? 'gave' : object.id == 'toy-car' ? 'gave' : object.id == 'crayon' ? 'gave' : 'traded'",
+        "format": "text"
+      },
+      "tail": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'to make a bracelet' : object.id == 'loom-band' ? 'to make bracelets' : object.id == 'sticker' ? 'on thank-you cards' : object.id == 'pom-pom' ? 'onto a poster' : object.id == 'trading-card' ? 'to ' + pal : object.id == 'marble' ? 'to ' + pal : object.id == 'toy-car' ? 'to ' + pal : object.id == 'crayon' ? 'to ' + pal : 'for a prize'",
+        "format": "text"
+      },
+      "base": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'use' : object.id == 'loom-band' ? 'use' : object.id == 'sticker' ? 'put' : object.id == 'pom-pom' ? 'glue' : object.id == 'trading-card' ? 'give' : object.id == 'marble' ? 'give' : object.id == 'toy-car' ? 'give' : object.id == 'crayon' ? 'give' : 'trade'",
+        "format": "text"
+      },
+      "qTail": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? '' : object.id == 'loom-band' ? '' : object.id == 'sticker' ? ' on the cards' : object.id == 'pom-pom' ? ' onto the poster' : object.id == 'trading-card' ? ' to ' + pal : object.id == 'marble' ? ' to ' + pal : object.id == 'toy-car' ? ' to ' + pal : object.id == 'crayon' ? ' to ' + pal : ' for the prize'",
+        "format": "text"
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "end + change",
+        "format": "int"
+      },
+      "plan": {
+        "kind": "expr",
+        "expr": "tens(end) == tens(end + change) ? 'Hop by ones up to ' + (end + change) + '.' : nextTen(end) == (end + change) ? 'Hop up to the next ten, ' + (end + change) + '.' : ones(end) == 0 ? 'Hop by tens, then by ones, up to ' + (end + change) + '.' : 'Hop to the next ten first. Then keep hopping up to ' + (end + change) + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'bead' || object.id == 'loom-band' || object.id == 'sticker' || object.id == 'pom-pom' || object.id == 'trading-card' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'crayon' || object.id == 'arcade-ticket') && sum(drop(object.count_one_kid, 1)) >= end + change",
+      "end + change >= 30",
+      "end + change <= 99",
+      "rg == 1 ? ones(end) + ones(change) >= 10 : ones(end) + ones(change) < 10",
+      "change != end"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "end",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "change",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + end",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "end",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "change + 1",
+        "mistake": "offByOne"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} are gone. {name} had {start} at the start and has {end} now.",
+      "steps": [
+        "Start at {end} on the number line.",
+        "{plan}",
+        "Add up your hops. That is how many {object_plural} are gone."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "floorTen(end)",
+        "max": "nextTen(start)",
+        "mark": "end",
+        "step": "nextTen(start) - floorTen(end) <= 40 ? 5 : 10"
+      },
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds {start} and {end}. {name} has fewer {object_plural} now, so find how far it is from {end} up to {start}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} has now. The question asks how many {object_plural} are gone.",
+        "offByOne": "That is one too many. When you count up from {end}, do not count {end} itself."
+      },
+      "solution": {
+        "steps": [
+          "Count up from {end} to {start}.",
+          "{end} + {change} = {start}, so {start} − {end} = {change}.",
+          "{name} {act} {change} {object_plural}{qTail}."
+        ],
+        "answer": "change"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-add-to-start",
+    "blueprintId": "wp-g2-add-to-start",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "addToStartUnknown",
+    "grade": "2",
+    "levelRange": [
+      5,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had some {object_plural}. Then {name} got {change} more {object_plural} {source}. Now {name} has {end} {object_plural}. How many {object_plural} did {name} have at first?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 11,
+        "max": 94
+      },
+      "change": {
+        "kind": "int",
+        "min": 5,
+        "max": 39
+      },
+      "rg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "s": {
+        "kind": "int",
+        "min": 1,
+        "max": 4
+      },
+      "source": {
+        "kind": "expr",
+        "expr": "s == 1 ? 'as a birthday gift' : s == 2 ? 'from ' + pal : s == 3 ? 'from Grandpa' : 'from an older cousin'",
+        "format": "text"
+      },
+      "end": {
+        "kind": "expr",
+        "expr": "start + change",
+        "format": "int"
+      },
+      "eo": {
+        "kind": "expr",
+        "expr": "ones(start + change)",
+        "format": "int"
+      },
+      "co": {
+        "kind": "expr",
+        "expr": "ones(change)",
+        "format": "int"
+      },
+      "eoW": {
+        "kind": "expr",
+        "expr": "(eo) == 1 ? '1 one' : (eo) + ' ones'",
+        "format": "text"
+      },
+      "coW": {
+        "kind": "expr",
+        "expr": "(co) == 1 ? '1 one' : (co) + ' ones'",
+        "format": "text"
+      },
+      "onesStep": {
+        "kind": "expr",
+        "expr": "co > eo ? 'You cannot take ' + coW + ' from ' + eoW + ', so trade one ten for ten ones first.' : 'There are enough ones, so take away the ones, then the tens.'",
+        "format": "text"
+      },
+      "solnStep": {
+        "kind": "expr",
+        "expr": "co > eo ? 'Trade one ten for ten ones, then subtract: ' : 'Take away the ones, then the tens: '",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'trading-card' || object.id == 'sticker' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'building-brick' || object.id == 'magnetic-tile' || object.id == 'bead' || object.id == 'loom-band' || object.id == 'crayon') && sum(drop(object.count_one_kid, 1)) >= start + change",
+      "start + change >= 30",
+      "start + change <= 99",
+      "rg == 1 ? ones(start) + ones(change) >= 10 : ones(start) + ones(change) < 10",
+      "start != change",
+      "ones(start) + ones(change) < 10 || tens(start + change) - tens(change) + ones(change) - ones(start + change) != start + change"
+    ],
+    "operation": {
+      "a": "end",
+      "b": "change",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "end + change",
+        "mistake": "startAsResult"
+      },
+      {
+        "expr": "end",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "tens(end) - tens(change) + ones(change) - ones(end)",
+        "mistake": "smallerFromLarger",
+        "when": "ones(change) > ones(end)"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} had before getting more. Take the {change} new {object_plural} away from the {end}.",
+      "steps": [
+        "{name} has {end} {object_plural} now, and {change} of them are new.",
+        "Take the new {object_plural} away: {end} − {change}.",
+        "{onesStep}"
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "max(0, nextTen(end) - 50)",
+        "max": "nextTen(end)",
+        "mark": "end",
+        "step": "10"
+      },
+      "example": "auto",
+      "feedback": {
+        "startAsResult": "That adds {end} and {change}. The {end} already counts the new {object_plural}, so take {change} away from {end}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} has now. At first {name} had fewer, before getting {change} more.",
+        "smallerFromLarger": "That takes {eo} from {co} in the ones place. You have to take {coW} away from {eoW}, so trade one ten for ten ones first."
+      },
+      "solution": {
+        "steps": [
+          "The story is ? + {change} = {end}. Take {change} away from {end} to find the start.",
+          "{solnStep}{end} − {change} = {start}.",
+          "{name} had {start} {object_plural} at first."
+        ],
+        "answer": "start"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-take-from-start",
+    "blueprintId": "wp-g2-take-from-start",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "takeFromStartUnknown",
+    "grade": "2",
+    "levelRange": [
+      5,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had some {object_plural}. After {name} {act} {taken} {object_plural} {tail}, {name} had {left} {object_plural} left. How many {object_plural} did {name} have at first?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "taken": {
+        "kind": "int",
+        "min": 5,
+        "max": 39
+      },
+      "left": {
+        "kind": "int",
+        "min": 11,
+        "max": 59
+      },
+      "rg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "act": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'used' : object.id == 'loom-band' ? 'used' : object.id == 'sticker' ? 'put' : object.id == 'pom-pom' ? 'glued' : object.id == 'trading-card' ? 'gave' : object.id == 'marble' ? 'gave' : object.id == 'toy-car' ? 'gave' : object.id == 'crayon' ? 'gave' : 'traded'",
+        "format": "text"
+      },
+      "tail": {
+        "kind": "expr",
+        "expr": "object.id == 'bead' ? 'to make a bracelet' : object.id == 'loom-band' ? 'to make bracelets' : object.id == 'sticker' ? 'on thank-you cards' : object.id == 'pom-pom' ? 'onto a poster' : object.id == 'trading-card' ? 'to ' + pal : object.id == 'marble' ? 'to ' + pal : object.id == 'toy-car' ? 'to ' + pal : object.id == 'crayon' ? 'to ' + pal : 'for a prize'",
+        "format": "text"
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "taken + left",
+        "format": "int"
+      },
+      "carryStep": {
+        "kind": "expr",
+        "expr": "ones(taken) + ones(left) >= 10 ? 'Add the ones first, and watch for a new ten.' : 'Add the ones, then add the tens.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'bead' || object.id == 'loom-band' || object.id == 'sticker' || object.id == 'pom-pom' || object.id == 'trading-card' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'crayon' || object.id == 'arcade-ticket') && sum(drop(object.count_one_kid, 1)) >= taken + left",
+      "taken + left <= 99",
+      "rg == 1 ? ones(taken) + ones(left) >= 10 : ones(taken) + ones(left) < 10",
+      "taken != left",
+      "taken != 2 * left",
+      "ones(taken) + ones(left) < 10 || taken != 5"
+    ],
+    "operation": {
+      "a": "taken",
+      "b": "left",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "taken + left",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "abs(left - taken)",
+        "mistake": "keywordTrap"
+      },
+      {
+        "expr": "left",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "taken + left - 10",
+        "mistake": "forgotToCarry",
+        "when": "ones(taken) + ones(left) >= 10",
+        "otherwise": {
+          "expr": "taken + left + 10",
+          "mistake": "offByTen"
+        }
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} had at first. Put the {object_plural} that are gone back with the {object_plural} that are left.",
+      "steps": [
+        "{taken} {object_plural} are gone, and {left} {object_plural} are left.",
+        "At first, {name} had both groups together.",
+        "Add {taken} and {left}. {carryStep}"
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "floorTen(left)",
+        "max": "min(100, floorTen(left) + 50)",
+        "mark": "left",
+        "step": "10"
+      },
+      "example": "auto",
+      "feedback": {
+        "keywordTrap": "That takes one number away from the other. The {taken} {object_plural} are already gone, so put them back: add {taken} and {left}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} had left. At first {name} also had the {taken} {object_plural} that are gone.",
+        "forgotToCarry": "That is one ten short. The ones make a new ten, so add it to the tens.",
+        "offByTen": "That is ten too many. Add the tens again, and count each ten only once."
+      },
+      "solution": {
+        "steps": [
+          "At first, {name} had the {object_plural} that are gone and the {object_plural} that are left.",
+          "{taken} + {left} = {start}.",
+          "{name} had {start} {object_plural} at first."
+        ],
+        "answer": "taken + left"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-picture-tens-ones",
+    "blueprintId": "wp-g2-picture-tens-ones",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "addToResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      5,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows {name}'s {object_plural} in tens and ones. {name} gets {added} more {object_plural} {source}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "pal": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "tensA": {
+        "kind": "int",
+        "min": 2,
+        "max": 5
+      },
+      "onesA": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "added": {
+        "kind": "int",
+        "min": 5,
+        "max": 39
+      },
+      "s": {
+        "kind": "int",
+        "min": 1,
+        "max": 3
+      },
+      "source": {
+        "kind": "expr",
+        "expr": "s == 1 ? 'from ' + pal : s == 2 ? 'from Grandma' : 'from Grandpa'",
+        "format": "text"
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "tensA * 10 + onesA",
+        "format": "int"
+      },
+      "ao": {
+        "kind": "expr",
+        "expr": "ones(added)",
+        "format": "int"
+      },
+      "tensAW": {
+        "kind": "expr",
+        "expr": "(tensA) == 1 ? '1 ten' : (tensA) + ' tens'",
+        "format": "text"
+      },
+      "onesAW": {
+        "kind": "expr",
+        "expr": "(onesA) == 1 ? '1 one' : (onesA) + ' ones'",
+        "format": "text"
+      },
+      "onesSum": {
+        "kind": "expr",
+        "expr": "onesA + ones(added)",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "tensA * 10 + onesA + added",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "(object.id == 'trading-card' || object.id == 'sticker' || object.id == 'marble' || object.id == 'toy-car' || object.id == 'building-brick' || object.id == 'magnetic-tile' || object.id == 'bead' || object.id == 'loom-band' || object.id == 'crayon') && sum(drop(object.count_one_kid, 1)) >= tensA * 10 + onesA + added",
+      "tensA * 10 + onesA >= 21",
+      "tensA * 10 + onesA + added <= 99",
+      "onesA + ones(added) >= 10",
+      "added != 9 * tensA"
+    ],
+    "operation": {
+      "op": "+"
+    },
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "cols": [
+          {
+            "place": 10,
+            "count": "tensA"
+          },
+          {
+            "place": 1,
+            "count": "onesA"
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "tensA * 10 + onesA + added",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "tensA + onesA + added",
+        "mistake": "countedRodsAsOnes"
+      },
+      {
+        "expr": "tensA * 10 + onesA + added - 10",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "tensA * 10 + onesA",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. Read the mat first, then add the {added} more.",
+      "steps": [
+        "A disc marked 10 stands for ten {object_plural}. A disc marked 1 stands for one.",
+        "The mat shows {tensAW} and {onesAW}.",
+        "Add {added} more. The ones make a new ten, so trade ten ones for one ten."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "countedRodsAsOnes": "That counts each ten disc as just one. A disc marked 10 stands for ten {object_plural}, so count those discs by tens.",
+        "forgotToCarry": "That is one ten short. The ones made a new ten, so add it to the tens.",
+        "answeredWithAGiven": "That is how many {object_plural} the mat shows. {name} gets {added} more, so add them."
+      },
+      "solution": {
+        "steps": [
+          "The mat shows {tensAW} and {onesAW}, which is {start} {object_plural}.",
+          "Ones: {onesA} + {ao} = {onesSum}. Trade ten ones for one ten.",
+          "{start} + {added} = {total}. {name} has {total} {object_plural} now."
+        ],
+        "answer": "tensA * 10 + onesA + added"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-tape-missing-part",
+    "blueprintId": "wp-g2-tape-missing-part",
+    "modeId": "wordProblems",
+    "subskill": "changeStories",
+    "family": "application",
+    "structureType": "addToChangeUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "barModel",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {part} {object_plural} in a {box}. Then {name} put some more in. Now the {box} has {whole} {object_plural}. How many {object_plural} did {name} put in the {box}?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "part": {
+        "kind": "int",
+        "min": 11,
+        "max": 69
+      },
+      "miss": {
+        "kind": "int",
+        "min": 11,
+        "max": 49
+      },
+      "box": {
+        "kind": "expr",
+        "expr": "object.id == 'marble' ? 'jar' : object.id == 'bead' ? 'jar' : object.id == 'button' ? 'jar' : object.id == 'pom-pom' ? 'jar' : object.id == 'loom-band' ? 'box' : object.id == 'crayon' ? 'box' : object.id == 'building-brick' ? 'bin' : object.id == 'toy-car' ? 'bin' : object.id == 'magnetic-tile' ? 'bin' : 'binder'",
+        "format": "text"
+      },
+      "whole": {
+        "kind": "expr",
+        "expr": "part + miss",
+        "format": "int"
+      },
+      "plan": {
+        "kind": "expr",
+        "expr": "tens(part) == tens(part + miss) ? 'Hop by ones up to ' + (part + miss) + '.' : nextTen(part) == (part + miss) ? 'Hop up to the next ten, ' + (part + miss) + '.' : ones(part) == 0 ? 'Hop by tens, then by ones, up to ' + (part + miss) + '.' : 'Hop to the next ten first. Then keep hopping up to ' + (part + miss) + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(object.id == 'marble' || object.id == 'bead' || object.id == 'button' || object.id == 'pom-pom' || object.id == 'loom-band' || object.id == 'crayon' || object.id == 'building-brick' || object.id == 'toy-car' || object.id == 'magnetic-tile' || object.id == 'trading-card') && sum(drop(object.count_one_kid, 1)) >= part + miss",
+      "part + miss >= 30",
+      "part + miss <= 99",
+      "ones(part) + ones(miss) < 10",
+      "miss != part"
+    ],
+    "operation": {
+      "a": "whole",
+      "b": "part",
+      "op": "-"
+    },
+    "display": {
+      "type": "'barPartWhole'",
+      "whole": "whole",
+      "part": "part"
+    },
+    "answer": {
+      "expr": "miss",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "whole + part",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "whole",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "miss + 1",
+        "mistake": "offByOne"
+      }
+    ],
+    "hint": {
+      "nudge": "The tape diagram shows the whole, {whole}, and one part, {part}. The question asks for the missing part.",
+      "steps": [
+        "The whole bar is the {whole} {object_plural} in the {box} now.",
+        "One part is the {part} {object_plural} {name} had. The other part is what {name} put in.",
+        "Start at {part} on the number line. {plan}",
+        "Your hops add up to the missing part."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "floorTen(part)",
+        "max": "nextTen(whole)",
+        "mark": "part",
+        "step": "nextTen(whole) - floorTen(part) <= 40 ? 5 : 10"
+      },
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds the whole and the part. {whole} is already the whole, so take {part} away from {whole}.",
+        "answeredWithAGiven": "That is the whole. The question asks for the missing part: how many {object_plural} {name} put in.",
+        "offByOne": "That is one too many. When you count up from {part}, do not count {part} itself."
+      },
+      "solution": {
+        "steps": [
+          "The missing part is the whole take away the part you know.",
+          "{whole} − {part} = {miss}.",
+          "{name} put {miss} {object_plural} in the {box}."
+        ],
+        "answer": "miss"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1 (Table 1: add to, take from)",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1640 @@
+[
+  {
+    "id": "wp-g2-both-parts-unknown",
+    "blueprintId": "wp-g2-both-parts-unknown",
+    "modeId": "wordProblems",
+    "subskill": "partWholeStories",
+    "family": "conceptual",
+    "structureType": "bothAddendsUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "easy",
+    "format": "choice",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {total} {object_plural}. {name} puts some in {placeA} and the rest in {placeB}. Which shows how many {object_plural} could be in {theA} and in {theB}?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art",
+          "collecting-nature"
+        ]
+      },
+      "t1": {
+        "kind": "int",
+        "min": 0,
+        "max": 6
+      },
+      "t2": {
+        "kind": "int",
+        "min": 0,
+        "max": 6
+      },
+      "o1": {
+        "kind": "int",
+        "min": 0,
+        "max": 8
+      },
+      "oPick": {
+        "kind": "int",
+        "min": 0,
+        "max": 8
+      },
+      "o2": {
+        "kind": "expr",
+        "expr": "oPick % (9 - o1)",
+        "format": "int"
+      },
+      "p1": {
+        "kind": "expr",
+        "expr": "10 * t1 + o1",
+        "format": "int"
+      },
+      "p2": {
+        "kind": "expr",
+        "expr": "10 * t2 + o2",
+        "format": "int"
+      },
+      "place": {
+        "kind": "int",
+        "min": 0,
+        "max": 3
+      },
+      "kTenPick": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "sPick": {
+        "kind": "int",
+        "min": 0,
+        "max": 8
+      },
+      "kOnePick": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "kTot": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "p1 + p2",
+        "format": "int"
+      },
+      "placeA": {
+        "kind": "expr",
+        "expr": "place == 0 ? 'a red box' : place == 1 ? 'a red bin' : place == 2 ? 'a bag' : 'a big tub'",
+        "format": "text"
+      },
+      "placeB": {
+        "kind": "expr",
+        "expr": "place == 0 ? 'a blue box' : place == 1 ? 'a blue bin' : place == 2 ? 'a basket' : 'a small tub'",
+        "format": "text"
+      },
+      "theA": {
+        "kind": "expr",
+        "expr": "place == 0 ? 'the red box' : place == 1 ? 'the red bin' : place == 2 ? 'the bag' : 'the big tub'",
+        "format": "text"
+      },
+      "theB": {
+        "kind": "expr",
+        "expr": "place == 0 ? 'the blue box' : place == 1 ? 'the blue bin' : place == 2 ? 'the basket' : 'the small tub'",
+        "format": "text"
+      },
+      "kTen": {
+        "kind": "expr",
+        "expr": "kTenPick == 1 ? (o2 >= 1 ? 1 : 0) : (o1 >= 1 ? 0 : 1)",
+        "format": "int"
+      },
+      "sTen": {
+        "kind": "expr",
+        "expr": "kTen == 1 ? 1 + sPick % max(1, o2) : 1 + sPick % max(1, o1)",
+        "format": "int"
+      },
+      "tenA": {
+        "kind": "expr",
+        "expr": "kTen == 0 ? p1 - sTen : p1 + sTen",
+        "format": "int"
+      },
+      "tenB": {
+        "kind": "expr",
+        "expr": "kTen == 0 ? p2 - 10 + sTen : p2 + 10 - sTen",
+        "format": "int"
+      },
+      "kOne": {
+        "kind": "expr",
+        "expr": "o2 == 0 ? 1 : (o1 == 0 ? 0 : kOnePick)",
+        "format": "int"
+      },
+      "oneA": {
+        "kind": "expr",
+        "expr": "kOne == 0 ? p1 + 2 : p1 - 1",
+        "format": "int"
+      },
+      "oneB": {
+        "kind": "expr",
+        "expr": "kOne == 0 ? p2 - 1 : p2 + 2",
+        "format": "int"
+      },
+      "keyPair": {
+        "kind": "expr",
+        "expr": "p1 + ' and ' + p2",
+        "format": "text"
+      },
+      "tenPair": {
+        "kind": "expr",
+        "expr": "tenA + ' and ' + tenB",
+        "format": "text"
+      },
+      "onePair": {
+        "kind": "expr",
+        "expr": "oneA + ' and ' + oneB",
+        "format": "text"
+      },
+      "totPair": {
+        "kind": "expr",
+        "expr": "kTot == 0 ? p1 + ' and ' + total : total + ' and ' + p2",
+        "format": "text"
+      },
+      "sumTen": {
+        "kind": "expr",
+        "expr": "kTen == 0 ? total - 10 : total + 10",
+        "format": "int"
+      },
+      "sumOne": {
+        "kind": "expr",
+        "expr": "total + 1",
+        "format": "int"
+      },
+      "tenWord": {
+        "kind": "expr",
+        "expr": "kTen == 0 ? 'ten less' : 'ten more'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "o1 + o2 >= 1",
+      "p1 >= 5 && p2 >= 5",
+      "total >= 20",
+      "total <= 99",
+      "ones(p1) + ones(p2) <= 9",
+      "ones(tenA) + ones(tenB) <= 9",
+      "ones(oneA) + ones(oneB) <= 9",
+      "tenA >= 5 && tenB >= 5 && oneA >= 5 && oneB >= 5",
+      "tenA != p1 && tenA != p2 && tenB != p1 && tenB != p2",
+      "oneA != p2 && oneB != p1",
+      "p1 != p2",
+      "p1 != 10",
+      "p2 != 10",
+      "object.id == 'marble' || object.id == 'bead' || object.id == 'button' || object.id == 'seashell' || object.id == 'acorn' || object.id == 'smooth-rock' || object.id == 'toy-car' || object.id == 'crayon' || object.id == 'pom-pom' || object.id == 'building-brick' || object.id == 'snap-cube' || object.id == 'trading-card' || object.id == 'gemstone' || object.id == 'domino' || object.id == 'magnetic-tile' || object.id == 'loom-band'",
+      "object.count_one_kid != null && total <= sum(drop(object.count_one_kid, 1))"
+    ],
+    "answer": {
+      "expr": "keyPair",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "tenPair",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "onePair",
+        "mistake": "offByOne"
+      },
+      {
+        "expr": "totPair",
+        "mistake": "pairDoesNotMakeTotal"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for two numbers that make {total} together. Add each pair and look for {total}.",
+      "steps": [
+        "Add the two numbers in each choice.",
+        "Add the tens, then add the ones.",
+        "Only one pair makes exactly {total}. That pair could be the {object_plural} in {theA} and in {theB}."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "offByTen": "Those two numbers make {sumTen}, {tenWord} than {total}. Add the tens again.",
+        "offByOne": "Those two numbers make {sumOne}, one more than {total}. Add the ones again.",
+        "pairDoesNotMakeTotal": "{name} has {total} {object_plural} in all. If all {total} go in one place, nothing is left for the other place."
+      },
+      "solution": {
+        "steps": [
+          "Add each pair. Only {p1} + {p2} makes {total}.",
+          "So {name} could put {p1} {object_plural} in {theA} and {p2} in {theB}."
+        ],
+        "answer": "keyPair"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 OA, Table 1"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-choose-equation",
+    "blueprintId": "wp-g2-choose-equation",
+    "modeId": "wordProblems",
+    "subskill": "partWholeStories",
+    "family": "conceptual",
+    "structureType": "putTogetherAddendUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "choice",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {total} {colorA} and {colorB} {object_plural}. {name} has {part} {colorA} {object_plural}. Which equation {askVerb} the number of {colorB} {object_plural} {name} has?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ]
+      },
+      "total": {
+        "kind": "int",
+        "min": 30,
+        "max": 99
+      },
+      "part": {
+        "kind": "int",
+        "min": 11,
+        "max": 49
+      },
+      "color": {
+        "kind": "int",
+        "min": 0,
+        "max": 3
+      },
+      "ask": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "colorA": {
+        "kind": "expr",
+        "expr": "color == 0 ? 'red' : color == 1 ? 'green' : color == 2 ? 'orange' : 'pink'",
+        "format": "text"
+      },
+      "colorB": {
+        "kind": "expr",
+        "expr": "color == 0 ? 'blue' : color == 1 ? 'yellow' : color == 2 ? 'purple' : 'white'",
+        "format": "text"
+      },
+      "askVerb": {
+        "kind": "expr",
+        "expr": "ask == 0 ? 'can be used to find' : 'shows how to find'",
+        "format": "text"
+      },
+      "other": {
+        "kind": "expr",
+        "expr": "total - part",
+        "format": "int"
+      },
+      "eqKey": {
+        "kind": "expr",
+        "expr": "total + ' − ' + part + ' = □'",
+        "format": "text"
+      },
+      "eqAdd": {
+        "kind": "expr",
+        "expr": "total + ' + ' + part + ' = □'",
+        "format": "text"
+      },
+      "eqBoxWhole": {
+        "kind": "expr",
+        "expr": "'□ − ' + part + ' = ' + total",
+        "format": "text"
+      },
+      "eqBoxSwap": {
+        "kind": "expr",
+        "expr": "'□ − ' + total + ' = ' + part",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "other >= 5",
+      "other != part",
+      "object.id == 'marble' || object.id == 'bead' || object.id == 'crayon' || object.id == 'button' || object.id == 'building-brick' || object.id == 'snap-cube' || object.id == 'pom-pom' || object.id == 'toy-car' || object.id == 'magnetic-tile' || object.id == 'loom-band' || object.id == 'sticker'",
+      "object.count_one_kid != null && total <= sum(drop(object.count_one_kid, 1))"
+    ],
+    "answer": {
+      "expr": "eqKey",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "eqAdd",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "eqBoxWhole",
+        "mistake": "unknownInWrongPlace"
+      },
+      {
+        "expr": "eqBoxSwap",
+        "mistake": "solvedForWrongQuantity"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks which equation finds the {colorB} {object_plural}. Start by finding the whole.",
+      "steps": [
+        "An equation uses an equal sign. Some classes call it a number sentence.",
+        "All of {name}'s {object_plural}, {colorA} and {colorB} together, are the whole.",
+        "The {colorA} {object_plural} are one part. The {colorB} {object_plural} are the missing part.",
+        "To find a missing part, start with the whole and take away the part you know."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "Adding gives more than all of {name}'s {object_plural}. The {colorB} {object_plural} are only part of them, so the equation takes away.",
+        "unknownInWrongPlace": "In that equation the box comes first, where the whole goes. You already know the whole. The box should stand for the {colorB} {object_plural}.",
+        "solvedForWrongQuantity": "That equation takes all of the {object_plural} away from the box, so the box would be more than all of them. The {colorB} {object_plural} are less than the whole."
+      },
+      "solution": {
+        "steps": [
+          "The whole is {total} {object_plural}. The part you know is {part} {colorA} {object_plural}.",
+          "Start with the whole and take away the part you know.",
+          "The equation is {eqKey}."
+        ],
+        "answer": "eqKey"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 OA, Table 1"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-box-middle",
+    "blueprintId": "wp-g2-box-middle",
+    "modeId": "wordProblems",
+    "subskill": "missingNumber",
+    "family": "conceptual",
+    "structureType": "equationUnknownMiddle",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.AR.2.2"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number makes this true? {a} {sign} □ = {c}"
+    },
+    "slots": {
+      "cellPick": {
+        "kind": "int",
+        "min": 0,
+        "max": 16
+      },
+      "sgn": {
+        "kind": "expr",
+        "expr": "cellPick < 10 ? 0 : 1",
+        "format": "int"
+      },
+      "rgWant": {
+        "kind": "expr",
+        "expr": "(cellPick >= 3 && cellPick < 10) || cellPick >= 13 ? 1 : 0",
+        "format": "int"
+      },
+      "aPlus": {
+        "kind": "int",
+        "min": 30,
+        "max": 58
+      },
+      "xPlus": {
+        "kind": "int",
+        "min": 11,
+        "max": 39
+      },
+      "aMinus": {
+        "kind": "int",
+        "min": 30,
+        "max": 99
+      },
+      "xMinus": {
+        "kind": "int",
+        "min": 11,
+        "max": 69
+      },
+      "a": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? aPlus : aMinus",
+        "format": "int"
+      },
+      "x": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? xPlus : xMinus",
+        "format": "int"
+      },
+      "c": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? a + x : a - x",
+        "format": "int"
+      },
+      "sign": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? '+' : '−'",
+        "format": "text"
+      },
+      "big": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? c : a",
+        "format": "int"
+      },
+      "small": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? a : c",
+        "format": "int"
+      },
+      "trade": {
+        "kind": "expr",
+        "expr": "ones(big) < ones(small) ? 1 : 0",
+        "format": "int"
+      },
+      "slip": {
+        "kind": "expr",
+        "expr": "tens(big) - tens(small) + abs(ones(big) - ones(small))",
+        "format": "int"
+      },
+      "onesSmall": {
+        "kind": "expr",
+        "expr": "ones(small) == 1 ? '1 one' : ones(small) + ' ones'",
+        "format": "text"
+      },
+      "nudgeLine": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'The question asks what number you add to ' + a + ' to make ' + c + '.' : 'The question asks what number you take away from ' + a + ' to leave ' + c + '.'",
+        "format": "text"
+      },
+      "startLine": {
+        "kind": "expr",
+        "expr": "'Start at ' + small + '.'",
+        "format": "text"
+      },
+      "countLine": {
+        "kind": "expr",
+        "expr": "'Count up to ' + big + '. Jump by tens first, then by ones.'",
+        "format": "text"
+      },
+      "lastLine": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'Add up your jumps. That is the number you add to ' + a + '.' : 'Add up your jumps. That is the number taken away from ' + a + '.'",
+        "format": "text"
+      },
+      "fbCompute": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'That adds ' + a + ' and ' + c + '. The = sign means both sides are the same amount, so ' + a + ' and the box together make ' + c + '.' : 'That adds ' + a + ' and ' + c + '. The = sign means both sides are the same amount, so ' + a + ' take away the box leaves ' + c + '.'",
+        "format": "text"
+      },
+      "fbSlip": {
+        "kind": "expr",
+        "expr": "'To find the box, take ' + small + ' away from ' + big + '. There are not enough ones in ' + big + ' to take away ' + onesSmall + ', so trade 1 ten for 10 ones first.'",
+        "format": "text"
+      },
+      "solCount": {
+        "kind": "expr",
+        "expr": "'Count up from ' + small + ' to ' + big + '. The jumps add up to ' + x + '.'",
+        "format": "text"
+      },
+      "solCheck": {
+        "kind": "expr",
+        "expr": "'Check: ' + a + ' ' + sign + ' ' + x + ' = ' + c + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "c >= 11",
+      "c <= 69",
+      "trade == rgWant",
+      "x != a",
+      "x != c",
+      "trade == 0 || slip != c",
+      "trade == 0 || slip != a + c"
+    ],
+    "answer": {
+      "expr": "x",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "a + c",
+        "mistake": "equalsMeansCompute"
+      },
+      {
+        "expr": "slip",
+        "mistake": "smallerFromLarger",
+        "when": "trade == 1"
+      },
+      {
+        "expr": "c",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "{nudgeLine}",
+      "steps": [
+        "{startLine}",
+        "{countLine}",
+        "{lastLine}"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "equalsMeansCompute": "{fbCompute}",
+        "smallerFromLarger": "{fbSlip}",
+        "answeredWithAGiven": "The number after the = sign, {c}, is already in the equation. The box is the number that makes both sides the same."
+      },
+      "solution": {
+        "steps": [
+          "{solCount}",
+          "{solCheck}"
+        ],
+        "answer": "x"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.AR.2.2",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-box-start",
+    "blueprintId": "wp-g2-box-start",
+    "modeId": "wordProblems",
+    "subskill": "missingNumber",
+    "family": "conceptual",
+    "structureType": "equationUnknownFirst",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.AR.2.2"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number makes this true? □ {sign} {b} = {c}"
+    },
+    "slots": {
+      "cellPick": {
+        "kind": "int",
+        "min": 0,
+        "max": 36
+      },
+      "sgn": {
+        "kind": "expr",
+        "expr": "cellPick < 15 ? 0 : 1",
+        "format": "int"
+      },
+      "rgWant": {
+        "kind": "expr",
+        "expr": "(cellPick >= 7 && cellPick < 15) || cellPick >= 25 ? 1 : 0",
+        "format": "int"
+      },
+      "b": {
+        "kind": "int",
+        "min": 5,
+        "max": 49
+      },
+      "c": {
+        "kind": "int",
+        "min": 11,
+        "max": 69
+      },
+      "sign": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? '−' : '+'",
+        "format": "text"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? b + c : c - b",
+        "format": "int"
+      },
+      "regroup": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? (ones(b) + ones(c) >= 10 ? 1 : 0) : (ones(c) < ones(b) ? 1 : 0)",
+        "format": "int"
+      },
+      "tradeSlip": {
+        "kind": "expr",
+        "expr": "tens(c) - tens(b) + abs(ones(c) - ones(b))",
+        "format": "int"
+      },
+      "onesB": {
+        "kind": "expr",
+        "expr": "ones(b) == 1 ? '1 one' : ones(b) + ' ones'",
+        "format": "text"
+      },
+      "onesC": {
+        "kind": "expr",
+        "expr": "ones(c) == 1 ? '1 one' : ones(c) + ' ones'",
+        "format": "text"
+      },
+      "nudgeLine": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'The box is the number you start with. Taking away ' + b + ' from it leaves ' + c + '.' : 'The box is the number you start with. Adding ' + b + ' to it makes ' + c + '.'",
+        "format": "text"
+      },
+      "undoLine": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'To find the start, put back what was taken away.' : 'To find the start, take away what was added.'",
+        "format": "text"
+      },
+      "doLine": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'Add ' + c + ' and ' + b + '.' : 'Take ' + b + ' away from ' + c + '.'",
+        "format": "text"
+      },
+      "tradeStep": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? (regroup == 1 ? 'The ones make ten or more, so make a new ten.' : 'Add the ones, then add the tens.') : (regroup == 1 ? 'There are not enough ones to take away, so trade 1 ten for 10 ones first.' : 'Take away the ones, then take away the tens.')",
+        "format": "text"
+      },
+      "fbGiven": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'That is the number left after taking away. The box is the number you start with, so it is more than ' + c + '.' : 'That is the number you end with. The box is the number you start with, before ' + b + ' is added, so it is less than ' + c + '.'",
+        "format": "text"
+      },
+      "solFirst": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'The box is the start. Put back the ' + b + ' that was taken away.' : 'The box is the start. Take away the ' + b + ' that was added.'",
+        "format": "text"
+      },
+      "solDo": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'Add: ' + c + ' + ' + b + ' = ' + key + '.' : 'Subtract: ' + c + ' − ' + b + ' = ' + key + '.'",
+        "format": "text"
+      },
+      "solCheck": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? 'Check: ' + key + ' − ' + b + ' = ' + c + '.' : 'Check: ' + key + ' + ' + b + ' = ' + c + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "regroup == rgWant",
+      "sgn == 1 || b + c <= 99",
+      "sgn == 0 || c - b >= 5",
+      "b != c",
+      "key != b",
+      "b != 10",
+      "sgn == 1 || abs(c - b) != c",
+      "sgn == 1 || regroup == 0 || abs(c - b) != b + c - 10",
+      "sgn == 0 || regroup == 0 || tradeSlip != c",
+      "sgn == 0 || (key != ones(b) && key != ones(c))"
+    ],
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "abs(c - b)",
+        "mistake": "subtractedInsteadOfAdded",
+        "when": "sgn == 0",
+        "otherwise": {
+          "expr": "b + c",
+          "mistake": "addedInsteadOfSubtracted"
+        }
+      },
+      {
+        "expr": "b + c - 10",
+        "mistake": "forgotToCarry",
+        "when": "sgn == 0 && regroup == 1"
+      },
+      {
+        "expr": "tradeSlip",
+        "mistake": "smallerFromLarger",
+        "when": "sgn == 1 && regroup == 1"
+      },
+      {
+        "expr": "c",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "{nudgeLine}",
+      "steps": [
+        "{undoLine}",
+        "{doLine}",
+        "{tradeStep}"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "subtractedInsteadOfAdded": "The − sign tells what happened to the box: {b} was taken away from it. To find the box, put {b} back. Add {c} and {b}.",
+        "addedInsteadOfSubtracted": "The + sign tells what happened to the box: {b} was added to it. To find the box, undo that. Take {b} away from {c}.",
+        "forgotToCarry": "Check the ones. {onesC} and {onesB} make a new ten. Add that ten to the tens.",
+        "smallerFromLarger": "There are not enough ones in {c} to take away {onesB}. Trade 1 ten for 10 ones first.",
+        "answeredWithAGiven": "{fbGiven}"
+      },
+      "solution": {
+        "steps": [
+          "{solFirst}",
+          "{solDo}",
+          "{solCheck}"
+        ],
+        "answer": "key"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.AR.2.2",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-box-number-line",
+    "blueprintId": "wp-g2-box-number-line",
+    "modeId": "wordProblems",
+    "subskill": "missingNumber",
+    "family": "conceptual",
+    "structureType": "equationUnknownMiddle",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.MD.B.6"
+      ],
+      "tx": [
+        "2.4B",
+        "2.9C"
+      ],
+      "fl": [
+        "MA.2.AR.2.2"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4",
+        "2.MDR.5.5"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberLine",
+    "representationType": "numberLine",
+    "template": {
+      "prompt": "What number makes this true? {a} + □ = {c}"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 12,
+        "max": 89
+      },
+      "x": {
+        "kind": "int",
+        "min": 5,
+        "max": 39
+      },
+      "rg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "c": {
+        "kind": "expr",
+        "expr": "a + x",
+        "format": "int"
+      },
+      "nt": {
+        "kind": "expr",
+        "expr": "nextTen(a)",
+        "format": "int"
+      },
+      "h1": {
+        "kind": "expr",
+        "expr": "nextTen(a) - a",
+        "format": "int"
+      },
+      "h2": {
+        "kind": "expr",
+        "expr": "a + x - nextTen(a)",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "c <= 99",
+      "nextTen(c) - floorTen(a) <= 40",
+      "a % 10 != 0",
+      "c > nextTen(a)",
+      "rg == 1 ? ones(a) + ones(x) >= 10 : ones(a) + ones(x) < 10",
+      "x != a"
+    ],
+    "operation": {
+      "a": "a",
+      "op": "+"
+    },
+    "display": {
+      "min": "floorTen(a)",
+      "max": "nextTen(c)",
+      "step": 1,
+      "labelEvery": 5,
+      "from": "a",
+      "to": "c",
+      "lineMode": "'jump'"
+    },
+    "answer": {
+      "expr": "x",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "x + 1",
+        "mistake": "countedBothEnds"
+      },
+      {
+        "expr": "a + c",
+        "mistake": "equalsMeansCompute"
+      },
+      {
+        "expr": "c",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how long the hop from {a} to {c} is. That length is the number in the box.",
+      "steps": [
+        "Start at {a} on the number line.",
+        "Jump to the next ten. Then jump by tens and by ones until you reach {c}.",
+        "Add up your jumps."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "countedBothEnds": "Count the jumps between the marks, not the marks. Do not count {a}, where the hop starts.",
+        "equalsMeansCompute": "That adds {a} and {c}. The = sign means {a} and the box together make {c}, so the box is the length of the hop.",
+        "answeredWithAGiven": "The hop ends at {c}. The box is how long the hop is, not where it ends."
+      },
+      "solution": {
+        "steps": [
+          "From {a} to {nt} is {h1}.",
+          "From {nt} to {c} is {h2}.",
+          "So the hop is {h1} + {h2} = {x}."
+        ],
+        "answer": "x"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.AR.2.2",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4",
+        "CCSS 2.MD.B.6",
+        "TEKS 2.9C",
+        "GA K-12 2021 2.MDR.5.5"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-two-step-choose-equation",
+    "blueprintId": "wp-g2-two-step-choose-equation",
+    "modeId": "wordProblems",
+    "subskill": "twoStepStories",
+    "family": "conceptual",
+    "structureType": "twoStepTakeAdd",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "choice",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {start} {object_plural}. {name} {takeVerb} {take} of them {takeTail}. Then {addLead} {add} more {object_plural}{addTail}. Which equation {askVerb} the number of {object_plural} {name} has now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art",
+          "collecting-nature"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 20,
+        "max": 60
+      },
+      "take": {
+        "kind": "int",
+        "min": 5,
+        "max": 19
+      },
+      "add": {
+        "kind": "int",
+        "min": 5,
+        "max": 19
+      },
+      "fr": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "ar": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "rel": {
+        "kind": "int",
+        "min": 0,
+        "max": 5
+      },
+      "ask": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "relWord": {
+        "kind": "expr",
+        "expr": "rel == 0 ? 'Grandma' : rel == 1 ? 'Grandpa' : rel == 2 ? 'Mom' : rel == 3 ? 'Dad' : rel == 4 ? 'a cousin' : 'a neighbor'",
+        "format": "text"
+      },
+      "takeVerb": {
+        "kind": "expr",
+        "expr": "fr == 0 ? 'gives' : 'loses'",
+        "format": "text"
+      },
+      "takeTail": {
+        "kind": "expr",
+        "expr": "fr == 0 ? 'to ' + name2 : 'at the park'",
+        "format": "text"
+      },
+      "addLead": {
+        "kind": "expr",
+        "expr": "ar == 0 ? relWord + ' gives ' + name : name + ' finds'",
+        "format": "text"
+      },
+      "addTail": {
+        "kind": "expr",
+        "expr": "ar == 0 ? '' : ' at home'",
+        "format": "text"
+      },
+      "askVerb": {
+        "kind": "expr",
+        "expr": "ask == 0 ? 'shows how to find' : 'can be used to find'",
+        "format": "text"
+      },
+      "firstStep": {
+        "kind": "expr",
+        "expr": "fr == 0 ? 'First ' + name + ' gives some away. That makes fewer, so that step takes away.' : 'First ' + name + ' loses some. That makes fewer, so that step takes away.'",
+        "format": "text"
+      },
+      "secondStep": {
+        "kind": "expr",
+        "expr": "'Then ' + name + ' gets more. That makes more, so that step adds.'",
+        "format": "text"
+      },
+      "solTake": {
+        "kind": "expr",
+        "expr": "fr == 0 ? 'Giving away ' + take + ' means take away ' + take + '.' : 'Losing ' + take + ' means take away ' + take + '.'",
+        "format": "text"
+      },
+      "solAdd": {
+        "kind": "expr",
+        "expr": "ar == 0 ? 'Getting ' + add + ' more means add ' + add + '.' : 'Finding ' + add + ' more means add ' + add + '.'",
+        "format": "text"
+      },
+      "eqKey": {
+        "kind": "expr",
+        "expr": "start + ' − ' + take + ' + ' + add + ' = □'",
+        "format": "text"
+      },
+      "eqTakeTwice": {
+        "kind": "expr",
+        "expr": "start + ' − ' + take + ' − ' + add + ' = □'",
+        "format": "text"
+      },
+      "eqAddAll": {
+        "kind": "expr",
+        "expr": "start + ' + ' + take + ' + ' + add + ' = □'",
+        "format": "text"
+      },
+      "eqStepOne": {
+        "kind": "expr",
+        "expr": "start + ' − ' + take + ' = □'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "take != add",
+      "start - take - add >= 1",
+      "object.id == 'marble' || object.id == 'sticker' || object.id == 'trading-card' || object.id == 'bead' || object.id == 'crayon' || object.id == 'seashell' || object.id == 'acorn' || object.id == 'toy-car' || object.id == 'button' || object.id == 'arcade-ticket' || object.id == 'gemstone' || object.id == 'pom-pom'",
+      "object.count_one_kid != null && start <= sum(drop(object.count_one_kid, 1))"
+    ],
+    "answer": {
+      "expr": "eqKey",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "eqTakeTwice",
+        "mistake": "wrongOperationStepTwo"
+      },
+      {
+        "expr": "eqAddAll",
+        "mistake": "addedEverything"
+      },
+      {
+        "expr": "eqStepOne",
+        "mistake": "stopsAtStepOne"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+      "steps": [
+        "An equation uses an equal sign. Some classes call it a number sentence.",
+        "{firstStep}",
+        "{secondStep}"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "wrongOperationStepTwo": "That equation takes away twice. In the second step {name} gets more {object_plural}, so that step adds.",
+        "addedEverything": "That equation adds every number. First {name} has fewer {object_plural}, so the first step takes away.",
+        "stopsAtStepOne": "That equation stops after the first step. It leaves out the {object_plural} {name} gets at the end."
+      },
+      "solution": {
+        "steps": [
+          "{name} starts with {start} {object_plural}.",
+          "{solTake}",
+          "{solAdd}",
+          "The equation is {eqKey}."
+        ],
+        "answer": "eqKey"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 OA, Table 1"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-va-estimate",
+    "blueprintId": "wp-g2-va-estimate",
+    "modeId": "wordProblems",
+    "subskill": "partWholeStories",
+    "family": "conceptual",
+    "structureType": "putTogetherTotalUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [],
+      "fl": [],
+      "va": [
+        "2.CE.1a",
+        "2.CE.1c"
+      ],
+      "ga": []
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} {past} {n1} {object_plural} {day1}. {name} {past} {n2} {object_plural} {day2}. About how many {object_plural} did {name} {present} in all?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "screens-media",
+          "time-events",
+          "sports-outdoors",
+          "collecting-nature"
+        ]
+      },
+      "pair": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "tsum": {
+        "kind": "int",
+        "min": 5,
+        "max": 7
+      },
+      "tx": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "swap": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "day": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "ox": {
+        "kind": "expr",
+        "expr": "pair == 2 ? 2 : 1",
+        "format": "int"
+      },
+      "oy": {
+        "kind": "expr",
+        "expr": "pair == 1 ? 8 : 7",
+        "format": "int"
+      },
+      "ty": {
+        "kind": "expr",
+        "expr": "tsum - tx",
+        "format": "int"
+      },
+      "down": {
+        "kind": "expr",
+        "expr": "10 * tx + ox",
+        "format": "int"
+      },
+      "up": {
+        "kind": "expr",
+        "expr": "10 * ty + oy",
+        "format": "int"
+      },
+      "n1": {
+        "kind": "expr",
+        "expr": "swap == 0 ? down : up",
+        "format": "int"
+      },
+      "n2": {
+        "kind": "expr",
+        "expr": "swap == 0 ? up : down",
+        "format": "int"
+      },
+      "exact": {
+        "kind": "expr",
+        "expr": "down + up",
+        "format": "int"
+      },
+      "est": {
+        "kind": "expr",
+        "expr": "10 * (tsum + 1)",
+        "format": "int"
+      },
+      "downTen": {
+        "kind": "expr",
+        "expr": "10 * tx",
+        "format": "int"
+      },
+      "downTenUp": {
+        "kind": "expr",
+        "expr": "10 * tx + 10",
+        "format": "int"
+      },
+      "upTen": {
+        "kind": "expr",
+        "expr": "10 * ty + 10",
+        "format": "int"
+      },
+      "upTenDown": {
+        "kind": "expr",
+        "expr": "10 * ty",
+        "format": "int"
+      },
+      "past": {
+        "kind": "expr",
+        "expr": "object.id == 'page' ? 'read' : object.id == 'minute' ? 'read for' : object.id == 'jumping-jack' ? 'did' : object.id == 'leaf' ? 'collected' : 'picked up'",
+        "format": "text"
+      },
+      "present": {
+        "kind": "expr",
+        "expr": "object.id == 'page' ? 'read' : object.id == 'minute' ? 'read' : object.id == 'jumping-jack' ? 'do' : object.id == 'leaf' ? 'collect' : 'pick up'",
+        "format": "text"
+      },
+      "day1": {
+        "kind": "expr",
+        "expr": "day == 0 ? 'on Monday' : day == 1 ? 'on Saturday' : 'in the morning'",
+        "format": "text"
+      },
+      "day2": {
+        "kind": "expr",
+        "expr": "day == 0 ? 'on Tuesday' : day == 1 ? 'on Sunday' : 'in the afternoon'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "ty >= 1",
+      "object.id == 'page' || object.id == 'minute' || object.id == 'jumping-jack' || object.id == 'leaf' || object.id == 'acorn'",
+      "object.count_one_kid != null && max(down, up) <= sum(drop(object.count_one_kid, 1))"
+    ],
+    "answer": {
+      "expr": "est",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "est - 10",
+        "mistake": "roundedDownBoth"
+      },
+      {
+        "expr": "est + 10",
+        "mistake": "roundedUpBoth"
+      },
+      {
+        "expr": "100",
+        "mistake": "roundedToHundred"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks about how many, so you need a number close to the total, not the exact total.",
+      "steps": [
+        "Add {n1} and {n2}. Add the tens, then add the ones.",
+        "Look at your total. Which ten is it closest to?"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "roundedDownBoth": "That rounds both numbers down. {up} is closer to {upTen} than to {upTenDown}.",
+        "roundedUpBoth": "That rounds both numbers up. {down} is closer to {downTen} than to {downTenUp}.",
+        "roundedToHundred": "That is the closest hundred. The question asks about how many, so find the ten closest to the total."
+      },
+      "solution": {
+        "steps": [
+          "{n1} + {n2} = {exact}.",
+          "The total, {exact}, is closest to {est}.",
+          "So {name} {past} about {est} {object_plural}."
+        ],
+        "answer": "est"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "VA SOL 2023 2.CE.1a, 2.CE.1c"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-two-step-box-second-step",
+    "blueprintId": "wp-g2-two-step-box-second-step",
+    "modeId": "wordProblems",
+    "subskill": "missingNumber",
+    "family": "conceptual",
+    "structureType": "twoStepEquationSecondStep",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.AR.2.2"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number makes this true? {a} {op1} {b} + □ = {d}"
+    },
+    "slots": {
+      "sgn": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "small": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "rgPick": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "rg": {
+        "kind": "expr",
+        "expr": "rgPick < 2 ? 0 : 1",
+        "format": "int"
+      },
+      "a": {
+        "kind": "int",
+        "min": 30,
+        "max": 99
+      },
+      "bS": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "bL": {
+        "kind": "int",
+        "min": 11,
+        "max": 49
+      },
+      "kS": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "kL": {
+        "kind": "int",
+        "min": 11,
+        "max": 49
+      },
+      "b": {
+        "kind": "expr",
+        "expr": "small == 0 ? bS : bL",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "small == 1 ? kS : kL",
+        "format": "int"
+      },
+      "m": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? a - b : a + b",
+        "format": "int"
+      },
+      "d": {
+        "kind": "expr",
+        "expr": "m + key",
+        "format": "int"
+      },
+      "op1": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? '−' : '+'",
+        "format": "text"
+      },
+      "r1": {
+        "kind": "expr",
+        "expr": "sgn == 0 ? (ones(a) < ones(b) ? 1 : 0) : (ones(a) + ones(b) >= 10 ? 1 : 0)",
+        "format": "int"
+      },
+      "r2": {
+        "kind": "expr",
+        "expr": "ones(m) + ones(key) >= 10 ? 1 : 0",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "m >= 10",
+      "m <= 99",
+      "d <= 99",
+      "r1 + r2 == rg",
+      "key != m",
+      "key != a",
+      "key != b"
+    ],
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "m",
+        "mistake": "stopsAtStepOne"
+      },
+      {
+        "expr": "m + d",
+        "mistake": "equalsMeansCompute"
+      },
+      {
+        "expr": "d",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for the number in the box. Start with the first step, {a} {op1} {b}.",
+      "steps": [
+        "Find {a} {op1} {b} first.",
+        "Then think: that number and the box together make {d}.",
+        "Count up from your first answer to {d}."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "stopsAtStepOne": "That is only the first step, {a} {op1} {b}. Now find what to add to that number to make {d}.",
+        "equalsMeansCompute": "That adds {d} to the first step's answer. The = sign means both sides are the same amount, so {a} {op1} {b} + □ must make {d}.",
+        "answeredWithAGiven": "The number after the = sign is {d}. The box is what you add to the first step's answer to reach {d}."
+      },
+      "solution": {
+        "steps": [
+          "First step: {a} {op1} {b} = {m}.",
+          "Now {m} + □ = {d}.",
+          "Count up from {m} to {d}. The box is {key}."
+        ],
+        "answer": "key"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.AR.2.2",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    }
+  }
+]

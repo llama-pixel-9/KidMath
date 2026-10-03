@@ -6,7 +6,10 @@ import { normalizePlanPricing } from "./legal/disclosures";
  * 2026-08-02 with the §20 soft paywall — free is a real plan on both
  * platforms): the four operations + counting stay unlimited and free forever
  * on web and iOS — the top of the funnel. Math Facts joined them on
- * 2026-10-01 (Sai's call on the fact fluency build). Everything else (the other 17
+ * 2026-10-01 (Sai's call on the fact fluency build), and Word Problems and
+ * Multi-Digit Math on 2026-10-02 (Sai approved the Grade 2 lists as
+ * recommended: Grade 2 computing and stories are free today, through
+ * Addition and Subtraction, so a paid topic would take free work away). Everything else (the other 17
  * modes, PDF worksheet export, cross-device cloud sync) is premium:
  * $8.99/month or $54.99/year (49% off), every child in the household
  * included, 14-day trial.
@@ -17,7 +20,16 @@ import { normalizePlanPricing } from "./legal/disclosures";
  *
  * Mirrored by StoreService.freeModeIds on iOS — keep the two lists identical.
  */
-export const FREE_MODE_IDS = ["addition", "subtraction", "multiplication", "division", "counting", "mathFacts"];
+export const FREE_MODE_IDS = [
+  "addition",
+  "subtraction",
+  "multiplication",
+  "division",
+  "counting",
+  "mathFacts",
+  "wordProblems",
+  "multiDigit",
+];
 
 /**
  * Launch switch. The paywall is OFF unless the deploy explicitly sets

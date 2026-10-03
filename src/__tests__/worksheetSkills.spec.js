@@ -50,7 +50,7 @@ describe("worksheet skill catalog", () => {
     for (const mode of MODE_IDS) {
       // Math Facts is play-only: the operation topics print the same facts.
       // Word Problems is play-only until its bank rows exist (nothing to print).
-      if (mode !== "mathFacts" && mode !== "wordProblems") expect(WORKSHEET_SKILLS.some((s) => s.mode === mode), mode).toBe(true);
+      if (!["mathFacts", "wordProblems", "multiDigit"].includes(mode)) expect(WORKSHEET_SKILLS.some((s) => s.mode === mode), mode).toBe(true);
       expect(TOPIC_LABELS[mode], mode).toBeTruthy();
     }
     for (const grade of GRADES) {

@@ -372,13 +372,20 @@ function fillOnce(model, { seed, state, grade, depth }) {
     const good = [];
     const bad = [];
     for (const d of model.distractors) {
-      const v = evalExpr(d.expr, draw);
+      // A slip that only exists on some numbers ("took the smaller ones digit
+      // from the larger" needs a trade) says so in `when`; on other numbers
+      // its `otherwise` slip stands in, or it sits this fill out. Without
+      // `when`, a collision re-rolls the draw, which skewed "about half
+      // regroup" models to regroup on every fill.
+      const pick = d.when == null || evalExpr(d.when, draw) ? d : d.otherwise;
+      if (!pick) continue;
+      const v = evalExpr(pick.expr, draw);
       const usable = numeric ? isWholeAmount(v) && !seen.has(v) : typeof v === "string" && v && !seen.has(v);
       if (usable) {
         seen.add(v);
-        good.push({ value: v, mistake: d.mistake });
+        good.push({ value: v, mistake: pick.mistake });
       } else {
-        bad.push({ value: v, mistake: d.mistake });
+        bad.push({ value: v, mistake: pick.mistake });
       }
     }
     if (bad.length && attempt < COLLISION_PATIENCE) {
@@ -472,6 +479,8 @@ function fillOnce(model, { seed, state, grade, depth }) {
     source: { generator: "itemModels", itemModelId: model.id, seed },
     version: 2,
     itemModelId: model.id,
+    // The blueprint row the model was written for (item_bank.blueprint_id).
+    blueprintId: model.blueprintId ?? null,
     difficulty: model.difficulty,
     hint,
     tags: {

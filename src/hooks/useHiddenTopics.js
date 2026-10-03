@@ -5,7 +5,7 @@ import { previewEnabled, topicVisible } from "../itemBank/versionSwitch.js";
 
 // Before the switch loads: what an empty switch means to a viewer who is not
 // in preview. A v2-only topic whose default is v2 (Math Facts) is shown at
-// once; one whose default is preview (Word Problems) stays hidden, so it
+// once; one whose default is preview (Word Problems, Multi-Digit Math) stays hidden, so it
 // never flashes in and back out for a kid it is not served to.
 const hiddenFor = (map, preview = false) => new Set(V2_ONLY_MODE_IDS.filter((id) => !topicVisible(id, map, { v2Only: true, preview })));
 const BEFORE_LOAD = hiddenFor(new Map());

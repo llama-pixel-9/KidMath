@@ -23,11 +23,53 @@ import {
   slotTokensIn,
   MONEY_STYLES,
 } from "./schema.js";
+import { blueprintById } from "../blueprints/index.js";
 
 const isText = (x) => typeof x === "string" && x.trim().length > 0;
 const isRecord = (x) => x !== null && typeof x === "object" && !Array.isArray(x);
 const isTextList = (x) => Array.isArray(x) && x.every(isText);
 const isRange = (x) => Array.isArray(x) && x.length === 2 && x.every((n) => typeof n === "number" && Number.isFinite(n)) && x[0] <= x[1];
+
+/**
+ * A model written for a blueprint row points back at it and agrees with it:
+ * a real item row of the same grade and topic, the row's subskill, family
+ * and structureType, a levelRange inside the row's, and the row's codes in
+ * every framework (a model copies its row's codes; codes live on a row).
+ */
+function checkBlueprintRow(model, err) {
+  const id = model.blueprintId;
+  if (!isText(id)) {
+    err("blueprintId must be a blueprint row id");
+    return;
+  }
+  const row = blueprintById(id);
+  if (!row) {
+    err(`blueprintId "${id}" is not a blueprint row (src/blueprints/)`);
+    return;
+  }
+  const spec = row.spec || {};
+  if (row.track !== "item") err(`blueprint row "${id}" is a ${row.track} row; models are written for item rows`);
+  if (String(row.grade).toUpperCase() !== String(model.grade ?? "").toUpperCase()) {
+    err(`blueprint row "${id}" is Grade ${row.grade}, but the model is Grade ${model.grade}`);
+  }
+  if (row.mode_id !== model.modeId) err(`blueprint row "${id}" is filed under ${row.mode_id}, not ${model.modeId}`);
+  if (spec.subskill && model.subskill !== spec.subskill) err(`subskill must be the row's (${spec.subskill})`);
+  if (spec.family && (model.family ?? "application") !== spec.family) err(`family must be the row's (${spec.family})`);
+  if (spec.structureType && model.structureType !== spec.structureType) {
+    err(`structureType must be the row's (${spec.structureType}), so its items and the row agree`);
+  }
+  if (!isRange(model.levelRange)) err("a model with a blueprintId sets levelRange (Grade 2 is [4, 6])");
+  else if (isRange(spec.levelRange) && (model.levelRange[0] < spec.levelRange[0] || model.levelRange[1] > spec.levelRange[1])) {
+    err(`levelRange must sit inside the row's [${spec.levelRange.join(", ")}]`);
+  }
+  if (isRecord(model.standards) && isRecord(row.standards)) {
+    for (const key of STANDARD_KEYS) {
+      const mine = [...(model.standards[key] || [])].sort();
+      const rows = [...(row.standards[key] || [])].sort();
+      if (JSON.stringify(mine) !== JSON.stringify(rows)) err(`standards.${key} must be the row's codes (${rows.join(", ") || "none"})`);
+    }
+  }
+}
 
 export function validateModel(model) {
   const errors = [];
@@ -52,6 +94,7 @@ export function validateModel(model) {
   if (!isRecord(model.provenance) || !isText(model.provenance.author) || !Array.isArray(model.provenance.checkedAgainst)) {
     err("provenance needs author and checkedAgainst[]");
   }
+  if (model.blueprintId != null) checkBlueprintRow(model, err);
 
   // Slots: known kinds, each kind's own fields, references to other slots.
   const slots = isRecord(model.slots) ? model.slots : null;
@@ -154,6 +197,19 @@ export function validateModel(model) {
       if (!isText(d.mistake)) err(`distractors[${i}] needs a mistake tag`);
       else if (tags.has(d.mistake)) err(`distractors[${i}] repeats the mistake tag "${d.mistake}"`);
       tags.add(d.mistake);
+      // `when`: the numbers on which this slip exists; `otherwise`: the slip
+      // shown on the other numbers (omit it to drop the choice there).
+      if (d.when != null) checkExpr(d.when, `distractors[${i}].when`);
+      if (d.otherwise != null) {
+        if (d.when == null) err(`distractors[${i}].otherwise needs a when`);
+        if (!isRecord(d.otherwise)) err(`distractors[${i}].otherwise must be { expr, mistake }`);
+        else {
+          checkExpr(d.otherwise.expr, `distractors[${i}].otherwise.expr`);
+          if (!isText(d.otherwise.mistake)) err(`distractors[${i}].otherwise needs a mistake tag`);
+          else if (tags.has(d.otherwise.mistake)) err(`distractors[${i}].otherwise repeats the mistake tag "${d.otherwise.mistake}"`);
+          tags.add(d.otherwise.mistake);
+        }
+      }
     });
 
     // Hint: nudge and steps always; the other layers when present.

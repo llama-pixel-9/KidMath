@@ -22,10 +22,10 @@ export const LIVE_VERSIONS = new Set(["v1", "preview", "v2"]);
  * The live version of a topic the switch table has no row for. Only topics
  * with no v1 rows are listed, each at v2 or preview (versionSwitch.spec ties
  * this to the modes that declare `v2Only`). Sai, 2026-10-01: Math Facts needs
- * no flip to go live. Word Problems (2026-10-02) waits on Sai's flip: at
- * preview with no row, only preview viewers see it.
+ * no flip to go live. Word Problems and Multi-Digit Math (2026-10-02) wait
+ * on Sai's flip: at preview with no row, only preview viewers see them.
  */
-export const DEFAULT_LIVE_VERSION = Object.freeze({ mathFacts: "v2", wordProblems: "preview" });
+export const DEFAULT_LIVE_VERSION = Object.freeze({ mathFacts: "v2", wordProblems: "preview", multiDigit: "preview" });
 
 /**
  * `item_version_switch` rows ({ mode_id, live_version }) -> Map(modeId ->

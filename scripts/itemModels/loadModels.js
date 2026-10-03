@@ -7,7 +7,9 @@
  *
  * Every model is validated (validateModel) and filled once through the QC
  * gate before anything is written, so a broken model never reaches the
- * review screen. Rows upsert on id; an existing row that is no longer a
+ * review screen. A model's blueprintId goes to item_models.blueprint_id, a
+ * foreign key to blueprint_rows, so its row must be loaded first
+ * (scripts/standards/loadStandards.js). Rows upsert on id; an existing row that is no longer a
  * draft (approved, rejected, flagged) is left alone unless --force is given,
  * so a reload never undoes a review decision by accident.
  */
@@ -54,6 +56,7 @@ const rows = models.map((m) => ({
   subskill: m.subskill ?? null,
   grade: m.grade == null ? null : String(m.grade),
   difficulty: m.difficulty ?? null,
+  blueprint_id: m.blueprintId ?? null,
   spec: m,
   review_status: "draft",
 }));

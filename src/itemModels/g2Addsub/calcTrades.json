@@ -1,0 +1,2040 @@
+[
+  {
+    "id": "calc-g2-missing-digit-add",
+    "blueprintId": "calc-g2-missing-digit",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "missingDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5, 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "{shown} + {second} = {total}. What digit goes in the box?"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "d": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "b": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "e": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "10 * a + d",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "10 * b + e",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "first + second",
+        "format": "int"
+      },
+      "tOnes": {
+        "kind": "expr",
+        "expr": "total % 10",
+        "format": "int"
+      },
+      "onesTotal": {
+        "kind": "expr",
+        "expr": "d + e",
+        "format": "int"
+      },
+      "shown": {
+        "kind": "expr",
+        "expr": "a + '□'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "d + e >= 10",
+      "total <= 99",
+      "d != 5",
+      "10 - d != tOnes",
+      "d != e"
+    ],
+    "operation": {
+      "op": "+"
+    },
+    "answer": {
+      "expr": "d",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "e - tOnes",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "tOnes",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The box is the ones digit of the first number. Start with the ones.",
+      "steps": [
+        "The ones digit of {total} is {tOnes}. But {e} ones and the box can't add up to just {tOnes}.",
+        "So the ones make a new ten. Which number ending in {tOnes} can they make?",
+        "Find the digit that goes with {e} to make that number."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "smallerFromLarger": "That takes {tOnes} away from {e}. But the box and {e} ones add up to {onesTotal}, and one ten moves to the tens.",
+        "answeredWithAGiven": "That copies the ones digit of {total}. The box and {e} ones add up to {onesTotal}, so find what goes with {e} to make {onesTotal}."
+      },
+      "solution": {
+        "steps": [
+          "The ones digit of {total} is {tOnes}, so the ones add up to {onesTotal}.",
+          "{e} + {d} = {onesTotal}, so the box is {d}.",
+          "Check: {first} + {second} = {total}."
+        ],
+        "answer": "d"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-missing-digit-subtract",
+    "blueprintId": "calc-g2-missing-digit",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "missingDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5, 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "{shown} − {second} = {diff}. What digit goes in the box?"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "d": {
+        "kind": "int",
+        "min": 0,
+        "max": 8
+      },
+      "b": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "e": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "10 * a + d",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "10 * b + e",
+        "format": "int"
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "first - second",
+        "format": "int"
+      },
+      "dOnes": {
+        "kind": "expr",
+        "expr": "diff % 10",
+        "format": "int"
+      },
+      "shown": {
+        "kind": "expr",
+        "expr": "a + '□'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "d < e",
+      "diff >= 10",
+      "2 * e > d + 10",
+      "e != d + 5",
+      "e != 2 * dOnes"
+    ],
+    "operation": {
+      "op": "-"
+    },
+    "answer": {
+      "expr": "d",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "e - dOnes",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "dOnes",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The box is the ones digit of the first number. Use addition to check the subtraction.",
+      "steps": [
+        "Check with addition: {second} + {diff} makes the first number.",
+        "Add the ones first: {e} + {dOnes}.",
+        "The ones digit of that sum goes in the box."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "smallerFromLarger": "That takes the smaller ones digit from the larger one. The first number did not have enough ones, so a ten was traded. Add {e} + {dOnes} to find its ones.",
+        "answeredWithAGiven": "That copies the ones digit of {diff}. Check with addition: {second} + {diff} makes the first number."
+      },
+      "solution": {
+        "steps": [
+          "{second} + {diff} = {first}.",
+          "The ones digit of {first} is {d}, so the box is {d}.",
+          "Check: {first} − {second} = {diff}."
+        ],
+        "answer": "d"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-which-trade-subtract",
+    "blueprintId": "calc-g2-which-trade",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "whichTrade",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5, 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "You want to take {sub} away from the number on the mat. Which trade do you need to make first?"
+    },
+    "slots": {
+      "t": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 8
+      },
+      "u": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "v": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "sub": {
+        "kind": "expr",
+        "expr": "10 * u + v",
+        "format": "int"
+      },
+      "tensAfter": {
+        "kind": "expr",
+        "expr": "t - 1",
+        "format": "int"
+      },
+      "onesAfter": {
+        "kind": "expr",
+        "expr": "o + 10",
+        "format": "int"
+      },
+      "oWord": {
+        "kind": "expr",
+        "expr": "o == 1 ? 'one' : 'ones'",
+        "format": "text"
+      },
+      "tAfterWord": {
+        "kind": "expr",
+        "expr": "t - 1 == 1 ? 'ten' : 'tens'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "v > o",
+      "u <= t - 1",
+      "sub != 27"
+    ],
+    "operation": {
+      "op": "-"
+    },
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "cols": [
+          {
+            "place": 10,
+            "count": "t"
+          },
+          {
+            "place": 1,
+            "count": "o"
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "'Trade 1 ten for 10 ones'",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "'Trade 10 ones for 1 ten'",
+        "mistake": "tradedTheWrongWay"
+      },
+      {
+        "expr": "'Trade 1 ten for 1 one'",
+        "mistake": "countedRodsAsOnes"
+      },
+      {
+        "expr": "'No trade needed'",
+        "mistake": "smallerFromLarger"
+      }
+    ],
+    "hint": {
+      "nudge": "Look at the one discs first. You need to take away {v} ones.",
+      "steps": [
+        "Count the one discs on the mat.",
+        "Are there enough one discs to take away {v}?",
+        "If not, think about which trade gives you more ones and keeps the number the same."
+      ],
+      "picture": null,
+      "example": {
+        "problem": "The mat shows 5 tens and 2 ones. You want to take 27 away. Which trade do you need to make first?",
+        "steps": [
+          "There are 2 ones, and you need to take away 7 ones.",
+          "2 ones are not enough, so trade 1 ten for 10 ones.",
+          "Now the mat has 4 tens and 12 ones, and you can take away 27."
+        ],
+        "answer": "Trade 1 ten for 10 ones"
+      },
+      "feedback": {
+        "tradedTheWrongWay": "That trade makes fewer ones, not more. You need more ones, so a ten disc has to become ones.",
+        "countedRodsAsOnes": "A ten disc is worth ten ones, not one. A trade keeps the number on the mat the same.",
+        "smallerFromLarger": "The mat does not have {v} one discs to take away. Do not take the smaller ones digit from the larger one. Make a trade first."
+      },
+      "solution": {
+        "steps": [
+          "The mat shows {t} tens and {o} {oWord}. You need to take away {v} ones.",
+          "There are not enough ones, so trade 1 ten for 10 ones.",
+          "Now the mat has {tensAfter} {tAfterWord} and {onesAfter} ones, so you can take away {sub}."
+        ],
+        "answer": "'Trade 1 ten for 10 ones'"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-which-trade-add",
+    "blueprintId": "calc-g2-which-trade",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "whichTrade",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5, 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "You put {first} and {second} on the mat to add them. Which trade do you need to make next?"
+    },
+    "slots": {
+      "a1": {
+        "kind": "int",
+        "min": 1,
+        "max": 7
+      },
+      "a0": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "b1": {
+        "kind": "int",
+        "min": 1,
+        "max": 7
+      },
+      "b0": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "10 * a1 + a0",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "10 * b1 + b0",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "a1 + b1",
+        "format": "int"
+      },
+      "onesSum": {
+        "kind": "expr",
+        "expr": "a0 + b0",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "first + second",
+        "format": "int"
+      },
+      "tensAfter": {
+        "kind": "expr",
+        "expr": "a1 + b1 + 1",
+        "format": "int"
+      },
+      "onesAfter": {
+        "kind": "expr",
+        "expr": "a0 + b0 - 10",
+        "format": "int"
+      },
+      "oAfterWord": {
+        "kind": "expr",
+        "expr": "a0 + b0 - 10 == 1 ? 'one' : 'ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "onesSum >= 10",
+      "onesSum <= 13",
+      "tensSum <= 8",
+      "first != 28 || second != 45"
+    ],
+    "operation": {
+      "op": "+"
+    },
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "cols": [
+          {
+            "place": 10,
+            "count": "tensSum"
+          },
+          {
+            "place": 1,
+            "count": "onesSum"
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "'Trade 10 ones for 1 ten'",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "'Trade 1 ten for 10 ones'",
+        "mistake": "tradedTheWrongWay"
+      },
+      {
+        "expr": "'Trade 1 one for 1 ten'",
+        "mistake": "countedRodsAsOnes"
+      },
+      {
+        "expr": "'No trade needed'",
+        "mistake": "placeValueSlip"
+      }
+    ],
+    "hint": {
+      "nudge": "Count the discs in each place. One place can show at most 9 discs.",
+      "steps": [
+        "Count the ten discs, then the one discs.",
+        "Does any place have more than 9 discs?",
+        "A trade keeps the number the same but leaves that place with fewer discs."
+      ],
+      "picture": null,
+      "example": {
+        "problem": "You put 28 and 45 on the mat to add them. The mat shows 6 tens and 13 ones. Which trade do you need to make next?",
+        "steps": [
+          "13 ones is more than 9 ones.",
+          "Trade 10 ones for 1 ten.",
+          "Now the mat shows 7 tens and 3 ones. That is 73."
+        ],
+        "answer": "Trade 10 ones for 1 ten"
+      },
+      "feedback": {
+        "tradedTheWrongWay": "That trade gives you even more one discs. The ones place already has too many.",
+        "countedRodsAsOnes": "A ten disc is worth ten ones, not one. A trade keeps the number on the mat the same.",
+        "placeValueSlip": "The ones place has more than 9 discs, so it cannot be written as one digit. Make a trade first."
+      },
+      "solution": {
+        "steps": [
+          "The mat shows {tensSum} tens and {onesSum} ones.",
+          "{onesSum} ones is more than 9, so trade 10 ones for 1 ten.",
+          "Now the mat shows {tensAfter} tens and {onesAfter} {oAfterWord}. That is {total}."
+        ],
+        "answer": "'Trade 10 ones for 1 ten'"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-group-ten",
+    "blueprintId": "calc-g2-group-ten",
+    "modeId": "multiDigit",
+    "subskill": "severalNumbers",
+    "family": "conceptual",
+    "structureType": "groupToMakeTen",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.6"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [],
+      "va": [
+        "2.CE.1f"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.6",
+        "TEKS 2.4B",
+        "VA SOL 2023 2.CE.1f",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "To add {n1} + {n2} + {n3}, you can make a ten first. Which two numbers have ones that add up to 10?"
+    },
+    "slots": {
+      "p": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "k": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "r": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "t1": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "t2": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "t3": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "o1": {
+        "kind": "expr",
+        "expr": "p == 0 ? k : r",
+        "format": "int"
+      },
+      "o2": {
+        "kind": "expr",
+        "expr": "p == 0 ? r : k",
+        "format": "int"
+      },
+      "o3": {
+        "kind": "expr",
+        "expr": "10 - k",
+        "format": "int"
+      },
+      "n1": {
+        "kind": "expr",
+        "expr": "10 * t1 + o1",
+        "format": "int"
+      },
+      "n2": {
+        "kind": "expr",
+        "expr": "10 * t2 + o2",
+        "format": "int"
+      },
+      "n3": {
+        "kind": "expr",
+        "expr": "10 * t3 + o3",
+        "format": "int"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "p == 0 ? n1 + ' and ' + n3 : n2 + ' and ' + n3",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "r != k",
+      "r + k != 10",
+      "n1 + n2 + n3 <= 100",
+      "n1 != n2",
+      "n2 != n3",
+      "n1 != n3"
+    ],
+    "operation": {
+      "op": "+"
+    },
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "n1 + ' and ' + n2",
+        "mistake": "pickedTheFirstTwo"
+      },
+      {
+        "expr": "p == 0 ? n2 + ' and ' + n3 : n1 + ' and ' + n3",
+        "mistake": "pairDoesNotMakeTen"
+      }
+    ],
+    "hint": {
+      "nudge": "Look only at the ones digits. Find the two that make a ten.",
+      "steps": [
+        "The ones digits are {o1}, {o2} and {o3}.",
+        "Add the ones digits two at a time.",
+        "The pair that makes ten tells you which two numbers to add first."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "pickedTheFirstTwo": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+        "pairDoesNotMakeTen": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+      },
+      "solution": {
+        "steps": [
+          "The ones digits are {o1}, {o2} and {o3}.",
+          "{k} + {o3} = 10.",
+          "So add {keyText} first."
+        ],
+        "answer": "keyText"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-add-discs",
+    "blueprintId": "calc-g2-add-discs",
+    "modeId": "multiDigit",
+    "subskill": "within1000",
+    "family": "procedural",
+    "structureType": "addWithDiscs",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.7"
+      ],
+      "tx": [],
+      "fl": [
+        "MA.2.NSO.2.4"
+      ],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.7",
+        "FL B.E.S.T. MA.2.NSO.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows the first number. What is {first} + {second}?"
+    },
+    "slots": {
+      "r": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "h1": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "t1": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "o1": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "h2": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "t2": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "o2": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "100 * h1 + 10 * t1 + o1",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "100 * h2 + 10 * t2 + o2",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "first + second",
+        "format": "int"
+      },
+      "onesSum": {
+        "kind": "expr",
+        "expr": "o1 + o2",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "t1 + t2",
+        "format": "int"
+      },
+      "hSum": {
+        "kind": "expr",
+        "expr": "h1 + h2",
+        "format": "int"
+      },
+      "discs": {
+        "kind": "expr",
+        "expr": "h1 + t1 + o1",
+        "format": "int"
+      },
+      "tradeStep": {
+        "kind": "expr",
+        "expr": "r == 0 ? 'The ones make ten or more, so trade ten ones for a ten disc.' : 'The tens make ten or more, so trade ten tens for a hundred disc.'",
+        "format": "text"
+      },
+      "carryFeedback": {
+        "kind": "expr",
+        "expr": "r == 0 ? 'The ones made a new ten. Add that ten to the tens.' : 'The tens made a new hundred. Add that hundred to the hundreds.'",
+        "format": "text"
+      },
+      "onesLeftTxt": {
+        "kind": "expr",
+        "expr": "onesSum - 10 == 1 ? '1 one' : (onesSum - 10) + ' ones'",
+        "format": "text"
+      },
+      "tensLeftTxt": {
+        "kind": "expr",
+        "expr": "tensSum - 10 == 1 ? '1 ten' : (tensSum - 10) + ' tens'",
+        "format": "text"
+      },
+      "tradeSolution": {
+        "kind": "expr",
+        "expr": "r == 0 ? onesSum + ' ones make 1 ten and ' + onesLeftTxt + ', so the tens become ' + (tensSum + 1) + '.' : tensSum + ' tens make 1 hundred and ' + tensLeftTxt + ', so the hundreds become ' + (hSum + 1) + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "r == 0 ? (o1 + o2 >= 10 && t1 + t2 + 1 <= 9 && h1 + h2 <= 9) : (o1 + o2 <= 9 && t1 + t2 >= 10 && h1 + h2 + 1 <= 9)"
+    ],
+    "operation": {
+      "a": "first",
+      "b": "second",
+      "op": "+"
+    },
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "cols": [
+          {
+            "place": 100,
+            "count": "h1"
+          },
+          {
+            "place": 10,
+            "count": "t1"
+          },
+          {
+            "place": 1,
+            "count": "o1"
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "total",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "r == 0 ? total - 10 : total - 100",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "r == 0 ? hSum * 1000 + tensSum * 100 + onesSum : hSum * 1000 + tensSum * 10 + onesSum",
+        "mistake": "placeValueSlip"
+      },
+      {
+        "expr": "discs + second",
+        "mistake": "countedRodsAsOnes"
+      }
+    ],
+    "hint": {
+      "nudge": "Add {second} to the number on the mat, one place at a time. Start with the ones.",
+      "steps": [
+        "Ones: {o1} + {o2}. Tens: {t1} + {t2}. Hundreds: {h1} + {h2}.",
+        "{tradeStep}",
+        "Then write one digit for each place."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "forgotToCarry": "{carryFeedback}",
+        "placeValueSlip": "Each place holds just one digit. When a place makes ten or more, trade ten of them for one disc of the next place.",
+        "countedRodsAsOnes": "Each disc is worth 100, 10 or 1, not 1 each. The mat shows {first}, not {discs}."
+      },
+      "solution": {
+        "steps": [
+          "Ones: {o1} + {o2} = {onesSum}. Tens: {t1} + {t2} = {tensSum}. Hundreds: {h1} + {h2} = {hSum}.",
+          "{tradeSolution}",
+          "So {first} + {second} = {total}."
+        ],
+        "answer": "total"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-across-zero-discs",
+    "blueprintId": "calc-g2-across-zero-discs",
+    "modeId": "multiDigit",
+    "subskill": "within1000",
+    "family": "procedural",
+    "structureType": "subtractWithDiscs",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.7"
+      ],
+      "tx": [],
+      "fl": [
+        "MA.2.NSO.2.4"
+      ],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "hard",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.7",
+        "FL B.E.S.T. MA.2.NSO.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows the first number. What is {first} − {second}?"
+    },
+    "slots": {
+      "h": {
+        "kind": "int",
+        "min": 3,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "H": {
+        "kind": "int",
+        "min": 1,
+        "max": 7
+      },
+      "T": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "V": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "100 * h + o",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "100 * H + 10 * T + V",
+        "format": "int"
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "first - second",
+        "format": "int"
+      },
+      "hm1": {
+        "kind": "expr",
+        "expr": "h - 1",
+        "format": "int"
+      },
+      "o10": {
+        "kind": "expr",
+        "expr": "o + 10",
+        "format": "int"
+      },
+      "oWord": {
+        "kind": "expr",
+        "expr": "o == 1 ? 'one' : 'ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "V > o",
+      "diff >= 100"
+    ],
+    "operation": {
+      "a": "first",
+      "b": "second",
+      "op": "-"
+    },
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "cols": [
+          {
+            "place": 100,
+            "count": "h"
+          },
+          {
+            "place": 10,
+            "count": "0"
+          },
+          {
+            "place": 1,
+            "count": "o"
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "diff",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "diff + 100",
+        "mistake": "acrossZeroSlip"
+      },
+      {
+        "expr": "100 * (h - H) + 10 * T + (V - o)",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "100 * (h - 1 - H) + 10 * (10 - T) + (V - o)",
+        "mistake": "tradedOnlyOnce"
+      }
+    ],
+    "hint": {
+      "nudge": "The mat has no ten discs. Plan your trades before you take away {second}.",
+      "steps": [
+        "Ones first: there are not enough ones to take away {V}.",
+        "There are no tens to trade, so trade a hundred for ten tens first.",
+        "Then trade a ten for ten ones. Now take away each place."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "acrossZeroSlip": "You made nine tens but kept all {h} hundreds. One hundred was traded, so there is one fewer hundred.",
+        "smallerFromLarger": "In each place you took the smaller digit from the larger. You cannot take {V} ones from {o}, so trade first.",
+        "tradedOnlyOnce": "You traded a hundred for ten tens, but the ones still need a trade. Trade one of those tens for ten ones too."
+      },
+      "solution": {
+        "steps": [
+          "Trade a hundred for ten tens: {hm1} hundreds, 10 tens and {o} {oWord}.",
+          "Trade a ten for ten ones: {hm1} hundreds, 9 tens and {o10} ones.",
+          "Take away each place: {first} − {second} = {diff}."
+        ],
+        "answer": "diff"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-rename-zero",
+    "blueprintId": "calc-g2-rename-zero",
+    "modeId": "multiDigit",
+    "subskill": "within1000",
+    "family": "conceptual",
+    "structureType": "renameToSubtract",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.7",
+        "2.NBT.B.9"
+      ],
+      "tx": [],
+      "fl": [
+        "MA.2.NSO.2.4"
+      ],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "hard",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.7, 2.NBT.B.9",
+        "FL B.E.S.T. MA.2.NSO.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "Which way of writing {first} has enough tens and enough ones to take away {second}?"
+    },
+    "slots": {
+      "h": {
+        "kind": "int",
+        "min": 3,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "H": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "T": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "V": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "100 * h + o",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "100 * H + 10 * T + V",
+        "format": "int"
+      },
+      "hm1": {
+        "kind": "expr",
+        "expr": "h - 1",
+        "format": "int"
+      },
+      "o10": {
+        "kind": "expr",
+        "expr": "o + 10",
+        "format": "int"
+      },
+      "onesTxt": {
+        "kind": "expr",
+        "expr": "o == 1 ? '1 one' : o + ' ones'",
+        "format": "text"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "hm1 + ' hundreds, 9 tens, ' + o10 + ' ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "V > o",
+      "H <= h - 1"
+    ],
+    "operation": {
+      "op": "-"
+    },
+    "answer": {
+      "expr": "key",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "h + ' hundreds, 9 tens, ' + o10 + ' ones'",
+        "mistake": "acrossZeroSlip"
+      },
+      {
+        "expr": "hm1 + ' hundreds, 10 tens, ' + onesTxt",
+        "mistake": "tradedOnlyOnce"
+      },
+      {
+        "expr": "h + ' hundreds, 0 tens, ' + onesTxt",
+        "mistake": "smallerFromLarger"
+      }
+    ],
+    "hint": {
+      "nudge": "The right choice is still worth {first}, and every place has enough to take away {second}.",
+      "steps": [
+        "Check the value of each choice. Does it still make {first}?",
+        "Then check the ones and the tens. Are there enough of each to take away {second}?",
+        "There are no tens in {first}, so a hundred must be traded before a ten can be."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "acrossZeroSlip": "That choice is worth a hundred more than {first}. A hundred was traded, so there is one fewer hundred.",
+        "tradedOnlyOnce": "That choice is worth {first}, but there are still not enough ones. Trade one of the tens for ten ones too.",
+        "smallerFromLarger": "That is {first} with no trades. There are not enough ones or tens to take away {second}."
+      },
+      "solution": {
+        "steps": [
+          "Trade a hundred for ten tens: {hm1} hundreds, 10 tens, {onesTxt}.",
+          "Trade a ten for ten ones: {key}.",
+          "Now every place has enough to take away {second}."
+        ],
+        "answer": "key"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-ten-hundred-nocross",
+    "blueprintId": "calc-g2-ten-hundred",
+    "modeId": "multiDigit",
+    "subskill": "tenOrHundred",
+    "family": "procedural",
+    "structureType": "tenOrHundredMoreLess",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.8"
+      ],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.2"
+      ],
+      "va": [],
+      "ga": [
+        "2.NR.2.2"
+      ]
+    },
+    "difficulty": "easy",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.8",
+        "TEKS 2.7B",
+        "FL B.E.S.T. MA.2.NSO.2.2",
+        "GA K-12 2021 2.NR.2.2"
+      ]
+    },
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number is {amt} less than {start}?"
+    },
+    "slots": {
+      "s": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "h": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "t": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "100 * h + 10 * t + o",
+        "format": "int"
+      },
+      "amt": {
+        "kind": "expr",
+        "expr": "s == 0 ? 10 : 100",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "start - amt",
+        "format": "int"
+      },
+      "digit": {
+        "kind": "expr",
+        "expr": "s == 0 ? t : h",
+        "format": "int"
+      },
+      "digitLess": {
+        "kind": "expr",
+        "expr": "s == 0 ? t - 1 : h - 1",
+        "format": "int"
+      },
+      "placeWord": {
+        "kind": "expr",
+        "expr": "s == 0 ? 'tens' : 'hundreds'",
+        "format": "text"
+      },
+      "otherPlace": {
+        "kind": "expr",
+        "expr": "s == 0 ? 'hundreds' : 'tens'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "start <= 900",
+      "s == 0 ? t >= 1 : h >= 2"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "amt",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "s == 0 ? start - 100 : start - 10",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "start - 1",
+        "mistake": "changedTheOnes"
+      },
+      {
+        "expr": "start + amt",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "{amt} less changes only the {placeWord} digit. Find it in {start}.",
+      "steps": [
+        "The {placeWord} digit of {start} is {digit}.",
+        "Make that digit one less. Keep the other digits the same."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "changedTheWrongPlace": "That changes the {otherPlace} digit. {amt} less changes the {placeWord} digit.",
+        "changedTheOnes": "That is 1 less. {amt} less changes the {placeWord} digit, not the ones.",
+        "addedInsteadOfSubtracted": "That is {amt} more. Less means the {placeWord} digit goes down by one."
+      },
+      "solution": {
+        "steps": [
+          "The {placeWord} digit of {start} is {digit}.",
+          "One less is {digitLess}, so {amt} less than {start} is {key}."
+        ],
+        "answer": "key"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-ten-hundred-across-less",
+    "blueprintId": "calc-g2-ten-hundred",
+    "modeId": "multiDigit",
+    "subskill": "tenOrHundred",
+    "family": "procedural",
+    "structureType": "tenOrHundredMoreLess",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.8"
+      ],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.2"
+      ],
+      "va": [],
+      "ga": [
+        "2.NR.2.2"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.8",
+        "TEKS 2.7B",
+        "FL B.E.S.T. MA.2.NSO.2.2",
+        "GA K-12 2021 2.NR.2.2"
+      ]
+    },
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number is 10 less than {start}?"
+    },
+    "slots": {
+      "h": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "100 * h + o",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "start - 10",
+        "format": "int"
+      },
+      "hTxt": {
+        "kind": "expr",
+        "expr": "h - 1 == 1 ? '1 hundred' : (h - 1) + ' hundreds'",
+        "format": "text"
+      },
+      "oTxt": {
+        "kind": "expr",
+        "expr": "o == 1 ? '1 one' : o + ' ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "start <= 900"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "10",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start - 100",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "start + 10",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "start + 90",
+        "mistake": "acrossZeroSlip"
+      }
+    ],
+    "hint": {
+      "nudge": "10 less takes away one ten. Look at the tens digit of {start}.",
+      "steps": [
+        "{start} has 0 tens, so there is no ten to take. Trade a hundred for ten tens.",
+        "Now {start} is {hTxt}, 10 tens and {oTxt}. Take one ten away."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "changedTheWrongPlace": "That is 100 less. 10 less takes away one ten, not one hundred.",
+        "addedInsteadOfSubtracted": "That is 10 more. Less means take away, so the number gets smaller.",
+        "acrossZeroSlip": "You made 9 tens but kept {h} hundreds. A hundred was traded for the tens, so the hundreds digit goes down by one too."
+      },
+      "solution": {
+        "steps": [
+          "Trade a hundred for ten tens: {hTxt}, 10 tens and {oTxt}.",
+          "Take one ten away: {hTxt}, 9 tens and {oTxt}.",
+          "So 10 less than {start} is {key}."
+        ],
+        "answer": "key"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-ten-hundred-across-more",
+    "blueprintId": "calc-g2-ten-hundred",
+    "modeId": "multiDigit",
+    "subskill": "tenOrHundred",
+    "family": "procedural",
+    "structureType": "tenOrHundredMoreLess",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.8"
+      ],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.2"
+      ],
+      "va": [],
+      "ga": [
+        "2.NR.2.2"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.8",
+        "TEKS 2.7B",
+        "FL B.E.S.T. MA.2.NSO.2.2",
+        "GA K-12 2021 2.NR.2.2"
+      ]
+    },
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number is 10 more than {start}?"
+    },
+    "slots": {
+      "h": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "100 * h + 90 + o",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "start + 10",
+        "format": "int"
+      },
+      "hp1": {
+        "kind": "expr",
+        "expr": "h + 1",
+        "format": "int"
+      },
+      "hTxt": {
+        "kind": "expr",
+        "expr": "h == 1 ? '1 hundred' : h + ' hundreds'",
+        "format": "text"
+      },
+      "oTxt": {
+        "kind": "expr",
+        "expr": "o == 1 ? '1 one' : o + ' ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "start <= 900"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "10",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + 100",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "start - 10",
+        "mistake": "subtractedInsteadOfAdded"
+      },
+      {
+        "expr": "start - 90",
+        "mistake": "acrossZeroSlip"
+      }
+    ],
+    "hint": {
+      "nudge": "10 more adds one ten. Look at the tens digit of {start}.",
+      "steps": [
+        "{start} has 9 tens. One more ten makes 10 tens.",
+        "10 tens make a hundred, so trade them for a hundred."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "changedTheWrongPlace": "That is 100 more. 10 more adds one ten, not one hundred.",
+        "subtractedInsteadOfAdded": "That is 10 less. More means add, so the number gets bigger.",
+        "acrossZeroSlip": "You made 0 tens but kept {hTxt}. The 10 tens became a new hundred, so the hundreds digit goes up by one too."
+      },
+      "solution": {
+        "steps": [
+          "{start} has 9 tens. One more ten makes 10 tens.",
+          "Trade 10 tens for 1 hundred: {hp1} hundreds, 0 tens and {oTxt}.",
+          "So 10 more than {start} is {key}."
+        ],
+        "answer": "key"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-ten-hundred-discs-nocross",
+    "blueprintId": "calc-g2-ten-hundred-discs",
+    "modeId": "multiDigit",
+    "subskill": "tenOrHundred",
+    "family": "procedural",
+    "structureType": "tenOrHundredOnMat",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.8"
+      ],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.2"
+      ],
+      "va": [],
+      "ga": [
+        "2.NR.2.2"
+      ]
+    },
+    "difficulty": "easy",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.8",
+        "TEKS 2.7B",
+        "FL B.E.S.T. MA.2.NSO.2.2",
+        "GA K-12 2021 2.NR.2.2"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "{event} What number does the mat show now?"
+    },
+    "slots": {
+      "disc": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "dir": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "h": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "t": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "100 * h + 10 * t + o",
+        "format": "int"
+      },
+      "step": {
+        "kind": "expr",
+        "expr": "(disc == 0 ? 10 : 100) * (dir == 0 ? 1 : -1)",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "start + step",
+        "format": "int"
+      },
+      "discWord": {
+        "kind": "expr",
+        "expr": "disc == 0 ? 'ten' : 'hundred'",
+        "format": "text"
+      },
+      "worthWord": {
+        "kind": "expr",
+        "expr": "disc == 0 ? 'ten' : 'one hundred'",
+        "format": "text"
+      },
+      "event": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'One more ' + discWord + ' disc goes on the mat.' : 'A ' + discWord + ' disc comes off the mat.'",
+        "format": "text"
+      },
+      "moveStep": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'Now there is one more ' + discWord + ' disc.' : 'Now there is one fewer ' + discWord + ' disc.'",
+        "format": "text"
+      },
+      "moveSolution": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'One more ' + discWord + ' disc makes the ' + discWord + 's digit one more.' : 'One fewer ' + discWord + ' disc makes the ' + discWord + 's digit one less.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "disc == 0 ? (dir == 0 ? t <= 8 : t >= 1) : (dir == 0 ? h <= 8 : h >= 2)",
+      "start != 253"
+    ],
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "cols": [
+          {
+            "place": 100,
+            "count": "h"
+          },
+          {
+            "place": 10,
+            "count": "t"
+          },
+          {
+            "place": 1,
+            "count": "o"
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + (dir == 0 ? 1 : -1)",
+        "mistake": "countedRodsAsOnes"
+      },
+      {
+        "expr": "start + (disc == 0 ? 100 : 10) * (dir == 0 ? 1 : -1)",
+        "mistake": "changedTheWrongPlace"
+      }
+    ],
+    "hint": {
+      "nudge": "Read the number on the mat first. A {discWord} disc changes only the {discWord}s digit.",
+      "steps": [
+        "Count the hundred discs, then the ten discs, then the one discs.",
+        "{moveStep}",
+        "The other digits stay the same."
+      ],
+      "picture": null,
+      "example": {
+        "problem": "A mat shows 2 hundreds, 5 tens and 3 ones. One more ten disc goes on the mat. What number does the mat show now?",
+        "steps": [
+          "The mat shows 253.",
+          "One more ten disc makes 6 tens.",
+          "Now the mat shows 263."
+        ],
+        "answer": 263
+      },
+      "feedback": {
+        "countedRodsAsOnes": "A {discWord} disc is worth {worthWord}, not one. Change the {discWord}s digit, not the ones.",
+        "changedTheWrongPlace": "The disc that moved is a {discWord} disc, so only the {discWord}s digit changes."
+      },
+      "solution": {
+        "steps": [
+          "The mat showed {start}.",
+          "{moveSolution}",
+          "Now the mat shows {key}."
+        ],
+        "answer": "key"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-ten-hundred-discs-across",
+    "blueprintId": "calc-g2-ten-hundred-discs",
+    "modeId": "multiDigit",
+    "subskill": "tenOrHundred",
+    "family": "procedural",
+    "structureType": "tenOrHundredOnMat",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.8"
+      ],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.2"
+      ],
+      "va": [],
+      "ga": [
+        "2.NR.2.2"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.8",
+        "TEKS 2.7B",
+        "FL B.E.S.T. MA.2.NSO.2.2",
+        "GA K-12 2021 2.NR.2.2"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "One more ten disc goes on the mat. What number does the mat show now?"
+    },
+    "slots": {
+      "h": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "100 * h + 90 + o",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "start + 10",
+        "format": "int"
+      },
+      "hp1": {
+        "kind": "expr",
+        "expr": "h + 1",
+        "format": "int"
+      },
+      "hTxt": {
+        "kind": "expr",
+        "expr": "h == 1 ? '1 hundred' : h + ' hundreds'",
+        "format": "text"
+      },
+      "oTxt": {
+        "kind": "expr",
+        "expr": "o == 1 ? '1 one' : o + ' ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "start != 394"
+    ],
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "cols": [
+          {
+            "place": 100,
+            "count": "h"
+          },
+          {
+            "place": 10,
+            "count": "9"
+          },
+          {
+            "place": 1,
+            "count": "o"
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + 1",
+        "mistake": "countedRodsAsOnes"
+      },
+      {
+        "expr": "start + 100",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "start - 90",
+        "mistake": "acrossZeroSlip"
+      }
+    ],
+    "hint": {
+      "nudge": "Read the number on the mat first. Then put the new ten disc with the other ten discs.",
+      "steps": [
+        "Count the hundred discs, then the ten discs, then the one discs.",
+        "Add the new ten disc. How many ten discs are there now?",
+        "Ten ten discs can be traded for one hundred disc."
+      ],
+      "picture": null,
+      "example": {
+        "problem": "A mat shows 3 hundreds, 9 tens and 4 ones. One more ten disc goes on the mat. What number does the mat show now?",
+        "steps": [
+          "The mat shows 394.",
+          "One more ten disc makes 10 ten discs. Trade them for 1 hundred disc.",
+          "Now the mat shows 4 hundreds, 0 tens and 4 ones. That is 404."
+        ],
+        "answer": 404
+      },
+      "feedback": {
+        "countedRodsAsOnes": "A ten disc is worth ten, not one. Count the ten discs again with the new one.",
+        "changedTheWrongPlace": "Only a ten disc went on, not a hundred disc. Count the ten discs with the new one, then trade ten tens for a hundred.",
+        "acrossZeroSlip": "You made 0 tens but kept {hTxt}. The ten tens become a new hundred disc, so the hundreds digit goes up by one too."
+      },
+      "solution": {
+        "steps": [
+          "The mat showed {start}.",
+          "One more ten disc makes 10 ten discs. Trade them for 1 hundred disc.",
+          "Now the mat shows {hp1} hundreds, 0 tens and {oTxt}. That is {key}."
+        ],
+        "answer": "key"
+      }
+    }
+  }
+]

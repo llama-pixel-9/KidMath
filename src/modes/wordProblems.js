@@ -11,7 +11,14 @@ import { opGlyph } from "../opSigns.js";
  * v2 only, and hidden until Sai flips it at /admin/switch: its default live
  * version is `preview` (src/itemBank/versionRules.js), so with no switch row
  * only preview viewers see it. Its stories are v2 bank rows only; none exist
- * yet (the Grade 2 blueprint rows are drafts awaiting Sai).
+ * yet. Sai approved the 42 Grade 2 blueprint rows on 2026-10-02
+ * (src/blueprints/g2AddsubWp.json); models are written from them next.
+ *
+ * Subskills, one per Grade 2 skill: four story kinds, the bare box
+ * sentences (missingNumber), and the state lines past 100
+ * (biggerNumberStories, rows 36-42: Texas stories within 1,000, Virginia
+ * and Georgia totals past 100), which Sai's list files as their own skill,
+ * last in the grade (decision 4).
  *
  * The generator below is the empty-cell fallback and NEVER writes story
  * prose (Sai does not want generator stories). Whatever it is asked for, it
@@ -25,7 +32,7 @@ import { opGlyph } from "../opSigns.js";
  * Grade 2 is levels 4–6. Levels outside it build Grade 2's nearest band.
  */
 
-export const SUBSKILLS = ["changeStories", "partWholeStories", "compareStories", "twoStepStories", "missingNumber"];
+export const SUBSKILLS = ["changeStories", "partWholeStories", "compareStories", "twoStepStories", "missingNumber", "biggerNumberStories"];
 
 /** Grade 2's levels: the band every Grade 2 skill and its rows sit in. */
 export const GRADE2_LEVELS = [4, 6];

@@ -504,6 +504,24 @@
       "level": 7,
       "seed": 58285,
       "expectedJSON": "{\"a\":37,\"b\":null,\"op\":\"-\",\"answer\":28,\"level\":7,\"display\":{\"promptText\":\"37 − ? = 9\"},\"distractorContext\":{\"a\":37,\"b\":9},\"hint\":{\"nudge\":\"Think: 37 take away what number leaves 9?\",\"steps\":[\"Start at 9.\",\"Count up to 37 in jumps: tens first, then ones.\",\"Add up your jumps. That is the missing number.\"]},\"metadata\":{\"modeId\":\"wordProblems\",\"level\":6,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Add and subtract within 100\",\"subskill\":\"missingNumber\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"2.NBT.B.5\"],\"misconceptionTags\":[\"operationSwap\",\"placeValueSlip\",\"offByOne\"],\"blueprintId\":\"wordProblems-conceptual-box-sub-change\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"box-sub-change\"},\"mode\":\"wordProblems\",\"itemKey\":\"wordProblems::-::37::::28::missingNumber::wordProblems-conceptual-box-sub-change::|37 − ? = 9|||\"}"
+    },
+    {
+      "mode": "multiDigit",
+      "level": 1,
+      "seed": 10281,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":null,\"answer\":56,\"answerType\":\"numberPad\",\"display\":{\"promptText\":\"53 + 19 = ? + 16\",\"layout\":\"horizontal\"},\"hint\":{\"nudge\":\"Both sides of = are the same amount.\",\"steps\":[\"Find 53 + 19 first.\",\"Then think: what number and 16 make that much?\"],\"feedback\":{\"72\":\"That is the left side's total. The box and the number beside it must make that total together.\"}},\"level\":1,\"metadata\":{\"modeId\":\"multiDigit\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Explain why addition and subtraction strategies work\",\"subskill\":\"equalSign\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"2.NBT.B.5\",\"2.NBT.B.9\"],\"misconceptionTags\":[\"answerComesNext\",\"addedEverything\"],\"blueprintId\":\"multiDigit-conceptual-balance\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"balanceEquation\"},\"mode\":\"multiDigit\",\"itemKey\":\"multiDigit::::::::56::equalSign::multiDigit-conceptual-balance::|53 + 19 = ? + 16|||\"}"
+    },
+    {
+      "mode": "multiDigit",
+      "level": 4,
+      "seed": 34038,
+      "expectedJSON": "{\"a\":501,\"b\":12,\"op\":\"+\",\"answer\":513,\"answerType\":\"numberPad\",\"display\":{\"promptText\":\"501 + 12 = ?\",\"layout\":\"vertical\"},\"hint\":{\"nudge\":\"Add the ones first, then the next place.\",\"steps\":[\"Ones: 1 + 2 makes 3 ones.\",\"Tens: 0 + 1 makes 1 tens.\",\"Hundreds: 5 makes 5 hundreds.\",\"Put the hundreds, tens and ones together.\"],\"feedback\":{\"621\":\"Line up the ones under the ones before you add.\"}},\"level\":4,\"metadata\":{\"modeId\":\"multiDigit\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Add and subtract within 1,000\",\"subskill\":\"within1000\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP7\",\"MP8\"],\"standardRefs\":[\"2.NBT.B.7\"],\"misconceptionTags\":[\"misalignedPlaces\"],\"blueprintId\":\"calc-g2-add-1000\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"addWithin1000\"},\"mode\":\"multiDigit\",\"itemKey\":\"multiDigit::+::501::12::513::within1000::calc-g2-add-1000::|501 + 12 = ?|||\"}"
+    },
+    {
+      "mode": "multiDigit",
+      "level": 7,
+      "seed": 57795,
+      "expectedJSON": "{\"a\":1181,\"b\":10,\"op\":\"+\",\"answer\":1191,\"answerType\":\"numberPad\",\"display\":{\"promptText\":\"1181 + 10 = ?\",\"layout\":\"horizontal\"},\"hint\":{\"nudge\":\"Adding 10 changes the tens digit by one.\",\"steps\":[\"Find the tens digit of 1181.\",\"Make it one more. If it goes past 9 or below 0, the next place changes too.\",\"Keep every other digit the same.\"]},\"level\":7,\"metadata\":{\"modeId\":\"multiDigit\",\"level\":6,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Mentally add or subtract 10 or 100, to 1,200\",\"subskill\":\"tenOrHundredTo1200\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP7\",\"MP8\"],\"standardRefs\":[],\"misconceptionTags\":[\"changedTheWrongPlace\",\"wentTheWrongWay\"],\"blueprintId\":\"multiDigit-procedural-tenOrHundredTo1200\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"tenOrHundredMoreLess\"},\"mode\":\"multiDigit\",\"itemKey\":\"multiDigit::+::1181::10::1191::tenOrHundredTo1200::multiDigit-procedural-tenOrHundredTo1200::|1181 + 10 = ?|||\"}"
     }
   ]
 }

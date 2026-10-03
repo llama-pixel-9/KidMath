@@ -121,7 +121,9 @@ export const KID_SAFE_TERMS = Object.freeze({
  * `personalData` category with a descriptive term.
  */
 export const PERSONAL_DATA_PATTERNS = Object.freeze([
-  { term: "phone number", re: /(?:\(\d{3}\)\s*|\b\d{3}[-.\s])\d{3}[-.\s]\d{4}\b/g },
+  // Separators are a space, dash or dot on one line: choices joined by newlines
+  // ("600\n800\n1000") are not a phone number.
+  { term: "phone number", re: /(?:\(\d{3}\) ?|\b\d{3}[-. ])\d{3}[-. ]\d{4}\b/g },
   { term: "social security number", re: /\b\d{3}-\d{2}-\d{4}\b/g },
   {
     term: "street address",

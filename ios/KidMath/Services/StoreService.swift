@@ -40,10 +40,12 @@ final class StoreService: ObservableObject {
 
     /// Free tier (decided 2026-08-02, supersedes "free is web-only"): the
     /// same modes as the web are free on iOS too (Math Facts since
-    /// 2026-10-01). Mirror of FREE_MODE_IDS in src/premium.js — keep the
-    /// two lists identical.
+    /// 2026-10-01, Word Problems and Multi-Digit Math since 2026-10-02).
+    /// Mirror of FREE_MODE_IDS in src/premium.js — keep the two lists
+    /// identical.
     nonisolated static let freeModeIds: Set<String> = [
         "addition", "subtraction", "multiplication", "division", "counting", "mathFacts",
+        "wordProblems", "multiDigit",
     ]
 
     /// Whether this mode can start a session right now: free tier, or

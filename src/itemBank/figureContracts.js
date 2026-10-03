@@ -16,7 +16,9 @@
  *
  * Classes are keyed by structureType (bank rows carry it top-level, generated
  * questions in metadata.structureType). NOT display.time.kind — kind names
- * lie: bank rows tagged kind "faceRead" are digital ticket reads.
+ * lie: bank rows tagged kind "faceRead" are digital ticket reads. The v2
+ * topics built from blueprint rows (wordProblems, multiDigit) key by row id first, since
+ * a picture row and a words-only row can share a structureType.
  *
  * Satisfier vocabulary:
  *   "figure:<key>"  display.figure === key (key must exist in figureRegistry)
@@ -208,6 +210,130 @@ const DISCS_RENDERED = [
   "readDiscs", "countTensDiscs",
 ];
 
+// Word Problems (Grade 2 blueprint rows, src/blueprints/g2AddsubWp.json,
+// approved 2026-10-02). A picture row SHARES its structureType with a
+// words-only row (row 16 "picture-tens-ones" is addToResultUnknown, like
+// row 1), and a model copies its row's structureType, so these classify by
+// the item's blueprint row id first (byRowThenStructure below). Every row id
+// is declared, from the row's `picture` field; modeFigures.spec ties the
+// lists to the rows, so a new row with no line fails CI.
+const DISC_MAT = { satisfiedBy: ["figure:discMat"] };
+const BAR_MODEL = { satisfiedBy: ["widget:barModel"] };
+const NUMBER_LINE = { satisfiedBy: ["widget:numberLine"] };
+// "Choose the tape diagram": the four choices ARE the pictures. No choice
+// widget draws tape diagrams yet (a build item), so the row needs a figure
+// of its own before any model for it can pass.
+const PICTURE_CHOICES = { satisfiedBy: ["any-figure"] };
+
+const WP_ROW_CLASSES = {
+  // place-value disc mat showing only the first amount
+  "wp-g2-picture-tens-ones": DISC_MAT,
+  "wp-g2-two-step-picture": DISC_MAT,
+  // a tape diagram the kid fills in, typed into the barModel widget
+  "wp-g2-tape-missing-part": BAR_MODEL,
+  "wp-g2-tape-compare-bigger-fewer": BAR_MODEL,
+  // a number line with one hop, the hop length typed into the widget
+  "wp-g2-number-line-compare": NUMBER_LINE,
+  "wp-g2-box-number-line": NUMBER_LINE,
+  // four tape diagrams to choose from
+  "wp-g2-two-step-tape-choice": PICTURE_CHOICES,
+};
+// Rows whose picture is "none, words only" (or "none, numbers only").
+const WP_VERBAL_ROWS = [
+  "wp-g2-add-to-result", "wp-g2-take-from-result", "wp-g2-put-together-total",
+  "wp-g2-add-to-change", "wp-g2-take-from-change", "wp-g2-take-apart-part",
+  "wp-g2-compare-difference-more", "wp-g2-compare-difference-fewer",
+  "wp-g2-compare-bigger-more", "wp-g2-compare-smaller-fewer",
+  "wp-g2-add-to-start", "wp-g2-take-from-start", "wp-g2-compare-bigger-fewer",
+  "wp-g2-compare-smaller-more", "wp-g2-both-parts-unknown",
+  "wp-g2-choose-equation", "wp-g2-choose-two-equations", "wp-g2-box-middle",
+  "wp-g2-box-start", "wp-g2-two-step-take-take", "wp-g2-two-step-take-add",
+  "wp-g2-two-step-more-then-total", "wp-g2-two-step-total-then-compare",
+  "wp-g2-two-step-two-part", "wp-g2-two-step-choose-equation",
+  "wp-g2-tx-fl-story-for-equation", "wp-g2-va-estimate",
+  "wp-g2-two-step-box-second-step", "wp-g2-tx-1000-put-together-total",
+  "wp-g2-tx-1000-take-from-result", "wp-g2-tx-1000-take-apart-part",
+  "wp-g2-tx-1000-compare-more", "wp-g2-tx-1000-two-step",
+  "wp-g2-tx-1000-story-for-equation", "wp-g2-va-ga-200-put-together-total",
+];
+// The fallback for an item with no row id: its structureType. A structure
+// some words-only row uses stays verbal here (the row id is what tells the
+// picture row apart); twoStepCompareFewerTotal is row 30's alone.
+const WP_VERBAL_STRUCTURES = [
+  "addToResultUnknown", "takeFromResultUnknown", "putTogetherTotalUnknown",
+  "addToChangeUnknown", "takeFromChangeUnknown", "putTogetherAddendUnknown",
+  "compareDifferenceMore", "compareDifferenceFewer", "compareBiggerMore",
+  "compareSmallerFewer", "addToStartUnknown", "takeFromStartUnknown",
+  "compareBiggerFewer", "compareSmallerMore", "bothAddendsUnknown",
+  "equationUnknownMiddle", "equationUnknownFirst", "twoStepTakeTake",
+  "twoStepTakeAdd", "twoStepCompareMoreTotal", "twoStepJoinCompare",
+  "twoStepAddTake", "chooseStoryForEquation", "twoStepEquationSecondStep",
+  // generator-only: the bare box sentences (src/modes/wordProblems.js SHAPES)
+  "box-add-change", "box-add-start", "box-sub-change", "box-sub-start",
+];
+
+// Multi-Digit Math (src/blueprints/g2AddsubCalc.json, approved 2026-10-02):
+// the same row-id-first rule. Its picture rows have structureTypes of their
+// own, so the structure fallback for those is strict too.
+const CALC_ROW_CLASSES = {
+  // a place-value disc mat (rows 14, 23, 24, 27; row 32 shows two mats)
+  "calc-g2-which-trade": DISC_MAT,
+  "calc-g2-add-discs": DISC_MAT,
+  "calc-g2-across-zero-discs": DISC_MAT,
+  "calc-g2-ten-hundred-discs": DISC_MAT,
+  "calc-g2-equal-mats": DISC_MAT,
+  // a number line answered in the widget. Row 9 (several hops, the landing
+  // point typed) needs build work first (calc decision 7); row 10 works today.
+  "calc-g2-add-number-line": NUMBER_LINE,
+  "calc-g2-sub-number-line": NUMBER_LINE,
+};
+const CALC_VERBAL_ROWS = [
+  "calc-g2-add-100", "calc-g2-sub-100", "calc-g2-add-several",
+  "calc-g2-add-sub-three", "calc-g2-make-ten", "calc-g2-tens-then-ones",
+  "calc-g2-equal-sum", "calc-g2-equal-difference", "calc-g2-check",
+  "calc-g2-find-mistake", "calc-g2-missing-digit", "calc-g2-group-ten",
+  "calc-g2-add-1000", "calc-g2-add-past-100", "calc-g2-add-1000-two-trades",
+  "calc-g2-add-several-past-100", "calc-g2-sub-1000",
+  "calc-g2-sub-1000-two-trades", "calc-g2-across-zero", "calc-g2-rename-zero",
+  "calc-g2-ten-hundred", "calc-g2-both-sides", "calc-g2-which-true",
+  "calc-g2-true-false", "calc-g2-true-false-both-sides", "calc-g2-va-estimate",
+  "calc-g2-va-not-equal", "calc-g2-tx-ten-hundred-1200",
+];
+const CALC_STRUCTURES = {
+  addOnNumberLine: NUMBER_LINE,
+  subtractOnNumberLine: NUMBER_LINE,
+  whichTrade: DISC_MAT,
+  addWithDiscs: DISC_MAT,
+  subtractWithDiscs: DISC_MAT,
+  tenOrHundredOnMat: DISC_MAT,
+  sameValueTwoMats: DISC_MAT,
+};
+// Every words-only row's structure; the fallback generator writes only these
+// (the script rows' types, tenOrHundredMoreLess and balanceEquation).
+const CALC_VERBAL_STRUCTURES = [
+  "addWithin100", "subtractWithin100", "addSeveral", "addSubThree",
+  "makeTenStep", "placeValueStep", "compensateAdd", "compensateSubtract",
+  "checkWithInverse", "findTheMistake", "missingDigit", "groupToMakeTen",
+  "addWithin1000", "addPast100", "addTwoRegroups", "addSeveralPast100",
+  "subtractWithin1000", "subtractTwoTrades", "subtractAcrossZero",
+  "renameToSubtract", "tenOrHundredMoreLess", "balanceEquation",
+  "chooseTrueEquation", "trueFalseEquation", "trueFalseBothSides",
+  "estimateSumDifference", "equalOrNotEqual",
+];
+
+/**
+ * Classify by the item's blueprint row id when it names one of this mode's
+ * rows (a bank row or a filled model carries `blueprintId` top-level; a
+ * generated question in metadata), else by structureType.
+ */
+function byRowThenStructure(prefix) {
+  return (question, meta) => {
+    const row = meta?.blueprintId ?? question?.metadata?.blueprintId ?? null;
+    if (typeof row === "string" && row.startsWith(prefix)) return row;
+    return meta?.structureType ?? question?.metadata?.structureType ?? null;
+  };
+}
+
 export const FIGURE_CONTRACTS = {
   time: {
     classify: (question, meta) =>
@@ -275,6 +401,28 @@ export const FIGURE_CONTRACTS = {
     },
     unlisted: "fail",
   },
+
+  wordProblems: {
+    classify: byRowThenStructure("wp-"),
+    classes: {
+      ...WP_ROW_CLASSES,
+      ...Object.fromEntries(WP_VERBAL_ROWS.map((id) => [id, VERBAL])),
+      twoStepCompareFewerTotal: PICTURE_CHOICES,
+      ...Object.fromEntries(WP_VERBAL_STRUCTURES.map((st) => [st, VERBAL])),
+    },
+    unlisted: "fail",
+  },
+
+  multiDigit: {
+    classify: byRowThenStructure("calc-"),
+    classes: {
+      ...CALC_ROW_CLASSES,
+      ...Object.fromEntries(CALC_VERBAL_ROWS.map((id) => [id, VERBAL])),
+      ...CALC_STRUCTURES,
+      ...Object.fromEntries(CALC_VERBAL_STRUCTURES.map((st) => [st, VERBAL])),
+    },
+    unlisted: "fail",
+  },
 };
 
 /**
@@ -283,7 +431,7 @@ export const FIGURE_CONTRACTS = {
  * volumeCoordinates stays playable:false until cubeGrid/coordGrid get mirrors.
  */
 export const IOS_MIRRORED_FIGURES = ["clockFace", "barGraph", "discMat", "pictograph", "tallyChart", "linePlot", "areaFigure"];
-export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs", "counting", "placeValueDiscs"];
+export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs", "counting", "placeValueDiscs", "wordProblems", "multiDigit"];
 
 /**
  * Display keys that actually put pixels on screen (mirror of what

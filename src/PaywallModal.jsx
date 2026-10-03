@@ -208,7 +208,8 @@ export default function PaywallModal({ onClose }) {
 
         <p className="mt-4 text-xs text-slate-400 text-center leading-relaxed">
           One subscription covers every child in your household. Addition, subtraction,
-          multiplication, division, counting, and math facts stay free forever.
+          multiplication, division, counting, math facts, word problems, and multi-digit math
+          stay free forever.
         </p>
       </motion.div>
     </motion.div>

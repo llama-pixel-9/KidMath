@@ -14,9 +14,15 @@
  * Pure: no network, no DOM.
  */
 import factFluency from "./factFluency.json" with { type: "json" };
+// Grade 2 add and subtract (Sai approved both lists as recommended,
+// 2026-10-02): the Word Problems topic's stories and box equations, and the
+// multiDigit topic's computation. The review pages are
+// item-skill/g2-addsub-{wp,calc}-blueprints.md in the project files.
+import g2AddsubWp from "./g2AddsubWp.json" with { type: "json" };
+import g2AddsubCalc from "./g2AddsubCalc.json" with { type: "json" };
 import { FRAMEWORKS, GRADES } from "../standards/index.js";
 
-const FILES = { factFluency };
+const FILES = { factFluency, g2AddsubWp, g2AddsubCalc };
 
 export const TRACKS = Object.freeze(["item", "fluency"]);
 

@@ -10,6 +10,8 @@ import { modeRegistry } from "../modes/index.js";
 import { FULL_ITEMS } from "../itemBank/fullBank.js";
 import { FIGURES, getFigure } from "../components/figureRegistry.js";
 import { WIDGETS } from "../components/widgetRegistry.js";
+import { DEFAULT_LIVE_VERSION } from "../itemBank/versionRules.js";
+import { BLUEPRINT_ROWS } from "../blueprints/index.js";
 
 /**
  * The generalized "show the visual, don't describe it" gate — the one question
@@ -23,6 +25,15 @@ import { WIDGETS } from "../components/widgetRegistry.js";
  */
 
 const contractedModes = Object.keys(FIGURE_CONTRACTS);
+
+// A hidden v2-only topic has no bundled rows until its first models are
+// approved and exported (bankCellCoverage.spec's UNSHIPPED_V2_TOPICS), so its
+// bank sweep has nothing to read yet. The skip ends by itself: once a row
+// ships, or the topic goes live by default, the sweep runs like any mode's.
+const unshippedV2 = (modeId) =>
+  modeRegistry[modeId]?.v2Only === true &&
+  DEFAULT_LIVE_VERSION[modeId] === "preview" &&
+  !FULL_ITEMS.some((b) => b.modeId === modeId);
 
 function generateAll(modeId) {
   const mode = modeRegistry[modeId];
@@ -85,6 +96,7 @@ for (const modeId of contractedModes) {
   describe(`${modeId}: the shipped bank honors the contract`, () => {
     it("every bank row of a covered class carries its required visual", () => {
       const rows = FULL_ITEMS.filter((b) => b.modeId === modeId);
+      if (unshippedV2(modeId)) return;
       expect(rows.length).toBeGreaterThan(0);
       const bad = [];
       for (const b of rows) {
@@ -133,6 +145,73 @@ describe("contract <-> registry parity", () => {
     expect(figureSatisfies({ display: { figure: "barGraph" } }, ["any-figure"])).toBe(true);
     expect(figureSatisfies({ display: { promptText: "words only" } }, ["figure:clockFace"])).toBe(false);
     expect(figureSatisfies({ display: {} }, ["none"])).toBe(true);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Topics built from blueprint rows: every row declared by id, as its picture
+// says. A model copies its row's structureType, and a picture row can share
+// one with a words-only row, so the row id is the class (byRowThenStructure).
+// ---------------------------------------------------------------------------
+
+// The row's `picture` field, in the lists' own words, to the satisfier.
+const PICTURE_SATISFIERS = [
+  [/^none\b/, "none"],
+  [/disc mats?\b/, "figure:discMat"],
+  [/^four tape diagrams to choose from$/, "any-figure"],
+  [/tape diagram|compare bars/, "widget:barModel"],
+  [/number line/, "widget:numberLine"],
+];
+const satisfierForPicture = (picture) => PICTURE_SATISFIERS.find(([rx]) => rx.test(picture))?.[1] ?? null;
+
+const ROW_MODES = ["wordProblems", "multiDigit"];
+
+describe("blueprint rows <-> contract lines", () => {
+  for (const modeId of ROW_MODES) {
+    const contract = FIGURE_CONTRACTS[modeId];
+    const rows = BLUEPRINT_ROWS.filter((r) => r.mode_id === modeId && r.track === "item");
+
+    it(`${modeId}: declares every row by id, with the visual its picture names`, () => {
+      expect(rows.length).toBeGreaterThan(0);
+      for (const row of rows) {
+        const want = satisfierForPicture(row.picture);
+        expect(want, `${row.id}: no satisfier for picture "${row.picture}"`).not.toBeNull();
+        expect(contract.classes[row.id]?.satisfiedBy, row.id).toEqual([want]);
+      }
+    });
+
+    it(`${modeId}: declares every row's structureType, for an item with no row id`, () => {
+      for (const row of rows) {
+        expect(contract.classes[row.spec.structureType], `${row.id}: ${row.spec.structureType}`).toBeTruthy();
+      }
+    });
+
+    it(`${modeId}: a row's id wins over its shared structureType`, () => {
+      const pictureRows = rows.filter((r) => satisfierForPicture(r.picture) !== "none");
+      expect(pictureRows.length).toBeGreaterThan(0);
+      for (const row of pictureRows) {
+        const bare = { display: { promptText: "words only" } };
+        const meta = { blueprintId: row.id, structureType: row.spec.structureType };
+        const v = contractVerdict(modeId, bare, meta);
+        expect(v.cls, row.id).toBe(row.id);
+        expect(v.ok, `${row.id} passed with no picture`).toBe(false);
+        expect(v.reason).toBe("missing");
+      }
+      // A words-only row on the same structure stays verbal.
+      const shared = rows.find(
+        (r) => satisfierForPicture(r.picture) === "none" &&
+          pictureRows.some((p) => p.spec.structureType === r.spec.structureType)
+      );
+      if (shared) {
+        const v = contractVerdict(modeId, { display: { promptText: "words only" } }, { blueprintId: shared.id, structureType: shared.spec.structureType });
+        expect(v.ok, shared.id).toBe(true);
+      }
+    });
+  }
+
+  it("a disc-mat picture row passes once it ships the mat", () => {
+    const q = { display: { figure: "discMat", discMat: { cols: [{ place: "tens", count: 3 }, { place: "ones", count: 4 }] }, promptText: "x" } };
+    expect(contractVerdict("wordProblems", q, { blueprintId: "wp-g2-picture-tens-ones", structureType: "addToResultUnknown" }).ok).toBe(true);
   });
 });
 

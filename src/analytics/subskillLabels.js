@@ -31,6 +31,14 @@ const LABELS = {
   compareStories: "compare stories (how many more or fewer)",
   twoStepStories: "two-step stories",
   missingNumber: "missing numbers in equations (46 + ? = 72)",
+  biggerNumberStories: "stories with numbers up to 1,000",
+  // multi-digit math
+  within100: "adding and subtracting within 100",
+  severalNumbers: "adding three or four numbers",
+  within1000: "adding and subtracting within 1,000",
+  tenOrHundred: "10 or 100 more or less",
+  equalSign: "what the equal sign means",
+  tenOrHundredTo1200: "10 or 100 more or less, to 1,200",
   // addition / subtraction
   makeTen: "making ten",
   composeDecompose: "breaking numbers apart to add",

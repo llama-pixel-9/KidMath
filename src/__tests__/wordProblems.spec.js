@@ -13,7 +13,8 @@ import { FULL_ITEMS } from "../itemBank/fullBank.js";
 import { getBankItems, setBankItems } from "../itemBank/index.js";
 import { FREE_MODE_IDS, isFreeMode } from "../premium.js";
 import { PLAY_ONLY_SKILLS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../skills/catalog.js";
-import { playSkills, skillsForPlay, storiesAlwaysOn, topicGrades } from "../skills/play.js";
+import { levelForSkill, playSkills, skillsForPlay, storiesAlwaysOn, topicGrades } from "../skills/play.js";
+import { BLUEPRINT_ROWS } from "../blueprints/index.js";
 import { nextSkillQuestion } from "../skills/session.js";
 import { CONCEPTS, MODE_TITLES } from "../hints/concepts.js";
 import { hintFor } from "../hints/index.js";
@@ -111,14 +112,14 @@ const withSeed = (seed, run) => {
 };
 
 describe("the Word Problems topic", () => {
-  it("is registered as a v2-only topic with its five subskills and two families", () => {
+  it("is registered as a v2-only topic with its six subskills and two families", () => {
     expect(MODE_IDS).toContain("wordProblems");
     const mode = getModeConfig("wordProblems");
     expect(mode.label).toBe("Word Problems");
     expect(TOPIC_LABELS.wordProblems).toBe("Word Problems");
     expect(mode.v2Only).toBe(true);
     expect(V2_ONLY_MODE_IDS).toContain("wordProblems");
-    expect(mode.subskills).toEqual(["changeStories", "partWholeStories", "compareStories", "twoStepStories", "missingNumber"]);
+    expect(mode.subskills).toEqual(["changeStories", "partWholeStories", "compareStories", "twoStepStories", "missingNumber", "biggerNumberStories"]);
     expect(mode.families).toEqual(["application", "conceptual"]);
     expect(mode.generatedFamilies).toEqual(["conceptual"]);
     expect(gradeSpanFor("wordProblems")).toBe("2");
@@ -144,9 +145,9 @@ describe("the Word Problems topic", () => {
     expect(pond.signpost.groups).toContain("stories");
   });
 
-  it("is not free (a pricing change waits on Sai)", () => {
-    expect(FREE_MODE_IDS).not.toContain("wordProblems");
-    expect(isFreeMode("wordProblems")).toBe(false);
+  it("is free on both platforms (Sai approved the list's recommendation, 2026-10-02)", () => {
+    expect(FREE_MODE_IDS).toContain("wordProblems");
+    expect(isFreeMode("wordProblems")).toBe(true);
   });
 
   it("has no bank rows yet", () => {
@@ -339,14 +340,19 @@ describe("the Grade 2 skills", () => {
   const skills = PLAY_ONLY_SKILLS.filter((s) => s.mode === "wordProblems");
   const STORY = { ccss: ["2.OA.A.1"], tx: ["2.4C", "2.7C"], fl: ["MA.2.AR.1.1"], va: ["2.CE.1c"], ga: ["2.NR.2.3"] };
   const BOX = { ccss: ["2.NBT.B.5"], tx: ["2.4B"], fl: ["MA.2.AR.2.2"], va: ["2.CE.1b"], ga: ["2.NR.2.4"] };
+  // Rows 36-42 only: Texas within 1,000, Virginia and Georgia past 100. No
+  // Common Core code (decision 4).
+  const BIGGER = { ccss: [], tx: ["2.4C", "2.7C", "2.4D"], fl: [], va: ["2.CE.1c"], ga: ["2.NR.2.3"] };
+  const WANT = { missingNumber: BOX, biggerNumberStories: BIGGER };
 
-  it("are five play-only Grade 2 skills, one per subskill, in plain parent words", () => {
+  it("are six play-only Grade 2 skills, one per subskill, in plain parent words", () => {
     expect(skills.map((s) => [s.title, s.source.subskills])).toEqual([
       ["Add and take away stories", ["changeStories"]],
       ["Part and whole stories", ["partWholeStories"]],
       ["Compare stories", ["compareStories"]],
       ["Find the missing number", ["missingNumber"]],
       ["Two-step stories", ["twoStepStories"]],
+      ["Stories with bigger numbers", ["biggerNumberStories"]],
     ]);
     for (const s of skills) {
       expect(s.grade).toBe("2");
@@ -387,10 +393,33 @@ describe("the Grade 2 skills", () => {
 
   it("cite Sai's codes, long form, in every loaded framework", () => {
     for (const s of skills) {
-      const want = s.source.subskills[0] === "missingNumber" ? BOX : STORY;
+      const want = WANT[s.source.subskills[0]] || STORY;
       expect(s.standards, s.id).toEqual(want);
       expect(s.ccss, s.id).toEqual(want.ccss);
     }
+  });
+
+  it("cite only codes their own approved rows cite, and the bigger-numbers skill every code of rows 36-42", () => {
+    const rows = BLUEPRINT_ROWS.filter((r) => r.mode_id === "wordProblems");
+    expect(rows).toHaveLength(42);
+    for (const s of skills) {
+      const sub = s.source.subskills[0];
+      const mine = rows.filter((r) => r.spec.subskill === sub);
+      expect(mine.length, s.id).toBeGreaterThan(0);
+      for (const [framework, codes] of Object.entries(s.standards)) {
+        const cited = new Set(mine.flatMap((r) => r.standards[framework] || []));
+        for (const code of codes) expect(cited.has(code), `${s.id} ${framework} ${code}`).toBe(true);
+      }
+    }
+    const bigger = rows.filter((r) => r.spec.subskill === "biggerNumberStories");
+    expect(bigger.map((r) => rows.indexOf(r) + 1)).toEqual([36, 37, 38, 39, 40, 41, 42]);
+    for (const [framework, codes] of Object.entries(BIGGER)) {
+      const cited = [...new Set(bigger.flatMap((r) => r.standards[framework] || []))].sort();
+      expect([...codes].sort(), framework).toEqual(cited);
+    }
+    const last = skills.at(-1);
+    expect(last.id).toBe("wp-g2-bigger-numbers");
+    expect(levelForSkill(last)).toBe(6);
   });
 
   it("each draws only its own subskill's rows, in its own families, with the word problems setting on or off", () => {

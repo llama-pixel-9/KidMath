@@ -310,16 +310,30 @@ export function findPromptOveruse(items = currentBank, options = {}) {
  * purpose; the picture is what makes it a different question, so it is part
  * of the identity. So is how a bare equation is drawn (stacked, as an array,
  * with a hop on a number line), and its topic: "8 + 5 = ?" is the same fact
- * in Addition and in Math Facts, and each topic may ask it.
+ * in Addition and in Math Facts, and each topic may ask it. The disc mat is
+ * a picture too: "Read the mat. What number is it?" over 3 tens and 4 ones
+ * is not the same question over 5 tens and 2 ones. The item-model harness
+ * counts distinct fills with this key.
  */
-function promptIdentity(item, promptText) {
+const matKey = (cols) => (Array.isArray(cols) ? cols.map((c) => `${c?.place}x${c?.count}`).join(",") : "");
+
+export function promptIdentity(item, promptText) {
   const d = item?.question?.display || {};
   const parts = [promptText];
   if (Array.isArray(d.coins) && d.coins.length) parts.push(d.coins.join(","));
+  if (d.discMat) {
+    const mats = Array.isArray(d.discMat.mats) ? d.discMat.mats : null;
+    parts.push(mats ? `mats:${mats.map((m) => `${m?.label ?? ""}=${matKey(m?.cols)}`).join("|")}` : `mat:${matKey(d.discMat.cols)}`);
+  }
   if (d.filled != null) parts.push(`frame:${d.filled}/${d.filledB ?? 0}/${d.takeAway ?? 0}`);
   if (d.array) parts.push(`array:${d.array.rows}x${d.array.cols}`);
   if (d.layout) parts.push(`layout:${d.layout}`);
   if (d.lineMode === "jump") parts.push(`hop:${d.from}-${d.to}`);
+  // "Which equation is true?" carries its numbers in the choices, so every
+  // fill has the same words; the choice set is what makes two fills differ.
+  if (item?.structureType === "chooseTrueEquation" && Array.isArray(item?.question?.choices)) {
+    parts.push(`choices:${item.question.choices.map(String).sort().join("|")}`);
+  }
   if (!/[a-z]/i.test(promptText)) parts.unshift(item.modeId || "");
   return parts.join("\u0000");
 }

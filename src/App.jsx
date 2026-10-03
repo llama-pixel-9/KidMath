@@ -57,7 +57,8 @@ function PlayRoute({ adminPin = false }) {
       </RequireAdmin>
     );
   }
-  // Free tier: the four operations, counting and Math Facts, unlimited and free forever.
+  // Free tier: the four operations, counting, Math Facts, Word Problems and
+  // Multi-Digit Math, unlimited and free forever.
   // Everything else needs the subscription (deep links included).
   if (mode && !isFreeMode(mode) && !isPremium && !loading) {
     return <PremiumGate />;

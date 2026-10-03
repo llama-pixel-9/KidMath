@@ -2,6 +2,8 @@
 //
 // A small, evenly spread subset of the curated bank: 8 item(s) per
 // (mode, family, band) cell, so every mode works offline and on first paint.
+// wordProblems, multiDigit: one cell per (family, band, subskill), since
+// each of their skills draws one subskill's rows only.
 // The rest of a mode's items are fetched by modeLoader.ensureModeLoaded() when
 // the child opens that mode.
 //
@@ -52213,6 +52215,15614 @@ export const SEED_ITEMS = [
    "display": {
     "promptText": "99 ÷ ? = 9"
    }
+  }
+ },
+ {
+  "itemId": "wp-g2-add-to-result-noregroup-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "changeStories",
+  "structureType": "addToResultUnknown",
+  "levelRange": [
+   4,
+   5
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-add-to-result-noregroup",
+   "seed": 1,
+   "specMd5": "76bc76d3547e5bfd5d59c46ec71d3aef",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-add-to-result-noregroup",
+  "blueprintId": "wp-g2-add-to-result",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many stickers Dara has now. Dara gets more, so the number of stickers goes up.",
+   "steps": [
+    "Start at 23 on the number line.",
+    "Hop ahead 2 tens, then 1 one.",
+    "The number you land on is how many stickers Dara has now."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 20,
+    "max": 70,
+    "mark": 23,
+    "step": 10
+   },
+   "example": {
+    "problem": "Leo has 62 trading cards. Dad gives Leo 34 more trading cards. How many trading cards does Leo have now?",
+    "steps": [
+     "Start at 62. Hop ahead 3 tens to 92.",
+     "Then hop ahead 4 ones to 96.",
+     "62 + 34 = 96. Leo has 96 trading cards now."
+    ],
+    "answer": 96
+   },
+   "feedback": {
+    "2": "That takes one number away from the other. Dara gets more stickers, so add 23 and 21.",
+    "23": "That is how many stickers Dara had at the start. Add the 21 more stickers too.",
+    "43": "That is one short. When you count on from 23, start counting with the number after 23."
+   },
+   "solution": {
+    "steps": [
+     "Start at 23. Hop ahead 2 tens to 43.",
+     "Then hop ahead 1 one to 44.",
+     "23 + 21 = 44. Dara has 44 stickers now."
+    ],
+    "answer": 44
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "sticker"
+   ],
+   "setting": null,
+   "mistakes": {
+    "2": "subtractedInsteadOfAdded",
+    "23": "answeredWithAGiven",
+    "43": "offByOne"
+   },
+   "slots": {
+    "name": "Dara",
+    "pal": "Finn",
+    "object": "sticker",
+    "start": 23,
+    "added": 21,
+    "g": 1,
+    "giver": "Grandpa",
+    "at": 2,
+    "ao": 1,
+    "tensW": "2 tens",
+    "onesW": "1 one",
+    "hopStep": "Hop ahead 2 tens, then 1 one.",
+    "afterTens": 43,
+    "total": 44,
+    "soln2": "Then hop ahead 1 one to 44."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 23,
+   "b": 21,
+   "op": "+",
+   "answer": 44,
+   "answerType": "numberPad",
+   "choices": [
+    2,
+    23,
+    43,
+    44
+   ],
+   "display": {
+    "promptText": "Dara has 23 stickers. Grandpa gives Dara 21 more stickers. How many stickers does Dara have now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-add-to-result-regroup-s8-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "changeStories",
+  "structureType": "addToResultUnknown",
+  "levelRange": [
+   5,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-add-to-result-regroup",
+   "seed": 8,
+   "specMd5": "a1a5954f34c94577340f7552f32856f6",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-add-to-result-regroup",
+  "blueprintId": "wp-g2-add-to-result",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many building bricks Sam has now. Sam got more, so add the two numbers.",
+   "steps": [
+    "Add the ones first: 4 ones and 9 ones.",
+    "That is ten or more ones, so trade ten ones for one new ten.",
+    "Then add the tens: 5 tens, 3 tens, and the new ten."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Jae had 58 building bricks and got 33 more as a birthday gift. How many building bricks does Jae have now?",
+    "steps": [
+     "Ones: 8 ones + 3 ones = 11 ones. Trade ten ones for one ten, and 1 one stay.",
+     "Tens: 5 tens + 3 tens + 1 new ten = 9 tens.",
+     "58 + 33 = 91. Jae has 91 building bricks now."
+    ],
+    "answer": 91
+   },
+   "feedback": {
+    "15": "That takes one number away from the other. Sam got more building bricks, so add 54 and 39.",
+    "54": "That is how many building bricks Sam had before. Add the 39 more building bricks too.",
+    "83": "That is one ten short. 4 ones and 9 ones make a new ten, so add that ten to the tens."
+   },
+   "solution": {
+    "steps": [
+     "Ones: 4 ones + 9 ones = 13 ones. Trade ten ones for one ten, and 3 ones stay.",
+     "Tens: 5 tens + 3 tens + 1 new ten = 9 tens.",
+     "54 + 39 = 93. Sam has 93 building bricks now."
+    ],
+    "answer": 93
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "building-brick"
+   ],
+   "setting": null,
+   "mistakes": {
+    "15": "subtractedInsteadOfAdded",
+    "54": "answeredWithAGiven",
+    "83": "forgotToCarry"
+   },
+   "slots": {
+    "name": "Sam",
+    "pal": "Finn",
+    "object": "building-brick",
+    "start": 54,
+    "added": 39,
+    "verb": "got",
+    "tail": "as a birthday gift",
+    "st": 5,
+    "at": 3,
+    "so": 4,
+    "ao": 9,
+    "stW": "5 tens",
+    "atW": "3 tens",
+    "soW": "4 ones",
+    "aoW": "9 ones",
+    "onesSum": 13,
+    "onesLeftW": "3 ones",
+    "tensSum": 9,
+    "total": 93
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 54,
+   "b": 39,
+   "op": "+",
+   "answer": 93,
+   "answerType": "numberPad",
+   "choices": [
+    15,
+    54,
+    83,
+    93
+   ],
+   "display": {
+    "promptText": "Sam had 54 building bricks and got 39 more as a birthday gift. How many building bricks does Sam have now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-take-from-result-noregroup-s15-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "changeStories",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   4,
+   5
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-take-from-result-noregroup",
+   "seed": 15,
+   "specMd5": "d91c523e147486250b6a6aa1a4dcf687",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-take-from-result-noregroup",
+  "blueprintId": "wp-g2-take-from-result",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many loom bands Omar has left. Some loom bands are gone, so take them away.",
+   "steps": [
+    "Start at 76 on the number line.",
+    "Hop back 3 tens, then 3 ones.",
+    "The number you land on is how many loom bands Omar has left."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 20,
+    "max": 80,
+    "mark": 76,
+    "step": 10
+   },
+   "example": {
+    "problem": "Ezra has 74 marbles. Ezra gives 22 marbles to Hana. How many marbles does Ezra have left?",
+    "steps": [
+     "Start at 74. Hop back 2 tens to 54.",
+     "Then hop back 2 ones to 52.",
+     "74 − 22 = 52. Ezra has 52 marbles left."
+    ],
+    "answer": 52
+   },
+   "feedback": {
+    "33": "That is how many loom bands Omar used. The question asks how many loom bands are left.",
+    "44": "That is one too many. When you count back, do not count 76 itself.",
+    "109": "That adds the two numbers. Omar has fewer loom bands after this, so take 33 away from 76."
+   },
+   "solution": {
+    "steps": [
+     "Start at 76. Hop back 3 tens to 46.",
+     "Then hop back 3 ones to 43.",
+     "76 − 33 = 43. Omar has 43 loom bands left."
+    ],
+    "answer": 43
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "33": "answeredWithAGiven",
+    "44": "offByOne",
+    "109": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Omar",
+    "pal": "Ana",
+    "object": "loom-band",
+    "start": 76,
+    "taken": 33,
+    "act": "uses",
+    "tail": "to make bracelets",
+    "gone": "used",
+    "tt": 3,
+    "to": 3,
+    "ttW": "3 tens",
+    "toW": "3 ones",
+    "hopStep": "Hop back 3 tens, then 3 ones.",
+    "afterTens": 46,
+    "left": 43,
+    "soln2": "Then hop back 3 ones to 43."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 76,
+   "b": 33,
+   "op": "-",
+   "answer": 43,
+   "answerType": "numberPad",
+   "choices": [
+    33,
+    43,
+    44,
+    109
+   ],
+   "display": {
+    "promptText": "Omar has 76 loom bands. Omar uses 33 loom bands to make bracelets. How many loom bands does Omar have left?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-take-from-result-regroup-s22-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "changeStories",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   5,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-take-from-result-regroup",
+   "seed": 22,
+   "specMd5": "5003c279d444843c56d5bf0ee986d763",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-take-from-result-regroup",
+  "blueprintId": "wp-g2-take-from-result",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many grapes are left in the bowl. The kids ate some, so take them away.",
+   "steps": [
+    "85 is 8 tens and 5 ones.",
+    "You cannot take 7 ones from 5 ones, so trade one ten for ten ones first.",
+    "Then take away 7 ones and 3 tens."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Dara puts 77 pieces of candy in a bowl for a party. The kids eat 38 pieces of candy. How many pieces of candy are left in the bowl?",
+    "steps": [
+     "Trade one ten for ten ones: 77 is 6 tens and 17 ones.",
+     "Ones: 17 − 8 = 9. Tens: 6 − 3 = 3.",
+     "77 − 38 = 39. There are 39 pieces of candy left in the bowl."
+    ],
+    "answer": 39
+   },
+   "feedback": {
+    "52": "That takes 5 from 7 in the ones place. You have to take 7 ones away from 5 ones, so trade one ten for ten ones first.",
+    "58": "That is ten too many. After you trade a ten for ten ones, there is one fewer ten.",
+    "122": "That adds the two numbers. The kids ate some grapes, so take 37 away from 85."
+   },
+   "solution": {
+    "steps": [
+     "Trade one ten for ten ones: 85 is 7 tens and 15 ones.",
+     "Ones: 15 − 7 = 8. Tens: 7 − 3 = 4.",
+     "85 − 37 = 48. There are 48 grapes left in the bowl."
+    ],
+    "answer": 48
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "grape"
+   ],
+   "setting": null,
+   "mistakes": {
+    "52": "smallerFromLarger",
+    "58": "offByTen",
+    "122": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Wren",
+    "object": "grape",
+    "start": 85,
+    "taken": 37,
+    "st": 8,
+    "so": 5,
+    "tt": 3,
+    "to": 7,
+    "stW": "8 tens",
+    "soW": "5 ones",
+    "ttW": "3 tens",
+    "toW": "7 ones",
+    "stM1": 7,
+    "stM1W": "7 tens",
+    "soP10": 15,
+    "lo": 8,
+    "lt": 4,
+    "left": 48
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 85,
+   "b": 37,
+   "op": "-",
+   "answer": 48,
+   "answerType": "numberPad",
+   "choices": [
+    48,
+    52,
+    58,
+    122
+   ],
+   "display": {
+    "promptText": "Wren puts 85 grapes in a bowl for a party. The kids eat 37 grapes. How many grapes are left in the bowl?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-add-to-change-s29-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "changeStories",
+  "structureType": "addToChangeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-add-to-change",
+   "seed": 29,
+   "specMd5": "dbd1a0330bbc7fd85321f621753fee5a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-add-to-change",
+  "blueprintId": "wp-g2-add-to-change",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many stickers Milo got. Count up from how many Milo had to how many Milo has now.",
+   "steps": [
+    "Start at 17 on the number line.",
+    "Hop to the next ten first. Then keep hopping up to 48.",
+    "Add up your hops. That is how many stickers Milo got."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 10,
+    "max": 50,
+    "mark": 17,
+    "step": 5
+   },
+   "example": {
+    "problem": "Omar had 14 magnetic tiles. Omar got some more magnetic tiles from Grandpa. Now Omar has 53 magnetic tiles. How many magnetic tiles did Omar get?",
+    "steps": [
+     "Count up from 14 to 53.",
+     "14 + 39 = 53, so 53 − 14 = 39.",
+     "Omar got 39 magnetic tiles."
+    ],
+    "answer": 39
+   },
+   "feedback": {
+    "32": "That is one too many. When you count up from 17, do not count 17 itself.",
+    "48": "That is how many stickers Milo has now. The question asks how many more stickers Milo got.",
+    "65": "That adds 17 and 48. Milo has 48 stickers in all now, so count up from 17 to 48 instead."
+   },
+   "solution": {
+    "steps": [
+     "Count up from 17 to 48.",
+     "17 + 31 = 48, so 48 − 17 = 31.",
+     "Milo got 31 stickers."
+    ],
+    "answer": 31
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "sticker"
+   ],
+   "setting": null,
+   "mistakes": {
+    "32": "offByOne",
+    "48": "answeredWithAGiven",
+    "65": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Milo",
+    "pal": "Ezra",
+    "object": "sticker",
+    "start": 17,
+    "change": 31,
+    "rg": 0,
+    "s": 2,
+    "source": "from Grandma",
+    "end": 48,
+    "plan": "Hop to the next ten first. Then keep hopping up to 48."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 48,
+   "b": 17,
+   "op": "-",
+   "answer": 31,
+   "answerType": "numberPad",
+   "choices": [
+    31,
+    32,
+    48,
+    65
+   ],
+   "display": {
+    "promptText": "Milo had 17 stickers. Milo got some more stickers from Grandma. Now Milo has 48 stickers. How many stickers did Milo get?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-add-to-start-s6-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "changeStories",
+  "structureType": "addToStartUnknown",
+  "levelRange": [
+   5,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-add-to-start",
+   "seed": 6,
+   "specMd5": "bc9c3d2b692c35ceae81d66c5989d67c",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-add-to-start",
+  "blueprintId": "wp-g2-add-to-start",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many toy cars Ezra had before getting more. Take the 11 new toy cars away from the 95.",
+   "steps": [
+    "Ezra has 95 toy cars now, and 11 of them are new.",
+    "Take the new toy cars away: 95 − 11.",
+    "There are enough ones, so take away the ones, then the tens."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 50,
+    "max": 100,
+    "mark": 95,
+    "step": 10
+   },
+   "example": {
+    "problem": "Kim had some loom bands. Then Kim got 35 more loom bands as a birthday gift. Now Kim has 84 loom bands. How many loom bands did Kim have at first?",
+    "steps": [
+     "The story is ? + 35 = 84. Take 35 away from 84 to find the start.",
+     "Trade one ten for ten ones, then subtract: 84 − 35 = 49.",
+     "Kim had 49 loom bands at first."
+    ],
+    "answer": 49
+   },
+   "feedback": {
+    "95": "That is how many toy cars Ezra has now. At first Ezra had fewer, before getting 11 more.",
+    "106": "That adds 95 and 11. The 95 already counts the new toy cars, so take 11 away from 95."
+   },
+   "solution": {
+    "steps": [
+     "The story is ? + 11 = 95. Take 11 away from 95 to find the start.",
+     "Take away the ones, then the tens: 95 − 11 = 84.",
+     "Ezra had 84 toy cars at first."
+    ],
+    "answer": 84
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "toy-car"
+   ],
+   "setting": null,
+   "mistakes": {
+    "95": "answeredWithAGiven",
+    "106": "startAsResult"
+   },
+   "slots": {
+    "name": "Ezra",
+    "pal": "Gus",
+    "object": "toy-car",
+    "start": 84,
+    "change": 11,
+    "rg": 0,
+    "s": 4,
+    "source": "from an older cousin",
+    "end": 95,
+    "eo": 5,
+    "co": 1,
+    "eoW": "5 ones",
+    "coW": "1 one",
+    "onesStep": "There are enough ones, so take away the ones, then the tens.",
+    "solnStep": "Take away the ones, then the tens: "
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 95,
+   "b": 11,
+   "op": "-",
+   "answer": 84,
+   "answerType": "numberPad",
+   "choices": [
+    84,
+    95,
+    106
+   ],
+   "display": {
+    "promptText": "Ezra had some toy cars. Then Ezra got 11 more toy cars from an older cousin. Now Ezra has 95 toy cars. How many toy cars did Ezra have at first?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-take-from-start-s13-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "changeStories",
+  "structureType": "takeFromStartUnknown",
+  "levelRange": [
+   5,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-take-from-start",
+   "seed": 13,
+   "specMd5": "b7799d03e076340649917f49e66b3bbe",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-take-from-start",
+  "blueprintId": "wp-g2-take-from-start",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many marbles Rosa had at first. Put the marbles that are gone back with the marbles that are left.",
+   "steps": [
+    "13 marbles are gone, and 16 marbles are left.",
+    "At first, Rosa had both groups together.",
+    "Add 13 and 16. Add the ones, then add the tens."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 10,
+    "max": 60,
+    "mark": 16,
+    "step": 10
+   },
+   "example": {
+    "problem": "Gia had some trading cards. After Gia gave 15 trading cards to Ana, Gia had 48 trading cards left. How many trading cards did Gia have at first?",
+    "steps": [
+     "At first, Gia had the trading cards that are gone and the trading cards that are left.",
+     "15 + 48 = 63.",
+     "Gia had 63 trading cards at first."
+    ],
+    "answer": 63
+   },
+   "feedback": {
+    "3": "That takes one number away from the other. The 13 marbles are already gone, so put them back: add 13 and 16.",
+    "16": "That is how many marbles Rosa had left. At first Rosa also had the 13 marbles that are gone.",
+    "39": "That is ten too many. Add the tens again, and count each ten only once."
+   },
+   "solution": {
+    "steps": [
+     "At first, Rosa had the marbles that are gone and the marbles that are left.",
+     "13 + 16 = 29.",
+     "Rosa had 29 marbles at first."
+    ],
+    "answer": 29
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "marble"
+   ],
+   "setting": null,
+   "mistakes": {
+    "3": "keywordTrap",
+    "16": "answeredWithAGiven",
+    "39": "offByTen"
+   },
+   "slots": {
+    "name": "Rosa",
+    "pal": "Wren",
+    "object": "marble",
+    "taken": 13,
+    "left": 16,
+    "rg": 0,
+    "act": "gave",
+    "tail": "to Wren",
+    "start": 29,
+    "carryStep": "Add the ones, then add the tens."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 13,
+   "b": 16,
+   "op": "+",
+   "answer": 29,
+   "answerType": "choice",
+   "choices": [
+    3,
+    16,
+    29,
+    39
+   ],
+   "display": {
+    "promptText": "Rosa had some marbles. After Rosa gave 13 marbles to Wren, Rosa had 16 marbles left. How many marbles did Rosa have at first?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-picture-tens-ones-s20-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "changeStories",
+  "structureType": "addToResultUnknown",
+  "levelRange": [
+   5,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "objectSet",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-picture-tens-ones",
+   "seed": 20,
+   "specMd5": "13857c132b12cfca4f24b44b4146ddc4",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-picture-tens-ones",
+  "blueprintId": "wp-g2-picture-tens-ones",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many loom bands Ezra has now. Read the mat first, then add the 19 more.",
+   "steps": [
+    "A disc marked 10 stands for ten loom bands. A disc marked 1 stands for one.",
+    "The mat shows 2 tens and 4 ones.",
+    "Add 19 more. The ones make a new ten, so trade ten ones for one ten."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "The mat shows Leo's building bricks in tens and ones. Leo gets 35 more building bricks from Grandpa. How many building bricks does Leo have now?",
+    "steps": [
+     "The mat shows 5 tens and 5 ones, which is 55 building bricks.",
+     "Ones: 5 + 5 = 10. Trade ten ones for one ten.",
+     "55 + 35 = 90. Leo has 90 building bricks now."
+    ],
+    "answer": 90
+   },
+   "feedback": {
+    "24": "That is how many loom bands the mat shows. Ezra gets 19 more, so add them.",
+    "25": "That counts each ten disc as just one. A disc marked 10 stands for ten loom bands, so count those discs by tens.",
+    "33": "That is one ten short. The ones made a new ten, so add it to the tens."
+   },
+   "solution": {
+    "steps": [
+     "The mat shows 2 tens and 4 ones, which is 24 loom bands.",
+     "Ones: 4 + 9 = 13. Trade ten ones for one ten.",
+     "24 + 19 = 43. Ezra has 43 loom bands now."
+    ],
+    "answer": 43
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "24": "answeredWithAGiven",
+    "25": "countedRodsAsOnes",
+    "33": "forgotToCarry"
+   },
+   "slots": {
+    "name": "Ezra",
+    "pal": "Beck",
+    "object": "loom-band",
+    "tensA": 2,
+    "onesA": 4,
+    "added": 19,
+    "s": 1,
+    "source": "from Beck",
+    "start": 24,
+    "ao": 9,
+    "tensAW": "2 tens",
+    "onesAW": "4 ones",
+    "onesSum": 13,
+    "total": 43
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": 43,
+   "answerType": "numberPad",
+   "choices": [
+    24,
+    25,
+    33,
+    43
+   ],
+   "display": {
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "place": 10,
+       "count": 2
+      },
+      {
+       "place": 1,
+       "count": 4
+      }
+     ]
+    },
+    "promptText": "The mat shows Ezra's loom bands in tens and ones. Ezra gets 19 more loom bands from Beck. How many loom bands does Ezra have now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-put-together-total-noregroup-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-put-together-total-noregroup",
+   "seed": 1,
+   "specMd5": "a8f2625c72d934895e06969b1515832f",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-put-together-total-noregroup",
+  "blueprintId": "wp-g2-put-together-total",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many loom bands Zoe has in all. Put the orange ones and the purple ones together.",
+   "steps": [
+    "Add 48 + 21.",
+    "Add the tens: 40 + 20.",
+    "Add the ones: 8 + 1. Then put the tens and the ones together."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Ida has 34 orange wooden blocks and 22 yellow wooden blocks. How many wooden blocks does Ida have in all?",
+    "steps": [
+     "Tens: 30 + 20 = 50.",
+     "Ones: 4 + 2 = 6.",
+     "50 + 6 = 56. Ida has 56 wooden blocks in all."
+    ],
+    "answer": 56
+   },
+   "feedback": {
+    "27": "That takes one group away from the other. Zoe has both groups, so add 48 + 21.",
+    "48": "That is only the orange loom bands. Add the purple loom bands too.",
+    "68": "That is one away from the total. Add the ones again: 8 + 1."
+   },
+   "solution": {
+    "steps": [
+     "Tens: 40 + 20 = 60.",
+     "Ones: 8 + 1 = 9.",
+     "60 + 9 = 69. Zoe has 69 loom bands in all."
+    ],
+    "answer": 69
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "27": "subtractedInsteadOfAdded",
+    "48": "answeredWithAGiven",
+    "68": "offByOne"
+   },
+   "slots": {
+    "name": "Zoe",
+    "object": "loom-band",
+    "c1": 4,
+    "c2": 5,
+    "a": 48,
+    "b": 21,
+    "cap": 200,
+    "color1": "orange",
+    "color2": "purple",
+    "big": 48,
+    "bigColor": "orange",
+    "smallColor": "purple",
+    "tensA": 40,
+    "tensB": 20,
+    "onesA": 8,
+    "onesB": 1,
+    "tensSum": 60,
+    "onesSum": 9,
+    "total": 69
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 48,
+   "b": 21,
+   "op": "+",
+   "answer": 69,
+   "answerType": "choice",
+   "choices": [
+    27,
+    48,
+    68,
+    69
+   ],
+   "display": {
+    "promptText": "Zoe has 48 orange loom bands and 21 purple loom bands. How many loom bands does Zoe have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-put-together-total-noregroup-s8-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-put-together-total-noregroup",
+   "seed": 8,
+   "specMd5": "a8f2625c72d934895e06969b1515832f",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-put-together-total-noregroup",
+  "blueprintId": "wp-g2-put-together-total",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many fuse beads Kai has in all. Put the purple ones and the orange ones together.",
+   "steps": [
+    "Add 54 + 44.",
+    "Add the tens: 50 + 40.",
+    "Add the ones: 4 + 4. Then put the tens and the ones together."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Ben has 26 green fuse beads and 23 red fuse beads. How many fuse beads does Ben have in all?",
+    "steps": [
+     "Tens: 20 + 20 = 40.",
+     "Ones: 6 + 3 = 9.",
+     "40 + 9 = 49. Ben has 49 fuse beads in all."
+    ],
+    "answer": 49
+   },
+   "feedback": {
+    "10": "That takes one group away from the other. Kai has both groups, so add 54 + 44.",
+    "54": "That is only the purple fuse beads. Add the orange fuse beads too.",
+    "97": "That is one away from the total. Add the ones again: 4 + 4."
+   },
+   "solution": {
+    "steps": [
+     "Tens: 50 + 40 = 90.",
+     "Ones: 4 + 4 = 8.",
+     "90 + 8 = 98. Kai has 98 fuse beads in all."
+    ],
+    "answer": 98
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "fuse-bead"
+   ],
+   "setting": null,
+   "mistakes": {
+    "10": "subtractedInsteadOfAdded",
+    "54": "answeredWithAGiven",
+    "97": "offByOne"
+   },
+   "slots": {
+    "name": "Kai",
+    "object": "fuse-bead",
+    "c1": 5,
+    "c2": 4,
+    "a": 54,
+    "b": 44,
+    "cap": 500,
+    "color1": "purple",
+    "color2": "orange",
+    "big": 54,
+    "bigColor": "purple",
+    "smallColor": "orange",
+    "tensA": 50,
+    "tensB": 40,
+    "onesA": 4,
+    "onesB": 4,
+    "tensSum": 90,
+    "onesSum": 8,
+    "total": 98
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 54,
+   "b": 44,
+   "op": "+",
+   "answer": 98,
+   "answerType": "choice",
+   "choices": [
+    10,
+    54,
+    97,
+    98
+   ],
+   "display": {
+    "promptText": "Kai has 54 purple fuse beads and 44 orange fuse beads. How many fuse beads does Kai have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-put-together-total-noregroup-s15-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-put-together-total-noregroup",
+   "seed": 15,
+   "specMd5": "a8f2625c72d934895e06969b1515832f",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-put-together-total-noregroup",
+  "blueprintId": "wp-g2-put-together-total",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many magnetic tiles Hugo has in all. Put the red ones and the yellow ones together.",
+   "steps": [
+    "Add 21 + 26.",
+    "Add the tens: 20 + 20.",
+    "Add the ones: 1 + 6. Then put the tens and the ones together."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Theo has 11 purple building bricks and 15 blue building bricks. How many building bricks does Theo have in all?",
+    "steps": [
+     "Tens: 10 + 10 = 20.",
+     "Ones: 1 + 5 = 6.",
+     "20 + 6 = 26. Theo has 26 building bricks in all."
+    ],
+    "answer": 26
+   },
+   "feedback": {
+    "5": "That takes one group away from the other. Hugo has both groups, so add 21 + 26.",
+    "26": "That is only the yellow magnetic tiles. Add the red magnetic tiles too.",
+    "46": "That is one away from the total. Add the ones again: 1 + 6."
+   },
+   "solution": {
+    "steps": [
+     "Tens: 20 + 20 = 40.",
+     "Ones: 1 + 6 = 7.",
+     "40 + 7 = 47. Hugo has 47 magnetic tiles in all."
+    ],
+    "answer": 47
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "magnetic-tile"
+   ],
+   "setting": null,
+   "mistakes": {
+    "5": "subtractedInsteadOfAdded",
+    "26": "answeredWithAGiven",
+    "46": "offByOne"
+   },
+   "slots": {
+    "name": "Hugo",
+    "object": "magnetic-tile",
+    "c1": 0,
+    "c2": 3,
+    "a": 21,
+    "b": 26,
+    "cap": 100,
+    "color1": "red",
+    "color2": "yellow",
+    "big": 26,
+    "bigColor": "yellow",
+    "smallColor": "red",
+    "tensA": 20,
+    "tensB": 20,
+    "onesA": 1,
+    "onesB": 6,
+    "tensSum": 40,
+    "onesSum": 7,
+    "total": 47
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 21,
+   "b": 26,
+   "op": "+",
+   "answer": 47,
+   "answerType": "choice",
+   "choices": [
+    5,
+    26,
+    46,
+    47
+   ],
+   "display": {
+    "promptText": "Hugo has 21 red magnetic tiles and 26 yellow magnetic tiles. How many magnetic tiles does Hugo have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-put-together-total-noregroup-s22-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-put-together-total-noregroup",
+   "seed": 22,
+   "specMd5": "a8f2625c72d934895e06969b1515832f",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-put-together-total-noregroup",
+  "blueprintId": "wp-g2-put-together-total",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many wooden blocks Dara has in all. Put the green ones and the orange ones together.",
+   "steps": [
+    "Add 56 + 42.",
+    "Add the tens: 50 + 40.",
+    "Add the ones: 6 + 2. Then put the tens and the ones together."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Ana has 13 purple pom-poms and 16 blue pom-poms. How many pom-poms does Ana have in all?",
+    "steps": [
+     "Tens: 10 + 10 = 20.",
+     "Ones: 3 + 6 = 9.",
+     "20 + 9 = 29. Ana has 29 pom-poms in all."
+    ],
+    "answer": 29
+   },
+   "feedback": {
+    "14": "That takes one group away from the other. Dara has both groups, so add 56 + 42.",
+    "56": "That is only the green wooden blocks. Add the orange wooden blocks too.",
+    "97": "That is one away from the total. Add the ones again: 6 + 2."
+   },
+   "solution": {
+    "steps": [
+     "Tens: 50 + 40 = 90.",
+     "Ones: 6 + 2 = 8.",
+     "90 + 8 = 98. Dara has 98 wooden blocks in all."
+    ],
+    "answer": 98
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "wooden-block"
+   ],
+   "setting": null,
+   "mistakes": {
+    "14": "subtractedInsteadOfAdded",
+    "56": "answeredWithAGiven",
+    "97": "offByOne"
+   },
+   "slots": {
+    "name": "Dara",
+    "object": "wooden-block",
+    "c1": 2,
+    "c2": 4,
+    "a": 56,
+    "b": 42,
+    "cap": 100,
+    "color1": "green",
+    "color2": "orange",
+    "big": 56,
+    "bigColor": "green",
+    "smallColor": "orange",
+    "tensA": 50,
+    "tensB": 40,
+    "onesA": 6,
+    "onesB": 2,
+    "tensSum": 90,
+    "onesSum": 8,
+    "total": 98
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 56,
+   "b": 42,
+   "op": "+",
+   "answer": 98,
+   "answerType": "choice",
+   "choices": [
+    14,
+    56,
+    97,
+    98
+   ],
+   "display": {
+    "promptText": "Dara has 56 green wooden blocks and 42 orange wooden blocks. How many wooden blocks does Dara have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-put-together-total-noregroup-s29-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-put-together-total-noregroup",
+   "seed": 29,
+   "specMd5": "a8f2625c72d934895e06969b1515832f",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-put-together-total-noregroup",
+  "blueprintId": "wp-g2-put-together-total",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many loom bands Nia has in all. Put the orange ones and the red ones together.",
+   "steps": [
+    "Add 46 + 22.",
+    "Add the tens: 40 + 20.",
+    "Add the ones: 6 + 2. Then put the tens and the ones together."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Eli has 27 green fuse beads and 42 blue fuse beads. How many fuse beads does Eli have in all?",
+    "steps": [
+     "Tens: 20 + 40 = 60.",
+     "Ones: 7 + 2 = 9.",
+     "60 + 9 = 69. Eli has 69 fuse beads in all."
+    ],
+    "answer": 69
+   },
+   "feedback": {
+    "24": "That takes one group away from the other. Nia has both groups, so add 46 + 22.",
+    "46": "That is only the orange loom bands. Add the red loom bands too.",
+    "67": "That is one away from the total. Add the ones again: 6 + 2."
+   },
+   "solution": {
+    "steps": [
+     "Tens: 40 + 20 = 60.",
+     "Ones: 6 + 2 = 8.",
+     "60 + 8 = 68. Nia has 68 loom bands in all."
+    ],
+    "answer": 68
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "24": "subtractedInsteadOfAdded",
+    "46": "answeredWithAGiven",
+    "67": "offByOne"
+   },
+   "slots": {
+    "name": "Nia",
+    "object": "loom-band",
+    "c1": 4,
+    "c2": 0,
+    "a": 46,
+    "b": 22,
+    "cap": 200,
+    "color1": "orange",
+    "color2": "red",
+    "big": 46,
+    "bigColor": "orange",
+    "smallColor": "red",
+    "tensA": 40,
+    "tensB": 20,
+    "onesA": 6,
+    "onesB": 2,
+    "tensSum": 60,
+    "onesSum": 8,
+    "total": 68
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 46,
+   "b": 22,
+   "op": "+",
+   "answer": 68,
+   "answerType": "choice",
+   "choices": [
+    24,
+    46,
+    67,
+    68
+   ],
+   "display": {
+    "promptText": "Nia has 46 orange loom bands and 22 red loom bands. How many loom bands does Nia have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-take-apart-part-s6-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-take-apart-part",
+   "seed": 6,
+   "specMd5": "151ad0979f726b188d11efad93bc241a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-take-apart-part",
+  "blueprintId": "wp-g2-take-apart-part",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many snap cubes are in the bin. The box and the bin hold all 95 together.",
+   "steps": [
+    "The box has 36 of the snap cubes. Find the rest of the 95.",
+    "Count up from 36 to 95.",
+    "Hop from 36 to 40 first. Then hop from 40 to 95, tens first and then ones. Add up your hops."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 30,
+    "max": 100,
+    "mark": 36,
+    "step": 10
+   },
+   "example": {
+    "problem": "Milo has 73 pattern blocks. Milo puts 26 of the pattern blocks in a bag and the rest of the pattern blocks in a basket. How many pattern blocks are in the basket?",
+    "steps": [
+     "From 26 up to 30 is 4.",
+     "From 30 up to 73 is 43.",
+     "4 + 43 = 47. There are 47 pattern blocks in the basket."
+    ],
+    "answer": 47
+   },
+   "feedback": {
+    "36": "That is how many snap cubes are in the box. The question asks about the bin.",
+    "61": "Look at the ones. It is 5 take away 6, not 6 take away 5. Trade one ten for ten ones first, or count up from 36 to 95.",
+    "131": "That adds 36 more, but no new snap cubes came. Part of the 95 is in the box, so find the rest: count up from 36 to 95."
+   },
+   "solution": {
+    "steps": [
+     "From 36 up to 40 is 4.",
+     "From 40 up to 95 is 55.",
+     "4 + 55 = 59. There are 59 snap cubes in the bin."
+    ],
+    "answer": 59
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "snap-cube"
+   ],
+   "setting": null,
+   "mistakes": {
+    "36": "answeredWithAGiven",
+    "61": "smallerFromLarger",
+    "131": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Tess",
+    "object": "snap-cube",
+    "k1": 0,
+    "k2": 2,
+    "total": 95,
+    "part": 36,
+    "cap": 100,
+    "box1": "box",
+    "box2": "bin",
+    "other": 59,
+    "nextTenPart": 40,
+    "hop1": 4,
+    "hop2": 55,
+    "howHop": ", tens first and then ones",
+    "onesTotal": 5,
+    "onesPart": 6
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 95,
+   "b": 36,
+   "op": "-",
+   "answer": 59,
+   "answerType": "numberPad",
+   "choices": [
+    36,
+    59,
+    61,
+    131
+   ],
+   "display": {
+    "promptText": "Tess has 95 snap cubes. Tess puts 36 of the snap cubes in a box and the rest of the snap cubes in a bin. How many snap cubes are in the bin?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-take-apart-part-s13-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-take-apart-part",
+   "seed": 13,
+   "specMd5": "151ad0979f726b188d11efad93bc241a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-take-apart-part",
+  "blueprintId": "wp-g2-take-apart-part",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many loom bands are in the basket. The bin and the basket hold all 64 together.",
+   "steps": [
+    "The bin has 25 of the loom bands. Find the rest of the 64.",
+    "Count up from 25 to 64.",
+    "Hop from 25 to 30 first. Then hop from 30 to 64, tens first and then ones. Add up your hops."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 20,
+    "max": 70,
+    "mark": 25,
+    "step": 10
+   },
+   "example": {
+    "problem": "Rosa has 47 beads. Rosa puts 17 of the beads in a box and the rest of the beads in a bag. How many beads are in the bag?",
+    "steps": [
+     "From 17 up to 20 is 3.",
+     "From 20 up to 47 is 27.",
+     "3 + 27 = 30. There are 30 beads in the bag."
+    ],
+    "answer": 30
+   },
+   "feedback": {
+    "25": "That is how many loom bands are in the bin. The question asks about the basket.",
+    "41": "Look at the ones. It is 4 take away 5, not 5 take away 4. Trade one ten for ten ones first, or count up from 25 to 64.",
+    "89": "That adds 25 more, but no new loom bands came. Part of the 64 is in the bin, so find the rest: count up from 25 to 64."
+   },
+   "solution": {
+    "steps": [
+     "From 25 up to 30 is 5.",
+     "From 30 up to 64 is 34.",
+     "5 + 34 = 39. There are 39 loom bands in the basket."
+    ],
+    "answer": 39
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "25": "answeredWithAGiven",
+    "41": "smallerFromLarger",
+    "89": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Kai",
+    "object": "loom-band",
+    "k1": 2,
+    "k2": 3,
+    "total": 64,
+    "part": 25,
+    "cap": 200,
+    "box1": "bin",
+    "box2": "basket",
+    "other": 39,
+    "nextTenPart": 30,
+    "hop1": 5,
+    "hop2": 34,
+    "howHop": ", tens first and then ones",
+    "onesTotal": 4,
+    "onesPart": 5
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 64,
+   "b": 25,
+   "op": "-",
+   "answer": 39,
+   "answerType": "numberPad",
+   "choices": [
+    25,
+    39,
+    41,
+    89
+   ],
+   "display": {
+    "promptText": "Kai has 64 loom bands. Kai puts 25 of the loom bands in a bin and the rest of the loom bands in a basket. How many loom bands are in the basket?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-take-apart-part-s20-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-take-apart-part",
+   "seed": 20,
+   "specMd5": "151ad0979f726b188d11efad93bc241a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-take-apart-part",
+  "blueprintId": "wp-g2-take-apart-part",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many trading cards are in the bag. The bin and the bag hold all 47 together.",
+   "steps": [
+    "The bin has 22 of the trading cards. Find the rest of the 47.",
+    "Count up from 22 to 47.",
+    "Hop from 22 to 30 first. Then hop from 30 to 47, tens first and then ones. Add up your hops."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 20,
+    "max": 50,
+    "mark": 22,
+    "step": 10
+   },
+   "example": {
+    "problem": "Rosa has 91 pattern blocks. Rosa puts 27 of the pattern blocks in a basket and the rest of the pattern blocks in a bag. How many pattern blocks are in the bag?",
+    "steps": [
+     "From 27 up to 30 is 3.",
+     "From 30 up to 91 is 61.",
+     "3 + 61 = 64. There are 64 pattern blocks in the bag."
+    ],
+    "answer": 64
+   },
+   "feedback": {
+    "22": "That is how many trading cards are in the bin. The question asks about the bag.",
+    "69": "That adds 22 more, but no new trading cards came. Part of the 47 is in the bin, so find the rest: count up from 22 to 47."
+   },
+   "solution": {
+    "steps": [
+     "From 22 up to 30 is 8.",
+     "From 30 up to 47 is 17.",
+     "8 + 17 = 25. There are 25 trading cards in the bag."
+    ],
+    "answer": 25
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "trading-card"
+   ],
+   "setting": null,
+   "mistakes": {
+    "22": "answeredWithAGiven",
+    "69": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Cal",
+    "object": "trading-card",
+    "k1": 2,
+    "k2": 1,
+    "total": 47,
+    "part": 22,
+    "cap": 500,
+    "box1": "bin",
+    "box2": "bag",
+    "other": 25,
+    "nextTenPart": 30,
+    "hop1": 8,
+    "hop2": 17,
+    "howHop": ", tens first and then ones",
+    "onesTotal": 7,
+    "onesPart": 2
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 47,
+   "b": 22,
+   "op": "-",
+   "answer": 25,
+   "answerType": "numberPad",
+   "choices": [
+    22,
+    25,
+    69
+   ],
+   "display": {
+    "promptText": "Cal has 47 trading cards. Cal puts 22 of the trading cards in a bin and the rest of the trading cards in a bag. How many trading cards are in the bag?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-compare-difference-more-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "compareStories",
+  "structureType": "compareDifferenceMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-compare-difference-more",
+   "seed": 1,
+   "specMd5": "72bce0bda9f169c2af2bb9fcb5ac95fe",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-compare-difference-more",
+  "blueprintId": "wp-g2-compare-difference-more",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many more snap cubes Nia has than Gus. Start at Gus's 66 and count up to Nia's 93.",
+   "steps": [
+    "Start at 66, the smaller amount.",
+    "Hop from 66 up to 70 first.",
+    "Then hop from 70 up to 93, tens first and then ones. Add up your hops."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 60,
+    "max": 100,
+    "mark": 66,
+    "step": 10
+   },
+   "example": {
+    "problem": "Rosa has 69 train track pieces. Ida has 43 train track pieces. How many more train track pieces does Rosa have than Ida?",
+    "steps": [
+     "From 43 up to 50 is 7.",
+     "From 50 up to 69 is 19.",
+     "7 + 19 = 26. Rosa has 26 more train track pieces than Ida."
+    ],
+    "answer": 26
+   },
+   "feedback": {
+    "33": "Look at the ones. It is 3 take away 6, not 6 take away 3. Trade one ten for ten ones first, or count up from 66 to 93.",
+    "93": "That is how many snap cubes Nia has. The question asks how many more Nia has than Gus.",
+    "159": "That puts the two amounts together. To find how many more, compare them: count up from 66 to 93."
+   },
+   "solution": {
+    "steps": [
+     "From 66 up to 70 is 4.",
+     "From 70 up to 93 is 23.",
+     "4 + 23 = 27. Nia has 27 more snap cubes than Gus."
+    ],
+    "answer": 27
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "snap-cube"
+   ],
+   "setting": null,
+   "mistakes": {
+    "33": "smallerFromLarger",
+    "93": "answeredWithAGiven",
+    "159": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name1": "Nia",
+    "name2": "Gus",
+    "object": "snap-cube",
+    "small": 66,
+    "diff": 27,
+    "cap": 100,
+    "big": 93,
+    "nextTenS": 70,
+    "hop1": 4,
+    "hop2": 23,
+    "onesBig": 3,
+    "onesSmall": 6,
+    "howHop": ", tens first and then ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 93,
+   "b": 66,
+   "op": "-",
+   "answer": 27,
+   "answerType": "numberPad",
+   "choices": [
+    27,
+    33,
+    93,
+    159
+   ],
+   "display": {
+    "promptText": "Nia has 93 snap cubes. Gus has 66 snap cubes. How many more snap cubes does Nia have than Gus?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-compare-difference-more-s19-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "compareStories",
+  "structureType": "compareDifferenceMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-compare-difference-more",
+   "seed": 19,
+   "specMd5": "72bce0bda9f169c2af2bb9fcb5ac95fe",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-compare-difference-more",
+  "blueprintId": "wp-g2-compare-difference-more",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many more trading cards Nia has than Rosa. Start at Rosa's 24 and count up to Nia's 36.",
+   "steps": [
+    "Start at 24, the smaller amount.",
+    "Hop from 24 up to 30 first.",
+    "Then hop from 30 up to 36 by ones. Add up your hops."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 20,
+    "max": 40,
+    "mark": 24,
+    "step": 10
+   },
+   "example": {
+    "problem": "Ana has 70 marbles. Omar has 21 marbles. How many more marbles does Ana have than Omar?",
+    "steps": [
+     "From 21 up to 30 is 9.",
+     "From 30 up to 70 is 40.",
+     "9 + 40 = 49. Ana has 49 more marbles than Omar."
+    ],
+    "answer": 49
+   },
+   "feedback": {
+    "36": "That is how many trading cards Nia has. The question asks how many more Nia has than Rosa.",
+    "60": "That puts the two amounts together. To find how many more, compare them: count up from 24 to 36."
+   },
+   "solution": {
+    "steps": [
+     "From 24 up to 30 is 6.",
+     "From 30 up to 36 is 6.",
+     "6 + 6 = 12. Nia has 12 more trading cards than Rosa."
+    ],
+    "answer": 12
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "trading-card"
+   ],
+   "setting": null,
+   "mistakes": {
+    "36": "answeredWithAGiven",
+    "60": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name1": "Nia",
+    "name2": "Rosa",
+    "object": "trading-card",
+    "small": 24,
+    "diff": 12,
+    "cap": 500,
+    "big": 36,
+    "nextTenS": 30,
+    "hop1": 6,
+    "hop2": 6,
+    "onesBig": 6,
+    "onesSmall": 4,
+    "howHop": " by ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 36,
+   "b": 24,
+   "op": "-",
+   "answer": 12,
+   "answerType": "numberPad",
+   "choices": [
+    12,
+    36,
+    60
+   ],
+   "display": {
+    "promptText": "Nia has 36 trading cards. Rosa has 24 trading cards. How many more trading cards does Nia have than Rosa?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-compare-bigger-more-s7-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "compareStories",
+  "structureType": "compareBiggerMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-compare-bigger-more",
+   "seed": 7,
+   "specMd5": "7336a1ffd05849870d64cee5734c76d3",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-compare-bigger-more",
+  "blueprintId": "wp-g2-compare-bigger-more",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many crayons Gus has. Gus has as many as Theo and 5 more.",
+   "steps": [
+    "Start at 11, the number Theo has. Count on 5 more.",
+    "Count on 5 by ones.",
+    "The number you land on is how many crayons Gus has."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 10,
+    "max": 50,
+    "mark": 11,
+    "step": 10
+   },
+   "example": {
+    "problem": "Cal has 30 beads. Nico has 13 more beads than Cal. How many beads does Nico have?",
+    "steps": [
+     "30 + 10 = 40. Then 40 + 3 = 43.",
+     "Nico has 43 beads."
+    ],
+    "answer": 43
+   },
+   "feedback": {
+    "6": "That takes 5 away. Gus has more than Theo, so count on 5 from 11.",
+    "11": "That is how many crayons Theo has. Gus has 5 more than that."
+   },
+   "solution": {
+    "steps": [
+     "11 + 5 = 16.",
+     "Gus has 16 crayons."
+    ],
+    "answer": 16
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "crayon"
+   ],
+   "setting": null,
+   "mistakes": {
+    "6": "subtractedInsteadOfAdded",
+    "11": "answeredWithAGiven"
+   },
+   "slots": {
+    "name1": "Theo",
+    "name2": "Gus",
+    "object": "crayon",
+    "small": 11,
+    "diff": 5,
+    "cap": 64,
+    "big": 16,
+    "countStep": "Count on 5 by ones.",
+    "solWork": "11 + 5 = 16."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 11,
+   "b": 5,
+   "op": "+",
+   "answer": 16,
+   "answerType": "numberPad",
+   "choices": [
+    6,
+    11,
+    16
+   ],
+   "display": {
+    "promptText": "Theo has 11 crayons. Gus has 5 more crayons than Theo. How many crayons does Gus have?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-compare-bigger-more-s26-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "compareStories",
+  "structureType": "compareBiggerMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-compare-bigger-more",
+   "seed": 26,
+   "specMd5": "7336a1ffd05849870d64cee5734c76d3",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-compare-bigger-more",
+  "blueprintId": "wp-g2-compare-bigger-more",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many fuse beads Omar has. Omar has as many as Rosa and 6 more.",
+   "steps": [
+    "Start at 16, the number Rosa has. Count on 6 more.",
+    "Hop 4 to get to 20. Then count on the rest of the 6.",
+    "The number you land on is how many fuse beads Omar has."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 10,
+    "max": 50,
+    "mark": 16,
+    "step": 10
+   },
+   "example": {
+    "problem": "Kim has 24 buttons. Nia has 10 more buttons than Kim. How many buttons does Nia have?",
+    "steps": [
+     "24 + 10 = 34.",
+     "Nia has 34 buttons."
+    ],
+    "answer": 34
+   },
+   "feedback": {
+    "10": "That takes 6 away. Omar has more than Rosa, so count on 6 from 16.",
+    "12": "The ones add up to ten or more. Make a new ten and add it to the tens before you finish.",
+    "16": "That is how many fuse beads Rosa has. Omar has 6 more than that."
+   },
+   "solution": {
+    "steps": [
+     "16 + 4 = 20. 6 is 4 and 2, so 20 + 2 = 22.",
+     "Omar has 22 fuse beads."
+    ],
+    "answer": 22
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "fuse-bead"
+   ],
+   "setting": null,
+   "mistakes": {
+    "10": "subtractedInsteadOfAdded",
+    "12": "forgotToCarry",
+    "16": "answeredWithAGiven"
+   },
+   "slots": {
+    "name1": "Rosa",
+    "name2": "Omar",
+    "object": "fuse-bead",
+    "small": 16,
+    "diff": 6,
+    "cap": 500,
+    "big": 22,
+    "countStep": "Hop 4 to get to 20. Then count on the rest of the 6.",
+    "solWork": "16 + 4 = 20. 6 is 4 and 2, so 20 + 2 = 22."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 16,
+   "b": 6,
+   "op": "+",
+   "answer": 22,
+   "answerType": "numberPad",
+   "choices": [
+    10,
+    12,
+    16,
+    22
+   ],
+   "display": {
+    "promptText": "Rosa has 16 fuse beads. Omar has 6 more fuse beads than Rosa. How many fuse beads does Omar have?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-compare-bigger-fewer-s13-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "compareStories",
+  "structureType": "compareBiggerFewer",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-compare-bigger-fewer",
+   "seed": 13,
+   "specMd5": "7288ed243ec60cad9452e8cf0a9d2532",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-compare-bigger-fewer",
+  "blueprintId": "wp-g2-compare-bigger-fewer",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many toy cars Nia has. Dev has fewer, so Nia has more.",
+   "steps": [
+    "Nia has the 11 that Dev has and 8 more.",
+    "Add 11 + 8. There are no tens in 8, so the tens stay at 10.",
+    "Add the ones: 1 + 8. That is less than ten, so there is no new ten."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Hana has 38 train track pieces. Hana has 27 fewer train track pieces than Zoe. How many train track pieces does Zoe have?",
+    "steps": [
+     "Tens: 30 + 20 = 50.",
+     "Ones: 8 + 7 = 15. That makes a new ten.",
+     "50 + 15 = 65. Zoe has 65 train track pieces."
+    ],
+    "answer": 65
+   },
+   "feedback": {
+    "3": "The word \"fewer\" tells who has fewer: Dev. That means Nia has more, so add 8 to 11.",
+    "11": "That is how many toy cars Dev has. Nia has 8 more than that.",
+    "29": "That has one ten too many. The ones add up to less than ten, so there is no new ten to add."
+   },
+   "solution": {
+    "steps": [
+     "Tens: still 10.",
+     "Ones: 1 + 8 = 9.",
+     "10 + 9 = 19. Nia has 19 toy cars."
+    ],
+    "answer": 19
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "toy-car"
+   ],
+   "setting": null,
+   "mistakes": {
+    "3": "keywordTrap",
+    "11": "answeredWithAGiven",
+    "29": "offByTen"
+   },
+   "slots": {
+    "name1": "Dev",
+    "name2": "Nia",
+    "object": "toy-car",
+    "small": 11,
+    "diff": 8,
+    "cap": 100,
+    "big": 19,
+    "tensSmall": 10,
+    "tensDiff": 0,
+    "onesSmall": 1,
+    "onesDiff": 8,
+    "tensSum": 10,
+    "onesSum": 9,
+    "tensStep": "There are no tens in 8, so the tens stay at 10.",
+    "onesNote": "That is less than ten, so there is no new ten.",
+    "solOnesNote": "",
+    "tensSol": "Tens: still 10."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 11,
+   "b": 8,
+   "op": "+",
+   "answer": 19,
+   "answerType": "choice",
+   "choices": [
+    3,
+    11,
+    19,
+    29
+   ],
+   "display": {
+    "promptText": "Dev has 11 toy cars. Dev has 8 fewer toy cars than Nia. How many toy cars does Nia have?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-compare-smaller-more-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "compareStories",
+  "structureType": "compareSmallerMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-compare-smaller-more",
+   "seed": 1,
+   "specMd5": "5fbfe54951e489cbbdd392305c113dbe",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-compare-smaller-more",
+  "blueprintId": "wp-g2-compare-smaller-more",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many pattern blocks Ana has. Uma has more, so Ana has fewer.",
+   "steps": [
+    "Ana has 20 fewer than Uma's 73. Take 20 away from 73.",
+    "Count back 20 by tens.",
+    "The number you land on is how many pattern blocks Ana has."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 40,
+    "max": 80,
+    "mark": 73,
+    "step": 10
+   },
+   "example": {
+    "problem": "Ida has 45 beads. Ida has 16 more beads than Leo. How many beads does Leo have?",
+    "steps": [
+     "45 − 5 = 40. 16 is 5 and 11, so 40 − 11 = 29.",
+     "Leo has 29 beads."
+    ],
+    "answer": 29
+   },
+   "feedback": {
+    "73": "That is how many pattern blocks Uma has. Ana has 20 fewer than that.",
+    "93": "The word \"more\" tells who has more: Uma. That means Ana has fewer, so take 20 away from 73."
+   },
+   "solution": {
+    "steps": [
+     "73 − 20 = 53.",
+     "Ana has 53 pattern blocks."
+    ],
+    "answer": 53
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "pattern-block"
+   ],
+   "setting": null,
+   "mistakes": {
+    "73": "answeredWithAGiven",
+    "93": "keywordTrap"
+   },
+   "slots": {
+    "name1": "Uma",
+    "name2": "Ana",
+    "object": "pattern-block",
+    "big": 73,
+    "diff": 20,
+    "cap": 100,
+    "small": 53,
+    "floorTenBig": 70,
+    "onesBig": 3,
+    "onesDiff": 0,
+    "backStep": "Count back 20 by tens.",
+    "solWork": "73 − 20 = 53."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 73,
+   "b": 20,
+   "op": "-",
+   "answer": 53,
+   "answerType": "numberPad",
+   "choices": [
+    53,
+    73,
+    93
+   ],
+   "display": {
+    "promptText": "Uma has 73 pattern blocks. Uma has 20 more pattern blocks than Ana. How many pattern blocks does Ana have?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-compare-smaller-more-s19-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "compareStories",
+  "structureType": "compareSmallerMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-compare-smaller-more",
+   "seed": 19,
+   "specMd5": "5fbfe54951e489cbbdd392305c113dbe",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-compare-smaller-more",
+  "blueprintId": "wp-g2-compare-smaller-more",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many loom bands Cal has. Cora has more, so Cal has fewer.",
+   "steps": [
+    "Cal has 21 fewer than Cora's 81. Take 21 away from 81.",
+    "Count back 20 by tens. Then count back 1 more.",
+    "The number you land on is how many loom bands Cal has."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 50,
+    "max": 90,
+    "mark": 81,
+    "step": 10
+   },
+   "example": {
+    "problem": "Dara has 69 toy cars. Dara has 19 more toy cars than Leo. How many toy cars does Leo have?",
+    "steps": [
+     "69 − 10 = 59. Then 59 − 9 = 50.",
+     "Leo has 50 toy cars."
+    ],
+    "answer": 50
+   },
+   "feedback": {
+    "81": "That is how many loom bands Cora has. Cal has 21 fewer than that.",
+    "102": "The word \"more\" tells who has more: Cora. That means Cal has fewer, so take 21 away from 81."
+   },
+   "solution": {
+    "steps": [
+     "81 − 20 = 61. Then 61 − 1 = 60.",
+     "Cal has 60 loom bands."
+    ],
+    "answer": 60
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "81": "answeredWithAGiven",
+    "102": "keywordTrap"
+   },
+   "slots": {
+    "name1": "Cora",
+    "name2": "Cal",
+    "object": "loom-band",
+    "big": 81,
+    "diff": 21,
+    "cap": 200,
+    "small": 60,
+    "floorTenBig": 80,
+    "onesBig": 1,
+    "onesDiff": 1,
+    "backStep": "Count back 20 by tens. Then count back 1 more.",
+    "solWork": "81 − 20 = 61. Then 61 − 1 = 60."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 81,
+   "b": 21,
+   "op": "-",
+   "answer": 60,
+   "answerType": "numberPad",
+   "choices": [
+    60,
+    81,
+    102
+   ],
+   "display": {
+    "promptText": "Cora has 81 loom bands. Cora has 21 more loom bands than Cal. How many loom bands does Cal have?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-number-line-compare-s7-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "compareStories",
+  "structureType": "compareDifferenceMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "numberLine",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-number-line-compare",
+   "seed": 7,
+   "specMd5": "504579b8b30e086fd8c62471672d69da",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-number-line-compare",
+  "blueprintId": "wp-g2-number-line-compare",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many more pattern blocks Beck lines up than Nico. That is how long the hop is from 47 to 67.",
+   "steps": [
+    "The hop starts at 47 and ends at 67.",
+    "Hop from 47 to the next ten, 50. Then hop on to 67, tens first and then ones.",
+    "Add your hops. Count the spaces you jump over, not the tick marks."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Lena lines up 49 magnetic tiles. Beck lines up 79 magnetic tiles. How many more magnetic tiles does Beck line up than Lena?",
+    "steps": [
+     "From 49 up to 50 is 1.",
+     "From 50 up to 79 is 29.",
+     "1 + 29 = 30. Beck lines up 30 more magnetic tiles than Lena."
+    ],
+    "answer": 30
+   },
+   "feedback": {
+    "21": "That counts the tick marks, both ends too. The length of a hop is the spaces between the marks, so do not count the mark at 47.",
+    "67": "That is where the hop ends: the pattern blocks Beck lines up. The question asks how many more, which is the length of the hop.",
+    "114": "That adds the two numbers. The question asks how far apart 47 and 67 are, so count up from 47 to 67."
+   },
+   "solution": {
+    "steps": [
+     "From 47 up to 50 is 3.",
+     "From 50 up to 67 is 17.",
+     "3 + 17 = 20. Beck lines up 20 more pattern blocks than Nico."
+    ],
+    "answer": 20
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1",
+     "2.MD.B.6"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C",
+     "2.9C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3",
+     "2.MDR.5.5"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberLine",
+   "family": "application",
+   "objects": [
+    "pattern-block"
+   ],
+   "setting": null,
+   "mistakes": {
+    "21": "countedBothEnds",
+    "67": "answeredWithAGiven",
+    "114": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name1": "Nico",
+    "name2": "Beck",
+    "object": "pattern-block",
+    "small": 47,
+    "diff": 20,
+    "cap": 100,
+    "big": 67,
+    "nextTenS": 50,
+    "hop1": 3,
+    "hop2": 17,
+    "howHop": ", tens first and then ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 67,
+   "b": 47,
+   "op": "-",
+   "answer": 20,
+   "answerType": "numberLine",
+   "choices": [
+    20,
+    21,
+    67,
+    114
+   ],
+   "display": {
+    "min": 40,
+    "max": 70,
+    "step": 1,
+    "labelEvery": 5,
+    "from": 47,
+    "to": 67,
+    "lineMode": "jump",
+    "promptText": "Nico lines up 47 pattern blocks. Beck lines up 67 pattern blocks. How many more pattern blocks does Beck line up than Nico?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-both-parts-unknown-s2-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "partWholeStories",
+  "structureType": "bothAddendsUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-both-parts-unknown",
+   "seed": 2,
+   "specMd5": "e1e9acec564513bb9fc1303f0b5670a2",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-both-parts-unknown",
+  "blueprintId": "wp-g2-both-parts-unknown",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for two numbers that make 97 together. Add each pair and look for 97.",
+   "steps": [
+    "Add the two numbers in each choice.",
+    "Add the tens, then add the ones.",
+    "Only one pair makes exactly 97. That pair could be the loom bands in the bag and in the basket."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Ida has 65 building bricks. Ida puts some in a red bin and the rest in a blue bin. Which shows how many building bricks could be in the red bin and in the blue bin?",
+    "steps": [
+     "Add each pair. Only 50 + 15 makes 65.",
+     "So Ida could put 50 building bricks in the red bin and 15 in the blue bin."
+    ],
+    "answer": "50 and 15"
+   },
+   "feedback": {
+    "66 and 41": "Those two numbers make 107, ten more than 97. Add the tens again.",
+    "62 and 36": "Those two numbers make 98, one more than 97. Add the ones again.",
+    "60 and 97": "Uma has 97 loom bands in all. If all 97 go in one place, nothing is left for the other place."
+   },
+   "solution": {
+    "steps": [
+     "Add each pair. Only 60 + 37 makes 97.",
+     "So Uma could put 60 loom bands in the bag and 37 in the basket."
+    ],
+    "answer": "60 and 37"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "66 and 41": "offByTen",
+    "62 and 36": "offByOne",
+    "60 and 97": "pairDoesNotMakeTotal"
+   },
+   "slots": {
+    "name": "Uma",
+    "object": "loom-band",
+    "t1": 6,
+    "t2": 3,
+    "o1": 0,
+    "oPick": 7,
+    "o2": 7,
+    "p1": 60,
+    "p2": 37,
+    "place": 2,
+    "kTenPick": 1,
+    "sPick": 5,
+    "kOnePick": 0,
+    "kTot": 0,
+    "total": 97,
+    "placeA": "a bag",
+    "placeB": "a basket",
+    "theA": "the bag",
+    "theB": "the basket",
+    "kTen": 1,
+    "sTen": 6,
+    "tenA": 66,
+    "tenB": 41,
+    "kOne": 0,
+    "oneA": 62,
+    "oneB": 36,
+    "keyPair": "60 and 37",
+    "tenPair": "66 and 41",
+    "onePair": "62 and 36",
+    "totPair": "60 and 97",
+    "sumTen": 107,
+    "sumOne": 98,
+    "tenWord": "ten more"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "60 and 37",
+   "answerType": "choice",
+   "choices": [
+    "62 and 36",
+    "60 and 97",
+    "60 and 37",
+    "66 and 41"
+   ],
+   "display": {
+    "promptText": "Uma has 97 loom bands. Uma puts some in a bag and the rest in a basket. Which shows how many loom bands could be in the bag and in the basket?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-both-parts-unknown-s9-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "partWholeStories",
+  "structureType": "bothAddendsUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-both-parts-unknown",
+   "seed": 9,
+   "specMd5": "e1e9acec564513bb9fc1303f0b5670a2",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-both-parts-unknown",
+  "blueprintId": "wp-g2-both-parts-unknown",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for two numbers that make 82 together. Add each pair and look for 82.",
+   "steps": [
+    "Add the two numbers in each choice.",
+    "Add the tens, then add the ones.",
+    "Only one pair makes exactly 82. That pair could be the snap cubes in the bag and in the basket."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Milo has 48 trading cards. Milo puts some in a red box and the rest in a blue box. Which shows how many trading cards could be in the red box and in the blue box?",
+    "steps": [
+     "Add each pair. Only 18 + 30 makes 48.",
+     "So Milo could put 18 trading cards in the red box and 30 in the blue box."
+    ],
+    "answer": "18 and 30"
+   },
+   "feedback": {
+    "50 and 22": "Those two numbers make 72, ten less than 82. Add the tens again.",
+    "53 and 30": "Those two numbers make 83, one more than 82. Add the ones again.",
+    "82 and 31": "Isla has 82 snap cubes in all. If all 82 go in one place, nothing is left for the other place."
+   },
+   "solution": {
+    "steps": [
+     "Add each pair. Only 51 + 31 makes 82.",
+     "So Isla could put 51 snap cubes in the bag and 31 in the basket."
+    ],
+    "answer": "51 and 31"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "snap-cube"
+   ],
+   "setting": null,
+   "mistakes": {
+    "50 and 22": "offByTen",
+    "53 and 30": "offByOne",
+    "82 and 31": "pairDoesNotMakeTotal"
+   },
+   "slots": {
+    "name": "Isla",
+    "object": "snap-cube",
+    "t1": 5,
+    "t2": 3,
+    "o1": 1,
+    "oPick": 1,
+    "o2": 1,
+    "p1": 51,
+    "p2": 31,
+    "place": 2,
+    "kTenPick": 0,
+    "sPick": 5,
+    "kOnePick": 0,
+    "kTot": 1,
+    "total": 82,
+    "placeA": "a bag",
+    "placeB": "a basket",
+    "theA": "the bag",
+    "theB": "the basket",
+    "kTen": 0,
+    "sTen": 1,
+    "tenA": 50,
+    "tenB": 22,
+    "kOne": 0,
+    "oneA": 53,
+    "oneB": 30,
+    "keyPair": "51 and 31",
+    "tenPair": "50 and 22",
+    "onePair": "53 and 30",
+    "totPair": "82 and 31",
+    "sumTen": 72,
+    "sumOne": 83,
+    "tenWord": "ten less"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "51 and 31",
+   "answerType": "choice",
+   "choices": [
+    "82 and 31",
+    "51 and 31",
+    "53 and 30",
+    "50 and 22"
+   ],
+   "display": {
+    "promptText": "Isla has 82 snap cubes. Isla puts some in a bag and the rest in a basket. Which shows how many snap cubes could be in the bag and in the basket?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-both-parts-unknown-s16-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "partWholeStories",
+  "structureType": "bothAddendsUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-both-parts-unknown",
+   "seed": 16,
+   "specMd5": "e1e9acec564513bb9fc1303f0b5670a2",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-both-parts-unknown",
+  "blueprintId": "wp-g2-both-parts-unknown",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for two numbers that make 56 together. Add each pair and look for 56.",
+   "steps": [
+    "Add the two numbers in each choice.",
+    "Add the tens, then add the ones.",
+    "Only one pair makes exactly 56. That pair could be the beads in the red box and in the blue box."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Wren has 37 beads. Wren puts some in a red bin and the rest in a blue bin. Which shows how many beads could be in the red bin and in the blue bin?",
+    "steps": [
+     "Add each pair. Only 7 + 30 makes 37.",
+     "So Wren could put 7 beads in the red bin and 30 in the blue bin."
+    ],
+    "answer": "7 and 30"
+   },
+   "feedback": {
+    "14 and 32": "Those two numbers make 46, ten less than 56. Add the tens again.",
+    "15 and 42": "Those two numbers make 57, one more than 56. Add the ones again.",
+    "56 and 40": "Nia has 56 beads in all. If all 56 go in one place, nothing is left for the other place."
+   },
+   "solution": {
+    "steps": [
+     "Add each pair. Only 16 + 40 makes 56.",
+     "So Nia could put 16 beads in the red box and 40 in the blue box."
+    ],
+    "answer": "16 and 40"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "bead"
+   ],
+   "setting": null,
+   "mistakes": {
+    "14 and 32": "offByTen",
+    "15 and 42": "offByOne",
+    "56 and 40": "pairDoesNotMakeTotal"
+   },
+   "slots": {
+    "name": "Nia",
+    "object": "bead",
+    "t1": 1,
+    "t2": 4,
+    "o1": 6,
+    "oPick": 6,
+    "o2": 0,
+    "p1": 16,
+    "p2": 40,
+    "place": 0,
+    "kTenPick": 0,
+    "sPick": 1,
+    "kOnePick": 1,
+    "kTot": 1,
+    "total": 56,
+    "placeA": "a red box",
+    "placeB": "a blue box",
+    "theA": "the red box",
+    "theB": "the blue box",
+    "kTen": 0,
+    "sTen": 2,
+    "tenA": 14,
+    "tenB": 32,
+    "kOne": 1,
+    "oneA": 15,
+    "oneB": 42,
+    "keyPair": "16 and 40",
+    "tenPair": "14 and 32",
+    "onePair": "15 and 42",
+    "totPair": "56 and 40",
+    "sumTen": 46,
+    "sumOne": 57,
+    "tenWord": "ten less"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "16 and 40",
+   "answerType": "choice",
+   "choices": [
+    "56 and 40",
+    "16 and 40",
+    "15 and 42",
+    "14 and 32"
+   ],
+   "display": {
+    "promptText": "Nia has 56 beads. Nia puts some in a red box and the rest in a blue box. Which shows how many beads could be in the red box and in the blue box?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-both-parts-unknown-s23-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "partWholeStories",
+  "structureType": "bothAddendsUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-both-parts-unknown",
+   "seed": 23,
+   "specMd5": "e1e9acec564513bb9fc1303f0b5670a2",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-both-parts-unknown",
+  "blueprintId": "wp-g2-both-parts-unknown",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for two numbers that make 58 together. Add each pair and look for 58.",
+   "steps": [
+    "Add the two numbers in each choice.",
+    "Add the tens, then add the ones.",
+    "Only one pair makes exactly 58. That pair could be the trading cards in the red bin and in the blue bin."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Kai has 68 building bricks. Kai puts some in a red bin and the rest in a blue bin. Which shows how many building bricks could be in the red bin and in the blue bin?",
+    "steps": [
+     "Add each pair. Only 26 + 42 makes 68.",
+     "So Kai could put 26 building bricks in the red bin and 42 in the blue bin."
+    ],
+    "answer": "26 and 42"
+   },
+   "feedback": {
+    "18 and 50": "Those two numbers make 68, ten more than 58. Add the tens again.",
+    "15 and 44": "Those two numbers make 59, one more than 58. Add the ones again.",
+    "58 and 42": "Hugo has 58 trading cards in all. If all 58 go in one place, nothing is left for the other place."
+   },
+   "solution": {
+    "steps": [
+     "Add each pair. Only 16 + 42 makes 58.",
+     "So Hugo could put 16 trading cards in the red bin and 42 in the blue bin."
+    ],
+    "answer": "16 and 42"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "trading-card"
+   ],
+   "setting": null,
+   "mistakes": {
+    "18 and 50": "offByTen",
+    "15 and 44": "offByOne",
+    "58 and 42": "pairDoesNotMakeTotal"
+   },
+   "slots": {
+    "name": "Hugo",
+    "object": "trading-card",
+    "t1": 1,
+    "t2": 4,
+    "o1": 6,
+    "oPick": 8,
+    "o2": 2,
+    "p1": 16,
+    "p2": 42,
+    "place": 1,
+    "kTenPick": 1,
+    "sPick": 7,
+    "kOnePick": 1,
+    "kTot": 1,
+    "total": 58,
+    "placeA": "a red bin",
+    "placeB": "a blue bin",
+    "theA": "the red bin",
+    "theB": "the blue bin",
+    "kTen": 1,
+    "sTen": 2,
+    "tenA": 18,
+    "tenB": 50,
+    "kOne": 1,
+    "oneA": 15,
+    "oneB": 44,
+    "keyPair": "16 and 42",
+    "tenPair": "18 and 50",
+    "onePair": "15 and 44",
+    "totPair": "58 and 42",
+    "sumTen": 68,
+    "sumOne": 59,
+    "tenWord": "ten more"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "16 and 42",
+   "answerType": "choice",
+   "choices": [
+    "16 and 42",
+    "15 and 44",
+    "18 and 50",
+    "58 and 42"
+   ],
+   "display": {
+    "promptText": "Hugo has 58 trading cards. Hugo puts some in a red bin and the rest in a blue bin. Which shows how many trading cards could be in the red bin and in the blue bin?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-both-parts-unknown-s30-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "partWholeStories",
+  "structureType": "bothAddendsUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-both-parts-unknown",
+   "seed": 30,
+   "specMd5": "e1e9acec564513bb9fc1303f0b5670a2",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-both-parts-unknown",
+  "blueprintId": "wp-g2-both-parts-unknown",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for two numbers that make 68 together. Add each pair and look for 68.",
+   "steps": [
+    "Add the two numbers in each choice.",
+    "Add the tens, then add the ones.",
+    "Only one pair makes exactly 68. That pair could be the magnetic tiles in the red bin and in the blue bin."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Theo has 88 snap cubes. Theo puts some in a red bin and the rest in a blue bin. Which shows how many snap cubes could be in the red bin and in the blue bin?",
+    "steps": [
+     "Add each pair. Only 61 + 27 makes 88.",
+     "So Theo could put 61 snap cubes in the red bin and 27 in the blue bin."
+    ],
+    "answer": "61 and 27"
+   },
+   "feedback": {
+    "41 and 17": "Those two numbers make 58, ten less than 68. Add the tens again.",
+    "47 and 22": "Those two numbers make 69, one more than 68. Add the ones again.",
+    "48 and 68": "Zoe has 68 magnetic tiles in all. If all 68 go in one place, nothing is left for the other place."
+   },
+   "solution": {
+    "steps": [
+     "Add each pair. Only 48 + 20 makes 68.",
+     "So Zoe could put 48 magnetic tiles in the red bin and 20 in the blue bin."
+    ],
+    "answer": "48 and 20"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "magnetic-tile"
+   ],
+   "setting": null,
+   "mistakes": {
+    "41 and 17": "offByTen",
+    "47 and 22": "offByOne",
+    "48 and 68": "pairDoesNotMakeTotal"
+   },
+   "slots": {
+    "name": "Zoe",
+    "object": "magnetic-tile",
+    "t1": 4,
+    "t2": 2,
+    "o1": 8,
+    "oPick": 2,
+    "o2": 0,
+    "p1": 48,
+    "p2": 20,
+    "place": 1,
+    "kTenPick": 0,
+    "sPick": 6,
+    "kOnePick": 1,
+    "kTot": 0,
+    "total": 68,
+    "placeA": "a red bin",
+    "placeB": "a blue bin",
+    "theA": "the red bin",
+    "theB": "the blue bin",
+    "kTen": 0,
+    "sTen": 7,
+    "tenA": 41,
+    "tenB": 17,
+    "kOne": 1,
+    "oneA": 47,
+    "oneB": 22,
+    "keyPair": "48 and 20",
+    "tenPair": "41 and 17",
+    "onePair": "47 and 22",
+    "totPair": "48 and 68",
+    "sumTen": 58,
+    "sumOne": 69,
+    "tenWord": "ten less"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "48 and 20",
+   "answerType": "choice",
+   "choices": [
+    "48 and 68",
+    "41 and 17",
+    "47 and 22",
+    "48 and 20"
+   ],
+   "display": {
+    "promptText": "Zoe has 68 magnetic tiles. Zoe puts some in a red bin and the rest in a blue bin. Which shows how many magnetic tiles could be in the red bin and in the blue bin?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-choose-equation-s6-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-choose-equation",
+   "seed": 6,
+   "specMd5": "01b5cf4c2a85e6c86686181258f74a1b",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-choose-equation",
+  "blueprintId": "wp-g2-choose-equation",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks which equation finds the purple buttons. Start by finding the whole.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "All of Sam's buttons, orange and purple together, are the whole.",
+    "The orange buttons are one part. The purple buttons are the missing part.",
+    "To find a missing part, start with the whole and take away the part you know."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Ravi has 92 red and blue marbles. Ravi has 42 red marbles. Which equation can be used to find the number of blue marbles Ravi has?",
+    "steps": [
+     "The whole is 92 marbles. The part you know is 42 red marbles.",
+     "Start with the whole and take away the part you know.",
+     "The equation is 92 − 42 = □."
+    ],
+    "answer": "92 − 42 = □"
+   },
+   "feedback": {
+    "49 + 17 = □": "Adding gives more than all of Sam's buttons. The purple buttons are only part of them, so the equation takes away.",
+    "□ − 17 = 49": "In that equation the box comes first, where the whole goes. You already know the whole. The box should stand for the purple buttons.",
+    "□ − 49 = 17": "That equation takes all of the buttons away from the box, so the box would be more than all of them. The purple buttons are less than the whole."
+   },
+   "solution": {
+    "steps": [
+     "The whole is 49 buttons. The part you know is 17 orange buttons.",
+     "Start with the whole and take away the part you know.",
+     "The equation is 49 − 17 = □."
+    ],
+    "answer": "49 − 17 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "button"
+   ],
+   "setting": null,
+   "mistakes": {
+    "49 + 17 = □": "addedInsteadOfSubtracted",
+    "□ − 17 = 49": "unknownInWrongPlace",
+    "□ − 49 = 17": "solvedForWrongQuantity"
+   },
+   "slots": {
+    "name": "Sam",
+    "object": "button",
+    "total": 49,
+    "part": 17,
+    "color": 2,
+    "ask": 0,
+    "colorA": "orange",
+    "colorB": "purple",
+    "askVerb": "can be used to find",
+    "other": 32,
+    "eqKey": "49 − 17 = □",
+    "eqAdd": "49 + 17 = □",
+    "eqBoxWhole": "□ − 17 = 49",
+    "eqBoxSwap": "□ − 49 = 17"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "49 − 17 = □",
+   "answerType": "choice",
+   "choices": [
+    "□ − 49 = 17",
+    "□ − 17 = 49",
+    "49 − 17 = □",
+    "49 + 17 = □"
+   ],
+   "display": {
+    "promptText": "Sam has 49 orange and purple buttons. Sam has 17 orange buttons. Which equation can be used to find the number of purple buttons Sam has?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-choose-equation-s13-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-choose-equation",
+   "seed": 13,
+   "specMd5": "01b5cf4c2a85e6c86686181258f74a1b",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-choose-equation",
+  "blueprintId": "wp-g2-choose-equation",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks which equation finds the blue loom bands. Start by finding the whole.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "All of Gia's loom bands, red and blue together, are the whole.",
+    "The red loom bands are one part. The blue loom bands are the missing part.",
+    "To find a missing part, start with the whole and take away the part you know."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Leo has 48 green and yellow pom-poms. Leo has 16 green pom-poms. Which equation can be used to find the number of yellow pom-poms Leo has?",
+    "steps": [
+     "The whole is 48 pom-poms. The part you know is 16 green pom-poms.",
+     "Start with the whole and take away the part you know.",
+     "The equation is 48 − 16 = □."
+    ],
+    "answer": "48 − 16 = □"
+   },
+   "feedback": {
+    "53 + 45 = □": "Adding gives more than all of Gia's loom bands. The blue loom bands are only part of them, so the equation takes away.",
+    "□ − 45 = 53": "In that equation the box comes first, where the whole goes. You already know the whole. The box should stand for the blue loom bands.",
+    "□ − 53 = 45": "That equation takes all of the loom bands away from the box, so the box would be more than all of them. The blue loom bands are less than the whole."
+   },
+   "solution": {
+    "steps": [
+     "The whole is 53 loom bands. The part you know is 45 red loom bands.",
+     "Start with the whole and take away the part you know.",
+     "The equation is 53 − 45 = □."
+    ],
+    "answer": "53 − 45 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "53 + 45 = □": "addedInsteadOfSubtracted",
+    "□ − 45 = 53": "unknownInWrongPlace",
+    "□ − 53 = 45": "solvedForWrongQuantity"
+   },
+   "slots": {
+    "name": "Gia",
+    "object": "loom-band",
+    "total": 53,
+    "part": 45,
+    "color": 0,
+    "ask": 0,
+    "colorA": "red",
+    "colorB": "blue",
+    "askVerb": "can be used to find",
+    "other": 8,
+    "eqKey": "53 − 45 = □",
+    "eqAdd": "53 + 45 = □",
+    "eqBoxWhole": "□ − 45 = 53",
+    "eqBoxSwap": "□ − 53 = 45"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "53 − 45 = □",
+   "answerType": "choice",
+   "choices": [
+    "53 − 45 = □",
+    "□ − 45 = 53",
+    "□ − 53 = 45",
+    "53 + 45 = □"
+   ],
+   "display": {
+    "promptText": "Gia has 53 red and blue loom bands. Gia has 45 red loom bands. Which equation can be used to find the number of blue loom bands Gia has?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-choose-equation-s20-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "partWholeStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-choose-equation",
+   "seed": 20,
+   "specMd5": "01b5cf4c2a85e6c86686181258f74a1b",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-choose-equation",
+  "blueprintId": "wp-g2-choose-equation",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks which equation finds the purple snap cubes. Start by finding the whole.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "All of Nico's snap cubes, orange and purple together, are the whole.",
+    "The orange snap cubes are one part. The purple snap cubes are the missing part.",
+    "To find a missing part, start with the whole and take away the part you know."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Nia has 69 green and yellow snap cubes. Nia has 13 green snap cubes. Which equation shows how to find the number of yellow snap cubes Nia has?",
+    "steps": [
+     "The whole is 69 snap cubes. The part you know is 13 green snap cubes.",
+     "Start with the whole and take away the part you know.",
+     "The equation is 69 − 13 = □."
+    ],
+    "answer": "69 − 13 = □"
+   },
+   "feedback": {
+    "46 + 15 = □": "Adding gives more than all of Nico's snap cubes. The purple snap cubes are only part of them, so the equation takes away.",
+    "□ − 15 = 46": "In that equation the box comes first, where the whole goes. You already know the whole. The box should stand for the purple snap cubes.",
+    "□ − 46 = 15": "That equation takes all of the snap cubes away from the box, so the box would be more than all of them. The purple snap cubes are less than the whole."
+   },
+   "solution": {
+    "steps": [
+     "The whole is 46 snap cubes. The part you know is 15 orange snap cubes.",
+     "Start with the whole and take away the part you know.",
+     "The equation is 46 − 15 = □."
+    ],
+    "answer": "46 − 15 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "snap-cube"
+   ],
+   "setting": null,
+   "mistakes": {
+    "46 + 15 = □": "addedInsteadOfSubtracted",
+    "□ − 15 = 46": "unknownInWrongPlace",
+    "□ − 46 = 15": "solvedForWrongQuantity"
+   },
+   "slots": {
+    "name": "Nico",
+    "object": "snap-cube",
+    "total": 46,
+    "part": 15,
+    "color": 2,
+    "ask": 0,
+    "colorA": "orange",
+    "colorB": "purple",
+    "askVerb": "can be used to find",
+    "other": 31,
+    "eqKey": "46 − 15 = □",
+    "eqAdd": "46 + 15 = □",
+    "eqBoxWhole": "□ − 15 = 46",
+    "eqBoxSwap": "□ − 46 = 15"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "46 − 15 = □",
+   "answerType": "choice",
+   "choices": [
+    "46 + 15 = □",
+    "□ − 46 = 15",
+    "46 − 15 = □",
+    "□ − 15 = 46"
+   ],
+   "display": {
+    "promptText": "Nico has 46 orange and purple snap cubes. Nico has 15 orange snap cubes. Which equation can be used to find the number of purple snap cubes Nico has?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-box-middle-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "missingNumber",
+  "structureType": "equationUnknownMiddle",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-box-middle",
+   "seed": 1,
+   "specMd5": "8d776313dfccfa32d083599f212a66ec",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-box-middle",
+  "blueprintId": "wp-g2-box-middle",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks what number you add to 33 to make 60.",
+   "steps": [
+    "Start at 33.",
+    "Count up to 60. Jump by tens first, then by ones.",
+    "Add up your jumps. That is the number you add to 33."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 77 − □ = 64",
+    "steps": [
+     "Count up from 64 to 77. The jumps add up to 13.",
+     "Check: 77 − 13 = 64."
+    ],
+    "answer": 13
+   },
+   "feedback": {
+    "33": "To find the box, take 33 away from 60. There are not enough ones in 60 to take away 3 ones, so trade 1 ten for 10 ones first.",
+    "60": "The number after the = sign, 60, is already in the equation. The box is the number that makes both sides the same.",
+    "93": "That adds 33 and 60. The = sign means both sides are the same amount, so 33 and the box together make 60."
+   },
+   "solution": {
+    "steps": [
+     "Count up from 33 to 60. The jumps add up to 27.",
+     "Check: 33 + 27 = 60."
+    ],
+    "answer": 27
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "33": "smallerFromLarger",
+    "60": "answeredWithAGiven",
+    "93": "equalsMeansCompute"
+   },
+   "slots": {
+    "cellPick": 9,
+    "sgn": 0,
+    "rgWant": 1,
+    "aPlus": 33,
+    "xPlus": 27,
+    "aMinus": 47,
+    "xMinus": 12,
+    "a": 33,
+    "x": 27,
+    "c": 60,
+    "sign": "+",
+    "big": 60,
+    "small": 33,
+    "trade": 1,
+    "slip": 33,
+    "onesSmall": "3 ones",
+    "nudgeLine": "The question asks what number you add to 33 to make 60.",
+    "startLine": "Start at 33.",
+    "countLine": "Count up to 60. Jump by tens first, then by ones.",
+    "lastLine": "Add up your jumps. That is the number you add to 33.",
+    "fbCompute": "That adds 33 and 60. The = sign means both sides are the same amount, so 33 and the box together make 60.",
+    "fbSlip": "To find the box, take 33 away from 60. There are not enough ones in 60 to take away 3 ones, so trade 1 ten for 10 ones first.",
+    "solCount": "Count up from 33 to 60. The jumps add up to 27.",
+    "solCheck": "Check: 33 + 27 = 60."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 27,
+   "answerType": "numberPad",
+   "choices": [
+    27,
+    33,
+    60,
+    93
+   ],
+   "display": {
+    "promptText": "What number makes this true? 33 + □ = 60"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-box-middle-s16-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "missingNumber",
+  "structureType": "equationUnknownMiddle",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-box-middle",
+   "seed": 16,
+   "specMd5": "8d776313dfccfa32d083599f212a66ec",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-box-middle",
+  "blueprintId": "wp-g2-box-middle",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks what number you take away from 93 to leave 32.",
+   "steps": [
+    "Start at 32.",
+    "Count up to 93. Jump by tens first, then by ones.",
+    "Add up your jumps. That is the number taken away from 93."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 85 − □ = 17",
+    "steps": [
+     "Count up from 17 to 85. The jumps add up to 68.",
+     "Check: 85 − 68 = 17."
+    ],
+    "answer": 68
+   },
+   "feedback": {
+    "32": "The number after the = sign, 32, is already in the equation. The box is the number that makes both sides the same.",
+    "125": "That adds 93 and 32. The = sign means both sides are the same amount, so 93 take away the box leaves 32."
+   },
+   "solution": {
+    "steps": [
+     "Count up from 32 to 93. The jumps add up to 61.",
+     "Check: 93 − 61 = 32."
+    ],
+    "answer": 61
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "32": "answeredWithAGiven",
+    "125": "equalsMeansCompute"
+   },
+   "slots": {
+    "cellPick": 12,
+    "sgn": 1,
+    "rgWant": 0,
+    "aPlus": 50,
+    "xPlus": 25,
+    "aMinus": 93,
+    "xMinus": 61,
+    "a": 93,
+    "x": 61,
+    "c": 32,
+    "sign": "−",
+    "big": 93,
+    "small": 32,
+    "trade": 0,
+    "slip": 61,
+    "onesSmall": "2 ones",
+    "nudgeLine": "The question asks what number you take away from 93 to leave 32.",
+    "startLine": "Start at 32.",
+    "countLine": "Count up to 93. Jump by tens first, then by ones.",
+    "lastLine": "Add up your jumps. That is the number taken away from 93.",
+    "fbCompute": "That adds 93 and 32. The = sign means both sides are the same amount, so 93 take away the box leaves 32.",
+    "fbSlip": "To find the box, take 32 away from 93. There are not enough ones in 93 to take away 2 ones, so trade 1 ten for 10 ones first.",
+    "solCount": "Count up from 32 to 93. The jumps add up to 61.",
+    "solCheck": "Check: 93 − 61 = 32."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 61,
+   "answerType": "numberPad",
+   "choices": [
+    32,
+    61,
+    125
+   ],
+   "display": {
+    "promptText": "What number makes this true? 93 − □ = 32"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-box-start-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "missingNumber",
+  "structureType": "equationUnknownFirst",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-box-start",
+   "seed": 1,
+   "specMd5": "319e298295ff9f0e840cb1e69dce7c6d",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-box-start",
+  "blueprintId": "wp-g2-box-start",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The box is the number you start with. Taking away 30 from it leaves 29.",
+   "steps": [
+    "To find the start, put back what was taken away.",
+    "Add 29 and 30.",
+    "Add the ones, then add the tens."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? □ − 48 = 17",
+    "steps": [
+     "The box is the start. Put back the 48 that was taken away.",
+     "Add: 17 + 48 = 65.",
+     "Check: 65 − 48 = 17."
+    ],
+    "answer": 65
+   },
+   "feedback": {
+    "1": "The − sign tells what happened to the box: 30 was taken away from it. To find the box, put 30 back. Add 29 and 30.",
+    "29": "That is the number left after taking away. The box is the number you start with, so it is more than 29."
+   },
+   "solution": {
+    "steps": [
+     "The box is the start. Put back the 30 that was taken away.",
+     "Add: 29 + 30 = 59.",
+     "Check: 59 − 30 = 29."
+    ],
+    "answer": 59
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "1": "subtractedInsteadOfAdded",
+    "29": "answeredWithAGiven"
+   },
+   "slots": {
+    "cellPick": 1,
+    "sgn": 0,
+    "rgWant": 0,
+    "b": 30,
+    "c": 29,
+    "sign": "−",
+    "key": 59,
+    "regroup": 0,
+    "tradeSlip": -1,
+    "onesB": "0 ones",
+    "onesC": "9 ones",
+    "nudgeLine": "The box is the number you start with. Taking away 30 from it leaves 29.",
+    "undoLine": "To find the start, put back what was taken away.",
+    "doLine": "Add 29 and 30.",
+    "tradeStep": "Add the ones, then add the tens.",
+    "fbGiven": "That is the number left after taking away. The box is the number you start with, so it is more than 29.",
+    "solFirst": "The box is the start. Put back the 30 that was taken away.",
+    "solDo": "Add: 29 + 30 = 59.",
+    "solCheck": "Check: 59 − 30 = 29."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 59,
+   "answerType": "numberPad",
+   "choices": [
+    1,
+    29,
+    59
+   ],
+   "display": {
+    "promptText": "What number makes this true? □ − 30 = 29"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-box-start-s17-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "missingNumber",
+  "structureType": "equationUnknownFirst",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-box-start",
+   "seed": 17,
+   "specMd5": "319e298295ff9f0e840cb1e69dce7c6d",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-box-start",
+  "blueprintId": "wp-g2-box-start",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The box is the number you start with. Taking away 16 from it leaves 53.",
+   "steps": [
+    "To find the start, put back what was taken away.",
+    "Add 53 and 16.",
+    "Add the ones, then add the tens."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? □ + 27 = 60",
+    "steps": [
+     "The box is the start. Take away the 27 that was added.",
+     "Subtract: 60 − 27 = 33.",
+     "Check: 33 + 27 = 60."
+    ],
+    "answer": 33
+   },
+   "feedback": {
+    "37": "The − sign tells what happened to the box: 16 was taken away from it. To find the box, put 16 back. Add 53 and 16.",
+    "53": "That is the number left after taking away. The box is the number you start with, so it is more than 53."
+   },
+   "solution": {
+    "steps": [
+     "The box is the start. Put back the 16 that was taken away.",
+     "Add: 53 + 16 = 69.",
+     "Check: 69 − 16 = 53."
+    ],
+    "answer": 69
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "37": "subtractedInsteadOfAdded",
+    "53": "answeredWithAGiven"
+   },
+   "slots": {
+    "cellPick": 2,
+    "sgn": 0,
+    "rgWant": 0,
+    "b": 16,
+    "c": 53,
+    "sign": "−",
+    "key": 69,
+    "regroup": 0,
+    "tradeSlip": 43,
+    "onesB": "6 ones",
+    "onesC": "3 ones",
+    "nudgeLine": "The box is the number you start with. Taking away 16 from it leaves 53.",
+    "undoLine": "To find the start, put back what was taken away.",
+    "doLine": "Add 53 and 16.",
+    "tradeStep": "Add the ones, then add the tens.",
+    "fbGiven": "That is the number left after taking away. The box is the number you start with, so it is more than 53.",
+    "solFirst": "The box is the start. Put back the 16 that was taken away.",
+    "solDo": "Add: 53 + 16 = 69.",
+    "solCheck": "Check: 69 − 16 = 53."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 69,
+   "answerType": "numberPad",
+   "choices": [
+    37,
+    53,
+    69
+   ],
+   "display": {
+    "promptText": "What number makes this true? □ − 16 = 53"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-box-number-line-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "missingNumber",
+  "structureType": "equationUnknownMiddle",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "numberLine",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-box-number-line",
+   "seed": 1,
+   "specMd5": "a2764a1d3751434617a7b6156f0d2e00",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-box-number-line",
+  "blueprintId": "wp-g2-box-number-line",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how long the hop from 39 to 55 is. That length is the number in the box.",
+   "steps": [
+    "Start at 39 on the number line.",
+    "Jump to the next ten. Then jump by tens and by ones until you reach 55.",
+    "Add up your jumps."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 45 + □ = 76",
+    "steps": [
+     "From 45 to 50 is 5.",
+     "From 50 to 76 is 26.",
+     "So the hop is 5 + 26 = 31."
+    ],
+    "answer": 31
+   },
+   "feedback": {
+    "17": "Count the jumps between the marks, not the marks. Do not count 39, where the hop starts.",
+    "55": "The hop ends at 55. The box is how long the hop is, not where it ends.",
+    "94": "That adds 39 and 55. The = sign means 39 and the box together make 55, so the box is the length of the hop."
+   },
+   "solution": {
+    "steps": [
+     "From 39 to 40 is 1.",
+     "From 40 to 55 is 15.",
+     "So the hop is 1 + 15 = 16."
+    ],
+    "answer": 16
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.MD.B.6"
+    ],
+    "tx": [
+     "2.4B",
+     "2.9C"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4",
+     "2.MDR.5.5"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberLine",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "17": "countedBothEnds",
+    "55": "answeredWithAGiven",
+    "94": "equalsMeansCompute"
+   },
+   "slots": {
+    "a": 39,
+    "x": 16,
+    "rg": 1,
+    "c": 55,
+    "nt": 40,
+    "h1": 1,
+    "h2": 15
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 39,
+   "b": null,
+   "op": "+",
+   "answer": 16,
+   "answerType": "numberLine",
+   "choices": [
+    16,
+    17,
+    55,
+    94
+   ],
+   "display": {
+    "min": 30,
+    "max": 60,
+    "step": 1,
+    "labelEvery": 5,
+    "from": 39,
+    "to": 55,
+    "lineMode": "jump",
+    "promptText": "What number makes this true? 39 + □ = 55"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-box-number-line-s16-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "missingNumber",
+  "structureType": "equationUnknownMiddle",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "numberLine",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-box-number-line",
+   "seed": 16,
+   "specMd5": "a2764a1d3751434617a7b6156f0d2e00",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-box-number-line",
+  "blueprintId": "wp-g2-box-number-line",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how long the hop from 36 to 48 is. That length is the number in the box.",
+   "steps": [
+    "Start at 36 on the number line.",
+    "Jump to the next ten. Then jump by tens and by ones until you reach 48.",
+    "Add up your jumps."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 39 + □ = 54",
+    "steps": [
+     "From 39 to 40 is 1.",
+     "From 40 to 54 is 14.",
+     "So the hop is 1 + 14 = 15."
+    ],
+    "answer": 15
+   },
+   "feedback": {
+    "13": "Count the jumps between the marks, not the marks. Do not count 36, where the hop starts.",
+    "48": "The hop ends at 48. The box is how long the hop is, not where it ends.",
+    "84": "That adds 36 and 48. The = sign means 36 and the box together make 48, so the box is the length of the hop."
+   },
+   "solution": {
+    "steps": [
+     "From 36 to 40 is 4.",
+     "From 40 to 48 is 8.",
+     "So the hop is 4 + 8 = 12."
+    ],
+    "answer": 12
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.MD.B.6"
+    ],
+    "tx": [
+     "2.4B",
+     "2.9C"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4",
+     "2.MDR.5.5"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberLine",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "13": "countedBothEnds",
+    "48": "answeredWithAGiven",
+    "84": "equalsMeansCompute"
+   },
+   "slots": {
+    "a": 36,
+    "x": 12,
+    "rg": 0,
+    "c": 48,
+    "nt": 40,
+    "h1": 4,
+    "h2": 8
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 36,
+   "b": null,
+   "op": "+",
+   "answer": 12,
+   "answerType": "numberLine",
+   "choices": [
+    12,
+    13,
+    48,
+    84
+   ],
+   "display": {
+    "min": 30,
+    "max": 50,
+    "step": 1,
+    "labelEvery": 5,
+    "from": 36,
+    "to": 48,
+    "lineMode": "jump",
+    "promptText": "What number makes this true? 36 + □ = 48"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-box-second-step-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "missingNumber",
+  "structureType": "twoStepEquationSecondStep",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-box-second-step",
+   "seed": 1,
+   "specMd5": "338eb34a5e8abb3b1c691b92d367b7cd",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-box-second-step",
+  "blueprintId": "wp-g2-two-step-box-second-step",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks for the number in the box. Start with the first step, 42 − 9.",
+   "steps": [
+    "Find 42 − 9 first.",
+    "Then think: that number and the box together make 48.",
+    "Count up from your first answer to 48."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 84 − 4 + □ = 92",
+    "steps": [
+     "First step: 84 − 4 = 80.",
+     "Now 80 + □ = 92.",
+     "Count up from 80 to 92. The box is 12."
+    ],
+    "answer": 12
+   },
+   "feedback": {
+    "33": "That is only the first step, 42 − 9. Now find what to add to that number to make 48.",
+    "48": "The number after the = sign is 48. The box is what you add to the first step's answer to reach 48.",
+    "81": "That adds 48 to the first step's answer. The = sign means both sides are the same amount, so 42 − 9 + □ must make 48."
+   },
+   "solution": {
+    "steps": [
+     "First step: 42 − 9 = 33.",
+     "Now 33 + □ = 48.",
+     "Count up from 33 to 48. The box is 15."
+    ],
+    "answer": 15
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "33": "stopsAtStepOne",
+    "48": "answeredWithAGiven",
+    "81": "equalsMeansCompute"
+   },
+   "slots": {
+    "sgn": 0,
+    "small": 0,
+    "rgPick": 2,
+    "rg": 1,
+    "a": 42,
+    "bS": 9,
+    "bL": 25,
+    "kS": 6,
+    "kL": 15,
+    "b": 9,
+    "key": 15,
+    "m": 33,
+    "d": 48,
+    "op1": "−",
+    "r1": 1,
+    "r2": 0
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 15,
+   "answerType": "numberPad",
+   "choices": [
+    15,
+    33,
+    48,
+    81
+   ],
+   "display": {
+    "promptText": "What number makes this true? 42 − 9 + □ = 48"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-box-second-step-s16-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "missingNumber",
+  "structureType": "twoStepEquationSecondStep",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-box-second-step",
+   "seed": 16,
+   "specMd5": "338eb34a5e8abb3b1c691b92d367b7cd",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-box-second-step",
+  "blueprintId": "wp-g2-two-step-box-second-step",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks for the number in the box. Start with the first step, 48 − 3.",
+   "steps": [
+    "Find 48 − 3 first.",
+    "Then think: that number and the box together make 88.",
+    "Count up from your first answer to 88."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 85 − 7 + □ = 89",
+    "steps": [
+     "First step: 85 − 7 = 78.",
+     "Now 78 + □ = 89.",
+     "Count up from 78 to 89. The box is 11."
+    ],
+    "answer": 11
+   },
+   "feedback": {
+    "45": "That is only the first step, 48 − 3. Now find what to add to that number to make 88.",
+    "88": "The number after the = sign is 88. The box is what you add to the first step's answer to reach 88.",
+    "133": "That adds 88 to the first step's answer. The = sign means both sides are the same amount, so 48 − 3 + □ must make 88."
+   },
+   "solution": {
+    "steps": [
+     "First step: 48 − 3 = 45.",
+     "Now 45 + □ = 88.",
+     "Count up from 45 to 88. The box is 43."
+    ],
+    "answer": 43
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "45": "stopsAtStepOne",
+    "88": "answeredWithAGiven",
+    "133": "equalsMeansCompute"
+   },
+   "slots": {
+    "sgn": 0,
+    "small": 0,
+    "rgPick": 0,
+    "rg": 0,
+    "a": 48,
+    "bS": 3,
+    "bL": 23,
+    "kS": 8,
+    "kL": 43,
+    "b": 3,
+    "key": 43,
+    "m": 45,
+    "d": 88,
+    "op1": "−",
+    "r1": 0,
+    "r2": 0
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 43,
+   "answerType": "numberPad",
+   "choices": [
+    43,
+    45,
+    88,
+    133
+   ],
+   "display": {
+    "promptText": "What number makes this true? 48 − 3 + □ = 88"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-choose-equation-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-choose-equation",
+   "seed": 1,
+   "specMd5": "25db160f552baeb97c54d1b4bede014a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-choose-equation",
+  "blueprintId": "wp-g2-two-step-choose-equation",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "First Nico loses some. That makes fewer, so that step takes away.",
+    "Then Nico gets more. That makes more, so that step adds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Hugo has 54 marbles. Hugo gives 5 of them to Cora. Then a cousin gives Hugo 16 more marbles. Which equation shows how to find the number of marbles Hugo has now?",
+    "steps": [
+     "Hugo starts with 54 marbles.",
+     "Giving away 5 means take away 5.",
+     "Getting 16 more means add 16.",
+     "The equation is 54 − 5 + 16 = □."
+    ],
+    "answer": "54 − 5 + 16 = □"
+   },
+   "feedback": {
+    "31 − 10 − 17 = □": "That equation takes away twice. In the second step Nico gets more buttons, so that step adds.",
+    "31 + 10 + 17 = □": "That equation adds every number. First Nico has fewer buttons, so the first step takes away.",
+    "31 − 10 = □": "That equation stops after the first step. It leaves out the buttons Nico gets at the end."
+   },
+   "solution": {
+    "steps": [
+     "Nico starts with 31 buttons.",
+     "Losing 10 means take away 10.",
+     "Getting 17 more means add 17.",
+     "The equation is 31 − 10 + 17 = □."
+    ],
+    "answer": "31 − 10 + 17 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "button"
+   ],
+   "setting": null,
+   "mistakes": {
+    "31 − 10 − 17 = □": "wrongOperationStepTwo",
+    "31 + 10 + 17 = □": "addedEverything",
+    "31 − 10 = □": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Nico",
+    "name2": "Hana",
+    "object": "button",
+    "start": 31,
+    "take": 10,
+    "add": 17,
+    "fr": 1,
+    "ar": 0,
+    "rel": 0,
+    "ask": 1,
+    "relWord": "Grandma",
+    "takeVerb": "loses",
+    "takeTail": "at the park",
+    "addLead": "Grandma gives Nico",
+    "addTail": "",
+    "askVerb": "can be used to find",
+    "firstStep": "First Nico loses some. That makes fewer, so that step takes away.",
+    "secondStep": "Then Nico gets more. That makes more, so that step adds.",
+    "solTake": "Losing 10 means take away 10.",
+    "solAdd": "Getting 17 more means add 17.",
+    "eqKey": "31 − 10 + 17 = □",
+    "eqTakeTwice": "31 − 10 − 17 = □",
+    "eqAddAll": "31 + 10 + 17 = □",
+    "eqStepOne": "31 − 10 = □"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "31 − 10 + 17 = □",
+   "answerType": "choice",
+   "choices": [
+    "31 − 10 + 17 = □",
+    "31 − 10 − 17 = □",
+    "31 + 10 + 17 = □",
+    "31 − 10 = □"
+   ],
+   "display": {
+    "promptText": "Nico has 31 buttons. Nico loses 10 of them at the park. Then Grandma gives Nico 17 more buttons. Which equation can be used to find the number of buttons Nico has now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-choose-equation-s4-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-choose-equation",
+   "seed": 4,
+   "specMd5": "25db160f552baeb97c54d1b4bede014a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-choose-equation",
+  "blueprintId": "wp-g2-two-step-choose-equation",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "First Cora loses some. That makes fewer, so that step takes away.",
+    "Then Cora gets more. That makes more, so that step adds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Pia has 59 arcade tickets. Pia gives 19 of them to Noor. Then Grandpa gives Pia 18 more arcade tickets. Which equation shows how to find the number of arcade tickets Pia has now?",
+    "steps": [
+     "Pia starts with 59 arcade tickets.",
+     "Giving away 19 means take away 19.",
+     "Getting 18 more means add 18.",
+     "The equation is 59 − 19 + 18 = □."
+    ],
+    "answer": "59 − 19 + 18 = □"
+   },
+   "feedback": {
+    "58 − 5 − 14 = □": "That equation takes away twice. In the second step Cora gets more toy cars, so that step adds.",
+    "58 + 5 + 14 = □": "That equation adds every number. First Cora has fewer toy cars, so the first step takes away.",
+    "58 − 5 = □": "That equation stops after the first step. It leaves out the toy cars Cora gets at the end."
+   },
+   "solution": {
+    "steps": [
+     "Cora starts with 58 toy cars.",
+     "Losing 5 means take away 5.",
+     "Getting 14 more means add 14.",
+     "The equation is 58 − 5 + 14 = □."
+    ],
+    "answer": "58 − 5 + 14 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "toy-car"
+   ],
+   "setting": null,
+   "mistakes": {
+    "58 − 5 − 14 = □": "wrongOperationStepTwo",
+    "58 + 5 + 14 = □": "addedEverything",
+    "58 − 5 = □": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Cora",
+    "name2": "Dev",
+    "object": "toy-car",
+    "start": 58,
+    "take": 5,
+    "add": 14,
+    "fr": 1,
+    "ar": 0,
+    "rel": 0,
+    "ask": 0,
+    "relWord": "Grandma",
+    "takeVerb": "loses",
+    "takeTail": "at the park",
+    "addLead": "Grandma gives Cora",
+    "addTail": "",
+    "askVerb": "shows how to find",
+    "firstStep": "First Cora loses some. That makes fewer, so that step takes away.",
+    "secondStep": "Then Cora gets more. That makes more, so that step adds.",
+    "solTake": "Losing 5 means take away 5.",
+    "solAdd": "Getting 14 more means add 14.",
+    "eqKey": "58 − 5 + 14 = □",
+    "eqTakeTwice": "58 − 5 − 14 = □",
+    "eqAddAll": "58 + 5 + 14 = □",
+    "eqStepOne": "58 − 5 = □"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "58 − 5 + 14 = □",
+   "answerType": "choice",
+   "choices": [
+    "58 − 5 = □",
+    "58 − 5 − 14 = □",
+    "58 − 5 + 14 = □",
+    "58 + 5 + 14 = □"
+   ],
+   "display": {
+    "promptText": "Cora has 58 toy cars. Cora loses 5 of them at the park. Then Grandma gives Cora 14 more toy cars. Which equation shows how to find the number of toy cars Cora has now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-choose-equation-s7-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-choose-equation",
+   "seed": 7,
+   "specMd5": "25db160f552baeb97c54d1b4bede014a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-choose-equation",
+  "blueprintId": "wp-g2-two-step-choose-equation",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "First Cora gives some away. That makes fewer, so that step takes away.",
+    "Then Cora gets more. That makes more, so that step adds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Dev has 53 trading cards. Dev gives 19 of them to Ben. Then Dev finds 7 more trading cards at home. Which equation shows how to find the number of trading cards Dev has now?",
+    "steps": [
+     "Dev starts with 53 trading cards.",
+     "Giving away 19 means take away 19.",
+     "Finding 7 more means add 7.",
+     "The equation is 53 − 19 + 7 = □."
+    ],
+    "answer": "53 − 19 + 7 = □"
+   },
+   "feedback": {
+    "36 − 7 − 17 = □": "That equation takes away twice. In the second step Cora gets more toy cars, so that step adds.",
+    "36 + 7 + 17 = □": "That equation adds every number. First Cora has fewer toy cars, so the first step takes away.",
+    "36 − 7 = □": "That equation stops after the first step. It leaves out the toy cars Cora gets at the end."
+   },
+   "solution": {
+    "steps": [
+     "Cora starts with 36 toy cars.",
+     "Giving away 7 means take away 7.",
+     "Finding 17 more means add 17.",
+     "The equation is 36 − 7 + 17 = □."
+    ],
+    "answer": "36 − 7 + 17 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "toy-car"
+   ],
+   "setting": null,
+   "mistakes": {
+    "36 − 7 − 17 = □": "wrongOperationStepTwo",
+    "36 + 7 + 17 = □": "addedEverything",
+    "36 − 7 = □": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Cora",
+    "name2": "Eli",
+    "object": "toy-car",
+    "start": 36,
+    "take": 7,
+    "add": 17,
+    "fr": 0,
+    "ar": 1,
+    "rel": 4,
+    "ask": 0,
+    "relWord": "a cousin",
+    "takeVerb": "gives",
+    "takeTail": "to Eli",
+    "addLead": "Cora finds",
+    "addTail": " at home",
+    "askVerb": "shows how to find",
+    "firstStep": "First Cora gives some away. That makes fewer, so that step takes away.",
+    "secondStep": "Then Cora gets more. That makes more, so that step adds.",
+    "solTake": "Giving away 7 means take away 7.",
+    "solAdd": "Finding 17 more means add 17.",
+    "eqKey": "36 − 7 + 17 = □",
+    "eqTakeTwice": "36 − 7 − 17 = □",
+    "eqAddAll": "36 + 7 + 17 = □",
+    "eqStepOne": "36 − 7 = □"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "36 − 7 + 17 = □",
+   "answerType": "choice",
+   "choices": [
+    "36 + 7 + 17 = □",
+    "36 − 7 = □",
+    "36 − 7 + 17 = □",
+    "36 − 7 − 17 = □"
+   ],
+   "display": {
+    "promptText": "Cora has 36 toy cars. Cora gives 7 of them to Eli. Then Cora finds 17 more toy cars at home. Which equation shows how to find the number of toy cars Cora has now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-choose-equation-s10-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-choose-equation",
+   "seed": 10,
+   "specMd5": "25db160f552baeb97c54d1b4bede014a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-choose-equation",
+  "blueprintId": "wp-g2-two-step-choose-equation",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "First Ida loses some. That makes fewer, so that step takes away.",
+    "Then Ida gets more. That makes more, so that step adds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Noor has 33 stickers. Noor gives 5 of them to Theo. Then Mom gives Noor 7 more stickers. Which equation shows how to find the number of stickers Noor has now?",
+    "steps": [
+     "Noor starts with 33 stickers.",
+     "Giving away 5 means take away 5.",
+     "Getting 7 more means add 7.",
+     "The equation is 33 − 5 + 7 = □."
+    ],
+    "answer": "33 − 5 + 7 = □"
+   },
+   "feedback": {
+    "26 − 12 − 6 = □": "That equation takes away twice. In the second step Ida gets more beads, so that step adds.",
+    "26 + 12 + 6 = □": "That equation adds every number. First Ida has fewer beads, so the first step takes away.",
+    "26 − 12 = □": "That equation stops after the first step. It leaves out the beads Ida gets at the end."
+   },
+   "solution": {
+    "steps": [
+     "Ida starts with 26 beads.",
+     "Losing 12 means take away 12.",
+     "Finding 6 more means add 6.",
+     "The equation is 26 − 12 + 6 = □."
+    ],
+    "answer": "26 − 12 + 6 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "bead"
+   ],
+   "setting": null,
+   "mistakes": {
+    "26 − 12 − 6 = □": "wrongOperationStepTwo",
+    "26 + 12 + 6 = □": "addedEverything",
+    "26 − 12 = □": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Ida",
+    "name2": "Jae",
+    "object": "bead",
+    "start": 26,
+    "take": 12,
+    "add": 6,
+    "fr": 1,
+    "ar": 1,
+    "rel": 3,
+    "ask": 0,
+    "relWord": "Dad",
+    "takeVerb": "loses",
+    "takeTail": "at the park",
+    "addLead": "Ida finds",
+    "addTail": " at home",
+    "askVerb": "shows how to find",
+    "firstStep": "First Ida loses some. That makes fewer, so that step takes away.",
+    "secondStep": "Then Ida gets more. That makes more, so that step adds.",
+    "solTake": "Losing 12 means take away 12.",
+    "solAdd": "Finding 6 more means add 6.",
+    "eqKey": "26 − 12 + 6 = □",
+    "eqTakeTwice": "26 − 12 − 6 = □",
+    "eqAddAll": "26 + 12 + 6 = □",
+    "eqStepOne": "26 − 12 = □"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "26 − 12 + 6 = □",
+   "answerType": "choice",
+   "choices": [
+    "26 − 12 + 6 = □",
+    "26 − 12 − 6 = □",
+    "26 + 12 + 6 = □",
+    "26 − 12 = □"
+   ],
+   "display": {
+    "promptText": "Ida has 26 beads. Ida loses 12 of them at the park. Then Ida finds 6 more beads at home. Which equation shows how to find the number of beads Ida has now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-choose-equation-s13-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-choose-equation",
+   "seed": 13,
+   "specMd5": "25db160f552baeb97c54d1b4bede014a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-choose-equation",
+  "blueprintId": "wp-g2-two-step-choose-equation",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "First Lena loses some. That makes fewer, so that step takes away.",
+    "Then Lena gets more. That makes more, so that step adds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Milo has 33 acorns. Milo gives 7 of them to Cal. Then Milo finds 17 more acorns at home. Which equation can be used to find the number of acorns Milo has now?",
+    "steps": [
+     "Milo starts with 33 acorns.",
+     "Giving away 7 means take away 7.",
+     "Finding 17 more means add 17.",
+     "The equation is 33 − 7 + 17 = □."
+    ],
+    "answer": "33 − 7 + 17 = □"
+   },
+   "feedback": {
+    "56 − 11 − 10 = □": "That equation takes away twice. In the second step Lena gets more trading cards, so that step adds.",
+    "56 + 11 + 10 = □": "That equation adds every number. First Lena has fewer trading cards, so the first step takes away.",
+    "56 − 11 = □": "That equation stops after the first step. It leaves out the trading cards Lena gets at the end."
+   },
+   "solution": {
+    "steps": [
+     "Lena starts with 56 trading cards.",
+     "Losing 11 means take away 11.",
+     "Getting 10 more means add 10.",
+     "The equation is 56 − 11 + 10 = □."
+    ],
+    "answer": "56 − 11 + 10 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "trading-card"
+   ],
+   "setting": null,
+   "mistakes": {
+    "56 − 11 − 10 = □": "wrongOperationStepTwo",
+    "56 + 11 + 10 = □": "addedEverything",
+    "56 − 11 = □": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Lena",
+    "name2": "Ezra",
+    "object": "trading-card",
+    "start": 56,
+    "take": 11,
+    "add": 10,
+    "fr": 1,
+    "ar": 0,
+    "rel": 4,
+    "ask": 1,
+    "relWord": "a cousin",
+    "takeVerb": "loses",
+    "takeTail": "at the park",
+    "addLead": "a cousin gives Lena",
+    "addTail": "",
+    "askVerb": "can be used to find",
+    "firstStep": "First Lena loses some. That makes fewer, so that step takes away.",
+    "secondStep": "Then Lena gets more. That makes more, so that step adds.",
+    "solTake": "Losing 11 means take away 11.",
+    "solAdd": "Getting 10 more means add 10.",
+    "eqKey": "56 − 11 + 10 = □",
+    "eqTakeTwice": "56 − 11 − 10 = □",
+    "eqAddAll": "56 + 11 + 10 = □",
+    "eqStepOne": "56 − 11 = □"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "56 − 11 + 10 = □",
+   "answerType": "choice",
+   "choices": [
+    "56 − 11 − 10 = □",
+    "56 − 11 + 10 = □",
+    "56 − 11 = □",
+    "56 + 11 + 10 = □"
+   ],
+   "display": {
+    "promptText": "Lena has 56 trading cards. Lena loses 11 of them at the park. Then a cousin gives Lena 10 more trading cards. Which equation can be used to find the number of trading cards Lena has now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-choose-equation-s16-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-choose-equation",
+   "seed": 16,
+   "specMd5": "25db160f552baeb97c54d1b4bede014a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-choose-equation",
+  "blueprintId": "wp-g2-two-step-choose-equation",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "First Noor gives some away. That makes fewer, so that step takes away.",
+    "Then Noor gets more. That makes more, so that step adds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Omar has 40 acorns. Omar loses 12 of them at the park. Then Omar finds 16 more acorns at home. Which equation shows how to find the number of acorns Omar has now?",
+    "steps": [
+     "Omar starts with 40 acorns.",
+     "Losing 12 means take away 12.",
+     "Finding 16 more means add 16.",
+     "The equation is 40 − 12 + 16 = □."
+    ],
+    "answer": "40 − 12 + 16 = □"
+   },
+   "feedback": {
+    "35 − 5 − 16 = □": "That equation takes away twice. In the second step Noor gets more marbles, so that step adds.",
+    "35 + 5 + 16 = □": "That equation adds every number. First Noor has fewer marbles, so the first step takes away.",
+    "35 − 5 = □": "That equation stops after the first step. It leaves out the marbles Noor gets at the end."
+   },
+   "solution": {
+    "steps": [
+     "Noor starts with 35 marbles.",
+     "Giving away 5 means take away 5.",
+     "Finding 16 more means add 16.",
+     "The equation is 35 − 5 + 16 = □."
+    ],
+    "answer": "35 − 5 + 16 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "marble"
+   ],
+   "setting": null,
+   "mistakes": {
+    "35 − 5 − 16 = □": "wrongOperationStepTwo",
+    "35 + 5 + 16 = □": "addedEverything",
+    "35 − 5 = □": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Noor",
+    "name2": "Jae",
+    "object": "marble",
+    "start": 35,
+    "take": 5,
+    "add": 16,
+    "fr": 0,
+    "ar": 1,
+    "rel": 0,
+    "ask": 0,
+    "relWord": "Grandma",
+    "takeVerb": "gives",
+    "takeTail": "to Jae",
+    "addLead": "Noor finds",
+    "addTail": " at home",
+    "askVerb": "shows how to find",
+    "firstStep": "First Noor gives some away. That makes fewer, so that step takes away.",
+    "secondStep": "Then Noor gets more. That makes more, so that step adds.",
+    "solTake": "Giving away 5 means take away 5.",
+    "solAdd": "Finding 16 more means add 16.",
+    "eqKey": "35 − 5 + 16 = □",
+    "eqTakeTwice": "35 − 5 − 16 = □",
+    "eqAddAll": "35 + 5 + 16 = □",
+    "eqStepOne": "35 − 5 = □"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "35 − 5 + 16 = □",
+   "answerType": "choice",
+   "choices": [
+    "35 − 5 = □",
+    "35 − 5 − 16 = □",
+    "35 + 5 + 16 = □",
+    "35 − 5 + 16 = □"
+   ],
+   "display": {
+    "promptText": "Noor has 35 marbles. Noor gives 5 of them to Jae. Then Noor finds 16 more marbles at home. Which equation shows how to find the number of marbles Noor has now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-choose-equation-s19-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-choose-equation",
+   "seed": 19,
+   "specMd5": "25db160f552baeb97c54d1b4bede014a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-choose-equation",
+  "blueprintId": "wp-g2-two-step-choose-equation",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "First Omar loses some. That makes fewer, so that step takes away.",
+    "Then Omar gets more. That makes more, so that step adds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Ida has 37 toy cars. Ida loses 10 of them at the park. Then Mom gives Ida 7 more toy cars. Which equation shows how to find the number of toy cars Ida has now?",
+    "steps": [
+     "Ida starts with 37 toy cars.",
+     "Losing 10 means take away 10.",
+     "Getting 7 more means add 7.",
+     "The equation is 37 − 10 + 7 = □."
+    ],
+    "answer": "37 − 10 + 7 = □"
+   },
+   "feedback": {
+    "56 − 19 − 11 = □": "That equation takes away twice. In the second step Omar gets more toy cars, so that step adds.",
+    "56 + 19 + 11 = □": "That equation adds every number. First Omar has fewer toy cars, so the first step takes away.",
+    "56 − 19 = □": "That equation stops after the first step. It leaves out the toy cars Omar gets at the end."
+   },
+   "solution": {
+    "steps": [
+     "Omar starts with 56 toy cars.",
+     "Losing 19 means take away 19.",
+     "Finding 11 more means add 11.",
+     "The equation is 56 − 19 + 11 = □."
+    ],
+    "answer": "56 − 19 + 11 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "toy-car"
+   ],
+   "setting": null,
+   "mistakes": {
+    "56 − 19 − 11 = □": "wrongOperationStepTwo",
+    "56 + 19 + 11 = □": "addedEverything",
+    "56 − 19 = □": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Omar",
+    "name2": "Pia",
+    "object": "toy-car",
+    "start": 56,
+    "take": 19,
+    "add": 11,
+    "fr": 1,
+    "ar": 1,
+    "rel": 4,
+    "ask": 1,
+    "relWord": "a cousin",
+    "takeVerb": "loses",
+    "takeTail": "at the park",
+    "addLead": "Omar finds",
+    "addTail": " at home",
+    "askVerb": "can be used to find",
+    "firstStep": "First Omar loses some. That makes fewer, so that step takes away.",
+    "secondStep": "Then Omar gets more. That makes more, so that step adds.",
+    "solTake": "Losing 19 means take away 19.",
+    "solAdd": "Finding 11 more means add 11.",
+    "eqKey": "56 − 19 + 11 = □",
+    "eqTakeTwice": "56 − 19 − 11 = □",
+    "eqAddAll": "56 + 19 + 11 = □",
+    "eqStepOne": "56 − 19 = □"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "56 − 19 + 11 = □",
+   "answerType": "choice",
+   "choices": [
+    "56 − 19 − 11 = □",
+    "56 − 19 + 11 = □",
+    "56 + 19 + 11 = □",
+    "56 − 19 = □"
+   ],
+   "display": {
+    "promptText": "Omar has 56 toy cars. Omar loses 19 of them at the park. Then Omar finds 11 more toy cars at home. Which equation can be used to find the number of toy cars Omar has now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-choose-equation-s22-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "conceptual",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-choose-equation",
+   "seed": 22,
+   "specMd5": "25db160f552baeb97c54d1b4bede014a",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-choose-equation",
+  "blueprintId": "wp-g2-two-step-choose-equation",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks which equation tells the whole story. Follow the story in order.",
+   "steps": [
+    "An equation uses an equal sign. Some classes call it a number sentence.",
+    "First Kai gives some away. That makes fewer, so that step takes away.",
+    "Then Kai gets more. That makes more, so that step adds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Tess has 36 crayons. Tess gives 17 of them to Hugo. Then Tess finds 9 more crayons at home. Which equation shows how to find the number of crayons Tess has now?",
+    "steps": [
+     "Tess starts with 36 crayons.",
+     "Giving away 17 means take away 17.",
+     "Finding 9 more means add 9.",
+     "The equation is 36 − 17 + 9 = □."
+    ],
+    "answer": "36 − 17 + 9 = □"
+   },
+   "feedback": {
+    "58 − 12 − 9 = □": "That equation takes away twice. In the second step Kai gets more arcade tickets, so that step adds.",
+    "58 + 12 + 9 = □": "That equation adds every number. First Kai has fewer arcade tickets, so the first step takes away.",
+    "58 − 12 = □": "That equation stops after the first step. It leaves out the arcade tickets Kai gets at the end."
+   },
+   "solution": {
+    "steps": [
+     "Kai starts with 58 arcade tickets.",
+     "Giving away 12 means take away 12.",
+     "Finding 9 more means add 9.",
+     "The equation is 58 − 12 + 9 = □."
+    ],
+    "answer": "58 − 12 + 9 = □"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [
+    "arcade-ticket"
+   ],
+   "setting": null,
+   "mistakes": {
+    "58 − 12 − 9 = □": "wrongOperationStepTwo",
+    "58 + 12 + 9 = □": "addedEverything",
+    "58 − 12 = □": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Kai",
+    "name2": "Milo",
+    "object": "arcade-ticket",
+    "start": 58,
+    "take": 12,
+    "add": 9,
+    "fr": 0,
+    "ar": 1,
+    "rel": 2,
+    "ask": 1,
+    "relWord": "Mom",
+    "takeVerb": "gives",
+    "takeTail": "to Milo",
+    "addLead": "Kai finds",
+    "addTail": " at home",
+    "askVerb": "can be used to find",
+    "firstStep": "First Kai gives some away. That makes fewer, so that step takes away.",
+    "secondStep": "Then Kai gets more. That makes more, so that step adds.",
+    "solTake": "Giving away 12 means take away 12.",
+    "solAdd": "Finding 9 more means add 9.",
+    "eqKey": "58 − 12 + 9 = □",
+    "eqTakeTwice": "58 − 12 − 9 = □",
+    "eqAddAll": "58 + 12 + 9 = □",
+    "eqStepOne": "58 − 12 = □"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "58 − 12 + 9 = □",
+   "answerType": "choice",
+   "choices": [
+    "58 − 12 = □",
+    "58 + 12 + 9 = □",
+    "58 − 12 + 9 = □",
+    "58 − 12 − 9 = □"
+   ],
+   "display": {
+    "promptText": "Kai has 58 arcade tickets. Kai gives 12 of them to Milo. Then Kai finds 9 more arcade tickets at home. Which equation can be used to find the number of arcade tickets Kai has now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-take-take-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeTake",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-take-take",
+   "seed": 1,
+   "specMd5": "948eca28245f6f70fdd47dc1877ead69",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-take-take",
+  "blueprintId": "wp-g2-two-step-take-take",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many toy cars Gus has left. Gus gives toy cars away two times, so take away two times.",
+   "steps": [
+    "Start with the 48 toy cars Gus has.",
+    "Take away the 17 toy cars that go to Mia.",
+    "Then take away the 6 toy cars that go to Ravi.",
+    "If a step does not have enough ones to take away, trade one ten for ten ones."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 10,
+    "max": 50,
+    "mark": 48
+   },
+   "example": {
+    "problem": "Ezra has 39 crayons. Ezra gives 14 crayons to Milo and 7 crayons to Zoe. How many crayons does Ezra have left?",
+    "steps": [
+     "39 − 14 = 25.",
+     "25 − 7 = 18.",
+     "Ezra has 18 crayons left."
+    ],
+    "answer": 18
+   },
+   "feedback": {
+    "31": "That is how many toy cars Gus has after giving 17 to Mia. Gus also gives 6 to Ravi, so take those away too.",
+    "37": "That adds the 6 toy cars that go to Ravi. Gus gives those away too, so take them away.",
+    "71": "That adds all three numbers. Giving toy cars away leaves Gus with fewer, so take away 17 and 6."
+   },
+   "solution": {
+    "steps": [
+     "48 − 17 = 31.",
+     "31 − 6 = 25.",
+     "Gus has 25 toy cars left."
+    ],
+    "answer": 25
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "toy-car"
+   ],
+   "setting": null,
+   "mistakes": {
+    "31": "stopsAtStepOne",
+    "37": "wrongOperationStepTwo",
+    "71": "addedEverything"
+   },
+   "slots": {
+    "name": "Gus",
+    "name2": "Mia",
+    "name3": "Ravi",
+    "object": "toy-car",
+    "start": 48,
+    "t1": 17,
+    "t2": 6,
+    "mix": 5,
+    "after1": 31,
+    "left": 25,
+    "regroups": 1,
+    "tip": "If a step does not have enough ones to take away, trade one ten for ten ones.",
+    "lineMin": 10,
+    "lineMax": 50
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 25,
+   "answerType": "numberPad",
+   "choices": [
+    25,
+    31,
+    37,
+    71
+   ],
+   "display": {
+    "promptText": "Gus has 48 toy cars. Gus gives 17 toy cars to Mia and 6 toy cars to Ravi. How many toy cars does Gus have left?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-take-take-s19-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeTake",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-take-take",
+   "seed": 19,
+   "specMd5": "948eca28245f6f70fdd47dc1877ead69",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-take-take",
+  "blueprintId": "wp-g2-two-step-take-take",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many marbles Ava has left. Ava gives marbles away two times, so take away two times.",
+   "steps": [
+    "Start with the 40 marbles Ava has.",
+    "Take away the 11 marbles that go to Omar.",
+    "Then take away the 19 marbles that go to Cal.",
+    "If a step does not have enough ones to take away, trade one ten for ten ones."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 40,
+    "mark": 40
+   },
+   "example": {
+    "problem": "Nia has 49 trading cards. Nia gives 14 trading cards to Dev and 5 trading cards to Kim. How many trading cards does Nia have left?",
+    "steps": [
+     "49 − 14 = 35.",
+     "35 − 5 = 30.",
+     "Nia has 30 trading cards left."
+    ],
+    "answer": 30
+   },
+   "feedback": {
+    "29": "That is how many marbles Ava has after giving 11 to Omar. Ava also gives 19 to Cal, so take those away too.",
+    "48": "That adds the 19 marbles that go to Cal. Ava gives those away too, so take them away.",
+    "70": "That adds all three numbers. Giving marbles away leaves Ava with fewer, so take away 11 and 19."
+   },
+   "solution": {
+    "steps": [
+     "40 − 11 = 29.",
+     "29 − 19 = 10.",
+     "Ava has 10 marbles left."
+    ],
+    "answer": 10
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "marble"
+   ],
+   "setting": null,
+   "mistakes": {
+    "29": "stopsAtStepOne",
+    "48": "wrongOperationStepTwo",
+    "70": "addedEverything"
+   },
+   "slots": {
+    "name": "Ava",
+    "name2": "Omar",
+    "name3": "Cal",
+    "object": "marble",
+    "start": 40,
+    "t1": 11,
+    "t2": 19,
+    "mix": 5,
+    "after1": 29,
+    "left": 10,
+    "regroups": 1,
+    "tip": "If a step does not have enough ones to take away, trade one ten for ten ones.",
+    "lineMin": 0,
+    "lineMax": 40
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 10,
+   "answerType": "numberPad",
+   "choices": [
+    10,
+    29,
+    48,
+    70
+   ],
+   "display": {
+    "promptText": "Ava has 40 marbles. Ava gives 11 marbles to Omar and 19 marbles to Cal. How many marbles does Ava have left?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-take-add-s7-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-take-add",
+   "seed": 7,
+   "specMd5": "b70329d05fb52525e0b9f466480d4d30",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-take-add",
+  "blueprintId": "wp-g2-two-step-take-add",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many crayons Milo has now. First take away what Milo gives, then add what Milo gets.",
+   "steps": [
+    "Start with 52 crayons. Take away the 11 that go to Ava.",
+    "Then add the 8 crayons from Dev.",
+    "Add the ones, then the tens. The ones do not make a new ten this time."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 40,
+    "max": 60,
+    "mark": 52,
+    "step": 5
+   },
+   "example": {
+    "problem": "Gia has 76 toy cars. Gia gives 12 toy cars to Noor. Then Gia gets 29 more toy cars from Ana. How many toy cars does Gia have now?",
+    "steps": [
+     "76 − 12 = 64.",
+     "64 + 29 = 93.",
+     "Gia has 93 toy cars now."
+    ],
+    "answer": 93
+   },
+   "feedback": {
+    "33": "That takes away the 8 crayons from Dev. Milo gets them, so add them.",
+    "41": "That is how many crayons Milo has after giving 11 to Ava. Then Dev gives Milo 8 more, so add those too.",
+    "71": "That adds all three numbers. Milo gives 11 crayons away, so take those away first. Then add the 8 more."
+   },
+   "solution": {
+    "steps": [
+     "52 − 11 = 41.",
+     "41 + 8 = 49.",
+     "Milo has 49 crayons now."
+    ],
+    "answer": 49
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "crayon"
+   ],
+   "setting": null,
+   "mistakes": {
+    "33": "wrongOperationStepTwo",
+    "41": "stopsAtStepOne",
+    "71": "addedEverything"
+   },
+   "slots": {
+    "name": "Milo",
+    "name2": "Ava",
+    "name3": "Dev",
+    "object": "crayon",
+    "start": 52,
+    "take": 11,
+    "add": 8,
+    "mix": 2,
+    "after1": 41,
+    "total": 49,
+    "carry": 0,
+    "tip": "Add the ones, then the tens. The ones do not make a new ten this time.",
+    "lineMin": 40,
+    "lineMax": 60,
+    "lineStep": 5
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 49,
+   "answerType": "choice",
+   "choices": [
+    33,
+    41,
+    49,
+    71
+   ],
+   "display": {
+    "promptText": "Milo has 52 crayons. Milo gives 11 crayons to Ava. Then Milo gets 8 more crayons from Dev. How many crayons does Milo have now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-take-add-s25-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-take-add",
+   "seed": 25,
+   "specMd5": "b70329d05fb52525e0b9f466480d4d30",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-take-add",
+  "blueprintId": "wp-g2-two-step-take-add",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many loom bands Leo has now. First take away what Leo gives, then add what Leo gets.",
+   "steps": [
+    "Start with 53 loom bands. Take away the 10 that go to Ben.",
+    "Then add the 36 loom bands from Jude.",
+    "Add the ones, then the tens. The ones do not make a new ten this time."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 40,
+    "max": 80,
+    "mark": 53,
+    "step": 5
+   },
+   "example": {
+    "problem": "Noor has 47 loom bands. Noor gives 34 loom bands to Leo. Then Noor gets 10 more loom bands from Isla. How many loom bands does Noor have now?",
+    "steps": [
+     "47 − 34 = 13.",
+     "13 + 10 = 23.",
+     "Noor has 23 loom bands now."
+    ],
+    "answer": 23
+   },
+   "feedback": {
+    "7": "That takes away the 36 loom bands from Jude. Leo gets them, so add them.",
+    "43": "That is how many loom bands Leo has after giving 10 to Ben. Then Jude gives Leo 36 more, so add those too.",
+    "99": "That adds all three numbers. Leo gives 10 loom bands away, so take those away first. Then add the 36 more."
+   },
+   "solution": {
+    "steps": [
+     "53 − 10 = 43.",
+     "43 + 36 = 79.",
+     "Leo has 79 loom bands now."
+    ],
+    "answer": 79
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "loom-band"
+   ],
+   "setting": null,
+   "mistakes": {
+    "7": "wrongOperationStepTwo",
+    "43": "stopsAtStepOne",
+    "99": "addedEverything"
+   },
+   "slots": {
+    "name": "Leo",
+    "name2": "Ben",
+    "name3": "Jude",
+    "object": "loom-band",
+    "start": 53,
+    "take": 10,
+    "add": 36,
+    "mix": 2,
+    "after1": 43,
+    "total": 79,
+    "carry": 0,
+    "tip": "Add the ones, then the tens. The ones do not make a new ten this time.",
+    "lineMin": 40,
+    "lineMax": 80,
+    "lineStep": 5
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 79,
+   "answerType": "choice",
+   "choices": [
+    7,
+    43,
+    79,
+    99
+   ],
+   "display": {
+    "promptText": "Leo has 53 loom bands. Leo gives 10 loom bands to Ben. Then Leo gets 36 more loom bands from Jude. How many loom bands does Leo have now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-more-then-total-s13-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepCompareMoreTotal",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-more-then-total",
+   "seed": 13,
+   "specMd5": "13f085c39d4a7697a6e0c25897022163",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-more-then-total",
+  "blueprintId": "wp-g2-two-step-more-then-total",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many acorns Ezra collected in all on Wednesday and Thursday. First find the Thursday amount.",
+   "steps": [
+    "On Wednesday, Ezra collected 12 acorns.",
+    "On Thursday, Ezra collected 16 more than that. Add 12 + 16 to find the Thursday amount.",
+    "Then add the Wednesday amount and the Thursday amount."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Ben did 11 jumping jacks on Monday. On Tuesday, Ben did 13 more jumping jacks than on Monday. How many jumping jacks did Ben do in all on Monday and Tuesday?",
+    "steps": [
+     "On Tuesday: 11 + 13 = 24.",
+     "In all: 11 + 24 = 35.",
+     "Ben did 35 jumping jacks in all on Monday and Tuesday."
+    ],
+    "answer": 35
+   },
+   "feedback": {
+    "8": "16 more than 12 means add 16 to 12 to find the Thursday amount. Then add the two days.",
+    "24": "On Thursday, Ezra collected 16 more than on Wednesday, not the same amount. Find the Thursday amount first.",
+    "28": "That is only the Thursday amount. The question asks about Wednesday and Thursday in all, so add the 12 from Wednesday too."
+   },
+   "solution": {
+    "steps": [
+     "On Thursday: 12 + 16 = 28.",
+     "In all: 12 + 28 = 40.",
+     "Ezra collected 40 acorns in all on Wednesday and Thursday."
+    ],
+    "answer": 40
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": null,
+   "family": "application",
+   "objects": [
+    "acorn"
+   ],
+   "setting": null,
+   "mistakes": {
+    "8": "subtractedInsteadOfAdded",
+    "24": "doubledTheFirstAmount",
+    "28": "stopsAtStepOne"
+   },
+   "slots": {
+    "name": "Ezra",
+    "object": "acorn",
+    "first": 12,
+    "diff": 16,
+    "mix": 7,
+    "dp": 2,
+    "second": 28,
+    "total": 40,
+    "day1": "Wednesday",
+    "day2": "Thursday",
+    "verbPast": "collected",
+    "verbBase": "collect",
+    "regroups": 1
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 40,
+   "answerType": "choice",
+   "choices": [
+    8,
+    24,
+    28,
+    40
+   ],
+   "display": {
+    "promptText": "Ezra collected 12 acorns on Wednesday. On Thursday, Ezra collected 16 more acorns than on Wednesday. How many acorns did Ezra collect in all on Wednesday and Thursday?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-total-then-compare-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepJoinCompare",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-total-then-compare",
+   "seed": 1,
+   "specMd5": "f9e637fa819fdfd1a676480b0d17f3bd",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-total-then-compare",
+  "blueprintId": "wp-g2-two-step-total-then-compare",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many more arcade tickets Leo won than Noor. First find how many arcade tickets Leo won in all.",
+   "steps": [
+    "Add Leo's two amounts: 19 + 30.",
+    "Then compare that total with Noor's 39.",
+    "Take 39 away from Leo's total."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Nia picked 11 dandelions in the morning and 27 dandelions in the afternoon. Finn picked 33 dandelions. How many more dandelions did Nia pick than Finn?",
+    "steps": [
+     "11 + 27 = 38.",
+     "38 − 33 = 5.",
+     "Nia picked 5 more dandelions than Finn."
+    ],
+    "answer": 5
+   },
+   "feedback": {
+    "20": "That compares only Leo's first 19 with Noor's 39. Add Leo's two amounts first.",
+    "49": "That is how many arcade tickets Leo won in all. Now compare that total with Noor's 39.",
+    "88": "That adds Noor's arcade tickets too. How many more means compare, so take Noor's 39 away from Leo's total."
+   },
+   "solution": {
+    "steps": [
+     "19 + 30 = 49.",
+     "49 − 39 = 10.",
+     "Leo won 10 more arcade tickets than Noor."
+    ],
+    "answer": 10
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "arcade-ticket"
+   ],
+   "setting": null,
+   "mistakes": {
+    "20": "usedOnlyOnePart",
+    "49": "stopsAtStepOne",
+    "88": "addedEverything"
+   },
+   "slots": {
+    "name": "Leo",
+    "name2": "Noor",
+    "object": "arcade-ticket",
+    "p1": 19,
+    "p2": 30,
+    "d": 10,
+    "rg": 0,
+    "k": 0,
+    "total": 49,
+    "other": 39,
+    "verbPast": "won",
+    "verbBase": "win",
+    "when1": "at one game",
+    "when2": "at another game",
+    "regroups": 0
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 10,
+   "answerType": "numberPad",
+   "choices": [
+    10,
+    20,
+    49,
+    88
+   ],
+   "display": {
+    "promptText": "Leo won 19 arcade tickets at one game and 30 arcade tickets at another game. Noor won 39 arcade tickets. How many more arcade tickets did Leo win than Noor?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-total-then-compare-s19-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepJoinCompare",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-total-then-compare",
+   "seed": 19,
+   "specMd5": "f9e637fa819fdfd1a676480b0d17f3bd",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-total-then-compare",
+  "blueprintId": "wp-g2-two-step-total-then-compare",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many more pages Zoe read than Wren. First find how many pages Zoe read in all.",
+   "steps": [
+    "Add Zoe's two amounts: 22 + 15.",
+    "Then compare that total with Wren's 13.",
+    "Take 13 away from Zoe's total."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Sam won 38 prize tickets at one game and 29 prize tickets at another game. Ana won 53 prize tickets. How many more prize tickets did Sam win than Ana?",
+    "steps": [
+     "38 + 29 = 67.",
+     "67 − 53 = 14.",
+     "Sam won 14 more prize tickets than Ana."
+    ],
+    "answer": 14
+   },
+   "feedback": {
+    "9": "That compares only Zoe's first 22 with Wren's 13. Add Zoe's two amounts first.",
+    "37": "That is how many pages Zoe read in all. Now compare that total with Wren's 13.",
+    "50": "That adds Wren's pages too. How many more means compare, so take Wren's 13 away from Zoe's total."
+   },
+   "solution": {
+    "steps": [
+     "22 + 15 = 37.",
+     "37 − 13 = 24.",
+     "Zoe read 24 more pages than Wren."
+    ],
+    "answer": 24
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "page"
+   ],
+   "setting": null,
+   "mistakes": {
+    "9": "usedOnlyOnePart",
+    "37": "stopsAtStepOne",
+    "50": "addedEverything"
+   },
+   "slots": {
+    "name": "Zoe",
+    "name2": "Wren",
+    "object": "page",
+    "p1": 22,
+    "p2": 15,
+    "d": 24,
+    "rg": 0,
+    "k": 1,
+    "total": 37,
+    "other": 13,
+    "verbPast": "read",
+    "verbBase": "read",
+    "when1": "in the morning",
+    "when2": "at night",
+    "regroups": 0
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 24,
+   "answerType": "numberPad",
+   "choices": [
+    9,
+    24,
+    37,
+    50
+   ],
+   "display": {
+    "promptText": "Zoe read 22 pages in the morning and 15 pages at night. Wren read 13 pages. How many more pages did Zoe read than Wren?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-two-step-picture-s7-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "twoStepStories",
+  "structureType": "twoStepTakeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "placeValueBlocks",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-two-step-picture",
+   "seed": 7,
+   "specMd5": "0a246846fac9b56ee5e0f5d36414fd94",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-two-step-picture",
+  "blueprintId": "wp-g2-two-step-picture",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The question asks how many toy cars Noor has now. Count the tens and ones on the mat to find how many Noor has at the start.",
+   "steps": [
+    "The mat shows 5 tens and 1 one.",
+    "Take away the 27 toy cars that go to Jae.",
+    "Then add the 4 toy cars from Beck.",
+    "There are not enough ones to take away, so trade one ten for ten ones."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 20,
+    "max": 60,
+    "mark": 51
+   },
+   "example": {
+    "problem": "The mat shows Noor's beads in tens and ones. Noor gives 11 beads to Jae. Then Noor gets 3 more beads from Yara. How many beads does Noor have now?",
+    "steps": [
+     "The mat shows 3 tens and 7 ones, which is 37.",
+     "37 − 11 = 26.",
+     "26 + 3 = 29."
+    ],
+    "answer": 29
+   },
+   "feedback": {
+    "20": "That takes away the 4 toy cars from Beck. Noor gets them, so add them.",
+    "24": "That is how many toy cars are left after Noor gives 27 to Jae. Then Noor gets 4 more from Beck, so add them.",
+    "82": "That adds all three numbers. Noor gives 27 toy cars away, so take those away."
+   },
+   "solution": {
+    "steps": [
+     "The mat shows 5 tens and 1 one, which is 51.",
+     "51 − 27 = 24.",
+     "24 + 4 = 28."
+    ],
+    "answer": 28
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.OA.A.1"
+    ],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [
+     "MA.2.AR.1.1"
+    ],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "toy-car"
+   ],
+   "setting": null,
+   "mistakes": {
+    "20": "wrongOperationStepTwo",
+    "24": "stopsAtStepOne",
+    "82": "addedEverything"
+   },
+   "slots": {
+    "name": "Noor",
+    "name2": "Jae",
+    "name3": "Beck",
+    "object": "toy-car",
+    "tensP": 5,
+    "onesP": 1,
+    "take": 27,
+    "add": 4,
+    "rg": 1,
+    "pictured": 51,
+    "after1": 24,
+    "total": 28,
+    "regroups": 1,
+    "tensWord": "5 tens",
+    "onesWord": "1 one",
+    "tip": "There are not enough ones to take away, so trade one ten for ten ones.",
+    "lineMin": 20,
+    "lineMax": 60
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 28,
+   "answerType": "numberPad",
+   "choices": [
+    20,
+    24,
+    28,
+    82
+   ],
+   "display": {
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "place": 10,
+       "count": 5
+      },
+      {
+       "place": 1,
+       "count": 1
+      }
+     ]
+    },
+    "promptText": "The mat shows Noor's toy cars in tens and ones. Noor gives 27 toy cars to Jae. Then Noor gets 4 more toy cars from Beck. How many toy cars does Noor have now?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-tx-1000-put-together-total-noregroup-s1-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "biggerNumberStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-tx-1000-put-together-total-noregroup",
+   "seed": 1,
+   "specMd5": "debceeb738dc7a9cb656ebefa75e7999",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-tx-1000-put-together-total-noregroup",
+  "blueprintId": "wp-g2-tx-1000-put-together-total",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many arcade tickets Ravi and Ana have in all. Put the two amounts together.",
+   "steps": [
+    "Add 173 + 301.",
+    "Add the hundreds, then the tens, then the ones.",
+    "No place makes ten or more, so there is nothing to trade."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Eli has 112 building bricks. Zoe has 154 building bricks. How many building bricks do Eli and Zoe have in all?",
+    "steps": [
+     "2 hundreds, 6 tens and 6 ones make 266.",
+     "112 + 154 = 266.",
+     "Eli and Zoe have 266 building bricks in all."
+    ],
+    "answer": 266
+   },
+   "feedback": {
+    "128": "That takes one amount away from the other. In all means put them together, so add 173 and 301.",
+    "301": "That is only one kid's arcade tickets. Add Ravi's 173 and Ana's 301."
+   },
+   "solution": {
+    "steps": [
+     "4 hundreds, 7 tens and 4 ones make 474.",
+     "173 + 301 = 474.",
+     "Ravi and Ana have 474 arcade tickets in all."
+    ],
+    "answer": 474
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "arcade-ticket"
+   ],
+   "setting": null,
+   "mistakes": {
+    "128": "subtractedInsteadOfAdded",
+    "301": "answeredWithAGiven"
+   },
+   "slots": {
+    "name": "Ravi",
+    "name2": "Ana",
+    "object": "arcade-ticket",
+    "p1": 173,
+    "p2": 301,
+    "total": 474,
+    "hS": 4,
+    "tS": 7,
+    "oS": 4,
+    "tWord": "7 tens",
+    "oWord": "4 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 173,
+   "b": 301,
+   "op": "+",
+   "answer": 474,
+   "answerType": "numberPad",
+   "choices": [
+    128,
+    301,
+    474
+   ],
+   "display": {
+    "promptText": "Ravi has 173 arcade tickets. Ana has 301 arcade tickets. How many arcade tickets do Ravi and Ana have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-tx-1000-put-together-total-noregroup-s12-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "biggerNumberStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-tx-1000-put-together-total-noregroup",
+   "seed": 12,
+   "specMd5": "debceeb738dc7a9cb656ebefa75e7999",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-tx-1000-put-together-total-noregroup",
+  "blueprintId": "wp-g2-tx-1000-put-together-total",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many trading cards Jae and Cal have in all. Put the two amounts together.",
+   "steps": [
+    "Add 320 + 166.",
+    "Add the hundreds, then the tens, then the ones.",
+    "No place makes ten or more, so there is nothing to trade."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Omar has 131 prize tickets. Ben has 114 prize tickets. How many prize tickets do Omar and Ben have in all?",
+    "steps": [
+     "2 hundreds, 4 tens and 5 ones make 245.",
+     "131 + 114 = 245.",
+     "Omar and Ben have 245 prize tickets in all."
+    ],
+    "answer": 245
+   },
+   "feedback": {
+    "154": "That takes one amount away from the other. In all means put them together, so add 320 and 166.",
+    "320": "That is only one kid's trading cards. Add Jae's 320 and Cal's 166."
+   },
+   "solution": {
+    "steps": [
+     "4 hundreds, 8 tens and 6 ones make 486.",
+     "320 + 166 = 486.",
+     "Jae and Cal have 486 trading cards in all."
+    ],
+    "answer": 486
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "trading-card"
+   ],
+   "setting": null,
+   "mistakes": {
+    "154": "subtractedInsteadOfAdded",
+    "320": "answeredWithAGiven"
+   },
+   "slots": {
+    "name": "Jae",
+    "name2": "Cal",
+    "object": "trading-card",
+    "p1": 320,
+    "p2": 166,
+    "total": 486,
+    "hS": 4,
+    "tS": 8,
+    "oS": 6,
+    "tWord": "8 tens",
+    "oWord": "6 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 320,
+   "b": 166,
+   "op": "+",
+   "answer": 486,
+   "answerType": "numberPad",
+   "choices": [
+    154,
+    320,
+    486
+   ],
+   "display": {
+    "promptText": "Jae has 320 trading cards. Cal has 166 trading cards. How many trading cards do Jae and Cal have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-tx-1000-put-together-total-noregroup-s23-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "biggerNumberStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-tx-1000-put-together-total-noregroup",
+   "seed": 23,
+   "specMd5": "debceeb738dc7a9cb656ebefa75e7999",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-tx-1000-put-together-total-noregroup",
+  "blueprintId": "wp-g2-tx-1000-put-together-total",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks how many puzzle pieces Kim and Ana have in all. Put the two amounts together.",
+   "steps": [
+    "Add 323 + 364.",
+    "Add the hundreds, then the tens, then the ones.",
+    "No place makes ten or more, so there is nothing to trade."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Theo has 220 trading cards. Ava has 368 trading cards. How many trading cards do Theo and Ava have in all?",
+    "steps": [
+     "5 hundreds, 8 tens and 8 ones make 588.",
+     "220 + 368 = 588.",
+     "Theo and Ava have 588 trading cards in all."
+    ],
+    "answer": 588
+   },
+   "feedback": {
+    "41": "That takes one amount away from the other. In all means put them together, so add 323 and 364.",
+    "364": "That is only one kid's puzzle pieces. Add Kim's 323 and Ana's 364."
+   },
+   "solution": {
+    "steps": [
+     "6 hundreds, 8 tens and 7 ones make 687.",
+     "323 + 364 = 687.",
+     "Kim and Ana have 687 puzzle pieces in all."
+    ],
+    "answer": 687
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "puzzle-piece"
+   ],
+   "setting": null,
+   "mistakes": {
+    "41": "subtractedInsteadOfAdded",
+    "364": "answeredWithAGiven"
+   },
+   "slots": {
+    "name": "Kim",
+    "name2": "Ana",
+    "object": "puzzle-piece",
+    "p1": 323,
+    "p2": 364,
+    "total": 687,
+    "hS": 6,
+    "tS": 8,
+    "oS": 7,
+    "tWord": "8 tens",
+    "oWord": "7 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 323,
+   "b": 364,
+   "op": "+",
+   "answer": 687,
+   "answerType": "numberPad",
+   "choices": [
+    41,
+    364,
+    687
+   ],
+   "display": {
+    "promptText": "Kim has 323 puzzle pieces. Ana has 364 puzzle pieces. How many puzzle pieces do Kim and Ana have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-tx-1000-take-apart-part-s4-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "biggerNumberStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-tx-1000-take-apart-part",
+   "seed": 4,
+   "specMd5": "e7208b629685fa9c750c026b6dcc71ce",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-tx-1000-take-apart-part",
+  "blueprintId": "wp-g2-tx-1000-take-apart-part",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many arcade tickets are in the bag. Hana has 583 in all, and 422 of them are in the box.",
+   "steps": [
+    "The arcade tickets in the bag are the rest, so find 583 − 422. Start with the ones.",
+    "There are enough ones and enough tens, so there is nothing to trade. Take away the ones.",
+    "Then take away the tens and the hundreds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Pia has 299 puzzle pieces. Pia puts 155 of the puzzle pieces in a box and the rest of the puzzle pieces in a bag. How many puzzle pieces are in the bag?",
+    "steps": [
+     "Each top digit is big enough, so there is nothing to trade.",
+     "299 − 155 = 144.",
+     "There are 144 puzzle pieces in the bag."
+    ],
+    "answer": 144
+   },
+   "feedback": {
+    "422": "422 arcade tickets are in the box. The question asks about the rest, the arcade tickets in the bag.",
+    "1005": "583 is all of Hana's arcade tickets. The rest are in the bag, so take 422 away from 583."
+   },
+   "solution": {
+    "steps": [
+     "Each top digit is big enough, so there is nothing to trade.",
+     "583 − 422 = 161.",
+     "There are 161 arcade tickets in the bag."
+    ],
+    "answer": 161
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "arcade-ticket"
+   ],
+   "setting": null,
+   "mistakes": {
+    "422": "answeredWithAGiven",
+    "1005": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Hana",
+    "object": "arcade-ticket",
+    "totalLo": 360,
+    "totalHi": 583,
+    "total": 583,
+    "part": 422,
+    "mix": 3,
+    "trade": 0,
+    "rest": 161,
+    "cp": 1,
+    "place1": "in a box",
+    "place2": "in a bag",
+    "place1The": "in the box",
+    "place2The": "in the bag",
+    "tradeStep": "There are enough ones and enough tens, so there is nothing to trade. Take away the ones.",
+    "tradeSolve": "Each top digit is big enough, so there is nothing to trade."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 583,
+   "b": 422,
+   "op": "-",
+   "answer": 161,
+   "answerType": "numberPad",
+   "choices": [
+    161,
+    422,
+    1005
+   ],
+   "display": {
+    "promptText": "Hana has 583 arcade tickets. Hana puts 422 of the arcade tickets in a box and the rest of the arcade tickets in a bag. How many arcade tickets are in the bag?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-tx-1000-take-apart-part-s15-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "biggerNumberStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-tx-1000-take-apart-part",
+   "seed": 15,
+   "specMd5": "e7208b629685fa9c750c026b6dcc71ce",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-tx-1000-take-apart-part",
+  "blueprintId": "wp-g2-tx-1000-take-apart-part",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many prize tickets are in the bag. Ana has 309 in all, and 169 of them are in the jar.",
+   "steps": [
+    "The prize tickets in the bag are the rest, so find 309 − 169. Start with the ones.",
+    "There are enough ones. There are not enough tens, so trade one hundred for ten tens.",
+    "Then take away the tens and the hundreds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Finn has 427 puzzle pieces. Finn puts 186 of the puzzle pieces in a box and the rest of the puzzle pieces in a bag. How many puzzle pieces are in the bag?",
+    "steps": [
+     "Trade a hundred: 427 is 3 hundreds, 12 tens and 7 ones.",
+     "427 − 186 = 241.",
+     "There are 241 puzzle pieces in the bag."
+    ],
+    "answer": 241
+   },
+   "feedback": {
+    "169": "169 prize tickets are in the jar. The question asks about the rest, the prize tickets in the bag.",
+    "260": "That takes the smaller digit from the bigger one in each place. When the top digit is too small, trade first.",
+    "478": "309 is all of Ana's prize tickets. The rest are in the bag, so take 169 away from 309."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred: 309 is 2 hundreds, 10 tens and 9 ones.",
+     "309 − 169 = 140.",
+     "There are 140 prize tickets in the bag."
+    ],
+    "answer": 140
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "prize-ticket"
+   ],
+   "setting": null,
+   "mistakes": {
+    "169": "answeredWithAGiven",
+    "260": "smallerFromLarger",
+    "478": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Ana",
+    "object": "prize-ticket",
+    "totalLo": 309,
+    "totalHi": 787,
+    "total": 309,
+    "part": 169,
+    "mix": 11,
+    "trade": 2,
+    "rest": 140,
+    "cp": 0,
+    "place1": "in a jar",
+    "place2": "in a bag",
+    "place1The": "in the jar",
+    "place2The": "in the bag",
+    "tradeStep": "There are enough ones. There are not enough tens, so trade one hundred for ten tens.",
+    "tradeSolve": "Trade a hundred: 309 is 2 hundreds, 10 tens and 9 ones."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 309,
+   "b": 169,
+   "op": "-",
+   "answer": 140,
+   "answerType": "numberPad",
+   "choices": [
+    140,
+    169,
+    260,
+    478
+   ],
+   "display": {
+    "promptText": "Ana has 309 prize tickets. Ana puts 169 of the prize tickets in a jar and the rest of the prize tickets in a bag. How many prize tickets are in the bag?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-tx-1000-take-apart-part-s26-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "biggerNumberStories",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-tx-1000-take-apart-part",
+   "seed": 26,
+   "specMd5": "e7208b629685fa9c750c026b6dcc71ce",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-tx-1000-take-apart-part",
+  "blueprintId": "wp-g2-tx-1000-take-apart-part",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many trading cards are in the box. Lena has 450 in all, and 280 of them are in the binder.",
+   "steps": [
+    "The trading cards in the box are the rest, so find 450 − 280. Start with the ones.",
+    "There are enough ones. There are not enough tens, so trade one hundred for ten tens.",
+    "Then take away the tens and the hundreds."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Lena has 282 trading cards. Lena puts 133 of the trading cards in a binder and the rest of the trading cards in a box. How many trading cards are in the box?",
+    "steps": [
+     "Trade a ten: 282 is 2 hundreds, 7 tens and 12 ones.",
+     "282 − 133 = 149.",
+     "There are 149 trading cards in the box."
+    ],
+    "answer": 149
+   },
+   "feedback": {
+    "230": "That takes the smaller digit from the bigger one in each place. When the top digit is too small, trade first.",
+    "280": "280 trading cards are in the binder. The question asks about the rest, the trading cards in the box.",
+    "730": "450 is all of Lena's trading cards. The rest are in the box, so take 280 away from 450."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred: 450 is 3 hundreds, 15 tens and 0 ones.",
+     "450 − 280 = 170.",
+     "There are 170 trading cards in the box."
+    ],
+    "answer": 170
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.4C",
+     "2.7C"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "trading-card"
+   ],
+   "setting": null,
+   "mistakes": {
+    "230": "smallerFromLarger",
+    "280": "answeredWithAGiven",
+    "730": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "name": "Lena",
+    "object": "trading-card",
+    "totalLo": 450,
+    "totalHi": 786,
+    "total": 450,
+    "part": 280,
+    "mix": 17,
+    "trade": 2,
+    "rest": 170,
+    "cp": 0,
+    "place1": "in a binder",
+    "place2": "in a box",
+    "place1The": "in the binder",
+    "place2The": "in the box",
+    "tradeStep": "There are enough ones. There are not enough tens, so trade one hundred for ten tens.",
+    "tradeSolve": "Trade a hundred: 450 is 3 hundreds, 15 tens and 0 ones."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 450,
+   "b": 280,
+   "op": "-",
+   "answer": 170,
+   "answerType": "numberPad",
+   "choices": [
+    170,
+    230,
+    280,
+    730
+   ],
+   "display": {
+    "promptText": "Lena has 450 trading cards. Lena puts 280 of the trading cards in a binder and the rest of the trading cards in a box. How many trading cards are in the box?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-va-ga-200-put-together-total-s7-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "biggerNumberStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-va-ga-200-put-together-total",
+   "seed": 7,
+   "specMd5": "8333c19e65583708ccfa942001d9a9b9",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-va-ga-200-put-together-total",
+  "blueprintId": "wp-g2-va-ga-200-put-together-total",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many prize tickets Ava has in all. Add the prize tickets in the jar and the prize tickets in the bag.",
+   "steps": [
+    "Add 71 + 31. Start with the ones.",
+    "The ones make less than ten, so there is nothing to trade yet.",
+    "Then add the tens. They make ten or more, so trade ten tens for one hundred."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Gia has 84 arcade tickets in a jar and 60 arcade tickets in a bag. How many arcade tickets does Gia have in all?",
+    "steps": [
+     "Ones: 4 ones.",
+     "Tens: 14 tens is 1 hundred and 4 tens.",
+     "84 + 60 = 144."
+    ],
+    "answer": 144
+   },
+   "feedback": {
+    "2": "The tens made a new hundred. Keep that hundred in your answer.",
+    "40": "That takes one amount away from the other. In all means put them together, so add 71 and 31.",
+    "71": "That is only the prize tickets in the jar. Add the prize tickets in the bag too."
+   },
+   "solution": {
+    "steps": [
+     "Ones: 2 ones.",
+     "Tens: 10 tens is 1 hundred and 0 tens.",
+     "71 + 31 = 102."
+    ],
+    "answer": 102
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [],
+    "fl": [],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "prize-ticket"
+   ],
+   "setting": null,
+   "mistakes": {
+    "2": "forgotToCarry",
+    "40": "subtractedInsteadOfAdded",
+    "71": "answeredWithAGiven"
+   },
+   "slots": {
+    "name": "Ava",
+    "object": "prize-ticket",
+    "p1": 71,
+    "p2": 31,
+    "oc": 0,
+    "total": 102,
+    "cp": 0,
+    "place1": "in a jar",
+    "place2": "in a bag",
+    "place1The": "in the jar",
+    "place2The": "in the bag",
+    "bigPlace": "in the jar",
+    "smallPlace": "in the bag",
+    "oS": 2,
+    "tensSum": 10,
+    "onesStep": "The ones make less than ten, so there is nothing to trade yet.",
+    "solveOnes": "Ones: 2 ones.",
+    "solveTens": "Tens: 10 tens is 1 hundred and 0 tens."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 71,
+   "b": 31,
+   "op": "+",
+   "answer": 102,
+   "answerType": "numberPad",
+   "choices": [
+    2,
+    40,
+    71,
+    102
+   ],
+   "display": {
+    "promptText": "Ava has 71 prize tickets in a jar and 31 prize tickets in a bag. How many prize tickets does Ava have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "wp-g2-va-ga-200-put-together-total-s18-v2",
+  "modeId": "wordProblems",
+  "itemFamily": "application",
+  "subskill": "biggerNumberStories",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "verbalContext",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "wp-g2-va-ga-200-put-together-total",
+   "seed": 18,
+   "specMd5": "8333c19e65583708ccfa942001d9a9b9",
+   "run": "live-wordProblems-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "wp-g2-va-ga-200-put-together-total",
+  "blueprintId": "wp-g2-va-ga-200-put-together-total",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks how many puzzle pieces Ida has in all. Add the puzzle pieces in the box and the puzzle pieces in the bag.",
+   "steps": [
+    "Add 33 + 90. Start with the ones.",
+    "The ones make less than ten, so there is nothing to trade yet.",
+    "Then add the tens. They make ten or more, so trade ten tens for one hundred."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Ava has 77 puzzle pieces in a box and 58 puzzle pieces in a bag. How many puzzle pieces does Ava have in all?",
+    "steps": [
+     "Ones: 15 ones is 1 ten and 5 ones.",
+     "Tens: 13 tens is 1 hundred and 3 tens.",
+     "77 + 58 = 135."
+    ],
+    "answer": 135
+   },
+   "feedback": {
+    "23": "The tens made a new hundred. Keep that hundred in your answer.",
+    "57": "That takes one amount away from the other. In all means put them together, so add 33 and 90.",
+    "90": "That is only the puzzle pieces in the bag. Add the puzzle pieces in the box too."
+   },
+   "solution": {
+    "steps": [
+     "Ones: 3 ones.",
+     "Tens: 12 tens is 1 hundred and 2 tens.",
+     "33 + 90 = 123."
+    ],
+    "answer": 123
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [],
+    "fl": [],
+    "va": [
+     "2.CE.1c"
+    ],
+    "ga": [
+     "2.NR.2.3"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "application",
+   "objects": [
+    "puzzle-piece"
+   ],
+   "setting": null,
+   "mistakes": {
+    "23": "forgotToCarry",
+    "57": "subtractedInsteadOfAdded",
+    "90": "answeredWithAGiven"
+   },
+   "slots": {
+    "name": "Ida",
+    "object": "puzzle-piece",
+    "p1": 33,
+    "p2": 90,
+    "oc": 0,
+    "total": 123,
+    "cp": 0,
+    "place1": "in a box",
+    "place2": "in a bag",
+    "place1The": "in the box",
+    "place2The": "in the bag",
+    "bigPlace": "in the bag",
+    "smallPlace": "in the box",
+    "oS": 3,
+    "tensSum": 12,
+    "onesStep": "The ones make less than ten, so there is nothing to trade yet.",
+    "solveOnes": "Ones: 3 ones.",
+    "solveTens": "Tens: 12 tens is 1 hundred and 2 tens."
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 33,
+   "b": 90,
+   "op": "+",
+   "answer": 123,
+   "answerType": "numberPad",
+   "choices": [
+    23,
+    57,
+    90,
+    123
+   ],
+   "display": {
+    "promptText": "Ida has 33 puzzle pieces in a box and 90 puzzle pieces in a bag. How many puzzle pieces does Ida have in all?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-both-sides-sums-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "equalSign",
+  "structureType": "balanceEquation",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-both-sides-sums",
+   "seed": 1,
+   "specMd5": "d22961a8af7ff3d2951dbcb1db67341d",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-both-sides-sums",
+  "blueprintId": "calc-g2-both-sides",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The equal sign means both sides make the same amount. Find the number for the box that makes the right side match the left side.",
+   "steps": [
+    "Look at 16 on the left and 17 on the right. 17 is 1 more than 16.",
+    "To keep both sides the same, the box must be 1 less than 37.",
+    "Or add 37 + 16 first. Then ask: what number and 17 make that much?"
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 64 + 18 = □ + 16",
+    "steps": [
+     "The left side is 64 + 18 = 82.",
+     "The right side must make 82 too: □ + 16 = 82.",
+     "66 + 16 = 82, so the box is 66."
+    ],
+    "answer": 66
+   },
+   "feedback": {
+    "37": "37 would only work if 17 were the same as 16. 17 is 1 more than 16, so the box must be 1 less than 37.",
+    "53": "53 is what 37 + 16 makes. The equal sign means the same as, so the box and 17 together must also make 53.",
+    "70": "That adds all three numbers. Find the number that goes with 17 to make the same total as 37 + 16."
+   },
+   "solution": {
+    "steps": [
+     "The left side is 37 + 16 = 53.",
+     "The right side must make 53 too: □ + 17 = 53.",
+     "36 + 17 = 53, so the box is 36."
+    ],
+    "answer": 36
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "37": "answeredWithAGiven",
+    "53": "equalsMeansCompute",
+    "70": "addedEverything"
+   },
+   "slots": {
+    "a": 37,
+    "b": 16,
+    "dk": 1,
+    "up": 1,
+    "r": 1,
+    "ph": 1,
+    "dAbs": 1,
+    "delta": 1,
+    "c": 17,
+    "key": 36,
+    "left": 53,
+    "all3": 70,
+    "dWord": "more",
+    "dOpp": "less",
+    "q1": "",
+    "q2": ". What number goes in the box?"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 36,
+   "answerType": "numberPad",
+   "choices": [
+    36,
+    37,
+    53,
+    70
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "37 + 16 = □ + 17. What number goes in the box?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-both-sides-sums-s19-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "equalSign",
+  "structureType": "balanceEquation",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-both-sides-sums",
+   "seed": 19,
+   "specMd5": "d22961a8af7ff3d2951dbcb1db67341d",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-both-sides-sums",
+  "blueprintId": "calc-g2-both-sides",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The equal sign means both sides make the same amount. Find the number for the box that makes the right side match the left side.",
+   "steps": [
+    "Look at 19 on the left and 23 on the right. 23 is 4 more than 19.",
+    "To keep both sides the same, the box must be 4 less than 61.",
+    "Or add 61 + 19 first. Then ask: what number and 23 make that much?"
+   ],
+   "picture": null,
+   "example": {
+    "problem": "47 + 35 = □ + 38. What number goes in the box?",
+    "steps": [
+     "The left side is 47 + 35 = 82.",
+     "The right side must make 82 too: □ + 38 = 82.",
+     "44 + 38 = 82, so the box is 44."
+    ],
+    "answer": 44
+   },
+   "feedback": {
+    "61": "61 would only work if 23 were the same as 19. 23 is 4 more than 19, so the box must be 4 less than 61.",
+    "80": "80 is what 61 + 19 makes. The equal sign means the same as, so the box and 23 together must also make 80.",
+    "103": "That adds all three numbers. Find the number that goes with 23 to make the same total as 61 + 19."
+   },
+   "solution": {
+    "steps": [
+     "The left side is 61 + 19 = 80.",
+     "The right side must make 80 too: □ + 23 = 80.",
+     "57 + 23 = 80, so the box is 57."
+    ],
+    "answer": 57
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "61": "answeredWithAGiven",
+    "80": "equalsMeansCompute",
+    "103": "addedEverything"
+   },
+   "slots": {
+    "a": 61,
+    "b": 19,
+    "dk": 4,
+    "up": 1,
+    "r": 1,
+    "ph": 1,
+    "dAbs": 4,
+    "delta": 4,
+    "c": 23,
+    "key": 57,
+    "left": 80,
+    "all3": 103,
+    "dWord": "more",
+    "dOpp": "less",
+    "q1": "",
+    "q2": ". What number goes in the box?"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 57,
+   "answerType": "numberPad",
+   "choices": [
+    57,
+    61,
+    80,
+    103
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "61 + 19 = □ + 23. What number goes in the box?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-both-sides-differences-s7-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "equalSign",
+  "structureType": "balanceEquation",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-both-sides-differences",
+   "seed": 7,
+   "specMd5": "588a6d37a0c31e8adbb9136dbd813bb0",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-both-sides-differences",
+  "blueprintId": "calc-g2-both-sides",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The equal sign means both sides are worth the same. Find the number for the box that makes the right side match the left side.",
+   "steps": [
+    "Find 91 − 26. The right side must leave that same amount.",
+    "Look at 26 and 28. 28 is 2 more than 26.",
+    "Taking away 2 more means the box must be 2 more than 91."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 78 − 45 = □ − 48",
+    "steps": [
+     "The left side is 78 − 45 = 33.",
+     "The right side must leave 33 too: □ − 48 = 33.",
+     "33 + 48 = 81, and 81 − 48 = 33. The box is 81."
+    ],
+    "answer": 81
+   },
+   "feedback": {
+    "65": "65 is what 91 − 26 leaves. The equal sign means the same as, so the box take away 28 must also leave 65.",
+    "91": "91 would only work if 28 were the same as 26. 28 is 2 more than 26, so the box must be 2 more than 91.",
+    "145": "That adds all three numbers, but both sides take away. Find the number that leaves the same amount as 91 − 26 when you take away 28."
+   },
+   "solution": {
+    "steps": [
+     "The left side is 91 − 26 = 65.",
+     "The right side must leave 65 too: □ − 28 = 65.",
+     "65 + 28 = 93, and 93 − 28 = 65. The box is 93."
+    ],
+    "answer": 93
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "65": "equalsMeansCompute",
+    "91": "answeredWithAGiven",
+    "145": "addedEverything"
+   },
+   "slots": {
+    "a": 91,
+    "b": 26,
+    "dk": 2,
+    "up": 1,
+    "r": 1,
+    "ph": 0,
+    "dAbs": 2,
+    "delta": 2,
+    "c": 28,
+    "key": 93,
+    "left": 65,
+    "all3": 145,
+    "dWord": "more",
+    "q1": "What number makes this true? ",
+    "q2": ""
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 93,
+   "answerType": "numberPad",
+   "choices": [
+    65,
+    91,
+    93,
+    145
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "What number makes this true? 91 − 26 = □ − 28"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-both-sides-differences-s25-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "equalSign",
+  "structureType": "balanceEquation",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-both-sides-differences",
+   "seed": 25,
+   "specMd5": "588a6d37a0c31e8adbb9136dbd813bb0",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-both-sides-differences",
+  "blueprintId": "calc-g2-both-sides",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The equal sign means both sides are worth the same. Find the number for the box that makes the right side match the left side.",
+   "steps": [
+    "Find 37 − 14. The right side must leave that same amount.",
+    "Look at 14 and 24. 24 is 10 more than 14.",
+    "Taking away 10 more means the box must be 10 more than 37."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number makes this true? 85 − 45 = □ − 41",
+    "steps": [
+     "The left side is 85 − 45 = 40.",
+     "The right side must leave 40 too: □ − 41 = 40.",
+     "40 + 41 = 81, and 81 − 41 = 40. The box is 81."
+    ],
+    "answer": 81
+   },
+   "feedback": {
+    "23": "23 is what 37 − 14 leaves. The equal sign means the same as, so the box take away 24 must also leave 23.",
+    "37": "37 would only work if 24 were the same as 14. 24 is 10 more than 14, so the box must be 10 more than 37.",
+    "75": "That adds all three numbers, but both sides take away. Find the number that leaves the same amount as 37 − 14 when you take away 24."
+   },
+   "solution": {
+    "steps": [
+     "The left side is 37 − 14 = 23.",
+     "The right side must leave 23 too: □ − 24 = 23.",
+     "23 + 24 = 47, and 47 − 24 = 23. The box is 47."
+    ],
+    "answer": 47
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "23": "equalsMeansCompute",
+    "37": "answeredWithAGiven",
+    "75": "addedEverything"
+   },
+   "slots": {
+    "a": 37,
+    "b": 14,
+    "dk": 6,
+    "up": 1,
+    "r": 0,
+    "ph": 1,
+    "dAbs": 10,
+    "delta": 10,
+    "c": 24,
+    "key": 47,
+    "left": 23,
+    "all3": 75,
+    "dWord": "more",
+    "q1": "",
+    "q2": ". What number goes in the box?"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 47,
+   "answerType": "numberPad",
+   "choices": [
+    23,
+    37,
+    47,
+    75
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "37 − 14 = □ − 24. What number goes in the box?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-which-true-s13-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "equalSign",
+  "structureType": "chooseTrueEquation",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-which-true",
+   "seed": 13,
+   "specMd5": "0e2cd37c5097864daca57305c5715e55",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-which-true",
+  "blueprintId": "calc-g2-which-true",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks which equation is true. Work out each one and check that both sides are the same amount.",
+   "steps": [
+    "In each equation, work out the side with the + or − sign.",
+    "Watch the ones. If they make ten or more, carry a ten. If there are not enough ones to take away, trade a ten first.",
+    "The true equation has the same amount on both sides of the equal sign."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which equation is true: 52 − 17 = 45, 36 = 19 + 17, 48 + 25 = 63 or 74 − 38 = 44?",
+    "steps": [
+     "52 − 17 is 35, not 45.",
+     "19 + 17 is 36, so 36 = 19 + 17 is true.",
+     "48 + 25 is 73, not 63.",
+     "74 − 38 is 36, not 44."
+    ],
+    "answer": "36 = 19 + 17"
+   },
+   "feedback": {
+    "82 − 38 = 54": "Check 82 − 38 again. After you trade a ten for ten ones, 82 has only 7 tens left.",
+    "47 + 46 = 83": "Check 47 + 46 again. The ones make a new ten, and that ten must be added to the tens.",
+    "71 − 12 = 61": "Check 71 − 12 again. In the ones place, you cannot take 2 from 1, so trade a ten first. Do not take 1 from 2 instead."
+   },
+   "solution": {
+    "steps": [
+     "31 − 14 is 17, so 31 − 14 = 17 is true.",
+     "82 − 38 is 44, not 54.",
+     "47 + 46 is 93, not 83.",
+     "71 − 12 is 59, not 61."
+    ],
+    "answer": "31 − 14 = 17"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.1"
+    ],
+    "va": [
+     "2.CE.1j"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "82 − 38 = 54": "offByTen",
+    "47 + 46 = 83": "forgotToCarry",
+    "71 − 12 = 61": "smallerFromLarger"
+   },
+   "slots": {
+    "ph": 1,
+    "ask": "Which number sentence is true?",
+    "tOp": 1,
+    "tTr": 1,
+    "tRev": 0,
+    "tP": 4,
+    "tQr": 45,
+    "tH1": 3,
+    "tH2": 2,
+    "tS1": 1,
+    "tS2r": 7,
+    "tA0": 1,
+    "tB0": 4,
+    "tA1": 3,
+    "tB1": 1,
+    "tX": 31,
+    "tY": 14,
+    "tZ": 17,
+    "tSign": "−",
+    "tRevOn": 0,
+    "keyText": "31 − 14 = 17",
+    "cA0": 7,
+    "cB0r": 53,
+    "cA1": 4,
+    "cB1": 4,
+    "cRevRaw": 0,
+    "cB0": 6,
+    "cA": 47,
+    "cB": 46,
+    "cSum": 93,
+    "cWrong": 83,
+    "cRev": 0,
+    "cText": "47 + 46 = 83",
+    "oB0": 8,
+    "oA0r": 37,
+    "oB1": 3,
+    "oA1r": 73,
+    "oA0": 2,
+    "oA1": 8,
+    "oA": 82,
+    "oB": 38,
+    "oDiff": 44,
+    "oWrong": 54,
+    "oTensLeft": 7,
+    "oText": "82 − 38 = 54",
+    "sB0": 2,
+    "sA0r": 57,
+    "sB1": 1,
+    "sA1r": 62,
+    "sA0": 1,
+    "sA1": 7,
+    "sA": 71,
+    "sB": 12,
+    "sDiff": 59,
+    "sWrong": 61,
+    "sText": "71 − 12 = 61"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "31 − 14 = 17",
+   "answerType": "choice",
+   "choices": [
+    "82 − 38 = 54",
+    "47 + 46 = 83",
+    "31 − 14 = 17",
+    "71 − 12 = 61"
+   ],
+   "display": {
+    "promptText": "Which number sentence is true?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-equal-mats-same-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "equalSign",
+  "structureType": "sameValueTwoMats",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "placeValueBlocks",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-equal-mats-same",
+   "seed": 1,
+   "specMd5": "566087ea79072d69e4f0eda288d90bee",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-equal-mats-same",
+  "blueprintId": "calc-g2-equal-mats",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks if both mats show the same number. Read each mat by its tens and ones, not by how many discs it has.",
+   "steps": [
+    "Mat A has 2 tens and 14 ones. Ten ones make one ten.",
+    "Trade ten of Mat A's ones for one ten. Then read Mat A's tens and ones.",
+    "Read Mat B the same way, and compare the two numbers."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Mat A has 3 tens and 12 ones. Mat B has 4 tens and 2 ones. Do the two mats show the same number?",
+    "steps": [
+     "Trade ten of Mat A's ones for one ten: 4 tens and 2 ones. That is 42.",
+     "Mat B has 4 tens and 2 ones. That is 42 too."
+    ],
+    "answer": "Yes, both show 42"
+   },
+   "feedback": {
+    "No, Mat A has more discs": "A ten disc is worth ten, not one. Count each mat by its tens and ones, not by how many discs you see.",
+    "No, Mat A shows 214": "Mat A has 14 ones. That is more than nine, so ten of them make one more ten. Trade first, then read the number."
+   },
+   "solution": {
+    "steps": [
+     "Mat A has 2 tens and 14 ones.",
+     "Trade ten ones for one ten: 3 tens and 4 ones. That is 34.",
+     "Mat B has 3 tens and 4 ones. That is 34 too."
+    ],
+    "answer": "Yes, both show 34"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [],
+    "va": [
+     "2.CE.1j"
+    ],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "No, Mat A has more discs": "countedRodsAsOnes",
+    "No, Mat A shows 214": "placeValueSlip"
+   },
+   "slots": {
+    "t": 3,
+    "o": 4,
+    "ph": 0,
+    "ask": "Do the two mats show the same number?",
+    "n": 34,
+    "aT": 2,
+    "aO": 14,
+    "slipNum": 214,
+    "aTensText": "2 tens",
+    "bTensText": "3 tens",
+    "bOnesText": "4 ones",
+    "keyText": "Yes, both show 34",
+    "slipText": "No, Mat A shows 214"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "Yes, both show 34",
+   "answerType": "choice",
+   "choices": [
+    "Yes, both show 34",
+    "No, Mat A has more discs",
+    "No, Mat A shows 214"
+   ],
+   "display": {
+    "figure": "discMat",
+    "discMat": {
+     "mats": [
+      {
+       "label": "Mat A",
+       "cols": [
+        {
+         "place": 10,
+         "count": 2
+        },
+        {
+         "place": 1,
+         "count": 14
+        }
+       ]
+      },
+      {
+       "label": "Mat B",
+       "cols": [
+        {
+         "place": 10,
+         "count": 3
+        },
+        {
+         "place": 1,
+         "count": 4
+        }
+       ]
+      }
+     ]
+    },
+    "promptText": "Do the two mats show the same number?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-equal-mats-same-s20-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "equalSign",
+  "structureType": "sameValueTwoMats",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "placeValueBlocks",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-equal-mats-same",
+   "seed": 20,
+   "specMd5": "566087ea79072d69e4f0eda288d90bee",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-equal-mats-same",
+  "blueprintId": "calc-g2-equal-mats",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks if both mats show the same number. Read each mat by its tens and ones, not by how many discs it has.",
+   "steps": [
+    "Mat A has 1 ten and 11 ones. Ten ones make one ten.",
+    "Trade ten of Mat A's ones for one ten. Then read Mat A's tens and ones.",
+    "Read Mat B the same way, and compare the two numbers."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Mat A has 3 tens and 12 ones. Mat B has 4 tens and 2 ones. Do the two mats show the same number?",
+    "steps": [
+     "Trade ten of Mat A's ones for one ten: 4 tens and 2 ones. That is 42.",
+     "Mat B has 4 tens and 2 ones. That is 42 too."
+    ],
+    "answer": "Yes, both show 42"
+   },
+   "feedback": {
+    "No, Mat A has more discs": "A ten disc is worth ten, not one. Count each mat by its tens and ones, not by how many discs you see.",
+    "No, Mat A shows 111": "Mat A has 11 ones. That is more than nine, so ten of them make one more ten. Trade first, then read the number."
+   },
+   "solution": {
+    "steps": [
+     "Mat A has 1 ten and 11 ones.",
+     "Trade ten ones for one ten: 2 tens and 1 one. That is 21.",
+     "Mat B has 2 tens and 1 one. That is 21 too."
+    ],
+    "answer": "Yes, both show 21"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [],
+    "va": [
+     "2.CE.1j"
+    ],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "No, Mat A has more discs": "countedRodsAsOnes",
+    "No, Mat A shows 111": "placeValueSlip"
+   },
+   "slots": {
+    "t": 2,
+    "o": 1,
+    "ph": 0,
+    "ask": "Do the two mats show the same number?",
+    "n": 21,
+    "aT": 1,
+    "aO": 11,
+    "slipNum": 111,
+    "aTensText": "1 ten",
+    "bTensText": "2 tens",
+    "bOnesText": "1 one",
+    "keyText": "Yes, both show 21",
+    "slipText": "No, Mat A shows 111"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "Yes, both show 21",
+   "answerType": "choice",
+   "choices": [
+    "No, Mat A shows 111",
+    "Yes, both show 21",
+    "No, Mat A has more discs"
+   ],
+   "display": {
+    "figure": "discMat",
+    "discMat": {
+     "mats": [
+      {
+       "label": "Mat A",
+       "cols": [
+        {
+         "place": 10,
+         "count": 1
+        },
+        {
+         "place": 1,
+         "count": 11
+        }
+       ]
+      },
+      {
+       "label": "Mat B",
+       "cols": [
+        {
+         "place": 10,
+         "count": 2
+        },
+        {
+         "place": 1,
+         "count": 1
+        }
+       ]
+      }
+     ]
+    },
+    "promptText": "Do the two mats show the same number?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-equal-mats-differ-s7-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "equalSign",
+  "structureType": "sameValueTwoMats",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "placeValueBlocks",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-equal-mats-differ",
+   "seed": 7,
+   "specMd5": "1029493c7dfe32bedba406ce247fc7ac",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-equal-mats-differ",
+  "blueprintId": "calc-g2-equal-mats",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks if both mats show the same number. Read each mat by its tens and ones, not by how many discs it has.",
+   "steps": [
+    "Mat A has 7 tens and 12 ones. Ten ones make one ten.",
+    "Trade ten of Mat A's ones for one ten. Then read Mat A's tens and ones.",
+    "Read Mat B the same way, and compare the two numbers."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Mat A has 2 tens and 15 ones. Mat B has 4 tens and 5 ones. Do the two mats show the same number?",
+    "steps": [
+     "Trade ten of Mat A's ones for one ten: 3 tens and 5 ones. That is 35.",
+     "Mat B has 4 tens and 5 ones. That is 45.",
+     "35 is not 45, so the mats do not show the same number."
+    ],
+    "answer": "No, Mat A shows 35 and Mat B shows 45"
+   },
+   "feedback": {
+    "Yes, both show 83": "Trade ten of Mat A's ones for one ten, then read Mat A again. Check its tens and its ones against Mat B's.",
+    "No, Mat A shows a greater number": "Mat A has more discs, but that does not make its number greater. A ten disc is worth ten ones, so read each mat by its tens and ones."
+   },
+   "solution": {
+    "steps": [
+     "Mat A has 7 tens and 12 ones. Trade ten ones for one ten: 8 tens and 2 ones. That is 82.",
+     "Mat B has 8 tens and 3 ones. That is 83.",
+     "82 is not 83, so the mats do not show the same number."
+    ],
+    "answer": "No, Mat A shows 82 and Mat B shows 83"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [],
+    "va": [
+     "2.CE.1j"
+    ],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "Yes, both show 83": "calledThemEqual",
+    "No, Mat A shows a greater number": "countedRodsAsOnes"
+   },
+   "slots": {
+    "aT": 7,
+    "aO": 12,
+    "dp": 0,
+    "ph": 2,
+    "ask": "Is the number on Mat A the same as the number on Mat B?",
+    "nA": 82,
+    "d": 1,
+    "nB": 83,
+    "bT": 8,
+    "bO": 3,
+    "aTensText": "7 tens",
+    "aTradedTensText": "8 tens",
+    "aRest": 2,
+    "aRestText": "2 ones",
+    "bTensText": "8 tens",
+    "bOnesText": "3 ones",
+    "keyText": "No, Mat A shows 82 and Mat B shows 83",
+    "yesText": "Yes, both show 83"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "No, Mat A shows 82 and Mat B shows 83",
+   "answerType": "choice",
+   "choices": [
+    "Yes, both show 83",
+    "No, Mat A shows 82 and Mat B shows 83",
+    "No, Mat A shows a greater number"
+   ],
+   "display": {
+    "figure": "discMat",
+    "discMat": {
+     "mats": [
+      {
+       "label": "Mat A",
+       "cols": [
+        {
+         "place": 10,
+         "count": 7
+        },
+        {
+         "place": 1,
+         "count": 12
+        }
+       ]
+      },
+      {
+       "label": "Mat B",
+       "cols": [
+        {
+         "place": 10,
+         "count": 8
+        },
+        {
+         "place": 1,
+         "count": 3
+        }
+       ]
+      }
+     ]
+    },
+    "promptText": "Is the number on Mat A the same as the number on Mat B?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-va-estimate-difference-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within100",
+  "structureType": "estimateSumDifference",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-va-estimate-difference",
+   "seed": 1,
+   "specMd5": "c7626d9bc9d82d7c7f2bd5fb4c0b8092",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-va-estimate-difference",
+  "blueprintId": "calc-g2-va-estimate",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for an estimate, a number close to the difference. Find the difference, then the ten it is closest to.",
+   "steps": [
+    "Subtract 72 − 18. There are not enough ones, so trade a ten first.",
+    "Look at your answer. Which ten is it closest to?"
+   ],
+   "picture": null,
+   "example": {
+    "problem": "About how much is 42 − 19?",
+    "steps": [
+     "42 − 19 = 23.",
+     "23 is closest to 20.",
+     "Rounding each number first gives the same: 40 − 20 = 20."
+    ],
+    "answer": 20
+   },
+   "feedback": {
+    "60": "Round each number to the ten it is closest to. 72 is only 2 more than a ten, so it rounds down. 18 is only 2 less than the next ten, so it rounds up.",
+    "70": "Both numbers were rounded the wrong way. 72 rounds down and 18 rounds up, each to the ten it is closest to.",
+    "90": "The sign is minus, so take away. The difference must be less than 72."
+   },
+   "solution": {
+    "steps": [
+     "72 − 18 = 54.",
+     "54 is closest to 50.",
+     "Rounding each number first gives the same: 70 − 20 = 50."
+    ],
+    "answer": 50
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [],
+    "fl": [],
+    "va": [
+     "2.CE.1a"
+    ],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "60": "roundedOneWrongWay",
+    "70": "roundedBothWrongWay",
+    "90": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "f1": 7,
+    "s1": 1,
+    "d1": 2,
+    "d2": 2,
+    "ph": 1,
+    "lead": "Which is the best estimate for",
+    "first": 72,
+    "second": 18,
+    "r1": 70,
+    "r2": 20,
+    "est": 50,
+    "exact": 54
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 50,
+   "answerType": "choice",
+   "choices": [
+    50,
+    60,
+    70,
+    90
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "Which is the best estimate for 72 − 18?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-equal-sum-s4-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within100",
+  "structureType": "compensateAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-equal-sum",
+   "seed": 4,
+   "specMd5": "a54781a37f70891cbda696e659fbc6ba",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-equal-sum",
+  "blueprintId": "calc-g2-equal-sum",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "39 is close to a ten. Make it a ten, and keep the sum the same.",
+   "steps": [
+    "39 needs 1 more to make a ten.",
+    "Take 1 from 42 and give it to 39.",
+    "Nothing was added or lost, so the sum stays the same.",
+    "Find the choice with the two new numbers."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which has the same sum as 45 + 28?",
+    "steps": [
+     "28 + 2 = 30.",
+     "45 − 2 = 43.",
+     "So 45 + 28 is equal to 43 + 30."
+    ],
+    "answer": "43 + 30"
+   },
+   "feedback": {
+    "42 + 40": "That adds 1 to 39 but takes nothing from 42, so the sum got bigger. Take the same amount from 42.",
+    "43 + 40": "That adds 1 to both numbers, so the sum got bigger. Add to one number and take the same amount from the other.",
+    "40 + 30 + 2": "That leaves out the ones of 39. Every part of both numbers must still be there."
+   },
+   "solution": {
+    "steps": [
+     "39 + 1 = 40.",
+     "42 − 1 = 41.",
+     "So 42 + 39 is equal to 41 + 40."
+    ],
+    "answer": "41 + 40"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "42 + 40": "compensatedOneSide",
+    "43 + 40": "compensatedWrongWay",
+    "40 + 30 + 2": "leftOutAPart"
+   },
+   "slots": {
+    "tensT": 4,
+    "d": 1,
+    "m": 42,
+    "flip": 1,
+    "phr": 1,
+    "T": 40,
+    "n": 39,
+    "mm": 41,
+    "x": 42,
+    "y": 39,
+    "ask": "Which has the same sum as",
+    "keyText": "41 + 40",
+    "oneSideText": "42 + 40",
+    "wrongWayText": "43 + 40",
+    "leftOutText": "40 + 30 + 2"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "41 + 40",
+   "answerType": "choice",
+   "choices": [
+    "41 + 40",
+    "43 + 40",
+    "40 + 30 + 2",
+    "42 + 40"
+   ],
+   "display": {
+    "promptText": "Which has the same sum as 42 + 39?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-equal-difference-s7-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within100",
+  "structureType": "compensateSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-equal-difference",
+   "seed": 7,
+   "specMd5": "6c6cd523bf99033ce553db233e0511e8",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-equal-difference",
+  "blueprintId": "calc-g2-equal-difference",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "59 is close to a ten. Change both numbers the same way, and the difference stays the same.",
+   "steps": [
+    "59 needs 1 more to make a ten.",
+    "Add 1 to 92 too.",
+    "When both numbers go up by the same amount, the difference does not change.",
+    "Find the choice with the two new numbers."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which has the same difference as 41 − 28?",
+    "steps": [
+     "28 + 2 = 30.",
+     "41 + 2 = 43.",
+     "So 41 − 28 is equal to 43 − 30."
+    ],
+    "answer": "43 − 30"
+   },
+   "feedback": {
+    "92 − 60": "That changes only 59. Taking away more makes the difference smaller, so add 1 to 92 too.",
+    "91 − 60": "That takes 1 from 92 but adds 1 to 59. Move both numbers up by the same amount.",
+    "92 − 50 + 9": "That adds the ones of 59 back on. Every part of 59 must be taken away."
+   },
+   "solution": {
+    "steps": [
+     "59 + 1 = 60.",
+     "92 + 1 = 93.",
+     "So 92 − 59 is equal to 93 − 60."
+    ],
+    "answer": "93 − 60"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "92 − 60": "compensatedOneSide",
+    "91 − 60": "compensatedWrongWay",
+    "92 − 50 + 9": "wrongSignOnSecondPart"
+   },
+   "slots": {
+    "tensT": 6,
+    "d": 1,
+    "a": 92,
+    "phr": 1,
+    "T": 60,
+    "s": 59,
+    "aPlus": 93,
+    "ask": "Which has the same difference as",
+    "keyText": "93 − 60",
+    "oneSideText": "92 − 60",
+    "wrongWayText": "91 − 60",
+    "wrongSignText": "92 − 50 + 9"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "93 − 60",
+   "answerType": "choice",
+   "choices": [
+    "92 − 50 + 9",
+    "91 − 60",
+    "93 − 60",
+    "92 − 60"
+   ],
+   "display": {
+    "promptText": "Which has the same difference as 92 − 59?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-check-subtraction-s10-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within100",
+  "structureType": "checkWithInverse",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-check-subtraction",
+   "seed": 10,
+   "specMd5": "7be324d1f7342dba7dfb67cc7dae6959",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-check-subtraction",
+  "blueprintId": "calc-g2-check",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Adding undoes taking away. Look for the addition that gets you back to the number you started with.",
+   "steps": [
+    "In a subtraction, the first number is the start.",
+    "To check, add the answer and the number taken away.",
+    "That sum should be the start number."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which equation can you use to check 62 − 18 = 44?",
+    "steps": [
+     "The answer is 44. The number taken away is 18.",
+     "44 + 18 = 62, the start number.",
+     "So 44 + 18 = 62 checks the subtraction."
+    ],
+    "answer": "44 + 18 = 62"
+   },
+   "feedback": {
+    "67 + 16 = 83": "That adds to the start, so it makes a new, bigger number. A check adds the answer and the number taken away.",
+    "51 − 16 = 35": "That subtracts again. To check a subtraction, use addition."
+   },
+   "solution": {
+    "steps": [
+     "The answer is 51. The number taken away is 16.",
+     "51 + 16 = 67, the start number.",
+     "So 51 + 16 = 67 checks the subtraction."
+    ],
+    "answer": "51 + 16 = 67"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "67 + 16 = 83": "addedToTheStart",
+    "51 − 16 = 35": "checkedWithSameOperation"
+   },
+   "slots": {
+    "a": 67,
+    "b": 16,
+    "diff": 51,
+    "keyText": "51 + 16 = 67",
+    "startText": "67 + 16 = 83",
+    "againText": "51 − 16 = 35"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "51 + 16 = 67",
+   "answerType": "choice",
+   "choices": [
+    "51 + 16 = 67",
+    "51 − 16 = 35",
+    "67 + 16 = 83"
+   ],
+   "display": {
+    "promptText": "Which equation can you use to check 67 − 16 = 51?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-check-addition-s13-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within100",
+  "structureType": "checkWithInverse",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-check-addition",
+   "seed": 13,
+   "specMd5": "11609469f25d914efe43956d4a59fb9f",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-check-addition",
+  "blueprintId": "calc-g2-check",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Taking away undoes adding. Look for the subtraction that starts at the total.",
+   "steps": [
+    "In an addition, the number after the equal sign is the total.",
+    "To check, start at the total and take away one of the numbers you added.",
+    "You should get the other number you added."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which equation can you use to check 47 + 24 = 71?",
+    "steps": [
+     "The total is 71.",
+     "71 − 24 = 47, the other number you added.",
+     "So 71 − 24 = 47 checks the addition."
+    ],
+    "answer": "71 − 24 = 47"
+   },
+   "feedback": {
+    "49 + 11 = 60": "That adds again, so it makes a new, bigger number. To check an addition, use subtraction.",
+    "38 − 11 = 27": "That takes away from a number you added, not from the total. A check starts at the total."
+   },
+   "solution": {
+    "steps": [
+     "The total is 49.",
+     "49 − 11 = 38, the other number you added.",
+     "So 49 − 11 = 38 checks the addition."
+    ],
+    "answer": "49 − 11 = 38"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "49 + 11 = 60": "checkedWithSameOperation",
+    "38 − 11 = 27": "subtractedFromTheStart"
+   },
+   "slots": {
+    "a": 38,
+    "b": 11,
+    "sum": 49,
+    "keyText": "49 − 11 = 38",
+    "againText": "49 + 11 = 60",
+    "startText": "38 − 11 = 27"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "49 − 11 = 38",
+   "answerType": "choice",
+   "choices": [
+    "49 − 11 = 38",
+    "49 + 11 = 60",
+    "38 − 11 = 27"
+   ],
+   "display": {
+    "promptText": "Which equation can you use to check 38 + 11 = 49?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-find-mistake-addition-s16-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within100",
+  "structureType": "findTheMistake",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-find-mistake-addition",
+   "seed": 16,
+   "specMd5": "e89a972067f439061ed14921c7388355",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-find-mistake-addition",
+  "blueprintId": "calc-g2-find-mistake",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add 47 + 27 yourself. Then compare your answer with Cal's answer, one place at a time.",
+   "steps": [
+    "Add the ones first. Do they make a new ten?",
+    "Then add the tens. Count any new ten too.",
+    "Find the place where 64 does not match your answer."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Faye says 39 + 23 = 52. What mistake did Faye make?",
+    "steps": [
+     "The ones: 9 + 3 = 12. That is a new ten and 2 more.",
+     "The tens: 30 + 20 + 10 = 60.",
+     "So 39 + 23 = 62, not 52.",
+     "Faye did not add the new ten from 9 + 3."
+    ],
+    "answer": "Faye did not add the new ten from 9 + 3"
+   },
+   "feedback": {
+    "Cal added the ones wrong": "The ones in 64 are right. Add 47 + 27 again and look at the tens.",
+    "Cal took away instead of adding": "Cal did add. Taking away would give 20, not 64.",
+    "Cal made no mistake": "64 is not right. Add 47 + 27 again, starting with the ones."
+   },
+   "solution": {
+    "steps": [
+     "The ones: 7 + 7 = 14. That is a new ten and 4 more.",
+     "The tens: 40 + 20 + 10 = 70.",
+     "So 47 + 27 = 74, not 64.",
+     "Cal did not add the new ten from 7 + 7."
+    ],
+    "answer": "Cal did not add the new ten from 7 + 7"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "Cal added the ones wrong": "blamedARightPlace",
+    "Cal took away instead of adding": "blamedTheOperation",
+    "Cal made no mistake": "keptTheWrongAnswer"
+   },
+   "slots": {
+    "name": "Cal",
+    "a": 47,
+    "b": 27,
+    "oa": 7,
+    "ob": 7,
+    "ta": 40,
+    "tb": 20,
+    "sum": 74,
+    "shown": 64,
+    "diff": 20,
+    "onesSum": 14,
+    "onesLeft": 4,
+    "tensAll": 70,
+    "keyText": "Cal did not add the new ten from 7 + 7"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "Cal did not add the new ten from 7 + 7",
+   "answerType": "choice",
+   "choices": [
+    "Cal added the ones wrong",
+    "Cal did not add the new ten from 7 + 7",
+    "Cal took away instead of adding",
+    "Cal made no mistake"
+   ],
+   "display": {
+    "promptText": "Cal says 47 + 27 = 64. What mistake did Cal make?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-find-mistake-subtraction-s19-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within100",
+  "structureType": "findTheMistake",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-find-mistake-subtraction",
+   "seed": 19,
+   "specMd5": "0bdbe5541637474ca9ae4d704c2c68a2",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-find-mistake-subtraction",
+  "blueprintId": "calc-g2-find-mistake",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Subtract 84 − 27 yourself. Then compare your answer with Isla's answer.",
+   "steps": [
+    "Look at the ones first. Does 84 have enough ones to take away the ones in 27?",
+    "If not, trade a ten for ten ones before you subtract.",
+    "Then look at what Isla did with the ones."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Kim says 93 − 45 = 52. What mistake did Kim make?",
+    "steps": [
+     "The ones: 3 is less than 5, so trade a ten. 13 − 5 = 8.",
+     "The tens: 8 tens − 4 tens = 4 tens.",
+     "So 93 − 45 = 48, not 52.",
+     "Kim took 3 from 5 in the ones instead of trading a ten."
+    ],
+    "answer": "Kim took 3 from 5 in the ones instead of trading a ten"
+   },
+   "feedback": {
+    "Isla traded a ten but kept 8 tens": "That slip gives 67, not 63. Look at how Isla got the ones.",
+    "Isla added instead of taking away": "Isla did take away. Adding would give 111, not 63.",
+    "Isla made no mistake": "63 is not right. Subtract 84 − 27 again, starting with the ones."
+   },
+   "solution": {
+    "steps": [
+     "The ones: 4 is less than 7, so trade a ten. 14 − 7 = 7.",
+     "The tens: 7 tens − 2 tens = 5 tens.",
+     "So 84 − 27 = 57, not 63.",
+     "Isla took 4 from 7 in the ones instead of trading a ten."
+    ],
+    "answer": "Isla took 4 from 7 in the ones instead of trading a ten"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "Isla traded a ten but kept 8 tens": "blamedAnotherSlip",
+    "Isla added instead of taking away": "blamedTheOperation",
+    "Isla made no mistake": "keptTheWrongAnswer"
+   },
+   "slots": {
+    "name": "Isla",
+    "a": 84,
+    "b": 27,
+    "oa": 4,
+    "ob": 7,
+    "tensDigitA": 8,
+    "tensDigitB": 2,
+    "tensLeft": 7,
+    "tensRight": 5,
+    "tensBText": "2 tens",
+    "tensRightText": "5 tens",
+    "onesTraded": 14,
+    "onesRight": 7,
+    "right": 57,
+    "shown": 63,
+    "other": 67,
+    "sumAB": 111,
+    "keyText": "Isla took 4 from 7 in the ones instead of trading a ten"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": "Isla took 4 from 7 in the ones instead of trading a ten",
+   "answerType": "choice",
+   "choices": [
+    "Isla added instead of taking away",
+    "Isla took 4 from 7 in the ones instead of trading a ten",
+    "Isla made no mistake",
+    "Isla traded a ten but kept 8 tens"
+   ],
+   "display": {
+    "promptText": "Isla says 84 − 27 = 63. What mistake did Isla make?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-missing-digit-add-s22-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within100",
+  "structureType": "missingDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-missing-digit-add",
+   "seed": 22,
+   "specMd5": "898faee7173b7d9d50602e860fb3fe78",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-missing-digit-add",
+  "blueprintId": "calc-g2-missing-digit",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The box is the ones digit of the first number. Start with the ones.",
+   "steps": [
+    "The ones digit of 51 is 1. But 8 ones and the box can't add up to just 1.",
+    "So the ones make a new ten. Which number ending in 1 can they make?",
+    "Find the digit that goes with 8 to make that number."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "3□ + 55 = 91. What digit goes in the box?",
+    "steps": [
+     "The ones digit of 91 is 1, so the ones add up to 11.",
+     "5 + 6 = 11, so the box is 6.",
+     "Check: 36 + 55 = 91."
+    ],
+    "answer": 6
+   },
+   "feedback": {
+    "1": "That copies the ones digit of 51. The box and 8 ones add up to 11, so find what goes with 8 to make 11.",
+    "7": "That takes 1 away from 8. But the box and 8 ones add up to 11, and one ten moves to the tens."
+   },
+   "solution": {
+    "steps": [
+     "The ones digit of 51 is 1, so the ones add up to 11.",
+     "8 + 3 = 11, so the box is 3.",
+     "Check: 13 + 38 = 51."
+    ],
+    "answer": 3
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5",
+     "2.NBT.B.9"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "1": "answeredWithAGiven",
+    "7": "smallerFromLarger"
+   },
+   "slots": {
+    "a": 1,
+    "d": 3,
+    "b": 3,
+    "e": 8,
+    "first": 13,
+    "second": 38,
+    "total": 51,
+    "tOnes": 1,
+    "onesTotal": 11,
+    "shown": "1□"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": 3,
+   "answerType": "numberPad",
+   "choices": [
+    1,
+    3,
+    7
+   ],
+   "display": {
+    "promptText": "1□ + 38 = 51. What digit goes in the box?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tx-ten-hundred-1200-no-crossing-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundredTo1200",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tx-ten-hundred-1200-no-crossing",
+   "seed": 1,
+   "specMd5": "8be035959080aa264c39acc79a6f1d5f",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tx-ten-hundred-1200-no-crossing",
+  "blueprintId": "calc-g2-tx-ten-hundred-1200",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for 100 less than 992. Taking away 100 changes only the hundreds digit.",
+   "steps": [
+    "In 992, the hundreds digit is 9.",
+    "Make that digit one less. Keep every other digit the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What is 100 less than 934?",
+    "steps": [
+     "In 934, the hundreds digit is 9.",
+     "One less than 9 is 8. Every other digit stays the same.",
+     "100 less than 934 is 834."
+    ],
+    "answer": 834
+   },
+   "feedback": {
+    "982": "That changed the tens digit. Taking away 100 makes the hundreds digit one less.",
+    "991": "That changed the ones digit. Taking away 100 makes the hundreds digit one less, not the ones digit.",
+    "1092": "That went up. Less means take away, so the answer must be smaller than 992."
+   },
+   "solution": {
+    "steps": [
+     "In 992, the hundreds digit is 9.",
+     "One less than 9 is 8. Every other digit stays the same.",
+     "100 less than 992 is 892."
+    ],
+    "answer": 892
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "982": "changedTheWrongPlace",
+    "991": "changedTheOnes",
+    "1092": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "s": 992,
+    "st": 1,
+    "ph": 1,
+    "lead": "Which number is",
+    "step": 100,
+    "other": 10,
+    "place": "hundreds",
+    "otherPlace": "tens",
+    "tensD": 9,
+    "hundD": 9,
+    "onesD": 2,
+    "placeD": 9,
+    "placeDm": 8,
+    "key": 892
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 992,
+   "b": 100,
+   "op": "-",
+   "answer": 892,
+   "answerType": "choice",
+   "choices": [
+    892,
+    982,
+    991,
+    1092
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "Which number is 100 less than 992?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tx-ten-hundred-1200-no-crossing-s16-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundredTo1200",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tx-ten-hundred-1200-no-crossing",
+   "seed": 16,
+   "specMd5": "8be035959080aa264c39acc79a6f1d5f",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tx-ten-hundred-1200-no-crossing",
+  "blueprintId": "calc-g2-tx-ten-hundred-1200",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for 10 less than 963. Taking away 10 changes only the tens digit.",
+   "steps": [
+    "In 963, the tens digit is 6.",
+    "Make that digit one less. Keep every other digit the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which number is 100 less than 973?",
+    "steps": [
+     "In 973, the hundreds digit is 9.",
+     "One less than 9 is 8. Every other digit stays the same.",
+     "100 less than 973 is 873."
+    ],
+    "answer": 873
+   },
+   "feedback": {
+    "863": "That changed the hundreds digit. Taking away 10 makes the tens digit one less.",
+    "962": "That changed the ones digit. Taking away 10 makes the tens digit one less, not the ones digit.",
+    "973": "That went up. Less means take away, so the answer must be smaller than 963."
+   },
+   "solution": {
+    "steps": [
+     "In 963, the tens digit is 6.",
+     "One less than 6 is 5. Every other digit stays the same.",
+     "10 less than 963 is 953."
+    ],
+    "answer": 953
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "863": "changedTheWrongPlace",
+    "962": "changedTheOnes",
+    "973": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "s": 963,
+    "st": 0,
+    "ph": 1,
+    "lead": "Which number is",
+    "step": 10,
+    "other": 100,
+    "place": "tens",
+    "otherPlace": "hundreds",
+    "tensD": 6,
+    "hundD": 9,
+    "onesD": 3,
+    "placeD": 6,
+    "placeDm": 5,
+    "key": 953
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 963,
+   "b": 10,
+   "op": "-",
+   "answer": 953,
+   "answerType": "choice",
+   "choices": [
+    863,
+    953,
+    962,
+    973
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "Which number is 10 less than 963?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tx-ten-hundred-1200-no-crossing-more-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundredTo1200",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tx-ten-hundred-1200-no-crossing-more",
+   "seed": 1,
+   "specMd5": "582a28cff51584f438e7d0985dd58fb0",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tx-ten-hundred-1200-no-crossing-more",
+  "blueprintId": "calc-g2-tx-ten-hundred-1200",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for 100 more than 1044. Adding 100 changes only the hundreds digit.",
+   "steps": [
+    "In 1044, the hundreds digit is 0.",
+    "Make that digit one more. Keep every other digit the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What is 10 more than 1121?",
+    "steps": [
+     "In 1121, the tens digit is 2.",
+     "One more than 2 is 3. Every other digit stays the same.",
+     "10 more than 1121 is 1131."
+    ],
+    "answer": 1131
+   },
+   "feedback": {
+    "944": "That went down. More means add, so the answer must be bigger than 1044.",
+    "1045": "That changed the ones digit. Adding 100 makes the hundreds digit one more, not the ones digit.",
+    "1054": "That changed the tens digit. Adding 100 makes the hundreds digit one more."
+   },
+   "solution": {
+    "steps": [
+     "In 1044, the hundreds digit is 0.",
+     "One more than 0 is 1. Every other digit stays the same.",
+     "100 more than 1044 is 1144."
+    ],
+    "answer": 1144
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "944": "subtractedInsteadOfAdded",
+    "1045": "changedTheOnes",
+    "1054": "changedTheWrongPlace"
+   },
+   "slots": {
+    "s": 1044,
+    "st": 1,
+    "ph": 2,
+    "lead": "What is",
+    "step": 100,
+    "other": 10,
+    "place": "hundreds",
+    "otherPlace": "tens",
+    "tensD": 4,
+    "hundD": 0,
+    "onesD": 4,
+    "placeD": 0,
+    "placeDp": 1,
+    "key": 1144
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 1044,
+   "b": 100,
+   "op": "+",
+   "answer": 1144,
+   "answerType": "choice",
+   "choices": [
+    944,
+    1045,
+    1054,
+    1144
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "What is 100 more than 1044?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tx-ten-hundred-1200-no-crossing-more-s17-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundredTo1200",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tx-ten-hundred-1200-no-crossing-more",
+   "seed": 17,
+   "specMd5": "582a28cff51584f438e7d0985dd58fb0",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tx-ten-hundred-1200-no-crossing-more",
+  "blueprintId": "calc-g2-tx-ten-hundred-1200",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "The question asks for 10 more than 1141. Adding 10 changes only the tens digit.",
+   "steps": [
+    "In 1141, the tens digit is 4.",
+    "Make that digit one more. Keep every other digit the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which number is 10 more than 1013?",
+    "steps": [
+     "In 1013, the tens digit is 1.",
+     "One more than 1 is 2. Every other digit stays the same.",
+     "10 more than 1013 is 1023."
+    ],
+    "answer": 1023
+   },
+   "feedback": {
+    "1131": "That went down. More means add, so the answer must be bigger than 1141.",
+    "1142": "That changed the ones digit. Adding 10 makes the tens digit one more, not the ones digit.",
+    "1241": "That changed the hundreds digit. Adding 10 makes the tens digit one more."
+   },
+   "solution": {
+    "steps": [
+     "In 1141, the tens digit is 4.",
+     "One more than 4 is 5. Every other digit stays the same.",
+     "10 more than 1141 is 1151."
+    ],
+    "answer": 1151
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "1131": "subtractedInsteadOfAdded",
+    "1142": "changedTheOnes",
+    "1241": "changedTheWrongPlace"
+   },
+   "slots": {
+    "s": 1141,
+    "st": 0,
+    "ph": 2,
+    "lead": "What is",
+    "step": 10,
+    "other": 100,
+    "place": "tens",
+    "otherPlace": "hundreds",
+    "tensD": 4,
+    "hundD": 1,
+    "onesD": 1,
+    "placeD": 4,
+    "placeDp": 5,
+    "key": 1151
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 1141,
+   "b": 10,
+   "op": "+",
+   "answer": 1151,
+   "answerType": "choice",
+   "choices": [
+    1131,
+    1142,
+    1151,
+    1241
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "What is 10 more than 1141?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tx-ten-hundred-1200-across-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundredTo1200",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tx-ten-hundred-1200-across",
+   "seed": 1,
+   "specMd5": "46b030a807bdd82acd9df9a6e7387f87",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tx-ten-hundred-1200-across",
+  "blueprintId": "calc-g2-tx-ten-hundred-1200",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks for 10 less than 909. The tens digit of 909 is 0, so you cannot just make it one less.",
+   "steps": [
+    "Split 909 into 900 and 9.",
+    "Take 10 from 900. That leaves 890.",
+    "Then add the 9 back on."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What is 10 less than 1103?",
+    "steps": [
+     "Split 1103 into 1100 and 3.",
+     "1100 take away 10 leaves 1090.",
+     "1090 and 3 more make 1093."
+    ],
+    "answer": 1093
+   },
+   "feedback": {
+    "809": "That took away one hundred, but the question takes away one ten.",
+    "919": "That went up. Less means take away, so the answer must be smaller than 909.",
+    "999": "You made 9 tens, but that trade uses up one hundred. Take that hundred away too."
+   },
+   "solution": {
+    "steps": [
+     "Split 909 into 900 and 9.",
+     "900 take away 10 leaves 890.",
+     "890 and 9 more make 899."
+    ],
+    "answer": 899
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "809": "changedTheWrongPlace",
+    "919": "addedInsteadOfSubtracted",
+    "999": "acrossZeroSlip"
+   },
+   "slots": {
+    "stp": 1,
+    "zb": 0,
+    "zo": 9,
+    "hb": 52,
+    "ph": 0,
+    "lead": "What number is",
+    "st": 0,
+    "s": 909,
+    "step": 10,
+    "other": 100,
+    "place": "tens",
+    "stepWord": "one ten",
+    "otherWord": "one hundred",
+    "bigSing": "hundred",
+    "roundBase": 900,
+    "rem": 9,
+    "baseMinus": 890,
+    "key": 899
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 909,
+   "b": 10,
+   "op": "-",
+   "answer": 899,
+   "answerType": "choice",
+   "choices": [
+    809,
+    899,
+    919,
+    999
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "What number is 10 less than 909?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tx-ten-hundred-1200-across-s19-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundredTo1200",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tx-ten-hundred-1200-across",
+   "seed": 19,
+   "specMd5": "46b030a807bdd82acd9df9a6e7387f87",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tx-ten-hundred-1200-across",
+  "blueprintId": "calc-g2-tx-ten-hundred-1200",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks for 100 less than 1021. The hundreds digit of 1021 is 0, so you cannot just make it one less.",
+   "steps": [
+    "Split 1021 into 1000 and 21.",
+    "Take 100 from 1000. That leaves 900.",
+    "Then add the 21 back on."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which number is 100 less than 1057?",
+    "steps": [
+     "Split 1057 into 1000 and 57.",
+     "1000 take away 100 leaves 900.",
+     "900 and 57 more make 957."
+    ],
+    "answer": 957
+   },
+   "feedback": {
+    "1011": "That took away one ten, but the question takes away one hundred.",
+    "1121": "That went up. Less means take away, so the answer must be smaller than 1021.",
+    "1921": "You made 9 hundreds, but that trade uses up one thousand. Take that thousand away too."
+   },
+   "solution": {
+    "steps": [
+     "Split 1021 into 1000 and 21.",
+     "1000 take away 100 leaves 900.",
+     "900 and 21 more make 921."
+    ],
+    "answer": 921
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "1011": "changedTheWrongPlace",
+    "1121": "addedInsteadOfSubtracted",
+    "1921": "acrossZeroSlip"
+   },
+   "slots": {
+    "stp": 2,
+    "zb": 2,
+    "zo": 5,
+    "hb": 21,
+    "ph": 0,
+    "lead": "What number is",
+    "st": 1,
+    "s": 1021,
+    "step": 100,
+    "other": 10,
+    "place": "hundreds",
+    "stepWord": "one hundred",
+    "otherWord": "one ten",
+    "bigSing": "thousand",
+    "roundBase": 1000,
+    "rem": 21,
+    "baseMinus": 900,
+    "key": 921
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 1021,
+   "b": 100,
+   "op": "-",
+   "answer": 921,
+   "answerType": "choice",
+   "choices": [
+    921,
+    1011,
+    1121,
+    1921
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "What number is 100 less than 1021?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tx-ten-hundred-1200-across-more-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundredTo1200",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tx-ten-hundred-1200-across-more",
+   "seed": 1,
+   "specMd5": "497ed67c32545596f61f2c8f4815713d",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tx-ten-hundred-1200-across-more",
+  "blueprintId": "calc-g2-tx-ten-hundred-1200",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks for 10 more than 1094. The tens digit is 9, so one more ten makes ten tens.",
+   "steps": [
+    "In 1094, the tens digit is 9. Adding one ten makes ten tens.",
+    "Ten tens make one more hundred. The tens digit becomes 0, and the hundreds go up by one.",
+    "Keep the ones digit, 4, the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which number is 10 more than 991?",
+    "steps": [
+     "In 991, the tens digit is 9. Adding one ten makes ten tens.",
+     "Ten tens make one more hundred, so the tens digit becomes 0.",
+     "10 more than 991 is 1001."
+    ],
+    "answer": 1001
+   },
+   "feedback": {
+    "1004": "You made the tens digit 0, but ten tens make a new hundred. The hundreds must go up by one too.",
+    "1084": "That went down. More means add, so the answer must be bigger than 1094.",
+    "1194": "That added one hundred. The question adds only one ten."
+   },
+   "solution": {
+    "steps": [
+     "In 1094, the tens digit is 9. Adding one ten makes ten tens.",
+     "Ten tens make one more hundred, so the tens digit becomes 0.",
+     "10 more than 1094 is 1104."
+    ],
+    "answer": 1104
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "1004": "acrossZeroSlip",
+    "1084": "subtractedInsteadOfAdded",
+    "1194": "changedTheWrongPlace"
+   },
+   "slots": {
+    "m": 14,
+    "ph": 1,
+    "lead": "Which number is",
+    "s": 1094,
+    "onesD": 4,
+    "key": 1104
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 1094,
+   "b": 10,
+   "op": "+",
+   "answer": 1104,
+   "answerType": "choice",
+   "choices": [
+    1004,
+    1084,
+    1104,
+    1194
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "Which number is 10 more than 1094?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tx-ten-hundred-1200-across-more-s16-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundredTo1200",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tx-ten-hundred-1200-across-more",
+   "seed": 16,
+   "specMd5": "497ed67c32545596f61f2c8f4815713d",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tx-ten-hundred-1200-across-more",
+  "blueprintId": "calc-g2-tx-ten-hundred-1200",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "The question asks for 10 more than 992. The tens digit is 9, so one more ten makes ten tens.",
+   "steps": [
+    "In 992, the tens digit is 9. Adding one ten makes ten tens.",
+    "Ten tens make one more hundred. The tens digit becomes 0, and the hundreds go up by one.",
+    "Keep the ones digit, 2, the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which number is 10 more than 1094?",
+    "steps": [
+     "In 1094, the tens digit is 9. Adding one ten makes ten tens.",
+     "Ten tens make one more hundred, so the tens digit becomes 0.",
+     "10 more than 1094 is 1104."
+    ],
+    "answer": 1104
+   },
+   "feedback": {
+    "902": "You made the tens digit 0, but ten tens make a new hundred. The hundreds must go up by one too.",
+    "982": "That went down. More means add, so the answer must be bigger than 992.",
+    "1092": "That added one hundred. The question adds only one ten."
+   },
+   "solution": {
+    "steps": [
+     "In 992, the tens digit is 9. Adding one ten makes ten tens.",
+     "Ten tens make one more hundred, so the tens digit becomes 0.",
+     "10 more than 992 is 1002."
+    ],
+    "answer": 1002
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "902": "acrossZeroSlip",
+    "982": "subtractedInsteadOfAdded",
+    "1092": "changedTheWrongPlace"
+   },
+   "slots": {
+    "m": 2,
+    "ph": 0,
+    "lead": "What number is",
+    "s": 992,
+    "onesD": 2,
+    "key": 1002
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 992,
+   "b": 10,
+   "op": "+",
+   "answer": 1002,
+   "answerType": "choice",
+   "choices": [
+    902,
+    982,
+    1002,
+    1092
+   ],
+   "display": {
+    "layout": "horizontal",
+    "promptText": "What number is 10 more than 992?"
+   }
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-100-30p40",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within100",
+  "structureType": "addWithin100",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-100",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "Add the ones first, then the next place.",
+   "steps": [
+    "Ones: there are no ones.",
+    "Tens: 3 + 4 makes 7 tens.",
+    "Put the tens and ones together."
+   ]
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "noRegroup",
+   "mistakes": {}
+  },
+  "question": {
+   "a": 30,
+   "b": 40,
+   "op": "+",
+   "answer": 70,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "30 + 40 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-100",
+   "variant": "noRegroup",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-100-14p9",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within100",
+  "structureType": "addWithin100",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-100",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 4 + 9 makes 13 ones. Trade 10 ones for 1 ten.",
+    "Tens: 1, plus 1 new ten makes 2 tens.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "13": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "104": "Line up the ones under the ones before you add.",
+    "113": "Each place holds one digit. When a place makes 10 or more, trade 10 of them for 1 of the next place."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "regroupOnes",
+   "mistakes": {
+    "13": "forgotToCarry",
+    "104": "misalignedPlaces",
+    "113": "placeValueSlip"
+   }
+  },
+  "question": {
+   "a": 14,
+   "b": 9,
+   "op": "+",
+   "answer": 23,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "14 + 9 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-100",
+   "variant": "regroupOnes",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-sub-100-69m47",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within100",
+  "structureType": "subtractWithin100",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-sub-100",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "Take away the ones first, then the next place.",
+   "steps": [
+    "Ones: 9 − 7.",
+    "Tens: 6 − 4.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "116": "Look at the sign again. This one takes away."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "noTrade",
+   "mistakes": {
+    "116": "addedInsteadOfSubtracted"
+   }
+  },
+  "question": {
+   "a": 69,
+   "b": 47,
+   "op": "−",
+   "answer": 22,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "69 − 47 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-sub-100",
+   "variant": "noTrade",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-sub-100-52m3",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within100",
+  "structureType": "subtractWithin100",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-sub-100",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Start with the ones. Are there enough ones to take away?",
+   "steps": [
+    "Ones: 2 is less than 3. Trade 1 ten for 10 ones: 12 − 3.",
+    "Tens: 4 tens are left.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "51": "Take the bottom digit away from the top digit. When the top digit is smaller, trade first.",
+    "55": "Look at the sign again. This one takes away.",
+    "59": "Check the tens. Did the new ten go into the tens, or did the traded ten come out of them?"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "tradeTen",
+   "mistakes": {
+    "51": "smallerFromLarger",
+    "55": "addedInsteadOfSubtracted",
+    "59": "offByTen"
+   }
+  },
+  "question": {
+   "a": 52,
+   "b": 3,
+   "op": "−",
+   "answer": 49,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "52 − 3 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-sub-100",
+   "variant": "tradeTen",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-sub-100-30m16",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within100",
+  "structureType": "subtractWithin100",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-sub-100",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Start with the ones. Are there enough ones to take away?",
+   "steps": [
+    "Ones: 0 is less than 6. Trade 1 ten for 10 ones: 10 − 6.",
+    "Tens: 2 − 1.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "24": "Check the tens. Did the new ten go into the tens, or did the traded ten come out of them?",
+    "26": "Take the bottom digit away from the top digit. When the top digit is smaller, trade first.",
+    "46": "Look at the sign again. This one takes away."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "zeroOnes",
+   "mistakes": {
+    "24": "offByTen",
+    "26": "smallerFromLarger",
+    "46": "addedInsteadOfSubtracted"
+   }
+  },
+  "question": {
+   "a": 30,
+   "b": 16,
+   "op": "−",
+   "answer": 14,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "30 − 16 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-sub-100",
+   "variant": "zeroOnes",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "calc-g2-make-ten-add-s26-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within100",
+  "structureType": "makeTenStep",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-make-ten-add",
+   "seed": 26,
+   "specMd5": "7f294ed6054fd67efe344ebfb6d8307d",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-make-ten-add",
+  "blueprintId": "calc-g2-make-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Both sides must be worth the same. Start by getting 78 up to 80.",
+   "steps": [
+    "78 needs 2 more to make 80.",
+    "Break 5 into two parts: 2 and the rest.",
+    "The rest of 5 goes in the box."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 70,
+    "max": 90,
+    "mark": 78
+   },
+   "example": {
+    "problem": "What number makes this true? 82 + 9 = 90 + □",
+    "steps": [
+     "82 + 8 = 90.",
+     "9 = 8 + 1.",
+     "So 82 + 9 = 90 + 1. The box is 1."
+    ],
+    "answer": 1
+   },
+   "feedback": {
+    "2": "2 is only the part of 5 that gets 78 to 80. Put the rest of 5 in the box.",
+    "5": "5 is already added on the left side. Part of it went into making 80, so only the rest goes in the box.",
+    "83": "83 is the answer to 78 + 5. The equal sign means both sides are worth the same, so 80 + □ must make 83 too."
+   },
+   "solution": {
+    "steps": [
+     "78 + 2 = 80.",
+     "5 = 2 + 3.",
+     "So 78 + 5 = 80 + 3. The box is 3."
+    ],
+    "answer": 3
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "2": "stoppedAtTheTen",
+    "5": "answeredWithAGiven",
+    "83": "equalsMeansCompute"
+   },
+   "slots": {
+    "a": 78,
+    "b": 5,
+    "ten": 80,
+    "toTen": 2,
+    "sum": 83,
+    "box": 3,
+    "lineLow": 70,
+    "lineHigh": 90
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": 3,
+   "answerType": "numberPad",
+   "choices": [
+    2,
+    3,
+    5,
+    83
+   ],
+   "display": {
+    "promptText": "What number makes this true? 78 + 5 = 80 + □"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-make-ten-subtract-s27-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within100",
+  "structureType": "makeTenStep",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-make-ten-subtract",
+   "seed": 27,
+   "specMd5": "b60f6d1c30f28bc039b17a1882362275",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-make-ten-subtract",
+  "blueprintId": "calc-g2-make-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Both sides must be worth the same. Start by taking 62 down to 60.",
+   "steps": [
+    "Take away 2 to get from 62 down to 60.",
+    "Break 6 into two parts: 2 and the rest.",
+    "The rest of 6 goes in the box."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 50,
+    "max": 70,
+    "mark": 62
+   },
+   "example": {
+    "problem": "What number makes this true? 76 − 7 = 70 − □",
+    "steps": [
+     "76 − 6 = 70.",
+     "7 = 6 + 1.",
+     "So 76 − 7 = 70 − 1. The box is 1."
+    ],
+    "answer": 1
+   },
+   "feedback": {
+    "2": "2 is only the part of 6 that gets 62 down to 60. Put the rest of 6 in the box.",
+    "6": "6 is the whole amount taken from 62. Part of it got 62 down to 60, so only the rest goes in the box.",
+    "56": "56 is the answer to 62 − 6. The equal sign means both sides are worth the same, so 60 − □ must make 56 too."
+   },
+   "solution": {
+    "steps": [
+     "62 − 2 = 60.",
+     "6 = 2 + 4.",
+     "So 62 − 6 = 60 − 4. The box is 4."
+    ],
+    "answer": 4
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "2": "stoppedAtTheTen",
+    "6": "answeredWithAGiven",
+    "56": "equalsMeansCompute"
+   },
+   "slots": {
+    "a": 62,
+    "b": 6,
+    "oa": 2,
+    "ten": 60,
+    "diff": 56,
+    "box": 4,
+    "lineLow": 50,
+    "lineHigh": 70
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": 4,
+   "answerType": "numberPad",
+   "choices": [
+    2,
+    4,
+    6,
+    56
+   ],
+   "display": {
+    "promptText": "What number makes this true? 62 − 6 = 60 − □"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-tens-then-ones-s26-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within100",
+  "structureType": "placeValueStep",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-tens-then-ones",
+   "seed": 26,
+   "specMd5": "917e79668d4656d9e82443eeb0774bcd",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-tens-then-ones",
+  "blueprintId": "calc-g2-tens-then-ones",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Both sides must be worth the same. 80 holds the tens, so the box must hold the ones.",
+   "steps": [
+    "The tens: 20 + 60 = 80.",
+    "The ones are 7 and 4.",
+    "Put all the ones in the box, even the ones that make a new ten."
+   ],
+   "picture": {
+    "kind": "tenFrame",
+    "filled": 7,
+    "filledB": 4,
+    "frames": 2
+   },
+   "example": {
+    "problem": "What number makes this true? 29 + 57 = 70 + □",
+    "steps": [
+     "20 + 50 = 70.",
+     "9 + 7 = 16.",
+     "So 29 + 57 = 70 + 16. The box is 16."
+    ],
+    "answer": 16
+   },
+   "feedback": {
+    "1": "7 + 4 makes a new ten. Keep that ten in the box, because 80 holds only the tens of 27 and 64.",
+    "4": "That is only the ones of 64. The box needs the ones of 27 too.",
+    "91": "91 is the answer to 27 + 64. The equal sign means both sides are worth the same, so 80 + □ must make 91 too."
+   },
+   "solution": {
+    "steps": [
+     "20 + 60 = 80.",
+     "7 + 4 = 11.",
+     "So 27 + 64 = 80 + 11. The box is 11."
+    ],
+    "answer": 11
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.3"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": "numberPad",
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "1": "forgotToCarry",
+    "4": "leftOutAPart",
+    "91": "equalsMeansCompute"
+   },
+   "slots": {
+    "a": 27,
+    "b": 64,
+    "oa": 7,
+    "ob": 4,
+    "tensA": 20,
+    "tensB": 60,
+    "tensSum": 80,
+    "box": 11,
+    "sum": 91
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": 11,
+   "answerType": "numberPad",
+   "choices": [
+    1,
+    4,
+    11,
+    91
+   ],
+   "display": {
+    "promptText": "What number makes this true? 27 + 64 = 80 + □"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-group-ten-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "severalNumbers",
+  "structureType": "groupToMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-group-ten",
+   "seed": 1,
+   "specMd5": "578c4a4dd09e7e5ccd25071ec3f34849",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-group-ten",
+  "blueprintId": "calc-g2-group-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Look only at the ones digits. Find the two that make a ten.",
+   "steps": [
+    "The ones digits are 5, 3 and 7.",
+    "Add the ones digits two at a time.",
+    "The pair that makes ten tells you which two numbers to add first."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "To add 65 + 11 + 15, you can make a ten first. Which two numbers have ones that add up to 10?",
+    "steps": [
+     "The ones digits are 5, 1 and 5.",
+     "5 + 5 = 10.",
+     "So add 65 and 15 first."
+    ],
+    "answer": "65 and 15"
+   },
+   "feedback": {
+    "25 and 23": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+    "25 and 27": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+   },
+   "solution": {
+    "steps": [
+     "The ones digits are 5, 3 and 7.",
+     "3 + 7 = 10.",
+     "So add 23 and 27 first."
+    ],
+    "answer": "23 and 27"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [],
+    "va": [
+     "2.CE.1f"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "25 and 23": "pickedTheFirstTwo",
+    "25 and 27": "pairDoesNotMakeTen"
+   },
+   "slots": {
+    "p": 1,
+    "k": 3,
+    "r": 5,
+    "t1": 2,
+    "t2": 2,
+    "t3": 2,
+    "o1": 5,
+    "o2": 3,
+    "o3": 7,
+    "n1": 25,
+    "n2": 23,
+    "n3": 27,
+    "keyText": "23 and 27"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": "23 and 27",
+   "answerType": "choice",
+   "choices": [
+    "23 and 27",
+    "25 and 23",
+    "25 and 27"
+   ],
+   "display": {
+    "promptText": "To add 25 + 23 + 27, you can make a ten first. Which two numbers have ones that add up to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-group-ten-s4-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "severalNumbers",
+  "structureType": "groupToMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-group-ten",
+   "seed": 4,
+   "specMd5": "578c4a4dd09e7e5ccd25071ec3f34849",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-group-ten",
+  "blueprintId": "calc-g2-group-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Look only at the ones digits. Find the two that make a ten.",
+   "steps": [
+    "The ones digits are 1, 7 and 9.",
+    "Add the ones digits two at a time.",
+    "The pair that makes ten tells you which two numbers to add first."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "To add 12 + 47 + 28, you can make a ten first. Which two numbers have ones that add up to 10?",
+    "steps": [
+     "The ones digits are 2, 7 and 8.",
+     "2 + 8 = 10.",
+     "So add 12 and 28 first."
+    ],
+    "answer": "12 and 28"
+   },
+   "feedback": {
+    "11 and 27": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+    "27 and 39": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+   },
+   "solution": {
+    "steps": [
+     "The ones digits are 1, 7 and 9.",
+     "1 + 9 = 10.",
+     "So add 11 and 39 first."
+    ],
+    "answer": "11 and 39"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [],
+    "va": [
+     "2.CE.1f"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "11 and 27": "pickedTheFirstTwo",
+    "27 and 39": "pairDoesNotMakeTen"
+   },
+   "slots": {
+    "p": 0,
+    "k": 1,
+    "r": 7,
+    "t1": 1,
+    "t2": 2,
+    "t3": 3,
+    "o1": 1,
+    "o2": 7,
+    "o3": 9,
+    "n1": 11,
+    "n2": 27,
+    "n3": 39,
+    "keyText": "11 and 39"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": "11 and 39",
+   "answerType": "choice",
+   "choices": [
+    "11 and 27",
+    "27 and 39",
+    "11 and 39"
+   ],
+   "display": {
+    "promptText": "To add 11 + 27 + 39, you can make a ten first. Which two numbers have ones that add up to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-group-ten-s7-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "severalNumbers",
+  "structureType": "groupToMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-group-ten",
+   "seed": 7,
+   "specMd5": "578c4a4dd09e7e5ccd25071ec3f34849",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-group-ten",
+  "blueprintId": "calc-g2-group-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Look only at the ones digits. Find the two that make a ten.",
+   "steps": [
+    "The ones digits are 1, 8 and 2.",
+    "Add the ones digits two at a time.",
+    "The pair that makes ten tells you which two numbers to add first."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "To add 38 + 16 + 12, you can make a ten first. Which two numbers have ones that add up to 10?",
+    "steps": [
+     "The ones digits are 8, 6 and 2.",
+     "8 + 2 = 10.",
+     "So add 38 and 12 first."
+    ],
+    "answer": "38 and 12"
+   },
+   "feedback": {
+    "51 and 18": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+    "51 and 22": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+   },
+   "solution": {
+    "steps": [
+     "The ones digits are 1, 8 and 2.",
+     "8 + 2 = 10.",
+     "So add 18 and 22 first."
+    ],
+    "answer": "18 and 22"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [],
+    "va": [
+     "2.CE.1f"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "51 and 18": "pickedTheFirstTwo",
+    "51 and 22": "pairDoesNotMakeTen"
+   },
+   "slots": {
+    "p": 1,
+    "k": 8,
+    "r": 1,
+    "t1": 5,
+    "t2": 1,
+    "t3": 2,
+    "o1": 1,
+    "o2": 8,
+    "o3": 2,
+    "n1": 51,
+    "n2": 18,
+    "n3": 22,
+    "keyText": "18 and 22"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": "18 and 22",
+   "answerType": "choice",
+   "choices": [
+    "18 and 22",
+    "51 and 22",
+    "51 and 18"
+   ],
+   "display": {
+    "promptText": "To add 51 + 18 + 22, you can make a ten first. Which two numbers have ones that add up to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-group-ten-s10-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "severalNumbers",
+  "structureType": "groupToMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-group-ten",
+   "seed": 10,
+   "specMd5": "578c4a4dd09e7e5ccd25071ec3f34849",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-group-ten",
+  "blueprintId": "calc-g2-group-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Look only at the ones digits. Find the two that make a ten.",
+   "steps": [
+    "The ones digits are 9, 4 and 6.",
+    "Add the ones digits two at a time.",
+    "The pair that makes ten tells you which two numbers to add first."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "To add 26 + 38 + 12, you can make a ten first. Which two numbers have ones that add up to 10?",
+    "steps": [
+     "The ones digits are 6, 8 and 2.",
+     "8 + 2 = 10.",
+     "So add 38 and 12 first."
+    ],
+    "answer": "38 and 12"
+   },
+   "feedback": {
+    "19 and 24": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+    "19 and 36": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+   },
+   "solution": {
+    "steps": [
+     "The ones digits are 9, 4 and 6.",
+     "4 + 6 = 10.",
+     "So add 24 and 36 first."
+    ],
+    "answer": "24 and 36"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [],
+    "va": [
+     "2.CE.1f"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "19 and 24": "pickedTheFirstTwo",
+    "19 and 36": "pairDoesNotMakeTen"
+   },
+   "slots": {
+    "p": 1,
+    "k": 4,
+    "r": 9,
+    "t1": 1,
+    "t2": 2,
+    "t3": 3,
+    "o1": 9,
+    "o2": 4,
+    "o3": 6,
+    "n1": 19,
+    "n2": 24,
+    "n3": 36,
+    "keyText": "24 and 36"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": "24 and 36",
+   "answerType": "choice",
+   "choices": [
+    "19 and 36",
+    "19 and 24",
+    "24 and 36"
+   ],
+   "display": {
+    "promptText": "To add 19 + 24 + 36, you can make a ten first. Which two numbers have ones that add up to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-group-ten-s13-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "severalNumbers",
+  "structureType": "groupToMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-group-ten",
+   "seed": 13,
+   "specMd5": "578c4a4dd09e7e5ccd25071ec3f34849",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-group-ten",
+  "blueprintId": "calc-g2-group-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Look only at the ones digits. Find the two that make a ten.",
+   "steps": [
+    "The ones digits are 7, 6 and 4.",
+    "Add the ones digits two at a time.",
+    "The pair that makes ten tells you which two numbers to add first."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "To add 37 + 11 + 33, you can make a ten first. Which two numbers have ones that add up to 10?",
+    "steps": [
+     "The ones digits are 7, 1 and 3.",
+     "7 + 3 = 10.",
+     "So add 37 and 33 first."
+    ],
+    "answer": "37 and 33"
+   },
+   "feedback": {
+    "17 and 26": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+    "17 and 14": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+   },
+   "solution": {
+    "steps": [
+     "The ones digits are 7, 6 and 4.",
+     "6 + 4 = 10.",
+     "So add 26 and 14 first."
+    ],
+    "answer": "26 and 14"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [],
+    "va": [
+     "2.CE.1f"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "17 and 26": "pickedTheFirstTwo",
+    "17 and 14": "pairDoesNotMakeTen"
+   },
+   "slots": {
+    "p": 1,
+    "k": 6,
+    "r": 7,
+    "t1": 1,
+    "t2": 2,
+    "t3": 1,
+    "o1": 7,
+    "o2": 6,
+    "o3": 4,
+    "n1": 17,
+    "n2": 26,
+    "n3": 14,
+    "keyText": "26 and 14"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": "26 and 14",
+   "answerType": "choice",
+   "choices": [
+    "17 and 26",
+    "17 and 14",
+    "26 and 14"
+   ],
+   "display": {
+    "promptText": "To add 17 + 26 + 14, you can make a ten first. Which two numbers have ones that add up to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-group-ten-s16-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "severalNumbers",
+  "structureType": "groupToMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-group-ten",
+   "seed": 16,
+   "specMd5": "578c4a4dd09e7e5ccd25071ec3f34849",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-group-ten",
+  "blueprintId": "calc-g2-group-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Look only at the ones digits. Find the two that make a ten.",
+   "steps": [
+    "The ones digits are 7, 1 and 9.",
+    "Add the ones digits two at a time.",
+    "The pair that makes ten tells you which two numbers to add first."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "To add 11 + 45 + 25, you can make a ten first. Which two numbers have ones that add up to 10?",
+    "steps": [
+     "The ones digits are 1, 5 and 5.",
+     "5 + 5 = 10.",
+     "So add 45 and 25 first."
+    ],
+    "answer": "45 and 25"
+   },
+   "feedback": {
+    "17 and 31": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+    "17 and 29": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+   },
+   "solution": {
+    "steps": [
+     "The ones digits are 7, 1 and 9.",
+     "1 + 9 = 10.",
+     "So add 31 and 29 first."
+    ],
+    "answer": "31 and 29"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [],
+    "va": [
+     "2.CE.1f"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "17 and 31": "pickedTheFirstTwo",
+    "17 and 29": "pairDoesNotMakeTen"
+   },
+   "slots": {
+    "p": 1,
+    "k": 1,
+    "r": 7,
+    "t1": 1,
+    "t2": 3,
+    "t3": 2,
+    "o1": 7,
+    "o2": 1,
+    "o3": 9,
+    "n1": 17,
+    "n2": 31,
+    "n3": 29,
+    "keyText": "31 and 29"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": "31 and 29",
+   "answerType": "choice",
+   "choices": [
+    "17 and 29",
+    "17 and 31",
+    "31 and 29"
+   ],
+   "display": {
+    "promptText": "To add 17 + 31 + 29, you can make a ten first. Which two numbers have ones that add up to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-group-ten-s19-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "severalNumbers",
+  "structureType": "groupToMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-group-ten",
+   "seed": 19,
+   "specMd5": "578c4a4dd09e7e5ccd25071ec3f34849",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-group-ten",
+  "blueprintId": "calc-g2-group-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Look only at the ones digits. Find the two that make a ten.",
+   "steps": [
+    "The ones digits are 1, 2 and 8.",
+    "Add the ones digits two at a time.",
+    "The pair that makes ten tells you which two numbers to add first."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "To add 23 + 29 + 41, you can make a ten first. Which two numbers have ones that add up to 10?",
+    "steps": [
+     "The ones digits are 3, 9 and 1.",
+     "9 + 1 = 10.",
+     "So add 29 and 41 first."
+    ],
+    "answer": "29 and 41"
+   },
+   "feedback": {
+    "21 and 32": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+    "21 and 38": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+   },
+   "solution": {
+    "steps": [
+     "The ones digits are 1, 2 and 8.",
+     "2 + 8 = 10.",
+     "So add 32 and 38 first."
+    ],
+    "answer": "32 and 38"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [],
+    "va": [
+     "2.CE.1f"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "21 and 32": "pickedTheFirstTwo",
+    "21 and 38": "pairDoesNotMakeTen"
+   },
+   "slots": {
+    "p": 1,
+    "k": 2,
+    "r": 1,
+    "t1": 2,
+    "t2": 3,
+    "t3": 3,
+    "o1": 1,
+    "o2": 2,
+    "o3": 8,
+    "n1": 21,
+    "n2": 32,
+    "n3": 38,
+    "keyText": "32 and 38"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": "32 and 38",
+   "answerType": "choice",
+   "choices": [
+    "21 and 32",
+    "21 and 38",
+    "32 and 38"
+   ],
+   "display": {
+    "promptText": "To add 21 + 32 + 38, you can make a ten first. Which two numbers have ones that add up to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-group-ten-s22-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "severalNumbers",
+  "structureType": "groupToMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-group-ten",
+   "seed": 22,
+   "specMd5": "578c4a4dd09e7e5ccd25071ec3f34849",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-group-ten",
+  "blueprintId": "calc-g2-group-ten",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Look only at the ones digits. Find the two that make a ten.",
+   "steps": [
+    "The ones digits are 8, 7 and 3.",
+    "Add the ones digits two at a time.",
+    "The pair that makes ten tells you which two numbers to add first."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "To add 44 + 17 + 26, you can make a ten first. Which two numbers have ones that add up to 10?",
+    "steps": [
+     "The ones digits are 4, 7 and 6.",
+     "4 + 6 = 10.",
+     "So add 44 and 26 first."
+    ],
+    "answer": "44 and 26"
+   },
+   "feedback": {
+    "18 and 67": "Those are just the first two numbers, and their ones do not make ten. You can add in any order, so check the other pairs.",
+    "18 and 13": "Add the ones digits of that pair again. They do not make ten, so try another pair."
+   },
+   "solution": {
+    "steps": [
+     "The ones digits are 8, 7 and 3.",
+     "7 + 3 = 10.",
+     "So add 67 and 13 first."
+    ],
+    "answer": "67 and 13"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [],
+    "va": [
+     "2.CE.1f"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "18 and 67": "pickedTheFirstTwo",
+    "18 and 13": "pairDoesNotMakeTen"
+   },
+   "slots": {
+    "p": 1,
+    "k": 7,
+    "r": 8,
+    "t1": 1,
+    "t2": 6,
+    "t3": 1,
+    "o1": 8,
+    "o2": 7,
+    "o3": 3,
+    "n1": 18,
+    "n2": 67,
+    "n3": 13,
+    "keyText": "67 and 13"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "+",
+   "answer": "67 and 13",
+   "answerType": "choice",
+   "choices": [
+    "18 and 13",
+    "67 and 13",
+    "18 and 67"
+   ],
+   "display": {
+    "promptText": "To add 18 + 67 + 13, you can make a ten first. Which two numbers have ones that add up to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-rename-zero-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within1000",
+  "structureType": "renameToSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-rename-zero",
+   "seed": 1,
+   "specMd5": "24b2fbf9a1e4639e8d5e3de8ca66f568",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-rename-zero",
+  "blueprintId": "calc-g2-rename-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The right choice is still worth 707, and every place has enough to take away 199.",
+   "steps": [
+    "Check the value of each choice. Does it still make 707?",
+    "Then check the ones and the tens. Are there enough of each to take away 199?",
+    "There are no tens in 707, so a hundred must be traded before a ten can be."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which way of writing 702 has enough tens and enough ones to take away 639?",
+    "steps": [
+     "Trade a hundred for ten tens: 6 hundreds, 10 tens, 2 ones.",
+     "Trade a ten for ten ones: 6 hundreds, 9 tens, 12 ones.",
+     "Now every place has enough to take away 639."
+    ],
+    "answer": "6 hundreds, 9 tens, 12 ones"
+   },
+   "feedback": {
+    "7 hundreds, 9 tens, 17 ones": "That choice is worth a hundred more than 707. A hundred was traded, so there is one fewer hundred.",
+    "6 hundreds, 10 tens, 7 ones": "That choice is worth 707, but there are still not enough ones. Trade one of the tens for ten ones too.",
+    "7 hundreds, 0 tens, 7 ones": "That is 707 with no trades. There are not enough ones or tens to take away 199."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 6 hundreds, 10 tens, 7 ones.",
+     "Trade a ten for ten ones: 6 hundreds, 9 tens, 17 ones.",
+     "Now every place has enough to take away 199."
+    ],
+    "answer": "6 hundreds, 9 tens, 17 ones"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7",
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "7 hundreds, 9 tens, 17 ones": "acrossZeroSlip",
+    "6 hundreds, 10 tens, 7 ones": "tradedOnlyOnce",
+    "7 hundreds, 0 tens, 7 ones": "smallerFromLarger"
+   },
+   "slots": {
+    "h": 7,
+    "o": 7,
+    "H": 1,
+    "T": 9,
+    "V": 9,
+    "first": 707,
+    "second": 199,
+    "hm1": 6,
+    "o10": 17,
+    "onesTxt": "7 ones",
+    "key": "6 hundreds, 9 tens, 17 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": "6 hundreds, 9 tens, 17 ones",
+   "answerType": "choice",
+   "choices": [
+    "7 hundreds, 9 tens, 17 ones",
+    "6 hundreds, 10 tens, 7 ones",
+    "6 hundreds, 9 tens, 17 ones",
+    "7 hundreds, 0 tens, 7 ones"
+   ],
+   "display": {
+    "promptText": "Which way of writing 707 has enough tens and enough ones to take away 199?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-rename-zero-s4-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within1000",
+  "structureType": "renameToSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-rename-zero",
+   "seed": 4,
+   "specMd5": "24b2fbf9a1e4639e8d5e3de8ca66f568",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-rename-zero",
+  "blueprintId": "calc-g2-rename-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The right choice is still worth 706, and every place has enough to take away 558.",
+   "steps": [
+    "Check the value of each choice. Does it still make 706?",
+    "Then check the ones and the tens. Are there enough of each to take away 558?",
+    "There are no tens in 706, so a hundred must be traded before a ten can be."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which way of writing 802 has enough tens and enough ones to take away 716?",
+    "steps": [
+     "Trade a hundred for ten tens: 7 hundreds, 10 tens, 2 ones.",
+     "Trade a ten for ten ones: 7 hundreds, 9 tens, 12 ones.",
+     "Now every place has enough to take away 716."
+    ],
+    "answer": "7 hundreds, 9 tens, 12 ones"
+   },
+   "feedback": {
+    "7 hundreds, 9 tens, 16 ones": "That choice is worth a hundred more than 706. A hundred was traded, so there is one fewer hundred.",
+    "6 hundreds, 10 tens, 6 ones": "That choice is worth 706, but there are still not enough ones. Trade one of the tens for ten ones too.",
+    "7 hundreds, 0 tens, 6 ones": "That is 706 with no trades. There are not enough ones or tens to take away 558."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 6 hundreds, 10 tens, 6 ones.",
+     "Trade a ten for ten ones: 6 hundreds, 9 tens, 16 ones.",
+     "Now every place has enough to take away 558."
+    ],
+    "answer": "6 hundreds, 9 tens, 16 ones"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7",
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "7 hundreds, 9 tens, 16 ones": "acrossZeroSlip",
+    "6 hundreds, 10 tens, 6 ones": "tradedOnlyOnce",
+    "7 hundreds, 0 tens, 6 ones": "smallerFromLarger"
+   },
+   "slots": {
+    "h": 7,
+    "o": 6,
+    "H": 5,
+    "T": 5,
+    "V": 8,
+    "first": 706,
+    "second": 558,
+    "hm1": 6,
+    "o10": 16,
+    "onesTxt": "6 ones",
+    "key": "6 hundreds, 9 tens, 16 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": "6 hundreds, 9 tens, 16 ones",
+   "answerType": "choice",
+   "choices": [
+    "7 hundreds, 0 tens, 6 ones",
+    "6 hundreds, 10 tens, 6 ones",
+    "6 hundreds, 9 tens, 16 ones",
+    "7 hundreds, 9 tens, 16 ones"
+   ],
+   "display": {
+    "promptText": "Which way of writing 706 has enough tens and enough ones to take away 558?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-rename-zero-s7-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within1000",
+  "structureType": "renameToSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-rename-zero",
+   "seed": 7,
+   "specMd5": "24b2fbf9a1e4639e8d5e3de8ca66f568",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-rename-zero",
+  "blueprintId": "calc-g2-rename-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The right choice is still worth 501, and every place has enough to take away 289.",
+   "steps": [
+    "Check the value of each choice. Does it still make 501?",
+    "Then check the ones and the tens. Are there enough of each to take away 289?",
+    "There are no tens in 501, so a hundred must be traded before a ten can be."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which way of writing 502 has enough tens and enough ones to take away 138?",
+    "steps": [
+     "Trade a hundred for ten tens: 4 hundreds, 10 tens, 2 ones.",
+     "Trade a ten for ten ones: 4 hundreds, 9 tens, 12 ones.",
+     "Now every place has enough to take away 138."
+    ],
+    "answer": "4 hundreds, 9 tens, 12 ones"
+   },
+   "feedback": {
+    "5 hundreds, 9 tens, 11 ones": "That choice is worth a hundred more than 501. A hundred was traded, so there is one fewer hundred.",
+    "4 hundreds, 10 tens, 1 one": "That choice is worth 501, but there are still not enough ones. Trade one of the tens for ten ones too.",
+    "5 hundreds, 0 tens, 1 one": "That is 501 with no trades. There are not enough ones or tens to take away 289."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 4 hundreds, 10 tens, 1 one.",
+     "Trade a ten for ten ones: 4 hundreds, 9 tens, 11 ones.",
+     "Now every place has enough to take away 289."
+    ],
+    "answer": "4 hundreds, 9 tens, 11 ones"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7",
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "5 hundreds, 9 tens, 11 ones": "acrossZeroSlip",
+    "4 hundreds, 10 tens, 1 one": "tradedOnlyOnce",
+    "5 hundreds, 0 tens, 1 one": "smallerFromLarger"
+   },
+   "slots": {
+    "h": 5,
+    "o": 1,
+    "H": 2,
+    "T": 8,
+    "V": 9,
+    "first": 501,
+    "second": 289,
+    "hm1": 4,
+    "o10": 11,
+    "onesTxt": "1 one",
+    "key": "4 hundreds, 9 tens, 11 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": "4 hundreds, 9 tens, 11 ones",
+   "answerType": "choice",
+   "choices": [
+    "4 hundreds, 10 tens, 1 one",
+    "4 hundreds, 9 tens, 11 ones",
+    "5 hundreds, 9 tens, 11 ones",
+    "5 hundreds, 0 tens, 1 one"
+   ],
+   "display": {
+    "promptText": "Which way of writing 501 has enough tens and enough ones to take away 289?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-rename-zero-s10-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within1000",
+  "structureType": "renameToSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-rename-zero",
+   "seed": 10,
+   "specMd5": "24b2fbf9a1e4639e8d5e3de8ca66f568",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-rename-zero",
+  "blueprintId": "calc-g2-rename-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The right choice is still worth 903, and every place has enough to take away 286.",
+   "steps": [
+    "Check the value of each choice. Does it still make 903?",
+    "Then check the ones and the tens. Are there enough of each to take away 286?",
+    "There are no tens in 903, so a hundred must be traded before a ten can be."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which way of writing 706 has enough tens and enough ones to take away 178?",
+    "steps": [
+     "Trade a hundred for ten tens: 6 hundreds, 10 tens, 6 ones.",
+     "Trade a ten for ten ones: 6 hundreds, 9 tens, 16 ones.",
+     "Now every place has enough to take away 178."
+    ],
+    "answer": "6 hundreds, 9 tens, 16 ones"
+   },
+   "feedback": {
+    "9 hundreds, 9 tens, 13 ones": "That choice is worth a hundred more than 903. A hundred was traded, so there is one fewer hundred.",
+    "8 hundreds, 10 tens, 3 ones": "That choice is worth 903, but there are still not enough ones. Trade one of the tens for ten ones too.",
+    "9 hundreds, 0 tens, 3 ones": "That is 903 with no trades. There are not enough ones or tens to take away 286."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 8 hundreds, 10 tens, 3 ones.",
+     "Trade a ten for ten ones: 8 hundreds, 9 tens, 13 ones.",
+     "Now every place has enough to take away 286."
+    ],
+    "answer": "8 hundreds, 9 tens, 13 ones"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7",
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "9 hundreds, 9 tens, 13 ones": "acrossZeroSlip",
+    "8 hundreds, 10 tens, 3 ones": "tradedOnlyOnce",
+    "9 hundreds, 0 tens, 3 ones": "smallerFromLarger"
+   },
+   "slots": {
+    "h": 9,
+    "o": 3,
+    "H": 2,
+    "T": 8,
+    "V": 6,
+    "first": 903,
+    "second": 286,
+    "hm1": 8,
+    "o10": 13,
+    "onesTxt": "3 ones",
+    "key": "8 hundreds, 9 tens, 13 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": "8 hundreds, 9 tens, 13 ones",
+   "answerType": "choice",
+   "choices": [
+    "8 hundreds, 9 tens, 13 ones",
+    "9 hundreds, 9 tens, 13 ones",
+    "8 hundreds, 10 tens, 3 ones",
+    "9 hundreds, 0 tens, 3 ones"
+   ],
+   "display": {
+    "promptText": "Which way of writing 903 has enough tens and enough ones to take away 286?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-rename-zero-s13-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within1000",
+  "structureType": "renameToSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-rename-zero",
+   "seed": 13,
+   "specMd5": "24b2fbf9a1e4639e8d5e3de8ca66f568",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-rename-zero",
+  "blueprintId": "calc-g2-rename-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The right choice is still worth 901, and every place has enough to take away 418.",
+   "steps": [
+    "Check the value of each choice. Does it still make 901?",
+    "Then check the ones and the tens. Are there enough of each to take away 418?",
+    "There are no tens in 901, so a hundred must be traded before a ten can be."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which way of writing 303 has enough tens and enough ones to take away 247?",
+    "steps": [
+     "Trade a hundred for ten tens: 2 hundreds, 10 tens, 3 ones.",
+     "Trade a ten for ten ones: 2 hundreds, 9 tens, 13 ones.",
+     "Now every place has enough to take away 247."
+    ],
+    "answer": "2 hundreds, 9 tens, 13 ones"
+   },
+   "feedback": {
+    "9 hundreds, 9 tens, 11 ones": "That choice is worth a hundred more than 901. A hundred was traded, so there is one fewer hundred.",
+    "8 hundreds, 10 tens, 1 one": "That choice is worth 901, but there are still not enough ones. Trade one of the tens for ten ones too.",
+    "9 hundreds, 0 tens, 1 one": "That is 901 with no trades. There are not enough ones or tens to take away 418."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 8 hundreds, 10 tens, 1 one.",
+     "Trade a ten for ten ones: 8 hundreds, 9 tens, 11 ones.",
+     "Now every place has enough to take away 418."
+    ],
+    "answer": "8 hundreds, 9 tens, 11 ones"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7",
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "9 hundreds, 9 tens, 11 ones": "acrossZeroSlip",
+    "8 hundreds, 10 tens, 1 one": "tradedOnlyOnce",
+    "9 hundreds, 0 tens, 1 one": "smallerFromLarger"
+   },
+   "slots": {
+    "h": 9,
+    "o": 1,
+    "H": 4,
+    "T": 1,
+    "V": 8,
+    "first": 901,
+    "second": 418,
+    "hm1": 8,
+    "o10": 11,
+    "onesTxt": "1 one",
+    "key": "8 hundreds, 9 tens, 11 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": "8 hundreds, 9 tens, 11 ones",
+   "answerType": "choice",
+   "choices": [
+    "9 hundreds, 9 tens, 11 ones",
+    "8 hundreds, 10 tens, 1 one",
+    "9 hundreds, 0 tens, 1 one",
+    "8 hundreds, 9 tens, 11 ones"
+   ],
+   "display": {
+    "promptText": "Which way of writing 901 has enough tens and enough ones to take away 418?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-rename-zero-s16-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within1000",
+  "structureType": "renameToSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-rename-zero",
+   "seed": 16,
+   "specMd5": "24b2fbf9a1e4639e8d5e3de8ca66f568",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-rename-zero",
+  "blueprintId": "calc-g2-rename-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The right choice is still worth 803, and every place has enough to take away 368.",
+   "steps": [
+    "Check the value of each choice. Does it still make 803?",
+    "Then check the ones and the tens. Are there enough of each to take away 368?",
+    "There are no tens in 803, so a hundred must be traded before a ten can be."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which way of writing 504 has enough tens and enough ones to take away 299?",
+    "steps": [
+     "Trade a hundred for ten tens: 4 hundreds, 10 tens, 4 ones.",
+     "Trade a ten for ten ones: 4 hundreds, 9 tens, 14 ones.",
+     "Now every place has enough to take away 299."
+    ],
+    "answer": "4 hundreds, 9 tens, 14 ones"
+   },
+   "feedback": {
+    "8 hundreds, 9 tens, 13 ones": "That choice is worth a hundred more than 803. A hundred was traded, so there is one fewer hundred.",
+    "7 hundreds, 10 tens, 3 ones": "That choice is worth 803, but there are still not enough ones. Trade one of the tens for ten ones too.",
+    "8 hundreds, 0 tens, 3 ones": "That is 803 with no trades. There are not enough ones or tens to take away 368."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 7 hundreds, 10 tens, 3 ones.",
+     "Trade a ten for ten ones: 7 hundreds, 9 tens, 13 ones.",
+     "Now every place has enough to take away 368."
+    ],
+    "answer": "7 hundreds, 9 tens, 13 ones"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7",
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "8 hundreds, 9 tens, 13 ones": "acrossZeroSlip",
+    "7 hundreds, 10 tens, 3 ones": "tradedOnlyOnce",
+    "8 hundreds, 0 tens, 3 ones": "smallerFromLarger"
+   },
+   "slots": {
+    "h": 8,
+    "o": 3,
+    "H": 3,
+    "T": 6,
+    "V": 8,
+    "first": 803,
+    "second": 368,
+    "hm1": 7,
+    "o10": 13,
+    "onesTxt": "3 ones",
+    "key": "7 hundreds, 9 tens, 13 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": "7 hundreds, 9 tens, 13 ones",
+   "answerType": "choice",
+   "choices": [
+    "8 hundreds, 9 tens, 13 ones",
+    "7 hundreds, 9 tens, 13 ones",
+    "7 hundreds, 10 tens, 3 ones",
+    "8 hundreds, 0 tens, 3 ones"
+   ],
+   "display": {
+    "promptText": "Which way of writing 803 has enough tens and enough ones to take away 368?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-rename-zero-s19-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within1000",
+  "structureType": "renameToSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-rename-zero",
+   "seed": 19,
+   "specMd5": "24b2fbf9a1e4639e8d5e3de8ca66f568",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-rename-zero",
+  "blueprintId": "calc-g2-rename-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The right choice is still worth 804, and every place has enough to take away 747.",
+   "steps": [
+    "Check the value of each choice. Does it still make 804?",
+    "Then check the ones and the tens. Are there enough of each to take away 747?",
+    "There are no tens in 804, so a hundred must be traded before a ten can be."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which way of writing 805 has enough tens and enough ones to take away 226?",
+    "steps": [
+     "Trade a hundred for ten tens: 7 hundreds, 10 tens, 5 ones.",
+     "Trade a ten for ten ones: 7 hundreds, 9 tens, 15 ones.",
+     "Now every place has enough to take away 226."
+    ],
+    "answer": "7 hundreds, 9 tens, 15 ones"
+   },
+   "feedback": {
+    "8 hundreds, 9 tens, 14 ones": "That choice is worth a hundred more than 804. A hundred was traded, so there is one fewer hundred.",
+    "7 hundreds, 10 tens, 4 ones": "That choice is worth 804, but there are still not enough ones. Trade one of the tens for ten ones too.",
+    "8 hundreds, 0 tens, 4 ones": "That is 804 with no trades. There are not enough ones or tens to take away 747."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 7 hundreds, 10 tens, 4 ones.",
+     "Trade a ten for ten ones: 7 hundreds, 9 tens, 14 ones.",
+     "Now every place has enough to take away 747."
+    ],
+    "answer": "7 hundreds, 9 tens, 14 ones"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7",
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "8 hundreds, 9 tens, 14 ones": "acrossZeroSlip",
+    "7 hundreds, 10 tens, 4 ones": "tradedOnlyOnce",
+    "8 hundreds, 0 tens, 4 ones": "smallerFromLarger"
+   },
+   "slots": {
+    "h": 8,
+    "o": 4,
+    "H": 7,
+    "T": 4,
+    "V": 7,
+    "first": 804,
+    "second": 747,
+    "hm1": 7,
+    "o10": 14,
+    "onesTxt": "4 ones",
+    "key": "7 hundreds, 9 tens, 14 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": "7 hundreds, 9 tens, 14 ones",
+   "answerType": "choice",
+   "choices": [
+    "7 hundreds, 9 tens, 14 ones",
+    "7 hundreds, 10 tens, 4 ones",
+    "8 hundreds, 9 tens, 14 ones",
+    "8 hundreds, 0 tens, 4 ones"
+   ],
+   "display": {
+    "promptText": "Which way of writing 804 has enough tens and enough ones to take away 747?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-rename-zero-s22-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "conceptual",
+  "subskill": "within1000",
+  "structureType": "renameToSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-rename-zero",
+   "seed": 22,
+   "specMd5": "24b2fbf9a1e4639e8d5e3de8ca66f568",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-rename-zero",
+  "blueprintId": "calc-g2-rename-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "The right choice is still worth 703, and every place has enough to take away 295.",
+   "steps": [
+    "Check the value of each choice. Does it still make 703?",
+    "Then check the ones and the tens. Are there enough of each to take away 295?",
+    "There are no tens in 703, so a hundred must be traded before a ten can be."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "Which way of writing 706 has enough tens and enough ones to take away 287?",
+    "steps": [
+     "Trade a hundred for ten tens: 6 hundreds, 10 tens, 6 ones.",
+     "Trade a ten for ten ones: 6 hundreds, 9 tens, 16 ones.",
+     "Now every place has enough to take away 287."
+    ],
+    "answer": "6 hundreds, 9 tens, 16 ones"
+   },
+   "feedback": {
+    "7 hundreds, 9 tens, 13 ones": "That choice is worth a hundred more than 703. A hundred was traded, so there is one fewer hundred.",
+    "6 hundreds, 10 tens, 3 ones": "That choice is worth 703, but there are still not enough ones. Trade one of the tens for ten ones too.",
+    "7 hundreds, 0 tens, 3 ones": "That is 703 with no trades. There are not enough ones or tens to take away 295."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 6 hundreds, 10 tens, 3 ones.",
+     "Trade a ten for ten ones: 6 hundreds, 9 tens, 13 ones.",
+     "Now every place has enough to take away 295."
+    ],
+    "answer": "6 hundreds, 9 tens, 13 ones"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7",
+     "2.NBT.B.9"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "choice",
+   "widget": null,
+   "family": "conceptual",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "7 hundreds, 9 tens, 13 ones": "acrossZeroSlip",
+    "6 hundreds, 10 tens, 3 ones": "tradedOnlyOnce",
+    "7 hundreds, 0 tens, 3 ones": "smallerFromLarger"
+   },
+   "slots": {
+    "h": 7,
+    "o": 3,
+    "H": 2,
+    "T": 9,
+    "V": 5,
+    "first": 703,
+    "second": 295,
+    "hm1": 6,
+    "o10": 13,
+    "onesTxt": "3 ones",
+    "key": "6 hundreds, 9 tens, 13 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "-",
+   "answer": "6 hundreds, 9 tens, 13 ones",
+   "answerType": "choice",
+   "choices": [
+    "6 hundreds, 10 tens, 3 ones",
+    "7 hundreds, 0 tens, 3 ones",
+    "6 hundreds, 9 tens, 13 ones",
+    "7 hundreds, 9 tens, 13 ones"
+   ],
+   "display": {
+    "promptText": "Which way of writing 703 has enough tens and enough ones to take away 295?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-ten-hundred-nocross-s1-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundred",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-ten-hundred-nocross",
+   "seed": 1,
+   "specMd5": "ed7a2693716e8b40529fe58dd978ef44",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-ten-hundred-nocross",
+  "blueprintId": "calc-g2-ten-hundred",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "100 less changes only the hundreds digit. Find it in 638.",
+   "steps": [
+    "The hundreds digit of 638 is 6.",
+    "Make that digit one less. Keep the other digits the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number is 10 less than 662?",
+    "steps": [
+     "The tens digit of 662 is 6.",
+     "One less is 5, so 10 less than 662 is 652."
+    ],
+    "answer": 652
+   },
+   "feedback": {
+    "628": "That changes the tens digit. 100 less changes the hundreds digit.",
+    "637": "That is 1 less. 100 less changes the hundreds digit, not the ones.",
+    "738": "That is 100 more. Less means the hundreds digit goes down by one."
+   },
+   "solution": {
+    "steps": [
+     "The hundreds digit of 638 is 6.",
+     "One less is 5, so 100 less than 638 is 538."
+    ],
+    "answer": 538
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.8"
+    ],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.2"
+    ],
+    "va": [],
+    "ga": [
+     "2.NR.2.2"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "628": "changedTheWrongPlace",
+    "637": "changedTheOnes",
+    "738": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "s": 1,
+    "h": 6,
+    "t": 3,
+    "o": 8,
+    "start": 638,
+    "amt": 100,
+    "key": 538,
+    "digit": 6,
+    "digitLess": 5,
+    "placeWord": "hundreds",
+    "otherPlace": "tens"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 638,
+   "b": 100,
+   "op": "-",
+   "answer": 538,
+   "answerType": "choice",
+   "choices": [
+    538,
+    628,
+    637,
+    738
+   ],
+   "display": {
+    "promptText": "What number is 100 less than 638?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-ten-hundred-nocross-s12-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundred",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-ten-hundred-nocross",
+   "seed": 12,
+   "specMd5": "ed7a2693716e8b40529fe58dd978ef44",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-ten-hundred-nocross",
+  "blueprintId": "calc-g2-ten-hundred",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "10 less changes only the tens digit. Find it in 315.",
+   "steps": [
+    "The tens digit of 315 is 1.",
+    "Make that digit one less. Keep the other digits the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number is 100 less than 752?",
+    "steps": [
+     "The hundreds digit of 752 is 7.",
+     "One less is 6, so 100 less than 752 is 652."
+    ],
+    "answer": 652
+   },
+   "feedback": {
+    "215": "That changes the hundreds digit. 10 less changes the tens digit.",
+    "314": "That is 1 less. 10 less changes the tens digit, not the ones.",
+    "325": "That is 10 more. Less means the tens digit goes down by one."
+   },
+   "solution": {
+    "steps": [
+     "The tens digit of 315 is 1.",
+     "One less is 0, so 10 less than 315 is 305."
+    ],
+    "answer": 305
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.8"
+    ],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.2"
+    ],
+    "va": [],
+    "ga": [
+     "2.NR.2.2"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "215": "changedTheWrongPlace",
+    "314": "changedTheOnes",
+    "325": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "s": 0,
+    "h": 3,
+    "t": 1,
+    "o": 5,
+    "start": 315,
+    "amt": 10,
+    "key": 305,
+    "digit": 1,
+    "digitLess": 0,
+    "placeWord": "tens",
+    "otherPlace": "hundreds"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 315,
+   "b": 10,
+   "op": "-",
+   "answer": 305,
+   "answerType": "choice",
+   "choices": [
+    215,
+    305,
+    314,
+    325
+   ],
+   "display": {
+    "promptText": "What number is 10 less than 315?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-ten-hundred-nocross-s23-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundred",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-ten-hundred-nocross",
+   "seed": 23,
+   "specMd5": "ed7a2693716e8b40529fe58dd978ef44",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-ten-hundred-nocross",
+  "blueprintId": "calc-g2-ten-hundred",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "100 less changes only the hundreds digit. Find it in 482.",
+   "steps": [
+    "The hundreds digit of 482 is 4.",
+    "Make that digit one less. Keep the other digits the same."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number is 100 less than 666?",
+    "steps": [
+     "The hundreds digit of 666 is 6.",
+     "One less is 5, so 100 less than 666 is 566."
+    ],
+    "answer": 566
+   },
+   "feedback": {
+    "472": "That changes the tens digit. 100 less changes the hundreds digit.",
+    "481": "That is 1 less. 100 less changes the hundreds digit, not the ones.",
+    "582": "That is 100 more. Less means the hundreds digit goes down by one."
+   },
+   "solution": {
+    "steps": [
+     "The hundreds digit of 482 is 4.",
+     "One less is 3, so 100 less than 482 is 382."
+    ],
+    "answer": 382
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.8"
+    ],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.2"
+    ],
+    "va": [],
+    "ga": [
+     "2.NR.2.2"
+    ]
+   },
+   "difficulty": "easy",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "472": "changedTheWrongPlace",
+    "481": "changedTheOnes",
+    "582": "addedInsteadOfSubtracted"
+   },
+   "slots": {
+    "s": 1,
+    "h": 4,
+    "t": 8,
+    "o": 2,
+    "start": 482,
+    "amt": 100,
+    "key": 382,
+    "digit": 4,
+    "digitLess": 3,
+    "placeWord": "hundreds",
+    "otherPlace": "tens"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 482,
+   "b": 100,
+   "op": "-",
+   "answer": 382,
+   "answerType": "choice",
+   "choices": [
+    382,
+    472,
+    481,
+    582
+   ],
+   "display": {
+    "promptText": "What number is 100 less than 482?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-ten-hundred-across-less-s4-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundred",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-ten-hundred-across-less",
+   "seed": 4,
+   "specMd5": "083167244ca2388e1df7bf9f32c1cb01",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-ten-hundred-across-less",
+  "blueprintId": "calc-g2-ten-hundred",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "10 less takes away one ten. Look at the tens digit of 203.",
+   "steps": [
+    "203 has 0 tens, so there is no ten to take. Trade a hundred for ten tens.",
+    "Now 203 is 1 hundred, 10 tens and 3 ones. Take one ten away."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number is 10 less than 306?",
+    "steps": [
+     "Trade a hundred for ten tens: 2 hundreds, 10 tens and 6 ones.",
+     "Take one ten away: 2 hundreds, 9 tens and 6 ones.",
+     "So 10 less than 306 is 296."
+    ],
+    "answer": 296
+   },
+   "feedback": {
+    "103": "That is 100 less. 10 less takes away one ten, not one hundred.",
+    "213": "That is 10 more. Less means take away, so the number gets smaller.",
+    "293": "You made 9 tens but kept 2 hundreds. A hundred was traded for the tens, so the hundreds digit goes down by one too."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 1 hundred, 10 tens and 3 ones.",
+     "Take one ten away: 1 hundred, 9 tens and 3 ones.",
+     "So 10 less than 203 is 193."
+    ],
+    "answer": 193
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.8"
+    ],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.2"
+    ],
+    "va": [],
+    "ga": [
+     "2.NR.2.2"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "103": "changedTheWrongPlace",
+    "213": "addedInsteadOfSubtracted",
+    "293": "acrossZeroSlip"
+   },
+   "slots": {
+    "h": 2,
+    "o": 3,
+    "start": 203,
+    "key": 193,
+    "hTxt": "1 hundred",
+    "oTxt": "3 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 203,
+   "b": 10,
+   "op": "-",
+   "answer": 193,
+   "answerType": "choice",
+   "choices": [
+    103,
+    193,
+    213,
+    293
+   ],
+   "display": {
+    "promptText": "What number is 10 less than 203?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-ten-hundred-across-less-s16-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundred",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-ten-hundred-across-less",
+   "seed": 16,
+   "specMd5": "083167244ca2388e1df7bf9f32c1cb01",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-ten-hundred-across-less",
+  "blueprintId": "calc-g2-ten-hundred",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "10 less takes away one ten. Look at the tens digit of 801.",
+   "steps": [
+    "801 has 0 tens, so there is no ten to take. Trade a hundred for ten tens.",
+    "Now 801 is 7 hundreds, 10 tens and 1 one. Take one ten away."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number is 10 less than 203?",
+    "steps": [
+     "Trade a hundred for ten tens: 1 hundred, 10 tens and 3 ones.",
+     "Take one ten away: 1 hundred, 9 tens and 3 ones.",
+     "So 10 less than 203 is 193."
+    ],
+    "answer": 193
+   },
+   "feedback": {
+    "701": "That is 100 less. 10 less takes away one ten, not one hundred.",
+    "811": "That is 10 more. Less means take away, so the number gets smaller.",
+    "891": "You made 9 tens but kept 8 hundreds. A hundred was traded for the tens, so the hundreds digit goes down by one too."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 7 hundreds, 10 tens and 1 one.",
+     "Take one ten away: 7 hundreds, 9 tens and 1 one.",
+     "So 10 less than 801 is 791."
+    ],
+    "answer": 791
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.8"
+    ],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.2"
+    ],
+    "va": [],
+    "ga": [
+     "2.NR.2.2"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "701": "changedTheWrongPlace",
+    "811": "addedInsteadOfSubtracted",
+    "891": "acrossZeroSlip"
+   },
+   "slots": {
+    "h": 8,
+    "o": 1,
+    "start": 801,
+    "key": 791,
+    "hTxt": "7 hundreds",
+    "oTxt": "1 one"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 801,
+   "b": 10,
+   "op": "-",
+   "answer": 791,
+   "answerType": "choice",
+   "choices": [
+    701,
+    791,
+    811,
+    891
+   ],
+   "display": {
+    "promptText": "What number is 10 less than 801?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-ten-hundred-across-less-s29-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundred",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-ten-hundred-across-less",
+   "seed": 29,
+   "specMd5": "083167244ca2388e1df7bf9f32c1cb01",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-ten-hundred-across-less",
+  "blueprintId": "calc-g2-ten-hundred",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "10 less takes away one ten. Look at the tens digit of 603.",
+   "steps": [
+    "603 has 0 tens, so there is no ten to take. Trade a hundred for ten tens.",
+    "Now 603 is 5 hundreds, 10 tens and 3 ones. Take one ten away."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number is 10 less than 500?",
+    "steps": [
+     "Trade a hundred for ten tens: 4 hundreds, 10 tens and 0 ones.",
+     "Take one ten away: 4 hundreds, 9 tens and 0 ones.",
+     "So 10 less than 500 is 490."
+    ],
+    "answer": 490
+   },
+   "feedback": {
+    "503": "That is 100 less. 10 less takes away one ten, not one hundred.",
+    "613": "That is 10 more. Less means take away, so the number gets smaller.",
+    "693": "You made 9 tens but kept 6 hundreds. A hundred was traded for the tens, so the hundreds digit goes down by one too."
+   },
+   "solution": {
+    "steps": [
+     "Trade a hundred for ten tens: 5 hundreds, 10 tens and 3 ones.",
+     "Take one ten away: 5 hundreds, 9 tens and 3 ones.",
+     "So 10 less than 603 is 593."
+    ],
+    "answer": 593
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.8"
+    ],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.2"
+    ],
+    "va": [],
+    "ga": [
+     "2.NR.2.2"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "503": "changedTheWrongPlace",
+    "613": "addedInsteadOfSubtracted",
+    "693": "acrossZeroSlip"
+   },
+   "slots": {
+    "h": 6,
+    "o": 3,
+    "start": 603,
+    "key": 593,
+    "hTxt": "5 hundreds",
+    "oTxt": "3 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 603,
+   "b": 10,
+   "op": "-",
+   "answer": 593,
+   "answerType": "choice",
+   "choices": [
+    503,
+    593,
+    613,
+    693
+   ],
+   "display": {
+    "promptText": "What number is 10 less than 603?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-ten-hundred-across-more-s7-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundred",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-ten-hundred-across-more",
+   "seed": 7,
+   "specMd5": "921d1e01393d2e6010e5b48f5ef0144c",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-ten-hundred-across-more",
+  "blueprintId": "calc-g2-ten-hundred",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "10 more adds one ten. Look at the tens digit of 299.",
+   "steps": [
+    "299 has 9 tens. One more ten makes 10 tens.",
+    "10 tens make a hundred, so trade them for a hundred."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number is 10 more than 799?",
+    "steps": [
+     "799 has 9 tens. One more ten makes 10 tens.",
+     "Trade 10 tens for 1 hundred: 8 hundreds, 0 tens and 9 ones.",
+     "So 10 more than 799 is 809."
+    ],
+    "answer": 809
+   },
+   "feedback": {
+    "209": "You made 0 tens but kept 2 hundreds. The 10 tens became a new hundred, so the hundreds digit goes up by one too.",
+    "289": "That is 10 less. More means add, so the number gets bigger.",
+    "399": "That is 100 more. 10 more adds one ten, not one hundred."
+   },
+   "solution": {
+    "steps": [
+     "299 has 9 tens. One more ten makes 10 tens.",
+     "Trade 10 tens for 1 hundred: 3 hundreds, 0 tens and 9 ones.",
+     "So 10 more than 299 is 309."
+    ],
+    "answer": 309
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.8"
+    ],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.2"
+    ],
+    "va": [],
+    "ga": [
+     "2.NR.2.2"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "209": "acrossZeroSlip",
+    "289": "subtractedInsteadOfAdded",
+    "399": "changedTheWrongPlace"
+   },
+   "slots": {
+    "h": 2,
+    "o": 9,
+    "start": 299,
+    "key": 309,
+    "hp1": 3,
+    "hTxt": "2 hundreds",
+    "oTxt": "9 ones"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 299,
+   "b": 10,
+   "op": "+",
+   "answer": 309,
+   "answerType": "choice",
+   "choices": [
+    209,
+    289,
+    309,
+    399
+   ],
+   "display": {
+    "promptText": "What number is 10 more than 299?"
+   }
+  }
+ },
+ {
+  "itemId": "calc-g2-ten-hundred-across-more-s20-v2",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "tenOrHundred",
+  "structureType": "tenOrHundredMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "levelBand": "2-3",
+  "reviewStatus": "approved",
+  "representationType": "symbolic",
+  "source": {
+   "generator": "itemModels",
+   "itemModelId": "calc-g2-ten-hundred-across-more",
+   "seed": 20,
+   "specMd5": "921d1e01393d2e6010e5b48f5ef0144c",
+   "run": "live-multiDigit-g2-20261003"
+  },
+  "version": 2,
+  "itemModelId": "calc-g2-ten-hundred-across-more",
+  "blueprintId": "calc-g2-ten-hundred",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "10 more adds one ten. Look at the tens digit of 291.",
+   "steps": [
+    "291 has 9 tens. One more ten makes 10 tens.",
+    "10 tens make a hundred, so trade them for a hundred."
+   ],
+   "picture": null,
+   "example": {
+    "problem": "What number is 10 more than 493?",
+    "steps": [
+     "493 has 9 tens. One more ten makes 10 tens.",
+     "Trade 10 tens for 1 hundred: 5 hundreds, 0 tens and 3 ones.",
+     "So 10 more than 493 is 503."
+    ],
+    "answer": 503
+   },
+   "feedback": {
+    "201": "You made 0 tens but kept 2 hundreds. The 10 tens became a new hundred, so the hundreds digit goes up by one too.",
+    "281": "That is 10 less. More means add, so the number gets bigger.",
+    "391": "That is 100 more. 10 more adds one ten, not one hundred."
+   },
+   "solution": {
+    "steps": [
+     "291 has 9 tens. One more ten makes 10 tens.",
+     "Trade 10 tens for 1 hundred: 3 hundreds, 0 tens and 1 one.",
+     "So 10 more than 291 is 301."
+    ],
+    "answer": 301
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.8"
+    ],
+    "tx": [
+     "2.7B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.2"
+    ],
+    "va": [],
+    "ga": [
+     "2.NR.2.2"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "number",
+   "widget": null,
+   "family": "procedural",
+   "objects": [],
+   "setting": null,
+   "mistakes": {
+    "201": "acrossZeroSlip",
+    "281": "subtractedInsteadOfAdded",
+    "391": "changedTheWrongPlace"
+   },
+   "slots": {
+    "h": 2,
+    "o": 1,
+    "start": 291,
+    "key": 301,
+    "hp1": 3,
+    "hTxt": "2 hundreds",
+    "oTxt": "1 one"
+   },
+   "notes": []
+  },
+  "question": {
+   "a": 291,
+   "b": 10,
+   "op": "+",
+   "answer": 301,
+   "answerType": "choice",
+   "choices": [
+    201,
+    281,
+    301,
+    391
+   ],
+   "display": {
+    "promptText": "What number is 10 more than 291?"
+   }
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-several-13p28p49",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "severalNumbers",
+  "structureType": "addSeveral",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-several",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 3 + 8 + 9 makes 20 ones. Trade 20 ones for 2 tens.",
+    "Tens: 1 + 2 + 4, plus 2 new tens makes 9 tens.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "41": "Did you add every number?",
+    "70": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "80": "The ones made more than one new ten. Carry all of them."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "threeNumbers",
+   "mistakes": {
+    "41": "leftOutAPart",
+    "70": "forgotToCarry",
+    "80": "carriedOneNotTwo"
+   }
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 90,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "13 + 28 + 49 = ?",
+    "layout": "horizontal"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-several",
+   "variant": "threeNumbers",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-several-17p39p14",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "severalNumbers",
+  "structureType": "addSeveral",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-several",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 7 + 9 + 4 makes 20 ones. Trade 20 ones for 2 tens.",
+    "Tens: 1 + 3 + 1, plus 2 new tens makes 7 tens.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "50": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "56": "Did you add every number?",
+    "60": "The ones made more than one new ten. Carry all of them."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "threeNumbers",
+   "mistakes": {
+    "50": "forgotToCarry",
+    "56": "leftOutAPart",
+    "60": "carriedOneNotTwo"
+   }
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 70,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "17 + 39 + 14 = ?",
+    "layout": "horizontal"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-several",
+   "variant": "threeNumbers",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-several-18p27p17p11",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "severalNumbers",
+  "structureType": "addSeveral",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-several",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 8 + 7 + 7 + 1 makes 23 ones. Trade 20 ones for 2 tens.",
+    "Tens: 1 + 2 + 1 + 1, plus 2 new tens makes 7 tens.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "53": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "62": "Did you add every number?",
+    "63": "The ones made more than one new ten. Carry all of them."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "fourNumbers",
+   "mistakes": {
+    "53": "forgotToCarry",
+    "62": "leftOutAPart",
+    "63": "carriedOneNotTwo"
+   }
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 73,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "18 + 27 + 17 + 11 = ?",
+    "layout": "horizontal"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-several",
+   "variant": "fourNumbers",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-several-26p25p16p24",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "severalNumbers",
+  "structureType": "addSeveral",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-several",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 6 + 5 + 6 + 4 makes 21 ones. Trade 20 ones for 2 tens.",
+    "Tens: 2 + 2 + 1 + 2, plus 2 new tens makes 9 tens.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "67": "Did you add every number?",
+    "71": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "81": "The ones made more than one new ten. Carry all of them."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "fourNumbers",
+   "mistakes": {
+    "67": "leftOutAPart",
+    "71": "forgotToCarry",
+    "81": "carriedOneNotTwo"
+   }
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 91,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "26 + 25 + 16 + 24 = ?",
+    "layout": "horizontal"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-several",
+   "variant": "fourNumbers",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-several-13p17p29p28",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "severalNumbers",
+  "structureType": "addSeveral",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-several",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 3 + 7 + 9 + 8 makes 27 ones. Trade 20 ones for 2 tens.",
+    "Tens: 1 + 1 + 2 + 2, plus 2 new tens makes 8 tens.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "59": "Did you add every number?",
+    "67": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "77": "The ones made more than one new ten. Carry all of them."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "fourNumbers",
+   "mistakes": {
+    "59": "leftOutAPart",
+    "67": "forgotToCarry",
+    "77": "carriedOneNotTwo"
+   }
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 87,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "13 + 17 + 29 + 28 = ?",
+    "layout": "horizontal"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-several",
+   "variant": "fourNumbers",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-sub-three-97m42m5",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "severalNumbers",
+  "structureType": "addSubThree",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-sub-three",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "Work from left to right: the first sign, then the second.",
+   "steps": [
+    "First: 97 − 42 = 55.",
+    "Then: 55 − 5."
+   ],
+   "feedback": {
+    "55": "That is the first step. Now do the second step.",
+    "60": "Look at the second sign again.",
+    "144": "Look at the signs. Not every step adds."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "twoSteps",
+   "mistakes": {
+    "55": "stopsAtStepOne",
+    "60": "wrongOperationStepTwo",
+    "144": "addedEverything"
+   }
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 50,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "97 − 42 − 5 = ?",
+    "layout": "horizontal"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-sub-three",
+   "variant": "twoSteps",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-sub-three-59m3m51",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "severalNumbers",
+  "structureType": "addSubThree",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-sub-three",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "Work from left to right: the first sign, then the second.",
+   "steps": [
+    "First: 59 − 3 = 56.",
+    "Then: 56 − 51."
+   ],
+   "feedback": {
+    "56": "That is the first step. Now do the second step.",
+    "107": "Look at the second sign again.",
+    "113": "Look at the signs. Not every step adds."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.5"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.AR.2.2"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": [
+     "2.NR.2.4"
+    ]
+   },
+   "difficulty": "hard",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "twoSteps",
+   "mistakes": {
+    "56": "stopsAtStepOne",
+    "107": "wrongOperationStepTwo",
+    "113": "addedEverything"
+   }
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 5,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "59 − 3 − 51 = ?",
+    "layout": "horizontal"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-sub-three",
+   "variant": "twoSteps",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-several-past-100-54p41p37",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "severalNumbers",
+  "structureType": "addSeveralPast100",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-several-past-100",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 4 + 1 + 7 makes 12 ones. Trade 10 ones for 1 ten.",
+    "Tens: 5 + 4 + 3, plus 1 new ten makes 13 tens. Trade 10 tens for 1 hundred.",
+    "The 1 new hundred goes in the hundreds place.",
+    "Put the hundreds, tens and ones together."
+   ],
+   "feedback": {
+    "22": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "95": "Did you add every number?"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.6"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "pastHundred",
+   "mistakes": {
+    "22": "forgotToCarry",
+    "95": "leftOutAPart"
+   }
+  },
+  "question": {
+   "a": null,
+   "b": null,
+   "op": null,
+   "answer": 132,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "54 + 41 + 37 = ?",
+    "layout": "horizontal"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-several-past-100",
+   "variant": "pastHundred",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-1000-700p200",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within1000",
+  "structureType": "addWithin1000",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-1000",
+  "difficulty": "easy",
+  "hint": {
+   "nudge": "Add the ones first, then the next place.",
+   "steps": [
+    "Ones: there are no ones.",
+    "Tens: there are no tens.",
+    "Hundreds: 7 + 2 makes 9 hundreds.",
+    "Put the hundreds, tens and ones together."
+   ]
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "easy",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "noRegroup",
+   "mistakes": {}
+  },
+  "question": {
+   "a": 700,
+   "b": 200,
+   "op": "+",
+   "answer": 900,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "700 + 200 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-1000",
+   "variant": "noRegroup",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-1000-744p27",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within1000",
+  "structureType": "addWithin1000",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-1000",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 4 + 7 makes 11 ones. Trade 10 ones for 1 ten.",
+    "Tens: 4 + 2, plus 1 new ten makes 7 tens.",
+    "Hundreds: 7 makes 7 hundreds.",
+    "Put the hundreds, tens and ones together."
+   ],
+   "feedback": {
+    "761": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "1014": "Line up the ones under the ones before you add.",
+    "7611": "Each place holds one digit. When a place makes 10 or more, trade 10 of them for 1 of the next place."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "regroupOnes",
+   "mistakes": {
+    "761": "forgotToCarry",
+    "1014": "misalignedPlaces",
+    "7611": "placeValueSlip"
+   }
+  },
+  "question": {
+   "a": 744,
+   "b": 27,
+   "op": "+",
+   "answer": 771,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "744 + 27 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-1000",
+   "variant": "regroupOnes",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-past-100-95p41",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within1000",
+  "structureType": "addPast100",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-past-100",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 5 + 1 makes 6 ones.",
+    "Tens: 9 + 4 makes 13 tens. Trade 10 tens for 1 hundred.",
+    "The 1 new hundred goes in the hundreds place.",
+    "Put the hundreds, tens and ones together."
+   ],
+   "feedback": {
+    "36": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "54": "Look at the sign again. This one adds."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7"
+    ],
+    "tx": [
+     "2.4B"
+    ],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [
+     "2.CE.1b"
+    ],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "pastHundred",
+   "mistakes": {
+    "36": "forgotToCarry",
+    "54": "subtractedInsteadOfAdded"
+   }
+  },
+  "question": {
+   "a": 95,
+   "b": 41,
+   "op": "+",
+   "answer": 136,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "95 + 41 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-past-100",
+   "variant": "pastHundred",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-add-1000-two-trades-98p25",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within1000",
+  "structureType": "addTwoRegroups",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-add-1000-two-trades",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "Add the ones first. Do they make a new ten?",
+   "steps": [
+    "Ones: 8 + 5 makes 13 ones. Trade 10 ones for 1 ten.",
+    "Tens: 9 + 2, plus 1 new ten makes 12 tens. Trade 10 tens for 1 hundred.",
+    "The 1 new hundred goes in the hundreds place.",
+    "Put the hundreds, tens and ones together."
+   ],
+   "feedback": {
+    "13": "Check each place. When a place makes 10 or more, a new ten or hundred goes into the next place.",
+    "113": "Check the tens. Did the new ten go into the tens, or did the traded ten come out of them?",
+    "1113": "Each place holds one digit. When a place makes 10 or more, trade 10 of them for 1 of the next place."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "twoDigit",
+   "mistakes": {
+    "13": "forgotToCarry",
+    "113": "offByTen",
+    "1113": "placeValueSlip"
+   }
+  },
+  "question": {
+   "a": 98,
+   "b": 25,
+   "op": "+",
+   "answer": 123,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "98 + 25 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-add-1000-two-trades",
+   "variant": "twoDigit",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-sub-1000-653m424",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within1000",
+  "structureType": "subtractWithin1000",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-sub-1000",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Start with the ones. Are there enough ones to take away?",
+   "steps": [
+    "Ones: 3 is less than 4. Trade 1 ten for 10 ones: 13 − 4.",
+    "Tens: 4 − 2.",
+    "Hundreds: 6 − 4.",
+    "Put the hundreds, tens and ones together."
+   ],
+   "feedback": {
+    "231": "Take the bottom digit away from the top digit. When the top digit is smaller, trade first.",
+    "1077": "Look at the sign again. This one takes away."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "tradeTen",
+   "mistakes": {
+    "231": "smallerFromLarger",
+    "1077": "addedInsteadOfSubtracted"
+   }
+  },
+  "question": {
+   "a": 653,
+   "b": 424,
+   "op": "−",
+   "answer": 229,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "653 − 424 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-sub-1000",
+   "variant": "tradeTen",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-sub-1000-128m42",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within1000",
+  "structureType": "subtractWithin1000",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-sub-1000",
+  "difficulty": "moderate",
+  "hint": {
+   "nudge": "Start with the ones. Are there enough ones to take away?",
+   "steps": [
+    "Ones: 8 − 2.",
+    "Tens: 2 is less than 4. Trade 1 hundred for 10 tens: 12 − 4.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "126": "Take the bottom digit away from the top digit. When the top digit is smaller, trade first.",
+    "170": "Look at the sign again. This one takes away.",
+    "186": "You traded a hundred for tens. Did you take that hundred away from the hundreds?"
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "moderate",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "fromHundreds",
+   "mistakes": {
+    "126": "smallerFromLarger",
+    "170": "addedInsteadOfSubtracted",
+    "186": "offByHundred"
+   }
+  },
+  "question": {
+   "a": 128,
+   "b": 42,
+   "op": "−",
+   "answer": 86,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "128 − 42 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-sub-1000",
+   "variant": "fromHundreds",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-sub-1000-two-trades-113m89",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within1000",
+  "structureType": "subtractTwoTrades",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-sub-1000-two-trades",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "Start with the ones. Are there enough ones to take away?",
+   "steps": [
+    "Ones: 3 is less than 9. Trade 1 ten for 10 ones: 13 − 9.",
+    "Tens: 0 is less than 8. Trade 1 hundred for 10 tens: 10 − 8.",
+    "Put the tens and ones together."
+   ],
+   "feedback": {
+    "34": "Check the tens. Did the new ten go into the tens, or did the traded ten come out of them?",
+    "124": "You traded a hundred for tens. Did you take that hundred away from the hundreds?",
+    "176": "Take the bottom digit away from the top digit. When the top digit is smaller, trade first."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "fromHundreds",
+   "mistakes": {
+    "34": "offByTen",
+    "124": "offByHundred",
+    "176": "smallerFromLarger"
+   }
+  },
+  "question": {
+   "a": 113,
+   "b": 89,
+   "op": "−",
+   "answer": 24,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "113 − 89 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-sub-1000-two-trades",
+   "variant": "fromHundreds",
+   "run": "live-multiDigit-g2-20261003"
+  }
+ },
+ {
+  "itemId": "multiDigit-v2-across-zero-906m269",
+  "modeId": "multiDigit",
+  "itemFamily": "procedural",
+  "subskill": "within1000",
+  "structureType": "subtractAcrossZero",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "calc-g2-across-zero",
+  "difficulty": "hard",
+  "hint": {
+   "nudge": "Start with the ones. Are there enough ones to take away?",
+   "steps": [
+    "Ones: 6 is less than 9, and there are no tens to trade. Trade 1 hundred for 10 tens, then 1 ten for 10 ones.",
+    "Ones: 16 − 9.",
+    "Tens: 9 − 6.",
+    "Hundreds: 8 − 2.",
+    "Put the hundreds, tens and ones together."
+   ],
+   "feedback": {
+    "737": "When you trade across the zero, the hundreds go down by one too.",
+    "763": "Take the bottom digit away from the top digit. When the top digit is smaller, trade first."
+   }
+  },
+  "tags": {
+   "grade": "2",
+   "standards": {
+    "ccss": [
+     "2.NBT.B.7"
+    ],
+    "tx": [],
+    "fl": [
+     "MA.2.NSO.2.4"
+    ],
+    "va": [],
+    "ga": []
+   },
+   "difficulty": "hard",
+   "format": "typed",
+   "widget": "numberPad",
+   "family": "procedural",
+   "variant": "zeroTens",
+   "mistakes": {
+    "737": "acrossZeroSlip",
+    "763": "smallerFromLarger"
+   }
+  },
+  "question": {
+   "a": 906,
+   "b": 269,
+   "op": "−",
+   "answer": 637,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "906 − 269 = ?",
+    "layout": "vertical"
+   }
+  },
+  "source": {
+   "generator": "script",
+   "blueprintId": "calc-g2-across-zero",
+   "variant": "zeroTens",
+   "run": "live-multiDigit-g2-20261003"
   }
  }
 ];

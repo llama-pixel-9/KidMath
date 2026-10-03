@@ -1,3 +1,6 @@
+import wordProblemsG2 from "./wordProblemsG2.js";
+import multiDigitG2 from "./multiDigitG2.js";
+
 /**
  * The committed live-step manifests: one module per topic and grade
  * (e.g. wordProblemsG2.js), each written by scripts/live/prepare.mjs and
@@ -7,7 +10,7 @@
  * themselves are refilled from the repo's model files
  * (src/itemBank/v2/modelRows.js) and checked by liveStep.spec.
  *
- * Empty until a run is committed: the app and every spec then behave as
- * if this folder did not exist.
+ * With no manifest here, the app and every spec behave as if this folder
+ * did not exist.
  */
-export const MANIFESTS = Object.freeze([]);
+export const MANIFESTS = Object.freeze([wordProblemsG2, multiDigitG2]);
